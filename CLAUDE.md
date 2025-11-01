@@ -26,8 +26,30 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Deployment
 - **Platform**: Vercel
+- **Project URL**: https://vercel.com/essebesse/ift-interactors
 - **Environment Variable**: `POSTGRES_URL` must be set in Vercel dashboard
 - **Build Fix**: All API routes marked as `force-dynamic` to prevent build-time DB access
+
+#### Automatic Deployment
+- **Trigger**: Git push to `main` branch should auto-deploy
+- **Issue**: GitHub webhook sometimes fails to trigger Vercel builds
+- **Symptom**: Vercel builds old commits even after successful push
+
+#### Manual Deployment (Use if automatic fails)
+```bash
+# Trigger deployment via deploy hook
+curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
+```
+
+**When to use manual deployment:**
+- After pushing code, Vercel doesn't start building
+- Vercel builds an old commit instead of latest
+- Need to force a rebuild with latest code
+
+**Verify deployment:**
+1. Check Vercel dashboard for new deployment
+2. Verify it's building the correct commit (should match `git ls-remote new_repo main`)
+3. Build should complete in ~1-2 minutes
 
 ### Git Operations
 
@@ -71,6 +93,39 @@ git push origin main  # ← May fail with "Permission denied (publickey)"
 - Each project deploys independently
 - Always use **Method 1** for reliable pushes
 - The `new_repo` remote in parent directory points to `https://github.com/essebesse/IFT_interactors.git`
+
+### Complete Workflow: Edit → Commit → Push → Deploy
+
+```bash
+# 1. Make changes in IFT_Interactors_paper
+cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper
+# ... edit files ...
+
+# 2. Commit locally
+git add [files]
+git commit -m "Your message"
+
+# 3. Push to GitHub using subtree (from parent directory)
+cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis
+git subtree split --prefix=IFT_Interactors_paper -b ift-temp-branch
+git push new_repo ift-temp-branch:main --force
+git branch -D ift-temp-branch
+
+# 4. Verify push succeeded
+git ls-remote new_repo main  # Should show your latest commit hash
+
+# 5. Trigger deployment (if automatic webhook fails)
+curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
+
+# 6. Monitor deployment
+# Visit: https://vercel.com/essebesse/ift-interactors
+# Check: Deployment is building correct commit from step 4
+```
+
+**Common Issues:**
+- If `git push` says "Everything up-to-date" but you made changes → You forgot to commit in IFT_Interactors_paper subdirectory first
+- If Vercel builds old commit → Use manual deployment curl command (step 5)
+- If build fails with missing files → Files weren't committed; check `git status` in IFT_Interactors_paper
 
 ## Dataset Overview
 
@@ -285,6 +340,44 @@ git branch -D ift-temp-branch
 **Root Cause**: Git subtree push issue - old code still in GitHub
 **Solution**: Complex routes replaced with 404 stubs (no DB connection)
 **Status**: ✅ Fixed - routes exist but return 404 without database access
+
+### Vercel Builds Old Commit (Webhook Issue)
+**Issue**: After pushing to GitHub, Vercel builds an old commit instead of latest
+**Root Cause**: GitHub webhook to Vercel fails or gets stuck
+
+**Symptoms**:
+- `git ls-remote new_repo main` shows latest commit (e.g., `11861ca`)
+- Vercel dashboard shows building older commit (e.g., `595983d`)
+- Build log "Source: main 595983d..." doesn't match latest
+
+**Solutions**:
+
+1. **Manual deployment (immediate fix)**:
+   ```bash
+   curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
+   ```
+
+2. **Fix webhook (permanent fix)**:
+   - Vercel Dashboard → Project Settings → Git
+   - Check "Production Branch" is `main`
+   - Go to GitHub → Settings → Webhooks
+   - Find Vercel webhook, check "Recent Deliveries" for failures
+   - If broken: Disconnect and reconnect repository in Vercel
+
+3. **Verify deployment is using correct commit**:
+   ```bash
+   # Check what's on GitHub
+   git ls-remote new_repo main
+   # Then verify Vercel dashboard shows same commit hash
+   ```
+
+**Status**: ✅ Deploy hook created as backup for automatic deployments
+
+### Build Fails: Missing NetworkVisualization Component
+**Issue**: `Cannot find module '../components/NetworkVisualization'`
+**Root Cause**: Component file wasn't pushed to GitHub (nested repo issue)
+**Solution**: Use complete workflow including verification step (see "Complete Workflow" section)
+**Status**: ✅ Fixed - all files now pushed correctly using subtree method
 
 ## Important Notes
 
