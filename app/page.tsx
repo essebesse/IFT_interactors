@@ -73,6 +73,39 @@ export default function Home() {
     setSecondaryProtein('');
   };
 
+  // Get confidence level from database (calculated at import/migration time)
+  const getConfidenceLevel = (inter: any): string => {
+    // For AF3, recalculate confidence based on metrics
+    // (don't rely on database value which might be in old format)
+    const iptm = parseFloat(inter.iptm) || 0;
+    const contacts = parseInt(inter.contacts_pae_lt_3) || 0;
+    const ipLDDT = parseFloat(inter.interface_plddt) || 0;
+
+    // HIGH CONFIDENCE
+    const meetsHighCriteria =
+      iptm >= 0.7 ||
+      (contacts >= 40 && ipLDDT >= 80) ||
+      (contacts >= 30 && iptm >= 0.5 && ipLDDT >= 80);
+
+    const isExcludedFromHigh = iptm < 0.75 && contacts < 5;
+
+    if (meetsHighCriteria && !isExcludedFromHigh) {
+      return 'High';
+    }
+
+    // MEDIUM CONFIDENCE
+    if (
+      iptm >= 0.6 ||
+      (contacts >= 20 && ipLDDT >= 75) ||
+      (contacts >= 15 && iptm >= 0.45)
+    ) {
+      return 'Medium';
+    }
+
+    // LOW CONFIDENCE
+    return 'Low';
+  };
+
   const handleNodeClick = async (nodeId: string, nodeName: string) => {
     setSecondaryLoading(true);
     setSecondaryProtein(nodeId);
@@ -144,8 +177,6 @@ export default function Home() {
       return '#';
     }
 
-    // Remove AF2_ prefix if present
-    const cleanId = uniprotId.startsWith('AF2_') ? uniprotId.substring(4) : uniprotId;
 
     // Only use ChlamyFP for CRE-formatted gene IDs (Phytozome format)
     if (cleanId.startsWith('Cre') || cleanId.startsWith('cre') || cleanId.startsWith('CRE')) {
@@ -278,49 +309,12 @@ export default function Home() {
     }
   }, [confidenceFilters]);
 
-  // Get confidence level from database (calculated at import/migration time)
-  const getConfidenceLevel = (inter: any): string => {
-    // AF2 predictions have NULL confidence - display as "AF2"
-    if (inter.alphafold_version === 'AF2') {
-      return 'AF2';
-    }
 
-    // For AF3 in v3 mode, recalculate confidence based on metrics
-    // (don't rely on database value which might be in old format)
-    const iptm = parseFloat(inter.iptm) || 0;
-    const contacts = parseInt(inter.contacts_pae_lt_3) || 0;
-    const ipLDDT = parseFloat(inter.interface_plddt) || 0;
-
-    // HIGH CONFIDENCE
-    const meetsHighCriteria =
-      iptm >= 0.7 ||
-      (contacts >= 40 && ipLDDT >= 80) ||
-      (contacts >= 30 && iptm >= 0.5 && ipLDDT >= 80);
-
-    const isExcludedFromHigh = iptm < 0.75 && contacts < 5;
-
-    if (meetsHighCriteria && !isExcludedFromHigh) {
-      return 'High';
-    }
-
-    // MEDIUM CONFIDENCE
-    if (
-      iptm >= 0.6 ||
-      (contacts >= 20 && ipLDDT >= 75) ||
-      (contacts >= 15 && iptm >= 0.45)
-    ) {
-      return 'Medium';
-    }
-
-    // LOW CONFIDENCE
-    return 'Low';
-  };
 
   const confidenceColors: { [key: string]: string } = {
     'High': '#28a745',                     // Green
     'Medium': '#ffc107',                   // Orange
     'Low': '#dc3545',                      // Red
-    'AF2': '#6c757d',                      // Gray
   };
 
   return (
@@ -620,13 +614,11 @@ export default function Home() {
                       </td>
                       <td>{inter.iptm.toFixed(2)}</td>
                       <td>
-                        {inter.alphafold_version === 'AF2'
                           ? 'N/A'
                           : (inter.contacts_pae_lt_3 ?? 0)
                         }
                       </td>
                       <td>
-                        {inter.alphafold_version === 'AF2'
                           ? 'N/A'
                           : (inter.contacts_pae_lt_6 ?? 0)
                         }
