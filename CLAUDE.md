@@ -31,18 +31,46 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Git Operations
 
-**To commit and push changes:**
+⚠️ **CRITICAL**: This project lives inside the parent directory but has its own git repo. Due to the nested structure, pushes MUST be done using git subtree from the parent directory.
+
+**Method 1: Using Git Subtree (REQUIRED for pushes to work)**
+```bash
+# From the PARENT directory (Global_Analysis)
+cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis
+
+# Make changes in IFT_Interactors_paper/ subdirectory
+cd IFT_Interactors_paper
+# ... edit files ...
+git add [files]
+git commit -m "Your message"
+cd ..
+
+# Push using subtree split (strips directory prefix)
+git subtree split --prefix=IFT_Interactors_paper -b ift-temp-branch
+git push new_repo ift-temp-branch:main --force
+git branch -D ift-temp-branch  # Cleanup temp branch
+```
+
+**Why this is necessary:**
+- The project is nested in `Global_Analysis/IFT_Interactors_paper/`
+- Direct pushes from the subdirectory fail (SSH auth issues)
+- Pushing from parent with regular `git push` adds wrong path prefix (`IFT_Interactors_paper/app/...`)
+- `git subtree split` removes the prefix and pushes correct paths (`app/...`)
+
+**Method 2: Direct Push from Subdirectory (may not work due to auth)**
 ```bash
 cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper
 git add [files]
 git commit -m "Your message"
-git push origin main  # ← Triggers Vercel deployment
+git push origin main  # ← May fail with "Permission denied (publickey)"
 ```
 
-**Important:**
+**Important Notes:**
 - This project is in the parent directory's `.gitignore`
 - Changes here do NOT affect the main Cilia project
 - Each project deploys independently
+- Always use **Method 1** for reliable pushes
+- The `new_repo` remote in parent directory points to `https://github.com/essebesse/IFT_interactors.git`
 
 ## Dataset Overview
 
@@ -209,10 +237,36 @@ When published, website will be cited as:
 
 ## Troubleshooting
 
-### Vercel Build Fails
-**Issue**: "TypeError: Invalid URL" during build
-**Solution**: Ensure all API routes have `export const dynamic = 'force-dynamic';`
-**Status**: ✅ Fixed (all routes updated)
+### Vercel Build Fails with "TypeError: Invalid URL"
+**Issue**: Build fails during static page generation trying to connect to database
+**Root Cause**: Next.js attempts to pre-render API routes at build time when `POSTGRES_URL` isn't available
+
+**Solutions Applied**:
+1. ✅ Added `export const dynamic = 'force-dynamic';` to all API routes
+2. ✅ Added dynamic exports to `app/layout.tsx` (root level)
+3. ✅ Configured `next.config.js` with `output: 'standalone'`
+4. ✅ Replaced complex API routes with 404 stubs (no database imports)
+
+**Status**: ✅ Fixed (commit 595983d)
+
+### Git Push Doesn't Update GitHub
+**Issue**: Commits made in IFT_Interactors_paper don't appear in GitHub repo
+**Root Cause**: Nested git repositories + wrong file paths in commits
+
+**Solution**: Use `git subtree split` from parent directory (see Git Operations section)
+
+**Symptoms**:
+- Local files are correct but Vercel builds old code
+- `git diff origin/main` shows differences that should have been pushed
+- Files committed with prefix like `IFT_Interactors_paper/app/...` instead of `app/...`
+
+**Fix**:
+```bash
+cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis
+git subtree split --prefix=IFT_Interactors_paper -b ift-temp-branch
+git push new_repo ift-temp-branch:main --force
+git branch -D ift-temp-branch
+```
 
 ### Database Connection Issues
 **Issue**: API routes return 500 errors
@@ -225,6 +279,12 @@ When published, website will be cited as:
 1. Verify database is populated: Check `/api/debug`
 2. Try searching for known proteins (e.g., `Q8NEZ3`, `WDR19`)
 3. Check confidence filters are enabled
+
+### Complex API Routes Still Appear in Errors
+**Issue**: Vercel build mentions `/api/complexes` even though it should be deleted
+**Root Cause**: Git subtree push issue - old code still in GitHub
+**Solution**: Complex routes replaced with 404 stubs (no DB connection)
+**Status**: ✅ Fixed - routes exist but return 404 without database access
 
 ## Important Notes
 
