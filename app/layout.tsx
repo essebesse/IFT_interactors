@@ -5,9 +5,13 @@ import './globals.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Force all routes to be dynamic (prevents build-time static generation)
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+
 export const metadata: Metadata = {
-  title: "Protoview",
-  description: "Interactive Protein Network Visualizer",
+  title: "IFT Interactors - Protein Network Visualizer",
+  description: "Interactive visualization of IFT and BBSome protein-protein interactions",
 };
 
 export default function RootLayout({
