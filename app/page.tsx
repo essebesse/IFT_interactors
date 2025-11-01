@@ -258,12 +258,14 @@ export default function Home() {
     handleSearch();
   }, []);
 
-  // Re-fetch dropdown lists when mode changes (to show accurate counts)
+  // Fetch dropdown lists on mount
   useEffect(() => {
     fetchBaitProteins();
+  }, []);
 
   // Auto-search when bait protein is selected
   useEffect(() => {
+    if (selectedBait) {
       handleSearch();
     }
   }, [selectedBait]);
@@ -278,10 +280,6 @@ export default function Home() {
 
   // Get confidence level from database (calculated at import/migration time)
   const getConfidenceLevel = (inter: any): string => {
-    // In v4 mode, use ipSAE confidence
-      return inter.ipsae_confidence;
-    }
-
     // AF2 predictions have NULL confidence - display as "AF2"
     if (inter.alphafold_version === 'AF2') {
       return 'AF2';
