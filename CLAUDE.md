@@ -7,8 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **IFT Interactors Website**: Companion website for IFT/BBSome protein interaction paper
 - **Purpose**: Display comprehensive IFT/BBSome interaction dataset (paper shows top hits only)
 - **Stack**: Next.js 14, PostgreSQL (Neon), Vercel deployment
-- **Data Source**: Extracted from main ciliaaf3predictions.vercel.app database
-- **Focus**: IFT-A, IFT-B1, IFT-B2, BBSome, and motor proteins
+- **Data Source**: Original AlphaPulldown v4.json files (direct from AF3 predictions)
+- **Focus**: Human IFT and BBSome proteins (single protein baits only)
 
 ## ⚠️ CRITICAL: Git & Deployment Workflow
 
@@ -21,8 +21,9 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Database
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
-- **Status**: ✅ Populated (1,147 interactions, 678 proteins)
-- **Setup Script**: `setup_database.mjs` (already run)
+- **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
+- **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
+- **Last Updated**: 2025-11-01 (rebuilt from original AlphaPulldown v4.json files)
 
 ### Deployment
 - **Platform**: Vercel
@@ -129,51 +130,85 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 
 ## Dataset Overview
 
-### Data Statistics (as of 2025-10-31)
-- **Total Interactions**: 1,147
-- **Unique Proteins**: 678
-- **v4 Analysis (ipSAE)**: 514 interactions (44.8%)
-- **v3 Analysis**: 633 interactions (55.2%)
-- **High Confidence**: 147 interactions (12.8%)
-- **Medium Confidence**: 195 interactions (17.0%)
-- **Experimentally Validated**: 25 interactions (MS pulldown)
+### Data Statistics (as of 2025-11-01)
+- **Total Interactions**: 877
+- **Unique Proteins**: 331 (all human Homo sapiens)
+- **Unique Baits**: 32 (22 IFT + 10 BBSome proteins)
+- **Analysis Version**: v4 only (ipSAE scoring)
+- **AlphaFold Version**: AF3 only
+- **High Confidence**: 32 interactions (3.6%)
+- **Medium Confidence**: 201 interactions (22.9%)
+- **Low Confidence**: 644 interactions (73.4%)
 
-### Protein Complex Coverage
-| Complex | Interactions | High Conf | v4 Analysis | Validated |
-|---------|-------------|-----------|-------------|-----------|
-| IFT-B1 | 347 (30.3%) | 67 (19.3%) | 151 (43.5%) | 0 |
-| BBSome | 267 (23.3%) | 29 (10.9%) | 130 (48.7%) | 0 |
-| IFT-A | 212 (18.5%) | 17 (8.0%) | 97 (45.8%) | 22 |
-| IFT-associated | 159 (13.9%) | 10 (6.3%) | 80 (50.3%) | 3 |
-| IFT-B2 | 150 (13.1%) | 23 (15.3%) | 52 (34.7%) | 0 |
-| Motor | 12 (1.0%) | 1 (8.3%) | 4 (33.3%) | 0 |
+### Bait Protein Coverage
+- **IFT Proteins (22)**:
+  - IFT20, IFT22, IFT25, IFT27, IFT38, IFT43, IFT46, IFT52, IFT54, IFT56, IFT57
+  - IFT70 (TTC30A), IFT70 (TTC30B), IFT74, IFT80, IFT81, IFT88
+  - IFT121, IFT122, IFT139, IFT140, IFT144
+- **BBSome Proteins (10)**:
+  - BBS1, BBS2, BBS3, BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17
 
-## Key Data Files
+### Notable Interactions (Top 5 by ipSAE)
+1. IFT46 ↔ IFT56: ipSAE=0.828 (High)
+2. BBS8 ↔ A8MTZ0: ipSAE=0.771 (High)
+3. BBS7 ↔ BBS2: ipSAE=0.759 (High)
+4. BBS2 ↔ BBS7: ipSAE=0.758 (High)
 
-### Extraction Data (Source from ciliaaf3predictions.vercel.app)
-- **ift_bbsome_extraction_20251031_131653.json** - Complete dataset (1,147 interactions)
-- **ift_bbsome_extraction_20251031_131653.csv** - CSV format for analysis
-- **ift_bbsome_extraction_high_confidence_v4_20251031_131653.json** - Filtered high-confidence (v4 only)
-- **ift_bbsome_extraction_stats_20251031_131653.txt** - Statistical summary
+## Data Source Files
 
-### Publication-Ready Tables (For Paper Manuscript)
-- **publication_complex_summary_20251031_131808.csv** - Summary by protein complex
-- **publication_high_confidence_v4_20251031_131808.csv** - 146 high-confidence v4 interactions
-- **publication_validated_interactions_20251031_131808.csv** - 25 experimentally validated
-- **publication_protein_coverage_20251031_131808.csv** - Coverage statistics per protein
+### Original AlphaPulldown v4.json Files (32 proteins)
+
+**⚠️ IMPORTANT**: Database is populated DIRECTLY from these original v4.json files, NOT from any extracted/processed files.
+
+**IFT Proteins (22 files)**:
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q7Z4L5_IFT139/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q86WT1_IFT70_isoform_TTC30A/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N4P2_IFT70_isoform_TTC30B/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NEZ3_IFT144/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8TDR0_IFT54_MIPT3/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96AJ1_IFT38_CLUA1/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2L0_IFT121/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/AF3_PD_analysis_v4.json`
+
+**BBSome Proteins (10 files)**:
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q6ZW61_BBS12/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8TAM1_BBS10/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8TAM2_BBS8/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json`
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json`
+
+**Excluded Files (Protein Complexes - NOT imported)**:
+- ❌ `Q96LB3_Q8WYA0_IFT74_81` - IFT74+IFT81 complex
+- ❌ `IFT52_46` - IFT52+IFT46 complex
+- ❌ `Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
+
+### Import Scripts
+- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 32 v4.json files above)
+- **drop_tables.mjs** - Wipes database clean (drops all tables)
+- **find_v4_json.sh** - Finds all IFT/BBS v4.json files in AF3_APD directory
 
 ### Reference Lists
 - **human_ift_proteins_complete.md** - Complete list of human IFT proteins with UniProt IDs
 - **chlamydomonas_ift_proteins_complete.md** - Complete list of Chlamydomonas IFT proteins
-
-### Data Extraction Scripts (Python)
-- **ift_protein_extractor.py** - Original extraction script from main database
-- **ift_protein_extractor_updated.py** - Updated version with v4 analysis support
-- **create_publication_tables.py** - Generates publication-ready CSV tables
-- **test_single_protein.py** - Test script for single protein queries
-- **api_endpoint_discovery.py** - API endpoint testing utility
-
-**Note**: These scripts were used to extract data from the main ciliaaf3predictions database. They are not needed for normal operation since the database is pre-populated.
 
 ## Database Schema
 
@@ -234,12 +269,24 @@ const { sql } = require('@vercel/postgres');
 ```
 
 ### Re-populate Database (if needed)
+
+**⚠️ IMPORTANT**: Always rebuild from original v4.json files, NOT from any extracted files.
+
 ```bash
 export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-node setup_database.mjs
+
+# Step 1: Drop all existing tables (wipe database)
+node drop_tables.mjs
+
+# Step 2: Import from original v4.json files
+node import_from_v4_originals_FIXED.mjs
 ```
 
-**Note**: This will drop and recreate tables, then import all 1,147 interactions from `ift_bbsome_extraction_20251031_131653.json`
+**What this does**:
+1. Drops all tables (clean slate)
+2. Reads 32 original `AF3_PD_analysis_v4.json` files from `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
+3. Imports 877 interactions from 331 unique proteins (32 baits)
+4. All data is v4 (ipSAE) from AF3 predictions
 
 ## Common Commands
 
@@ -281,9 +328,8 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Partial matching supported
 
 ### Filtering
-- **Confidence levels**: High, Medium, Low
-- **Analysis version**: v3 (interface quality) or v4 (ipSAE)
-- **AlphaFold version**: AF2 or AF3
+- **Confidence levels**: High, Medium, Low (based on ipSAE v4 scoring)
+- All data is v4 (ipSAE) analysis from AF3 predictions
 
 ### Visualization
 - Interactive force-directed network graph
@@ -316,19 +362,16 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 ## Publication Workflow
 
 ### Website Role
-- **Website**: Shows ALL 1,147 interactions (comprehensive resource)
-- **Paper**: Focuses on high-confidence hits from publication tables
-
-### Data for Paper Figures
-1. **High-confidence network**: Use `publication_high_confidence_v4_20251031_131808.csv`
-2. **Complex summary**: Use `publication_complex_summary_20251031_131808.csv`
-3. **Validated interactions**: Use `publication_validated_interactions_20251031_131808.csv`
+- **Website**: Shows ALL 877 v4 (ipSAE) interactions from original AlphaPulldown predictions
+- **Paper**: Focuses on high-confidence hits (32 interactions, 3.6%)
+- **Data source**: Direct from AF3 v4.json files (32 human IFT/BBSome baits)
 
 ### Citation
 When published, website will be cited as:
 - Supplementary online resource for IFT/BBSome interaction data
-- Reference dataset for validation experiments
+- Complete dataset companion to manuscript
 - Interactive exploration tool for researchers
+- All data v4 (ipSAE scoring) from AlphaFold3 predictions
 
 ## Troubleshooting
 
@@ -431,23 +474,25 @@ git branch -D ift-temp-branch
 
 ## Important Notes
 
-- ✅ Database is pre-populated (no need to run import scripts)
+- ✅ Database populated from **original AlphaPulldown v4.json files** (NOT extracted files)
 - ✅ All API routes configured for runtime-only execution
 - ✅ Independent from main Cilia project
 - ⚠️ Do not modify the main Cilia database connection string
 - ⚠️ This project uses a separate Neon database instance
+- ⚠️ Only import from original v4.json files in `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
 
 ## Related Documentation
 
-- **EXTRACTION_SUMMARY_REPORT.md** - Detailed extraction methodology and results
-- **ift_website_roadmap.md** - Original development roadmap
 - **human_ift_proteins_complete.md** - Human IFT protein reference
 - **chlamydomonas_ift_proteins_complete.md** - Chlamydomonas IFT protein reference
-- **session_summary.txt** - Initial setup session notes
+- **import_from_v4_originals_FIXED.mjs** - Main import script
+- **drop_tables.mjs** - Database reset script
+- **find_v4_json.sh** - Finds all v4.json source files
 
 ---
 
 **Project Status**: ✅ Deployed and operational
 **Last Updated**: 2025-11-01
-**Database Status**: ✅ Populated (1,147 interactions)
+**Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
+**Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main)
