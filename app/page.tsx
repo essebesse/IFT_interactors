@@ -45,31 +45,18 @@ export default function Home() {
   const [secondaryProtein, setSecondaryProtein] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [secondaryLoading, setSecondaryLoading] = useState(false);
-  const [filterMode, setFilterMode] = useState<'v3' | 'ipsae'>('v3');
   const [confidenceFilters, setConfidenceFilters] = useState({
     'High': true,
     'Medium': true,
     'Low': true,
-    'AF2': true,
-  });
-  const [ipsaeFilters, setIpsaeFilters] = useState({
-    'High': true,
-    'Medium': true,
-    'Low': true,  // Low/Ambiguous ON by default
   });
   const [baitProteins, setBaitProteins] = useState([]);
   const [selectedBait, setSelectedBait] = useState('');
   const [networkDimensions, setNetworkDimensions] = useState({ width: 450, height: 620 });
 
-  // Complex-related state
-  const [searchMode, setSearchMode] = useState<'protein' | 'complex'>('protein');
-  const [complexes, setComplexes] = useState([]);
-  const [selectedComplex, setSelectedComplex] = useState('');
-  const [currentComplexInfo, setCurrentComplexInfo] = useState<any>(null);
-
   const fetchBaitProteins = async () => {
     try {
-      const res = await fetch(`/api/baits?mode=${filterMode}`);
+      const res = await fetch(`/api/baits`);
       if (res.ok) {
         const data = await res.json();
         setBaitProteins(data.baits || []);
@@ -79,98 +66,11 @@ export default function Home() {
     }
   };
 
-  const fetchComplexes = async () => {
-    try {
-      const res = await fetch(`/api/complexes?mode=${filterMode}`);
-      if (res.ok) {
-        const data = await res.json();
-        setComplexes(data.complexes || []);
-      }
-    } catch (error) {
-      console.error('Failed to fetch complexes:', error);
-    }
-  };
-
   const handleBaitSelection = (baitId: string) => {
     setSelectedBait(baitId);
     setSearchTerm(baitId);
-    setSearchMode('protein');
-    setSelectedComplex('');
-    setCurrentComplexInfo(null); // Clear complex info when switching to protein mode
     setSecondaryInteractions([]); // Clear secondary when changing main search
     setSecondaryProtein('');
-  };
-
-  const handleComplexSelection = async (complexName: string) => {
-    setSelectedComplex(complexName);
-    setSelectedBait('');
-    setSearchMode('complex');
-    setSecondaryInteractions([]);
-    setSecondaryProtein('');
-
-    if (!complexName) {
-      setInteractions([]);
-      setCurrentComplexInfo(null);
-      return;
-    }
-
-    // Fetch complex interactions
-    setLoading(true);
-
-    try {
-      const cacheBuster = Date.now();
-
-      // Build URL with mode parameter for v4 filtering
-      let url = `/api/complex-interactions/${complexName}?t=${cacheBuster}&mode=${filterMode}`;
-
-      // Add confidence filters
-      const activeFilters = filterMode === 'ipsae' ? ipsaeFilters : confidenceFilters;
-      const enabledLevels = Object.entries(activeFilters)
-        .filter(([_, enabled]) => enabled)
-        .map(([level]) => level)
-        .join(',');
-
-      if (enabledLevels) {
-        url += `&confidence=${enabledLevels}`;
-      }
-
-      const res = await fetch(url);
-      if (res.ok) {
-        const response = await res.json();
-        setCurrentComplexInfo(response.complex);
-
-        // For v4 mode, API filters by ipSAE confidence (accurate server-side)
-        // For v3 mode, ALWAYS apply client-side filtering (recalculates confidence from metrics)
-        let data = response.interactions || [];
-
-        // Apply client-side filtering in v3 mode (server returns all v3 data)
-        // v4 mode is already filtered by API based on ipSAE confidence
-        if (filterMode === 'v3') {
-          data = data.filter((inter: any) => {
-            const level = getConfidenceLevel(inter);
-            return activeFilters[level as keyof typeof activeFilters];
-          });
-        }
-
-        // Auto-detect optimal mode: If ALL interactions have ipSAE scores (v4 data),
-        // and we're in v3 mode, suggest switching to v4
-        if (filterMode === 'v3' && response.interactions && response.interactions.length > 0) {
-          const allHaveIpsae = response.interactions.every((i: any) => i.ipsae !== null && i.analysis_version === 'v4');
-          if (allHaveIpsae) {
-            console.log('Complex has only v4 (ipSAE) data, auto-switching to ipSAE mode');
-            setFilterMode('ipsae');
-            // Will trigger re-fetch via useEffect
-            return;
-          }
-        }
-
-        setInteractions(data);
-      }
-    } catch (error) {
-      console.error('Failed to fetch complex interactions:', error);
-    } finally {
-      setLoading(false);
-    }
   };
 
   const handleNodeClick = async (nodeId: string, nodeName: string) => {
@@ -180,14 +80,13 @@ export default function Home() {
     try {
       const cacheBuster = Date.now();
 
-      // Build URL with mode and confidence filters
-      const activeFilters = filterMode === 'ipsae' ? ipsaeFilters : confidenceFilters;
-      const enabledLevels = Object.entries(activeFilters)
+      // Build URL with confidence filters
+      const enabledLevels = Object.entries(confidenceFilters)
         .filter(([_, enabled]) => enabled)
         .map(([level]) => level)
         .join(',');
 
-      let url = `/api/interactions/${nodeId}?t=${cacheBuster}&mode=${filterMode}`;
+      let url = `/api/interactions/${nodeId}?t=${cacheBuster}`;
       if (enabledLevels) {
         url += `&confidence=${enabledLevels}`;
       }
@@ -280,23 +179,17 @@ export default function Home() {
     if (!searchTerm) return;
     setLoading(true);
 
-    // Clear complex info when doing manual search (protein mode)
-    setSearchMode('protein');
-    setSelectedComplex('');
-    setCurrentComplexInfo(null);
-
     try {
       console.log('Fetching data for:', searchTerm);
       const cacheBuster = Date.now();
 
-      // Build URL with mode and confidence filters
-      const activeFilters = filterMode === 'ipsae' ? ipsaeFilters : confidenceFilters;
-      const enabledLevels = Object.entries(activeFilters)
+      // Build URL with confidence filters
+      const enabledLevels = Object.entries(confidenceFilters)
         .filter(([_, enabled]) => enabled)
         .map(([level]) => level)
         .join(',');
 
-      let url = `/api/interactions/${searchTerm}?t=${cacheBuster}&mode=${filterMode}`;
+      let url = `/api/interactions/${searchTerm}?t=${cacheBuster}`;
       if (enabledLevels) {
         url += `&confidence=${enabledLevels}`;
       }
@@ -341,36 +234,12 @@ export default function Home() {
     }
   };
 
-  // Re-fetch data when v3 filters change (only in v3 mode)
+  // Re-fetch data when confidence filters change
   useEffect(() => {
-    if (filterMode !== 'v3') return;
-
-    if (searchMode === 'complex' && selectedComplex) {
-      handleComplexSelection(selectedComplex);
-    } else if (searchMode === 'protein' && searchTerm) {
+    if (searchTerm) {
       handleSearch();
     }
   }, [confidenceFilters]);
-
-  // Re-fetch data when v4 filters change (only in v4 mode)
-  useEffect(() => {
-    if (filterMode !== 'ipsae') return;
-
-    if (searchMode === 'complex' && selectedComplex) {
-      handleComplexSelection(selectedComplex);
-    } else if (searchMode === 'protein' && searchTerm) {
-      handleSearch();
-    }
-  }, [ipsaeFilters]);
-
-  // Re-fetch data when mode changes (v3 ↔ v4)
-  useEffect(() => {
-    if (searchMode === 'complex' && selectedComplex) {
-      handleComplexSelection(selectedComplex);
-    } else if (searchMode === 'protein' && searchTerm) {
-      handleSearch();
-    }
-  }, [filterMode]);
 
   // Handle responsive sizing
   useEffect(() => {
@@ -389,19 +258,12 @@ export default function Home() {
   // Fetch data on initial load
   useEffect(() => {
     fetchBaitProteins();
-    // fetchComplexes(); // Removed: IFT project doesn't use protein complexes
     handleSearch();
   }, []);
 
-  // Re-fetch dropdown lists when mode changes (to show accurate counts)
-  useEffect(() => {
-    fetchBaitProteins();
-    // fetchComplexes(); // Removed: IFT project doesn't use protein complexes
-  }, [filterMode]);
-
   // Auto-search when bait protein is selected
   useEffect(() => {
-    if (selectedBait && searchMode === 'protein') {
+    if (selectedBait) {
       handleSearch();
     }
   }, [selectedBait]);
@@ -416,17 +278,7 @@ export default function Home() {
 
   // Get confidence level from database (calculated at import/migration time)
   const getConfidenceLevel = (inter: any): string => {
-    // In v4 mode, use ipSAE confidence
-    if (filterMode === 'ipsae' && inter.ipsae_confidence) {
-      return inter.ipsae_confidence;
-    }
-
-    // AF2 predictions have NULL confidence - display as "AF2"
-    if (inter.alphafold_version === 'AF2') {
-      return 'AF2';
-    }
-
-    // For AF3 in v3 mode, recalculate confidence based on metrics
+    // Recalculate confidence based on metrics
     // (don't rely on database value which might be in old format)
     const iptm = parseFloat(inter.iptm) || 0;
     const contacts = parseInt(inter.contacts_pae_lt_3) || 0;
@@ -461,7 +313,6 @@ export default function Home() {
     'High': '#28a745',                     // Green
     'Medium': '#ffc107',                   // Orange
     'Low': '#dc3545',                      // Red
-    'AF2': '#6c757d',                      // Gray
   };
 
   return (
@@ -489,39 +340,6 @@ export default function Home() {
                 </Form.Text>
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Select Protein Complex</Form.Label>
-                <Form.Select
-                  value={selectedComplex}
-                  onChange={(e) => handleComplexSelection(e.target.value)}
-                  className="mb-2"
-                >
-                  <option value="">Choose a complex...</option>
-                  {complexes.map((complex: any) => (
-                    <option key={complex.id} value={complex.complex_name}>
-                      {complex.display_name} ({complex.interaction_count} interactions)
-                    </option>
-                  ))}
-                </Form.Select>
-                <Form.Text className="text-muted">
-                  Select from {complexes.length} available complexes
-                </Form.Text>
-                {currentComplexInfo && (
-                  <div className="mt-2 p-2 bg-light border rounded">
-                    <small className="text-muted">
-                      <strong>Components:</strong><br />
-                      {currentComplexInfo.proteins?.map((p: any, i: number) => (
-                        <span key={i}>
-                          {i > 0 && ' + '}
-                          {p.organism_code && `${p.organism_code}:`}
-                          {p.gene_name || p.uniprot_id} ({p.uniprot_id})
-                        </span>
-                      ))}
-                    </small>
-                  </div>
-                )}
-              </Form.Group>
-
               <hr />
               
               <Form onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
@@ -542,85 +360,19 @@ export default function Home() {
 
               <hr />
 
-              <h5>Analysis Mode</h5>
-              <Form className="mb-3">
-                <Form.Check
-                  type="radio"
-                  id="mode-v3"
-                  name="filterMode"
-                  label="Interface Quality (v3)"
-                  checked={filterMode === 'v3'}
-                  onChange={() => setFilterMode('v3')}
-                />
-                <Form.Text className="text-muted d-block mb-2" style={{fontSize: '0.85em', marginLeft: '1.5em'}}>
-                  iPTM + PAE contacts + interface pLDDT
-                </Form.Text>
-
-                <Form.Check
-                  type="radio"
-                  id="mode-ipsae"
-                  name="filterMode"
-                  label="ipSAE Scoring (v4)"
-                  checked={filterMode === 'ipsae'}
-                  onChange={() => setFilterMode('ipsae')}
-                />
-                <Form.Text className="text-muted d-block" style={{fontSize: '0.85em', marginLeft: '1.5em'}}>
-                  More stringent, fewer false positives
-                </Form.Text>
-              </Form>
-
-              <hr />
-
               <h5>Confidence Levels</h5>
-              {filterMode === 'v3' ? (
-                <Form>
-                  {Object.keys(confidenceFilters).map(level => (
-                    <Form.Check
-                      key={level}
-                      type="checkbox"
-                      id={`check-${level}`}
-                      label={level}
-                      checked={(confidenceFilters as any)[level]}
-                      onChange={(e) => setConfidenceFilters(prev => ({ ...prev, [level]: e.target.checked }))}
-                    />
-                  ))}
-                </Form>
-              ) : (
-                <Form>
+              <Form>
+                {Object.keys(confidenceFilters).map(level => (
                   <Form.Check
+                    key={level}
                     type="checkbox"
-                    id="ipsae-high"
-                    label="High (>0.7)"
-                    checked={ipsaeFilters.High}
-                    onChange={(e) => setIpsaeFilters(prev => ({ ...prev, High: e.target.checked }))}
+                    id={`check-${level}`}
+                    label={level}
+                    checked={(confidenceFilters as any)[level]}
+                    onChange={(e) => setConfidenceFilters(prev => ({ ...prev, [level]: e.target.checked }))}
                   />
-                  <Form.Text className="text-muted d-block mb-2" style={{fontSize: '0.8em', marginLeft: '1.5em'}}>
-                    Strong evidence
-                  </Form.Text>
-
-                  <Form.Check
-                    type="checkbox"
-                    id="ipsae-medium"
-                    label="Medium (0.5-0.7)"
-                    checked={ipsaeFilters.Medium}
-                    onChange={(e) => setIpsaeFilters(prev => ({ ...prev, Medium: e.target.checked }))}
-                  />
-                  <Form.Text className="text-muted d-block mb-2" style={{fontSize: '0.8em', marginLeft: '1.5em'}}>
-                    Very promising
-                  </Form.Text>
-
-                  <Form.Check
-                    type="checkbox"
-                    id="ipsae-low"
-                    label="Low (0.3-0.5)"
-                    checked={ipsaeFilters.Low}
-                    onChange={(e) => setIpsaeFilters(prev => ({ ...prev, Low: e.target.checked }))}
-                  />
-                  <Form.Text className="text-muted d-block" style={{fontSize: '0.8em', marginLeft: '1.5em'}}>
-                    Ambiguous, needs inspection
-                  </Form.Text>
-                </Form>
-              )}
+                ))}
+              </Form>
             </Card.Body>
           </Card>
         </Col>
@@ -641,12 +393,8 @@ export default function Home() {
                       width={networkDimensions.width}
                       height={networkDimensions.height}
                       onNodeClick={handleNodeClick}
-                      title={searchMode === 'complex' && currentComplexInfo
-                        ? `${currentComplexInfo.display_name} Interactions`
-                        : `${searchTerm} Interactions`}
-                      centerProtein={searchMode === 'complex' && currentComplexInfo
-                        ? currentComplexInfo.complex_name
-                        : searchTerm}
+                      title={`${searchTerm} Interactions`}
+                      centerProtein={searchTerm}
                       showLayoutControl={true}
                       legendType="nodes"
                     />
@@ -654,8 +402,8 @@ export default function Home() {
                     <div className="d-flex justify-content-center align-items-center h-100">
                       <div className="text-center">
                         <h5>No interactions found</h5>
-                        <p>{searchMode === 'complex' ? 'Select a complex' : `Search term: ${searchTerm}`}</p>
-                        <p>{searchMode === 'complex' ? 'Choose a complex from the dropdown' : 'Click a bait protein to start'}</p>
+                        <p>Search term: {searchTerm}</p>
+                        <p>Click a bait protein to start</p>
                       </div>
                     </div>
                   )}
@@ -704,15 +452,13 @@ export default function Home() {
               <Table striped bordered hover responsive>
                 <thead>
                   <tr>
-                    <th>{searchMode === 'complex' ? 'Bait Complex' : 'Bait'}</th>
+                    <th>Bait</th>
                     <th>Prey</th>
-                    {filterMode === 'ipsae' && <th>ipSAE</th>}
                     <th>Confidence</th>
                     <th>iPTM</th>
                     <th>iPAE &lt;3Å</th>
                     <th>iPAE &lt;6Å</th>
                     <th>ipLDDT</th>
-                    <th>AlphaFold</th>
                     <th>Experimental</th>
                   </tr>
                 </thead>
@@ -720,28 +466,16 @@ export default function Home() {
                   {interactions.map((inter: any, index) => (
                     <tr key={index}>
                       <td>
-                        {searchMode === 'complex' && currentComplexInfo ? (
-                          <span>
-                            <strong>{currentComplexInfo.display_name}</strong>
-                            <br />
-                            <small className="text-muted">
-                              {currentComplexInfo.proteins?.map((p: any) => p.gene_name).join(' + ')}
-                            </small>
-                          </span>
-                        ) : (
-                          <>
-                            {getProteinDisplayName(inter, 'bait', true)} (
-                            <a
-                              href={getProteinLink(inter.bait_uniprot, inter.bait_organism_code)}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-decoration-none"
-                            >
-                              {inter.bait_uniprot}
-                            </a>
-                            )
-                          </>
-                        )}
+                        {getProteinDisplayName(inter, 'bait', true)} (
+                        <a
+                          href={getProteinLink(inter.bait_uniprot, inter.bait_organism_code)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-decoration-none"
+                        >
+                          {inter.bait_uniprot}
+                        </a>
+                        )
                       </td>
                       <td>
                         {getProteinDisplayName(inter, 'prey', true)} (
@@ -755,29 +489,10 @@ export default function Home() {
                         </a>
                         )
                       </td>
-                      {filterMode === 'ipsae' && (
-                        <td>
-                          {inter.ipsae !== null && inter.ipsae !== undefined ? (
-                            <strong style={{
-                              color: inter.ipsae_confidence === 'High' ? '#28a745' :
-                                     inter.ipsae_confidence === 'Medium' ? '#ffc107' : '#dc3545'
-                            }}>
-                              {inter.ipsae.toFixed(3)}
-                            </strong>
-                          ) : (
-                            <span className="text-muted">N/A</span>
-                          )}
-                        </td>
-                      )}
                       <td>
                         {(() => {
-                          const level = filterMode === 'ipsae' && inter.ipsae_confidence
-                            ? inter.ipsae_confidence
-                            : getConfidenceLevel(inter);
-                          const color = filterMode === 'ipsae' && inter.ipsae_confidence
-                            ? (inter.ipsae_confidence === 'High' ? '#28a745' :
-                               inter.ipsae_confidence === 'Medium' ? '#ffc107' : '#dc3545')
-                            : (confidenceColors[level] || '#000');
+                          const level = getConfidenceLevel(inter);
+                          const color = confidenceColors[level] || '#000';
                           return (
                             <span style={{ color }}>
                               ● {level}
@@ -799,11 +514,6 @@ export default function Home() {
                         }
                       </td>
                       <td>{inter.interface_plddt ? inter.interface_plddt.toFixed(1) : 'N/A'}</td>
-                      <td>
-                        <span className={`badge ${inter.alphafold_version === 'AF3' ? 'bg-primary' : 'bg-secondary'}`}>
-                          {inter.alphafold_version}
-                        </span>
-                      </td>
                       <td>
                         {inter.experimental_validation && inter.experimental_validation.validated ? (
                           <OverlayTrigger
@@ -841,8 +551,8 @@ export default function Home() {
         </Col>
       </Row>
 
-      {/* Bait Protein/Complex Source Paths Section */}
-      {interactions.length > 0 && searchMode === 'protein' && (
+      {/* Bait Protein Source Paths Section */}
+      {interactions.length > 0 && (
         <Row className="mt-4">
           <Col>
             <Card className="shadow-sm">
@@ -892,47 +602,6 @@ export default function Home() {
                         </td>
                       </tr>
                     ))}
-                  </tbody>
-                </Table>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      )}
-
-      {/* Complex Source Paths Section */}
-      {interactions.length > 0 && searchMode === 'complex' && currentComplexInfo && (
-        <Row className="mt-4">
-          <Col>
-            <Card className="shadow-sm">
-              <Card.Header>Complex Source Paths</Card.Header>
-              <Card.Body>
-                <Table striped bordered hover responsive size="sm">
-                  <thead>
-                    <tr>
-                      <th>Complex</th>
-                      <th>Source Folder Paths</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <strong>{currentComplexInfo.display_name}</strong>
-                        <br />
-                        <small className="text-muted">
-                          {currentComplexInfo.proteins?.map((p: any) =>
-                            `${p.organism_code}:${p.gene_name}`
-                          ).join(' + ')}
-                        </small>
-                      </td>
-                      <td>
-                        {Array.from(new Set(interactions.map((i: any) => i.source_path))).map((path: any, idx: number) => (
-                          <div key={idx}>
-                            <code className="text-muted small">{path}</code>
-                          </div>
-                        ))}
-                      </td>
-                    </tr>
                   </tbody>
                 </Table>
               </Card.Body>

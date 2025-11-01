@@ -166,6 +166,15 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 - **human_ift_proteins_complete.md** - Complete list of human IFT proteins with UniProt IDs
 - **chlamydomonas_ift_proteins_complete.md** - Complete list of Chlamydomonas IFT proteins
 
+### Data Extraction Scripts (Python)
+- **ift_protein_extractor.py** - Original extraction script from main database
+- **ift_protein_extractor_updated.py** - Updated version with v4 analysis support
+- **create_publication_tables.py** - Generates publication-ready CSV tables
+- **test_single_protein.py** - Test script for single protein queries
+- **api_endpoint_discovery.py** - API endpoint testing utility
+
+**Note**: These scripts were used to extract data from the main ciliaaf3predictions database. They are not needed for normal operation since the database is pre-populated.
+
 ## Database Schema
 
 ```sql
@@ -240,6 +249,19 @@ npm run build        # Test production build
 npm start            # Run production build locally
 ```
 
+### Type Checking and Linting
+```bash
+npx tsc --noEmit     # TypeScript type checking (no build output)
+npm run lint         # ESLint checking
+```
+
+### Database Quick Checks
+```bash
+# Quick protein count
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+node -e "const { sql } = require('@vercel/postgres'); sql\`SELECT COUNT(*) FROM proteins\`.then(r => console.log('Proteins:', r.rows[0].count));"
+```
+
 ## API Routes
 
 All routes are marked as `force-dynamic` to prevent build-time database access:
@@ -272,6 +294,24 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 ### Data Export
 - CSV export of interaction tables
 - Network visualization screenshots
+
+## Frontend Architecture
+
+### Component Structure
+- **app/page.tsx** - Main application page with search, filters, and results table
+- **app/layout.tsx** - Root layout with metadata and global styles
+- **components/NetworkVisualization.tsx** - Force-directed graph visualization using react-force-graph-2d
+
+### Key Frontend Features
+- **Client-side filtering** - Results filtered by confidence and analysis version
+- **Dynamic network graph** - Interactive D3-based visualization with node clicking
+- **Responsive design** - Bootstrap-based responsive UI
+- **State management** - React hooks for search, filters, and selected protein
+
+### Styling
+- Bootstrap 5.3.3 for base styles
+- Custom CSS for confidence badges (High=green, Medium=orange, Low=red)
+- react-bootstrap components for UI elements
 
 ## Publication Workflow
 
@@ -327,6 +367,16 @@ git branch -D ift-temp-branch
 **Issue**: API routes return 500 errors
 **Solution**: Verify `POSTGRES_URL` environment variable is set in Vercel dashboard
 **Check**: Visit `/api/debug` endpoint to test connection
+
+### Wrong Database Connection String
+**Issue**: Accidentally using main Cilia project database URL instead of IFT database
+**Symptom**: Wrong data appears, or unexpected proteins in results
+**Solution**:
+1. Check Vercel environment variable is set to IFT database:
+   - **Correct (IFT)**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
+   - **Wrong (Main Cilia)**: `postgresql://neondb_owner:npg_q2HCPRojzJ0i@ep-falling-shadow-agzy57k0-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
+2. Verify in Vercel: Project Settings → Environment Variables → `POSTGRES_URL`
+3. Redeploy after fixing
 
 ### Empty Results
 **Issue**: Search returns no data
