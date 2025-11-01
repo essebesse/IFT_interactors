@@ -1,0 +1,9 @@
+Protein Complex,Total Interactions,High Confidence,Medium Confidence,Low Confidence,v4 Analysis,Experimentally Validated,High Conf %,v4 Analysis %
+IFT-B1,347,67,67,194,151,0,19.3%,43.5%
+BBSome,267,29,50,162,130,0,10.9%,48.7%
+IFT-A,212,17,24,169,97,22,8.0%,45.8%
+IFT-associated,159,10,25,112,80,3,6.3%,50.3%
+IFT-B2,150,23,29,90,52,0,15.3%,34.7%
+Motor,12,1,0,11,4,0,8.3%,33.3%
+
+TOTAL,1147,147,195,738,514,25,12.8%,44.8%

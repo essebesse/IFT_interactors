@@ -1,0 +1,20 @@
+IFT and BBSome Protein Extraction Statistics
+============================================================
+Extraction timestamp: 2025-10-31T13:16:53.887577
+Total proteins queried: 69
+Proteins successfully processed: 69
+Proteins failed: 0
+Total interactions found: 1147
+
+Analysis Version Breakdown:
+v4 interactions: 514
+v3 interactions: 633
+
+Confidence Level Breakdown:
+High confidence: 147
+Medium confidence: 195
+Low confidence: 738
+
+Experimental Validation:
+Validated interactions: 25
+

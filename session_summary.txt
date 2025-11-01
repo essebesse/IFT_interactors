@@ -1,0 +1,44 @@
+
+# Session Summary: IFT_interactors Vercel Project Setup
+
+## 1. Objective
+
+The goal was to create a new, separate Vercel web application named `IFT_interactors`. This application would display protein-protein interaction data from a new Neon Postgres database. The project was to be based on the code from an existing Vercel project (`ciliaaf3predictions`).
+
+## 2. Steps Completed Successfully
+
+- **Project Analysis**: We analyzed the existing project and confirmed it is a Next.js 14 application using TypeScript, React, Bootstrap, and D3.js.
+- **GitHub Repository**: A new GitHub repository was successfully created at `github.com/essebesse/IFT_interactors`.
+- **Code Migration**: The code from the old project was successfully pushed to the new repository's `main` branch.
+- **Database Creation**: A new, empty database was created on Neon, and the connection string was obtained.
+- **Vercel Project Creation**: A new project was created on Vercel and linked to the `IFT_interactors` GitHub repository.
+- **Database Setup Script**: I created a Node.js script named `setup_database.mjs` to create the required database tables and populate them with data from the `ift_bbsome_extraction_20251031_131653.json` file.
+
+## 3. The Problem: Vercel Build Failure
+
+The Vercel deployment repeatedly fails during the build step (`next build`).
+
+- **Error Message**: `TypeError: Invalid URL`
+- **Location**: The error occurs when Next.js tries to pre-render the API routes (e.g., `/api/baits` and `/api/complexes`).
+- **Root Cause**: The stack trace shows the error comes from the database client library (`@vercel/postgres` or its dependencies) when it tries to parse the database connection string. This indicates that the `POSTGRES_URL` environment variable is not being correctly read during the build process.
+
+## 4. Debugging Steps Performed
+
+To resolve the build failure, we took the following steps:
+
+1.  **Verified Environment Variable Name**: The user confirmed the variable in Vercel is named exactly `POSTGRES_URL`.
+2.  **Verified Environment Variable Value**: The user confirmed the connection string was copied directly from the Neon dashboard and is the correct value.
+3.  **Verified Environment Variable Scope**: The user confirmed that the variable is applied to all environments, including **Production**.
+4.  **Ruled out Copy-Paste Errors**: The user deleted and re-entered the variable from scratch to eliminate the possibility of hidden characters. The error persisted.
+
+## 5. Current Status and Proposed Next Step
+
+We have confirmed the issue is not the database being empty, but rather that the connection string is not available to the build environment for an unknown reason.
+
+The next logical step is to **add a debug line to the application code**. The plan was to edit one of the failing API route files (e.g., `app/api/baits/route.ts`) to add the following line:
+
+```javascript
+console.log('Build-time POSTGRES_URL:', process.env.POSTGRES_URL);
+```
+
+Pushing this change would make the Vercel build log print the exact value the build process is seeing, which would definitively diagnose the problem (e.g., if it's `undefined`, partially hidden, or malformed).

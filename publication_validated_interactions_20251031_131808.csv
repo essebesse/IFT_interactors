@@ -1,0 +1,26 @@
+Bait Gene,Bait Complex,Prey Gene,Prey UniProt,Confidence,iPTM,ipSAE Score,Analysis Version,Validation Date,Validation Method,Validation Source,Notes
+IFT122,IFT-A,WDR19,Q8NEZ3,High,0.55,0.687672089146728,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,WDR19,Q8NEZ3,High,0.55,0.687672089146728,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,WDR35,Q9P2L0,High,0.71,0.6582768961084079,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+WDR35,IFT-A,IFT122,Q9HBG6,High,0.71,0.6455525775275816,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+WDR35,IFT-A,IFT43,Q96FT9,High,0.41,0.5954743949828497,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,WDR35,Q9P2L0,High,0.43,0.5782012782125031,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,WDR35,Q9P2L0,High,0.42,0.5973591714231747,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+WDR35,IFT-A,WDR19,Q8NEZ3,Low,0.47,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,IFT140,Q96RY7,Low,0.44,0.5254043302145674,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21B,Q7Z4L5,Low,0.4,0.45264912450621897,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21B,Q7Z4L5,Low,0.39,0.45232167189699235,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,TTC21B,Q7Z4L5,Low,0.46,0.5564505510440019,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+WDR35,IFT-A,TTC21B,Q7Z4L5,Low,0.42,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,IFT140,Q96RY7,Low,0.44,0.5254043302145674,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,TTC21B,Q7Z4L5,Low,0.46,0.5564505510440019,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT122,IFT-A,NHERF1,O14745,Low,0.34,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21B,Q7Z4L5,Low,0.4,0.45264912450621897,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21B,Q7Z4L5,Low,0.39,0.45232167189699235,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21A,Q8NDW8,Low,0.38,0.4625022847384209,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TTC21A,Q8NDW8,Low,0.37,0.4582450141993683,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,GSK3A,P49840,Low,0.47,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-A,TULP3,O75386,Low,0.42,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-associated,TULP3,O75386,Low,0.42,,v3,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-associated,TTC21A,Q8NDW8,Low,0.38,0.4625022847384209,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
+IFT43,IFT-associated,TTC21A,Q8NDW8,Low,0.37,0.4582450141993683,v4,2025-10-30,PD_MS,Tina/Carsten,IFT-A complex validation - skeletal ciliopathy project
