@@ -46,7 +46,6 @@ export async function GET(
       i.interface_plddt,
       i.ipsae,
       i.ipsae_confidence,
-      i.ipsae_pae_cutoff,
       i.analysis_version,
       i.experimental_validation,
       bait.uniprot_id as bait_uniprot,
