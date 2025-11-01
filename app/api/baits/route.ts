@@ -26,10 +26,7 @@ export async function GET(request: NextRequest) {
   const client = await db.connect();
 
   try {
-    const { searchParams } = new URL(request.url);
-    const mode = searchParams.get('mode') || 'v3';
-
-    let query = `
+    const query = `
       SELECT DISTINCT
         bait.uniprot_id,
         bait.gene_name,
@@ -38,14 +35,6 @@ export async function GET(request: NextRequest) {
         COUNT(i.id) as interaction_count
       FROM interactions i
       JOIN proteins bait ON i.bait_protein_id = bait.id
-    `;
-
-    // In v4 (ipSAE) mode, only count interactions with ipSAE scores
-    if (mode === 'ipsae') {
-      query += ` WHERE i.ipsae IS NOT NULL AND i.analysis_version = 'v4'`;
-    }
-
-    query += `
       GROUP BY bait.uniprot_id, bait.gene_name, bait.organism, bait.organism_code
       HAVING COUNT(i.id) > 0
       ORDER BY bait.gene_name ASC, bait.uniprot_id ASC
@@ -55,8 +44,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
       baits: rows,
-      count: rows.length,
-      mode: mode
+      count: rows.length
     });
   } catch (error) {
     console.error('Database Error:', error);
