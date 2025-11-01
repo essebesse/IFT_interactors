@@ -389,14 +389,14 @@ export default function Home() {
   // Fetch data on initial load
   useEffect(() => {
     fetchBaitProteins();
-    // fetchComplexes(); // Removed: IFT project doesn't use protein complexes
+    fetchComplexes();
     handleSearch();
   }, []);
 
   // Re-fetch dropdown lists when mode changes (to show accurate counts)
   useEffect(() => {
     fetchBaitProteins();
-    // fetchComplexes(); // Removed: IFT project doesn't use protein complexes
+    fetchComplexes();
   }, [filterMode]);
 
   // Auto-search when bait protein is selected
