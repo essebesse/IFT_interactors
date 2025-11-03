@@ -38,6 +38,45 @@ interface InteractionData {
   experimental_validation?: ValidationData | null;
 }
 
+// IFT and BBSome alias mapping
+const PROTEIN_ALIASES: { [key: string]: string } = {
+  // IFT-A Complex
+  'WDR19': 'IFT144',
+  'KIAA0590': 'IFT140',
+  'TTC21B': 'IFT139',
+  'WDR10': 'IFT122',
+  'WDR35': 'IFT121',
+  'C14orf179': 'IFT43',
+
+  // IFT-B Core (IFT-B1)
+  'TG737': 'IFT88',
+  'CDV1': 'IFT81',
+  'CCDC2': 'IFT74',
+  'TTC30A': 'IFT70',
+  'TTC30B': 'IFT70',
+  'NGD2': 'IFT52',
+  'C11orf2': 'IFT46',
+  'RABL4': 'IFT27',
+  'HSPB11': 'IFT25',
+  'RABL5': 'IFT22',
+  'TTC26': 'IFT56',
+
+  // IFT-B Peripheral (IFT-B2)
+  'KIAA1179': 'IFT172',
+  'WDR56': 'IFT80',
+  'ESRRBL1': 'IFT57',
+  'TRAF3IP1': 'IFT54',
+  'MIPT3': 'IFT54',
+  'CLUAP1': 'IFT38',
+  'C3orf30': 'IFT20',
+
+  // BBSome Complex
+  'ARL6': 'BBS3',
+  'TTC8': 'BBS8',
+  'PTHB1': 'BBS9',
+  'A8MTZ0': 'BBIP1'
+};
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('Q8NEZ3'); // Default search term for demo
   const [interactions, setInteractions] = useState([]);
@@ -123,7 +162,9 @@ export default function Home() {
     const displayName = geneName;
     const organismPrefix = organismCode ? `${organismCode}:` : '';
 
-    const fullDisplayName = `${organismPrefix}${displayName}`;
+    // Check if this gene has an IFT/BBS alias
+    const alias = geneName && PROTEIN_ALIASES[geneName] ? ` (${PROTEIN_ALIASES[geneName]})` : '';
+    const fullDisplayName = `${organismPrefix}${displayName}${alias}`;
 
     // If tooltip requested and name is truncated, render with tooltip
     if (includeTooltip && displayName && displayName.endsWith('...') && commonName) {
@@ -131,6 +172,7 @@ export default function Home() {
         <>
           {organismPrefix}
           {renderGeneNameWithTooltip(displayName, commonName)}
+          {alias}
         </>
       );
     }
@@ -329,11 +371,14 @@ export default function Home() {
                   className="mb-2"
                 >
                   <option value="">Choose a bait protein...</option>
-                  {baitProteins.map((bait: any) => (
-                    <option key={bait.uniprot_id} value={bait.uniprot_id}>
-                      {bait.organism_code ? `${bait.organism_code}:` : ''}{bait.gene_name} ({bait.uniprot_id}) - {bait.interaction_count} interactions
-                    </option>
-                  ))}
+                  {baitProteins.map((bait: any) => {
+                    const alias = bait.gene_name && PROTEIN_ALIASES[bait.gene_name] ? ` (${PROTEIN_ALIASES[bait.gene_name]})` : '';
+                    return (
+                      <option key={bait.uniprot_id} value={bait.uniprot_id}>
+                        {bait.organism_code ? `${bait.organism_code}:` : ''}{bait.gene_name}{alias} ({bait.uniprot_id}) - {bait.interaction_count} interactions
+                      </option>
+                    );
+                  })}
                 </Form.Select>
                 <Form.Text className="text-muted">
                   Select from {baitProteins.length} available bait proteins
@@ -551,64 +596,6 @@ export default function Home() {
         </Col>
       </Row>
 
-      {/* Bait Protein Source Paths Section */}
-      {interactions.length > 0 && (
-        <Row className="mt-4">
-          <Col>
-            <Card className="shadow-sm">
-              <Card.Header>Bait Protein Source Paths</Card.Header>
-              <Card.Body>
-                <Table striped bordered hover responsive size="sm">
-                  <thead>
-                    <tr>
-                      <th>Bait Protein</th>
-                      <th>Source Folder Path</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {Array.from(
-                      new Map(
-                        interactions
-                          .filter((inter: any) => inter.bait_uniprot) // Only show if bait_uniprot exists
-                          .map((inter: any) => [
-                            inter.bait_uniprot,
-                            {
-                              gene: inter.bait_gene,
-                              uniprot: inter.bait_uniprot,
-                              path: inter.source_path
-                            }
-                          ])
-                      ).values()
-                    )
-                    .filter((bait: any) => bait && bait.uniprot) // Extra safety: ensure bait and uniprot exist
-                    .map((bait: any, index) => (
-                      <tr key={index}>
-                        <td>
-                          <strong>{bait.gene || bait.uniprot}</strong> (
-                          <a
-                            href={getProteinLink(bait.uniprot)}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-decoration-none"
-                          >
-                            {bait.uniprot}
-                          </a>
-                          )
-                        </td>
-                        <td>
-                          <code className="text-muted small">
-                            {bait.path || 'N/A'}
-                          </code>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </Table>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      )}
     </Container>
   );
 }
