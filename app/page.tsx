@@ -322,37 +322,23 @@ export default function Home() {
     }
   }, [confidenceFilters]);
 
-  // Get confidence level from database (calculated at import/migration time)
+  // Get confidence level based on ipSAE (v4 scoring)
   const getConfidenceLevel = (inter: any): string => {
-    // Recalculate confidence based on metrics
-    // (don't rely on database value which might be in old format)
-    const iptm = parseFloat(inter.iptm) || 0;
-    const contacts = parseInt(inter.contacts_pae_lt_3) || 0;
-    const ipLDDT = parseFloat(inter.interface_plddt) || 0;
+    // This database contains v4 data only - use ipSAE scoring
+    const ipsae = parseFloat(inter.ipsae);
 
-    // HIGH CONFIDENCE
-    const meetsHighCriteria =
-      iptm >= 0.7 ||
-      (contacts >= 40 && ipLDDT >= 80) ||
-      (contacts >= 30 && iptm >= 0.5 && ipLDDT >= 80);
+    if (!ipsae || isNaN(ipsae)) {
+      return 'Low';
+    }
 
-    const isExcludedFromHigh = iptm < 0.75 && contacts < 5;
-
-    if (meetsHighCriteria && !isExcludedFromHigh) {
+    // v4 ipSAE confidence thresholds
+    if (ipsae > 0.7) {
       return 'High';
-    }
-
-    // MEDIUM CONFIDENCE
-    if (
-      iptm >= 0.6 ||
-      (contacts >= 20 && ipLDDT >= 75) ||
-      (contacts >= 15 && iptm >= 0.45)
-    ) {
+    } else if (ipsae >= 0.5) {
       return 'Medium';
+    } else {
+      return 'Low';
     }
-
-    // LOW CONFIDENCE
-    return 'Low';
   };
 
   const confidenceColors: { [key: string]: string } = {
@@ -504,6 +490,7 @@ export default function Home() {
                     <th>Bait</th>
                     <th>Prey</th>
                     <th>Confidence</th>
+                    <th>ipSAE</th>
                     <th>iPTM</th>
                     <th>iPAE &lt;3Å</th>
                     <th>iPAE &lt;6Å</th>
@@ -548,6 +535,9 @@ export default function Home() {
                             </span>
                           );
                         })()}
+                      </td>
+                      <td>
+                        <strong>{inter.ipsae ? inter.ipsae.toFixed(3) : 'N/A'}</strong>
                       </td>
                       <td>{inter.iptm.toFixed(2)}</td>
                       <td>
