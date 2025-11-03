@@ -188,11 +188,37 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 - ❌ `Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
 
 ### Import Scripts
-- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 33 v4.json files above)
+
+**⚠️ IMPORTANT: Use incremental script to avoid duplicates!**
+
+- **import_from_v4_originals_INCREMENTAL.mjs** - ✅ **USE THIS** for adding new proteins (prevents duplicates)
+  - Checks database for existing baits before importing
+  - Only imports NEW data, skips baits already in database
+  - Safe to run multiple times
+
+- **import_from_v4_originals_FIXED.mjs** - ⚠️ Full import (re-imports ALL 33 files, causes duplicates!)
+  - Only use for initial database population or after `drop_tables.mjs`
+  - Running this on existing database WILL create duplicates
+
 - **deduplicate_interactions.mjs** - Removes duplicate interactions (keeps first occurrence)
+  - Use if duplicates accidentally created
+
 - **drop_tables.mjs** - Wipes database clean (drops all tables)
+  - ⚠️ DESTRUCTIVE: Only use for complete rebuild
+
 - **find_v4_json.sh** - Finds all IFT/BBS v4.json files in AF3_APD directory
 - **fetch_gene_names.mjs** - Fetches gene names from UniProt API for proteins without gene_name
+
+**Workflow for adding new proteins:**
+```bash
+# 1. Add new file path to import_from_v4_originals_INCREMENTAL.mjs
+# 2. Run incremental import (only imports new data)
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
+node import_from_v4_originals_INCREMENTAL.mjs
+
+# 3. Fetch gene names for new proteins
+node fetch_gene_names.mjs
+```
 
 ### Reference Lists
 - **human_ift_proteins_complete.md** - Complete list of human IFT proteins with UniProt IDs
