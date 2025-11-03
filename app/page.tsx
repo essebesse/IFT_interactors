@@ -360,6 +360,18 @@ export default function Home() {
 
   return (
     <Container fluid className="p-4 bg-light">
+      {/* Page Header */}
+      <Row className="mb-4">
+        <Col>
+          <div className="text-center">
+            <h1 className="mb-2">Interactors of the Ciliary Trafficking Machinery</h1>
+            <p className="text-muted mb-0">
+              <em>Homo sapiens</em> • AlphaFold3 Predictions • ipSAE Confidence Scoring
+            </p>
+          </div>
+        </Col>
+      </Row>
+
       <Row>
         <Col md={3}>
           <Card className="shadow-sm" style={{ height: '40vh' }}>
