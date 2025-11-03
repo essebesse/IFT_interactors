@@ -111,9 +111,9 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 ## Dataset Overview
 
 ### Data Statistics (as of 2025-11-03)
-- **Total Interactions**: 951
+- **Total Interactions**: 512 (all unique, duplicates removed)
 - **Unique Proteins**: 371 (all human Homo sapiens)
-- **Unique Baits**: 34 (22 IFT + 10 BBSome + 2 IFT-associated)
+- **Unique Baits**: 33 (22 IFT + 10 BBSome + 1 IFT-associated: TULP3)
 - **Analysis Version**: v4 only (ipSAE scoring)
 - **AlphaFold Version**: AF3 only
 - **Confidence Distribution**: Based on ipSAE scores
@@ -128,9 +128,8 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
   - IFT121, IFT122, IFT139, IFT140, IFT144
 - **BBSome Proteins (10)**:
   - BBS1, BBS2, BBS3 (ARL6), BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17 (LZTL1)
-- **IFT-Associated Proteins (2)**:
-  - TULP3 (Tubby-related protein 3 / RP26)
-  - Additional proteins may be added as data becomes available
+- **IFT-Associated Proteins (1)**:
+  - TULP3 (Tubby-related protein 3 / RP26) - 73 interactions
 
 ### Notable Interactions (Top 5 by ipSAE)
 1. IFT46 ↔ IFT56: ipSAE=0.828 (High)
@@ -140,7 +139,7 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 
 ## Data Source Files
 
-### Original AlphaPulldown v4.json Files (34 proteins)
+### Original AlphaPulldown v4.json Files (33 proteins)
 
 **⚠️ IMPORTANT**: Database is populated DIRECTLY from these original v4.json files, NOT from any extracted/processed files.
 
@@ -180,7 +179,7 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json`
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json`
 
-**IFT-Associated Proteins (2 files)**:
+**IFT-Associated Proteins (1 file)**:
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json` (TULP3 / RP26)
 
 **Excluded Files (Protein Complexes - NOT imported)**:
@@ -189,7 +188,8 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 - ❌ `Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
 
 ### Import Scripts
-- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 34 v4.json files above)
+- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 33 v4.json files above)
+- **deduplicate_interactions.mjs** - Removes duplicate interactions (keeps first occurrence)
 - **drop_tables.mjs** - Wipes database clean (drops all tables)
 - **find_v4_json.sh** - Finds all IFT/BBS v4.json files in AF3_APD directory
 - **fetch_gene_names.mjs** - Fetches gene names from UniProt API for proteins without gene_name
