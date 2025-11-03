@@ -40,7 +40,10 @@ const V4_JSON_FILES = [
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json',
-  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json'
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json',
+
+  // IFT-associated proteins
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json'
 ];
 
 // EXCLUDED COMPLEXES (not imported):

@@ -74,7 +74,11 @@ const PROTEIN_ALIASES: { [key: string]: string } = {
   'ARL6': 'BBS3',
   'TTC8': 'BBS8',
   'PTHB1': 'BBS9',
-  'A8MTZ0': 'BBIP1'
+  'LZTL1': 'BBS17',
+  'A8MTZ0': 'BBIP1',
+
+  // IFT-associated
+  'TULP3': 'RP26'
 };
 
 export default function Home() {
