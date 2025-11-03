@@ -54,46 +54,31 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 
 ### Git Operations
 
-⚠️ **CRITICAL**: This project lives inside the parent directory but has its own git repo. Due to the nested structure, pushes MUST be done using git subtree from the parent directory.
+✅ **SIMPLIFIED**: This project is now fully independent! Direct pushes work from the IFT subdirectory.
 
-**Method 1: Using Git Subtree (REQUIRED for pushes to work)**
+**Standard Workflow (RECOMMENDED)**
 ```bash
-# From the PARENT directory (Global_Analysis)
-cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis
-
-# Make changes in IFT_Interactors_paper/ subdirectory
-cd IFT_Interactors_paper
-# ... edit files ...
-git add [files]
-git commit -m "Your message"
-cd ..
-
-# Push using subtree split (strips directory prefix)
-git subtree split --prefix=IFT_Interactors_paper -b ift-temp-branch
-git push new_repo ift-temp-branch:main --force
-git branch -D ift-temp-branch  # Cleanup temp branch
-```
-
-**Why this is necessary:**
-- The project is nested in `Global_Analysis/IFT_Interactors_paper/`
-- Direct pushes from the subdirectory fail (SSH auth issues)
-- Pushing from parent with regular `git push` adds wrong path prefix (`IFT_Interactors_paper/app/...`)
-- `git subtree split` removes the prefix and pushes correct paths (`app/...`)
-
-**Method 2: Direct Push from Subdirectory (may not work due to auth)**
-```bash
+# Work directly in the IFT project directory
 cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper
+
+# Make changes, commit, and push
 git add [files]
 git commit -m "Your message"
-git push origin main  # ← May fail with "Permission denied (publickey)"
+git push origin main  # ← Works! GitHub token configured
 ```
+
+**Authentication Setup:**
+- GitHub personal access token is configured in the remote URL
+- No SSH keys needed
+- Token works for all your GitHub repositories
 
 **Important Notes:**
-- This project is in the parent directory's `.gitignore`
-- Changes here do NOT affect the main Cilia project
-- Each project deploys independently
-- Always use **Method 1** for reliable pushes
-- The `new_repo` remote in parent directory points to `https://github.com/essebesse/IFT_interactors.git`
+- ✅ This project is in the parent directory's `.gitignore`
+- ✅ Changes here do NOT affect the main Cilia project
+- ✅ Each project deploys independently
+- ✅ No more complex subtree workflows needed!
+- ❌ DO NOT push from parent directory - it will fail
+- ❌ DO NOT use `git subtree` commands - no longer necessary
 
 ### Complete Workflow: Edit → Commit → Push → Deploy
 
@@ -102,43 +87,39 @@ git push origin main  # ← May fail with "Permission denied (publickey)"
 cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper
 # ... edit files ...
 
-# 2. Commit locally
+# 2. Commit and push
 git add [files]
 git commit -m "Your message"
+git push origin main
 
-# 3. Push to GitHub using subtree (from parent directory)
-cd /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis
-git subtree split --prefix=IFT_Interactors_paper -b ift-temp-branch
-git push new_repo ift-temp-branch:main --force
-git branch -D ift-temp-branch
+# 3. Verify push succeeded
+git ls-remote origin main  # Should show your latest commit hash
 
-# 4. Verify push succeeded
-git ls-remote new_repo main  # Should show your latest commit hash
-
-# 5. Trigger deployment (if automatic webhook fails)
+# 4. Trigger deployment (if automatic webhook fails)
 curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
 
-# 6. Monitor deployment
+# 5. Monitor deployment
 # Visit: https://vercel.com/essebesse/ift-interactors
-# Check: Deployment is building correct commit from step 4
+# Check: Deployment is building correct commit from step 3
 ```
 
 **Common Issues:**
-- If `git push` says "Everything up-to-date" but you made changes → You forgot to commit in IFT_Interactors_paper subdirectory first
-- If Vercel builds old commit → Use manual deployment curl command (step 5)
-- If build fails with missing files → Files weren't committed; check `git status` in IFT_Interactors_paper
+- If `git push` fails with "Permission denied" → GitHub token may have expired; update remote URL with new token
+- If Vercel builds old commit → Use manual deployment curl command (step 4)
+- If build fails with missing files → Files weren't committed; check `git status`
 
 ## Dataset Overview
 
-### Data Statistics (as of 2025-11-01)
-- **Total Interactions**: 877
-- **Unique Proteins**: 331 (all human Homo sapiens)
-- **Unique Baits**: 32 (22 IFT + 10 BBSome proteins)
+### Data Statistics (as of 2025-11-03)
+- **Total Interactions**: 951
+- **Unique Proteins**: 371 (all human Homo sapiens)
+- **Unique Baits**: 34 (22 IFT + 10 BBSome + 2 IFT-associated)
 - **Analysis Version**: v4 only (ipSAE scoring)
 - **AlphaFold Version**: AF3 only
-- **High Confidence**: 32 interactions (3.6%)
-- **Medium Confidence**: 201 interactions (22.9%)
-- **Low Confidence**: 644 interactions (73.4%)
+- **Confidence Distribution**: Based on ipSAE scores
+  - High (ipSAE >0.7): Green badges
+  - Medium (ipSAE 0.5-0.7): Orange badges
+  - Low (ipSAE <0.5): Red badges
 
 ### Bait Protein Coverage
 - **IFT Proteins (22)**:
@@ -146,7 +127,10 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
   - IFT70 (TTC30A), IFT70 (TTC30B), IFT74, IFT80, IFT81, IFT88
   - IFT121, IFT122, IFT139, IFT140, IFT144
 - **BBSome Proteins (10)**:
-  - BBS1, BBS2, BBS3, BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17
+  - BBS1, BBS2, BBS3 (ARL6), BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17 (LZTL1)
+- **IFT-Associated Proteins (2)**:
+  - TULP3 (Tubby-related protein 3 / RP26)
+  - Additional proteins may be added as data becomes available
 
 ### Notable Interactions (Top 5 by ipSAE)
 1. IFT46 ↔ IFT56: ipSAE=0.828 (High)
@@ -156,7 +140,7 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 
 ## Data Source Files
 
-### Original AlphaPulldown v4.json Files (32 proteins)
+### Original AlphaPulldown v4.json Files (34 proteins)
 
 **⚠️ IMPORTANT**: Database is populated DIRECTLY from these original v4.json files, NOT from any extracted/processed files.
 
@@ -196,15 +180,19 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json`
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json`
 
+**IFT-Associated Proteins (2 files)**:
+- `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json` (TULP3 / RP26)
+
 **Excluded Files (Protein Complexes - NOT imported)**:
 - ❌ `Q96LB3_Q8WYA0_IFT74_81` - IFT74+IFT81 complex
 - ❌ `IFT52_46` - IFT52+IFT46 complex
 - ❌ `Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
 
 ### Import Scripts
-- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 32 v4.json files above)
+- **import_from_v4_originals_FIXED.mjs** - Main import script (reads from 34 v4.json files above)
 - **drop_tables.mjs** - Wipes database clean (drops all tables)
 - **find_v4_json.sh** - Finds all IFT/BBS v4.json files in AF3_APD directory
+- **fetch_gene_names.mjs** - Fetches gene names from UniProt API for proteins without gene_name
 
 ### Reference Lists
 - **human_ift_proteins_complete.md** - Complete list of human IFT proteins with UniProt IDs
