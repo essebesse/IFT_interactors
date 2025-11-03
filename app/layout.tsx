@@ -10,8 +10,8 @@ export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
 
 export const metadata: Metadata = {
-  title: "Interactors of the ciliary trafficking machinery (Homo sapiens)",
-  description: "Interactive visualization of IFT and BBSome protein-protein interactions from AlphaFold3 predictions",
+  title: "Ciliary Protein Interaction Network",
+  description: "IFT & BBSome protein interactions - Human AlphaFold3 predictions with ipSAE confidence scoring",
 };
 
 export default function RootLayout({
