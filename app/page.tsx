@@ -146,6 +146,13 @@ export default function Home() {
           return confidenceFilters[level as keyof typeof confidenceFilters];
         });
 
+        // Sort by ipSAE score (highest first)
+        data.sort((a: any, b: any) => {
+          const ipsaeA = parseFloat(a.ipsae) || 0;
+          const ipsaeB = parseFloat(b.ipsae) || 0;
+          return ipsaeB - ipsaeA;  // Descending order (highest first)
+        });
+
         setSecondaryInteractions(data);
       }
     } catch (error) {
@@ -159,22 +166,19 @@ export default function Home() {
     const prefix = isProtein;
     const commonName = inter[`${prefix}_common_name`];
     const geneName = inter[`${prefix}_gene`];
-    const organismCode = inter[`${prefix}_organism_code`];
 
     // For display, use gene name (potentially truncated)
     // common_name stores full description for tooltips
     const displayName = geneName;
-    const organismPrefix = organismCode ? `${organismCode}:` : '';
 
     // Check if this gene has an IFT/BBS alias
     const alias = geneName && PROTEIN_ALIASES[geneName] ? ` (${PROTEIN_ALIASES[geneName]})` : '';
-    const fullDisplayName = `${organismPrefix}${displayName}${alias}`;
+    const fullDisplayName = `${displayName}${alias}`;
 
     // If tooltip requested and name is truncated, render with tooltip
     if (includeTooltip && displayName && displayName.endsWith('...') && commonName) {
       return (
         <>
-          {organismPrefix}
           {renderGeneNameWithTooltip(displayName, commonName)}
           {alias}
         </>
@@ -268,6 +272,13 @@ export default function Home() {
       data = data.filter((inter: any) => {
         const level = getConfidenceLevel(inter);
         return confidenceFilters[level as keyof typeof confidenceFilters];
+      });
+
+      // Sort by ipSAE score (highest first)
+      data.sort((a: any, b: any) => {
+        const ipsaeA = parseFloat(a.ipsae) || 0;
+        const ipsaeB = parseFloat(b.ipsae) || 0;
+        return ipsaeB - ipsaeA;  // Descending order (highest first)
       });
 
       setInteractions(data as any);
@@ -365,7 +376,7 @@ export default function Home() {
                     const alias = bait.gene_name && PROTEIN_ALIASES[bait.gene_name] ? ` (${PROTEIN_ALIASES[bait.gene_name]})` : '';
                     return (
                       <option key={bait.uniprot_id} value={bait.uniprot_id}>
-                        {bait.organism_code ? `${bait.organism_code}:` : ''}{bait.gene_name}{alias} ({bait.uniprot_id}) - {bait.interaction_count} interactions
+                        {bait.gene_name}{alias} ({bait.uniprot_id}) - {bait.interaction_count} interactions
                       </option>
                     );
                   })}
