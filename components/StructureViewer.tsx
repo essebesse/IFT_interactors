@@ -148,7 +148,7 @@ export default function StructureViewer({
 
         const trajectory = await plugin.builders.structure.parseTrajectory(data, 'mmcif');
 
-        // Apply default preset (chains will be colored automatically)
+        // Apply default preset (chains will get default colors)
         await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
 
         setStructureLoaded(true);
@@ -192,41 +192,52 @@ export default function StructureViewer({
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
     try {
-      console.log('Applying simplified PAE highlighting...');
+      console.log('=== Starting PAE highlighting ===');
+      console.log('Contact data:', contactData.data.summary);
 
       // Get the structure
       const structures = plugin.managers.structure.hierarchy.current.structures;
-      if (structures.length === 0) return;
+      console.log('Found structures:', structures.length);
+
+      if (structures.length === 0) {
+        alert('No structure found for PAE highlighting');
+        return;
+      }
 
       const structure = structures[0];
       const structureData = structure.cell.obj?.data;
-      if (!structureData) return;
+      if (!structureData) {
+        alert('No structure data found');
+        return;
+      }
 
-      // Collect high-confidence interface residues (PAE < 6Å = Very High + High)
+      // Collect high-confidence interface residues (PAE < 6Å)
       const goodResidues = new Set<string>();
       for (const contact of contactData.data.contacts) {
-        if (contact.pae < 6) {  // Very High (<3) or High (3-5)
+        if (contact.pae < 6) {
           goodResidues.add(`${contact.chain1}:${contact.resi1}`);
           goodResidues.add(`${contact.chain2}:${contact.resi2}`);
         }
       }
+
+      console.log(`Found ${goodResidues.size} residues with PAE < 6Å`);
 
       if (goodResidues.size === 0) {
         alert('No high-confidence interface residues found (PAE < 6Å)');
         return;
       }
 
-      console.log(`Highlighting ${goodResidues.size} high-confidence interface residues`);
-
-      // Convert to array
+      // Convert to array and limit
       const residuesToHighlight = Array.from(goodResidues)
-        .slice(0, 100)  // Limit to 100 for performance
+        .slice(0, 100)
         .map(key => {
           const [chain, resi] = key.split(':');
           return { chain, resi: parseInt(resi) };
         });
 
-      // Create a single selection with all residues
+      console.log(`Highlighting first ${residuesToHighlight.length} residues`);
+
+      // Create selection
       const selection = Script.getStructureSelection(
         Q => Q.struct.generator.atomGroups({
           'residue-test': Q.core.logic.or(
@@ -241,7 +252,9 @@ export default function StructureViewer({
         structureData
       );
 
-      // Apply single overpaint in green
+      console.log('Selection created, applying overpaint...');
+
+      // Apply overpaint
       await setStructureOverpaint(
         plugin,
         structure.components,
@@ -249,10 +262,12 @@ export default function StructureViewer({
         async () => StructureSelection.toLociWithSourceUnits(selection)
       );
 
-      console.log(`✓ Highlighted ${residuesToHighlight.length} residues with PAE < 6Å`);
+      console.log('✓ PAE highlighting complete!');
+      alert(`✓ Highlighted ${residuesToHighlight.length} interface residues (PAE < 6Å) in green`);
 
     } catch (err) {
-      console.error('Error applying PAE highlighting:', err);
+      console.error('!!! Error applying PAE highlighting:', err);
+      alert(`Error: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   };
 
