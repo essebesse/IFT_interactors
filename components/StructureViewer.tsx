@@ -189,102 +189,25 @@ export default function StructureViewer({
 
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
-    try {
-      // Get the structure data
-      const structures = plugin.managers.structure.hierarchy.current.structures;
-      if (structures.length === 0) {
-        console.warn('No structure found');
-        return;
-      }
-
-      const structure = structures[0];
-      const structureData = structure.cell.obj?.data;
-      if (!structureData) {
-        console.warn('No structure data');
-        return;
-      }
-
-      // Color map based on PAE confidence
-      const colorMap = {
-        'Very High': Color(0x228b22),  // Dark green
-        'High': Color(0x00ff00),       // Lime green
-        'Medium': Color(0xffff00),     // Yellow
-        'Low': Color(0xff4500)         // Orange-red
-      };
-
-      // Group residues by confidence level for batch coloring
-      const residuesByConfidence: Record<string, Array<{chain: string, resi: number}>> = {
-        'Very High': [],
-        'High': [],
-        'Medium': [],
-        'Low': []
-      };
-
-      // Collect all interface residues
-      for (const contact of contactData.data.contacts) {
-        const confidence = contact.confidence;
-        if (confidence in residuesByConfidence) {
-          residuesByConfidence[confidence].push({ chain: contact.chain1, resi: contact.resi1 });
-          residuesByConfidence[confidence].push({ chain: contact.chain2, resi: contact.resi2 });
-        }
-      }
-
-      // Apply overpaint for each confidence level
-      for (const [confidence, residues] of Object.entries(residuesByConfidence)) {
-        if (residues.length === 0) continue;
-
-        const color = colorMap[confidence as keyof typeof colorMap];
-        if (!color) continue;
-
-        // Remove duplicates
-        const uniqueResidues = Array.from(
-          new Set(residues.map(r => `${r.chain}:${r.resi}`))
-        ).map(key => {
-          const [chain, resi] = key.split(':');
-          return { chain, resi: parseInt(resi) };
-        });
-
-        // Create selection for these residues using OR logic
-        const selectionQuery = Q => {
-          const tests = uniqueResidues.map(r =>
-            Q.core.logic.and([
-              Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_asym_id(), r.chain]),
-              Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_seq_id(), r.resi])
-            ])
-          );
-
-          return Q.struct.generator.atomGroups({
-            'residue-test': tests.length === 1 ? tests[0] : Q.core.logic.or(tests)
-          });
-        };
-
-        try {
-          const selection = Script.getStructureSelection(selectionQuery, structureData);
-
-          // Apply overpaint with the confidence color
-          // setStructureOverpaint expects a function that returns a Loci
-          await setStructureOverpaint(
-            plugin,
-            structure.components,
-            color,
-            async (s) => StructureSelection.toLociWithSourceUnits(selection)
-          );
-        } catch (err) {
-          console.warn(`Could not apply overpaint for ${confidence}:`, err);
-        }
-      }
-
-      console.log('PAE coloring applied:', {
-        totalResidues: contactData.data.contacts.length * 2,
-        byConfidence: Object.fromEntries(
-          Object.entries(residuesByConfidence).map(([k, v]) => [k, v.length])
-        )
-      });
-
-    } catch (err) {
-      console.error('Error applying PAE coloring:', err);
-      alert('Error applying PAE coloring. See console for details.');
+    // Temporarily disabled for debugging - just show contact info
+    const interfaceResidues = new Set<string>();
+    for (const contact of contactData.data.contacts) {
+      interfaceResidues.add(`${contact.chain1}:${contact.resi1}`);
+      interfaceResidues.add(`${contact.chain2}:${contact.resi2}`);
     }
+
+    const byConfidence = contactData.data.contacts.reduce((acc, c) => {
+      acc[c.confidence] = (acc[c.confidence] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    console.log('PAE Interface Data:', {
+      totalContacts: contactData.data.contacts.length,
+      uniqueResidues: interfaceResidues.size,
+      byConfidence
+    });
+
+    alert(`PAE Interface Info:\n\nTotal contacts: ${contactData.data.contacts.length}\nUnique residues: ${interfaceResidues.size}\n\nConfidence breakdown:\n${Object.entries(byConfidence).map(([k, v]) => `${k}: ${v}`).join('\n')}\n\n(Visual coloring coming soon - currently optimizing performance)`);
   };
 
   return (
