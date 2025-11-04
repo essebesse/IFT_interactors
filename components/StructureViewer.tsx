@@ -147,6 +147,8 @@ export default function StructureViewer({
         );
 
         const trajectory = await plugin.builders.structure.parseTrajectory(data, 'mmcif');
+
+        // Apply default preset (chains will be colored automatically)
         await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
 
         setStructureLoaded(true);
@@ -189,25 +191,69 @@ export default function StructureViewer({
 
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
-    // Temporarily disabled for debugging - just show contact info
-    const interfaceResidues = new Set<string>();
-    for (const contact of contactData.data.contacts) {
-      interfaceResidues.add(`${contact.chain1}:${contact.resi1}`);
-      interfaceResidues.add(`${contact.chain2}:${contact.resi2}`);
+    try {
+      console.log('Applying simplified PAE highlighting...');
+
+      // Get the structure
+      const structures = plugin.managers.structure.hierarchy.current.structures;
+      if (structures.length === 0) return;
+
+      const structure = structures[0];
+      const structureData = structure.cell.obj?.data;
+      if (!structureData) return;
+
+      // Collect high-confidence interface residues (PAE < 6Å = Very High + High)
+      const goodResidues = new Set<string>();
+      for (const contact of contactData.data.contacts) {
+        if (contact.pae < 6) {  // Very High (<3) or High (3-5)
+          goodResidues.add(`${contact.chain1}:${contact.resi1}`);
+          goodResidues.add(`${contact.chain2}:${contact.resi2}`);
+        }
+      }
+
+      if (goodResidues.size === 0) {
+        alert('No high-confidence interface residues found (PAE < 6Å)');
+        return;
+      }
+
+      console.log(`Highlighting ${goodResidues.size} high-confidence interface residues`);
+
+      // Convert to array
+      const residuesToHighlight = Array.from(goodResidues)
+        .slice(0, 100)  // Limit to 100 for performance
+        .map(key => {
+          const [chain, resi] = key.split(':');
+          return { chain, resi: parseInt(resi) };
+        });
+
+      // Create a single selection with all residues
+      const selection = Script.getStructureSelection(
+        Q => Q.struct.generator.atomGroups({
+          'residue-test': Q.core.logic.or(
+            residuesToHighlight.map(r =>
+              Q.core.logic.and([
+                Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_asym_id(), r.chain]),
+                Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_seq_id(), r.resi])
+              ])
+            )
+          )
+        }),
+        structureData
+      );
+
+      // Apply single overpaint in green
+      await setStructureOverpaint(
+        plugin,
+        structure.components,
+        Color(0x00ff00),  // Bright green
+        async () => StructureSelection.toLociWithSourceUnits(selection)
+      );
+
+      console.log(`✓ Highlighted ${residuesToHighlight.length} residues with PAE < 6Å`);
+
+    } catch (err) {
+      console.error('Error applying PAE highlighting:', err);
     }
-
-    const byConfidence = contactData.data.contacts.reduce((acc, c) => {
-      acc[c.confidence] = (acc[c.confidence] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>);
-
-    console.log('PAE Interface Data:', {
-      totalContacts: contactData.data.contacts.length,
-      uniqueResidues: interfaceResidues.size,
-      byConfidence
-    });
-
-    alert(`PAE Interface Info:\n\nTotal contacts: ${contactData.data.contacts.length}\nUnique residues: ${interfaceResidues.size}\n\nConfidence breakdown:\n${Object.entries(byConfidence).map(([k, v]) => `${k}: ${v}`).join('\n')}\n\n(Visual coloring coming soon - currently optimizing performance)`);
   };
 
   return (
@@ -295,39 +341,21 @@ export default function StructureViewer({
           {colorMode === 'chain' ? (
             <div>
               <strong>Chain Colors:</strong>
-              <div className="d-flex gap-3 mt-2">
-                <div>
-                  <span className="color-box" style={{ backgroundColor: '#00bcd4' }}></span>
-                  Chain A ({baitGene})
-                </div>
-                <div>
-                  <span className="color-box" style={{ backgroundColor: '#ff9800' }}></span>
-                  Chain B ({preyGene})
-                </div>
-              </div>
+              <p className="text-muted small mb-2">
+                Each protein chain is colored distinctly. {baitGene} and {preyGene} are shown in different colors for clarity.
+              </p>
             </div>
           ) : (
             <div>
-              <strong>PAE Interface Coloring:</strong>
+              <strong>PAE Interface Highlighting:</strong>
               <p className="text-muted small mb-2">
-                Chains colored normally. Interface residues highlighted by PAE confidence:
+                High-confidence interface residues (PAE &lt; 6Å) highlighted in bright green.
+                Chains retain their normal distinct colors.
               </p>
               <div className="d-flex gap-3 mt-2">
                 <div>
-                  <span className="color-box" style={{ backgroundColor: '#228b22' }}></span>
-                  Very High (&lt;3Å)
-                </div>
-                <div>
                   <span className="color-box" style={{ backgroundColor: '#00ff00' }}></span>
-                  High (3-5Å)
-                </div>
-                <div>
-                  <span className="color-box" style={{ backgroundColor: '#ffff00' }}></span>
-                  Medium (5-8Å)
-                </div>
-                <div>
-                  <span className="color-box" style={{ backgroundColor: '#ff4500' }}></span>
-                  Low (8-12Å)
+                  Interface (PAE &lt; 6Å)
                 </div>
               </div>
             </div>
