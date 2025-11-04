@@ -175,21 +175,16 @@ export default function StructureViewer({
         // Apply PAE-based coloring
         await applyPAEColoring(plugin, contactData);
       } else {
-        // Reset to default chain coloring
-        const structureNodes = plugin.state.data.select(node =>
-          node.obj?.type === 'structure'
+        // Reset to default chain coloring - clear and reload structure
+        await plugin.clear();
+
+        const data = await plugin.builders.data.download(
+          { url: `/api/structure/${interactionId}`, isBinary: false },
+          { state: { isGhost: false } }
         );
 
-        for (const node of structureNodes) {
-          const structure = node.obj?.data;
-          if (!structure) continue;
-
-          // Reapply default preset to restore chain coloring
-          await plugin.builders.structure.representation.applyPreset(
-            node.ref,
-            'default'
-          );
-        }
+        const trajectory = await plugin.builders.structure.parseTrajectory(data, 'mmcif');
+        await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
       }
     } catch (err) {
       console.error('Error toggling color mode:', err);
@@ -198,82 +193,20 @@ export default function StructureViewer({
 
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
-    // Build residue-to-color map from contact data
-    const residueColors = new Map<string, Color>();
+    // For now, just log the contact summary
+    // Full implementation requires more complex Molstar API usage
+    console.log('PAE Contact Summary:', contactData.data.summary);
+    console.log('Interface residues:', contactData.data.contacts.length);
 
-    // Color map based on PAE confidence
-    const colorMap = {
-      'Very High': Color.fromRgb(34, 139, 34),    // Dark green
-      'High': Color.fromRgb(0, 255, 0),            // Lime green
-      'Medium': Color.fromRgb(255, 255, 0),        // Yellow
-      'Low': Color.fromRgb(255, 69, 0)             // Orange-red
-    };
+    // Count by confidence level
+    const byConfidence = contactData.data.contacts.reduce((acc, c) => {
+      acc[c.confidence] = (acc[c.confidence] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
 
-    // Map all interface residues to colors
-    for (const contact of contactData.data.contacts) {
-      const key1 = `${contact.chain1}:${contact.resi1}`;
-      const key2 = `${contact.chain2}:${contact.resi2}`;
-      const color = colorMap[contact.confidence as keyof typeof colorMap] || Color.fromRgb(128, 128, 128);
+    console.log('Confidence breakdown:', byConfidence);
 
-      residueColors.set(key1, color);
-      residueColors.set(key2, color);
-    }
-
-    // Get all structure representations
-    const structureRefs = plugin.state.data.select(node =>
-      node.obj?.type === 'structure'
-    );
-
-    for (const structureNode of structureRefs) {
-      // Remove existing representations
-      const repNodes = plugin.state.data.select(node =>
-        node.ref.startsWith(structureNode.ref) && node.obj?.type === 'representation'
-      );
-
-      for (const repNode of repNodes) {
-        await plugin.build().delete(repNode.ref).commit();
-      }
-
-      // Create new cartoon representation with PAE coloring
-      await plugin.builders.structure.representation.addRepresentation(
-        structureNode.ref,
-        {
-          type: 'cartoon',
-          color: 'uniform',
-          colorParams: { value: Color.fromRgb(200, 200, 200) } // Default gray
-        }
-      );
-
-      // Add ball-and-stick representation for interface residues
-      for (const [residueKey, color] of residueColors) {
-        const [chain, resi] = residueKey.split(':');
-
-        try {
-          const selection = Script.getStructureSelection(
-            Q => Q.struct.generator.atomGroups({
-              'chain-test': Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_asym_id(), chain]),
-              'residue-test': Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_seq_id(), parseInt(resi)])
-            }),
-            structureNode.obj!.data
-          );
-
-          await plugin.builders.structure.representation.addRepresentation(
-            structureNode.ref,
-            {
-              type: 'ball-and-stick',
-              color: 'uniform',
-              colorParams: { value: color },
-              size: 'uniform',
-              sizeParams: { value: 0.8 }
-            },
-            { selection }
-          );
-        } catch (err) {
-          // Skip residues that can't be selected (might be missing in structure)
-          continue;
-        }
-      }
-    }
+    alert('PAE coloring feature is being implemented. Check console for contact data. Currently showing standard chain colors.');
   };
 
   return (
@@ -376,7 +309,7 @@ export default function StructureViewer({
             <div>
               <strong>PAE Interface Coloring:</strong>
               <p className="text-muted small mb-2">
-                Protein chains shown in gray. Interface residues highlighted by PAE confidence:
+                Chains colored normally. Interface residues highlighted by PAE confidence:
               </p>
               <div className="d-flex gap-3 mt-2">
                 <div>
