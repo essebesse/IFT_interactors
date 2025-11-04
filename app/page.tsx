@@ -185,10 +185,14 @@ export default function Home() {
       return;
     }
 
+    // Extract gene names directly for structure viewer title
+    const baitGene = interaction.bait_gene || interaction.bait_uniprot;
+    const preyGene = interaction.prey_gene || interaction.prey_uniprot;
+
     setSelectedStructure({
       id: interaction.id,
-      baitGene: getProteinDisplayName(interaction, 'bait', false),
-      preyGene: getProteinDisplayName(interaction, 'prey', false)
+      baitGene: baitGene,
+      preyGene: preyGene
     });
     setViewMode('structure');
   };
