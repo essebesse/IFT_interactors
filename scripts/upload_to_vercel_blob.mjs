@@ -132,9 +132,11 @@ async function uploadCifFiles() {
     }
 
     stats.cifs.total++;
-    const blobPath = `structures/${id}.cif`;
+    // Use interaction directory name (contains UniProt IDs) instead of just numeric ID
+    const blobPath = `structures/${data.interaction_directory}.cif`;
 
     console.log(`[${stats.cifs.total}/${manifest.found}] Interaction ${id}: ${data.bait_gene} ↔ ${data.prey_gene}`);
+    console.log(`  Name: ${data.interaction_directory}.cif`);
 
     await uploadFile(data.cif_path, blobPath, 'cifs');
 
