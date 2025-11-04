@@ -351,6 +351,54 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Edge thickness by confidence score
 - Click nodes to explore secondary interactions
 
+### 3D Structure Viewer (NEW - 2025-11-04)
+**Status**: ✅ Deployed with Molstar integration
+
+**Features**:
+- **View 3D structures**: Click "View 3D" button in interaction results table
+- **Fast loading**: CIF files served from Vercel Blob storage (500 structures)
+- **Chain visualization**: Default Molstar chain coloring (distinct colors per chain)
+- **PAE highlighting**: Toggle to highlight interface residues by PAE confidence
+- **Structure clearing**: Properly clears previous structure when loading new one
+
+**PAE Interface Highlighting**:
+- Highlights residues with PAE < 6Å (high-confidence interface)
+- Simple green overlay on interface residues
+- Limited to 100 residues for performance
+- Toggle between normal chain colors and PAE mode
+
+**Technical Implementation**:
+- **Library**: Molstar (mol-plugin-ui)
+- **Storage**: Vercel Blob (500 CIF files with UniProt-based naming)
+- **PAE Data**: Local `public/contacts_data/` (172 JSON files)
+- **Component**: `components/StructureViewer.tsx`
+- **API Routes**:
+  - `/api/structure/[id]` - Serves CIF files from Blob
+  - `/api/structure/[id]/pae` - Serves PAE contact data
+- **Manifest**: `cif_manifest.json` maps interaction IDs to filenames
+
+**Blob Storage**:
+- **URL Pattern**: `structures/{bait_uniprot}_and_{prey_uniprot}.cif`
+- **Example**: `structures/a0avf1_and_q9nqc8.cif`
+- **Total Files**: 500 CIF structures (one per interaction)
+- **Base URL**: `https://rechesvudwvwhwta.public.blob.vercel-storage.com`
+
+**Known Issues**:
+- ⚠️ PAE highlighting under development (debug version deployed)
+- ⚠️ Chain colors not yet PyMOL-style (cyan/magenta)
+- See browser console for detailed PAE debugging info
+
+**Performance**:
+- Structure loads in 2-3 seconds ✓
+- PAE highlighting applies in <1 second (when working) ✓
+- No more 30+ second hangs ✓
+
+**Scripts**:
+- `scripts/upload_to_vercel_blob.mjs` - Upload CIF/PAE files to Blob
+- `scripts/cleanup_old_blob_files.mjs` - Remove old numeric-named files
+- `scripts/generate_cif_manifest.mjs` - Create manifest mapping
+- `scripts/collect_cif_paths.py` - Find CIF files in AF3 output
+
 ### Data Export
 - CSV export of interaction tables
 - Network visualization screenshots
@@ -361,6 +409,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - **app/page.tsx** - Main application page with search, filters, and results table
 - **app/layout.tsx** - Root layout with metadata and global styles
 - **components/NetworkVisualization.tsx** - Force-directed graph visualization using react-force-graph-2d
+- **components/StructureViewer.tsx** - 3D structure viewer with Molstar integration (NEW)
 
 ### Key Frontend Features
 - **Client-side filtering** - Results filtered by confidence and analysis version
@@ -372,6 +421,14 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Bootstrap 5.3.3 for base styles
 - Custom CSS for confidence badges (High=green, Medium=orange, Low=red)
 - react-bootstrap components for UI elements
+- Molstar light theme (`molstar/lib/mol-plugin-ui/skin/light.scss`) for 3D viewer
+
+### Key Dependencies
+- **molstar** - Molecular visualization library for 3D structure viewer
+- **sass** - Required for Molstar styles compilation
+- **@vercel/blob** - Blob storage client for CIF file management
+- **react-force-graph-2d** 1.25.5 - Network visualization
+- **@vercel/postgres** 0.9.0 - Neon database client
 
 ## Publication Workflow
 
