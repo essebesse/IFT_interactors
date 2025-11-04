@@ -6,56 +6,16 @@
  *
  * Usage: GET /api/structure/123
  *
- * Data source: Local files from cif_manifest.json (for now)
- * Future: Can be switched to Vercel Blob storage
+ * Data source: Vercel Blob Storage
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { readFile } from 'fs/promises';
-import fs from 'fs';
-import path from 'path';
 
 // Force dynamic rendering (no static generation)
 export const dynamic = 'force-dynamic';
 
-interface CifManifestEntry {
-  id: number;
-  bait_uniprot: string;
-  bait_gene: string;
-  prey_uniprot: string;
-  prey_gene: string;
-  ipsae: number;
-  cif_path: string;
-  confidences_path: string;
-  interaction_directory: string;
-  status: string;
-}
-
-interface CifManifest {
-  generated_at: string;
-  total: number;
-  found: number;
-  not_found: number;
-  errors: number;
-  entries: Record<string, CifManifestEntry>;
-}
-
-// Load manifest once (cached in module scope)
-let manifest: CifManifest | null = null;
-
-async function loadManifest(): Promise<CifManifest> {
-  if (manifest) return manifest;
-
-  const manifestPath = path.join(process.cwd(), 'cif_manifest.json');
-
-  if (!fs.existsSync(manifestPath)) {
-    throw new Error('CIF manifest not found. Run scripts/collect_cif_paths.mjs first.');
-  }
-
-  const data = await readFile(manifestPath, 'utf8');
-  manifest = JSON.parse(data);
-  return manifest;
-}
+// Vercel Blob base URL (auto-detected from uploaded files)
+const BLOB_BASE_URL = 'https://rechesvudwvwhwta.public.blob.vercel-storage.com';
 
 export async function GET(
   request: NextRequest,
@@ -64,38 +24,31 @@ export async function GET(
   try {
     const interactionId = params.id;
 
-    // Load manifest
-    const manifest = await loadManifest();
+    // Construct Blob URL
+    const blobUrl = `${BLOB_BASE_URL}/structures/${interactionId}.cif`;
 
-    // Find entry
-    const entry = manifest.entries[interactionId];
+    // Fetch from Vercel Blob
+    const response = await fetch(blobUrl);
 
-    if (!entry) {
-      return NextResponse.json(
-        { error: 'Interaction not found', id: interactionId },
-        { status: 404 }
-      );
-    }
-
-    if (!entry.cif_path || !fs.existsSync(entry.cif_path)) {
+    if (!response.ok) {
       return NextResponse.json(
         {
-          error: 'CIF file not found',
+          error: 'CIF file not found in Blob storage',
           id: interactionId,
-          expected_path: entry.cif_path
+          url: blobUrl
         },
         { status: 404 }
       );
     }
 
-    // Read and return CIF file
-    const cifContent = await readFile(entry.cif_path, 'utf8');
+    // Get the CIF content
+    const cifContent = await response.text();
 
     return new NextResponse(cifContent, {
       status: 200,
       headers: {
         'Content-Type': 'chemical/x-cif',
-        'Content-Disposition': `inline; filename="${entry.interaction_directory}.cif"`,
+        'Content-Disposition': `inline; filename="interaction_${interactionId}.cif"`,
         'Cache-Control': 'public, max-age=31536000, immutable'
       }
     });
