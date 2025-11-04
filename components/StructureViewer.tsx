@@ -19,6 +19,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { createPluginUI } from 'molstar/lib/mol-plugin-ui';
 import { DefaultPluginUISpec } from 'molstar/lib/mol-plugin-ui/spec';
 import { PluginUIContext } from 'molstar/lib/mol-plugin-ui/context';
+import { renderReact18 } from 'molstar/lib/mol-plugin-ui/react18';
 import 'molstar/lib/mol-plugin-ui/skin/light.scss';
 
 interface Contact {
@@ -85,6 +86,7 @@ export default function StructureViewer({
 
         const plugin = await createPluginUI({
           target: containerRef.current,
+          render: renderReact18,
           spec: DefaultPluginUISpec()
         });
 
