@@ -16,11 +16,9 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import { PluginContext } from 'molstar/lib/mol-plugin/context';
-import { DefaultPluginSpec } from 'molstar/lib/mol-plugin/spec';
-import { PluginConfig } from 'molstar/lib/mol-plugin/config';
-import { Color } from 'molstar/lib/mol-util/color';
-import { Script } from 'molstar/lib/mol-script/script';
+import { createPluginUI } from 'molstar/lib/mol-plugin-ui';
+import { DefaultPluginUISpec } from 'molstar/lib/mol-plugin-ui/spec';
+import { PluginUIContext } from 'molstar/lib/mol-plugin-ui/context';
 import 'molstar/lib/mol-plugin-ui/skin/light.scss';
 
 interface Contact {
@@ -69,7 +67,7 @@ export default function StructureViewer({
   onClose
 }: StructureViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const pluginRef = useRef<PluginContext | null>(null);
+  const pluginRef = useRef<PluginUIContext | null>(null);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -83,26 +81,23 @@ export default function StructureViewer({
 
     const initPlugin = async () => {
       try {
-        const spec = DefaultPluginSpec();
+        if (!containerRef.current) return;
 
-        const plugin = new PluginContext(spec);
-        await plugin.init();
-
-        if (containerRef.current) {
-          plugin.initViewer(containerRef.current, {
+        const plugin = await createPluginUI({
+          target: containerRef.current,
+          spec: DefaultPluginUISpec(),
+          render: {
             layoutIsExpanded: false,
             layoutShowControls: false,
             layoutShowRemoteState: false,
             layoutShowSequence: true,
             layoutShowLog: false,
             layoutShowLeftPanel: false,
-            viewportShowExpand: true,
-            viewportShowSelectionMode: false,
-            viewportShowAnimation: false,
-          });
+          }
+        });
 
-          pluginRef.current = plugin;
-        }
+        pluginRef.current = plugin;
+
       } catch (err) {
         console.error('Failed to initialize Mol*:', err);
         setError('Failed to initialize 3D viewer');
@@ -149,26 +144,13 @@ export default function StructureViewer({
         // Load structure into Mol*
         const plugin = pluginRef.current!;
 
-        const data = await plugin.builders.data.rawData({
-          data: cifData,
-          label: `${baitGene}_${preyGene}`
-        });
+        const data = await plugin.builders.data.download(
+          { url: `/api/structure/${interactionId}`, isBinary: false },
+          { state: { isGhost: false } }
+        );
 
-        const trajectory = await plugin.builders.structure.parseTrajectory(data, 'cif');
-        const model = await plugin.builders.structure.createModel(trajectory);
-        const structure = await plugin.builders.structure.createStructure(model);
-
-        // Apply initial coloring (chain mode)
-        await applyChainColoring(plugin, structure);
-
-        // Zoom to fit
-        const component = structure.selector;
-        await plugin.builders.structure.representation.addRepresentation(component, {
-          type: 'cartoon',
-          color: 'chain-id'
-        });
-
-        plugin.canvas3d?.requestCameraReset();
+        const trajectory = await plugin.builders.structure.parseTrajectory(data, 'mmcif');
+        await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
 
         setStructureLoaded(true);
         setLoading(false);
@@ -181,38 +163,16 @@ export default function StructureViewer({
     };
 
     loadStructure();
-  }, [interactionId, baitGene, preyGene]);
+  }, [interactionId]);
 
-  // Apply chain coloring
-  const applyChainColoring = async (plugin: PluginContext, structure: any) => {
-    // Mol* will handle chain coloring automatically via 'chain-id' theme
-    // Chain A: Cyan, Chain B: Orange (default Mol* colors)
-  };
-
-  // Apply PAE-based coloring
-  const applyPAEColoring = async () => {
-    if (!pluginRef.current || !contactData || !structureLoaded) return;
-
-    // TODO: Implement PAE coloring
-    // This requires using Mol* overpaint API to color specific residues
-    // For now, show a message that it's coming soon
-    console.log('PAE coloring - to be implemented');
-    console.log('Contact data available:', contactData.data.summary);
-  };
-
-  // Toggle color mode
+  // Toggle color mode (PAE coloring to be implemented)
   const handleColorModeToggle = async () => {
     const newMode = colorMode === 'chain' ? 'pae' : 'chain';
     setColorMode(newMode);
 
     if (newMode === 'pae') {
-      await applyPAEColoring();
-    } else {
-      // Reset to chain coloring
-      if (pluginRef.current && structureLoaded) {
-        // Reload structure to reset colors
-        window.location.reload(); // Simple approach for now
-      }
+      console.log('PAE coloring - to be implemented');
+      console.log('Contact data available:', contactData?.data.summary);
     }
   };
 
