@@ -85,15 +85,7 @@ export default function StructureViewer({
 
         const plugin = await createPluginUI({
           target: containerRef.current,
-          spec: DefaultPluginUISpec(),
-          render: {
-            layoutIsExpanded: false,
-            layoutShowControls: false,
-            layoutShowRemoteState: false,
-            layoutShowSequence: true,
-            layoutShowLog: false,
-            layoutShowLeftPanel: false,
-          }
+          spec: DefaultPluginUISpec()
         });
 
         pluginRef.current = plugin;
