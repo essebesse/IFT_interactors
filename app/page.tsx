@@ -3,6 +3,13 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button, Card, Spinner, Table, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { NetworkVisualization } from '../components/NetworkVisualization';
+import dynamic from 'next/dynamic';
+
+// Dynamically import StructureViewer (Mol* requires browser environment)
+const StructureViewer = dynamic(() => import('../components/StructureViewer'), {
+  ssr: false,
+  loading: () => <div className="text-center p-5"><Spinner animation="border" /> Loading structure viewer...</div>
+});
 
 // Define types for our data
 interface ValidationData {
@@ -15,6 +22,7 @@ interface ValidationData {
 }
 
 interface InteractionData {
+  id?: number;  // Add interaction ID for structure viewing
   bait_uniprot: string;
   bait_gene: string;
   bait_organism?: string;
@@ -97,6 +105,14 @@ export default function Home() {
   const [selectedBait, setSelectedBait] = useState('');
   const [networkDimensions, setNetworkDimensions] = useState({ width: 450, height: 620 });
 
+  // Structure viewer state
+  const [viewMode, setViewMode] = useState<'network' | 'structure'>('network');
+  const [selectedStructure, setSelectedStructure] = useState<{
+    id: number;
+    baitGene: string;
+    preyGene: string;
+  } | null>(null);
+
   const fetchBaitProteins = async () => {
     try {
       const res = await fetch(`/api/baits`);
@@ -117,6 +133,7 @@ export default function Home() {
   };
 
   const handleNodeClick = async (nodeId: string, nodeName: string) => {
+    setViewMode('network'); // Switch back to network mode
     setSecondaryLoading(true);
     setSecondaryProtein(nodeId);
 
@@ -160,6 +177,25 @@ export default function Home() {
     } finally {
       setSecondaryLoading(false);
     }
+  };
+
+  const handleViewStructure = (interaction: any) => {
+    if (!interaction.id) {
+      alert('Structure ID not available for this interaction');
+      return;
+    }
+
+    setSelectedStructure({
+      id: interaction.id,
+      baitGene: getProteinDisplayName(interaction, 'bait', false),
+      preyGene: getProteinDisplayName(interaction, 'prey', false)
+    });
+    setViewMode('structure');
+  };
+
+  const handleCloseStructure = () => {
+    setViewMode('network');
+    setSelectedStructure(null);
   };
 
   const getProteinDisplayName = (inter: any, isProtein: 'bait' | 'prey', includeTooltip: boolean = false) => {
@@ -469,11 +505,18 @@ export default function Home() {
               </Card>
             </Col>
 
-            {/* Secondary Network */}
+            {/* Secondary Network / Structure Viewer */}
             <Col md={6}>
               <Card className="shadow-sm h-100">
-                <Card.Body style={{ height: '40vh', position: 'relative', padding: '0' }}>
-                  {secondaryLoading ? (
+                <Card.Body style={{ height: '40vh', position: 'relative', padding: viewMode === 'structure' ? '0' : '0' }}>
+                  {viewMode === 'structure' && selectedStructure ? (
+                    <StructureViewer
+                      interactionId={selectedStructure.id}
+                      baitGene={selectedStructure.baitGene}
+                      preyGene={selectedStructure.preyGene}
+                      onClose={handleCloseStructure}
+                    />
+                  ) : secondaryLoading ? (
                     <div className="d-flex justify-content-center align-items-center h-100">
                       <Spinner animation="border" variant="secondary" />
                       <span className="ms-3">Loading...</span>
@@ -491,8 +534,8 @@ export default function Home() {
                   ) : (
                     <div className="d-flex justify-content-center align-items-center h-100">
                       <div className="text-center">
-                        <h5>Click a protein node</h5>
-                        <p>Click any protein in the main network to see its interactions here</p>
+                        <h5>Click a protein node or view a structure</h5>
+                        <p>Click any protein in the main network to see its interactions, or click "View 3D" in the table below to view structures</p>
                       </div>
                     </div>
                   )}
@@ -519,6 +562,7 @@ export default function Home() {
                     <th>iPAE &lt;6Å</th>
                     <th>ipLDDT</th>
                     <th>Experimental</th>
+                    <th>3D Structure</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -603,6 +647,16 @@ export default function Home() {
                         ) : (
                           <span className="text-muted">-</span>
                         )}
+                      </td>
+                      <td>
+                        <Button
+                          size="sm"
+                          variant="primary"
+                          onClick={() => handleViewStructure(inter)}
+                          disabled={!inter.id}
+                        >
+                          View 3D
+                        </Button>
                       </td>
                     </tr>
                   ))}
