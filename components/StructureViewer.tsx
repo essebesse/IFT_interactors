@@ -90,11 +90,13 @@ export default function StructureViewer({
 
     const initPlugin = async () => {
       try {
+        console.log('### INITIALIZING MOLSTAR PLUGIN ###');
         if (!containerRef.current) return;
 
         // Custom spec to disable external network calls
         const customSpec = DefaultPluginUISpec();
 
+        console.log('Filtering behaviors to remove external calls...');
         // Disable all external behaviors and validation
         customSpec.behaviors = customSpec.behaviors.filter(b =>
           b.transformer.definition.name !== 'rcsb-assembly-symmetry' &&
@@ -106,16 +108,18 @@ export default function StructureViewer({
           ['VolumeStreaming.Enabled', false],
         ];
 
+        console.log('Creating Molstar UI...');
         const plugin = await createPluginUI({
           target: containerRef.current,
           render: renderReact18,
           spec: customSpec
         });
 
+        console.log('✓ Molstar plugin initialized successfully!');
         pluginRef.current = plugin;
 
       } catch (err) {
-        console.error('Failed to initialize Mol*:', err);
+        console.error('!!! Failed to initialize Mol*:', err);
         setError('Failed to initialize 3D viewer');
         setLoading(false);
       }
