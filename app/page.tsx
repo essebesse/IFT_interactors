@@ -103,7 +103,7 @@ export default function Home() {
   });
   const [baitProteins, setBaitProteins] = useState([]);
   const [selectedBait, setSelectedBait] = useState('');
-  const [networkDimensions, setNetworkDimensions] = useState({ width: 450, height: 620 });
+  const [networkDimensions, setNetworkDimensions] = useState({ width: 450, height: 850 });
 
   // Structure viewer state
   const [viewMode, setViewMode] = useState<'network' | 'structure'>('network');
@@ -414,7 +414,7 @@ export default function Home() {
 
       <Row>
         <Col md={3}>
-          <Card className="shadow-sm" style={{ height: '40vh' }}>
+          <Card className="shadow-sm" style={{ height: '55vh' }}>
             <Card.Body style={{ height: '100%', overflowY: 'auto' }}>
               <Form.Group className="mb-3">
                 <Form.Label>Select Bait Protein</Form.Label>
@@ -479,7 +479,7 @@ export default function Home() {
             {/* Main Network */}
             <Col md={6}>
               <Card className="shadow-sm h-100">
-                <Card.Body style={{ height: '40vh', position: 'relative', padding: '0' }}>
+                <Card.Body style={{ height: '55vh', position: 'relative', padding: '0' }}>
                   {loading ? (
                     <div className="d-flex justify-content-center align-items-center h-100">
                       <Spinner animation="border" variant="primary" />
@@ -512,7 +512,7 @@ export default function Home() {
             {/* Secondary Network / Structure Viewer */}
             <Col md={6}>
               <Card className="shadow-sm h-100">
-                <Card.Body style={{ height: '40vh', position: 'relative', padding: viewMode === 'structure' ? '0' : '0' }}>
+                <Card.Body style={{ height: '55vh', position: 'relative', padding: viewMode === 'structure' ? '0' : '0' }}>
                   {viewMode === 'structure' && selectedStructure ? (
                     <StructureViewer
                       interactionId={selectedStructure.id}
