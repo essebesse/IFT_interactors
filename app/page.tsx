@@ -112,6 +112,7 @@ export default function Home() {
     baitGene: string;
     preyGene: string;
   } | null>(null);
+  const [isFullscreenViewer, setIsFullscreenViewer] = useState(true);
 
   const fetchBaitProteins = async () => {
     try {
@@ -195,6 +196,7 @@ export default function Home() {
       preyGene: preyGene
     });
     setViewMode('structure');
+    setIsFullscreenViewer(true); // Always start in fullscreen mode
   };
 
   const handleCloseStructure = () => {
@@ -519,6 +521,8 @@ export default function Home() {
                       baitGene={selectedStructure.baitGene}
                       preyGene={selectedStructure.preyGene}
                       onClose={handleCloseStructure}
+                      isFullscreen={isFullscreenViewer}
+                      onToggleFullscreen={() => setIsFullscreenViewer(!isFullscreenViewer)}
                     />
                   ) : secondaryLoading ? (
                     <div className="d-flex justify-content-center align-items-center h-100">

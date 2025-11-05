@@ -61,6 +61,8 @@ interface StructureViewerProps {
   baitGene: string;
   preyGene: string;
   onClose: () => void;
+  isFullscreen: boolean;
+  onToggleFullscreen: () => void;
 }
 
 type ColorMode = 'chain' | 'pae';
@@ -69,7 +71,9 @@ export default function StructureViewer({
   interactionId,
   baitGene,
   preyGene,
-  onClose
+  onClose,
+  isFullscreen,
+  onToggleFullscreen
 }: StructureViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pluginRef = useRef<PluginUIContext | null>(null);
@@ -278,12 +282,21 @@ export default function StructureViewer({
         <h4>
           3D Structure: {baitGene} ↔ {preyGene}
         </h4>
-        <button
-          onClick={onClose}
-          className="btn btn-sm btn-secondary"
-        >
-          ← Back to Network
-        </button>
+        <div className="d-flex gap-2">
+          <button
+            onClick={onToggleFullscreen}
+            className="btn btn-sm btn-outline-secondary"
+            title={isFullscreen ? "Minimize viewer" : "Fullscreen viewer"}
+          >
+            {isFullscreen ? "⊡ Minimize" : "⛶ Fullscreen"}
+          </button>
+          <button
+            onClick={onClose}
+            className="btn btn-sm btn-secondary"
+          >
+            ✕ Close
+          </button>
+        </div>
       </div>
 
       {/* Controls */}
@@ -326,7 +339,7 @@ export default function StructureViewer({
         className="molstar-container"
         style={{
           width: '100%',
-          height: '600px',
+          height: isFullscreen ? 'calc(100vh - 250px)' : '600px',
           position: 'relative',
           border: '1px solid #ddd',
           borderRadius: '4px'
@@ -381,6 +394,18 @@ export default function StructureViewer({
       <style jsx>{`
         .structure-viewer-container {
           padding: 20px;
+          ${isFullscreen ? `
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            background: white;
+            overflow: auto;
+          ` : ''}
         }
 
         .structure-viewer-header {
