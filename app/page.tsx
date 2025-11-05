@@ -482,6 +482,10 @@ export default function Home() {
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Low: e.target.checked }))}
                 />
               </Form>
+
+              <div className="alert alert-info mt-3" style={{ fontSize: '0.85rem', padding: '10px' }}>
+                <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible domain orientations.
+              </div>
             </Card.Body>
           </Card>
         </Col>
