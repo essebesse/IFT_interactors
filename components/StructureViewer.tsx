@@ -337,11 +337,11 @@ export default function StructureViewer({
                 <span className="pae-legend ms-3" style={{ verticalAlign: 'middle' }}>
                   <span className="legend-item">
                     <span className="color-dot" style={{ backgroundColor: '#FFFF00' }}></span>
-                    Very high confidence
+                    Very high confidence (PAE &lt;3Å)
                   </span>
                   <span className="legend-item ms-2">
                     <span className="color-dot" style={{ backgroundColor: '#FF00FF' }}></span>
-                    High confidence
+                    High confidence (PAE 3-6Å)
                   </span>
                 </span>
               )}
