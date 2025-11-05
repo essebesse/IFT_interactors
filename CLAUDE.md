@@ -24,7 +24,7 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 - **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
-- **Last Frontend Update**: 2025-11-05 (structure viewer improvements)
+- **Last Frontend Update**: 2025-11-05 (smart fullscreen sizing, sidebar typography, network visualization fixes)
 
 ### Deployment
 - **Platform**: Vercel
@@ -390,17 +390,55 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 **Performance & Memory Optimization**:
 - Structure loads in 2-3 seconds ✓
 - PAE highlighting applies in <1 second ✓
-- **Fullscreen canvas limited to 1920x1080** max resolution (prevents memory exhaustion on 4K displays)
+- **Smart fullscreen sizing** (2025-11-05): Dynamically adapts to screen size while preventing memory issues
+  - Uses 95% of viewport on most displays
+  - Caps at 20M canvas pixels (~1-2 GB RAM) to prevent exhaustion
+  - 5K displays get ~3000×1680 px (vs old 1920×1080 hardcoded limit)
+  - Considers devicePixelRatio (retina displays)
 - No more 30+ second hangs or system freezes ✓
 
-**Recent Fixes (2025-11-05)**:
-- ✅ Fixed critical memory exhaustion bug in fullscreen mode (commit `6370aab`)
-  - Limited Molstar canvas to max 1920x1080 pixels
-  - Prevents RAM exhaustion on 4K/retina displays (was up to 2-3 GB)
-  - Fullscreen viewer now stable on 16GB RAM systems
-- ✅ Added PAE thresholds to legend (commit `2237817`)
-  - Shows specific PAE cutoffs: <3Å (yellow), 3-6Å (magenta)
-  - Improves interpretability of interface highlighting
+**Recent Updates (2025-11-05)**:
+
+1. **Smart Fullscreen Sizing** (commit `257451c`) ⭐
+   - Replaced hardcoded 1920×1080 limit with dynamic calculation
+   - Detects screen size, viewport, and devicePixelRatio
+   - Caps at 20M pixels (~1-2 GB RAM) to prevent memory exhaustion
+   - Examples:
+     - 5K @ DPR=1: 4864×2736 (14.7M pixels, no scaling)
+     - 5K @ DPR=2: 2986×1680 (20M pixels, scaled down from 59M)
+     - 4K @ DPR=1: Full 95% viewport (8.3M pixels)
+     - Laptops/tablets: Full 95% viewport (always safe)
+   - Result: Much larger on high-res displays, still memory-safe
+
+2. **Fixed PAE Highlighting Reset** (commit `556d311`)
+   - PAE toggle now properly resets when loading new structure
+   - Prevents confusion where button shows "ON" but highlighting is gone
+
+3. **Improved Sidebar Typography** (commits `46d59c9`, `74852a0`)
+   - Base font: 1.05rem (up from ~0.875rem)
+   - Section labels: 1.1rem with medium weight
+   - Confidence checkboxes: 1.1rem
+   - Alert note: 1.05rem with better line height
+   - Result: More readable text, better use of sidebar space
+
+4. **Added False Positive Disclaimer** (commit `50cac86`)
+   - New paragraph in info alert box
+   - Warns about false positives, especially in low-confidence predictions
+   - Advises using predictions as hypotheses for experimental validation
+   - Improves scientific transparency
+
+5. **Network Visualization Fixes** (commits `1154c1e`, `e0a3266`)
+   - **Tooltip improvements**: Removed redundant "AlphaFold: AF3", added ipSAE score
+   - **Edge color consistency**: Now uses ipSAE-based confidence levels
+     - High (green): ipSAE > 0.7
+     - Medium (orange): ipSAE 0.5-0.7
+     - Low (red): ipSAE < 0.5
+   - Edge colors now match sidebar filters and table confidence levels
+   - Replaced complex iPTM logic with simple ipSAE thresholds
+
+6. **Text Corrections** (commit `74852a0`)
+   - Changed "flexible domain orientations" → "flexible relative domain orientation"
+   - More precise scientific terminology
 
 **Scripts**:
 - `scripts/upload_to_vercel_blob.mjs` - Upload CIF/PAE files to Blob
@@ -575,9 +613,13 @@ git branch -D ift-temp-branch
 **Last Updated**: 2025-11-05
 **Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
-**Deployment**: Vercel (triggered by git push to main)
+**Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
 
-**Recent Updates (2025-11-05)**:
-- ✅ Fixed critical memory exhaustion bug in fullscreen structure viewer
-- ✅ Added confidence scoring explanation for flexible structures in sidebar
-- ✅ Enhanced PAE interface highlighting legend with specific thresholds
+**Summary of 2025-11-05 Updates**:
+- ✅ Smart fullscreen sizing (adapts to screen, prevents memory issues)
+- ✅ Fixed PAE highlighting reset bug
+- ✅ Improved sidebar typography (larger, more readable fonts)
+- ✅ Added false positive disclaimer
+- ✅ Fixed network edge colors to use ipSAE-based confidence
+- ✅ Updated network tooltips (show ipSAE, removed redundant AF3 label)
+- ✅ Text corrections (flexible relative domain orientation)
