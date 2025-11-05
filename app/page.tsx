@@ -415,13 +415,14 @@ export default function Home() {
       <Row>
         <Col md={3}>
           <Card className="shadow-sm" style={{ height: '55vh' }}>
-            <Card.Body style={{ height: '100%', overflowY: 'auto' }}>
-              <Form.Group className="mb-3">
-                <Form.Label>Select Bait Protein</Form.Label>
+            <Card.Body style={{ height: '100%', overflowY: 'auto', fontSize: '1.05rem' }}>
+              <Form.Group className="mb-4">
+                <Form.Label style={{ fontSize: '1.1rem', fontWeight: '500' }}>Select Bait Protein</Form.Label>
                 <Form.Select
                   value={selectedBait}
                   onChange={(e) => handleBaitSelection(e.target.value)}
                   className="mb-2"
+                  style={{ fontSize: '1rem' }}
                 >
                   <option value="">Choose a bait protein...</option>
                   {baitProteins.map((bait: any) => {
@@ -433,39 +434,43 @@ export default function Home() {
                     );
                   })}
                 </Form.Select>
-                <Form.Text className="text-muted">
+                <Form.Text className="text-muted" style={{ fontSize: '0.95rem' }}>
                   Select from {baitProteins.length} available bait proteins
                 </Form.Text>
               </Form.Group>
 
               <hr />
-              
+
               <Form onSubmit={(e) => { e.preventDefault(); handleSearch(); }}>
-                <Form.Group className="mb-3">
-                  <Form.Label>Search Protein</Form.Label>
+                <Form.Group className="mb-4">
+                  <Form.Label style={{ fontSize: '1.1rem', fontWeight: '500' }}>Search Protein</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="e.g., Q8NEZ3, WDR19, IFT27, 54, CCNO"
+                    placeholder="e.g., Q8NEZ3, WDR19, IFT27"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
+                    style={{ fontSize: '1rem' }}
                   />
-                  <Form.Text className="text-muted">
-                    Search by UniProt ID, gene name, protein alias, IFT number, or user-defined name
+                  <Form.Text className="text-muted" style={{ fontSize: '0.95rem' }}>
+                    UniProt ID, gene name, alias, IFT number
                   </Form.Text>
                 </Form.Group>
-                <Button variant="primary" type="submit" className="w-100" disabled={loading}>Search</Button>
+                <Button variant="primary" type="submit" className="w-100" disabled={loading} style={{ fontSize: '1.05rem', padding: '0.5rem' }}>
+                  Search
+                </Button>
               </Form>
 
-              <hr />
+              <hr className="my-4" />
 
-              <h5>Confidence Levels</h5>
-              <Form>
+              <h5 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Confidence Levels</h5>
+              <Form style={{ fontSize: '1.05rem' }}>
                 <Form.Check
                   type="checkbox"
                   id="check-High"
                   label="High (ipSAE >0.7)"
                   checked={confidenceFilters.High}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, High: e.target.checked }))}
+                  style={{ marginBottom: '0.6rem' }}
                 />
                 <Form.Check
                   type="checkbox"
@@ -473,6 +478,7 @@ export default function Home() {
                   label="Medium (ipSAE 0.5-0.7)"
                   checked={confidenceFilters.Medium}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Medium: e.target.checked }))}
+                  style={{ marginBottom: '0.6rem' }}
                 />
                 <Form.Check
                   type="checkbox"
@@ -480,10 +486,11 @@ export default function Home() {
                   label="Low (ipSAE <0.5)"
                   checked={confidenceFilters.Low}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Low: e.target.checked }))}
+                  style={{ marginBottom: '0.6rem' }}
                 />
               </Form>
 
-              <div className="alert alert-info mt-3" style={{ fontSize: '0.85rem', padding: '10px' }}>
+              <div className="alert alert-info mt-4" style={{ fontSize: '0.95rem', padding: '12px', lineHeight: '1.5' }}>
                 <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible domain orientations.
               </div>
             </Card.Body>
