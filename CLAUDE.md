@@ -31,26 +31,28 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 - **Environment Variable**: `POSTGRES_URL` must be set in Vercel dashboard
 - **Build Fix**: All API routes marked as `force-dynamic` to prevent build-time DB access
 
-#### Automatic Deployment
-- **Trigger**: Git push to `main` branch should auto-deploy
-- **Issue**: GitHub webhook sometimes fails to trigger Vercel builds
-- **Symptom**: Vercel builds old commits even after successful push
-
-#### Manual Deployment (Use if automatic fails)
-```bash
-# Trigger deployment via deploy hook
-curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
-```
-
-**When to use manual deployment:**
-- After pushing code, Vercel doesn't start building
-- Vercel builds an old commit instead of latest
-- Need to force a rebuild with latest code
+#### Automatic Deployment (PRIMARY METHOD)
+- **Status**: ✅ Working reliably
+- **Trigger**: GitHub webhook automatically deploys when you push to `main` branch
+- **Build time**: ~45-60 seconds
+- **No manual action needed** - just push your code!
 
 **Verify deployment:**
 1. Check Vercel dashboard for new deployment
-2. Verify it's building the correct commit (should match `git ls-remote new_repo main`)
-3. Build should complete in ~1-2 minutes
+2. Verify it's building the correct commit (should match `git ls-remote origin main`)
+3. Build should complete in ~1 minute
+
+#### Manual Deployment (BACKUP ONLY - rarely needed)
+Only use if GitHub webhook fails (Vercel doesn't start building after push):
+
+```bash
+# Emergency: Trigger deployment via deploy hook
+curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
+```
+
+Or use Vercel dashboard: Deployments → "..." → "Redeploy"
+
+**⚠️ Note**: Using the deploy hook creates a second build (GitHub webhook + manual trigger). Only use when automatic deployment fails.
 
 ### Git Operations
 
@@ -80,7 +82,7 @@ git push origin main  # ← Works! GitHub token configured
 - ❌ DO NOT push from parent directory - it will fail
 - ❌ DO NOT use `git subtree` commands - no longer necessary
 
-### Complete Workflow: Edit → Commit → Push → Deploy
+### Complete Workflow: Edit → Commit → Push → Auto-Deploy
 
 ```bash
 # 1. Make changes in IFT_Interactors_paper
@@ -95,17 +97,15 @@ git push origin main
 # 3. Verify push succeeded
 git ls-remote origin main  # Should show your latest commit hash
 
-# 4. Trigger deployment (if automatic webhook fails)
-curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpOk3uiNCHzMM3t/Z7xGv44ebi'
-
-# 5. Monitor deployment
+# 4. Monitor deployment (automatic via GitHub webhook)
 # Visit: https://vercel.com/essebesse/ift-interactors
 # Check: Deployment is building correct commit from step 3
+# Build completes in ~1 minute
 ```
 
 **Common Issues:**
 - If `git push` fails with "Permission denied" → GitHub token may have expired; update remote URL with new token
-- If Vercel builds old commit → Use manual deployment curl command (step 4)
+- If Vercel doesn't start building → Use manual deployment (see "Manual Deployment" section above)
 - If build fails with missing files → Files weren't committed; check `git status`
 
 ## Dataset Overview
