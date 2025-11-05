@@ -316,9 +316,9 @@ export default function StructureViewer({
     <div className="structure-viewer-container">
       {/* Header */}
       <div className="structure-viewer-header">
-        <h4>
+        <h5 className="mb-0">
           3D Structure: {baitGene} ↔ {preyGene}
-        </h4>
+        </h5>
         <button
           onClick={onClose}
           className="btn btn-sm btn-secondary"
@@ -418,7 +418,9 @@ export default function StructureViewer({
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #e0e0e0;
         }
 
         .structure-controls {
