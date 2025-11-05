@@ -323,13 +323,27 @@ export default function StructureViewer({
             3D Structure: {baitGene} ↔ {preyGene}
           </h5>
           {structureLoaded && contactData && (
-            <button
-              onClick={togglePAEHighlight}
-              className={`btn btn-sm ms-3 ${paeHighlightEnabled ? 'btn-success' : 'btn-outline-secondary'}`}
-              style={{ verticalAlign: 'middle' }}
-            >
-              {paeHighlightEnabled ? '✓ PAE Interface ON' : 'Show PAE Interface'}
-            </button>
+            <>
+              <button
+                onClick={togglePAEHighlight}
+                className={`btn btn-sm ms-3 ${paeHighlightEnabled ? 'btn-success' : 'btn-outline-secondary'}`}
+                style={{ verticalAlign: 'middle' }}
+              >
+                {paeHighlightEnabled ? '✓ PAE Interface ON' : 'Show PAE Interface'}
+              </button>
+              {paeHighlightEnabled && (
+                <span className="pae-legend ms-3" style={{ verticalAlign: 'middle' }}>
+                  <span className="legend-item">
+                    <span className="color-dot" style={{ backgroundColor: '#FFFF00' }}></span>
+                    Very High (&lt;3Å)
+                  </span>
+                  <span className="legend-item ms-2">
+                    <span className="color-dot" style={{ backgroundColor: '#FF00FF' }}></span>
+                    High (3-6Å)
+                  </span>
+                </span>
+              )}
+            </>
           )}
           {structureLoaded && !contactData && (
             <span className="text-muted small ms-3" style={{ verticalAlign: 'middle' }}>
@@ -388,28 +402,6 @@ export default function StructureViewer({
         </div>
       )}
 
-      {/* Legend */}
-      {structureLoaded && paeHighlightEnabled && contactData && (
-        <div className="structure-legend mt-3">
-          <div>
-            <strong>PAE Interface Highlighting:</strong>
-            <p className="text-muted small mb-2">
-              Interface residues colored by PAE confidence (lower PAE = higher confidence):
-            </p>
-            <div className="d-flex gap-3 mt-2 flex-wrap">
-              <div>
-                <span className="color-box" style={{ backgroundColor: '#FFFF00' }}></span>
-                Very High (PAE &lt;3Å)
-              </div>
-              <div>
-                <span className="color-box" style={{ backgroundColor: '#FF00FF' }}></span>
-                High (PAE 3-6Å)
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       <style jsx>{`
         .structure-viewer-container {
           padding: 20px;
@@ -430,6 +422,25 @@ export default function StructureViewer({
           gap: 15px;
         }
 
+        .pae-legend {
+          font-size: 0.85rem;
+          color: #666;
+        }
+
+        .legend-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .color-dot {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 1px solid #666;
+        }
+
         .contact-info {
           padding: 8px 12px;
           background: #f8f9fa;
@@ -448,21 +459,6 @@ export default function StructureViewer({
           transform: translate(-50%, -50%);
           text-align: center;
           z-index: 1000;
-        }
-
-        .structure-legend {
-          padding: 15px;
-          background: #f8f9fa;
-          border-radius: 4px;
-        }
-
-        .color-box {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          margin-right: 8px;
-          border: 1px solid #333;
-          vertical-align: middle;
         }
       `}</style>
     </div>
