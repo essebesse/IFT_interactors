@@ -132,7 +132,13 @@ export default function StructureViewer({
 
   // Load structure and contact data
   useEffect(() => {
-    if (!pluginRef.current) return;
+    console.log('Structure loading useEffect triggered, interactionId:', interactionId);
+    console.log('Plugin ref exists?', !!pluginRef.current);
+
+    if (!pluginRef.current) {
+      console.log('⚠️ Plugin not ready, skipping structure load');
+      return;
+    }
 
     const loadStructure = async () => {
       console.log('=== STARTING STRUCTURE LOAD ===');
