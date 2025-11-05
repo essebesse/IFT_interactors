@@ -491,7 +491,12 @@ export default function Home() {
               </Form>
 
               <div className="alert alert-info mt-4" style={{ fontSize: '1.05rem', padding: '12px', lineHeight: '1.6' }}>
-                <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible relative domain orientation.
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible relative domain orientation.
+                </div>
+                <div>
+                  <strong>Disclaimer:</strong> Not all predicted direct interactions will be true; some false positives occur, especially among low-confidence interactions. Use these predictions as hypotheses for experimental validation.
+                </div>
               </div>
             </Card.Body>
           </Card>
