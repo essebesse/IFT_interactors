@@ -52,15 +52,27 @@ export default function StructurePage() {
       width: '100vw',
       height: '100vh',
       overflow: 'auto',
-      background: 'white'
+      background: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
     }}>
-      <StructureViewer
-        interactionId={parseInt(id)}
-        baitGene={info.baitGene}
-        preyGene={info.preyGene}
-        onClose={() => window.close()}
-        closeButtonText="✕ Close Window"
-      />
+      <div style={{
+        width: '95vw',
+        height: '95vh',
+        maxWidth: '1920px',
+        maxHeight: '1080px',
+        display: 'flex',
+        flexDirection: 'column'
+      }}>
+        <StructureViewer
+          interactionId={parseInt(id)}
+          baitGene={info.baitGene}
+          preyGene={info.preyGene}
+          onClose={() => window.close()}
+          closeButtonText="✕ Close Window"
+        />
+      </div>
     </div>
   );
 }
