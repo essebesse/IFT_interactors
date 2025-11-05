@@ -317,9 +317,9 @@ export default function StructureViewer({
   };
 
   return (
-    <div className="structure-viewer-container">
+    <div className="structure-viewer-container" style={{ height: '100%', display: 'flex', flexDirection: 'column', padding: '15px' }}>
       {/* Header */}
-      <div className="structure-viewer-header">
+      <div className="structure-viewer-header" style={{ flexShrink: 0 }}>
         <div className="header-left">
           <h5 className="mb-0 d-inline-block">
             3D Structure: {baitGene} ↔ {preyGene}
@@ -363,7 +363,7 @@ export default function StructureViewer({
 
       {/* Contact Summary */}
       {structureLoaded && contactData && (
-        <div className="contact-info mb-3">
+        <div className="contact-info mb-3" style={{ flexShrink: 0 }}>
           <small className="text-muted">
             Interface contacts: {contactData.data.summary.total_contacts}
             {' '}• Very High: {contactData.data.summary.very_high_count}
@@ -380,7 +380,8 @@ export default function StructureViewer({
         className="molstar-container"
         style={{
           width: '100%',
-          height: '600px',
+          flex: 1,
+          minHeight: 0,
           position: 'relative',
           border: '1px solid #ddd',
           borderRadius: '4px'
