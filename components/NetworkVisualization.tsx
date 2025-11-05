@@ -20,6 +20,7 @@ interface InteractionLink {
   target: string | ProteinNode;
   confidence: string | null;
   iptm: number;
+  ipsae?: number;
   contacts_pae_lt_3?: number;
   contacts_pae_lt_6?: number;
   interface_plddt?: number;
@@ -145,6 +146,7 @@ export const NetworkVisualization: React.FC<NetworkVisualizationProps> = ({
         target: inter.prey_uniprot,
         confidence: inter.confidence,
         iptm: inter.iptm,
+        ipsae: inter.ipsae,
         contacts_pae_lt_3: inter.contacts_pae_lt_3,
         contacts_pae_lt_6: inter.contacts_pae_lt_6,
         interface_plddt: inter.interface_plddt,
@@ -346,8 +348,8 @@ export const NetworkVisualization: React.FC<NetworkVisualizationProps> = ({
         content = `
           <div style="font-weight: bold; margin-bottom: 5px;">Interaction</div>
           <div>Confidence: ${confLevel}</div>
+          ${d.ipsae !== undefined && d.ipsae !== null ? `<div>ipSAE: ${d.ipsae.toFixed(3)}</div>` : ''}
           <div>iPTM: ${d.iptm.toFixed(3)}</div>
-          <div>AlphaFold: ${d.alphafold_version}</div>
           ${d.contacts_pae_lt_3 !== undefined ? `<div>PAE &lt;3Å: ${d.contacts_pae_lt_3}</div>` : ''}
           ${d.interface_plddt ? `<div>ipLDDT: ${d.interface_plddt.toFixed(1)}</div>` : ''}
         `;
