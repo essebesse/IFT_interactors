@@ -79,6 +79,7 @@ export default function StructureViewer({
   const [colorMode, setColorMode] = useState<ColorMode>('chain');
   const [contactData, setContactData] = useState<ContactData | null>(null);
   const [structureLoaded, setStructureLoaded] = useState(false);
+  const [pluginReady, setPluginReady] = useState(false);
 
   // Initialize Mol* plugin
   useEffect(() => {
@@ -108,6 +109,7 @@ export default function StructureViewer({
 
         console.log('✓ Molstar plugin initialized successfully!');
         pluginRef.current = plugin;
+        setPluginReady(true);
 
       } catch (err) {
         console.error('!!! Failed to initialize Mol*:', err);
@@ -129,9 +131,10 @@ export default function StructureViewer({
   // Load structure and contact data
   useEffect(() => {
     console.log('Structure loading useEffect triggered, interactionId:', interactionId);
+    console.log('Plugin ready?', pluginReady);
     console.log('Plugin ref exists?', !!pluginRef.current);
 
-    if (!pluginRef.current) {
+    if (!pluginReady || !pluginRef.current) {
       console.log('⚠️ Plugin not ready, skipping structure load');
       return;
     }
@@ -189,7 +192,7 @@ export default function StructureViewer({
     };
 
     loadStructure();
-  }, [interactionId]);
+  }, [interactionId, pluginReady]);
 
   // Toggle color mode and apply PAE coloring
   const handleColorModeToggle = async () => {
