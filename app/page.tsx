@@ -343,7 +343,7 @@ export default function Home() {
     const updateDimensions = () => {
       setNetworkDimensions({
         width: Math.max(350, window.innerWidth * 0.37),
-        height: Math.max(300, window.innerHeight * 0.4)
+        height: Math.max(300, window.innerHeight * 0.55)  // Match 55vh container height
       });
     };
 
@@ -479,7 +479,7 @@ export default function Home() {
             {/* Main Network */}
             <Col md={6}>
               <Card className="shadow-sm h-100">
-                <Card.Body style={{ height: '55vh', position: 'relative', padding: '0' }}>
+                <Card.Body style={{ height: '55vh', position: 'relative', padding: '0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   {loading ? (
                     <div className="d-flex justify-content-center align-items-center h-100">
                       <Spinner animation="border" variant="primary" />
@@ -512,7 +512,7 @@ export default function Home() {
             {/* Secondary Network / Structure Viewer */}
             <Col md={6}>
               <Card className="shadow-sm h-100">
-                <Card.Body style={{ height: '55vh', position: 'relative', padding: viewMode === 'structure' ? '0' : '0' }}>
+                <Card.Body style={{ height: '55vh', position: 'relative', padding: viewMode === 'structure' ? '0' : '0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   {viewMode === 'structure' && selectedStructure ? (
                     <StructureViewer
                       interactionId={selectedStructure.id}
