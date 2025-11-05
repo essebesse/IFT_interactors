@@ -4,13 +4,14 @@
  * Structure Viewer Component
  * ===========================
  *
- * 3D structure visualization using Mol* (Molstar) with PAE-based interface coloring.
+ * 3D structure visualization using Mol* (Molstar) with automatic PAE-based interface coloring.
  *
  * Features:
  * - Load CIF files from API
- * - Two coloring modes:
- *   1. Chain coloring: Distinct colors for each protein chain
- *   2. PAE coloring: Interface residues colored by confidence
+ * - Automatic PAE interface highlighting (on by default):
+ *   - Yellow: Very High Confidence (PAE <3Å)
+ *   - Magenta: High Confidence (PAE 3-6Å)
+ * - Distinct chain colors for protein visualization
  * - Interactive camera controls
  * - Loading states and error handling
  */
@@ -23,7 +24,7 @@ import { renderReact18 } from 'molstar/lib/mol-plugin-ui/react18';
 import { Color } from 'molstar/lib/mol-util/color';
 import { Script } from 'molstar/lib/mol-script/script';
 import { StructureSelection } from 'molstar/lib/mol-model/structure';
-import { setStructureOverpaint, clearStructureOverpaint } from 'molstar/lib/mol-plugin-state/helpers/structure-overpaint';
+import { setStructureOverpaint } from 'molstar/lib/mol-plugin-state/helpers/structure-overpaint';
 import 'molstar/lib/mol-plugin-ui/skin/light.scss';
 
 interface Contact {
@@ -63,8 +64,6 @@ interface StructureViewerProps {
   onClose: () => void;
 }
 
-type ColorMode = 'chain' | 'pae';
-
 export default function StructureViewer({
   interactionId,
   baitGene,
@@ -76,7 +75,6 @@ export default function StructureViewer({
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [colorMode, setColorMode] = useState<ColorMode>('chain');
   const [contactData, setContactData] = useState<ContactData | null>(null);
   const [structureLoaded, setStructureLoaded] = useState(false);
   const [pluginReady, setPluginReady] = useState(false);
@@ -147,7 +145,6 @@ export default function StructureViewer({
       setError(null);
       setStructureLoaded(false);
       setContactData(null);
-      setColorMode('chain');
 
       try {
         const plugin = pluginRef.current!;
@@ -181,6 +178,12 @@ export default function StructureViewer({
         // Apply default preset (chains will get default colors)
         await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
 
+        // Automatically apply PAE coloring if data is available
+        if (paeData) {
+          console.log('Automatically applying PAE interface coloring...');
+          await applyPAEColoring(plugin, paeData);
+        }
+
         setStructureLoaded(true);
         setLoading(false);
 
@@ -194,35 +197,11 @@ export default function StructureViewer({
     loadStructure();
   }, [interactionId, pluginReady]);
 
-  // Toggle color mode and apply PAE coloring
-  const handleColorModeToggle = async () => {
-    if (!pluginRef.current || !structureLoaded) return;
-
-    const newMode = colorMode === 'chain' ? 'pae' : 'chain';
-    setColorMode(newMode);
-
-    const plugin = pluginRef.current;
-
-    try {
-      if (newMode === 'pae' && contactData) {
-        // Apply PAE-based coloring
-        await applyPAEColoring(plugin, contactData);
-      } else {
-        // Clear overpaint to return to default chain coloring
-        const structures = plugin.managers.structure.hierarchy.current.structures;
-        if (structures.length > 0) {
-          await clearStructureOverpaint(plugin, structures[0].components);
-        }
-      }
-    } catch (err) {
-      console.error('Error toggling color mode:', err);
-    }
-  };
 
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
     try {
-      console.log('=== Starting PAE highlighting ===');
+      console.log('=== Starting PAE interface highlighting ===');
       console.log('Contact data:', contactData.data.summary);
 
       // Get the structure
@@ -230,74 +209,84 @@ export default function StructureViewer({
       console.log('Found structures:', structures.length);
 
       if (structures.length === 0) {
-        alert('No structure found for PAE highlighting');
+        console.warn('No structure found for PAE highlighting');
         return;
       }
 
       const structure = structures[0];
       const structureData = structure.cell.obj?.data;
       if (!structureData) {
-        alert('No structure data found');
+        console.warn('No structure data found');
         return;
       }
 
-      // Collect high-confidence interface residues (PAE < 6Å)
-      const goodResidues = new Set<string>();
+      // Separate residues by PAE confidence tiers
+      const veryHighConfidence = new Set<string>(); // PAE <3Å
+      const highConfidence = new Set<string>();     // PAE 3-6Å
+
       for (const contact of contactData.data.contacts) {
-        if (contact.pae < 6) {
-          goodResidues.add(`${contact.chain1}:${contact.resi1}`);
-          goodResidues.add(`${contact.chain2}:${contact.resi2}`);
+        if (contact.pae < 3) {
+          veryHighConfidence.add(`${contact.chain1}:${contact.resi1}`);
+          veryHighConfidence.add(`${contact.chain2}:${contact.resi2}`);
+        } else if (contact.pae < 6) {
+          highConfidence.add(`${contact.chain1}:${contact.resi1}`);
+          highConfidence.add(`${contact.chain2}:${contact.resi2}`);
         }
       }
 
-      console.log(`Found ${goodResidues.size} residues with PAE < 6Å`);
+      console.log(`PAE <3Å (Very High): ${veryHighConfidence.size} residues`);
+      console.log(`PAE 3-6Å (High): ${highConfidence.size} residues`);
 
-      if (goodResidues.size === 0) {
-        alert('No high-confidence interface residues found (PAE < 6Å)');
-        return;
-      }
-
-      // Convert to array and limit
-      const residuesToHighlight = Array.from(goodResidues)
-        .slice(0, 100)
-        .map(key => {
+      // Helper function to create selection from residue set
+      const createSelection = (residues: Set<string>) => {
+        const residueArray = Array.from(residues).map(key => {
           const [chain, resi] = key.split(':');
           return { chain, resi: parseInt(resi) };
         });
 
-      console.log(`Highlighting first ${residuesToHighlight.length} residues`);
-
-      // Create selection
-      const selection = Script.getStructureSelection(
-        Q => Q.struct.generator.atomGroups({
-          'residue-test': Q.core.logic.or(
-            residuesToHighlight.map(r =>
-              Q.core.logic.and([
-                Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_asym_id(), r.chain]),
-                Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_seq_id(), r.resi])
-              ])
+        return Script.getStructureSelection(
+          Q => Q.struct.generator.atomGroups({
+            'residue-test': Q.core.logic.or(
+              residueArray.map(r =>
+                Q.core.logic.and([
+                  Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_asym_id(), r.chain]),
+                  Q.core.rel.eq([Q.struct.atomProperty.macromolecular.label_seq_id(), r.resi])
+                ])
+              )
             )
-          )
-        }),
-        structureData
-      );
+          }),
+          structureData
+        );
+      };
 
-      console.log('Selection created, applying overpaint...');
+      // Apply very high confidence (PAE <3Å) in bright yellow
+      if (veryHighConfidence.size > 0) {
+        const selection = createSelection(veryHighConfidence);
+        await setStructureOverpaint(
+          plugin,
+          structure.components,
+          Color(0xFFFF00),  // Bright yellow
+          async () => StructureSelection.toLociWithSourceUnits(selection)
+        );
+        console.log(`✓ Highlighted ${veryHighConfidence.size} residues (PAE <3Å) in yellow`);
+      }
 
-      // Apply overpaint
-      await setStructureOverpaint(
-        plugin,
-        structure.components,
-        Color(0x00ff00),  // Bright green
-        async () => StructureSelection.toLociWithSourceUnits(selection)
-      );
+      // Apply high confidence (PAE 3-6Å) in bright magenta
+      if (highConfidence.size > 0) {
+        const selection = createSelection(highConfidence);
+        await setStructureOverpaint(
+          plugin,
+          structure.components,
+          Color(0xFF00FF),  // Bright magenta
+          async () => StructureSelection.toLociWithSourceUnits(selection)
+        );
+        console.log(`✓ Highlighted ${highConfidence.size} residues (PAE 3-6Å) in magenta`);
+      }
 
-      console.log('✓ PAE highlighting complete!');
-      alert(`✓ Highlighted ${residuesToHighlight.length} interface residues (PAE < 6Å) in green`);
+      console.log('✓ PAE interface highlighting complete!');
 
     } catch (err) {
       console.error('!!! Error applying PAE highlighting:', err);
-      alert(`Error: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   };
 
@@ -316,37 +305,16 @@ export default function StructureViewer({
         </button>
       </div>
 
-      {/* Controls */}
-      {structureLoaded && (
-        <div className="structure-controls">
-          <div className="btn-group btn-group-sm" role="group">
-            <button
-              className={`btn ${colorMode === 'chain' ? 'btn-primary' : 'btn-outline-primary'}`}
-              onClick={() => colorMode !== 'chain' && handleColorModeToggle()}
-            >
-              Chain Colors
-            </button>
-            <button
-              className={`btn ${colorMode === 'pae' ? 'btn-primary' : 'btn-outline-primary'}`}
-              onClick={() => colorMode !== 'pae' && handleColorModeToggle()}
-              disabled={!contactData}
-              title={!contactData ? 'PAE data not available' : ''}
-            >
-              PAE Confidence
-            </button>
+      {/* Info Panel */}
+      {structureLoaded && contactData && (
+        <div className="structure-info">
+          <div className="contact-summary">
+            <strong>Interface Contacts:</strong> {contactData.data.summary.total_contacts}
+            {' '}(Very High: {contactData.data.summary.very_high_count},
+            {' '}High: {contactData.data.summary.high_count},
+            {' '}Medium: {contactData.data.summary.medium_count},
+            {' '}Low: {contactData.data.summary.low_count})
           </div>
-
-          {contactData && (
-            <div className="contact-summary">
-              <small>
-                Contacts: {contactData.data.summary.total_contacts}
-                {' '}(VH: {contactData.data.summary.very_high_count},
-                {' '}H: {contactData.data.summary.high_count},
-                {' '}M: {contactData.data.summary.medium_count},
-                {' '}L: {contactData.data.summary.low_count})
-              </small>
-            </div>
-          )}
         </div>
       )}
 
@@ -381,30 +349,24 @@ export default function StructureViewer({
       )}
 
       {/* Legend */}
-      {structureLoaded && (
+      {structureLoaded && contactData && (
         <div className="structure-legend mt-3">
-          {colorMode === 'chain' ? (
-            <div>
-              <strong>Chain Colors:</strong>
-              <p className="text-muted small mb-2">
-                Each protein chain is colored distinctly. {baitGene} and {preyGene} are shown in different colors for clarity.
-              </p>
-            </div>
-          ) : (
-            <div>
-              <strong>PAE Interface Highlighting:</strong>
-              <p className="text-muted small mb-2">
-                High-confidence interface residues (PAE &lt; 6Å) highlighted in bright green.
-                Chains retain their normal distinct colors.
-              </p>
-              <div className="d-flex gap-3 mt-2">
-                <div>
-                  <span className="color-box" style={{ backgroundColor: '#00ff00' }}></span>
-                  Interface (PAE &lt; 6Å)
-                </div>
+          <div>
+            <strong>Interface Coloring:</strong>
+            <p className="text-muted small mb-2">
+              Protein chains shown in distinct colors. Interface residues highlighted by PAE confidence:
+            </p>
+            <div className="d-flex gap-3 mt-2 flex-wrap">
+              <div>
+                <span className="color-box" style={{ backgroundColor: '#FFFF00' }}></span>
+                Very High Confidence (PAE &lt;3Å)
+              </div>
+              <div>
+                <span className="color-box" style={{ backgroundColor: '#FF00FF' }}></span>
+                High Confidence (PAE 3-6Å)
               </div>
             </div>
-          )}
+          </div>
         </div>
       )}
 
@@ -420,15 +382,15 @@ export default function StructureViewer({
           margin-bottom: 15px;
         }
 
-        .structure-controls {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        .structure-info {
+          background: #f8f9fa;
+          padding: 10px 15px;
+          border-radius: 4px;
           margin-bottom: 15px;
         }
 
         .contact-summary {
-          font-family: monospace;
+          font-size: 0.9rem;
         }
 
         .molstar-container {
