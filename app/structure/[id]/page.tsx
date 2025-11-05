@@ -59,6 +59,7 @@ export default function StructurePage() {
         baitGene={info.baitGene}
         preyGene={info.preyGene}
         onClose={() => window.close()}
+        closeButtonText="✕ Close Window"
       />
     </div>
   );

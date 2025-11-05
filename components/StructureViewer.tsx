@@ -62,13 +62,15 @@ interface StructureViewerProps {
   baitGene: string;
   preyGene: string;
   onClose: () => void;
+  closeButtonText?: string;
 }
 
 export default function StructureViewer({
   interactionId,
   baitGene,
   preyGene,
-  onClose
+  onClose,
+  closeButtonText = '← Back to Network'
 }: StructureViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pluginRef = useRef<PluginUIContext | null>(null);
@@ -355,7 +357,7 @@ export default function StructureViewer({
           onClick={onClose}
           className="btn btn-sm btn-secondary"
         >
-          ← Back to Network
+          {closeButtonText}
         </button>
       </div>
 
