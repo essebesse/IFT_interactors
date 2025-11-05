@@ -112,7 +112,6 @@ export default function Home() {
     baitGene: string;
     preyGene: string;
   } | null>(null);
-  const [isFullscreenViewer, setIsFullscreenViewer] = useState(true);
 
   const fetchBaitProteins = async () => {
     try {
@@ -196,7 +195,6 @@ export default function Home() {
       preyGene: preyGene
     });
     setViewMode('structure');
-    setIsFullscreenViewer(true); // Always start in fullscreen mode
   };
 
   const handleCloseStructure = () => {
@@ -521,8 +519,6 @@ export default function Home() {
                       baitGene={selectedStructure.baitGene}
                       preyGene={selectedStructure.preyGene}
                       onClose={handleCloseStructure}
-                      isFullscreen={isFullscreenViewer}
-                      onToggleFullscreen={() => setIsFullscreenViewer(!isFullscreenViewer)}
                     />
                   ) : secondaryLoading ? (
                     <div className="d-flex justify-content-center align-items-center h-100">
@@ -657,14 +653,37 @@ export default function Home() {
                         )}
                       </td>
                       <td>
-                        <Button
-                          size="sm"
-                          variant="primary"
-                          onClick={() => handleViewStructure(inter)}
-                          disabled={!inter.id}
-                        >
-                          View 3D
-                        </Button>
+                        <div className="d-flex gap-1">
+                          <Button
+                            size="sm"
+                            variant="primary"
+                            onClick={() => handleViewStructure(inter)}
+                            disabled={!inter.id}
+                            title="View in embedded viewer"
+                          >
+                            View 3D
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="outline-primary"
+                            onClick={() => window.open(`/structure/${inter.id}`, '_blank')}
+                            disabled={!inter.id}
+                            title="Open in new window (fullscreen)"
+                          >
+                            ⛶
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="outline-secondary"
+                            as="a"
+                            href={`/api/structure/${inter.id}?download=true`}
+                            download
+                            disabled={!inter.id}
+                            title="Download CIF file"
+                          >
+                            ⬇
+                          </Button>
+                        </div>
                       </td>
                     </tr>
                   ))}

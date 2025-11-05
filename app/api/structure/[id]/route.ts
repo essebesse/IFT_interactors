@@ -56,6 +56,8 @@ export async function GET(
 ) {
   try {
     const interactionId = params.id;
+    const { searchParams } = new URL(request.url);
+    const isDownload = searchParams.get('download') === 'true';
 
     // Load manifest to get interaction directory name
     const manifest = await loadManifest();
@@ -94,7 +96,9 @@ export async function GET(
       status: 200,
       headers: {
         'Content-Type': 'chemical/x-cif',
-        'Content-Disposition': `inline; filename="${entry.interaction_directory}.cif"`,
+        'Content-Disposition': isDownload
+          ? `attachment; filename="${entry.bait_gene}_${entry.prey_gene}.cif"`
+          : `inline; filename="${entry.interaction_directory}.cif"`,
         'Cache-Control': 'public, max-age=31536000, immutable'
       }
     });
