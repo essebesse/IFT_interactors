@@ -103,11 +103,6 @@ export default function StructureViewer({
           b.transformer.definition.name !== 'pdbe-structure-quality-report'
         );
 
-        customSpec.config = [
-          ...(customSpec.config || []),
-          ['VolumeStreaming.Enabled', false],
-        ];
-
         console.log('Creating Molstar UI...');
         const plugin = await createPluginUI({
           target: containerRef.current,
