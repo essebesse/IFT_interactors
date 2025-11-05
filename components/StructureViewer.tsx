@@ -317,7 +317,7 @@ export default function StructureViewer({
   };
 
   return (
-    <div className="structure-viewer-container" style={{ height: '100%', display: 'flex', flexDirection: 'column', padding: '15px' }}>
+    <div className="structure-viewer-container" style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', padding: '15px' }}>
       {/* Header */}
       <div className="structure-viewer-header" style={{ flexShrink: 0 }}>
         <div className="header-left">
@@ -337,11 +337,11 @@ export default function StructureViewer({
                 <span className="pae-legend ms-3" style={{ verticalAlign: 'middle' }}>
                   <span className="legend-item">
                     <span className="color-dot" style={{ backgroundColor: '#FFFF00' }}></span>
-                    Very High (&lt;3Å)
+                    Very high confidence
                   </span>
                   <span className="legend-item ms-2">
                     <span className="color-dot" style={{ backgroundColor: '#FF00FF' }}></span>
-                    High (3-6Å)
+                    High confidence
                   </span>
                 </span>
               )}

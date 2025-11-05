@@ -460,16 +460,27 @@ export default function Home() {
 
               <h5>Confidence Levels</h5>
               <Form>
-                {Object.keys(confidenceFilters).map(level => (
-                  <Form.Check
-                    key={level}
-                    type="checkbox"
-                    id={`check-${level}`}
-                    label={level}
-                    checked={(confidenceFilters as any)[level]}
-                    onChange={(e) => setConfidenceFilters(prev => ({ ...prev, [level]: e.target.checked }))}
-                  />
-                ))}
+                <Form.Check
+                  type="checkbox"
+                  id="check-High"
+                  label="High (ipSAE >0.7)"
+                  checked={confidenceFilters.High}
+                  onChange={(e) => setConfidenceFilters(prev => ({ ...prev, High: e.target.checked }))}
+                />
+                <Form.Check
+                  type="checkbox"
+                  id="check-Medium"
+                  label="Medium (ipSAE 0.5-0.7)"
+                  checked={confidenceFilters.Medium}
+                  onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Medium: e.target.checked }))}
+                />
+                <Form.Check
+                  type="checkbox"
+                  id="check-Low"
+                  label="Low (ipSAE <0.5)"
+                  checked={confidenceFilters.Low}
+                  onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Low: e.target.checked }))}
+                />
               </Form>
             </Card.Body>
           </Card>
