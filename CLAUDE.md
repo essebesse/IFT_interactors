@@ -23,7 +23,8 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
 - **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
-- **Last Updated**: 2025-11-01 (rebuilt from original AlphaPulldown v4.json files)
+- **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
+- **Last Frontend Update**: 2025-11-05 (structure viewer improvements)
 
 ### Deployment
 - **Platform**: Vercel
@@ -342,8 +343,9 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Partial matching supported
 
 ### Filtering
-- **Confidence levels**: High, Medium, Low (based on ipSAE v4 scoring)
+- **Confidence levels**: High (ipSAE >0.7), Medium (ipSAE 0.5-0.7), Low (ipSAE <0.5)
 - All data is v4 (ipSAE) analysis from AF3 predictions
+- **Confidence scoring note** (added 2025-11-05): Sidebar includes explanation that flexible structures (e.g., IFT74-IFT81 coiled-coils) may show low iPTM/ipSAE but have high-quality interfaces (100+ iPAE contacts <3Å)
 
 ### Visualization
 - Interactive force-directed network graph
@@ -351,7 +353,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Edge thickness by confidence score
 - Click nodes to explore secondary interactions
 
-### 3D Structure Viewer (NEW - 2025-11-04)
+### 3D Structure Viewer (2025-11-04, Updated 2025-11-05)
 **Status**: ✅ Deployed with Molstar integration
 
 **Features**:
@@ -360,11 +362,12 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - **Chain visualization**: Default Molstar chain coloring (distinct colors per chain)
 - **PAE highlighting**: Toggle to highlight interface residues by PAE confidence
 - **Structure clearing**: Properly clears previous structure when loading new one
+- **Fullscreen mode**: Click ⛶ button to open in new window (memory-optimized)
 
 **PAE Interface Highlighting**:
-- Highlights residues with PAE < 6Å (high-confidence interface)
-- Simple green overlay on interface residues
-- Limited to 100 residues for performance
+- **Yellow**: Very high confidence (PAE <3Å)
+- **Magenta**: High confidence (PAE 3-6Å)
+- Legend shows specific PAE thresholds for clarity
 - Toggle between normal chain colors and PAE mode
 
 **Technical Implementation**:
@@ -376,6 +379,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
   - `/api/structure/[id]` - Serves CIF files from Blob
   - `/api/structure/[id]/pae` - Serves PAE contact data
 - **Manifest**: `cif_manifest.json` maps interaction IDs to filenames
+- **Fullscreen Page**: `app/structure/[id]/page.tsx` - Standalone viewer with canvas size limits
 
 **Blob Storage**:
 - **URL Pattern**: `structures/{bait_uniprot}_and_{prey_uniprot}.cif`
@@ -383,15 +387,20 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - **Total Files**: 500 CIF structures (one per interaction)
 - **Base URL**: `https://rechesvudwvwhwta.public.blob.vercel-storage.com`
 
-**Known Issues**:
-- ⚠️ PAE highlighting under development (debug version deployed)
-- ⚠️ Chain colors not yet PyMOL-style (cyan/magenta)
-- See browser console for detailed PAE debugging info
-
-**Performance**:
+**Performance & Memory Optimization**:
 - Structure loads in 2-3 seconds ✓
-- PAE highlighting applies in <1 second (when working) ✓
-- No more 30+ second hangs ✓
+- PAE highlighting applies in <1 second ✓
+- **Fullscreen canvas limited to 1920x1080** max resolution (prevents memory exhaustion on 4K displays)
+- No more 30+ second hangs or system freezes ✓
+
+**Recent Fixes (2025-11-05)**:
+- ✅ Fixed critical memory exhaustion bug in fullscreen mode (commit `6370aab`)
+  - Limited Molstar canvas to max 1920x1080 pixels
+  - Prevents RAM exhaustion on 4K/retina displays (was up to 2-3 GB)
+  - Fullscreen viewer now stable on 16GB RAM systems
+- ✅ Added PAE thresholds to legend (commit `2237817`)
+  - Shows specific PAE cutoffs: <3Å (yellow), 3-6Å (magenta)
+  - Improves interpretability of interface highlighting
 
 **Scripts**:
 - `scripts/upload_to_vercel_blob.mjs` - Upload CIF/PAE files to Blob
@@ -563,7 +572,12 @@ git branch -D ift-temp-branch
 ---
 
 **Project Status**: ✅ Deployed and operational
-**Last Updated**: 2025-11-01
+**Last Updated**: 2025-11-05
 **Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main)
+
+**Recent Updates (2025-11-05)**:
+- ✅ Fixed critical memory exhaustion bug in fullscreen structure viewer
+- ✅ Added confidence scoring explanation for flexible structures in sidebar
+- ✅ Enhanced PAE interface highlighting legend with specific thresholds
