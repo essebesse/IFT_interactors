@@ -158,12 +158,14 @@ export default function StructureViewer({
         console.log('Fetching PAE data from:', `/api/structure/${interactionId}/pae`);
         const paeResponse = await fetch(`/api/structure/${interactionId}/pae`);
         let paeData: ContactData | null = null;
+        console.log('PAE response status:', paeResponse.status, 'ok:', paeResponse.ok);
         if (paeResponse.ok) {
           paeData = await paeResponse.json();
           setContactData(paeData);
-          console.log('PAE data loaded successfully');
+          console.log('✓ PAE data loaded successfully:', paeData.data.summary);
         } else {
-          console.warn('PAE contact data not available');
+          const errorText = await paeResponse.text();
+          console.warn('⚠️ PAE contact data not available:', paeResponse.status, errorText);
         }
 
         // Load structure into Mol*
@@ -316,9 +318,25 @@ export default function StructureViewer({
     <div className="structure-viewer-container">
       {/* Header */}
       <div className="structure-viewer-header">
-        <h5 className="mb-0">
-          3D Structure: {baitGene} ↔ {preyGene}
-        </h5>
+        <div className="header-left">
+          <h5 className="mb-0 d-inline-block">
+            3D Structure: {baitGene} ↔ {preyGene}
+          </h5>
+          {structureLoaded && contactData && (
+            <button
+              onClick={togglePAEHighlight}
+              className={`btn btn-sm ms-3 ${paeHighlightEnabled ? 'btn-success' : 'btn-outline-secondary'}`}
+              style={{ verticalAlign: 'middle' }}
+            >
+              {paeHighlightEnabled ? '✓ PAE Interface ON' : 'Show PAE Interface'}
+            </button>
+          )}
+          {structureLoaded && !contactData && (
+            <span className="text-muted small ms-3" style={{ verticalAlign: 'middle' }}>
+              (PAE data not available)
+            </span>
+          )}
+        </div>
         <button
           onClick={onClose}
           className="btn btn-sm btn-secondary"
@@ -327,33 +345,16 @@ export default function StructureViewer({
         </button>
       </div>
 
-      {/* Controls */}
-      {structureLoaded && (
-        <div className="structure-controls">
-          {contactData && (
-            <>
-              <button
-                onClick={togglePAEHighlight}
-                className={`btn btn-sm ${paeHighlightEnabled ? 'btn-success' : 'btn-outline-secondary'}`}
-              >
-                {paeHighlightEnabled ? '✓ PAE Interface ON' : 'Show PAE Interface'}
-              </button>
-              <div className="contact-summary">
-                <small>
-                  Contacts: {contactData.data.summary.total_contacts}
-                  {' '}(VH: {contactData.data.summary.very_high_count},
-                  {' '}H: {contactData.data.summary.high_count},
-                  {' '}M: {contactData.data.summary.medium_count},
-                  {' '}L: {contactData.data.summary.low_count})
-                </small>
-              </div>
-            </>
-          )}
-          {!contactData && (
-            <div className="text-muted small">
-              <em>PAE data not available for this interaction</em>
-            </div>
-          )}
+      {/* Contact Summary */}
+      {structureLoaded && contactData && (
+        <div className="contact-info mb-3">
+          <small className="text-muted">
+            Interface contacts: {contactData.data.summary.total_contacts}
+            {' '}• Very High: {contactData.data.summary.very_high_count}
+            {' '}• High: {contactData.data.summary.high_count}
+            {' '}• Medium: {contactData.data.summary.medium_count}
+            {' '}• Low: {contactData.data.summary.low_count}
+          </small>
         </div>
       )}
 
@@ -423,20 +424,17 @@ export default function StructureViewer({
           border-bottom: 1px solid #e0e0e0;
         }
 
-        .structure-controls {
+        .header-left {
           display: flex;
-          justify-content: space-between;
           align-items: center;
           gap: 15px;
-          background: #f8f9fa;
-          padding: 10px 15px;
-          border-radius: 4px;
-          margin-bottom: 15px;
         }
 
-        .contact-summary {
-          font-size: 0.85rem;
-          font-family: monospace;
+        .contact-info {
+          padding: 8px 12px;
+          background: #f8f9fa;
+          border-radius: 4px;
+          border-left: 3px solid #007bff;
         }
 
         .molstar-container {
