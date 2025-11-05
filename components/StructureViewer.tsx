@@ -92,10 +92,24 @@ export default function StructureViewer({
       try {
         if (!containerRef.current) return;
 
+        // Custom spec to disable external network calls
+        const customSpec = DefaultPluginUISpec();
+
+        // Disable all external behaviors and validation
+        customSpec.behaviors = customSpec.behaviors.filter(b =>
+          b.transformer.definition.name !== 'rcsb-assembly-symmetry' &&
+          b.transformer.definition.name !== 'pdbe-structure-quality-report'
+        );
+
+        customSpec.config = [
+          ...(customSpec.config || []),
+          ['VolumeStreaming.Enabled', false],
+        ];
+
         const plugin = await createPluginUI({
           target: containerRef.current,
           render: renderReact18,
-          spec: DefaultPluginUISpec()
+          spec: customSpec
         });
 
         pluginRef.current = plugin;
@@ -122,6 +136,9 @@ export default function StructureViewer({
     if (!pluginRef.current) return;
 
     const loadStructure = async () => {
+      console.log('=== STARTING STRUCTURE LOAD ===');
+      console.log('Interaction ID:', interactionId);
+
       setLoading(true);
       setError(null);
       setStructureLoaded(false);
@@ -132,23 +149,28 @@ export default function StructureViewer({
         const plugin = pluginRef.current!;
 
         // Clear any existing structures
+        console.log('Clearing existing structures...');
         await plugin.clear();
 
         // Fetch PAE contact data
+        console.log('Fetching PAE data from:', `/api/structure/${interactionId}/pae`);
         const paeResponse = await fetch(`/api/structure/${interactionId}/pae`);
         let paeData: ContactData | null = null;
         if (paeResponse.ok) {
           paeData = await paeResponse.json();
           setContactData(paeData);
+          console.log('PAE data loaded successfully');
         } else {
           console.warn('PAE contact data not available');
         }
 
         // Load structure into Mol*
+        console.log('Fetching CIF from:', `/api/structure/${interactionId}`);
         const data = await plugin.builders.data.download(
           { url: `/api/structure/${interactionId}`, isBinary: false },
           { state: { isGhost: false } }
         );
+        console.log('CIF data downloaded, parsing...');
 
         const trajectory = await plugin.builders.structure.parseTrajectory(data, 'mmcif');
 
