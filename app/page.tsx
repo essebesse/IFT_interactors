@@ -463,7 +463,7 @@ export default function Home() {
               <hr className="my-4" />
 
               <h5 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Confidence Levels</h5>
-              <Form style={{ fontSize: '1.05rem' }}>
+              <Form style={{ fontSize: '1.1rem' }}>
                 <Form.Check
                   type="checkbox"
                   id="check-High"
@@ -490,8 +490,8 @@ export default function Home() {
                 />
               </Form>
 
-              <div className="alert alert-info mt-4" style={{ fontSize: '0.95rem', padding: '12px', lineHeight: '1.5' }}>
-                <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible domain orientations.
+              <div className="alert alert-info mt-4" style={{ fontSize: '1.05rem', padding: '12px', lineHeight: '1.6' }}>
+                <strong>Note:</strong> Flexible structures (e.g., coiled-coil heterodimers like IFT74-IFT81) may show low iPTM/ipSAE scores but have extensive high-quality interface contacts (100+ iPAE &lt;3Å). These represent high-confidence interactions with well-defined interfaces despite flexible relative domain orientation.
               </div>
             </Card.Body>
           </Card>
