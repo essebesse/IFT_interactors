@@ -1,6 +1,7 @@
 'use client';
 
-import { use, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Spinner } from 'react-bootstrap';
 
@@ -10,20 +11,19 @@ const StructureViewer = dynamic(() => import('../../../components/StructureViewe
   loading: () => <div className="text-center p-5"><Spinner animation="border" /> Loading structure viewer...</div>
 });
 
-interface PageProps {
-  params: Promise<{ id: string }>;
-}
-
 interface InteractionInfo {
   baitGene: string;
   preyGene: string;
 }
 
-export default function StructurePage({ params }: PageProps) {
-  const { id } = use(params);
+export default function StructurePage() {
+  const params = useParams();
+  const id = params.id as string;
   const [info, setInfo] = useState<InteractionInfo | null>(null);
 
   useEffect(() => {
+    if (!id) return;
+
     // Fetch interaction info from manifest
     fetch('/cif_manifest.json')
       .then(res => res.json())
