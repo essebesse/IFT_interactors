@@ -52,10 +52,11 @@ async function loadManifest(): Promise<CifManifest> {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const interactionId = params.id;
+    const resolvedParams = await params;
+    const interactionId = resolvedParams.id;
     const { searchParams } = new URL(request.url);
     const isDownload = searchParams.get('download') === 'true';
 
