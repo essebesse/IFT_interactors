@@ -148,6 +148,7 @@ export default function StructureViewer({
       setError(null);
       setStructureLoaded(false);
       setContactData(null);
+      setPaeHighlightEnabled(false); // Reset PAE state when loading new structure
 
       try {
         const plugin = pluginRef.current!;
