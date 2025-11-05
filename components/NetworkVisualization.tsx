@@ -161,34 +161,26 @@ export const NetworkVisualization: React.FC<NetworkVisualizationProps> = ({
     };
   };
 
-  // Calculate dynamic confidence level
+  // Calculate confidence level based on ipSAE (v4 scoring)
   const getConfidenceLevel = (interaction: InteractionLink): string => {
-    if (interaction.alphafold_version === 'AF2') {
-      return 'AF2';
+    // This database contains v4 data only - use ipSAE scoring
+    const ipsae = interaction.ipsae;
+
+    if (!ipsae || isNaN(ipsae)) {
+      return 'Low';
     }
 
-    // High: iPTM ≥ 0.7 OR (contacts ≥ 40 AND ipLDDT ≥ 80) OR (contacts ≥ 30 AND iPTM ≥ 0.5 AND ipLDDT ≥ 80)
-    // BUT exclude if iPTM < 0.75 AND contacts < 5
-    const meetsHighCriteria =
-      interaction.iptm >= 0.7 ||
-      ((interaction.contacts_pae_lt_3 ?? 0) >= 40 && (interaction.interface_plddt ?? 0) >= 80) ||
-      ((interaction.contacts_pae_lt_3 ?? 0) >= 30 && interaction.iptm >= 0.5 && (interaction.interface_plddt ?? 0) >= 80);
-
-    const isExcludedFromHigh = interaction.iptm < 0.75 && (interaction.contacts_pae_lt_3 ?? 0) < 5;
-
-    if (meetsHighCriteria && !isExcludedFromHigh) {
+    // High: ipSAE > 0.7
+    if (ipsae > 0.7) {
       return 'High';
     }
 
-    // Medium: iPTM ≥ 0.6 OR (contacts ≥ 20 AND ipLDDT ≥ 75) OR (contacts ≥ 15 AND iPTM ≥ 0.45)
-    if (
-      interaction.iptm >= 0.6 ||
-      ((interaction.contacts_pae_lt_3 ?? 0) >= 20 && (interaction.interface_plddt ?? 0) >= 75) ||
-      ((interaction.contacts_pae_lt_3 ?? 0) >= 15 && interaction.iptm >= 0.45)
-    ) {
+    // Medium: ipSAE 0.5-0.7
+    if (ipsae >= 0.5) {
       return 'Medium';
     }
 
+    // Low: ipSAE < 0.5
     return 'Low';
   };
 
