@@ -4,11 +4,11 @@
  * Structure Viewer Component
  * ===========================
  *
- * 3D structure visualization using Mol* (Molstar) with automatic PAE-based interface coloring.
+ * 3D structure visualization using Mol* (Molstar) with optional PAE-based interface coloring.
  *
  * Features:
  * - Load CIF files from API
- * - Automatic PAE interface highlighting (on by default):
+ * - Toggle PAE interface highlighting (off by default):
  *   - Yellow: Very High Confidence (PAE <3Å)
  *   - Magenta: High Confidence (PAE 3-6Å)
  * - Distinct chain colors for protein visualization
@@ -24,7 +24,7 @@ import { renderReact18 } from 'molstar/lib/mol-plugin-ui/react18';
 import { Color } from 'molstar/lib/mol-util/color';
 import { Script } from 'molstar/lib/mol-script/script';
 import { StructureSelection } from 'molstar/lib/mol-model/structure';
-import { setStructureOverpaint } from 'molstar/lib/mol-plugin-state/helpers/structure-overpaint';
+import { setStructureOverpaint, clearStructureOverpaint } from 'molstar/lib/mol-plugin-state/helpers/structure-overpaint';
 import 'molstar/lib/mol-plugin-ui/skin/light.scss';
 
 interface Contact {
@@ -78,6 +78,7 @@ export default function StructureViewer({
   const [contactData, setContactData] = useState<ContactData | null>(null);
   const [structureLoaded, setStructureLoaded] = useState(false);
   const [pluginReady, setPluginReady] = useState(false);
+  const [paeHighlightEnabled, setPaeHighlightEnabled] = useState(false);
 
   // Initialize Mol* plugin
   useEffect(() => {
@@ -178,12 +179,6 @@ export default function StructureViewer({
         // Apply default preset (chains will get default colors)
         await plugin.builders.structure.hierarchy.applyPreset(trajectory, 'default');
 
-        // Automatically apply PAE coloring if data is available
-        if (paeData) {
-          console.log('Automatically applying PAE interface coloring...');
-          await applyPAEColoring(plugin, paeData);
-        }
-
         setStructureLoaded(true);
         setLoading(false);
 
@@ -197,6 +192,33 @@ export default function StructureViewer({
     loadStructure();
   }, [interactionId, pluginReady]);
 
+  // Toggle PAE highlighting on/off
+  const togglePAEHighlight = async () => {
+    if (!pluginRef.current || !structureLoaded) return;
+
+    const plugin = pluginRef.current;
+    const structures = plugin.managers.structure.hierarchy.current.structures;
+
+    if (structures.length === 0) return;
+
+    try {
+      if (paeHighlightEnabled) {
+        // Turn OFF: Clear PAE highlighting
+        console.log('Clearing PAE highlighting...');
+        await clearStructureOverpaint(plugin, structures[0].components);
+        setPaeHighlightEnabled(false);
+      } else {
+        // Turn ON: Apply PAE highlighting
+        if (contactData) {
+          console.log('Applying PAE highlighting...');
+          await applyPAEColoring(plugin, contactData);
+          setPaeHighlightEnabled(true);
+        }
+      }
+    } catch (err) {
+      console.error('Error toggling PAE highlight:', err);
+    }
+  };
 
   // Apply PAE-based coloring to structure
   const applyPAEColoring = async (plugin: PluginUIContext, contactData: ContactData) => {
@@ -305,16 +327,33 @@ export default function StructureViewer({
         </button>
       </div>
 
-      {/* Info Panel */}
-      {structureLoaded && contactData && (
-        <div className="structure-info">
-          <div className="contact-summary">
-            <strong>Interface Contacts:</strong> {contactData.data.summary.total_contacts}
-            {' '}(Very High: {contactData.data.summary.very_high_count},
-            {' '}High: {contactData.data.summary.high_count},
-            {' '}Medium: {contactData.data.summary.medium_count},
-            {' '}Low: {contactData.data.summary.low_count})
-          </div>
+      {/* Controls */}
+      {structureLoaded && (
+        <div className="structure-controls">
+          {contactData && (
+            <>
+              <button
+                onClick={togglePAEHighlight}
+                className={`btn btn-sm ${paeHighlightEnabled ? 'btn-success' : 'btn-outline-secondary'}`}
+              >
+                {paeHighlightEnabled ? '✓ PAE Interface ON' : 'Show PAE Interface'}
+              </button>
+              <div className="contact-summary">
+                <small>
+                  Contacts: {contactData.data.summary.total_contacts}
+                  {' '}(VH: {contactData.data.summary.very_high_count},
+                  {' '}H: {contactData.data.summary.high_count},
+                  {' '}M: {contactData.data.summary.medium_count},
+                  {' '}L: {contactData.data.summary.low_count})
+                </small>
+              </div>
+            </>
+          )}
+          {!contactData && (
+            <div className="text-muted small">
+              <em>PAE data not available for this interaction</em>
+            </div>
+          )}
         </div>
       )}
 
@@ -349,21 +388,21 @@ export default function StructureViewer({
       )}
 
       {/* Legend */}
-      {structureLoaded && contactData && (
+      {structureLoaded && paeHighlightEnabled && contactData && (
         <div className="structure-legend mt-3">
           <div>
-            <strong>Interface Coloring:</strong>
+            <strong>PAE Interface Highlighting:</strong>
             <p className="text-muted small mb-2">
-              Protein chains shown in distinct colors. Interface residues highlighted by PAE confidence:
+              Interface residues colored by PAE confidence (lower PAE = higher confidence):
             </p>
             <div className="d-flex gap-3 mt-2 flex-wrap">
               <div>
                 <span className="color-box" style={{ backgroundColor: '#FFFF00' }}></span>
-                Very High Confidence (PAE &lt;3Å)
+                Very High (PAE &lt;3Å)
               </div>
               <div>
                 <span className="color-box" style={{ backgroundColor: '#FF00FF' }}></span>
-                High Confidence (PAE 3-6Å)
+                High (PAE 3-6Å)
               </div>
             </div>
           </div>
@@ -382,7 +421,11 @@ export default function StructureViewer({
           margin-bottom: 15px;
         }
 
-        .structure-info {
+        .structure-controls {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
           background: #f8f9fa;
           padding: 10px 15px;
           border-radius: 4px;
@@ -390,7 +433,8 @@ export default function StructureViewer({
         }
 
         .contact-summary {
-          font-size: 0.9rem;
+          font-size: 0.85rem;
+          font-family: monospace;
         }
 
         .molstar-container {
