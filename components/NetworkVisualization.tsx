@@ -429,23 +429,7 @@ export const NetworkVisualization: React.FC<NetworkVisualizationProps> = ({
         </div>
       )}
 
-      {/* Organism indicator in top-right corner */}
-      {predominantOrganism && (
-        <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 10 }}>
-          <div style={{
-            background: 'rgba(59, 130, 246, 0.9)',
-            color: 'white',
-            padding: '6px 12px',
-            borderRadius: '6px',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-            fontWeight: 'bold',
-            fontSize: '13px',
-            letterSpacing: '0.5px'
-          }}>
-            {predominantOrganism}
-          </div>
-        </div>
-      )}
+      {/* Organism indicator removed - all proteins are human (Hs) */}
 
       {/* SVG */}
       <svg

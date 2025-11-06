@@ -467,7 +467,12 @@ export default function Home() {
                 <Form.Check
                   type="checkbox"
                   id="check-High"
-                  label="High (ipSAE >0.7)"
+                  label={
+                    <span>
+                      <span style={{ color: '#28a745', marginRight: '6px' }}>●</span>
+                      High (ipSAE &gt;0.7)
+                    </span>
+                  }
                   checked={confidenceFilters.High}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, High: e.target.checked }))}
                   style={{ marginBottom: '0.6rem' }}
@@ -475,7 +480,12 @@ export default function Home() {
                 <Form.Check
                   type="checkbox"
                   id="check-Medium"
-                  label="Medium (ipSAE 0.5-0.7)"
+                  label={
+                    <span>
+                      <span style={{ color: '#ffc107', marginRight: '6px' }}>●</span>
+                      Medium (ipSAE 0.5-0.7)
+                    </span>
+                  }
                   checked={confidenceFilters.Medium}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Medium: e.target.checked }))}
                   style={{ marginBottom: '0.6rem' }}
@@ -483,7 +493,12 @@ export default function Home() {
                 <Form.Check
                   type="checkbox"
                   id="check-Low"
-                  label="Low (ipSAE <0.5)"
+                  label={
+                    <span>
+                      <span style={{ color: '#dc3545', marginRight: '6px' }}>●</span>
+                      Low (ipSAE &lt;0.5)
+                    </span>
+                  }
                   checked={confidenceFilters.Low}
                   onChange={(e) => setConfidenceFilters(prev => ({ ...prev, Low: e.target.checked }))}
                   style={{ marginBottom: '0.6rem' }}
@@ -560,7 +575,7 @@ export default function Home() {
                       title={`${secondaryProtein} Interactions`}
                       centerProtein={secondaryProtein}
                       showLayoutControl={false}
-                      legendType="edges"
+                      legendType="nodes"
                     />
                   ) : (
                     <div className="d-flex justify-content-center align-items-center h-100">
