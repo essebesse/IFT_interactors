@@ -24,7 +24,7 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 - **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
-- **Last Frontend Update**: 2025-11-05 (smart fullscreen sizing, sidebar typography, network visualization fixes)
+- **Last Frontend Update**: 2025-11-06 (UI clarity improvements, PAE terminology)
 
 ### Deployment
 - **Platform**: Vercel
@@ -397,7 +397,25 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
   - Considers devicePixelRatio (retina displays)
 - No more 30+ second hangs or system freezes ✓
 
-**Recent Updates (2025-11-05)**:
+**Recent Updates (2025-11-06)**:
+
+1. **UI Clarity Improvements** (commit `2468876`) ⭐
+   - Added colored dots (●) to confidence level checkboxes for visual consistency
+     - Green dot for High (ipSAE >0.7)
+     - Orange dot for Medium (ipSAE 0.5-0.7)
+     - Red dot for Low (ipSAE <0.5)
+   - Removed redundant confidence legend box from secondary network panel
+   - Removed "Hs" organism label from network visualization (all proteins are human)
+   - Result: Cleaner UI with better visual hierarchy
+
+2. **PAE Terminology Update** (commit `cfda6f7`) ⭐
+   - Changed PAE interface labels to avoid confusion with overall confidence levels
+   - Old labels: "Very high confidence (PAE <3Å)", "High confidence (PAE 3-6Å)"
+   - New labels: "High precision contacts (PAE <3Å)", "Moderate precision contacts (PAE 3-6Å)"
+   - Clarifies distinction: ipSAE = global interaction confidence, PAE = local contact precision
+   - Result: Clear separation between two different quality metrics
+
+**Previous Updates (2025-11-05)**:
 
 1. **Smart Fullscreen Sizing** (commit `257451c`) ⭐
    - Replaced hardcoded 1920×1080 limit with dynamic calculation
@@ -610,10 +628,17 @@ git branch -D ift-temp-branch
 ---
 
 **Project Status**: ✅ Deployed and operational
-**Last Updated**: 2025-11-05
+**Last Updated**: 2025-11-06
 **Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
+
+**Summary of 2025-11-06 Updates**:
+- ✅ Added colored dots (●) to confidence level checkboxes (green/orange/red)
+- ✅ Removed redundant confidence legend from secondary network panel
+- ✅ Removed "Hs" organism label from network (all proteins are human)
+- ✅ Renamed PAE labels to "Contact Precision" (high/moderate) to avoid confusion with ipSAE confidence
+- ✅ Result: Clearer UI with distinct terminology for global vs local quality metrics
 
 **Summary of 2025-11-05 Updates**:
 - ✅ Smart fullscreen sizing (adapts to screen, prevents memory issues)
