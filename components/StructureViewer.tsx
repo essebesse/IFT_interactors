@@ -9,8 +9,8 @@
  * Features:
  * - Load CIF files from API
  * - Toggle PAE interface highlighting (off by default):
- *   - Yellow: Very High Confidence (PAE <3Å)
- *   - Magenta: High Confidence (PAE 3-6Å)
+ *   - Yellow: High precision contacts (PAE <3Å)
+ *   - Magenta: Moderate precision contacts (PAE 3-6Å)
  * - Distinct chain colors for protein visualization
  * - Interactive camera controls
  * - Loading states and error handling
@@ -338,11 +338,11 @@ export default function StructureViewer({
                 <span className="pae-legend ms-3" style={{ verticalAlign: 'middle' }}>
                   <span className="legend-item">
                     <span className="color-dot" style={{ backgroundColor: '#FFFF00' }}></span>
-                    Very high confidence (PAE &lt;3Å)
+                    High precision contacts (PAE &lt;3Å)
                   </span>
                   <span className="legend-item ms-2">
                     <span className="color-dot" style={{ backgroundColor: '#FF00FF' }}></span>
-                    High confidence (PAE 3-6Å)
+                    Moderate precision contacts (PAE 3-6Å)
                   </span>
                 </span>
               )}
