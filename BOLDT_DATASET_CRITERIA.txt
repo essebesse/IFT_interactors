@@ -222,6 +222,48 @@ For each interaction in Supplementary Data 3:
 
 > "We integrated experimental interaction data from Boldt et al. (2016), who performed SF-TAP-MS on 217 cilia and ciliopathy-related proteins. We used only interactions that passed a stringent false discovery rate threshold (FDR ≤ 0.1, Supplementary Data 3), corresponding to ~90% confidence in interaction validity. Of our 512 AF3-predicted interactions, X were independently validated by the Boldt dataset. High-confidence AF3 predictions (ipSAE >0.7) showed Y% validation rate, significantly higher than low-confidence predictions (ipSAE <0.5, Z% validation rate, p < 0.001, Fisher's exact test)."
 
+## Re-running After Adding New Proteins (Phase 3)
+
+**Important**: When IFT172, BBS9, BBS18, and RABL2 are added to the database, the Boldt validation import MUST be re-run to validate the NEW interactions.
+
+### Why Re-run?
+
+Boldt et al. has 217 baits - it may include some of the 4 new proteins. Re-running checks if any of the ~88 NEW AF3 predictions are experimentally supported.
+
+### How to Re-run (Safe - No Duplicates!)
+
+The import script is **idempotent** - it automatically checks for existing validations by PMID:
+
+```bash
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
+
+# Re-run Boldt import (safe - duplicate prevention built-in)
+node scripts/import_experimental_data.mjs boldt2016
+```
+
+**Expected behavior**:
+- Already-validated interactions → automatically skipped (returns `already_exists` status)
+- NEW interactions → checked and validated if found in Boldt dataset
+- Result: ~5-10 additional validations, NO duplicates for original 31 proteins
+
+### Verification
+
+After re-running, verify no duplicates:
+
+```bash
+node -e "
+const { sql } = require('@vercel/postgres');
+(async () => {
+  const boldt = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"SF-TAP-MS\"}]'\`;
+  console.log('Total Boldt validations:', boldt.rows[0].count);
+  console.log('Expected: ~30 (was ~25 before adding 4 proteins)');
+  console.log('NOT expected: ~50 (that would indicate duplicates!)');
+})();
+"
+```
+
+**See**: `EXPERIMENTAL_VALIDATION_WORKFLOW.md` for complete phased validation strategy
+
 ---
 
 **Created**: 2025-11-07

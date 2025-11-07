@@ -566,9 +566,61 @@ mv experimental_data/raw/gupta_2015_table_s1_utf8.csv experimental_data/raw/gupt
 
 ---
 
-**Estimated Total Time**: 45 minutes
+## After Adding New Proteins (Phase 3)
+
+**Important**: When you add IFT172, BBS9, BBS18, and RABL2 to the database (see `TODO_ADD_NEW_PROTEINS.md`), you MUST **re-run this Gupta import** to validate the NEW interactions.
+
+### Why Re-run?
+
+After adding 4 new proteins, the database will have ~600 interactions (up from 512). The Gupta dataset may contain experimental evidence for some of these NEW interactions, but we haven't checked yet!
+
+### How to Re-run (Safe - No Duplicates!)
+
+The import script is **idempotent** - it checks for existing validations and automatically skips them:
+
+```bash
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
+
+# Re-run Gupta import (safe - checks for duplicates by PMID)
+node scripts/import_experimental_data.mjs gupta2015
+```
+
+**Expected output**:
+```
+✅ Updated: 5-15 interactions (NEW validations from 4 new proteins)
+ℹ️  Already validated: ~50 (original validations - automatically skipped)
+⚠️  Not in AF3 predictions: ~2800+ (Gupta data not in our dataset)
+```
+
+### What Gets Updated?
+
+- ✅ NEW interactions from IFT172, BBS9, BBS18, RABL2 → checked and validated
+- ✅ Original 31 proteins → skipped (already validated, no duplicates created)
+- ✅ Total validated increases from ~65-75 to ~80-90
+
+### Verification
+
+```bash
+# Check no duplicates were created
+node -e "
+const { sql } = require('@vercel/postgres');
+(async () => {
+  const gupta = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"BioID\"}]'\`;
+  console.log('Total BioID validations:', gupta.rows[0].count);
+  console.log('Expected: ~60 (was ~50 before adding 4 proteins)');
+  console.log('If doubled (e.g., 100), something went wrong!');
+})();
+"
+```
+
+**See**: `EXPERIMENTAL_VALIDATION_WORKFLOW.md` for complete phased validation strategy
+
+---
+
+**Estimated Total Time**: 45 minutes (Phase 1), 40 minutes (Phase 3 re-run)
 
 **Questions?** Check:
 - `GUPTA_DATASET_CRITERIA.txt` for BioID method details
 - `scripts/import_experimental_data.mjs` for parser implementation
 - `EXPERIMENTAL_VALIDATION_PLAN.md` for overall strategy
+- `EXPERIMENTAL_VALIDATION_WORKFLOW.md` for phased validation approach

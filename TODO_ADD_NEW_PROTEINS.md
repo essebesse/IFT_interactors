@@ -176,30 +176,80 @@ const { sql } = require('@vercel/postgres');
 
 ---
 
-## Step 6: Run Boldt Validation on New Proteins (Optional, 30 minutes)
+## Step 6: Re-run Experimental Validations (IMPORTANT, 40 minutes)
 
-Check if any of the new protein interactions are in Boldt et al. dataset:
+**Why**: After adding 4 new proteins, we need to check if any of the NEW interactions are experimentally validated by Boldt or Gupta datasets.
+
+**How it works**: The import scripts are **idempotent** (safe to re-run):
+- They check existing validations by PMID before adding
+- Already-validated interactions are automatically skipped
+- Only NEW interactions get validation data added
+- **No duplicates** will be created for the original 31 proteins
+
+**See**: `EXPERIMENTAL_VALIDATION_WORKFLOW.md` for complete phased validation strategy
+
+### 6.1 Re-run Boldt (TAP-MS) Validation
 
 ```bash
-cd /path/to/your/IFT_interactors
-
-# If you still have the Boldt Excel file
 export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
 
+# Re-run Boldt import (safe - checks for duplicates automatically)
 node scripts/import_experimental_data.mjs boldt2016
 ```
 
-**What happens**:
-- Script will check ALL interactions (including new ones)
-- Will skip already-validated interactions
-- Will add validation data for any NEW overlaps with Boldt
+**Expected output**:
+```
+✅ Updated: 5-10 interactions (NEW validations from 4 new proteins)
+ℹ️  Already validated: ~25 (original validations - skipped)
+⚠️  Not in AF3 predictions: ~1400+ (experimental data not in our dataset)
+```
 
-**Expected**: Possibly 0-10 new validations (depends on Boldt coverage)
+### 6.2 Re-run Gupta (BioID) Validation
+
+```bash
+# Re-run Gupta import (safe - checks for duplicates automatically)
+node scripts/import_experimental_data.mjs gupta2015
+```
+
+**Expected output**:
+```
+✅ Updated: 5-15 interactions (NEW validations from 4 new proteins)
+ℹ️  Already validated: ~50 (original validations - skipped)
+⚠️  Not in AF3 predictions: ~2800+ (experimental data not in our dataset)
+```
+
+### 6.3 Verify No Duplicates Created
+
+```bash
+# Check validation statistics (should see increase from Phase 1)
+node -e "
+const { sql } = require('@vercel/postgres');
+(async () => {
+  const validated = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation IS NOT NULL\`;
+  const boldt = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"SF-TAP-MS\"}]'\`;
+  const gupta = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"BioID\"}]'\`;
+  const both = await sql\`SELECT COUNT(*) FROM interactions WHERE experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"SF-TAP-MS\"}]' AND experimental_validation::jsonb->'experimental_methods' @> '[{\"method\": \"BioID\"}]'\`;
+
+  console.log('Validation Statistics (After Phase 3):');
+  console.log('  Total validated:', validated.rows[0].count);
+  console.log('  Boldt (TAP-MS):', boldt.rows[0].count);
+  console.log('  Gupta (BioID):', gupta.rows[0].count);
+  console.log('  Dual-validated (BOTH):', both.rows[0].count, '⭐ Highest confidence!');
+  console.log('');
+  console.log('Expected:');
+  console.log('  Total: ~75-90 (was ~65-75 before adding 4 proteins)');
+  console.log('  Boldt: ~30 (was ~25)');
+  console.log('  Gupta: ~60 (was ~50)');
+  console.log('  Both: ~15 (was ~12)');
+})();
+"
+```
 
 **Checklist**:
-- [ ] Boldt import completed
-- [ ] Check how many new validations were added
-- [ ] Note any validated interactions from new proteins
+- [ ] Boldt re-run completed (+5-10 validations)
+- [ ] Gupta re-run completed (+5-15 validations)
+- [ ] No duplicates created (total increase ~10-20, not doubling!)
+- [ ] Dual-validated interactions increased by ~3
 
 ---
 
