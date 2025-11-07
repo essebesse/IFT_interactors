@@ -29,17 +29,22 @@ Or search: **"Gupta 2015 Cell centrosome cilium BioID"**
 
 ### 1.2 Download Supplementary Data
 
-**File to Download**: **Table S1** - "BioID Interaction Data"
+**File to Download**: **Table S1** - "Network Attributes and CCDB Benchmarks"
+- **File size**: 732 KB (Excel spreadsheet)
+- **Contains**: Non-ciliated and ciliated interactomes with SAINT scores and MaxSpec counts
+- **Format**: Multi-tab Excel workbook
 
-**Options**:
+**What to download**:
 1. **Direct download** from Cell website:
+   - Visit: https://www.cell.com/cell/fulltext/S0092-8674(15)01443-4
    - Click "Supplemental Information"
-   - Find "Table S1" (Excel or CSV format)
-   - Download to: `experimental_data/raw/`
+   - Find **"Table S1. Network Attributes and CCDB Benchmarks"** (732KB)
+   - Download to: `experimental_data/raw/gupta_2015_table_s1.xlsx`
 
-2. **Alternative source** (if available):
-   - Check ProteomeXchange or MassIVE for processed data
-   - Look for dataset identifier in paper
+**Important**: This is a **multi-tab Excel file**. The relevant tabs are:
+- **Tab 1-3**: Non-ciliated and ciliated interactomes
+- Look for columns: **Bait**, **Prey** (or PreyGene), **SAINT score**, **MaxSpec** (or AvgSpec), **FoldChange**
+- Use Excel's "filtering" option to explore the data structure
 
 ### 1.3 Save to Correct Location
 
@@ -57,22 +62,47 @@ mkdir -p experimental_data/raw/
 
 ### 1.4 Convert Excel to CSV (if needed)
 
+**Important**: Table S1 has multiple tabs. You need to convert the **interaction data tab** (likely Tab 1, 2, or 3).
+
+**First, inspect which tab to use**:
 ```bash
-# If you have Excel file (.xlsx), convert to CSV:
-
-# Option A: Using LibreOffice (if installed)
-libreoffice --headless --convert-to csv experimental_data/raw/gupta_2015_table_s1.xlsx --outdir experimental_data/raw/
-
-# Option B: Using Python (if pandas installed)
+# Check tab names
 python3 -c "
 import pandas as pd
-df = pd.read_excel('experimental_data/raw/gupta_2015_table_s1.xlsx', sheet_name=0)
-df.to_csv('experimental_data/raw/gupta_2015_table_s1.csv', index=False)
-print(f'Converted {len(df)} rows to CSV')
+import sys
+xl_file = pd.ExcelFile('experimental_data/raw/gupta_2015_table_s1.xlsx')
+print('Available sheets:', xl_file.sheet_names)
+print('\\nInspect each sheet to find interaction data (Bait, Prey, SAINT columns)')
+"
+```
+
+**Then convert the correct tab**:
+```bash
+# Option A: Using Python (RECOMMENDED - can specify sheet)
+python3 -c "
+import pandas as pd
+
+# Try different sheet indices (0, 1, 2) or sheet name
+# Adjust sheet_name based on inspection above
+for idx in [0, 1, 2]:
+    try:
+        df = pd.read_excel('experimental_data/raw/gupta_2015_table_s1.xlsx', sheet_name=idx)
+        print(f'\\nSheet {idx} columns: {list(df.columns)[:5]}...')
+        print(f'Sheet {idx} rows: {len(df)}')
+        # Look for SAINT, Bait, Prey columns
+        if 'SAINT' in str(df.columns).upper() or 'BAIT' in str(df.columns).upper():
+            print(f'  → Sheet {idx} looks like interaction data!')
+            df.to_csv(f'experimental_data/raw/gupta_2015_table_s1_sheet{idx}.csv', index=False)
+            print(f'  Saved to gupta_2015_table_s1_sheet{idx}.csv')
+    except Exception as e:
+        print(f'Sheet {idx}: {e}')
 "
 
-# Option C: Using online converter
-# Upload to https://convertio.co/xlsx-csv/ and download
+# Option B: Using LibreOffice (converts first sheet only)
+libreoffice --headless --convert-to csv experimental_data/raw/gupta_2015_table_s1.xlsx --outdir experimental_data/raw/
+
+# After conversion, rename the file you want to use:
+# mv experimental_data/raw/gupta_2015_table_s1_sheet0.csv experimental_data/raw/gupta_2015_table_s1.csv
 ```
 
 **Checklist**:
@@ -105,13 +135,20 @@ python3 scripts/inspect_excel.py experimental_data/raw/gupta_2015_table_s1.csv
 - **FoldChange** or **FC** - Enrichment over controls
 - **Localization** - Where bait protein localizes (optional)
 
-### 2.2 Identify Column Names
+### 2.2 Identify Column Names and Sheet
+
+**Table S1 has multiple tabs**:
+- **Tab 1**: Non-ciliated interactome
+- **Tab 2**: Ciliated interactome (RECOMMENDED - more relevant for IFT)
+- **Tab 3**: Combined/comparative data
+
+**Recommendation**: Start with **Tab 2 (ciliated)** as IFT proteins are active during cilia assembly.
 
 **Important**: Note the exact column names for:
 - Bait protein
 - Prey protein
 - SAINT score
-- Spectral count
+- Spectral count (MaxSpec or AvgSpec)
 - Fold-change
 
 **If column names differ from expected**, you may need to adjust the parser (see Troubleshooting).

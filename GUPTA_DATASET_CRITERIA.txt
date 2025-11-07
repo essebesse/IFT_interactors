@@ -96,6 +96,37 @@ This document explains the BioID proximity labeling method and data selection cr
 
 Only proteins significantly enriched over ALL controls are included.
 
+## Table S1 Structure
+
+**File**: "Table S1. Network Attributes and CCDB Benchmarks" (732 KB Excel workbook)
+
+**Multi-tab structure** (Tabs 1-3 contain interaction data):
+- **Tab 1**: Non-ciliated interactome (HEK293T cells without serum starvation)
+- **Tab 2**: Ciliated interactome (RPE1 cells after serum starvation)
+- **Tab 3**: Combined or comparative data
+- **Tabs 4-5**: CCDB reference database (not used for import)
+- **"bait-bait PxI" tab**: Bait-to-bait interactions (may be useful)
+
+**Note**: Both ciliated and non-ciliated data are relevant - cilia assembly doesn't invalidate centrosome/basal body interactions.
+
+**Instructions say**: "Use filtering option on each column heading to select lists of interest"
+
+### Import Strategy
+
+**Option 1 (Recommended)**: Import **ciliated interactome** (Tab 2)
+- IFT proteins are active during cilium assembly/maintenance
+- More relevant to IFT/BBSome biology
+- Likely to have better overlap with our AF3 predictions
+
+**Option 2**: Import **both** ciliated and non-ciliated
+- Maximum coverage (some interactions may be condition-specific)
+- If protein is proximal in EITHER condition, it validates the association
+- Note in validation: "BioID, ciliated" vs "BioID, non-ciliated"
+
+**Option 3**: Import **non-ciliated** only
+- Centrosome/basal body interactions
+- Less relevant for IFT train assembly, but still valid for BBSome/transition zone
+
 ## Data Fields in Table S1
 
 ### Core Fields
