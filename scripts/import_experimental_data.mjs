@@ -46,8 +46,10 @@ const DATASETS = {
     doi: '10.1016/j.cell.2015.10.065',
     method: 'BioID',
     confidence: 'medium',
-    description: '56 baits, centrosome-cilium interface',
-    dataFile: './experimental_data/raw/gupta_2015_table_s1.csv',
+    description: '56 baits, centrosome-cilium interface, ciliated interactome',
+    // NOTE: Excel file must be converted to CSV first (see TODO_GUPTA_DATASET.md)
+    // Source: experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx (Tab 2)
+    dataFile: './experimental_data/raw/gupta_2015_ciliated_interactome.csv',
     parser: parseGupta2015
   },
   sang2011: {

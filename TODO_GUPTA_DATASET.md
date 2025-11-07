@@ -46,85 +46,108 @@ Or search: **"Gupta 2015 Cell centrosome cilium BioID"**
 - Look for columns: **Bait**, **Prey** (or PreyGene), **SAINT score**, **MaxSpec** (or AvgSpec), **FoldChange**
 - Use Excel's "filtering" option to explore the data structure
 
-### 1.3 Save to Correct Location
+### 1.3 Verify File Location
+
+**Expected location**: `experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx`
 
 ```bash
-cd /path/to/your/IFT_interactors
+# Check file is present
+ls -lh experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx
 
-# Create directory if needed
-mkdir -p experimental_data/raw/
-
-# Save file as:
-# experimental_data/raw/gupta_2015_table_s1.xlsx
-# OR
-# experimental_data/raw/gupta_2015_table_s1.csv
+# Should show: ~732 KB Excel file
 ```
 
-### 1.4 Convert Excel to CSV (if needed)
+### 1.4 Convert Excel to CSV (REQUIRED)
 
-**Important**: Table S1 has multiple tabs. You need to convert the **interaction data tab** (likely Tab 1, 2, or 3).
+**File to convert**: `Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx`
+**Target sheet**: Tab 2 (ciliated interactome) - most relevant for IFT/BBSome
+**Output file**: `gupta_2015_ciliated_interactome.csv`
 
-**First, inspect which tab to use**:
+**Step 1: Inspect sheet structure**:
 ```bash
-# Check tab names
+# Check which sheets are available
 python3 -c "
 import pandas as pd
-import sys
-xl_file = pd.ExcelFile('experimental_data/raw/gupta_2015_table_s1.xlsx')
+xl_file = pd.ExcelFile('experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx')
 print('Available sheets:', xl_file.sheet_names)
-print('\\nInspect each sheet to find interaction data (Bait, Prey, SAINT columns)')
+print('\nInspecting first 3 sheets for interaction data...\n')
+
+for idx in range(min(3, len(xl_file.sheet_names))):
+    print(f'Sheet {idx} ({xl_file.sheet_names[idx]}):')
+    df = pd.read_excel(xl_file, sheet_name=idx, nrows=0)
+    print(f'  Columns: {list(df.columns)[:8]}...')
+    print()
 "
 ```
 
-**Then convert the correct tab**:
+**Step 2: Convert ciliated interactome (Tab 2, sheet index 1)**:
 ```bash
-# Option A: Using Python (RECOMMENDED - can specify sheet)
+# Convert Tab 2 to CSV (0-indexed, so Tab 2 = sheet_name=1)
 python3 -c "
 import pandas as pd
 
-# Try different sheet indices (0, 1, 2) or sheet name
-# Adjust sheet_name based on inspection above
-for idx in [0, 1, 2]:
+# Read ciliated interactome (second tab, index 1)
+df = pd.read_excel(
+    'experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx',
+    sheet_name=1  # Tab 2 = ciliated interactome
+)
+
+print(f'Loaded sheet with {len(df)} rows')
+print(f'Columns: {list(df.columns)[:10]}')
+
+# Save to CSV
+df.to_csv('experimental_data/raw/gupta_2015_ciliated_interactome.csv', index=False)
+print('✅ Saved to: experimental_data/raw/gupta_2015_ciliated_interactome.csv')
+"
+```
+
+**Alternative: If Tab 2 is empty or wrong, try different sheets**:
+```bash
+# Convert ALL sheets to see which has the data
+python3 -c "
+import pandas as pd
+xl_file = pd.ExcelFile('experimental_data/raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx')
+
+for idx, sheet_name in enumerate(xl_file.sheet_names[:5]):
     try:
-        df = pd.read_excel('experimental_data/raw/gupta_2015_table_s1.xlsx', sheet_name=idx)
-        print(f'\\nSheet {idx} columns: {list(df.columns)[:5]}...')
-        print(f'Sheet {idx} rows: {len(df)}')
-        # Look for SAINT, Bait, Prey columns
-        if 'SAINT' in str(df.columns).upper() or 'BAIT' in str(df.columns).upper():
-            print(f'  → Sheet {idx} looks like interaction data!')
-            df.to_csv(f'experimental_data/raw/gupta_2015_table_s1_sheet{idx}.csv', index=False)
-            print(f'  Saved to gupta_2015_table_s1_sheet{idx}.csv')
+        df = pd.read_excel(xl_file, sheet_name=idx)
+        print(f'\nSheet {idx} ({sheet_name}): {len(df)} rows')
+        print(f'  Columns: {list(df.columns)[:8]}')
+
+        # Look for interaction data
+        cols_str = ' '.join([str(c).upper() for c in df.columns])
+        if 'SAINT' in cols_str or ('BAIT' in cols_str and 'PREY' in cols_str):
+            print(f'  ✅ This looks like interaction data!')
+            df.to_csv(f'experimental_data/raw/gupta_sheet{idx}.csv', index=False)
     except Exception as e:
-        print(f'Sheet {idx}: {e}')
+        print(f'Sheet {idx}: Error - {e}')
 "
 
-# Option B: Using LibreOffice (converts first sheet only)
-libreoffice --headless --convert-to csv experimental_data/raw/gupta_2015_table_s1.xlsx --outdir experimental_data/raw/
-
-# After conversion, rename the file you want to use:
-# mv experimental_data/raw/gupta_2015_table_s1_sheet0.csv experimental_data/raw/gupta_2015_table_s1.csv
+# Then rename the correct sheet:
+# mv experimental_data/raw/gupta_sheet1.csv experimental_data/raw/gupta_2015_ciliated_interactome.csv
 ```
 
 **Checklist**:
-- [ ] File downloaded from Cell website
-- [ ] File saved to `experimental_data/raw/`
-- [ ] File converted to CSV (if needed)
-- [ ] File renamed to `gupta_2015_table_s1.csv`
+- [x] File downloaded from Cell website
+- [x] File saved to `experimental_data/raw/`
+- [ ] Tab 2 (ciliated) converted to CSV
+- [ ] CSV saved as `gupta_2015_ciliated_interactome.csv`
 
 ---
 
 ## Step 2: Inspect File Structure (5 minutes)
 
-### 2.1 Check File Format
+### 2.1 Check CSV File Format
 
 ```bash
-cd /path/to/your/IFT_interactors
-
-# View first few lines
-head -20 experimental_data/raw/gupta_2015_table_s1.csv
+# View first few lines of converted CSV
+head -20 experimental_data/raw/gupta_2015_ciliated_interactome.csv
 
 # Or use Python inspector
-python3 scripts/inspect_excel.py experimental_data/raw/gupta_2015_table_s1.csv
+python3 scripts/inspect_excel.py experimental_data/raw/gupta_2015_ciliated_interactome.csv
+
+# Quick column check
+head -1 experimental_data/raw/gupta_2015_ciliated_interactome.csv
 ```
 
 **Expected columns** (may vary):

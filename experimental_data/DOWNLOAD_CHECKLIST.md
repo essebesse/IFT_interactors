@@ -16,10 +16,11 @@ Track your progress downloading experimental datasets:
 
 ## Priority 2: Proximity Labeling Methods
 
-- [ ] **Gupta et al., 2015** (BioID, 56 baits) ← **NEXT DATASET**
+- [ ] **Gupta et al., 2015** (BioID, 56 baits) ← **IN PROGRESS**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(15)01443-4
-  - File: `raw/gupta_2015_table_s1.csv` (convert from Excel if needed)
-  - Status: ⏳ Ready to download
+  - File (Excel): `raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx` ✅ Downloaded
+  - File (CSV): `raw/gupta_2015_ciliated_interactome.csv` ⏳ Needs conversion (Tab 2)
+  - Status: Excel downloaded, needs conversion to CSV
   - Expected: ~50 validations, ~12 dual-validated with Boldt
 
 - [ ] **Mick et al., 2015** (APEX, primary cilia)
