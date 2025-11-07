@@ -12,13 +12,24 @@ const StructureViewer = dynamic(() => import('../components/StructureViewer'), {
 });
 
 // Define types for our data
-interface ValidationData {
-  validated: boolean;
+interface ValidationMethod {
   method: string;
-  source: string;
-  date: string;
-  notes?: string | null;
-  source_file?: string | null;
+  study: string;
+  pmid: string;
+  doi: string;
+  confidence: string;
+  bait_protein?: string;
+  notes?: string;
+}
+
+interface ValidationData {
+  experimental_methods: ValidationMethod[];
+  validation_summary: {
+    is_validated: boolean;
+    validation_count: number;
+    strongest_method: string | null;
+    consensus_confidence: string | null;
+  };
 }
 
 interface InteractionData {
@@ -607,7 +618,7 @@ export default function Home() {
                     <th>iPAE &lt;3Å</th>
                     <th>iPAE &lt;6Å</th>
                     <th>ipLDDT</th>
-                    <th>Experimental</th>
+                    <th>Validated</th>
                     <th>3D Structure</th>
                   </tr>
                 </thead>
@@ -667,27 +678,30 @@ export default function Home() {
                       </td>
                       <td>{inter.interface_plddt ? inter.interface_plddt.toFixed(1) : 'N/A'}</td>
                       <td>
-                        {inter.experimental_validation && inter.experimental_validation.validated ? (
+                        {inter.experimental_validation?.validation_summary?.is_validated ? (
                           <OverlayTrigger
                             placement="top"
                             overlay={
                               <Tooltip id={`validation-tooltip-${index}`}>
                                 <div style={{ textAlign: 'left' }}>
-                                  <strong>Method:</strong> {inter.experimental_validation.method}<br />
-                                  <strong>Source:</strong> {inter.experimental_validation.source}<br />
-                                  <strong>Date:</strong> {inter.experimental_validation.date}
-                                  {inter.experimental_validation.notes && (
-                                    <><br /><strong>Notes:</strong> {inter.experimental_validation.notes}</>
-                                  )}
-                                  {inter.experimental_validation.source_file && (
-                                    <><br /><strong>Data File:</strong><br /><small>{inter.experimental_validation.source_file}</small></>
-                                  )}
+                                  {inter.experimental_validation.experimental_methods.map((method: ValidationMethod, idx: number) => (
+                                    <div key={idx} style={{ marginBottom: idx < inter.experimental_validation.experimental_methods.length - 1 ? '8px' : '0' }}>
+                                      <strong>Method:</strong> {method.method}<br />
+                                      <strong>Study:</strong> {method.study}<br />
+                                      <strong>PMID:</strong> {method.pmid}<br />
+                                      <strong>Confidence:</strong> {method.confidence}
+                                      {method.notes && (
+                                        <><br /><strong>Notes:</strong> {method.notes}</>
+                                      )}
+                                      {idx < inter.experimental_validation.experimental_methods.length - 1 && <hr style={{ margin: '4px 0' }} />}
+                                    </div>
+                                  ))}
                                 </div>
                               </Tooltip>
                             }
                           >
                             <span className="badge bg-success" style={{ cursor: 'pointer' }}>
-                              ✓ Yes
+                              ✓ Yes ({inter.experimental_validation.validation_summary.validation_count})
                             </span>
                           </OverlayTrigger>
                         ) : (
