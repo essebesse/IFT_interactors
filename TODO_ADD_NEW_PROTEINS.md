@@ -97,8 +97,10 @@ node import_from_v4_originals_INCREMENTAL.mjs
 
 ## Step 4: Verify Import Success (5 minutes)
 
+**Note**: BBS10/BBS12 already removed, so going from 31→35 baits (not 35→33)
+
 ```bash
-# Check total baits (should be 35 now)
+# Check total baits (should be 35 now: 31 existing + 4 new)
 export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
 
 node -e "
@@ -110,7 +112,7 @@ const { sql } = require('@vercel/postgres');
     JOIN interactions i ON p.id = i.bait_protein_id
   \`;
   console.log('Total baits:', result.rows[0].bait_count);
-  console.log('Expected: 35');
+  console.log('Expected: 35 (31 existing + 4 new)');
 
   // Check for the 4 new baits specifically
   const newBaits = await sql\`
@@ -130,7 +132,7 @@ const { sql } = require('@vercel/postgres');
 ```
 
 **Checklist**:
-- [ ] Total baits = 35 ✓
+- [ ] Total baits = 35 ✓ (31 + 4 new)
 - [ ] Q9UG01 (IFT172) has interactions ✓
 - [ ] Q3SYG4 (BBS9) has interactions ✓
 - [ ] A8MTZ0 (BBS18) has interactions ✓
@@ -138,51 +140,12 @@ const { sql } = require('@vercel/postgres');
 
 ---
 
-## Step 5: Remove BBS10 & BBS12 (5 minutes)
+## Step 5: Verify Final Database State (5 minutes)
 
-These are chaperonins, not structural components, so remove them.
-
-```bash
-cd /path/to/your/IFT_interactors
-
-# Step 5.1: DRY RUN first (see what will be removed)
-node scripts/remove_bbs10_bbs12.mjs
-```
-
-**Expected output**:
-```
-📊 Analyzing impact of removing BBS10 and BBS12...
-  🔍 BBS10 (Q8TAM1)
-     - Interactions as bait: XX
-     - Interactions as prey: XX
-
-  🔍 BBS12 (Q6ZW61)
-     - Interactions as bait: XX
-     - Interactions as prey: XX
-
-🧪 DRY RUN MODE - Would remove XX interactions total
-```
-
-Review the numbers. If looks correct:
+**Note**: BBS10 and BBS12 were already removed earlier, so final count is 35!
 
 ```bash
-# Step 5.2: EXECUTE the removal
-node scripts/remove_bbs10_bbs12.mjs --execute
-```
-
-**Checklist**:
-- [ ] Dry run completed successfully
-- [ ] Reviewed number of interactions to be removed
-- [ ] Execute completed successfully
-- [ ] BBS10 interactions removed
-- [ ] BBS12 interactions removed
-
----
-
-## Step 6: Verify Final Database State (5 minutes)
-
-```bash
-# Check total baits (should be 33 now - added 4, removed 2)
+# Check total baits (should be 35: 31 original + 4 new)
 node -e "
 const { sql } = require('@vercel/postgres');
 (async () => {
@@ -200,20 +163,20 @@ const { sql } = require('@vercel/postgres');
   console.log('  Total baits:', result.rows[0].bait_count);
   console.log('  Total interactions:', result.rows[0].total_interactions);
   console.log('\\nExpected:');
-  console.log('  Total baits: 33');
-  console.log('  (31 original + 4 new - 2 removed)');
+  console.log('  Total baits: 35 (31 original + 4 new)');
+  console.log('  BBS10/BBS12 already removed previously');
 })();
 "
 ```
 
 **Checklist**:
-- [ ] Total baits = 33 ✓
-- [ ] BBS10 and BBS12 are NOT in the list ✓
+- [ ] Total baits = 35 ✓
+- [ ] BBS10 and BBS12 are NOT in the list ✓ (already removed)
 - [ ] IFT172, BBS9, BBS18, RABL2 ARE in the list ✓
 
 ---
 
-## Step 7: Run Boldt Validation on New Proteins (Optional, 30 minutes)
+## Step 6: Run Boldt Validation on New Proteins (Optional, 30 minutes)
 
 Check if any of the new protein interactions are in Boldt et al. dataset:
 
@@ -240,7 +203,7 @@ node scripts/import_experimental_data.mjs boldt2016
 
 ---
 
-## Step 8: Update Website (Git Commit & Deploy) (10 minutes)
+## Step 7: Update Website (Git Commit & Deploy) (10 minutes)
 
 ```bash
 cd /path/to/your/IFT_interactors
@@ -271,7 +234,7 @@ git push origin main
 
 ---
 
-## Step 9: Test Website (5 minutes)
+## Step 8: Test Website (5 minutes)
 
 Visit: https://ift-interactors.vercel.app
 
@@ -301,7 +264,7 @@ Test searches for new proteins:
 
 ---
 
-## Step 10: Update Documentation (5 minutes)
+## Step 9: Update Documentation (5 minutes)
 
 Update `CURRENT_BAIT_PROTEINS.md`:
 
@@ -331,7 +294,7 @@ git push origin claude/ift-interactors-experiment-011CUtE3m3MH4pCVUjhLi79o
 
 ---
 
-## Step 11: Generate Statistics Report (Optional, 10 minutes)
+## Step 10: Generate Statistics Report (Optional, 10 minutes)
 
 Create a summary for your records/manuscript:
 
@@ -451,15 +414,15 @@ cat DATABASE_STATS_*.txt
 ## Expected Final State
 
 **Database**:
-- ✅ 33 total baits
+- ✅ 35 total baits (31 + 4 new; BBS10/BBS12 already removed earlier)
 - ✅ ~600-700 total interactions (depends on new data)
-- ✅ IFT-A: 6, IFT-B1: 9, IFT-B2: 8, BBSome+assoc: 10
+- ✅ IFT-A: 6, IFT-B1: 9, IFT-B2: 8, BBSome+assoc: 10, IFT-assoc: 2
 - ✅ ~25-30 Boldt-validated interactions
 
 **Website**:
-- ✅ All 33 proteins searchable
+- ✅ All 35 proteins searchable
 - ✅ IFT172, BBS9, BBS18, RABL2 visible
-- ✅ BBS10, BBS12 not showing as baits
+- ✅ BBS10, BBS12 not showing as baits (already removed)
 - ✅ Validation badges on Boldt-confirmed interactions
 
 ---
