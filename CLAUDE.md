@@ -21,10 +21,14 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Database
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
-- **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
-- **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
+- **Status**: ✅ Populated (512 interactions, 371 proteins from 31 baits)
+- **Import Script**: `import_from_v4_originals_INCREMENTAL.mjs` (incremental - skips existing baits)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
 - **Last Frontend Update**: 2025-11-06 (UI clarity improvements, PAE terminology)
+- **Experimental Validation**: 🔄 Phase 1 in progress (Boldt complete, Gupta importing)
+  - Boldt: ~25 validations, Gupta: ~50 expected, Dual: ~12 expected
+  - Phase 2: +4 proteins (IFT172, BBS9, BBS18, RABL2) pending AF3 jobs
+  - Phase 3: Re-run validations after Phase 2 (+10-15 more validations)
 
 ### Deployment
 - **Platform**: Vercel
@@ -137,6 +141,53 @@ git ls-remote origin main  # Should show your latest commit hash
 2. BBS8 ↔ A8MTZ0: ipSAE=0.771 (High)
 3. BBS7 ↔ BBS2: ipSAE=0.759 (High)
 4. BBS2 ↔ BBS7: ipSAE=0.758 (High)
+
+### Experimental Validation (Phase 1 - In Progress)
+
+**Status**: Integrating experimental proteomics data to validate AF3 predictions
+
+**Current Phase**: Phase 1 - Initial validation with 31 baits
+- 🔄 **Gupta et al., 2015** (BioID proximity labeling) - Import in progress
+- ✅ **Boldt et al., 2016** (SF-TAP-MS direct interactions) - Completed (~25 validations)
+
+**Upcoming Phases**:
+- **Phase 2**: Add 4 new proteins (IFT172, BBS9, BBS18, RABL2) → 35 baits
+- **Phase 3**: Re-run validations to capture NEW interactions
+
+**Key Features**:
+- **Idempotent imports**: Scripts check for existing validations by PMID (safe to re-run)
+- **No duplicates**: Automatic duplicate prevention when re-running after Phase 2
+- **Dual validation**: Interactions validated by BOTH TAP-MS and BioID = highest confidence
+- **Expected results**:
+  - Phase 1 (31 baits): ~65-75 validated (13-15%)
+  - Phase 3 (35 baits): ~75-90 validated (13-15%)
+
+**Import Commands**:
+```bash
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
+
+# Import Boldt (TAP-MS direct interactions)
+node scripts/import_experimental_data.mjs boldt2016
+
+# Import Gupta (BioID proximity ~10nm)
+node scripts/import_experimental_data.mjs gupta2015
+```
+
+**Documentation**:
+- `EXPERIMENTAL_VALIDATION_WORKFLOW.md` - Complete phased approach (3 phases)
+- `TODO_GUPTA_DATASET.md` - Gupta BioID import guide
+- `BOLDT_DATASET_CRITERIA.txt` - Boldt TAP-MS selection criteria (FDR ≤ 0.1)
+- `GUPTA_DATASET_CRITERIA.txt` - Gupta BioID selection criteria (SAINT ≥ 0.8)
+- `TODO_ADD_NEW_PROTEINS.md` - Includes Step 6: Re-run validations after Phase 2
+
+**Datasets Available**:
+1. ✅ Boldt et al., 2016 (SF-TAP-MS, 217 baits) - High confidence
+2. 🔄 Gupta et al., 2015 (BioID, 56 baits) - Medium confidence (proximity)
+3. ⏳ Sang et al., 2011 (LAP, 9 baits) - High confidence
+4. ⏳ Mick et al., 2015 (APEX) - Medium confidence
+5. ⏳ Kohli et al., 2017 (APEX) - Medium confidence
+6. ⏳ May et al., 2021 (APEX2, PRIDE) - Medium confidence
+7. ⏳ Aslanyan et al., 2023 (BioID2-UBD, PRIDE) - Medium confidence
 
 ## Data Source Files
 
@@ -619,19 +670,47 @@ git branch -D ift-temp-branch
 
 ## Related Documentation
 
+### Core Project Files
 - **human_ift_proteins_complete.md** - Human IFT protein reference
 - **chlamydomonas_ift_proteins_complete.md** - Chlamydomonas IFT protein reference
-- **import_from_v4_originals_FIXED.mjs** - Main import script
+- **import_from_v4_originals_INCREMENTAL.mjs** - Incremental import (skips existing baits)
+- **import_from_v4_originals_FIXED.mjs** - Full import (re-imports all)
 - **drop_tables.mjs** - Database reset script
 - **find_v4_json.sh** - Finds all v4.json source files
+- **CURRENT_BAIT_PROTEINS.md** - Complete bait protein list with status
+
+### Experimental Validation Files
+- **EXPERIMENTAL_VALIDATION_WORKFLOW.md** - Phased validation strategy (3 phases)
+- **TODO_ADD_NEW_PROTEINS.md** - Guide for adding IFT172, BBS9, BBS18, RABL2
+- **TODO_GUPTA_DATASET.md** - Gupta BioID import guide
+- **BOLDT_DATASET_CRITERIA.txt** - Boldt TAP-MS selection criteria
+- **GUPTA_DATASET_CRITERIA.txt** - Gupta BioID selection criteria
+- **scripts/import_experimental_data.mjs** - Universal experimental data importer
+- **scripts/map_protein_ids.mjs** - UniProt ID mapping with caching
+- **experimental_data/** - Directory with datasets and mapping cache
 
 ---
 
 **Project Status**: ✅ Deployed and operational
-**Last Updated**: 2025-11-06
-**Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
+**Last Updated**: 2025-11-07
+**Database Status**: ✅ Populated (512 interactions, 371 proteins, 31 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
+**Experimental Validation**: 🔄 Phase 1 in progress (Boldt ✅, Gupta 🔄)
+
+**Summary of 2025-11-07 Updates**:
+- ✅ Created EXPERIMENTAL_VALIDATION_WORKFLOW.md (phased validation strategy)
+- ✅ Added Gupta et al., 2015 (BioID) dataset integration
+  - Complete documentation: GUPTA_DATASET_CRITERIA.txt
+  - Step-by-step guide: TODO_GUPTA_DATASET.md
+  - Parser implemented: parseGupta2015() with SAINT ≥0.8, FC ≥2.0 filters
+- ✅ Updated TODO_ADD_NEW_PROTEINS.md with Step 6: Re-run validations
+- ✅ Documented phased approach for avoiding duplicates
+  - Phase 1: Initial validation (31 baits) - ~65-75 validations
+  - Phase 2: Add 4 proteins (IFT172, BBS9, BBS18, RABL2)
+  - Phase 3: Re-run validations - idempotent, no duplicates
+- ✅ Import scripts check for existing validations by PMID (safe to re-run)
+- 🔄 Gupta import running (~30-40 min for 2,910 interactions, 1,355 proteins)
 
 **Summary of 2025-11-06 Updates**:
 - ✅ Added colored dots (●) to confidence level checkboxes (green/orange/red)
