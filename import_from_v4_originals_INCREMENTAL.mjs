@@ -32,6 +32,9 @@ const V4_JSON_FILES = [
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/AF3_PD_analysis_v4.json',
 
+  // NEW: IFT172 (IFT-B2 core component)
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/AF3_PD_analysis_v4.json',
+
   // BBSome proteins (single baits only)
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q6ZW61_BBS12/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/AF3_PD_analysis_v4.json',
@@ -44,8 +47,15 @@ const V4_JSON_FILES = [
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json',
 
+  // NEW: BBSome-associated proteins
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/AF3_PD_analysis_v4.json',
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A8MTZ0_BBS18/AF3/AF3_PD_analysis_v4.json',
+
   // IFT-associated proteins
-  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json'
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json',
+
+  // NEW: RABL2 (IFT-associated GTPase)
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UNT1_RabL2/AF3/AF3_PD_analysis_v4.json'
 ];
 
 // EXCLUDED COMPLEXES (not imported):
