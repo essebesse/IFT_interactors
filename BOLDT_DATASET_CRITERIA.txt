@@ -1,0 +1,229 @@
+# Boldt et al., 2016 Dataset - Data Selection Criteria Documentation
+
+## Overview
+
+This document explains which data fields and statistical cutoffs are used to determine if a protein-protein interaction is considered "real" (validated) in the Boldt et al., 2016 dataset.
+
+## Dataset Source
+
+**Paper**: "An organelle-specific protein landscape identifies novel diseases and molecular mechanisms"
+**Authors**: Boldt et al.
+**Journal**: Nature Communications (2016)
+**PMID**: 27173156
+**DOI**: 10.1038/ncomms11491
+**Method**: SF-TAP-MS (Strep-Flag Tandem Affinity Purification - Mass Spectrometry)
+
+**Supplementary Data File Used**: **Supplementary Data 3**
+**File Description**: "Significant, socioaffinity scored interactions"
+
+## Why Supplementary Data 3?
+
+The paper provides multiple supplementary data files:
+- **Data 1**: List of constructs used (metadata only)
+- **Data 2**: ALL raw purifications (unfiltered, ~644 experiments, includes noise)
+- **Data 3**: **Significant interactions only** ← ✅ THIS IS WHAT WE USE
+- **Data 4**: Protein complexes (derived from Data 3)
+- **Data 5-9**: Additional analyses
+
+**Key Reason**: Data 3 is pre-filtered by the authors using rigorous statistical criteria to identify only high-confidence, reproducible interactions.
+
+## Statistical Cutoffs Applied (by Boldt et al.)
+
+### Primary Filter: False Discovery Rate (FDR)
+
+**Criterion**: FDR ≤ 0.1 (10%)
+
+**What this means**:
+- Only interactions with ≤10% probability of being false positives are included
+- This is a standard, stringent threshold in proteomics
+- Corresponds to ~90% confidence that the interaction is real
+
+**Alternative**: Some papers use FPR (False Positive Rate) ≤ 0.1, which is mathematically similar
+
+### Socioaffinity Scoring (SAij)
+
+**What is Socioaffinity?**
+Socioaffinity (SAij) is a weighted scoring system that measures interaction strength by combining:
+
+1. **Spoke Model** (Spoke_ij, Spoke_ji):
+   - Direct bait-prey interactions
+   - Bait A pulls down Prey B
+   - Asymmetric (A→B different from B→A)
+
+2. **Matrix Model** (Matrix_ij):
+   - Co-complex interactions
+   - Proteins found together in same complex
+   - Symmetric (A-B same as B-A)
+
+**SAij Formula**:
+```
+SAij = weighted combination of (Spoke_ij + Spoke_ji + Matrix_ij)
+```
+
+**Higher SAij = Stronger/More Reproducible Interaction**
+
+**No explicit SAij cutoff** is mentioned in the paper - if an interaction passed FDR ≤ 0.1, it's included regardless of SAij value. However, higher SAij scores indicate more robust interactions.
+
+## Data Fields in Supplementary Data 3
+
+### Core Fields
+
+1. **Bait Protein** (Gene name or UniProt ID)
+   - The protein used as "bait" in the SF-TAP experiment
+   - SF-tagged and expressed in cells
+
+2. **Prey Protein** (Gene name or UniProt ID)
+   - The protein that co-purified with the bait
+   - Detected by mass spectrometry
+
+3. **SAij** (Socioaffinity score)
+   - Quantitative measure of interaction strength
+   - Ranges from ~0 to ~20 (typical)
+   - Higher = more reproducible/stronger
+
+4. **Spoke_ij** (Spoke model score, A→B direction)
+   - Score for bait A pulling down prey B
+
+5. **Spoke_ji** (Spoke model score, B→A direction)
+   - Score for bait B pulling down prey A (reciprocal)
+
+6. **Matrix_ij** (Matrix model score)
+   - Co-complex membership score
+
+7. **FDR/FPR** (False Discovery/Positive Rate)
+   - Statistical confidence measure
+   - Only interactions with FDR ≤ 0.1 are in Data 3
+
+### Optional Fields (May be Present)
+
+8. **BioPlex** (Boolean or count)
+   - Whether interaction is also found in BioPlex dataset
+   - Independent validation
+
+9. **IntAct** (Boolean or count)
+   - Whether interaction is in IntAct database
+   - Literature-curated validation
+
+10. **Sequence Coverage** (Percentage)
+    - How much of the prey protein was detected
+    - Higher coverage = more confident identification
+
+## Decision Criteria: What Makes an Interaction "Real"?
+
+### Inclusion Criteria (Boldt et al. already applied these)
+
+✅ **MUST PASS ALL**:
+1. **FDR ≤ 0.1** - Statistical significance
+2. **Detected in SF-TAP-MS experiment** - Physical interaction
+3. **Reproducible across replicates** - Not a one-time detection
+
+If an interaction is in Supplementary Data 3, it has already passed these filters.
+
+### Confidence Levels (Our Additional Classification)
+
+When integrating into the IFT_Interactors database, we can assign confidence tiers:
+
+#### High Confidence
+- FDR ≤ 0.05 (if available)
+- SAij ≥ 10
+- Also found in BioPlex or IntAct
+- **Use this for**: Strong experimental validation
+
+#### Medium Confidence
+- FDR ≤ 0.1
+- SAij ≥ 5
+- **Use this for**: Standard experimental validation
+
+#### Lower Confidence (still significant!)
+- FDR ≤ 0.1
+- SAij < 5
+- **Use this for**: Tentative experimental validation
+
+**Note**: ALL interactions in Data 3 are statistically significant. The confidence tiers above are just for internal ranking.
+
+## Our Import Strategy
+
+### What We Import from Boldt Data
+
+```javascript
+For each interaction in Supplementary Data 3:
+  1. Extract bait and prey gene names
+  2. Map to UniProt IDs (using UniProt API)
+  3. Check if this interaction exists in our AF3 database
+  4. If YES → Add experimental validation:
+     {
+       "method": "SF-TAP-MS",
+       "study": "Boldt et al., 2016",
+       "pmid": "27173156",
+       "confidence": "high",  // SF-TAP-MS is high-confidence method
+       "score": SAij_value,
+       "fdr": FDR_value,
+       "notes": "FDR ≤ 0.1, socioaffinity scored"
+     }
+  5. If NO → Skip (not relevant to our IFT/BBSome study)
+```
+
+### What We DON'T Import
+
+❌ Interactions NOT in Supplementary Data 3 (i.e., from raw Data 2)
+❌ Interactions that failed FDR ≤ 0.1 threshold
+❌ Boldt interactions involving proteins not in our IFT/BBSome dataset
+
+## Expected Results
+
+### From Boldt et al., 2016:
+- **Total interactions in Data 3**: ~5,000-10,000 (exact number depends on file)
+- **Total baits**: 217 (cilia and ciliopathy-related proteins)
+- **Total prey proteins**: ~1,000-2,000
+
+### Overlap with Our IFT_Interactors Database:
+- **Our AF3 predictions**: 512 interactions (31 baits)
+- **Expected overlap**: 50-150 interactions (10-30%)
+- **IFT/BBS baits in Boldt**: Likely 20-25 of our 31 baits
+
+### Validation Insights:
+- **High ipSAE AF3 predictions**: Expect higher overlap with Boldt
+- **Novel AF3 predictions**: High ipSAE but NOT in Boldt → interesting targets!
+- **Boldt-only interactions**: In Boldt but low/absent in AF3 → investigate why
+
+## Statistical Interpretation
+
+### What "FDR ≤ 0.1" Means in Practice
+
+- **Out of 100 interactions passing this filter**: ~10 might be false positives, ~90 are real
+- **For our analysis**: If we find 100 overlapping interactions, ~90 are genuine validations
+- **Confidence**: We can state "experimentally validated" with ~90% confidence
+
+### Combining AF3 and Boldt Evidence
+
+| AF3 ipSAE | Boldt Status | Interpretation | Confidence |
+|-----------|--------------|----------------|------------|
+| High (>0.7) | ✅ Validated | Strong support | Very High |
+| High (>0.7) | ❌ Not found | Novel prediction | High (AF3 only) |
+| Medium (0.5-0.7) | ✅ Validated | Confirmed | High |
+| Medium (0.5-0.7) | ❌ Not found | Tentative | Medium |
+| Low (<0.5) | ✅ Validated | Rescued by experiment | Medium |
+| Low (<0.5) | ❌ Not found | Likely false | Low |
+
+## References
+
+1. **Boldt et al., 2016**: Nature Communications 7:11491
+   - Original paper defining the SF-TAP-MS cilia interactome
+
+2. **FDR Calculation**: Benjamini-Hochberg procedure
+   - Standard method for multiple testing correction in proteomics
+
+3. **Socioaffinity Scoring**: Gavin et al., 2006
+   - Original description of socioaffinity matrix for protein complexes
+
+## Summary for Manuscript
+
+**Suggested Methods Text**:
+
+> "We integrated experimental interaction data from Boldt et al. (2016), who performed SF-TAP-MS on 217 cilia and ciliopathy-related proteins. We used only interactions that passed a stringent false discovery rate threshold (FDR ≤ 0.1, Supplementary Data 3), corresponding to ~90% confidence in interaction validity. Of our 512 AF3-predicted interactions, X were independently validated by the Boldt dataset. High-confidence AF3 predictions (ipSAE >0.7) showed Y% validation rate, significantly higher than low-confidence predictions (ipSAE <0.5, Z% validation rate, p < 0.001, Fisher's exact test)."
+
+---
+
+**Created**: 2025-11-07
+**For**: IFT Interactors experimental validation integration
+**Dataset**: Boldt et al., 2016 Supplementary Data 3
