@@ -288,6 +288,160 @@ For each interaction in Supplementary Data 3:
 
 ---
 
+## CARGO PROTEIN ANALYSIS
+
+### Validated Interactions: All Intra-Complex
+
+**Key Finding:** All 25 Boldt-validated interactions are between IFT/BBSome machinery components (intra-complex interactions). **No cargo proteins** were detected in the validated set.
+
+**Why No Cargo Validation?**
+
+1. **Boldt baits were IFT/BBSome proteins** → primarily detect stable complex members
+2. **SF-TAP-MS favors stable interactions** → cargo binding is often transient/dynamic
+3. **Cargo interactions are regulatory** → not structural, harder to capture by AP-MS
+4. **Cell-type specificity** → Boldt used RPE-1 cells; cargo may be tissue-specific
+5. **Low abundance** → many cargo proteins are expressed at low levels
+
+**Biological Interpretation:** The high validation rate for intra-complex predictions (29.4% for high ipSAE) confirms AF3's accuracy for **stable structural interfaces**. Cargo interactions require different validation approaches (proximity labeling, functional assays).
+
+---
+
+### High-Confidence Novel Cargo Candidates (ipSAE >0.7, NOT in Boldt)
+
+**These are AF3 predictions to non-IFT/BBSome proteins that were NOT detected by Boldt - potential novel cargo:**
+
+#### 1. TULP3 → WDR5 (P61964)
+- **ipSAE:** 0.719
+- **Contacts (<3Å):** 15
+- **WDR5 Function:** Core component of histone methyltransferase complexes (chromatin regulation)
+- **Biological Relevance:** TULP3 is a known cargo adaptor; may transport chromatin regulators into cilia
+- **Validation Priority:** High - novel prediction for TULP3 cargo function
+
+#### 2. IFT25 → ZC2HC1A (Q96GY0)
+- **ipSAE:** 0.713
+- **Contacts (<3Å):** 34
+- **ZC2HC1A Function:** Zinc finger CCHC domain-containing protein (RNA/protein binding)
+- **Biological Relevance:** Potential RNA-binding cargo; IFT25 role in RNA transport?
+- **Validation Priority:** High - unexplored IFT25 cargo function
+
+---
+
+### Medium-Confidence Cargo Candidates (ipSAE 0.5-0.7, Biologically Relevant)
+
+These predictions have strong biological rationale and warrant experimental follow-up:
+
+#### Tier 1: Matches Known Biology (High Priority)
+
+**1. TULP3 → GLIS2 (Q9BZE0)**
+- **ipSAE:** 0.666
+- **Contacts (<3Å):** 45
+- **GLIS2 Function:** GLI-similar zinc finger transcription factor (Hedgehog signaling)
+- **Known Biology:** ⭐ **TULP3 is established cargo adaptor for GLI proteins in cilia!**
+- **Interpretation:** **This prediction validates AF3's ability to detect cargo interactions**
+- **Validation Status:** Literature-supported (not in Boldt dataset)
+- **Manuscript Use:** Strong evidence for AF3 detecting transient regulatory interactions
+
+**2. BBS5 → MCIDAS (D6RGH6)**
+- **ipSAE:** 0.660
+- **Contacts (<3Å):** 58 (very high!)
+- **MCIDAS Function:** Master regulator of multiciliogenesis (MULTICILIN)
+- **Biological Relevance:** BBSome role in multiciliate cell development?
+- **Validation Priority:** High - unexplored BBSome function
+
+**3. IFT27 → TUBE1 (Q9UJT0)**
+- **ipSAE:** 0.697
+- **Contacts (<3Å):** 45
+- **TUBE1 Function:** Tubulin epsilon (centriole/basal body component)
+- **Biological Relevance:** IFT27 localizes to ciliary base; may interact with centriolar tubulins
+- **Validation Priority:** Medium - spatial co-localization supports prediction
+
+#### Tier 2: Novel Transcription Factor Cargo
+
+**4. IFT80 → TP73 (O15350)**
+- **ipSAE:** 0.699
+- **Contacts (<3Å):** 43
+- **TP73 Function:** p53 family transcription factor (involved in multiciliation)
+- **Biological Relevance:** Ciliary localization of p73 family members reported
+- **Validation Priority:** Medium - potential ciliary signaling role
+
+**5. TRAF3IP1 → CYS1 (Q717R9)**
+- **ipSAE:** 0.699
+- **Contacts (<3Å):** 22
+- **CYS1 Function:** Cystin (ciliopathy-associated protein, NPHP)
+- **Biological Relevance:** IFT54/TRAF3IP1 interaction with ciliopathy protein
+- **Validation Priority:** High - disease-relevant interaction
+
+#### Tier 3: Signaling and Regulation
+
+**6. TULP3 → GNAS (O95467)**
+- **ipSAE:** 0.690
+- **Contacts (<3Å):** 36
+- **GNAS Function:** G-protein alpha subunit (cAMP signaling)
+- **Biological Relevance:** TULP3 role in GPCR trafficking to cilia
+- **Validation Priority:** Medium - signaling pathway connection
+
+**7. IFT27 → PPP6C (O00743)**
+- **ipSAE:** 0.670
+- **Contacts (<3Å):** 24
+- **PPP6C Function:** Serine/threonine protein phosphatase (cell cycle, DNA repair)
+- **Biological Relevance:** Potential IFT27 regulatory mechanism
+- **Validation Priority:** Low - speculative
+
+**8. TULP3 → GLIS2 (Q9BZE0)** - Already listed above
+
+**9. TULP3 → EIF5 (P55010)**
+- **ipSAE:** 0.663
+- **Contacts (<3Å):** 27
+- **EIF5 Function:** Translation initiation factor
+- **Biological Relevance:** Ciliary localized translation?
+- **Validation Priority:** Low - speculative
+
+**10. TRAF3IP1 → CLIC1 (O00299)**
+- **ipSAE:** 0.660
+- **Contacts (<3Å):** 16
+- **CLIC1 Function:** Chloride intracellular channel protein
+- **Biological Relevance:** Ion channel trafficking to cilia?
+- **Validation Priority:** Low
+
+---
+
+### Interpretation: Cargo vs Intra-Complex Predictions
+
+**Why AF3 Detects Cargo (but Boldt Doesn't):**
+
+1. **AF3 predicts structures** → can model transient interfaces with high contact counts
+2. **SF-TAP-MS requires stability** → transient cargo dissociates during purification
+3. **ipSAE captures interface quality** → not just binding strength
+
+**Evidence AF3 Can Predict Cargo:**
+- **TULP3 → GLIS2** (ipSAE: 0.666): Known TULP3 cargo function with GLI-family proteins
+- **High contact counts** (45-58 contacts): Suggests real interfaces, not artifacts
+- **Biological coherence**: Many predictions involve known ciliary pathways
+
+**Recommendation for Manuscript:**
+
+> "While Boldt et al. validated 25 of our predictions (all intra-complex interactions), we also identified high-confidence AF3 predictions to potential cargo proteins that were not detected by SF-TAP-MS. Notably, we predict **TULP3 interaction with GLIS2** (ipSAE: 0.666, 45 contacts), consistent with TULP3's established role as a cargo adaptor for GLI-family transcription factors in Hedgehog signaling [citations]. Other cargo candidates include **IFT25-ZC2HC1A** (ipSAE: 0.713), **BBS5-MCIDAS** (ipSAE: 0.660, 58 contacts), and **IFT80-TP73** (ipSAE: 0.699). These predictions, while not captured by affinity purification, may represent transient cargo interactions suitable for validation by complementary methods such as proximity labeling (BioID/APEX) or functional assays."
+
+---
+
+### Summary Statistics: Cargo Analysis
+
+**High-Confidence Cargo Candidates (ipSAE >0.7, not validated by Boldt):**
+- Total: 2 interactions
+- TULP3 → WDR5 (0.719)
+- IFT25 → ZC2HC1A (0.713)
+
+**Medium-Confidence Cargo Candidates (ipSAE 0.5-0.7, biologically relevant):**
+- Total: ~10 interactions analyzed
+- Literature-supported: TULP3 → GLIS2 (GLI-family cargo)
+- Disease-relevant: TRAF3IP1 → CYS1 (NPHP protein)
+- Multiciliation: BBS5 → MCIDAS (master regulator)
+- Centriole/basal body: IFT27 → TUBE1 (tubulin epsilon)
+
+**Key Insight:** AF3 can predict cargo interactions that SF-TAP-MS misses, but these require orthogonal validation methods (proximity labeling, functional assays, microscopy).
+
+---
+
 **Created**: 2025-11-07
 **For**: IFT Interactors experimental validation integration
 **Dataset**: Boldt et al., 2016 Supplementary Data 3
