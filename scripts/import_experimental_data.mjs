@@ -178,11 +178,86 @@ function parseBoldt2016(filePath) {
 
 /**
  * Parser for Gupta et al., 2015 dataset (BioID)
+ * Format: CSV/TSV with columns: Bait, Prey, SAINT_Score, AvgSpec, FoldChange
+ * Filters: SAINT ≥ 0.8, FoldChange ≥ 2.0
  */
 function parseGupta2015(filePath) {
   console.log('📄 Parsing Gupta et al., 2015 dataset...');
-  // TODO: Implement parser
-  return [];
+
+  if (!existsSync(filePath)) {
+    console.error(`❌ File not found: ${filePath}`);
+    return [];
+  }
+
+  const interactions = [];
+
+  try {
+    const data = readFileSync(filePath, 'utf-8');
+    const lines = data.split('\n');
+
+    // Detect delimiter (tab or comma)
+    const firstLine = lines[0];
+    const delimiter = firstLine.includes('\t') ? '\t' : ',';
+
+    // Parse header to find column indices
+    const headers = lines[0].split(delimiter).map(h => h.trim().toLowerCase());
+
+    const colIndices = {
+      bait: headers.findIndex(h => h.includes('bait') || h.includes('prey_of')),
+      prey: headers.findIndex(h => h.includes('prey') && !h.includes('bait')),
+      saint: headers.findIndex(h => h.includes('saint') || h.includes('probability')),
+      avgspec: headers.findIndex(h => h.includes('avgspec') || h.includes('spectral')),
+      foldchange: headers.findIndex(h => h.includes('fold') || h.includes('fc') || h.includes('enrichment'))
+    };
+
+    console.log(`  Detected columns: Bait=${colIndices.bait}, Prey=${colIndices.prey}, SAINT=${colIndices.saint}`);
+
+    // Parse data rows (skip header)
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (!line) continue;
+
+      const columns = line.split(delimiter).map(c => c.trim());
+
+      // Extract values
+      const bait = columns[colIndices.bait] || '';
+      const prey = columns[colIndices.prey] || '';
+      const saint = parseFloat(columns[colIndices.saint]) || 0;
+      const avgspec = parseFloat(columns[colIndices.avgspec]) || 0;
+      const foldchange = parseFloat(columns[colIndices.foldchange]) || 1;
+
+      // Skip if missing essential data
+      if (!bait || !prey) continue;
+
+      // Apply Gupta et al. quality filters (SAINT ≥ 0.8, FC ≥ 2.0)
+      if (saint < 0.8 || foldchange < 2.0) {
+        continue;
+      }
+
+      // Determine confidence level based on SAINT and spectral counts
+      let confidence_note = 'medium';
+      if (saint >= 0.9 && avgspec >= 10) {
+        confidence_note = 'high (BioID)';
+      } else if (avgspec >= 5) {
+        confidence_note = 'medium-high (BioID)';
+      }
+
+      interactions.push({
+        bait: bait,
+        prey: prey,
+        score: saint,
+        notes: `BioID proximity labeling (~10nm). SAINT=${saint.toFixed(2)}, AvgSpec=${avgspec.toFixed(1)}, FC=${foldchange.toFixed(1)}. Confidence: ${confidence_note}`
+      });
+    }
+
+    console.log(`  ✅ Parsed ${interactions.length} high-confidence BioID interactions (SAINT ≥0.8, FC ≥2.0)`);
+
+  } catch (error) {
+    console.error(`❌ Error parsing file: ${error.message}`);
+    return [];
+  }
+
+  return interactions;
 }
 
 /**
