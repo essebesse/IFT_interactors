@@ -148,6 +148,10 @@ git ls-remote origin main  # Should show your latest commit hash
 
 **Current Phase**: Phase 1 - Initial validation with 31 baits
 - ✅ **Boldt et al., 2016** (SF-TAP-MS direct interactions) - Completed (~25 validations, 5%)
+- ✅ **Lacey et al., 2024** (XL-MS, Chlamydomonas IFT trains) - Completed (4 validations, 0.8%)
+  - **Validations**: IFT121-IFT122, IFT172-IFT80, IFT38-IFT57, IFT74-IFT81
+  - All intra-IFT interactions (Medium and Low ipSAE confidence)
+  - Chlamydomonas orthologs mapped to human proteins
 - ❌ **Gupta et al., 2015** (BioID proximity labeling) - Completed (0 validations)
   - **Why 0 matches**: Non-overlapping protein sets
   - Gupta uses centrosome/transition zone baits (TCTN1-3, MKS1, NPHP1-4, CEP proteins)
@@ -161,7 +165,7 @@ git ls-remote origin main  # Should show your latest commit hash
   - Our database: IFT/BBSome baits only
   - Some shared prey proteins (B9D1, TCTN2, CEP97) but different baits
   - **Conclusion**: Different biological question - no overlap expected
-- ⏳ **Mick et al., 2015** (APEX, primary cilia) - In progress
+- ❌ **Mick et al., 2015** (APEX, primary cilia) - Not suitable (proteome census)
 
 **Upcoming Phases**:
 - **Phase 2**: Add 4 new proteins (IFT172, BBS9, BBS18, RABL2) → 35 baits
@@ -171,8 +175,8 @@ git ls-remote origin main  # Should show your latest commit hash
 - **Idempotent imports**: Scripts check for existing validations by PMID (safe to re-run)
 - **No duplicates**: Automatic duplicate prevention when re-running after Phase 2
 - **Current results**:
-  - Phase 1 (31 baits): ~25 validated (5% - Boldt only)
-  - Phase 3 (35 baits): ~30-35 validated (5-6% - expecting +5-10 from new proteins)
+  - Phase 1 (31 baits): ~29 validated (5.7% - Boldt: 25, Lacey: 4)
+  - Phase 3 (35 baits): ~34-39 validated (5.7-6.5% - expecting +5-10 from new proteins)
 
 **Import Commands**:
 ```bash
@@ -180,6 +184,9 @@ export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-a
 
 # Import Boldt (TAP-MS direct interactions)
 node scripts/import_experimental_data.mjs boldt2016
+
+# Import Lacey (XL-MS, Chlamydomonas orthologs)
+node scripts/import_experimental_data.mjs lacey2024
 
 # Import Gupta (BioID proximity ~10nm)
 node scripts/import_experimental_data.mjs gupta2015
@@ -197,12 +204,13 @@ node scripts/import_experimental_data.mjs sang2011
 
 **Datasets Available**:
 1. ✅ Boldt et al., 2016 (SF-TAP-MS, 217 baits) - High confidence - 25 validations
-2. ❌ Gupta et al., 2015 (BioID, 56 baits) - Medium confidence - 0 matches (non-overlapping protein sets)
-3. ❌ Sang et al., 2011 (LAP, 9 NPHP/MKS baits) - High confidence - 0 matches (non-overlapping protein sets)
-4. 🔄 **Mick et al., 2015** (APEX, primary cilia) - Medium confidence - In progress
-5. ⏳ Kohli et al., 2017 (APEX, ciliary membrane) - Medium confidence
-6. ⏳ May et al., 2021 (APEX2, Hedgehog signaling, PRIDE) - Medium confidence
-7. ⏳ Aslanyan et al., 2023 (BioID2-UBD, ubiquitinome, PRIDE) - Medium confidence
+2. ✅ Lacey et al., 2024 (XL-MS, Chlamydomonas) - High confidence - 4 validations (intra-IFT only)
+3. ❌ Gupta et al., 2015 (BioID, 56 baits) - Medium confidence - 0 matches (non-overlapping protein sets)
+4. ❌ Sang et al., 2011 (LAP, 9 NPHP/MKS baits) - High confidence - 0 matches (non-overlapping protein sets)
+5. ❌ Mick et al., 2015 (APEX, primary cilia) - Not suitable (proteome census)
+6. ⏳ Kohli et al., 2017 (APEX, ciliary membrane) - Medium confidence
+7. ⏳ May et al., 2021 (APEX2, Hedgehog signaling, PRIDE) - Medium confidence
+8. ⏳ Aslanyan et al., 2023 (BioID2-UBD, ubiquitinome, PRIDE) - Medium confidence
 
 ## Data Source Files
 
@@ -711,28 +719,35 @@ git branch -D ift-temp-branch
 **Database Status**: ✅ Populated (512 interactions, 371 proteins, 31 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
-**Experimental Validation**: 🔄 Phase 1 in progress (Boldt: 25 validations, exploring additional datasets)
+**Experimental Validation**: 🔄 Phase 1 in progress (Boldt: 25, Lacey: 4, Total: 29 validations / 5.7%)
 
 **Summary of 2025-11-07 Updates**:
 - ✅ Created EXPERIMENTAL_VALIDATION_WORKFLOW.md (phased validation strategy)
 - 🔄 **Phase 1 validation** (31 baits - in progress):
   - Boldt et al., 2016 (SF-TAP-MS): 25 validations (5%)
+  - Lacey et al., 2024 (XL-MS, Chlamydomonas): 4 validations (0.8%) - intra-IFT only
   - Gupta et al., 2015 (BioID): 0 validations (non-overlapping protein sets)
   - Sang et al., 2011 (LAP): 0 validations (non-overlapping protein sets)
-  - Mick et al., 2015 (APEX): In progress
-  - **Current total**: 25 validations (5% of 512 interactions)
+  - Mick et al., 2015 (APEX): Not suitable (proteome census)
+  - **Current total**: 29 validations (5.7% of 512 interactions)
 - ✅ Added Gupta et al., 2015 (BioID) dataset integration
   - Complete documentation: GUPTA_DATASET_CRITERIA.txt
   - Step-by-step guide: TODO_GUPTA_DATASET.md
   - Parser implemented: parseGupta2015() with SAINT ≥0.8, FC ≥2.0 filters
   - Result: 0 matches (centrosome baits vs IFT baits - different biological question)
+- ✅ Added Lacey et al., 2024 (XL-MS) dataset integration
+  - In situ crosslinking MS from Chlamydomonas IFT trains
+  - Mapped Chlamydomonas orthologs to human proteins
+  - Result: 4 validations (IFT121-IFT122, IFT172-IFT80, IFT38-IFT57, IFT74-IFT81)
+  - All intra-IFT interactions (no novel external interactors)
+  - Medium and Low ipSAE confidence (0.38-0.65)
 - ✅ Added Sang et al., 2011 (LAP) dataset integration
   - Result: 0 validations (NPHP/MKS baits vs IFT/BBSome baits - different protein sets)
   - Found shared prey proteins (B9D1, TCTN2, CEP97) but different baits
   - Demonstrates importance of exact bait-prey matching for validation
 - ✅ Updated TODO_ADD_NEW_PROTEINS.md with Step 6: Re-run validations
 - ✅ Documented phased approach for avoiding duplicates
-  - Phase 1: Initial validation (31 baits) - 25 validations so far
+  - Phase 1: Initial validation (31 baits) - 29 validations so far (Boldt + Lacey)
   - Phase 2: Add 4 proteins (IFT172, BBS9, BBS18, RABL2) - Pending AF3 jobs
   - Phase 3: Re-run validations - idempotent, no duplicates
 - ✅ Import scripts check for existing validations by PMID (safe to re-run)

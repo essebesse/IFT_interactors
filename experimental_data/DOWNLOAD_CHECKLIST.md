@@ -12,19 +12,21 @@ Track your progress downloading experimental datasets:
   - Details: SF-TAP-MS with FDR ≤ 0.1, high confidence direct interactions
   - **Best dataset so far** - IFT/BBSome baits overlap with our predictions
 
-- [ ] **Lacey et al., 2024** (in situ XL-MS, IFT trains) ← **HIGH PRIORITY** ⭐
+- [x] **Lacey et al., 2024** (in situ XL-MS, IFT trains) ← **COMPLETED - 4 VALIDATIONS** ✅
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(24)00715-3
   - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11349379/
   - PMID: 39067443
-  - File: Table S2 (all crosslinks in Dhc1b3 datasets, FDR filtered)
-  - Status: ⏳ Not downloaded
-  - **Why promising**:
-    - Cross-linking MS identifies direct protein-protein interactions
-    - Studies IFT-A, IFT-B complexes and dynein (Dhc1b3)
-    - FDR-filtered crosslinks = high confidence
-    - Open access (CC BY 4.0)
-  - **Potential issue**: Uses Chlamydomonas reinhardtii (need to map to human orthologs)
-  - **Next steps**: Download Table S2, check if crosslinks can be mapped to human IFT proteins
+  - File: `raw/Lacey_Pigino_CEll2024_TableS2.xlsx` ✅ Downloaded
+  - Status: ✅ Import completed (2025-11-07)
+  - Result: **4 validations** (0.8% of 512 interactions)
+  - Details: XL-MS crosslinks from Chlamydomonas IFT trains, mapped to human orthologs
+  - **Validations** (7 interaction entries total, bidirectional):
+    1. IFT121-IFT122 (WDR35-IFT122): ipSAE=0.65, Medium confidence
+    2. IFT172-IFT80: ipSAE=0.61, Medium confidence
+    3. IFT38/CLUAP1-IFT57: ipSAE=0.46, Low confidence
+    4. IFT74-IFT81: ipSAE=0.38, Low confidence
+  - **Note**: All intra-IFT interactions (IFT-IFT only), no novel external interactors
+  - **Not in database**: IFT74-IFT46, IFT74-IFT27 (baits missing), DRC7-IFT122, TTC21-IFT88 (proteins missing)
 
 - [x] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) ← **COMPLETED - NO MATCHES**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X
@@ -88,10 +90,11 @@ Track your progress downloading experimental datasets:
 
 **Current validation status:**
 - ✅ Boldt et al., 2016: **25 validations** (5% of 512 interactions)
+- ✅ Lacey et al., 2024: **4 validations** (0.8% of 512 interactions) - XL-MS intra-IFT
 - ❌ Gupta et al., 2015: 0 validations (centrosome baits, not IFT baits)
 - ❌ Sang et al., 2011: 0 validations (NPHP/MKS baits, not IFT baits)
 - ❌ Mick et al., 2015: Not suitable (proteome census, not interaction data)
-- **Total: 25 validations from 1 dataset**
+- **Total: 29 validations from 2 datasets (5.7% of 512 interactions)**
 
 **Key lessons learned:**
 1. **Bait overlap is critical** - Need IFT/BBSome baits, not centrosome/TZ baits
