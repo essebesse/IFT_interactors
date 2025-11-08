@@ -2,10 +2,10 @@
 
 ## Overview
 
-**Total validation scripts**: 18
-**Total validations ready**: 118 interactions
+**Total validation scripts**: 20
+**Total validations ready**: 134 interactions
 **IFT-B validations**: 47
-**IFT-A validations**: 20
+**IFT-A validations**: 36
 **BBSome validations**: 49
 **TULP3-IFT-A validations**: 2
 
@@ -51,7 +51,7 @@
 
 ---
 
-### IFT-A Validations (20 total)
+### IFT-A Validations (36 total)
 
 #### 7. `add_hesketh_2022_validations.mjs` - 6 validations
 - **Paper**: Hesketh et al., Cell 2022
@@ -92,11 +92,33 @@
   - IFT121 ↔ IFT122, IFT121 ↔ IFT139, IFT121 ↔ IFT43
   - IFT122 ↔ IFT140, IFT122 ↔ IFT144, IFT140 ↔ IFT144
 
+#### 11. `add_meleppattu_2022_validations.mjs` - 8 validations
+- **Paper**: Meleppattu et al., Cell 2022
+- **Method**: Cryo-EM
+- **PMID**: 36563665
+- **Confidence**: High
+- **Notable**: Cross-species validation from Leishmania tarentolae native IFT-A
+- **Interactions**:
+  - IFT121 ↔ IFT122 (TPR heterodimer), IFT140 ↔ IFT144 (TPR heterodimer)
+  - IFT139 ↔ IFT122, IFT139 ↔ IFT121
+  - IFT122 ↔ IFT140, IFT122 ↔ IFT144
+  - IFT121 ↔ IFT140, IFT144 ↔ IFT121
+
+#### 12. `add_quidwai_2021_validations.mjs` - 8 validations
+- **Paper**: Quidwai et al., eLife 2021
+- **Method**: IP-MS + Co-purification (biochemical)
+- **PMID**: 34734804
+- **Confidence**: High
+- **Notable**: WDR35-dependent IFT-A holocomplex formation in mouse embryos; recombinant trimeric complex
+- **Interactions**:
+  - IFT140 holocomplex: IFT140 ↔ IFT121, IFT140 ↔ IFT144, IFT140 ↔ IFT122, IFT140 ↔ IFT139, IFT140 ↔ IFT43
+  - IFT139/121/43 trimeric complex: IFT121 ↔ IFT43, IFT121 ↔ IFT139, IFT43 ↔ IFT139
+
 ---
 
 ### TULP3-IFT-A Cargo Adapter (2 total)
 
-#### 11. `add_tulp3_ifta_validations.mjs` - 2 validations
+#### 13. `add_tulp3_ifta_validations.mjs` - 2 validations
 - **Papers**: Jiang et al., 2023 and Hesketh et al., 2022
 - **Method**: Cryo-EM
 - **Confidence**: High
@@ -107,7 +129,7 @@
 
 ### BBSome Complex (49 total)
 
-#### 12. `add_singh_2020_bbsome_validations.mjs` - 12 validations
+#### 14. `add_singh_2020_bbsome_validations.mjs` - 12 validations
 - **Paper**: Singh et al., eLife 2020
 - **Method**: Cryo-EM (3.1 Å inactive + 3.5 Å active with ARL6)
 - **PMID**: 31939736
@@ -115,7 +137,7 @@
 - **Notable**: Complete BBSome architecture; ARL6 activation mechanism
 - **Interactions**: Head (BBS2-BBS7), Neck (BBS2/7-BBS9), Body (BBS1/4/5/8), ARL6 activation
 
-#### 13. `add_chou_2019_bbsome_validations.mjs` - 15 validations
+#### 15. `add_chou_2019_bbsome_validations.mjs` - 15 validations
 - **Paper**: Chou et al., Structure 2019
 - **Method**: Cryo-EM (4.9 Å) + XL-MS (42 inter-subunit crosslinks) + Rosetta modeling
 - **PMID**: 31303482
@@ -123,7 +145,7 @@
 - **Notable**: Integrated structural approach; BBS18 U-bolt clamping mechanism
 - **Interactions**: Complete BBSome architecture including BBS18 threading through BBS4/8 TPR domains
 
-#### 14. `add_yang_2020_bbsome_validations.mjs` - 7 validations
+#### 16. `add_yang_2020_bbsome_validations.mjs` - 7 validations
 - **Paper**: Yang et al., eLife 2020
 - **Method**: Cryo-EM (~3.5 Å)
 - **PMID**: 32510327
@@ -131,7 +153,7 @@
 - **Notable**: BBSome-ARL6 with GPCR cargo; conformational changes upon activation
 - **Interactions**: ARL6-BBS1, ARL6-BBS7, GPCR cargo binding cavity
 
-#### 15. `add_klink_2020_bbsome_validations.mjs` - 8 validations
+#### 17. `add_klink_2020_bbsome_validations.mjs` - 8 validations
 - **Paper**: Klink et al., eLife 2020
 - **Method**: Cryo-EM (~3.8 Å)
 - **PMID**: 31951201
@@ -139,7 +161,7 @@
 - **Notable**: Human heterohexameric core (BBS1/4/5/8/9/18); lacks BBS2/7
 - **Interactions**: Core BBSome assembly without head module
 
-#### 16. `add_klink_2017_validations.mjs` - 6 validations
+#### 18. `add_klink_2017_validations.mjs` - 6 validations
 - **Paper**: Klink et al., eLife 2017
 - **Method**: Biochemical reconstitution + Pulldowns
 - **PMID**: 29168691
@@ -147,7 +169,7 @@
 - **Notable**: First recombinant BBSome subcomplexes; BBS18-BBS4-BBS8 tetrameric core
 - **Interactions**: BBS18-BBS4, BBS18-BBS8, BBS4-BBS8 (high); BBS1/5/8 co-purification (medium)
 
-#### 17. `add_mourao_2014_bbsome_validation.mjs` - 1 validation
+#### 19. `add_mourao_2014_bbsome_validation.mjs` - 1 validation
 - **Paper**: Mourão et al., Nat Struct Mol Biol 2014
 - **Method**: Crystal structure
 - **PMID**: 25402481
@@ -159,7 +181,7 @@
 
 ### Combined/Legacy Scripts
 
-#### 18. `add_manual_validations.mjs`
+#### 20. `add_manual_validations.mjs`
 - **Status**: Combined script with all validations
 - **Purpose**: Backup/reference
 - **Note**: Use individual scripts above for better organization
@@ -193,6 +215,8 @@ node add_hesketh_2022_validations.mjs        # 6 validations
 node add_jiang_2023_validations.mjs          # 2 validations
 node add_behal_2012_validations.mjs          # 6 validations
 node add_mccafferty_2022_validations.mjs     # 6 validations
+node add_meleppattu_2022_validations.mjs     # 8 validations
+node add_quidwai_2021_validations.mjs        # 8 validations
 node add_tulp3_ifta_validations.mjs          # 2 validations
 
 # BBSome validations
@@ -263,15 +287,17 @@ node check_validation_status.mjs
 8. Jiang et al., Cell Research 2023 - IFT-A with TULP3, zinc domains
 9. Behal et al., JBC 2012 - Chlamydomonas IFT-A organization
 10. McCafferty et al., eLife 2022 - Tetrahymena IFT-A XL-MS + integrative modeling
+11. Meleppattu et al., Cell 2022 - Leishmania IFT-A native complex
+12. Quidwai et al., eLife 2021 - WDR35-dependent IFT-A holocomplex
 
 ### TULP3-IFT-A
 
-11. Jiang et al., Cell Research 2023 - IFT-A + TULP3 cryo-EM structure
-12. Hesketh et al., Cell 2022 - IFT-A carriages for TULP adaptors
+13. Jiang et al., Cell Research 2023 - IFT-A + TULP3 cryo-EM structure
+14. Hesketh et al., Cell 2022 - IFT-A carriages for TULP adaptors
 
 ### BBSome Papers
 
-13. Singh et al., eLife 2020 - Complete BBSome structure and ARL6 activation mechanism
+15. Singh et al., eLife 2020 - Complete BBSome structure and ARL6 activation mechanism
 
 ---
 
@@ -327,5 +353,5 @@ Validations stored in `interactions.experimental_validation` JSONB field:
 ---
 
 **Created**: 2025-11-08
-**Last Updated**: 2025-11-08 (Added Singh 2020 BBSome validations)
-**Status**: 81 validations ready for database upload (47 IFT-B + 20 IFT-A + 12 BBSome + 2 TULP3-IFT-A)
+**Last Updated**: 2025-11-08 (Added Meleppattu 2022 + Quidwai 2021 IFT-A + 6 BBSome papers)
+**Status**: 134 validations ready for database upload (47 IFT-B + 36 IFT-A + 49 BBSome + 2 TULP3-IFT-A)
