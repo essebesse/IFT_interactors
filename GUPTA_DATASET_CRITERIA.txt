@@ -330,7 +330,57 @@ For each interaction in Table S1:
 
 ---
 
+## Actual Import Results (2025-11-07)
+
+**Result**: **0 validations** - Non-overlapping protein sets
+
+**Why No Matches?**
+
+The Gupta dataset and our IFT_Interactors database address **different biological questions**:
+
+### Gupta Dataset Focus:
+- **Baits**: Centrosome/transition zone proteins (TCTN1-3, MKS1, NPHP1-4, CEP proteins, OFD1, PCM1)
+- **Question**: What proteins are proximal to centrosome/transition zone components?
+- **IFT proteins detected**: 21 IFT proteins found **as prey** (IFT74, IFT81, IFT57, IFT46, IFT22, IFT20, IFT27)
+- **Example**: CEP128 (bait) → IFT74 (prey) - "IFT74 is near CEP128 at the centrosome"
+
+### Our AF3 Database Focus:
+- **Baits**: IFT/BBSome proteins only (31 baits: IFT-A, IFT-B1, IFT-B2, BBSome, TULP3)
+- **Question**: What are the protein-protein interactions within IFT/BBSome complexes?
+- **Prey proteins**: IFT, BBSome, and ciliary cargo proteins (CALR, NUMB, ACR, etc.)
+- **Example**: IFT74 (bait) → IFT81 (prey) - "IFT74 directly interacts with IFT81"
+
+### Why No Overlap:
+
+**Gupta has**: Centrosome proteins → IFT proteins (e.g., CEP128 → IFT74)
+**We need**: IFT proteins ↔ IFT proteins (e.g., IFT74 ↔ IFT81)
+
+For bidirectional search to work, we would need:
+- **Option A**: Gupta to have IFT74 as bait pulling down CEP128 as prey (they don't)
+- **Option B**: Our database to have CEP128 as bait pulling down IFT74 as prey (we don't)
+
+**Analysis**:
+- Imported 2,910 Gupta interactions (SAINT ≥0.8, FC ≥2.0)
+- Mapped 1,355 unique proteins to UniProt IDs
+- Found 21 IFT protein mentions in Gupta (all as prey)
+- Searched bidirectionally in our 512 interactions
+- **Result**: 0 matches
+
+**Conclusion**:
+Gupta validates that IFT proteins localize to the centrosome/transition zone (consistent with known biology), but doesn't validate our specific IFT↔IFT/BBSome protein-protein interaction predictions.
+
+**Recommendation**:
+- Skip Gupta for our IFT/BBSome-specific validation
+- Focus on datasets with IFT/BBSome baits:
+  - ✅ Boldt et al., 2016 (has many IFT/BBSome baits) - **25 validations**
+  - → Sang et al., 2011 (NPHP/MKS baits, may have IFT overlap) - **NEXT**
+  - Future: Look for IFT-specific TAP-MS or Co-IP datasets
+
+---
+
 **Created**: 2025-11-07
+**Updated**: 2025-11-07 (import completed, results documented)
 **For**: IFT Interactors experimental validation integration
 **Dataset**: Gupta et al., 2015 Table S1 (BioID proximity labeling)
-**Priority**: #2 (after Boldt et al., 2016)
+**Import Status**: ✅ Completed - 0 matches (non-overlapping protein sets)
+**Priority**: #2 (after Boldt et al., 2016) - **SKIPPED due to no overlap**

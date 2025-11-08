@@ -16,12 +16,17 @@ Track your progress downloading experimental datasets:
 
 ## Priority 2: Proximity Labeling Methods
 
-- [ ] **Gupta et al., 2015** (BioID, 56 baits) ← **IN PROGRESS**
+- [x] **Gupta et al., 2015** (BioID, 56 baits) ← **COMPLETED - NO MATCHES**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(15)01443-4
   - File (Excel): `raw/Gupta_Cell_2015_S1_1-s2.0-S009286741501421X-mmc2.xlsx` ✅ Downloaded
-  - File (CSV): `raw/gupta_2015_ciliated_interactome.csv` ⏳ Needs conversion (Tab 2)
-  - Status: Excel downloaded, needs conversion to CSV
-  - Expected: ~50 validations, ~12 dual-validated with Boldt
+  - File (CSV): `raw/gupta_2015_table_s1.csv` ✅ Converted
+  - Status: ✅ Import completed (2025-11-07)
+  - Result: **0 validations** - Non-overlapping protein sets
+  - Details: Gupta uses centrosome/transition zone baits (TCTN1-3, MKS1, NPHP1-4, CEP proteins, OFD1, PCM1)
+  - Our database: IFT/BBSome baits only
+  - Contains 21 IFT protein mentions (IFT74, IFT81, IFT57, IFT46, IFT22, IFT20, IFT27) but all as **prey**
+  - Our AF3 predictions don't include centrosome ↔ IFT interactions
+  - **Recommendation**: Skip for our IFT/BBSome-specific dataset
 
 - [ ] **Mick et al., 2015** (APEX, primary cilia)
   - URL: https://www.cell.com/developmental-cell/fulltext/S1534-5807(15)00612-4

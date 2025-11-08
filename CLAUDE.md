@@ -147,20 +147,26 @@ git ls-remote origin main  # Should show your latest commit hash
 **Status**: Integrating experimental proteomics data to validate AF3 predictions
 
 **Current Phase**: Phase 1 - Initial validation with 31 baits
-- 🔄 **Gupta et al., 2015** (BioID proximity labeling) - Import in progress
-- ✅ **Boldt et al., 2016** (SF-TAP-MS direct interactions) - Completed (~25 validations)
+- ✅ **Boldt et al., 2016** (SF-TAP-MS direct interactions) - Completed (~25 validations, 5%)
+- ❌ **Gupta et al., 2015** (BioID proximity labeling) - Completed (0 validations)
+  - **Why 0 matches**: Non-overlapping protein sets
+  - Gupta uses centrosome/transition zone baits (TCTN1-3, MKS1, NPHP1-4, CEP proteins)
+  - Our database: IFT/BBSome baits only
+  - Gupta has IFT proteins but only as **prey** (pulled down by centrosome baits)
+  - Our AF3: IFT proteins as **baits** (predicting IFT↔IFT/BBSome interactions)
+  - **Conclusion**: Different biological question - no overlap expected
 
 **Upcoming Phases**:
 - **Phase 2**: Add 4 new proteins (IFT172, BBS9, BBS18, RABL2) → 35 baits
 - **Phase 3**: Re-run validations to capture NEW interactions
+- **Next dataset**: Sang et al., 2011 (LAP, 9 NPHP/MKS baits) - may have better IFT overlap
 
 **Key Features**:
 - **Idempotent imports**: Scripts check for existing validations by PMID (safe to re-run)
 - **No duplicates**: Automatic duplicate prevention when re-running after Phase 2
-- **Dual validation**: Interactions validated by BOTH TAP-MS and BioID = highest confidence
-- **Expected results**:
-  - Phase 1 (31 baits): ~65-75 validated (13-15%)
-  - Phase 3 (35 baits): ~75-90 validated (13-15%)
+- **Current results**:
+  - Phase 1 (31 baits): ~25 validated (5% - Boldt only)
+  - Phase 3 (35 baits): ~30-35 validated (5-6% - expecting +5-10 from new proteins)
 
 **Import Commands**:
 ```bash
@@ -181,9 +187,9 @@ node scripts/import_experimental_data.mjs gupta2015
 - `TODO_ADD_NEW_PROTEINS.md` - Includes Step 6: Re-run validations after Phase 2
 
 **Datasets Available**:
-1. ✅ Boldt et al., 2016 (SF-TAP-MS, 217 baits) - High confidence
-2. 🔄 Gupta et al., 2015 (BioID, 56 baits) - Medium confidence (proximity)
-3. ⏳ Sang et al., 2011 (LAP, 9 baits) - High confidence
+1. ✅ Boldt et al., 2016 (SF-TAP-MS, 217 baits) - High confidence - ~25 validations
+2. ❌ Gupta et al., 2015 (BioID, 56 baits) - Medium confidence - 0 matches (non-overlapping protein sets)
+3. → **Sang et al., 2011 (LAP, 9 baits) - NEXT** - High confidence
 4. ⏳ Mick et al., 2015 (APEX) - Medium confidence
 5. ⏳ Kohli et al., 2017 (APEX) - Medium confidence
 6. ⏳ May et al., 2021 (APEX2, PRIDE) - Medium confidence
