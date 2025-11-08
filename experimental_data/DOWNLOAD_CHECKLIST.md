@@ -9,10 +9,16 @@ Track your progress downloading experimental datasets:
   - File: `raw/boldt_2016_supp_data_1.xlsx`
   - Status: ⏳ Not downloaded
 
-- [ ] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits)
+- [x] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) ← **COMPLETED**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X
-  - File: `raw/sang_2011_table_s2.xlsx`
-  - Status: ⏳ Not downloaded
+  - File: `raw/sang_2011_table_s2.xlsx` ✅ Downloaded
+  - Status: ✅ Import completed (2025-11-07)
+  - Result: **3 validations** - Low AF3 confidence, rescued by strong MS data
+  - Validations:
+    1. TULP3 ↔ B9D1 (ipSAE 0.45, MKS1 bait, 18 spectra, 310k TIC)
+    2. IFT74 ↔ TCTN2 (ipSAE 0.34, MKS1 bait, 28 spectra, 180k TIC)
+    3. IFT70B ↔ CEP97 (ipSAE 0.42, NPHP6 bait, 18 spectra, 990k TIC)
+  - **Conclusion**: Transition zone proteins interact with IFT machinery, even when AF3 scores low
 
 ## Priority 2: Proximity Labeling Methods
 
