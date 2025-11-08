@@ -107,6 +107,44 @@ const NEW_VALIDATIONS = [
   },
   // Biochemical reconstitution (high confidence)
   {
+    bait_uniprot: "Q86WT1", // IFT70 (TTC30A)
+    prey_uniprot: "Q9Y366", // IFT52
+    validation: {
+      experimental_methods: [{
+        method: "Biochemical reconstitution",
+        study: "Taschner et al., 2011",
+        pmid: "",
+        confidence: "high",
+        notes: "N-terminal IFT70 (1-226) binds central IFT52 (281-381)"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Biochemical reconstitution",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: "Q9Y366", // IFT52
+    prey_uniprot: "Q9NQC8", // IFT46
+    validation: {
+      experimental_methods: [{
+        method: "Biochemical reconstitution",
+        study: "Taschner et al., 2011",
+        pmid: "",
+        confidence: "high",
+        notes: "C-terminal domains interact (IFT52 359-454, IFT46 165-319)"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Biochemical reconstitution",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
     bait_uniprot: "Q9BW83", // IFT27
     prey_uniprot: "Q96LB3", // IFT74
     validation: {
@@ -189,6 +227,10 @@ async function addValidations() {
   let notFound = 0;
   let hasValidation = 0;
 
+  console.log('Adding structural/biochemical validations...\n');
+  console.log('(Crystal structures from Taschner 2014, Wachter 2019)');
+  console.log('(Biochemical reconstitution from Taschner 2011, 2014)\n');
+
   for (const {bait_uniprot, prey_uniprot, validation} of NEW_VALIDATIONS) {
     try {
       const result = await sql`
@@ -234,6 +276,7 @@ async function addValidations() {
   console.log(`✅ Added: ${added}`);
   console.log(`⚠️  Not found: ${notFound}`);
   console.log(`💡 Already validated: ${hasValidation}`);
+  console.log(`\nTotal processed: ${NEW_VALIDATIONS.length}`);
 
   process.exit(0);
 }
