@@ -18,120 +18,165 @@ const UNIPROT = {
   IFT43: "Q96FT9"
 };
 
-const HESKETH_2022_VALIDATIONS = [
-  // IFT-A1 module interactions
+const QUIDWAI_2021_VALIDATIONS = [
+  // IFT140 holocomplex with all IFT-A subunits (IP/MS)
   {
-    bait_uniprot: UNIPROT.IFT144,
-    prey_uniprot: UNIPROT.IFT140,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "TPR-mediated heterodimer; IFT-A1 module"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  // IFT-A2 module interactions
-  {
-    bait_uniprot: UNIPROT.IFT122,
+    bait_uniprot: UNIPROT.IFT140,
     prey_uniprot: UNIPROT.IFT121,
     validation: {
       experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        method: "IP-MS",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "TPR-mediated heterodimer; central to IFT-A"
+        notes: "IFT140 holocomplex; endogenous IP from mouse embryos"
       }],
       validation_summary: {
         is_validated: true,
         validation_count: 1,
-        strongest_method: "Cryo-EM",
+        strongest_method: "IP-MS",
         consensus_confidence: "high"
       }
     }
   },
   {
-    bait_uniprot: UNIPROT.IFT43,
-    prey_uniprot: UNIPROT.IFT121,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "IFT43 C-terminal region binds IFT121 TPR"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  {
-    bait_uniprot: UNIPROT.IFT43,
-    prey_uniprot: UNIPROT.IFT139,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "IFT43 bridges IFT121 and IFT139; essential for IFT139 stability"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  // Module-bridging interactions (IFT122 connects A1 and A2)
-  {
-    bait_uniprot: UNIPROT.IFT122,
+    bait_uniprot: UNIPROT.IFT140,
     prey_uniprot: UNIPROT.IFT144,
     validation: {
       experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        method: "IP-MS",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "IFT122 C-terminus in IFT-A1 module; bridges modules"
+        notes: "IFT140 holocomplex; stable in wild-type"
       }],
       validation_summary: {
         is_validated: true,
         validation_count: 1,
-        strongest_method: "Cryo-EM",
+        strongest_method: "IP-MS",
         consensus_confidence: "high"
       }
     }
   },
   {
-    bait_uniprot: UNIPROT.IFT122,
-    prey_uniprot: UNIPROT.IFT139,
+    bait_uniprot: UNIPROT.IFT140,
+    prey_uniprot: UNIPROT.IFT122,
     validation: {
       experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        method: "IP-MS",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "IFT122 N-terminus in IFT-A2 module with IFT139"
+        notes: "IFT140 holocomplex component"
       }],
       validation_summary: {
         is_validated: true,
         validation_count: 1,
-        strongest_method: "Cryo-EM",
+        strongest_method: "IP-MS",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT140,
+    prey_uniprot: UNIPROT.IFT139,
+    validation: {
+      experimental_methods: [{
+        method: "IP-MS",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
+        confidence: "high",
+        notes: "WDR35-dependent; lost in Wdr35-/- cells"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "IP-MS",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT140,
+    prey_uniprot: UNIPROT.IFT43,
+    validation: {
+      experimental_methods: [{
+        method: "IP-MS",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
+        confidence: "high",
+        notes: "WDR35-dependent; lost in Wdr35-/- cells"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "IP-MS",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  // IFT139/121/43 trimeric complex (co-purification)
+  {
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT43,
+    validation: {
+      experimental_methods: [{
+        method: "Co-purification",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
+        confidence: "high",
+        notes: "Recombinant trimeric complex IFT139/121/43; SEC purification"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Co-purification",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT139,
+    validation: {
+      experimental_methods: [{
+        method: "Co-purification",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
+        confidence: "high",
+        notes: "Recombinant trimeric complex IFT139/121/43; stable complex"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Co-purification",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT43,
+    prey_uniprot: UNIPROT.IFT139,
+    validation: {
+      experimental_methods: [{
+        method: "Co-purification",
+        study: "Quidwai et al., 2021",
+        pmid: "34734804",
+        doi: "10.7554/eLife.69786",
+        confidence: "high",
+        notes: "IFT121-mediated interaction in trimeric complex"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Co-purification",
         consensus_confidence: "high"
       }
     }
@@ -143,10 +188,11 @@ async function addValidations() {
   let notFound = 0;
   let hasValidation = 0;
 
-  console.log('Adding Hesketh et al., Cell 2022 IFT-A cryo-EM validations...\n');
-  console.log('(Human IFT-A complex structure at 3-4 Å resolution)\n');
+  console.log('Adding Quidwai et al., eLife 2021 IFT-A validations...\n');
+  console.log('(WDR35-dependent IFT-A holocomplex formation)\n');
+  console.log('Mouse embryos + recombinant trimeric complex purification\n');
 
-  for (const {bait_uniprot, prey_uniprot, validation} of HESKETH_2022_VALIDATIONS) {
+  for (const {bait_uniprot, prey_uniprot, validation} of QUIDWAI_2021_VALIDATIONS) {
     try {
       const result = await sql`
         SELECT i.id, i.experimental_validation,
@@ -224,7 +270,7 @@ async function addValidations() {
   console.log(`✅ Added: ${added}`);
   console.log(`⚠️  Not found: ${notFound}`);
   console.log(`💡 Already validated: ${hasValidation}`);
-  console.log(`\nTotal processed: ${HESKETH_2022_VALIDATIONS.length}`);
+  console.log(`\nTotal processed: ${QUIDWAI_2021_VALIDATIONS.length}`);
 
   process.exit(0);
 }

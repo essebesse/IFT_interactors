@@ -18,18 +18,101 @@ const UNIPROT = {
   IFT43: "Q96FT9"
 };
 
-const HESKETH_2022_VALIDATIONS = [
-  // IFT-A1 module interactions
+const MELEPPATTU_2022_VALIDATIONS = [
+  // TPR heterodimers
   {
-    bait_uniprot: UNIPROT.IFT144,
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
+        confidence: "high",
+        notes: "TPR heterodimer; Leishmania native IFT-A complex"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT140,
+    prey_uniprot: UNIPROT.IFT144,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
+        confidence: "high",
+        notes: "TPR heterodimer; Leishmania IFT-A structure"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  // IFT139 interactions
+  {
+    bait_uniprot: UNIPROT.IFT139,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
+        confidence: "high",
+        notes: "β-propeller 2 interaction; Leishmania"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT139,
+    prey_uniprot: UNIPROT.IFT121,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
+        confidence: "high",
+        notes: "Stabilized by IFT43; Leishmania IFT-A"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  // IFT122 bridging A1/A2 modules
+  {
+    bait_uniprot: UNIPROT.IFT122,
     prey_uniprot: UNIPROT.IFT140,
     validation: {
       experimental_methods: [{
         method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
         confidence: "high",
-        notes: "TPR-mediated heterodimer; IFT-A1 module"
+        notes: "Bridges A1/A2 modules; Leishmania"
       }],
       validation_summary: {
         is_validated: true,
@@ -39,75 +122,38 @@ const HESKETH_2022_VALIDATIONS = [
       }
     }
   },
-  // IFT-A2 module interactions
-  {
-    bait_uniprot: UNIPROT.IFT122,
-    prey_uniprot: UNIPROT.IFT121,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "TPR-mediated heterodimer; central to IFT-A"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  {
-    bait_uniprot: UNIPROT.IFT43,
-    prey_uniprot: UNIPROT.IFT121,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "IFT43 C-terminal region binds IFT121 TPR"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  {
-    bait_uniprot: UNIPROT.IFT43,
-    prey_uniprot: UNIPROT.IFT139,
-    validation: {
-      experimental_methods: [{
-        method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
-        confidence: "high",
-        notes: "IFT43 bridges IFT121 and IFT139; essential for IFT139 stability"
-      }],
-      validation_summary: {
-        is_validated: true,
-        validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
-      }
-    }
-  },
-  // Module-bridging interactions (IFT122 connects A1 and A2)
   {
     bait_uniprot: UNIPROT.IFT122,
     prey_uniprot: UNIPROT.IFT144,
     validation: {
       experimental_methods: [{
         method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
         confidence: "high",
-        notes: "IFT122 C-terminus in IFT-A1 module; bridges modules"
+        notes: "Bridges A1/A2 modules; Leishmania IFT-A"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  // Inter-propeller and C-terminus contacts
+  {
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT140,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
+        confidence: "high",
+        notes: "Inter-propeller interaction; Leishmania"
       }],
       validation_summary: {
         is_validated: true,
@@ -118,15 +164,16 @@ const HESKETH_2022_VALIDATIONS = [
     }
   },
   {
-    bait_uniprot: UNIPROT.IFT122,
-    prey_uniprot: UNIPROT.IFT139,
+    bait_uniprot: UNIPROT.IFT144,
+    prey_uniprot: UNIPROT.IFT121,
     validation: {
       experimental_methods: [{
         method: "Cryo-EM",
-        study: "Hesketh et al., 2022",
-        pmid: "36462505",
+        study: "Meleppattu et al., 2022",
+        pmid: "36563665",
+        doi: "10.1016/j.cell.2022.11.033",
         confidence: "high",
-        notes: "IFT122 N-terminus in IFT-A2 module with IFT139"
+        notes: "Labile C-terminus contact; Leishmania IFT-A"
       }],
       validation_summary: {
         is_validated: true,
@@ -143,10 +190,11 @@ async function addValidations() {
   let notFound = 0;
   let hasValidation = 0;
 
-  console.log('Adding Hesketh et al., Cell 2022 IFT-A cryo-EM validations...\n');
-  console.log('(Human IFT-A complex structure at 3-4 Å resolution)\n');
+  console.log('Adding Meleppattu et al., Cell 2022 IFT-A validations...\n');
+  console.log('(Leishmania tarentolae native IFT-A cryo-EM structure)\n');
+  console.log('⭐ Cross-species validation from parasitic protozoan\n');
 
-  for (const {bait_uniprot, prey_uniprot, validation} of HESKETH_2022_VALIDATIONS) {
+  for (const {bait_uniprot, prey_uniprot, validation} of MELEPPATTU_2022_VALIDATIONS) {
     try {
       const result = await sql`
         SELECT i.id, i.experimental_validation,
@@ -212,7 +260,7 @@ async function addValidations() {
         WHERE id = ${row.id}
       `;
 
-      console.log(`✅ Added: ${row.bait} ↔ ${row.prey} - ${validation.experimental_methods[0].method}`);
+      console.log(`✅ Added: ${row.bait} ↔ ${row.prey} - ${validation.experimental_methods[0].method} (Leishmania)`);
       added++;
 
     } catch (error) {
@@ -224,7 +272,7 @@ async function addValidations() {
   console.log(`✅ Added: ${added}`);
   console.log(`⚠️  Not found: ${notFound}`);
   console.log(`💡 Already validated: ${hasValidation}`);
-  console.log(`\nTotal processed: ${HESKETH_2022_VALIDATIONS.length}`);
+  console.log(`\nTotal processed: ${MELEPPATTU_2022_VALIDATIONS.length}`);
 
   process.exit(0);
 }
