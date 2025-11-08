@@ -2,10 +2,11 @@
 
 ## Overview
 
-**Total validation scripts**: 12
-**Total validations ready**: 69 interactions
+**Total validation scripts**: 18
+**Total validations ready**: 118 interactions
 **IFT-B validations**: 47
 **IFT-A validations**: 20
+**BBSome validations**: 49
 **TULP3-IFT-A validations**: 2
 
 ## Complete Script List
@@ -104,9 +105,61 @@
 
 ---
 
+### BBSome Complex (49 total)
+
+#### 12. `add_singh_2020_bbsome_validations.mjs` - 12 validations
+- **Paper**: Singh et al., eLife 2020
+- **Method**: Cryo-EM (3.1 Å inactive + 3.5 Å active with ARL6)
+- **PMID**: 31939736
+- **Confidence**: High
+- **Notable**: Complete BBSome architecture; ARL6 activation mechanism
+- **Interactions**: Head (BBS2-BBS7), Neck (BBS2/7-BBS9), Body (BBS1/4/5/8), ARL6 activation
+
+#### 13. `add_chou_2019_bbsome_validations.mjs` - 15 validations
+- **Paper**: Chou et al., Structure 2019
+- **Method**: Cryo-EM (4.9 Å) + XL-MS (42 inter-subunit crosslinks) + Rosetta modeling
+- **PMID**: 31303482
+- **Confidence**: High
+- **Notable**: Integrated structural approach; BBS18 U-bolt clamping mechanism
+- **Interactions**: Complete BBSome architecture including BBS18 threading through BBS4/8 TPR domains
+
+#### 14. `add_yang_2020_bbsome_validations.mjs` - 7 validations
+- **Paper**: Yang et al., eLife 2020
+- **Method**: Cryo-EM (~3.5 Å)
+- **PMID**: 32510327
+- **Confidence**: High
+- **Notable**: BBSome-ARL6 with GPCR cargo; conformational changes upon activation
+- **Interactions**: ARL6-BBS1, ARL6-BBS7, GPCR cargo binding cavity
+
+#### 15. `add_klink_2020_bbsome_validations.mjs` - 8 validations
+- **Paper**: Klink et al., eLife 2020
+- **Method**: Cryo-EM (~3.8 Å)
+- **PMID**: 31951201
+- **Confidence**: High
+- **Notable**: Human heterohexameric core (BBS1/4/5/8/9/18); lacks BBS2/7
+- **Interactions**: Core BBSome assembly without head module
+
+#### 16. `add_klink_2017_validations.mjs` - 6 validations
+- **Paper**: Klink et al., eLife 2017
+- **Method**: Biochemical reconstitution + Pulldowns
+- **PMID**: 29168691
+- **Confidence**: High (3) + Medium (3)
+- **Notable**: First recombinant BBSome subcomplexes; BBS18-BBS4-BBS8 tetrameric core
+- **Interactions**: BBS18-BBS4, BBS18-BBS8, BBS4-BBS8 (high); BBS1/5/8 co-purification (medium)
+
+#### 17. `add_mourao_2014_bbsome_validation.mjs` - 1 validation
+- **Paper**: Mourão et al., Nat Struct Mol Biol 2014
+- **Method**: Crystal structure
+- **PMID**: 25402481
+- **Confidence**: High
+- **Notable**: Foundational ARL6-GTP membrane recruitment; Kd=0.35 μM; PDB: 4V0M
+- **Interaction**: ARL6-GTP ↔ BBS1 (blades 1 and 7)
+
+---
+
 ### Combined/Legacy Scripts
 
-#### 12. `add_manual_validations.mjs`
+#### 18. `add_manual_validations.mjs`
 - **Status**: Combined script with all validations
 - **Purpose**: Backup/reference
 - **Note**: Use individual scripts above for better organization
@@ -142,6 +195,14 @@ node add_behal_2012_validations.mjs          # 6 validations
 node add_mccafferty_2022_validations.mjs     # 6 validations
 node add_tulp3_ifta_validations.mjs          # 2 validations
 
+# BBSome validations
+node add_singh_2020_bbsome_validations.mjs   # 12 validations
+node add_chou_2019_bbsome_validations.mjs    # 15 validations
+node add_yang_2020_bbsome_validations.mjs    # 7 validations
+node add_klink_2020_bbsome_validations.mjs   # 8 validations
+node add_klink_2017_validations.mjs          # 6 validations
+node add_mourao_2014_bbsome_validation.mjs   # 1 validation
+
 # Check final status
 node check_validation_status.mjs
 ```
@@ -161,6 +222,7 @@ node add_jiang_2023_validations.mjs && \
 node add_behal_2012_validations.mjs && \
 node add_mccafferty_2022_validations.mjs && \
 node add_tulp3_ifta_validations.mjs && \
+node add_singh_2020_bbsome_validations.mjs && \
 node check_validation_status.mjs
 ```
 
@@ -170,15 +232,17 @@ node check_validation_status.mjs
 
 | Method | Count | Confidence |
 |--------|-------|------------|
-| Cryo-EM | 8 | High |
+| Cryo-EM | 20 | High |
 | Crystal structure | 20 | High |
 | XL-MS | 23 | High |
 | Biochemical reconstitution | 14 | High |
 | Pulldown | 6 | Medium-High |
 | Y2H | 5 | Medium |
 
-**Total high confidence**: 65+ (includes multi-method validations)
+**Total high confidence**: 77+ (includes multi-method validations)
 **Total medium confidence**: ~11
+
+**Note**: Cryo-EM count includes 12 new BBSome interactions from Singh et al., 2020
 
 ---
 
@@ -204,6 +268,10 @@ node check_validation_status.mjs
 
 11. Jiang et al., Cell Research 2023 - IFT-A + TULP3 cryo-EM structure
 12. Hesketh et al., Cell 2022 - IFT-A carriages for TULP adaptors
+
+### BBSome Papers
+
+13. Singh et al., eLife 2020 - Complete BBSome structure and ARL6 activation mechanism
 
 ---
 
@@ -248,14 +316,16 @@ Validations stored in `interactions.experimental_validation` JSONB field:
 
 1. **Run all scripts** on database with network access
 2. **Verify validations** using `check_validation_status.mjs`
-3. **Add McCafferty 2022 XL-MS** when supplementary data available
+3. ✅ **ADDED: Singh 2020 BBSome** (12 interactions)
 4. **Consider additional papers**:
    - Lacey et al., Nat Struct Mol Biol 2023 (IFT-A in trains)
    - Ma et al., Nat Commun 2023 (IFT-A conformational states)
-   - Additional BBSome validation papers
+   - Ye et al., Nature 2023 (Human BBSome core complex structure)
+   - Klink et al., EMBO J 2020 (BBS4-BBS8 structure)
+   - Additional BBSome-ARL6 interaction validations
 
 ---
 
 **Created**: 2025-11-08
-**Last Updated**: 2025-11-08
-**Status**: 69 validations ready for database upload (47 IFT-B + 20 IFT-A + 2 TULP3-IFT-A)
+**Last Updated**: 2025-11-08 (Added Singh 2020 BBSome validations)
+**Status**: 81 validations ready for database upload (47 IFT-B + 20 IFT-A + 12 BBSome + 2 TULP3-IFT-A)
