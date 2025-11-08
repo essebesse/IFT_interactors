@@ -1,0 +1,119 @@
+#!/usr/bin/env node
+import { sql } from '@vercel/postgres';
+
+const POSTGRES_URL = process.env.POSTGRES_URL;
+
+if (!POSTGRES_URL) {
+  console.error('❌ Set POSTGRES_URL first');
+  process.exit(1);
+}
+
+// UniProt IDs
+const UNIPROT = {
+  TULP3: "O75386",   // TULP3 (RP26)
+  IFT122: "Q9HBG6",
+  IFT140: "Q96RY7"
+};
+
+const TULP3_VALIDATIONS = [
+  // Jiang et al. 2023 - Cryo-EM structure with TULP3 bound
+  {
+    bait_uniprot: UNIPROT.TULP3,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        confidence: "high",
+        notes: "TULP3 N-terminal helix binds IFT-A; cargo adapter interaction"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.TULP3,
+    prey_uniprot: UNIPROT.IFT140,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        confidence: "high",
+        notes: "TULP3 N-terminal helix binds IFT-A; cargo adapter interaction"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  }
+];
+
+async function addValidations() {
+  let added = 0;
+  let notFound = 0;
+  let hasValidation = 0;
+
+  console.log('Adding TULP3-IFT-A cargo adapter validations...\n');
+  console.log('(Cryo-EM structures from Jiang 2023, Hesketh 2022)\n');
+  console.log('TULP3 acts as cargo adapter protein for membrane protein transport\n');
+
+  for (const {bait_uniprot, prey_uniprot, validation} of TULP3_VALIDATIONS) {
+    try {
+      const result = await sql`
+        SELECT i.id, i.experimental_validation,
+               b.gene_name as bait, p.gene_name as prey
+        FROM interactions i
+        JOIN proteins b ON i.bait_protein_id = b.id
+        JOIN proteins p ON i.prey_protein_id = p.id
+        WHERE (b.uniprot_id = ${bait_uniprot} AND p.uniprot_id = ${prey_uniprot})
+           OR (b.uniprot_id = ${prey_uniprot} AND p.uniprot_id = ${bait_uniprot})
+        LIMIT 1
+      `;
+
+      if (result.rows.length === 0) {
+        console.log(`⚠️  Not found: ${bait_uniprot} ↔ ${prey_uniprot}`);
+        notFound++;
+        continue;
+      }
+
+      const row = result.rows[0];
+
+      if (row.experimental_validation) {
+        console.log(`💡 Already has validation: ${row.bait} ↔ ${row.prey}`);
+        hasValidation++;
+        continue;
+      }
+
+      await sql`
+        UPDATE interactions
+        SET experimental_validation = ${JSON.stringify(validation)}
+        WHERE id = ${row.id}
+      `;
+
+      console.log(`✅ Added: ${row.bait} ↔ ${row.prey} - ${validation.experimental_methods[0].method}`);
+      added++;
+
+    } catch (error) {
+      console.error(`❌ Error: ${error.message}`);
+    }
+  }
+
+  console.log(`\n📊 Summary:`);
+  console.log(`✅ Added: ${added}`);
+  console.log(`⚠️  Not found: ${notFound}`);
+  console.log(`💡 Already validated: ${hasValidation}`);
+  console.log(`\nTotal processed: ${TULP3_VALIDATIONS.length}`);
+
+  process.exit(0);
+}
+
+addValidations();
