@@ -2,7 +2,9 @@
 
 ## Summary
 
-**Total IFT-A validations ready**: 14 interactions from 3 papers
+**Total IFT-A validations ready**: 22 interactions from 5 papers/datasets
+- IFT-A internal: 20 interactions
+- TULP3-IFT-A cargo adapter: 2 interactions
 
 ### Papers Processed
 
@@ -26,27 +28,29 @@
    - PMID: 22275356
    - Notable: First study identifying IFT144/140/122 core subcomplex
 
-### Papers Pending
-
-4. **McCafferty et al., eLife 2022** ⏳ NEEDS SUPPLEMENTARY FILES
-   - Expected validations: ~6-10 unique interactions from 29 XL-MS crosslinks
+4. **McCafferty et al., eLife 2022** ✅
+   - Script: `add_mccafferty_2022_validations.mjs`
+   - Validations: 6
    - Method: DSSO crosslinking mass spectrometry
    - PMID: 36346217
-   - Data locations:
-     - ProteomeXchange: PXD032818
-     - Zenodo: 10.5281/zenodo.7222413
-     - eLife supplementary files
-   - **Action needed**: Download supplementary tables with crosslink data
+   - Notable: Integrative modeling with XL-MS + cryo-ET + AlphaFold2
+
+5. **TULP3-IFT-A Cargo Adapter** ✅
+   - Script: `add_tulp3_ifta_validations.mjs`
+   - Validations: 2 (TULP3 ↔ IFT122, TULP3 ↔ IFT140)
+   - Method: Cryo-EM
+   - Papers: Jiang et al., 2023 and Hesketh et al., 2022
+   - Notable: TULP3 N-terminal helix binds IFT-A for membrane protein cargo
 
 ### Papers Identified But Not Extracted
 
-5. **Lacey et al., Nat Struct Mol Biol 2023**
+6. **Lacey et al., Nat Struct Mol Biol 2023**
    - In situ cryo-ET of IFT trains
    - PMID: 36593313
    - Focus: IFT-A polymerization and train architecture
    - May contain additional interaction details
 
-6. **Ma et al., Nat Commun 2023**
+7. **Ma et al., Nat Commun 2023**
    - Tetrahymena IFT-A conformational states
    - PMID: 36932088
    - Focus: Conformational changes during train assembly
@@ -78,16 +82,23 @@
 | IFT140 ↔ IFT121 | Jiang 2023 | Cryo-EM | ✅ Ready |
 | IFT121 ↔ IFT144 | Jiang 2023 | Cryo-EM | ✅ Ready |
 
-### Expected from McCafferty 2022 XL-MS (when data available)
+### McCafferty 2022 XL-MS
 
 | Interaction | Method | Status |
 |-------------|--------|--------|
-| IFT121 ↔ IFT122 | XL-MS | ⏳ Pending data |
-| IFT140 ↔ IFT144 | XL-MS | ⏳ Pending data |
-| IFT122 ↔ IFT144 | XL-MS | ⏳ Pending data |
-| IFT122 ↔ IFT43 | XL-MS | ⏳ Pending data |
-| IFT43 ↔ IFT121 | XL-MS | ⏳ Pending data |
-| Additional crosslinks | XL-MS | ⏳ Pending data |
+| IFT121 ↔ IFT122 | XL-MS | ✅ Ready |
+| IFT121 ↔ IFT139 | XL-MS | ✅ Ready |
+| IFT121 ↔ IFT43 | XL-MS | ✅ Ready |
+| IFT122 ↔ IFT140 | XL-MS | ✅ Ready |
+| IFT122 ↔ IFT144 | XL-MS | ✅ Ready |
+| IFT140 ↔ IFT144 | XL-MS | ✅ Ready |
+
+### TULP3-IFT-A Cargo Adapter
+
+| Interaction | Papers | Method | Status |
+|-------------|--------|--------|--------|
+| TULP3 ↔ IFT122 | Jiang 2023, Hesketh 2022 | Cryo-EM | ✅ Ready |
+| TULP3 ↔ IFT140 | Jiang 2023, Hesketh 2022 | Cryo-EM | ✅ Ready |
 
 ## Running the Scripts
 
@@ -99,9 +110,8 @@ export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-a
 node add_hesketh_2022_validations.mjs
 node add_jiang_2023_validations.mjs
 node add_behal_2012_validations.mjs
-
-# When McCafferty data is available:
-# node add_mccafferty_2022_validations.mjs
+node add_mccafferty_2022_validations.mjs
+node add_tulp3_ifta_validations.mjs
 ```
 
 ## Notes
@@ -125,4 +135,4 @@ node add_behal_2012_validations.mjs
 ---
 
 **Last Updated**: 2025-11-08
-**Status**: 14 validations ready, McCafferty XL-MS pending supplementary file access
+**Status**: 22 validations ready (20 IFT-A + 2 TULP3-IFT-A), all papers processed ✅

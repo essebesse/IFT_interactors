@@ -2,10 +2,11 @@
 
 ## Overview
 
-**Total validation scripts**: 10
-**Total validations ready**: 61 interactions
+**Total validation scripts**: 12
+**Total validations ready**: 69 interactions
 **IFT-B validations**: 47
-**IFT-A validations**: 14
+**IFT-A validations**: 20
+**TULP3-IFT-A validations**: 2
 
 ## Complete Script List
 
@@ -49,7 +50,7 @@
 
 ---
 
-### IFT-A Validations (14 total)
+### IFT-A Validations (20 total)
 
 #### 7. `add_hesketh_2022_validations.mjs` - 6 validations
 - **Paper**: Hesketh et al., Cell 2022
@@ -80,11 +81,32 @@
   - IFT140 ↔ IFT122, IFT140 ↔ IFT144, IFT122 ↔ IFT144 (12S core)
   - IFT121 ↔ IFT43, IFT121 ↔ IFT139, IFT121 ↔ IFT122
 
+#### 10. `add_mccafferty_2022_validations.mjs` - 6 validations
+- **Paper**: McCafferty et al., eLife 2022
+- **Method**: XL-MS (DSSO crosslinking)
+- **PMID**: 36346217
+- **Confidence**: High
+- **Notable**: Integrative modeling combining XL-MS + cryo-ET + AlphaFold2
+- **Interactions**:
+  - IFT121 ↔ IFT122, IFT121 ↔ IFT139, IFT121 ↔ IFT43
+  - IFT122 ↔ IFT140, IFT122 ↔ IFT144, IFT140 ↔ IFT144
+
+---
+
+### TULP3-IFT-A Cargo Adapter (2 total)
+
+#### 11. `add_tulp3_ifta_validations.mjs` - 2 validations
+- **Papers**: Jiang et al., 2023 and Hesketh et al., 2022
+- **Method**: Cryo-EM
+- **Confidence**: High
+- **Notable**: TULP3 N-terminal helix binds IFT-A for membrane protein cargo transport
+- **Interactions**: TULP3 ↔ IFT122, TULP3 ↔ IFT140
+
 ---
 
 ### Combined/Legacy Scripts
 
-#### 10. `add_manual_validations.mjs`
+#### 12. `add_manual_validations.mjs`
 - **Status**: Combined script with all validations
 - **Purpose**: Backup/reference
 - **Note**: Use individual scripts above for better organization
@@ -117,6 +139,8 @@ node add_taschner_2014_validation.mjs        # 1 validation
 node add_hesketh_2022_validations.mjs        # 6 validations
 node add_jiang_2023_validations.mjs          # 2 validations
 node add_behal_2012_validations.mjs          # 6 validations
+node add_mccafferty_2022_validations.mjs     # 6 validations
+node add_tulp3_ifta_validations.mjs          # 2 validations
 
 # Check final status
 node check_validation_status.mjs
@@ -135,6 +159,8 @@ node add_taschner_2014_validation.mjs && \
 node add_hesketh_2022_validations.mjs && \
 node add_jiang_2023_validations.mjs && \
 node add_behal_2012_validations.mjs && \
+node add_mccafferty_2022_validations.mjs && \
+node add_tulp3_ifta_validations.mjs && \
 node check_validation_status.mjs
 ```
 
@@ -172,20 +198,12 @@ node check_validation_status.mjs
 7. Hesketh et al., Cell 2022 - Human IFT-A cryo-EM structure
 8. Jiang et al., Cell Research 2023 - IFT-A with TULP3, zinc domains
 9. Behal et al., JBC 2012 - Chlamydomonas IFT-A organization
+10. McCafferty et al., eLife 2022 - Tetrahymena IFT-A XL-MS + integrative modeling
 
----
+### TULP3-IFT-A
 
-## Papers Pending Data
-
-### McCafferty et al., eLife 2022
-- **Expected**: 6-10 unique IFT-A interactions
-- **Method**: XL-MS (29 intermolecular crosslinks)
-- **PMID**: 36346217
-- **Data sources**:
-  - ProteomeXchange: PXD032818
-  - Zenodo: 10.5281/zenodo.7222413
-  - eLife supplementary files
-- **Action needed**: Download supplementary crosslink tables
+11. Jiang et al., Cell Research 2023 - IFT-A + TULP3 cryo-EM structure
+12. Hesketh et al., Cell 2022 - IFT-A carriages for TULP adaptors
 
 ---
 
@@ -240,4 +258,4 @@ Validations stored in `interactions.experimental_validation` JSONB field:
 
 **Created**: 2025-11-08
 **Last Updated**: 2025-11-08
-**Status**: 61 validations ready for database upload
+**Status**: 69 validations ready for database upload (47 IFT-B + 20 IFT-A + 2 TULP3-IFT-A)
