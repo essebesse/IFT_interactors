@@ -34,13 +34,21 @@ I've set up a comprehensive system for adding experimental validation data to yo
      - 1 IFT-cargo adapter (IFT144-TULP3)
      - 6 additional IFT-B interactions from your review text
 
-### 📊 Current Database Status
+### 📊 Current Database Status (as of 2025-11-08)
 
-From the JSON extraction files:
-- **Total interactions**: 512 (v4 analysis)
-- **Currently validated**: 7 interactions
-  - All from Tina/Carsten PD-MS data
-  - IFT-A complex: IFT122, IFT121 (WDR35), IFT43 interactions with WDR19 (IFT144)
+- **Total interactions**: 501 (v4 analysis)
+- **Validated interactions**: 41 (8.2% of database)
+- **Validation sources**: Multiple published studies (Boldt 2016, Taschner et al., Petriman et al., etc.)
+- **Key achievement**: Validation system now properly accumulates evidence from multiple studies
+  - Example: IFT70A ↔ IFT52 has 6 validations from different sources
+  - IFT81 ↔ IFT74 has 4 validations (SF-TAP-MS, XL-MS, Bacterial two-hybrid, Y2H)
+
+### ⚠️ CRITICAL FIX (2025-11-08)
+
+**Bug Fixed**: Validation scripts were incorrectly skipping interactions that already had ANY validation.
+- **Old behavior**: If interaction had validation from Boldt 2016, it would skip adding Taschner 2014 crystal structure
+- **New behavior**: Only skips if the EXACT SAME study (by study name + method) already exists
+- **Result**: 17 new validations added, scripts now properly accumulate all evidence
 
 ## How to Use
 

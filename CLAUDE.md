@@ -21,9 +21,11 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Database
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
-- **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
+- **Status**: ✅ Populated (501 interactions, 369 proteins from 31 baits)
+- **Validated Interactions**: 41 (8.2% validation rate)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
+- **Last Validation Update**: 2025-11-08 (17 new validations added, Boldt notes cleaned)
 - **Last Frontend Update**: 2025-11-06 (UI clarity improvements, PAE terminology)
 
 ### Deployment
@@ -111,10 +113,11 @@ git ls-remote origin main  # Should show your latest commit hash
 
 ## Dataset Overview
 
-### Data Statistics (as of 2025-11-03)
-- **Total Interactions**: 512 (all unique, duplicates removed)
-- **Unique Proteins**: 371 (all human Homo sapiens)
-- **Unique Baits**: 33 (22 IFT + 10 BBSome + 1 IFT-associated: TULP3)
+### Data Statistics (as of 2025-11-08)
+- **Total Interactions**: 501 (all unique, duplicates removed)
+- **Unique Proteins**: 369 (all human Homo sapiens)
+- **Unique Baits**: 31 (22 IFT + 9 BBSome)
+- **Validated Interactions**: 41 (8.2% of total)
 - **Analysis Version**: v4 only (ipSAE scoring)
 - **AlphaFold Version**: AF3 only
 - **Confidence Distribution**: Based on ipSAE scores
@@ -127,10 +130,8 @@ git ls-remote origin main  # Should show your latest commit hash
   - IFT20, IFT22, IFT25, IFT27, IFT38, IFT43, IFT46, IFT52, IFT54, IFT56, IFT57
   - IFT70 (TTC30A), IFT70 (TTC30B), IFT74, IFT80, IFT81, IFT88
   - IFT121, IFT122, IFT139, IFT140, IFT144
-- **BBSome Proteins (10)**:
-  - BBS1, BBS2, BBS3 (ARL6), BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17 (LZTL1)
-- **IFT-Associated Proteins (1)**:
-  - TULP3 (Tubby-related protein 3 / RP26) - 73 interactions
+- **BBSome Proteins (9)**:
+  - BBS1, BBS2, BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17 (LZTL1)
 
 ### Notable Interactions (Top 5 by ipSAE)
 1. IFT46 ↔ IFT56: ipSAE=0.828 (High)
@@ -299,9 +300,89 @@ node import_from_v4_originals_FIXED.mjs
 
 **What this does**:
 1. Drops all tables (clean slate)
-2. Reads 32 original `AF3_PD_analysis_v4.json` files from `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
-3. Imports 877 interactions from 331 unique proteins (32 baits)
+2. Reads original `AF3_PD_analysis_v4.json` files from `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
+3. Imports interactions from unique proteins from baits
 4. All data is v4 (ipSAE) from AF3 predictions
+
+## Experimental Validation System
+
+### Overview
+- **Total Validated**: 41 interactions (8.2% of database)
+- **Validation Sources**: Literature mining from published studies
+- **Methods Tracked**: SF-TAP-MS, Y2H, XL-MS, Crystal structures, Biochemical reconstitution, Pulldowns
+- **Data Format**: JSONB in `experimental_validation` column
+
+### Validation Data Structure
+```json
+{
+  "experimental_methods": [
+    {
+      "method": "Crystal structure",
+      "study": "Taschner et al., 2014",
+      "pmid": "24469635",
+      "doi": "10.1016/j.str.2014.01.006",
+      "confidence": "high",
+      "bait_protein": "IFT52",
+      "notes": ""
+    }
+  ],
+  "validation_summary": {
+    "is_validated": true,
+    "validation_count": 1,
+    "strongest_method": "Crystal structure",
+    "consensus_confidence": "high"
+  }
+}
+```
+
+### Adding Validation Data
+
+**⚠️ CRITICAL**: Validation scripts now properly accumulate evidence from multiple studies.
+
+**How validation scripts work**:
+1. Check if interaction exists in database
+2. Check if THIS SPECIFIC study already exists (by study name + method)
+3. If duplicate study: skip
+4. If new study: **APPEND** to existing `experimental_methods` array
+5. Recalculate `validation_summary` with all evidence
+
+**Example - Multi-evidence accumulation**:
+- IFT70A ↔ IFT52 now has 6 validations:
+  - SF-TAP-MS (Boldt et al., 2016)
+  - Y2H x2 (Zhao & Malicki 2011, Howard et al. 2013)
+  - Crystal structure x2 (Taschner et al. 2014, Petriman et al. 2022)
+  - Biochemical reconstitution (Taschner et al. 2011)
+
+**Available validation scripts**:
+```bash
+export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb"
+
+# Run all validation scripts
+node add_structural_validations.mjs       # Crystal structures, biochemical reconstitution (11 validations)
+node add_iftb2_validations.mjs            # IFT-B2 peripheral validations (11 validations)
+node add_petriman_xl_validations.mjs      # Petriman XL-MS data (7 validations)
+node add_petriman_additional_validations.mjs  # Petriman structures/XL-MS (16 validations)
+node add_single_validation.mjs            # IFT27-IFT25 crystal structure (1 validation)
+node add_taschner_2014_validation.mjs     # IFT52-IFT74 pulldown (1 validation)
+
+# Check validation status
+node check_validation_status.mjs
+
+# Utility: Remove verbose notes from specific study
+node remove_boldt_notes.mjs  # Cleans Boldt et al., 2016 notes
+```
+
+**Recent validation updates (2025-11-08)**:
+- ✅ Fixed validation scripts to accumulate evidence (previously skipped if ANY validation existed)
+- ✅ Added 17 new validations from multiple studies
+- ✅ Removed verbose notes from Boldt et al., 2016 validations (28 interactions)
+- ✅ Scripts now properly merge validations instead of overwriting
+
+**Key validated interactions**:
+- IFT81 ↔ IFT74: 4 validations (SF-TAP-MS, XL-MS, Bacterial two-hybrid, Y2H)
+- IFT81 ↔ IFT22: 4 validations (SF-TAP-MS, Crystal structure, Biochemical reconstitution, XL-MS)
+- IFT74 ↔ IFT22: 4 validations (SF-TAP-MS, Crystal structure, Biochemical reconstitution, XL-MS)
+- IFT88 ↔ IFT52: 3 validations (SF-TAP-MS, Y2H, Crystal structure)
 
 ## Common Commands
 
@@ -498,9 +579,9 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 ## Publication Workflow
 
 ### Website Role
-- **Website**: Shows ALL 877 v4 (ipSAE) interactions from original AlphaPulldown predictions
-- **Paper**: Focuses on high-confidence hits (32 interactions, 3.6%)
-- **Data source**: Direct from AF3 v4.json files (32 human IFT/BBSome baits)
+- **Website**: Shows ALL 501 v4 (ipSAE) interactions from original AlphaPulldown predictions
+- **Validated**: 41 interactions (8.2%) with experimental support from literature
+- **Data source**: Direct from AF3 v4.json files (31 human IFT/BBSome baits)
 
 ### Citation
 When published, website will be cited as:
@@ -613,6 +694,8 @@ git branch -D ift-temp-branch
 - ✅ Database populated from **original AlphaPulldown v4.json files** (NOT extracted files)
 - ✅ All API routes configured for runtime-only execution
 - ✅ Independent from main Cilia project
+- ✅ Experimental validation system tracks literature evidence (41 validated interactions)
+- ✅ Validation scripts properly accumulate evidence from multiple studies
 - ⚠️ Do not modify the main Cilia database connection string
 - ⚠️ This project uses a separate Neon database instance
 - ⚠️ Only import from original v4.json files in `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
@@ -621,6 +704,8 @@ git branch -D ift-temp-branch
 
 - **human_ift_proteins_complete.md** - Human IFT protein reference
 - **chlamydomonas_ift_proteins_complete.md** - Chlamydomonas IFT protein reference
+- **IFTB_CORE_VALIDATIONS.md** - Validation data compilation
+- **VALIDATION_SETUP_SUMMARY.md** - Validation system overview
 - **import_from_v4_originals_FIXED.mjs** - Main import script
 - **drop_tables.mjs** - Database reset script
 - **find_v4_json.sh** - Finds all v4.json source files
@@ -628,10 +713,19 @@ git branch -D ift-temp-branch
 ---
 
 **Project Status**: ✅ Deployed and operational
-**Last Updated**: 2025-11-06
-**Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
+**Last Updated**: 2025-11-08
+**Database Status**: ✅ Populated (501 interactions, 369 proteins, 31 baits)
+**Validated Interactions**: ✅ 41 (8.2% of database with experimental evidence)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
+
+**Summary of 2025-11-08 Updates** ⭐:
+- ✅ Fixed critical bug in validation scripts (were skipping if ANY validation existed)
+- ✅ Added 17 new validations from multiple studies (Taschner, Petriman, etc.)
+- ✅ Validation scripts now properly accumulate evidence from different studies
+- ✅ Example: IFT70A-IFT52 now has 6 validations from different sources
+- ✅ Removed verbose notes from Boldt et al., 2016 validations (28 interactions)
+- ✅ Validation system fully functional and accumulating literature evidence
 
 **Summary of 2025-11-06 Updates**:
 - ✅ Added colored dots (●) to confidence level checkboxes (green/orange/red)
@@ -639,12 +733,3 @@ git branch -D ift-temp-branch
 - ✅ Removed "Hs" organism label from network (all proteins are human)
 - ✅ Renamed PAE labels to "Contact Precision" (high/moderate) to avoid confusion with ipSAE confidence
 - ✅ Result: Clearer UI with distinct terminology for global vs local quality metrics
-
-**Summary of 2025-11-05 Updates**:
-- ✅ Smart fullscreen sizing (adapts to screen, prevents memory issues)
-- ✅ Fixed PAE highlighting reset bug
-- ✅ Improved sidebar typography (larger, more readable fonts)
-- ✅ Added false positive disclaimer
-- ✅ Fixed network edge colors to use ipSAE-based confidence
-- ✅ Updated network tooltips (show ipSAE, removed redundant AF3 label)
-- ✅ Text corrections (flexible relative domain orientation)
