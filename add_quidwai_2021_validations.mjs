@@ -120,7 +120,7 @@ const QUIDWAI_2021_VALIDATIONS = [
       }
     }
   },
-  // IFT139/121/43 trimeric complex (co-purification)
+  // IFT139/121/43 trimeric complex (co-purification, Chlamydomonas)
   {
     bait_uniprot: UNIPROT.IFT121,
     prey_uniprot: UNIPROT.IFT43,
@@ -131,7 +131,7 @@ const QUIDWAI_2021_VALIDATIONS = [
         pmid: "34734804",
         doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "Recombinant trimeric complex IFT139/121/43; SEC purification"
+        notes: "Recombinant Chlamydomonas trimeric complex IFT139/121/43; SEC purification"
       }],
       validation_summary: {
         is_validated: true,
@@ -151,7 +151,7 @@ const QUIDWAI_2021_VALIDATIONS = [
         pmid: "34734804",
         doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "Recombinant trimeric complex IFT139/121/43; stable complex"
+        notes: "Recombinant Chlamydomonas trimeric complex; stable"
       }],
       validation_summary: {
         is_validated: true,
@@ -171,7 +171,7 @@ const QUIDWAI_2021_VALIDATIONS = [
         pmid: "34734804",
         doi: "10.7554/eLife.69786",
         confidence: "high",
-        notes: "IFT121-mediated interaction in trimeric complex"
+        notes: "IFT121-mediated interaction; Chlamydomonas trimeric complex"
       }],
       validation_summary: {
         is_validated: true,
