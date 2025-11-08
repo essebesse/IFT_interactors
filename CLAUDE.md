@@ -142,11 +142,11 @@ git ls-remote origin main  # Should show your latest commit hash
 3. BBS7 ↔ BBS2: ipSAE=0.759 (High)
 4. BBS2 ↔ BBS7: ipSAE=0.758 (High)
 
-### Experimental Validation (Phase 1 - Completed)
+### Experimental Validation (Phase 1 - In Progress)
 
 **Status**: Integrating experimental proteomics data to validate AF3 predictions
 
-**Current Phase**: Phase 1 - Initial validation with 31 baits ✅ COMPLETED
+**Current Phase**: Phase 1 - Initial validation with 31 baits
 - ✅ **Boldt et al., 2016** (SF-TAP-MS direct interactions) - Completed (~25 validations, 5%)
 - ❌ **Gupta et al., 2015** (BioID proximity labeling) - Completed (0 validations)
   - **Why 0 matches**: Non-overlapping protein sets
@@ -155,25 +155,24 @@ git ls-remote origin main  # Should show your latest commit hash
   - Gupta has IFT proteins but only as **prey** (pulled down by centrosome baits)
   - Our AF3: IFT proteins as **baits** (predicting IFT↔IFT/BBSome interactions)
   - **Conclusion**: Different biological question - no overlap expected
-- ✅ **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) - Completed (3 validations, 0.6%)
-  - **Result**: 3 validations - Low AF3 confidence, rescued by strong MS data
-  - Validations:
-    1. TULP3 ↔ B9D1 (ipSAE 0.45, MKS1 bait, 18 spectra, 310k TIC)
-    2. IFT74 ↔ TCTN2 (ipSAE 0.34, MKS1 bait, 28 spectra, 180k TIC)
-    3. IFT70B ↔ CEP97 (ipSAE 0.42, NPHP6 bait, 18 spectra, 990k TIC)
-  - **Conclusion**: Transition zone proteins interact with IFT machinery, even when AF3 scores low
+- ❌ **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) - Completed (0 validations)
+  - **Why 0 matches**: Non-overlapping protein sets (same issue as Gupta)
+  - Sang uses NPHP/MKS transition zone baits
+  - Our database: IFT/BBSome baits only
+  - Some shared prey proteins (B9D1, TCTN2, CEP97) but different baits
+  - **Conclusion**: Different biological question - no overlap expected
+- ⏳ **Mick et al., 2015** (APEX, primary cilia) - In progress
 
 **Upcoming Phases**:
 - **Phase 2**: Add 4 new proteins (IFT172, BBS9, BBS18, RABL2) → 35 baits
 - **Phase 3**: Re-run validations to capture NEW interactions
-- **Next dataset**: Consider additional datasets (Mick et al., 2015 APEX or others)
 
 **Key Features**:
 - **Idempotent imports**: Scripts check for existing validations by PMID (safe to re-run)
 - **No duplicates**: Automatic duplicate prevention when re-running after Phase 2
 - **Current results**:
-  - Phase 1 (31 baits): ~28 validated (5.5% total: Boldt 25, Gupta 0, Sang 3)
-  - Phase 3 (35 baits): ~33-38 validated (5.5-6.3% - expecting +5-10 from new proteins)
+  - Phase 1 (31 baits): ~25 validated (5% - Boldt only)
+  - Phase 3 (35 baits): ~30-35 validated (5-6% - expecting +5-10 from new proteins)
 
 **Import Commands**:
 ```bash
@@ -199,8 +198,8 @@ node scripts/import_experimental_data.mjs sang2011
 **Datasets Available**:
 1. ✅ Boldt et al., 2016 (SF-TAP-MS, 217 baits) - High confidence - 25 validations
 2. ❌ Gupta et al., 2015 (BioID, 56 baits) - Medium confidence - 0 matches (non-overlapping protein sets)
-3. ✅ **Sang et al., 2011** (LAP, 9 NPHP/MKS baits) - High confidence - 3 validations ⭐ "Rescued by MS"
-4. ⏳ Mick et al., 2015 (APEX, primary cilia) - Medium confidence
+3. ❌ Sang et al., 2011 (LAP, 9 NPHP/MKS baits) - High confidence - 0 matches (non-overlapping protein sets)
+4. 🔄 **Mick et al., 2015** (APEX, primary cilia) - Medium confidence - In progress
 5. ⏳ Kohli et al., 2017 (APEX, ciliary membrane) - Medium confidence
 6. ⏳ May et al., 2021 (APEX2, Hedgehog signaling, PRIDE) - Medium confidence
 7. ⏳ Aslanyan et al., 2023 (BioID2-UBD, ubiquitinome, PRIDE) - Medium confidence
@@ -712,29 +711,30 @@ git branch -D ift-temp-branch
 **Database Status**: ✅ Populated (512 interactions, 371 proteins, 31 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
-**Experimental Validation**: ✅ **Phase 1 COMPLETED** (Boldt: 25, Gupta: 0, Sang: 3 = 28 total validations)
+**Experimental Validation**: 🔄 Phase 1 in progress (Boldt: 25 validations, exploring additional datasets)
 
 **Summary of 2025-11-07 Updates**:
 - ✅ Created EXPERIMENTAL_VALIDATION_WORKFLOW.md (phased validation strategy)
-- ✅ **Phase 1 validation completed** (31 baits):
+- 🔄 **Phase 1 validation** (31 baits - in progress):
   - Boldt et al., 2016 (SF-TAP-MS): 25 validations (5%)
   - Gupta et al., 2015 (BioID): 0 validations (non-overlapping protein sets)
-  - Sang et al., 2011 (LAP): 3 validations (0.6%) - Low AF3, rescued by strong MS
-  - **Total**: 28 validations (5.5% of 512 interactions)
+  - Sang et al., 2011 (LAP): 0 validations (non-overlapping protein sets)
+  - Mick et al., 2015 (APEX): In progress
+  - **Current total**: 25 validations (5% of 512 interactions)
 - ✅ Added Gupta et al., 2015 (BioID) dataset integration
   - Complete documentation: GUPTA_DATASET_CRITERIA.txt
   - Step-by-step guide: TODO_GUPTA_DATASET.md
   - Parser implemented: parseGupta2015() with SAINT ≥0.8, FC ≥2.0 filters
   - Result: 0 matches (centrosome baits vs IFT baits - different biological question)
 - ✅ Added Sang et al., 2011 (LAP) dataset integration
-  - 3 validations: TULP3-B9D1, IFT74-TCTN2, IFT70B-CEP97
-  - All LOW ipSAE (0.34-0.45) but strong MS evidence (18-28 spectra, high TIC)
-  - Demonstrates transition zone-IFT interactions rescue low AF3 predictions
+  - Result: 0 validations (NPHP/MKS baits vs IFT/BBSome baits - different protein sets)
+  - Found shared prey proteins (B9D1, TCTN2, CEP97) but different baits
+  - Demonstrates importance of exact bait-prey matching for validation
 - ✅ Updated TODO_ADD_NEW_PROTEINS.md with Step 6: Re-run validations
 - ✅ Documented phased approach for avoiding duplicates
-  - Phase 1: Initial validation (31 baits) - 28 validations ✅ COMPLETED
+  - Phase 1: Initial validation (31 baits) - 25 validations so far
   - Phase 2: Add 4 proteins (IFT172, BBS9, BBS18, RABL2) - Pending AF3 jobs
-  - Phase 3: Re-run validations - idempotent, no duplicates (+5-10 more expected)
+  - Phase 3: Re-run validations - idempotent, no duplicates
 - ✅ Import scripts check for existing validations by PMID (safe to re-run)
 
 **Summary of 2025-11-06 Updates**:

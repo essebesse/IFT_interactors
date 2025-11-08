@@ -9,16 +9,16 @@ Track your progress downloading experimental datasets:
   - File: `raw/boldt_2016_supp_data_1.xlsx`
   - Status: ⏳ Not downloaded
 
-- [x] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) ← **COMPLETED**
+- [x] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) ← **COMPLETED - NO MATCHES**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X
   - File: `raw/sang_2011_table_s2.xlsx` ✅ Downloaded
   - Status: ✅ Import completed (2025-11-07)
-  - Result: **3 validations** - Low AF3 confidence, rescued by strong MS data
-  - Validations:
-    1. TULP3 ↔ B9D1 (ipSAE 0.45, MKS1 bait, 18 spectra, 310k TIC)
-    2. IFT74 ↔ TCTN2 (ipSAE 0.34, MKS1 bait, 28 spectra, 180k TIC)
-    3. IFT70B ↔ CEP97 (ipSAE 0.42, NPHP6 bait, 18 spectra, 990k TIC)
-  - **Conclusion**: Transition zone proteins interact with IFT machinery, even when AF3 scores low
+  - Result: **0 validations** - Non-overlapping protein sets
+  - Details: Sang uses NPHP/MKS baits (NPHP1-8, MKS1, MKS3)
+  - Our database: IFT/BBSome baits only
+  - Some shared prey proteins found (B9D1, TCTN2, CEP97) but different baits
+  - Validation requires exact bait-prey pair matching or reciprocal interactions
+  - **Conclusion**: Different biological question (transition zone vs IFT transport)
 
 ## Priority 2: Proximity Labeling Methods
 
@@ -34,10 +34,10 @@ Track your progress downloading experimental datasets:
   - Our AF3 predictions don't include centrosome ↔ IFT interactions
   - **Recommendation**: Skip for our IFT/BBSome-specific dataset
 
-- [ ] **Mick et al., 2015** (APEX, primary cilia)
+- [x] **Mick et al., 2015** (APEX, primary cilia) ← **DOWNLOADED**
   - URL: https://www.cell.com/developmental-cell/fulltext/S1534-5807(15)00612-4
-  - File: `raw/mick_2015_table_s1.xlsx`
-  - Status: ⏳ Not downloaded
+  - File: `raw/mick_2015_table_s1.xlsx` ✅ Downloaded
+  - Status: 🔄 In progress (analyzing data structure)
 
 - [ ] **Kohli et al., 2017** (APEX, ciliary membrane)
   - URL: https://www.embopress.org/doi/full/10.15252/embr.201643846
