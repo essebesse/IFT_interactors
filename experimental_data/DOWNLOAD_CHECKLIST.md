@@ -12,6 +12,20 @@ Track your progress downloading experimental datasets:
   - Details: SF-TAP-MS with FDR ≤ 0.1, high confidence direct interactions
   - **Best dataset so far** - IFT/BBSome baits overlap with our predictions
 
+- [ ] **Lacey et al., 2024** (in situ XL-MS, IFT trains) ← **HIGH PRIORITY** ⭐
+  - URL: https://www.cell.com/cell/fulltext/S0092-8674(24)00715-3
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11349379/
+  - PMID: 39067443
+  - File: Table S2 (all crosslinks in Dhc1b3 datasets, FDR filtered)
+  - Status: ⏳ Not downloaded
+  - **Why promising**:
+    - Cross-linking MS identifies direct protein-protein interactions
+    - Studies IFT-A, IFT-B complexes and dynein (Dhc1b3)
+    - FDR-filtered crosslinks = high confidence
+    - Open access (CC BY 4.0)
+  - **Potential issue**: Uses Chlamydomonas reinhardtii (need to map to human orthologs)
+  - **Next steps**: Download Table S2, check if crosslinks can be mapped to human IFT proteins
+
 - [x] **Sang et al., 2011** (LAP method, 9 NPHP-JBTS-MKS baits) ← **COMPLETED - NO MATCHES**
   - URL: https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X
   - File: `raw/sang_2011_table_s2.xlsx` ✅ Downloaded
