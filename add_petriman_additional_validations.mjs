@@ -17,6 +17,7 @@ const UNIPROT = {
   IFT52: "Q9Y366",
   IFT46: "Q9NQC8",
   IFT27: "Q9BW83",
+  IFT22: "Q9H7X7",
   IFT57: "Q9NWB7",
   IFT38: "Q96AJ1",
   IFT54: "Q8TDR0",
@@ -274,6 +275,46 @@ const PETRIMAN_VALIDATIONS = [
         is_validated: true,
         validation_count: 1,
         strongest_method: "XL-MS/AlphaFold",
+        consensus_confidence: "high"
+      }
+    }
+  },
+
+  // IFT22 XL-MS to IFT81/74 central region
+  {
+    bait_uniprot: UNIPROT.IFT22,
+    prey_uniprot: UNIPROT.IFT81,
+    validation: {
+      experimental_methods: [{
+        method: "XL-MS",
+        study: "Petriman et al., 2022",
+        pmid: "",
+        confidence: "high",
+        notes: "Cross-links to central part of IFT81/74"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "XL-MS",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT22,
+    prey_uniprot: UNIPROT.IFT74,
+    validation: {
+      experimental_methods: [{
+        method: "XL-MS",
+        study: "Petriman et al., 2022",
+        pmid: "",
+        confidence: "high",
+        notes: "Cross-links to central part of IFT81/74"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "XL-MS",
         consensus_confidence: "high"
       }
     }
