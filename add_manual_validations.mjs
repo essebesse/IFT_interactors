@@ -33,7 +33,7 @@ const VALIDATED_INTERACTIONS = [
       method: "Co-IP",
       source: "Taschner et al., 2016",
       validated: true,
-      pmid: "27344947",
+      pmid: "26912722",
       doi: "10.1038/nsmb.3221",
       source_file: "Nature Structural & Molecular Biology (PDB: 5H80)",
       confidence: "very high"
@@ -141,7 +141,7 @@ const VALIDATED_INTERACTIONS = [
       method: "Co-IP",
       source: "Follit et al., 2009",
       validated: true,
-      pmid: "19193849",
+      pmid: "19253336",
       doi: "10.1074/jbc.M808253200",
       source_file: "JBC - IFT-A characterization"
     }
@@ -156,7 +156,7 @@ const VALIDATED_INTERACTIONS = [
       method: "Co-IP",
       source: "Follit et al., 2009",
       validated: true,
-      pmid: "19193849",
+      pmid: "19253336",
       doi: "10.1074/jbc.M808253200",
       source_file: "JBC - Multiple independent studies"
     }
@@ -171,7 +171,7 @@ const VALIDATED_INTERACTIONS = [
       method: "Co-IP",
       source: "Follit et al., 2009",
       validated: true,
-      pmid: "19193849",
+      pmid: "19253336",
       doi: "10.1074/jbc.M808253200",
       source_file: "JBC - IFT-A characterization"
     }

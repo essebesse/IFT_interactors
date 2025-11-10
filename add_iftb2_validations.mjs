@@ -48,7 +48,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Pulldown",
         study: "Follit et al., 2009",
-        pmid: "18364699",
+        pmid: "19253336",
         confidence: "medium",
         notes: ""
       }],
@@ -90,7 +90,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "18364699",
+        pmid: "26912722",
         confidence: "high",
         notes: "Stable IFT54/20 complex, Chlamydomonas"
       }],
@@ -109,7 +109,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "18364699",
+        pmid: "26912722",
         confidence: "high",
         notes: "Strong binding, stable heterodimer"
       }],
@@ -128,7 +128,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "18364699",
+        pmid: "26912722",
         confidence: "high",
         notes: "IFT57/38 directly interacts with IFT172"
       }],
@@ -147,7 +147,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "18364699",
+        pmid: "26912722",
         confidence: "high",
         notes: "IFT88/52N directly contacts IFT57/38"
       }],
@@ -168,7 +168,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "18364699",
+        pmid: "26912722",
         confidence: "high",
         notes: "IFT80 interacts with CLUAP1/IFT38"
       }],
