@@ -2,8 +2,8 @@
 
 ## Summary
 
-**Total IFT-A validations ready**: 22 interactions from 5 papers/datasets
-- IFT-A internal: 20 interactions
+**Total IFT-A validations ready**: 30 interactions from 6 papers/datasets
+- IFT-A internal: 28 interactions
 - TULP3-IFT-A cargo adapter: 2 interactions
 
 ### Papers Processed
@@ -11,15 +11,15 @@
 1. **Hesketh et al., Cell 2022** ✅
    - Script: `add_hesketh_2022_validations.mjs`
    - Validations: 6
-   - Method: Cryo-EM (3-4 Å resolution)
+   - Method: Cryo-EM (3-4 Å resolution, human)
    - PMID: 36462505
 
 2. **Jiang et al., Cell Research 2023** ✅
    - Script: `add_jiang_2023_validations.mjs`
    - Validations: 2
-   - Method: Cryo-EM (3.0-3.9 Å resolution)
+   - Method: Cryo-EM (3.0-3.9 Å resolution, human, Ji Sun group)
    - PMID: 36775821
-   - Notable: Discovered zinc-binding domains linking subcomplexes
+   - Notable: Discovered zinc-binding domains linking subcomplexes; includes TULP3-IFT-A structure
 
 3. **Behal et al., JBC 2012** ✅
    - Script: `add_behal_2012_validations.mjs`
@@ -42,15 +42,23 @@
    - Papers: Jiang et al., 2023 and Hesketh et al., 2022
    - Notable: TULP3 N-terminal helix binds IFT-A for membrane protein cargo
 
+6. **Meleppattu et al., Cell 2022** ✅
+   - Script: `add_meleppattu_2022_validations.mjs`
+   - Validations: 8
+   - Method: Cryo-EM (native IFT-A complex, Leishmania tarentolae)
+   - PMID: 36563665
+   - DOI: 10.1016/j.cell.2022.11.033
+   - Notable: Cross-species validation from parasitic protozoan; native complex structure
+
 ### Papers Identified But Not Extracted
 
-6. **Lacey et al., Nat Struct Mol Biol 2023**
+7. **Lacey et al., Nat Struct Mol Biol 2023**
    - In situ cryo-ET of IFT trains
    - PMID: 36593313
    - Focus: IFT-A polymerization and train architecture
    - May contain additional interaction details
 
-7. **Ma et al., Nat Commun 2023**
+8. **Ma et al., Nat Commun 2023**
    - Tetrahymena IFT-A conformational states
    - PMID: 36932088
    - Focus: Conformational changes during train assembly
@@ -100,6 +108,19 @@
 | TULP3 ↔ IFT122 | Jiang 2023, Hesketh 2022 | Cryo-EM | ✅ Ready |
 | TULP3 ↔ IFT140 | Jiang 2023, Hesketh 2022 | Cryo-EM | ✅ Ready |
 
+### Meleppattu 2022 Cryo-EM (Leishmania)
+
+| Interaction | Method | Species | Status |
+|-------------|--------|---------|--------|
+| IFT121 ↔ IFT122 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT140 ↔ IFT144 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT139 ↔ IFT122 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT139 ↔ IFT121 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT122 ↔ IFT140 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT122 ↔ IFT144 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT121 ↔ IFT140 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+| IFT144 ↔ IFT121 | Cryo-EM | Leishmania tarentolae | ✅ Ready |
+
 ## Running the Scripts
 
 ```bash
@@ -112,6 +133,7 @@ node add_jiang_2023_validations.mjs
 node add_behal_2012_validations.mjs
 node add_mccafferty_2022_validations.mjs
 node add_tulp3_ifta_validations.mjs
+node add_meleppattu_2022_validations.mjs
 ```
 
 ## Notes
@@ -134,5 +156,10 @@ node add_tulp3_ifta_validations.mjs
 
 ---
 
-**Last Updated**: 2025-11-08
-**Status**: 22 validations ready (20 IFT-A + 2 TULP3-IFT-A), all papers processed ✅
+**Last Updated**: 2025-11-10
+**Status**: 30 validations ready (28 IFT-A + 2 TULP3-IFT-A) from 6 papers ✅
+
+### High-Resolution Cryo-EM Structures
+- **Human**: Hesketh 2022 (3-4 Å), Jiang 2023 (3.0-3.9 Å, Ji Sun group)
+- **Leishmania**: Meleppattu 2022 (native complex)
+- **McCafferty 2022**: XL-MS only (NOT cryo-EM - integrative modeling)
