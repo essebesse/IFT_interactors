@@ -26,7 +26,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: ""
       }],
@@ -45,7 +45,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -64,7 +64,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -83,7 +83,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -102,7 +102,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -121,7 +121,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: ""
       }],
@@ -140,7 +140,7 @@ const PETRIMAN_XL_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: ""
       }],

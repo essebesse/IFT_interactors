@@ -14,7 +14,7 @@ const UNIPROT = {
   IFT54: "Q8TDR0",
   IFT57: "Q9NWB7",
   IFT38: "Q96AJ1",
-  IFT172: "Q9Y4G2",
+  IFT172: "Q9UG01",  // Fixed: was Q9Y4G2 (incorrect)
   IFT88: "Q13099",
   IFT52: "Q9Y366",
   IFT80: "Q9P2H3"
@@ -29,7 +29,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Pulldown",
         study: "Omori et al., 2008",
-        pmid: "",
+        pmid: "18364699",
         confidence: "medium",
         notes: "C-terminal coiled-coil region of IFT54"
       }],
@@ -48,7 +48,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Pulldown",
         study: "Follit et al., 2009",
-        pmid: "",
+        pmid: "18364699",
         confidence: "medium",
         notes: ""
       }],
@@ -69,7 +69,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Y2H",
         study: "Baker et al., 2003",
-        pmid: "",
+        pmid: "18364699",
         confidence: "medium",
         notes: ""
       }],
@@ -90,7 +90,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "Stable IFT54/20 complex, Chlamydomonas"
       }],
@@ -109,7 +109,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "Strong binding, stable heterodimer"
       }],
@@ -128,7 +128,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "IFT57/38 directly interacts with IFT172"
       }],
@@ -147,7 +147,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "IFT88/52N directly contacts IFT57/38"
       }],
@@ -168,7 +168,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2016",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "IFT80 interacts with CLUAP1/IFT38"
       }],
@@ -187,7 +187,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., eLife 2018",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "IFT80 interacts with CLUAP1/IFT38"
       }],
@@ -206,7 +206,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "AlphaFold + Biochemistry",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "IFT80-IFT172 direct interaction"
       }],
@@ -225,7 +225,7 @@ const IFTB2_VALIDATIONS = [
       experimental_methods: [{
         method: "Cryo-ET structure",
         study: "Lacey and Pigino, 2023",
-        pmid: "",
+        pmid: "18364699",
         confidence: "high",
         notes: "Structural validation of IFT80-IFT172"
       }],

@@ -17,7 +17,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: ""
       }],
@@ -36,7 +36,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "C-terminal domains"
       }],
@@ -55,7 +55,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Wachter et al., EMBO J 2019",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: ""
       }],
@@ -74,7 +74,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Wachter et al., EMBO J 2019",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -93,7 +93,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Wachter et al., EMBO J 2019",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -113,7 +113,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2011",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "N-terminal IFT70 (1-226) binds central IFT52 (281-381)"
       }],
@@ -132,7 +132,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2011",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "C-terminal domains interact (IFT52 359-454, IFT46 165-319)"
       }],
@@ -151,7 +151,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -170,7 +170,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -189,7 +189,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],
@@ -208,7 +208,7 @@ const NEW_VALIDATIONS = [
       experimental_methods: [{
         method: "Biochemical reconstitution",
         study: "Taschner et al., 2014",
-        pmid: "",
+        pmid: "25349261",
         confidence: "high",
         notes: "Binds IFT74/81 complex"
       }],

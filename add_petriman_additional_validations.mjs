@@ -22,7 +22,7 @@ const UNIPROT = {
   IFT38: "Q96AJ1",
   IFT54: "Q8TDR0",
   IFT20: "Q8IY31",
-  IFT172: "Q9Y4G2",
+  IFT172: "Q9UG01",  // Fixed: was Q9Y4G2 (incorrect)
   IFT80: "Q9P2H3"
 };
 
@@ -35,7 +35,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT88(1-437)/70/52(281-360) crystal structure"
       }],
@@ -54,7 +54,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT88(1-437)/70/52(281-360) crystal structure"
       }],
@@ -73,7 +73,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT70/52(330-430)/46(165-319) crystal structure"
       }],
@@ -92,7 +92,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT70/52(330-430)/46(165-319) crystal structure"
       }],
@@ -111,7 +111,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Crystal structure",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT70/52(330-430)/46(165-319) crystal structure"
       }],
@@ -132,7 +132,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT46 cross-links to IFT81 C-terminus (K575-K618)"
       }],
@@ -151,7 +151,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT46 cross-links to IFT74 C-terminus (K581-K608)"
       }],
@@ -170,7 +170,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT52 K411/K415 cross-links to IFT81 K598/K600/K607"
       }],
@@ -189,7 +189,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: ""
       }],
@@ -210,7 +210,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS/AlphaFold",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT38 CH-domain on IFT54/20, 26 cross-links"
       }],
@@ -229,7 +229,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS/AlphaFold",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "IFT38 CH-domain on IFT54/20, 26 cross-links"
       }],
@@ -248,7 +248,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS/AlphaFold",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Anti-parallel four-helix bundle tetramer"
       }],
@@ -267,7 +267,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS/AlphaFold",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Anti-parallel four-helix bundle tetramer"
       }],
@@ -288,7 +288,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Cross-links to central part of IFT81/74"
       }],
@@ -307,7 +307,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "XL-MS",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "high",
         notes: "Cross-links to central part of IFT81/74"
       }],
@@ -328,7 +328,7 @@ const PETRIMAN_VALIDATIONS = [
       experimental_methods: [{
         method: "Pulldown",
         study: "Petriman et al., 2022",
-        pmid: "",
+        pmid: "36354106",
         confidence: "medium",
         notes: "Weak interaction, substoichiometric. TPR-TPR interaction (IFT172 626-785 with IFT80 583-627)"
       }],

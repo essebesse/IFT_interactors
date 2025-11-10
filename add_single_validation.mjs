@@ -17,7 +17,7 @@ const validationData = {
     {
       method: "Crystal structure",
       study: "Bhogaraju et al., 2011",
-      pmid: "",
+      pmid: "21505417",
       confidence: "high",
       notes: "Chlamydomonas IFT27/25 structure"
     }
