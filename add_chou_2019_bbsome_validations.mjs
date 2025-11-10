@@ -345,21 +345,53 @@ async function addValidations() {
       }
 
       const row = result.rows[0];
+      const existingValidation = row.experimental_validation;
 
-      if (row.experimental_validation) {
-        console.log(`💡 Already has validation: ${row.bait} ↔ ${row.prey}`);
-        hasValidation++;
-        continue;
+      if (existingValidation) {
+        // Check if this specific study is already present
+        const hasChouStudy = existingValidation.experimental_methods?.some(
+          method => method.study?.includes("Chou") && method.study?.includes("2019")
+        );
+
+        if (hasChouStudy) {
+          console.log(`💡 Already has validation: ${row.bait} ↔ ${row.prey}`);
+          hasValidation++;
+          continue;
+        }
+
+        // Add to existing validation
+        const updatedValidation = {
+          experimental_methods: [
+            ...existingValidation.experimental_methods,
+            ...validation.experimental_methods
+          ],
+          validation_summary: {
+            is_validated: true,
+            validation_count: existingValidation.validation_summary.validation_count + 1,
+            strongest_method: existingValidation.validation_summary.strongest_method || "Cryo-EM",
+            consensus_confidence: existingValidation.validation_summary.consensus_confidence || "high"
+          }
+        };
+
+        await sql`
+          UPDATE interactions
+          SET experimental_validation = ${JSON.stringify(updatedValidation)}
+          WHERE id = ${row.id}
+        `;
+
+        console.log(`🔄 Updated: ${row.bait} ↔ ${row.prey} (added Chou 2019 to existing validation)`);
+        added++;
+      } else {
+        // First validation for this interaction
+        await sql`
+          UPDATE interactions
+          SET experimental_validation = ${JSON.stringify(validation)}
+          WHERE id = ${row.id}
+        `;
+
+        console.log(`✅ Added: ${row.bait} ↔ ${row.prey} - ${validation.experimental_methods[0].method}`);
+        added++;
       }
-
-      await sql`
-        UPDATE interactions
-        SET experimental_validation = ${JSON.stringify(validation)}
-        WHERE id = ${row.id}
-      `;
-
-      console.log(`✅ Added: ${row.bait} ↔ ${row.prey} - ${validation.experimental_methods[0].method}`);
-      added++;
 
     } catch (error) {
       console.error(`❌ Error: ${error.message}`);
