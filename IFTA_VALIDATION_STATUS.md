@@ -2,9 +2,10 @@
 
 ## Summary
 
-**Total IFT-A validations ready**: 30 interactions from 6 papers/datasets
+**Total IFT-A validations ready**: 30 interactions from 7 papers/datasets
 - IFT-A internal: 28 interactions
 - TULP3-IFT-A cargo adapter: 2 interactions
+- Train architecture: Lacey 2023 (cryo-ET, 10-18 Å)
 
 ### Papers Processed
 
@@ -50,13 +51,16 @@
    - DOI: 10.1016/j.cell.2022.11.033
    - Notable: Cross-species validation from parasitic protozoan; native complex structure
 
-### Papers Identified But Not Extracted
-
-7. **Lacey et al., Nat Struct Mol Biol 2023**
-   - In situ cryo-ET of IFT trains
+7. **Lacey et al., Nat Struct Mol Biol 2023** ✅
+   - Method: In situ cryo-ET of IFT trains (10-18 Å resolution, Chlamydomonas reinhardtii)
    - PMID: 36593313
-   - Focus: IFT-A polymerization and train architecture
-   - May contain additional interaction details
+   - PDB: 8BDA
+   - DOI: 10.1038/s41594-022-00905-5
+   - Focus: IFT-A/IFT-B polymerization and anterograde train architecture
+   - Notable: Shows how IFT complex conformations depend on lateral interactions with neighboring repeats
+   - Status: Train architecture study; lower resolution than atomic structures
+
+### Papers Identified But Not Extracted
 
 8. **Ma et al., Nat Commun 2023**
    - Tetrahymena IFT-A conformational states
@@ -157,9 +161,10 @@ node add_meleppattu_2022_validations.mjs
 ---
 
 **Last Updated**: 2025-11-10
-**Status**: 30 validations ready (28 IFT-A + 2 TULP3-IFT-A) from 6 papers ✅
+**Status**: 30 validations ready (28 IFT-A + 2 TULP3-IFT-A) from 7 papers ✅
 
-### High-Resolution Cryo-EM Structures
-- **Human**: Hesketh 2022 (3-4 Å), Jiang 2023 (3.0-3.9 Å, Ji Sun group)
-- **Leishmania**: Meleppattu 2022 (native complex)
-- **McCafferty 2022**: XL-MS only (NOT cryo-EM - integrative modeling)
+### Structural Methods Summary
+- **High-res Cryo-EM**: Hesketh 2022 (human, 3-4 Å), Jiang 2023 (human, 3.0-3.9 Å, Ji Sun group), Meleppattu 2022 (Leishmania, native complex)
+- **Cryo-ET Train Architecture**: Lacey 2023 (Chlamydomonas, 10-18 Å, PDB: 8BDA)
+- **XL-MS**: McCafferty 2022 (integrative modeling, NOT cryo-EM)
+- **Biochemical/Y2H**: Behal 2012
