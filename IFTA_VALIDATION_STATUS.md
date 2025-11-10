@@ -2,9 +2,11 @@
 
 ## Summary
 
-**Total IFT-A validations ready**: 30 interactions from 7 papers/datasets
-- IFT-A internal: 28 interactions
+**Total IFT-A validations ready**: 35 interactions from 7 papers/datasets
+- IFT-A internal: 33 interactions
 - TULP3-IFT-A cargo adapter: 2 interactions
+
+**Note**: Many interactions validated by multiple independent cryo-EM structures
 
 ### Papers Processed
 
@@ -17,12 +19,13 @@
 
 2. **Jiang et al., Cell Research 2023** ✅
    - Script: `add_jiang_2023_validations.mjs`
-   - Validations: 2
+   - Validations: 7 (8 in paper, 1 not in AF3 dataset)
    - Method: Cryo-EM (3.0-3.9 Å resolution)
    - Species: *Homo sapiens* (Human)
    - Authors: Ji Sun group
    - PMID: 36775821
-   - Notable: Discovered zinc-binding domains linking subcomplexes
+   - DOI: 10.1038/s41422-023-00778-3
+   - Notable: Discovered zinc-binding domains (ZBDs) linking subcomplexes; lariat-shaped IFT-A complex
 
 3. **Behal et al., JBC 2012** ✅
    - Script: `add_behal_2012_validations.mjs`
@@ -165,7 +168,9 @@ node add_tulp3_ifta_validations.mjs
 ---
 
 **Last Updated**: 2025-11-10
-**Status**: 30 validations ready (28 IFT-A + 2 TULP3-IFT-A) from 7 papers ✅
+**Status**: 35 validations ready (33 IFT-A + 2 TULP3-IFT-A) from 7 papers ✅
+
+**Key improvement**: Expanded Jiang 2023 validations from 2 to 7 interactions based on complete structural analysis
 
 ## Structural Methods Summary
 
