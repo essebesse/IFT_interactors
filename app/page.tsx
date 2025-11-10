@@ -17,7 +17,6 @@ interface ValidationMethod {
   study: string;
   pmid: string;
   doi: string;
-  confidence: string;
   bait_protein?: string;
   notes?: string;
 }
@@ -28,7 +27,6 @@ interface ValidationData {
     is_validated: boolean;
     validation_count: number;
     strongest_method: string | null;
-    consensus_confidence: string | null;
   };
 }
 
@@ -688,8 +686,7 @@ export default function Home() {
                                     <div key={idx} style={{ marginBottom: idx < inter.experimental_validation.experimental_methods.length - 1 ? '8px' : '0' }}>
                                       <strong>Method:</strong> {method.method}<br />
                                       <strong>Study:</strong> {method.study}<br />
-                                      <strong>PMID:</strong> {method.pmid}<br />
-                                      <strong>Confidence:</strong> {method.confidence}
+                                      <strong>PMID:</strong> {method.pmid}
                                       {method.notes && (
                                         <><br /><strong>Notes:</strong> {method.notes}</>
                                       )}
