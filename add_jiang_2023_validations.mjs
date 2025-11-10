@@ -19,23 +19,114 @@ const UNIPROT = {
 };
 
 const JIANG_2023_VALIDATIONS = [
-  // Core IFT-A interactions with zinc-binding domain details
+  // Core subcomplex - TPR-mediated interactions
   {
     bait_uniprot: UNIPROT.IFT140,
-    prey_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT144,
     validation: {
       experimental_methods: [{
         method: "Cryo-EM",
         study: "Jiang et al., 2023",
         pmid: "36775821",
-        confidence: "high",
-        notes: "Inter-propeller interaction; IFT-A polymerization interface"
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "TPR1-6 head-to-tail interaction; core subcomplex"
       }],
       validation_summary: {
         is_validated: true,
         validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT122,
+    prey_uniprot: UNIPROT.IFT144,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT122 C-terminal TPR inserts between IFT144 WD40-B and TPR1-3"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT140,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT140 TPR4-12 wraps around IFT122 ZBDs and TPR9-12"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  // Peripheral subcomplex
+  {
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT43,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT43 C-terminal helices (HC-HD loop, Trp174) interact with IFT121 ZBD"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT43,
+    prey_uniprot: UNIPROT.IFT139,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT43 N-terminal helices (HA-HB) interact with IFT139 superhelical groove"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  // Bridging core-peripheral subcomplexes
+  {
+    bait_uniprot: UNIPROT.IFT121,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "Major interface with large buried surface area; bridges subcomplexes"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
       }
     }
   },
@@ -47,14 +138,31 @@ const JIANG_2023_VALIDATIONS = [
         method: "Cryo-EM",
         study: "Jiang et al., 2023",
         pmid: "36775821",
-        confidence: "high",
-        notes: "Connects core and peripheral subcomplexes"
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT121 ZBD critical for interface; connects subcomplexes"
       }],
       validation_summary: {
         is_validated: true,
         validation_count: 1,
-        strongest_method: "Cryo-EM",
-        consensus_confidence: "high"
+        strongest_method: "Cryo-EM"
+      }
+    }
+  },
+  {
+    bait_uniprot: UNIPROT.IFT139,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Jiang et al., 2023",
+        pmid: "36775821",
+        doi: "10.1038/s41422-023-00778-3",
+        notes: "IFT139 C-terminal helices insert into IFT122 first WD40 domain"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM"
       }
     }
   }
@@ -67,7 +175,8 @@ async function addValidations() {
 
   console.log('Adding Jiang et al., Cell Research 2023 IFT-A validations...\n');
   console.log('(Human IFT-A lariat structure at 3.0-3.9 Å resolution)\n');
-  console.log('Note: Discovered zinc-binding domains linking subcomplexes\n');
+  console.log('🔬 8 IFT-A interactions from cryo-EM structure');
+  console.log('💡 Key discovery: Zinc-binding domains (ZBDs) linking subcomplexes\n');
 
   for (const {bait_uniprot, prey_uniprot, validation} of JIANG_2023_VALIDATIONS) {
     try {
