@@ -22,10 +22,10 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 ### Database
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
 - **Status**: ✅ Populated (501 interactions, 369 proteins from 31 baits)
-- **Validated Interactions**: 41 (8.2% validation rate)
+- **Validated Interactions**: 71 (14.2% validation rate)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
-- **Last Validation Update**: 2025-11-08 (17 new validations added, Boldt notes cleaned)
+- **Last Validation Update**: 2025-11-10 (Reciprocal validation sync - 52 pairs synchronized)
 - **Last Frontend Update**: 2025-11-06 (UI clarity improvements, PAE terminology)
 
 ### Deployment
@@ -113,11 +113,11 @@ git ls-remote origin main  # Should show your latest commit hash
 
 ## Dataset Overview
 
-### Data Statistics (as of 2025-11-08)
+### Data Statistics (as of 2025-11-10)
 - **Total Interactions**: 501 (all unique, duplicates removed)
 - **Unique Proteins**: 369 (all human Homo sapiens)
 - **Unique Baits**: 31 (22 IFT + 9 BBSome)
-- **Validated Interactions**: 41 (8.2% of total)
+- **Validated Interactions**: 71 (14.2% of total - updated after reciprocal sync)
 - **Analysis Version**: v4 only (ipSAE scoring)
 - **AlphaFold Version**: AF3 only
 - **Confidence Distribution**: Based on ipSAE scores
@@ -307,10 +307,11 @@ node import_from_v4_originals_FIXED.mjs
 ## Experimental Validation System
 
 ### Overview
-- **Total Validated**: 41 interactions (8.2% of database)
+- **Total Validated**: 71 interactions (14.2% of database)
 - **Validation Sources**: Literature mining from published studies
 - **Methods Tracked**: SF-TAP-MS, Y2H, XL-MS, Crystal structures, Biochemical reconstitution, Pulldowns
 - **Data Format**: JSONB in `experimental_validation` column
+- **Reciprocal Consistency**: All reciprocal pairs synchronized (BBS1→ARL6 and ARL6→BBS1 show identical validations)
 
 ### Validation Data Structure
 ```json
@@ -377,6 +378,33 @@ node remove_boldt_notes.mjs  # Cleans Boldt et al., 2016 notes
 - ✅ Added 17 new validations from multiple studies
 - ✅ Removed verbose notes from Boldt et al., 2016 validations (28 interactions)
 - ✅ Scripts now properly merge validations instead of overwriting
+
+**Reciprocal Validation Sync Fix (2025-11-10)** ⭐:
+- **Problem**: Reciprocal interactions showed different validation tooltips (e.g., BBS1→ARL6 had 2 validations, ARL6→BBS1 had only 1)
+- **Root cause**: Validation scripts used `LIMIT 1` in bidirectional queries, only updating one direction
+- **Impact**: 52 reciprocal pairs had mismatched validation data
+- **Solution**: Created `sync_reciprocal_validations.mjs` to merge validation data from both directions
+- **Results**:
+  - ✅ All 52 mismatched pairs synchronized
+  - ✅ 9 interactions gained validation data (0 → N validations)
+  - ✅ 22 interactions merged data (N → M validations)
+  - ✅ Total validated interactions increased to 71 (from 62)
+  - ✅ 0 reciprocal mismatches remain
+- **Future prevention**: Use `VALIDATION_SCRIPT_TEMPLATE.mjs` for new validations (updates both directions automatically)
+- **Verification**: Run `check_reciprocal_validation_mismatches.mjs` to verify consistency
+
+**Scripts for reciprocal validation management**:
+```bash
+# Check for reciprocal mismatches
+node check_reciprocal_validation_mismatches.mjs
+
+# Sync reciprocal validations (merge data from both directions)
+node sync_reciprocal_validations.mjs
+
+# Use this template for new validation scripts
+# (automatically updates both directions)
+node VALIDATION_SCRIPT_TEMPLATE.mjs
+```
 
 **Key validated interactions**:
 - IFT81 ↔ IFT74: 4 validations (SF-TAP-MS, XL-MS, Bacterial two-hybrid, Y2H)
