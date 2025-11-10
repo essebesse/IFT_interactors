@@ -14,7 +14,7 @@ const UNIPROT = {
   BBS1: "Q8NFJ9"
 };
 
-const MOURA O_2014_VALIDATIONS = [
+const MOURAO_2014_VALIDATIONS = [
   {
     bait_uniprot: UNIPROT.ARL6,
     prey_uniprot: UNIPROT.BBS1,
@@ -45,7 +45,7 @@ async function addValidations() {
   console.log('(ARL6-GTP membrane recruitment of BBSome)\n');
   console.log('Foundational crystal structure showing GTP-dependent BBSome recruitment\n');
 
-  for (const {bait_uniprot, prey_uniprot, validation} of MOURA O_2014_VALIDATIONS) {
+  for (const {bait_uniprot, prey_uniprot, validation} of MOURAO_2014_VALIDATIONS) {
     try {
       const result = await sql`
         SELECT i.id, i.experimental_validation,
@@ -90,7 +90,7 @@ async function addValidations() {
   console.log(`✅ Added: ${added}`);
   console.log(`⚠️  Not found: ${notFound}`);
   console.log(`💡 Already validated: ${hasValidation}`);
-  console.log(`\nTotal processed: ${MOURA O_2014_VALIDATIONS.length}`);
+  console.log(`\nTotal processed: ${MOURAO_2014_VALIDATIONS.length}`);
 
   process.exit(0);
 }
