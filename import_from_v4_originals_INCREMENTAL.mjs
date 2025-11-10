@@ -31,17 +31,19 @@ const V4_JSON_FILES = [
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2L0_IFT121/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/AF3_PD_analysis_v4.json',
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/AF3_PD_analysis_v4.json',
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UNT1_RabL2/AF3/AF3_PD_analysis_v4.json',
 
-  // BBSome proteins (single baits only)
-  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q6ZW61_BBS12/AF3/AF3_PD_analysis_v4.json',
+  // BBSome proteins (core subunits only)
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/AF3_PD_analysis_v4.json',
-  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8TAM1_BBS10/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8TAM2_BBS8/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H0F7_BBS3_ARL6/AF3/AF3_PD_analysis_v4.json',
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/AF3_PD_analysis_v4.json',
+  '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A8MTZ0_BBS18/AF3/AF3_PD_analysis_v4.json',
   '/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQ48_BBS17/AF3/AF3_PD_analysis_v4.json',
 
   // IFT-associated proteins
@@ -124,6 +126,12 @@ function extractBaitFromFilePath(filePath) {
   return baitUniprot;
 }
 
+function parseDirectoryName(dirName) {
+  // Formats: "q9y547_and_q96gy0" or "q9y547_and_q96gy0_and_q8neq3"
+  const parts = dirName.toLowerCase().split('_and_');
+  return parts.map(p => p.trim().toUpperCase());
+}
+
 async function importFromV4Files() {
   const proteinCache = new Map();
   const allInteractions = [];
@@ -164,40 +172,44 @@ async function importFromV4Files() {
         continue;
       }
 
-      const jsonData = JSON.parse(readFileSync(filePath, 'utf8'));
-      console.log(`  📄 Processing: ${baitUniprot} - ${jsonData.interactions?.length || 0} interactions`);
+      const data = JSON.parse(readFileSync(filePath, 'utf-8'));
+      const predictions = data.filtered_predictions || [];
+      console.log(`  📄 Processing: ${baitUniprot} - ${predictions.length} interactions`);
 
-      if (jsonData.interactions && Array.isArray(jsonData.interactions)) {
-        for (const interaction of jsonData.interactions) {
-          const bait = interaction.protein_1?.uniprot_id;
-          const prey = interaction.protein_2?.uniprot_id;
+      for (const pred of predictions) {
+        const proteinIds = parseDirectoryName(pred.directory_name);
 
-          if (!bait || !prey) continue;
+        if (proteinIds.length !== 2) continue; // Only pairwise interactions
 
-          // Cache proteins
-          if (!proteinCache.has(bait)) {
-            proteinCache.set(bait, { uniprot_id: bait });
+        // Map confidence from ipsae_confidence_class to simplified form
+        let confidence = null;
+        if (pred.ipsae_confidence_class === 'High Confidence') confidence = 'High';
+        else if (pred.ipsae_confidence_class === 'Medium Confidence') confidence = 'Medium';
+        else if (pred.ipsae_confidence_class === 'Low/Ambiguous') confidence = 'Low';
+
+        const interaction = {
+          bait_uniprot: proteinIds[0],
+          prey_uniprot: proteinIds[1],
+          iptm: pred.iptm,
+          interface_plddt: pred.mean_interface_plddt,
+          contacts_pae_lt_3: pred.contacts_pae3 || 0,
+          contacts_pae_lt_6: pred.contacts_pae6 || 0,
+          ipsae: pred.ipsae,
+          ipsae_confidence: confidence,
+          analysis_version: 'v4',
+          alphafold_version: 'AF3',
+          source_path: filePath,
+          confidence: confidence // Use ipsae confidence as main confidence
+        };
+
+        allInteractions.push(interaction);
+
+        // Add proteins to cache
+        [interaction.bait_uniprot, interaction.prey_uniprot].forEach(id => {
+          if (!proteinCache.has(id)) {
+            proteinCache.set(id, { uniprot_id: id });
           }
-          if (!proteinCache.has(prey)) {
-            proteinCache.set(prey, { uniprot_id: prey });
-          }
-
-          // Store interaction
-          allInteractions.push({
-            bait_uniprot: bait,
-            prey_uniprot: prey,
-            confidence: interaction.quality_assessment?.quality_class || null,
-            iptm: parseFloat(interaction.quality_assessment?.iptm) || null,
-            interface_plddt: parseFloat(interaction.quality_assessment?.interface_plddt) || null,
-            contacts_pae_lt_3: parseInt(interaction.quality_assessment?.contacts_pae_lt_3) || null,
-            contacts_pae_lt_6: parseInt(interaction.quality_assessment?.contacts_pae_lt_6) || null,
-            ipsae: parseFloat(interaction.quality_assessment?.ipsae) || null,
-            ipsae_confidence: interaction.quality_assessment?.ipsae_confidence || null,
-            analysis_version: 'v4',
-            alphafold_version: 'AF3',
-            source_path: filePath
-          });
-        }
+        });
       }
 
       filesProcessed++;
