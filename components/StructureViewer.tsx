@@ -383,6 +383,7 @@ export default function StructureViewer({
           width: '100%',
           flex: 1,
           minHeight: 0,
+          maxHeight: '650px',
           position: 'relative',
           border: '1px solid #ddd',
           borderRadius: '4px'
