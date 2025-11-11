@@ -91,7 +91,7 @@ export default function StructureViewer({
         console.log('### INITIALIZING MOLSTAR PLUGIN ###');
         if (!containerRef.current) return;
 
-        // Custom spec to disable external network calls and limit canvas size
+        // Custom spec to disable external network calls
         const customSpec = DefaultPluginUISpec();
 
         console.log('Filtering behaviors to remove external calls...');
@@ -101,19 +101,7 @@ export default function StructureViewer({
           b.transformer.definition.name !== 'pdbe-structure-quality-report'
         );
 
-        // Add canvas size limits to prevent oversized viewers
-        // This prevents the viewer from creating huge canvases that push UI elements off-screen
-        customSpec.layout = {
-          ...customSpec.layout,
-          initial: {
-            ...customSpec.layout?.initial,
-            isExpanded: false,
-            showControls: true,
-            controlsDisplay: 'reactive' as const
-          }
-        };
-
-        console.log('Creating Molstar UI with size constraints...');
+        console.log('Creating Molstar UI...');
         const plugin = await createPluginUI({
           target: containerRef.current,
           render: renderReact18,
@@ -395,11 +383,9 @@ export default function StructureViewer({
           width: '100%',
           flex: 1,
           minHeight: 0,
-          maxHeight: '600px',  // Prevent oversized canvases
           position: 'relative',
           border: '1px solid #ddd',
-          borderRadius: '4px',
-          overflow: 'hidden'  // Ensure content stays within bounds
+          borderRadius: '4px'
         }}
       />
 
