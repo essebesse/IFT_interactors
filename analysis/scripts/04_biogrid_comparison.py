@@ -53,30 +53,27 @@ def connect_to_database():
     return conn
 
 def load_our_interactions():
-    """Load our predicted interactions from database"""
+    """Load our predicted interactions from CSV file"""
     print("\n=== LOADING OUR PREDICTIONS ===\n")
 
-    conn = connect_to_database()
+    # Read from CSV file instead of database
+    csv_path = 'analysis/results/supplementary_table_S1_all_interactions.csv'
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(f"Please run script 01 first to generate {csv_path}")
 
-    query = """
-    SELECT
-        i.id,
-        bait.uniprot_id as bait_uniprot,
-        bait.gene_name as bait_gene,
-        prey.uniprot_id as prey_uniprot,
-        prey.gene_name as prey_gene,
-        i.ipsae,
-        i.ipsae_confidence,
-        i.iptm,
-        i.contacts_pae_lt_3
-    FROM interactions i
-    JOIN proteins bait ON i.bait_protein_id = bait.id
-    JOIN proteins prey ON i.prey_protein_id = prey.id
-    ORDER BY i.ipsae DESC
-    """
+    df = pd.read_csv(csv_path)
 
-    df = pd.read_sql_query(query, conn)
-    conn.close()
+    # Rename columns to match expected format
+    df = df.rename(columns={
+        'Bait_Gene': 'bait_gene',
+        'Bait_UniProt': 'bait_uniprot',
+        'Prey_Gene': 'prey_gene',
+        'Prey_UniProt': 'prey_uniprot',
+        'ipSAE': 'ipsae',
+        'Confidence': 'ipsae_confidence',
+        'iPTM': 'iptm',
+        'PAE_Contacts_<3A': 'contacts_pae_lt_3'
+    })
 
     print(f"Loaded {len(df)} predictions from our database")
     return df

@@ -413,7 +413,7 @@ export default function Home() {
       <Row className="mb-4">
         <Col>
           <div className="text-center">
-            <h1 className="mb-2">Ciliary Protein Interaction Network</h1>
+            <h1 className="mb-2">Ciliary Trafficking Interaction Network</h1>
             <p className="text-muted mb-0">
               IFT & BBSome complexes • <em>Homo sapiens</em> • AlphaFold3 Predictions • ipSAE Confidence Scoring
             </p>

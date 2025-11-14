@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
 
 export const metadata: Metadata = {
-  title: "Ciliary Protein Interaction Network",
+  title: "Ciliary Trafficking Interaction Network",
   description: "IFT & BBSome protein interactions - Human AlphaFold3 predictions with ipSAE confidence scoring",
 };
 

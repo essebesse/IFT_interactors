@@ -1,0 +1,54 @@
+
+IFT/BBSome Interactome Dataset Overview
+Generated: 2025-11-14T13:32:48.049Z
+
+========================================
+OVERALL STATISTICS
+========================================
+
+Total Interactions:      548
+Total Unique Proteins:   392
+Total Bait Proteins:     35
+Total Prey Proteins:     384
+
+========================================
+CONFIDENCE DISTRIBUTION
+========================================
+
+High:  20 interactions (3.6%)
+  - Average ipSAE: 0.736
+  - Average iPTM: 0.709
+  - Average interface pLDDT: 86.80
+
+Medium:  135 interactions (24.6%)
+  - Average ipSAE: 0.579
+  - Average iPTM: 0.653
+  - Average interface pLDDT: 84.78
+
+Low:  393 interactions (71.7%)
+  - Average ipSAE: 0.385
+  - Average iPTM: 0.573
+  - Average interface pLDDT: 77.96
+
+========================================
+DATA QUALITY METRICS
+========================================
+
+AlphaFold Version:       AF3
+Analysis Version:        v4 (ipSAE scoring)
+Scoring Metrics:         ipSAE, iPTM, PAE contacts, interface pLDDT
+
+Confidence Thresholds:
+  - High:   ipSAE > 0.7
+  - Medium: ipSAE 0.5-0.7
+  - Low:    ipSAE < 0.5
+
+========================================
+DATASET COMPOSITION
+========================================
+
+See analysis/results/bait_summary.csv for per-bait statistics
+See analysis/results/supplementary_table_S1_all_interactions.csv for full interaction list
+See analysis/results/supplementary_table_S2_proteins.csv for protein list
+
+========================================

@@ -1,0 +1,186 @@
+{
+  "full_network": {
+    "num_nodes": 384,
+    "num_edges": 548,
+    "density": 0.003726066144473455,
+    "avg_degree": 2.65625,
+    "max_degree": 74,
+    "min_degree": 1,
+    "avg_clustering": 0.010967993552453243,
+    "transitivity": 0.00561948086700562,
+    "num_connected_components": 1,
+    "largest_component_size": 384,
+    "largest_component_fraction": 1.0,
+    "max_betweenness_centrality": 0.3158848677602163,
+    "max_betweenness_node": "TULP3"
+  },
+  "by_confidence": {
+    "High": {
+      "num_nodes": 19,
+      "num_edges": 20,
+      "density": 0.05847953216374269,
+      "avg_degree": 1.263157894736842,
+      "max_degree": 3,
+      "min_degree": 1,
+      "avg_clustering": 0.0,
+      "transitivity": 0,
+      "num_connected_components": 7,
+      "largest_component_size": 7,
+      "largest_component_fraction": 0.3684210526315789,
+      "max_betweenness_centrality": 0.7333333333333333,
+      "max_betweenness_node": "BBIP1"
+    },
+    "Medium": {
+      "num_nodes": 122,
+      "num_edges": 135,
+      "density": 0.009145102289662647,
+      "avg_degree": 1.9508196721311475,
+      "max_degree": 24,
+      "min_degree": 1,
+      "avg_clustering": 0.011475409836065573,
+      "transitivity": 0.005376344086021506,
+      "num_connected_components": 9,
+      "largest_component_size": 90,
+      "largest_component_fraction": 0.7377049180327869,
+      "max_betweenness_centrality": 0.5892492339121552,
+      "max_betweenness_node": "BBS5"
+    },
+    "Low": {
+      "num_nodes": 327,
+      "num_edges": 393,
+      "density": 0.003686610007316936,
+      "avg_degree": 2.3363914373088686,
+      "max_degree": 49,
+      "min_degree": 1,
+      "avg_clustering": 0.004433288307062429,
+      "transitivity": 0.0015772870662460567,
+      "num_connected_components": 4,
+      "largest_component_size": 320,
+      "largest_component_fraction": 0.9785932721712538,
+      "max_betweenness_centrality": 0.358550246256063,
+      "max_betweenness_node": "TULP3"
+    }
+  },
+  "top_hubs": [
+    {
+      "protein": "TULP3",
+      "total_degree": 74,
+      "as_bait": 73,
+      "as_prey": 2
+    },
+    {
+      "protein": "BBS5",
+      "total_degree": 41,
+      "as_bait": 41,
+      "as_prey": 1
+    },
+    {
+      "protein": "IFT43",
+      "total_degree": 36,
+      "as_bait": 36,
+      "as_prey": 3
+    },
+    {
+      "protein": "IFT56",
+      "total_degree": 35,
+      "as_bait": 34,
+      "as_prey": 2
+    },
+    {
+      "protein": "IFT25",
+      "total_degree": 28,
+      "as_bait": 28,
+      "as_prey": 2
+    },
+    {
+      "protein": "ARL6",
+      "total_degree": 27,
+      "as_bait": 27,
+      "as_prey": 1
+    },
+    {
+      "protein": "BBS7",
+      "total_degree": 25,
+      "as_bait": 25,
+      "as_prey": 3
+    },
+    {
+      "protein": "IFT22",
+      "total_degree": 21,
+      "as_bait": 19,
+      "as_prey": 2
+    },
+    {
+      "protein": "CLUAP1",
+      "total_degree": 19,
+      "as_bait": 17,
+      "as_prey": 5
+    },
+    {
+      "protein": "RABL2B",
+      "total_degree": 19,
+      "as_bait": 19,
+      "as_prey": 1
+    },
+    {
+      "protein": "IFT70B",
+      "total_degree": 17,
+      "as_bait": 17,
+      "as_prey": 2
+    },
+    {
+      "protein": "IFT122",
+      "total_degree": 16,
+      "as_bait": 16,
+      "as_prey": 6
+    },
+    {
+      "protein": "BBIP1",
+      "total_degree": 14,
+      "as_bait": 14,
+      "as_prey": 3
+    },
+    {
+      "protein": "BBS4",
+      "total_degree": 14,
+      "as_bait": 14,
+      "as_prey": 3
+    },
+    {
+      "protein": "IFT70A",
+      "total_degree": 13,
+      "as_bait": 13,
+      "as_prey": 2
+    },
+    {
+      "protein": "IFT20",
+      "total_degree": 13,
+      "as_bait": 13,
+      "as_prey": 1
+    },
+    {
+      "protein": "IFT27",
+      "total_degree": 12,
+      "as_bait": 12,
+      "as_prey": 1
+    },
+    {
+      "protein": "IFT80",
+      "total_degree": 11,
+      "as_bait": 11,
+      "as_prey": 2
+    },
+    {
+      "protein": "BBS9",
+      "total_degree": 11,
+      "as_bait": 10,
+      "as_prey": 5
+    },
+    {
+      "protein": "BBS8",
+      "total_degree": 10,
+      "as_bait": 10,
+      "as_prey": 5
+    }
+  ]
+}
