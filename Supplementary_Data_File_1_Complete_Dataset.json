@@ -4,7 +4,7 @@
     "description": "AlphaFold3 predicted interactions for IFT and BBSome proteins",
     "analysis_version": "v4.0",
     "analysis_method": "ipSAE scoring (Dunbrack 2025)",
-    "date_exported": "2025-11-14T14:24:34.617Z",
+    "date_exported": "2025-11-14T14:38:31.310Z",
     "total_interactions": 548,
     "total_proteins": 384,
     "total_baits": 35,
@@ -124,7 +124,7 @@
       "bait_gene": "BBS8",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "A8MTZ0",
-      "prey_gene": "BBIP1",
+      "prey_gene": "BBS18",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.7713359,
       "ipsae_confidence_class": "High",
@@ -156,7 +156,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8TAM2",
       "prey_gene": "BBS8",
@@ -493,7 +493,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96RK4",
       "prey_gene": "BBS4",
@@ -531,7 +531,7 @@
       "bait_gene": "BBS4",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "A8MTZ0",
-      "prey_gene": "BBIP1",
+      "prey_gene": "BBS18",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.7131941,
       "ipsae_confidence_class": "High",
@@ -861,7 +861,7 @@
       "bait_gene": "IFT25",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "A8MTZ0",
-      "prey_gene": "BBIP1",
+      "prey_gene": "BBS18",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.7009643,
       "ipsae_confidence_class": "High",
@@ -1040,7 +1040,7 @@
       "bait_gene": "IFT122",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8NEZ3",
-      "prey_gene": "WDR19",
+      "prey_gene": "IFT144",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.6876721,
       "ipsae_confidence_class": "Medium",
@@ -1159,7 +1159,7 @@
     },
     {
       "bait_uniprot": "Q8NEZ3",
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9HBG6",
       "prey_gene": "IFT122",
@@ -1452,7 +1452,7 @@
       "bait_gene": "BBS7",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8NEZ3",
-      "prey_gene": "WDR19",
+      "prey_gene": "IFT144",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.67528325,
       "ipsae_confidence_class": "Medium",
@@ -1468,7 +1468,7 @@
     },
     {
       "bait_uniprot": "Q8NEZ3",
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8IWZ6",
       "prey_gene": "BBS7",
@@ -1557,7 +1557,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9Y547",
       "prey_gene": "IFT25",
@@ -1858,7 +1858,7 @@
       "bait_gene": "IFT122",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9P2L0",
-      "prey_gene": "WDR35",
+      "prey_gene": "IFT121",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.6582769,
       "ipsae_confidence_class": "Medium",
@@ -2118,7 +2118,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9HBG6",
       "prey_gene": "IFT122",
@@ -2276,10 +2276,10 @@
     },
     {
       "bait_uniprot": "Q9NQ48",
-      "bait_gene": "LZTFL1",
+      "bait_gene": "BBS17",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9NQ48",
-      "prey_gene": "LZTFL1",
+      "prey_gene": "BBS17",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.6290676,
       "ipsae_confidence_class": "Medium",
@@ -2391,7 +2391,7 @@
     },
     {
       "bait_uniprot": "Q8NEZ3",
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96RY7",
       "prey_gene": "IFT140",
@@ -2494,7 +2494,7 @@
       "bait_gene": "IFT140",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8NEZ3",
-      "prey_gene": "WDR19",
+      "prey_gene": "IFT144",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.6170063,
       "ipsae_confidence_class": "Medium",
@@ -2714,7 +2714,7 @@
       "bait_gene": "IFT43",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9P2L0",
-      "prey_gene": "WDR35",
+      "prey_gene": "IFT121",
       "prey_organism": "Homo sapiens",
       "ipsae": 0.5973592,
       "ipsae_confidence_class": "Medium",
@@ -2803,7 +2803,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96FT9",
       "prey_gene": "IFT43",
@@ -3772,7 +3772,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9UK59",
       "prey_gene": "DBR1",
@@ -4363,7 +4363,7 @@
     },
     {
       "bait_uniprot": "Q9NQ48",
-      "bait_gene": "LZTFL1",
+      "bait_gene": "BBS17",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9Y3M2",
       "prey_gene": "CBY1",
@@ -4629,7 +4629,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q15369",
       "prey_gene": "ELOC",
@@ -4819,7 +4819,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "P40337",
       "prey_gene": "VHL",
@@ -5342,7 +5342,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q86Y33",
       "prey_gene": "CDC20B",
@@ -5847,7 +5847,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9H7T0",
       "prey_gene": "CATSPERB",
@@ -6568,7 +6568,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "P02787",
       "prey_gene": "TF",
@@ -7233,7 +7233,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8TC99",
       "prey_gene": "FNDC8",
@@ -7827,7 +7827,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "P11908",
       "prey_gene": "PRPS2",
@@ -7960,7 +7960,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q8N119",
       "prey_gene": "MMP21",
@@ -9262,7 +9262,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "O14964",
       "prey_gene": "HGS",
@@ -9737,7 +9737,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9UNE7",
       "prey_gene": "STUB1",
@@ -10003,7 +10003,7 @@
     },
     {
       "bait_uniprot": "Q8NEZ3",
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9H069",
       "prey_gene": "DRC3",
@@ -10382,7 +10382,7 @@
     },
     {
       "bait_uniprot": "Q9NQ48",
-      "bait_gene": "LZTFL1",
+      "bait_gene": "BBS17",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96C92",
       "prey_gene": "ENTR1",
@@ -10401,7 +10401,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "P34949",
       "prey_gene": "MPI",
@@ -10819,7 +10819,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q9Y615",
       "prey_gene": "ACTL7A",
@@ -11180,7 +11180,7 @@
     },
     {
       "bait_uniprot": "A8MTZ0",
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "P61006",
       "prey_gene": "RAB8A",
@@ -11354,7 +11354,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96PY6",
       "prey_gene": "NEK1",
@@ -11715,7 +11715,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "O76039",
       "prey_gene": "CDKL5",
@@ -11962,7 +11962,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q96LJ8",
       "prey_gene": "UBXN10",
@@ -12130,7 +12130,7 @@
     },
     {
       "bait_uniprot": "Q9P2L0",
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "bait_organism": "Homo sapiens",
       "prey_uniprot": "Q86XP3",
       "prey_gene": "DDX42",
@@ -13171,7 +13171,7 @@
     },
     {
       "uniprot_id": "A8MTZ0",
-      "gene_name": "BBIP1",
+      "gene_name": "BBS18",
       "organism": "Homo sapiens",
       "organism_code": "Hs",
       "interactions_as_bait": "14",
@@ -13269,21 +13269,21 @@
       "total_interactions": "9"
     },
     {
+      "uniprot_id": "Q9P2L0",
+      "gene_name": "IFT121",
+      "organism": "Homo sapiens",
+      "organism_code": "Hs",
+      "interactions_as_bait": "9",
+      "interactions_as_prey": "2",
+      "total_interactions": "9"
+    },
+    {
       "uniprot_id": "Q9Y366",
       "gene_name": "IFT52",
       "organism": "Homo sapiens",
       "organism_code": "Hs",
       "interactions_as_bait": "9",
       "interactions_as_prey": "4",
-      "total_interactions": "9"
-    },
-    {
-      "uniprot_id": "Q9P2L0",
-      "gene_name": "WDR35",
-      "organism": "Homo sapiens",
-      "organism_code": "Hs",
-      "interactions_as_bait": "9",
-      "interactions_as_prey": "2",
       "total_interactions": "9"
     },
     {
@@ -13368,6 +13368,15 @@
       "total_interactions": "4"
     },
     {
+      "uniprot_id": "Q8NEZ3",
+      "gene_name": "IFT144",
+      "organism": "Homo sapiens",
+      "organism_code": "Hs",
+      "interactions_as_bait": "4",
+      "interactions_as_prey": "3",
+      "total_interactions": "4"
+    },
+    {
       "uniprot_id": "Q9UG01",
       "gene_name": "IFT172",
       "organism": "Homo sapiens",
@@ -13395,21 +13404,21 @@
       "total_interactions": "4"
     },
     {
-      "uniprot_id": "Q8NEZ3",
-      "gene_name": "WDR19",
-      "organism": "Homo sapiens",
-      "organism_code": "Hs",
-      "interactions_as_bait": "4",
-      "interactions_as_prey": "3",
-      "total_interactions": "4"
-    },
-    {
       "uniprot_id": "P10323",
       "gene_name": "ACR",
       "organism": "Homo sapiens",
       "organism_code": "Hs",
       "interactions_as_bait": "0",
       "interactions_as_prey": "3",
+      "total_interactions": "3"
+    },
+    {
+      "uniprot_id": "Q9NQ48",
+      "gene_name": "BBS17",
+      "organism": "Homo sapiens",
+      "organism_code": "Hs",
+      "interactions_as_bait": "3",
+      "interactions_as_prey": "1",
       "total_interactions": "3"
     },
     {
@@ -13469,15 +13478,6 @@
     {
       "uniprot_id": "Q8WYA0",
       "gene_name": "IFT81",
-      "organism": "Homo sapiens",
-      "organism_code": "Hs",
-      "interactions_as_bait": "3",
-      "interactions_as_prey": "1",
-      "total_interactions": "3"
-    },
-    {
-      "uniprot_id": "Q9NQ48",
-      "gene_name": "LZTFL1",
       "organism": "Homo sapiens",
       "organism_code": "Hs",
       "interactions_as_bait": "3",
@@ -21149,7 +21149,7 @@
     },
     {
       "bait_gene": "BBS8",
-      "prey_gene": "BBIP1",
+      "prey_gene": "BBS18",
       "ipsae": 0.7713359,
       "ipsae_confidence": "High",
       "validation_methods": "Cryo-EM",
@@ -21157,7 +21157,7 @@
       "validation_count": 1
     },
     {
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "prey_gene": "BBS8",
       "ipsae": 0.7599822,
       "ipsae_confidence": "High",
@@ -21211,7 +21211,7 @@
       "validation_count": 1
     },
     {
-      "bait_gene": "BBIP1",
+      "bait_gene": "BBS18",
       "prey_gene": "BBS4",
       "ipsae": 0.71672386,
       "ipsae_confidence": "High",
@@ -21221,7 +21221,7 @@
     },
     {
       "bait_gene": "BBS4",
-      "prey_gene": "BBIP1",
+      "prey_gene": "BBS18",
       "ipsae": 0.7131941,
       "ipsae_confidence": "High",
       "validation_methods": "Cryo-EM",
@@ -21302,7 +21302,7 @@
     },
     {
       "bait_gene": "IFT122",
-      "prey_gene": "WDR19",
+      "prey_gene": "IFT144",
       "ipsae": 0.6876721,
       "ipsae_confidence": "Medium",
       "validation_methods": "Cryo-EM, Cryo-EM, Cryo-EM, SF-TAP-MS, Biochemical reconstitution, XL-MS",
@@ -21319,7 +21319,7 @@
       "validation_count": 3
     },
     {
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "prey_gene": "IFT122",
       "ipsae": 0.6836468,
       "ipsae_confidence": "Medium",
@@ -21392,7 +21392,7 @@
     },
     {
       "bait_gene": "IFT122",
-      "prey_gene": "WDR35",
+      "prey_gene": "IFT121",
       "ipsae": 0.6582769,
       "ipsae_confidence": "Medium",
       "validation_methods": "SF-TAP-MS, XL-MS, Y2H, XL-MS, Cryo-EM, Cryo-EM, Cryo-EM",
@@ -21427,7 +21427,7 @@
       "validation_count": 4
     },
     {
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "prey_gene": "IFT122",
       "ipsae": 0.6455526,
       "ipsae_confidence": "Medium",
@@ -21445,7 +21445,7 @@
       "validation_count": 4
     },
     {
-      "bait_gene": "WDR19",
+      "bait_gene": "IFT144",
       "prey_gene": "IFT140",
       "ipsae": 0.61810565,
       "ipsae_confidence": "Medium",
@@ -21455,7 +21455,7 @@
     },
     {
       "bait_gene": "IFT140",
-      "prey_gene": "WDR19",
+      "prey_gene": "IFT144",
       "ipsae": 0.6170063,
       "ipsae_confidence": "Medium",
       "validation_methods": "Cryo-EM, Biochemical reconstitution, Cryo-EM, Cryo-EM, SF-TAP-MS, XL-MS, IP-MS",
@@ -21482,7 +21482,7 @@
     },
     {
       "bait_gene": "IFT43",
-      "prey_gene": "WDR35",
+      "prey_gene": "IFT121",
       "ipsae": 0.5973592,
       "ipsae_confidence": "Medium",
       "validation_methods": "SF-TAP-MS, XL-MS, Co-purification, Cryo-EM, Cryo-EM, Y2H",
@@ -21490,7 +21490,7 @@
       "validation_count": 6
     },
     {
-      "bait_gene": "WDR35",
+      "bait_gene": "IFT121",
       "prey_gene": "IFT43",
       "ipsae": 0.5954744,
       "ipsae_confidence": "Medium",
