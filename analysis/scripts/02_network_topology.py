@@ -1,0 +1,259 @@
+#!/usr/bin/env python3
+"""
+Network Topology Analysis
+
+Analyzes the IFT/BBSome interaction network using NetworkX
+
+Outputs:
+- analysis/results/network_metrics.json (topology statistics)
+- analysis/results/hub_proteins.csv (high-degree nodes)
+- figures/data/network_data.graphml (for Cytoscape visualization)
+
+Requirements:
+  pip install networkx pandas psycopg2-binary python-dotenv
+
+Usage:
+  export POSTGRES_URL="postgresql://..."
+  python analysis/scripts/02_network_topology.py
+"""
+
+import os
+import json
+import pandas as pd
+import networkx as nx
+from urllib.parse import urlparse
+import psycopg2
+
+def connect_to_database():
+    """Connect to PostgreSQL database"""
+    database_url = os.environ.get('POSTGRES_URL')
+    if not database_url:
+        raise ValueError("POSTGRES_URL environment variable not set")
+
+    # Parse URL
+    url = urlparse(database_url)
+
+    conn = psycopg2.connect(
+        host=url.hostname,
+        port=url.port,
+        user=url.username,
+        password=url.password,
+        database=url.path[1:],  # Remove leading '/'
+        sslmode='require'
+    )
+    return conn
+
+def load_interactions():
+    """Load interactions from database"""
+    print("\n=== LOADING INTERACTIONS ===\n")
+
+    conn = connect_to_database()
+
+    query = """
+    SELECT
+        i.id,
+        bait.gene_name as bait_gene,
+        bait.uniprot_id as bait_uniprot,
+        prey.gene_name as prey_gene,
+        prey.uniprot_id as prey_uniprot,
+        i.ipsae,
+        i.ipsae_confidence,
+        i.iptm,
+        i.contacts_pae_lt_3
+    FROM interactions i
+    JOIN proteins bait ON i.bait_protein_id = bait.id
+    JOIN proteins prey ON i.prey_protein_id = prey.id
+    ORDER BY i.ipsae DESC
+    """
+
+    df = pd.read_sql_query(query, conn)
+    conn.close()
+
+    print(f"Loaded {len(df)} interactions")
+    return df
+
+def build_network(df, confidence_filter=None):
+    """Build NetworkX graph from interactions"""
+    print(f"\n=== BUILDING NETWORK (filter: {confidence_filter or 'all'}) ===\n")
+
+    # Filter by confidence if specified
+    if confidence_filter:
+        df_filtered = df[df['ipsae_confidence'] == confidence_filter]
+        print(f"Filtered to {len(df_filtered)} {confidence_filter} confidence interactions")
+    else:
+        df_filtered = df
+
+    # Create directed graph (bait -> prey)
+    G = nx.DiGraph()
+
+    # Add edges
+    for _, row in df_filtered.iterrows():
+        bait = row['bait_gene'] or row['bait_uniprot']
+        prey = row['prey_gene'] or row['prey_uniprot']
+
+        G.add_edge(
+            bait,
+            prey,
+            ipsae=row['ipsae'],
+            confidence=row['ipsae_confidence'],
+            iptm=row['iptm'],
+            contacts=row['contacts_pae_lt_3']
+        )
+
+    print(f"Network: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+
+    return G
+
+def calculate_network_metrics(G):
+    """Calculate network topology metrics"""
+    print("\n=== CALCULATING NETWORK METRICS ===\n")
+
+    metrics = {}
+
+    # Basic metrics
+    metrics['num_nodes'] = G.number_of_nodes()
+    metrics['num_edges'] = G.number_of_edges()
+    metrics['density'] = nx.density(G)
+
+    # Convert to undirected for some metrics
+    G_undirected = G.to_undirected()
+
+    # Degree metrics
+    degrees = dict(G_undirected.degree())
+    metrics['avg_degree'] = sum(degrees.values()) / len(degrees)
+    metrics['max_degree'] = max(degrees.values())
+    metrics['min_degree'] = min(degrees.values())
+
+    # Clustering
+    metrics['avg_clustering'] = nx.average_clustering(G_undirected)
+    metrics['transitivity'] = nx.transitivity(G_undirected)
+
+    # Connectivity
+    metrics['num_connected_components'] = nx.number_connected_components(G_undirected)
+
+    # Largest component
+    largest_cc = max(nx.connected_components(G_undirected), key=len)
+    metrics['largest_component_size'] = len(largest_cc)
+    metrics['largest_component_fraction'] = len(largest_cc) / G.number_of_nodes()
+
+    # Centrality (on largest component to avoid disconnected nodes)
+    G_largest = G_undirected.subgraph(largest_cc).copy()
+
+    # Betweenness centrality (top node)
+    betweenness = nx.betweenness_centrality(G_largest)
+    top_betweenness = max(betweenness, key=betweenness.get)
+    metrics['max_betweenness_centrality'] = betweenness[top_betweenness]
+    metrics['max_betweenness_node'] = top_betweenness
+
+    # Print metrics
+    print("Network Topology Metrics:")
+    for key, value in metrics.items():
+        if isinstance(value, float):
+            print(f"  {key}: {value:.4f}")
+        else:
+            print(f"  {key}: {value}")
+
+    return metrics
+
+def identify_hub_proteins(G, top_n=20):
+    """Identify hub proteins (high degree nodes)"""
+    print(f"\n=== IDENTIFYING TOP {top_n} HUB PROTEINS ===\n")
+
+    # Convert to undirected for degree calculation
+    G_undirected = G.to_undirected()
+
+    # Calculate degree
+    degrees = dict(G_undirected.degree())
+
+    # Sort by degree
+    sorted_nodes = sorted(degrees.items(), key=lambda x: x[1], reverse=True)
+
+    # Get top N
+    hub_data = []
+    for node, degree in sorted_nodes[:top_n]:
+        # Get in-degree and out-degree from original directed graph
+        in_degree = G.in_degree(node) if G.has_node(node) else 0
+        out_degree = G.out_degree(node) if G.has_node(node) else 0
+
+        hub_data.append({
+            'protein': node,
+            'total_degree': degree,
+            'as_bait': out_degree,
+            'as_prey': in_degree
+        })
+
+        print(f"  {node}: {degree} interactions (bait: {out_degree}, prey: {in_degree})")
+
+    return pd.DataFrame(hub_data)
+
+def export_network_for_cytoscape(G, output_path):
+    """Export network in GraphML format for Cytoscape"""
+    print(f"\n=== EXPORTING NETWORK FOR CYTOSCAPE ===\n")
+
+    nx.write_graphml(G, output_path)
+    print(f"Exported to {output_path}")
+
+def analyze_confidence_levels(df):
+    """Analyze network properties by confidence level"""
+    print("\n=== ANALYZING BY CONFIDENCE LEVEL ===\n")
+
+    confidence_metrics = {}
+
+    for confidence in ['High', 'Medium', 'Low']:
+        G = build_network(df, confidence_filter=confidence)
+        metrics = calculate_network_metrics(G)
+        confidence_metrics[confidence] = metrics
+
+    return confidence_metrics
+
+def main():
+    """Main execution"""
+    print("Starting network topology analysis...")
+
+    # Create output directories
+    os.makedirs('analysis/results', exist_ok=True)
+    os.makedirs('figures/data', exist_ok=True)
+
+    # 1. Load interactions
+    df = load_interactions()
+
+    # 2. Build full network
+    G = build_network(df)
+
+    # 3. Calculate metrics
+    metrics = calculate_network_metrics(G)
+
+    # 4. Identify hub proteins
+    hub_df = identify_hub_proteins(G, top_n=20)
+
+    # 5. Save hub proteins
+    hub_path = 'analysis/results/hub_proteins.csv'
+    hub_df.to_csv(hub_path, index=False)
+    print(f"\nSaved hub proteins to {hub_path}")
+
+    # 6. Export network for Cytoscape
+    graphml_path = 'figures/data/network_data.graphml'
+    export_network_for_cytoscape(G, graphml_path)
+
+    # 7. Analyze by confidence level
+    confidence_metrics = analyze_confidence_levels(df)
+
+    # 8. Save all metrics to JSON
+    all_metrics = {
+        'full_network': metrics,
+        'by_confidence': confidence_metrics,
+        'top_hubs': hub_df.to_dict('records')
+    }
+
+    metrics_path = 'analysis/results/network_metrics.json'
+    with open(metrics_path, 'w') as f:
+        json.dump(all_metrics, f, indent=2)
+
+    print(f"\n✅ Network topology analysis complete!\n")
+    print("Output files:")
+    print(f"  - {metrics_path}")
+    print(f"  - {hub_path}")
+    print(f"  - {graphml_path}")
+
+if __name__ == '__main__':
+    main()
