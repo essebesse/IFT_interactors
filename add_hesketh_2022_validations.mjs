@@ -15,7 +15,8 @@ const UNIPROT = {
   IFT139: "Q7Z4L5", // TTC21B
   IFT122: "Q9HBG6",
   IFT121: "Q9P2L0", // WDR35
-  IFT43: "Q96FT9"
+  IFT43: "Q96FT9",
+  TULP3: "O75386"   // TULP3 cargo adapter
 };
 
 const HESKETH_2022_VALIDATIONS = [
@@ -127,6 +128,26 @@ const HESKETH_2022_VALIDATIONS = [
         pmid: "36462505",
         confidence: "high",
         notes: "IFT122 N-terminus in IFT-A2 module with IFT139"
+      }],
+      validation_summary: {
+        is_validated: true,
+        validation_count: 1,
+        strongest_method: "Cryo-EM",
+        consensus_confidence: "high"
+      }
+    }
+  },
+  // TULP3 cargo adapter binding to IFT-A
+  {
+    bait_uniprot: UNIPROT.TULP3,
+    prey_uniprot: UNIPROT.IFT122,
+    validation: {
+      experimental_methods: [{
+        method: "Cryo-EM",
+        study: "Hesketh et al., 2022",
+        pmid: "36462505",
+        confidence: "high",
+        notes: "TULP3 cargo adapter binds IFT-A complex"
       }],
       validation_summary: {
         is_validated: true,

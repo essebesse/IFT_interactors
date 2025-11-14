@@ -1,0 +1,240 @@
+{
+  "interaction_id": 360,
+  "generated_at": "2025-11-11T10:06:56.945981",
+  "data": {
+    "chains": [
+      "A",
+      "B"
+    ],
+    "chain_lengths": {
+      "A": 341,
+      "B": 299
+    },
+    "contacts": [
+      {
+        "chain1": "A",
+        "resi1": 15,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 192,
+        "aa2": "P",
+        "pae": 6.1,
+        "distance": 4.02,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 15,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 5.5,
+        "distance": 4.2,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 41,
+        "aa1": "K",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "K",
+        "pae": 4.1,
+        "distance": 3.56,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 41,
+        "aa1": "K",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 4.9,
+        "distance": 4.0,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 42,
+        "aa1": "G",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "K",
+        "pae": 4.7,
+        "distance": 3.43,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 42,
+        "aa1": "G",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 5.4,
+        "distance": 4.14,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 98,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 196,
+        "aa2": "I",
+        "pae": 4.1,
+        "distance": 3.37,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 104,
+        "aa1": "T",
+        "chain2": "B",
+        "resi2": 195,
+        "aa2": "F",
+        "pae": 4.0,
+        "distance": 3.17,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 105,
+        "aa1": "R",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 4.1,
+        "distance": 4.18,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 105,
+        "aa1": "R",
+        "chain2": "B",
+        "resi2": 195,
+        "aa2": "F",
+        "pae": 3.3,
+        "distance": 3.88,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 105,
+        "aa1": "R",
+        "chain2": "B",
+        "resi2": 196,
+        "aa2": "I",
+        "pae": 4.7,
+        "distance": 3.01,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 106,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 192,
+        "aa2": "P",
+        "pae": 6.1,
+        "distance": 4.03,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 106,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 5.1,
+        "distance": 3.21,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 106,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 195,
+        "aa2": "F",
+        "pae": 3.6,
+        "distance": 3.8,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 106,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 196,
+        "aa2": "I",
+        "pae": 4.2,
+        "distance": 4.01,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 107,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 4.6,
+        "distance": 2.86,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 107,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 196,
+        "aa2": "I",
+        "pae": 4.8,
+        "distance": 3.54,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 108,
+        "aa1": "F",
+        "chain2": "B",
+        "resi2": 194,
+        "aa2": "S",
+        "pae": 5.0,
+        "distance": 3.84,
+        "confidence": "medium",
+        "color": "#ffff00"
+      }
+    ],
+    "summary": {
+      "total_contacts": 18,
+      "very_high_count": 0,
+      "high_count": 12,
+      "medium_count": 6,
+      "low_count": 0
+    },
+    "spatial_validation_enabled": true
+  }
+}

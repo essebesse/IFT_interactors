@@ -1,0 +1,110 @@
+================================================================================
+CIF FILE MANIFEST FOR REVIEW
+================================================================================
+
+Total interactions: 501
+Found: 501 (100%)
+
+Sample entries (first 20):
+--------------------------------------------------------------------------------
+
+ID 1: IFT56 + IFT46 (ipSAE: 0.828)
+  Directory: a0avf1_and_q9nqc8
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_confidences.json
+
+ID 2: IFT56 + DNAJC8 (ipSAE: 0.565)
+  Directory: a0avf1_and_o75937
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_confidences.json
+
+ID 3: IFT56 + UBXN10 (ipSAE: 0.550)
+  Directory: a0avf1_and_q96lj8
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_confidences.json
+
+ID 4: IFT56 + NPM1 (ipSAE: 0.533)
+  Directory: a0avf1_and_p06748
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p06748/a0avf1_and_p06748_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p06748/a0avf1_and_p06748_confidences.json
+
+ID 5: IFT56 + DTYMK (ipSAE: 0.523)
+  Directory: a0avf1_and_p23919
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p23919/a0avf1_and_p23919_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p23919/a0avf1_and_p23919_confidences.json
+
+ID 6: IFT56 + SPMIP5 (ipSAE: 0.508)
+  Directory: a0avf1_and_q8ww14
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8ww14/a0avf1_and_q8ww14_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8ww14/a0avf1_and_q8ww14_confidences.json
+
+ID 7: IFT56 + SPMAP2 (ipSAE: 0.499)
+  Directory: a0avf1_and_q9p2t0
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9p2t0/a0avf1_and_q9p2t0_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9p2t0/a0avf1_and_q9p2t0_confidences.json
+
+ID 8: IFT56 + LRRC59 (ipSAE: 0.479)
+  Directory: a0avf1_and_q96ag4
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96ag4/a0avf1_and_q96ag4_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96ag4/a0avf1_and_q96ag4_confidences.json
+
+ID 9: IFT56 + GOT2 (ipSAE: 0.458)
+  Directory: a0avf1_and_p00505
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p00505/a0avf1_and_p00505_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p00505/a0avf1_and_p00505_confidences.json
+
+ID 10: IFT56 + RAB23 (ipSAE: 0.428)
+  Directory: a0avf1_and_q9ulc3
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9ulc3/a0avf1_and_q9ulc3_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9ulc3/a0avf1_and_q9ulc3_confidences.json
+
+ID 11: IFT56 + PALB2 (ipSAE: 0.426)
+  Directory: a0avf1_and_q86yc2
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86yc2/a0avf1_and_q86yc2_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86yc2/a0avf1_and_q86yc2_confidences.json
+
+ID 12: IFT56 + ACAT1 (ipSAE: 0.426)
+  Directory: a0avf1_and_p24752
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p24752/a0avf1_and_p24752_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p24752/a0avf1_and_p24752_confidences.json
+
+ID 13: IFT56 + CETN3 (ipSAE: 0.425)
+  Directory: a0avf1_and_o15182
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15182/a0avf1_and_o15182_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15182/a0avf1_and_o15182_confidences.json
+
+ID 14: IFT56 + NPEPPS (ipSAE: 0.425)
+  Directory: a0avf1_and_p55786
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p55786/a0avf1_and_p55786_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p55786/a0avf1_and_p55786_confidences.json
+
+ID 15: IFT56 + CDC42 (ipSAE: 0.421)
+  Directory: a0avf1_and_p60953
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p60953/a0avf1_and_p60953_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p60953/a0avf1_and_p60953_confidences.json
+
+ID 16: IFT56 + MAPRE3 (ipSAE: 0.394)
+  Directory: a0avf1_and_q9upy8
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9upy8/a0avf1_and_q9upy8_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9upy8/a0avf1_and_q9upy8_confidences.json
+
+ID 17: IFT56 + MAPRE1 (ipSAE: 0.379)
+  Directory: a0avf1_and_q15691
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15691/a0avf1_and_q15691_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15691/a0avf1_and_q15691_confidences.json
+
+ID 18: IFT56 + CAMK4 (ipSAE: 0.377)
+  Directory: a0avf1_and_q16566
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q16566/a0avf1_and_q16566_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q16566/a0avf1_and_q16566_confidences.json
+
+ID 19: IFT56 + SPESP1 (ipSAE: 0.374)
+  Directory: a0avf1_and_q6uw49
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6uw49/a0avf1_and_q6uw49_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6uw49/a0avf1_and_q6uw49_confidences.json
+
+ID 20: IFT56 + ZIC2 (ipSAE: 0.373)
+  Directory: a0avf1_and_o95409
+  CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95409/a0avf1_and_o95409_model.cif
+  Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95409/a0avf1_and_o95409_confidences.json
+

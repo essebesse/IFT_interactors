@@ -1,0 +1,598 @@
+Warning: matplotlib/seaborn not available. Heatmaps will be skipped.
+================================================================================
+PAE CONTACT EXTRACTION FOR WEB
+================================================================================
+
+Output directory: public/contacts_data
+
+Loaded 233 interaction IDs from /tmp/missing_pae_ids.txt
+
+Processing 113 specific interactions (from 233 requested)
+Skipping problematic interactions: [150]
+
+  [1/113] Processing interaction 45...
+  Parsed 20569 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 45.json
+    Contacts: 39 (VH:2, H:27, M:9, L:1)
+  [2/113] Processing interaction 46...
+  Parsed 12247 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 46.json
+    Contacts: 109 (VH:6, H:58, M:33, L:12)
+  [3/113] Processing interaction 47...
+  Parsed 15355 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 47.json
+    Contacts: 44 (VH:0, H:12, M:21, L:11)
+  [4/113] Processing interaction 48...
+  Parsed 15478 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 48.json
+    Contacts: 40 (VH:0, H:4, M:26, L:10)
+  [5/113] Processing interaction 49...
+  Parsed 15575 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 49.json
+    Contacts: 69 (VH:0, H:5, M:37, L:27)
+  [6/113] Processing interaction 50...
+  Parsed 14858 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 50.json
+    Contacts: 51 (VH:0, H:0, M:34, L:17)
+  [7/113] Processing interaction 51...
+  Parsed 11905 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 51.json
+    Contacts: 97 (VH:34, H:34, M:13, L:16)
+  [8/113] Processing interaction 52...
+  Parsed 8861 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 52.json
+    Contacts: 264 (VH:201, H:47, M:14, L:2)
+  [9/113] Processing interaction 53...
+  Parsed 6387 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 53.json
+    Contacts: 187 (VH:0, H:107, M:23, L:57)
+  [10/113] Processing interaction 54...
+  Parsed 7954 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 54.json
+    Contacts: 49 (VH:0, H:6, M:39, L:4)
+
+  [11/113] Processing interaction 55...
+  Parsed 8416 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 55.json
+    Contacts: 36 (VH:1, H:23, M:2, L:10)
+  [12/113] Processing interaction 56...
+  Parsed 8151 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 56.json
+    Contacts: 52 (VH:0, H:17, M:22, L:13)
+  [13/113] Processing interaction 57...
+  Parsed 8094 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 57.json
+    Contacts: 110 (VH:0, H:11, M:24, L:75)
+  [14/113] Processing interaction 58...
+  Parsed 8118 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 58.json
+    Contacts: 46 (VH:0, H:14, M:32, L:0)
+  [15/113] Processing interaction 59...
+  Parsed 41569 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 59.json
+    Contacts: 53 (VH:0, H:18, M:24, L:11)
+  [16/113] Processing interaction 60...
+  Parsed 7993 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 60.json
+    Contacts: 49 (VH:0, H:0, M:31, L:18)
+  [17/113] Processing interaction 61...
+  Parsed 7465 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 61.json
+    Contacts: 39 (VH:0, H:10, M:22, L:7)
+  [18/113] Processing interaction 62...
+  Parsed 7674 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 62.json
+    Contacts: 49 (VH:0, H:22, M:8, L:19)
+  [19/113] Processing interaction 63...
+  Parsed 7516 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 63.json
+    Contacts: 37 (VH:0, H:0, M:26, L:11)
+  [20/113] Processing interaction 77...
+  Parsed 11903 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 77.json
+    Contacts: 111 (VH:55, H:32, M:18, L:6)
+
+  [21/113] Processing interaction 78...
+  Parsed 8859 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 78.json
+    Contacts: 263 (VH:219, H:34, M:9, L:1)
+  [22/113] Processing interaction 79...
+  Parsed 6385 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 79.json
+    Contacts: 159 (VH:0, H:106, M:22, L:31)
+  [23/113] Processing interaction 80...
+  Parsed 10502 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 80.json
+    Contacts: 97 (VH:7, H:46, M:7, L:37)
+  [24/113] Processing interaction 81...
+  Parsed 41567 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 81.json
+    Contacts: 50 (VH:1, H:33, M:13, L:3)
+  [25/113] Processing interaction 82...
+  Parsed 9260 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 82.json
+    Contacts: 60 (VH:0, H:13, M:26, L:21)
+  [26/113] Processing interaction 83...
+  Parsed 12164 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 83.json
+    Contacts: 47 (VH:0, H:19, M:18, L:10)
+  [27/113] Processing interaction 84...
+  Parsed 6925 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 84.json
+    Contacts: 37 (VH:0, H:0, M:25, L:12)
+  [28/113] Processing interaction 85...
+  Parsed 7910 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 85.json
+    Contacts: 38 (VH:0, H:17, M:7, L:14)
+  [29/113] Processing interaction 86...
+  Parsed 13983 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 86.json
+    Contacts: 50 (VH:0, H:23, M:21, L:6)
+  [30/113] Processing interaction 87...
+  Parsed 8149 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 87.json
+    Contacts: 49 (VH:0, H:11, M:26, L:12)
+
+  [31/113] Processing interaction 88...
+  Parsed 19473 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 88.json
+    Contacts: 63 (VH:0, H:8, M:34, L:21)
+  [32/113] Processing interaction 89...
+  Parsed 9082 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 89.json
+    Contacts: 43 (VH:0, H:24, M:18, L:1)
+  [33/113] Processing interaction 90...
+  Parsed 11539 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 90.json
+    Contacts: 40 (VH:0, H:16, M:20, L:4)
+  [34/113] Processing interaction 91...
+  Parsed 8092 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 91.json
+    Contacts: 59 (VH:0, H:1, M:23, L:35)
+  [35/113] Processing interaction 92...
+  Parsed 9571 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 92.json
+    Contacts: 40 (VH:0, H:25, M:1, L:14)
+  [36/113] Processing interaction 93...
+  Parsed 7463 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 93.json
+    Contacts: 33 (VH:0, H:4, M:24, L:5)
+  [37/113] Processing interaction 94...
+  Parsed 20620 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 94.json
+    Contacts: 65 (VH:32, H:31, M:2, L:0)
+  [38/113] Processing interaction 95...
+  Parsed 16295 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 95.json
+    Contacts: 90 (VH:18, H:68, M:4, L:0)
+  [39/113] Processing interaction 96...
+  Parsed 22250 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 96.json
+    Contacts: 75 (VH:64, H:3, M:8, L:0)
+  [40/113] Processing interaction 97...
+  Parsed 14921 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 97.json
+    Contacts: 35 (VH:0, H:2, M:31, L:2)
+
+  [41/113] Processing interaction 98...
+  Parsed 6652 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 98.json
+    Contacts: 30 (VH:28, H:1, M:1, L:0)
+  [42/113] Processing interaction 99...
+  Parsed 7397 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 99.json
+    Contacts: 62 (VH:20, H:35, M:6, L:1)
+  [43/113] Processing interaction 100...
+  Parsed 9360 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 100.json
+    Contacts: 26 (VH:2, H:13, M:3, L:8)
+  [44/113] Processing interaction 101...
+  Parsed 6574 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 101.json
+    Contacts: 120 (VH:89, H:14, M:10, L:7)
+  [45/113] Processing interaction 102...
+  Parsed 12477 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 102.json
+    Contacts: 23 (VH:0, H:14, M:9, L:0)
+  [46/113] Processing interaction 103...
+  Parsed 8873 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 103.json
+    Contacts: 48 (VH:0, H:9, M:25, L:14)
+  [47/113] Processing interaction 104...
+  Parsed 8587 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 104.json
+    Contacts: 41 (VH:0, H:16, M:14, L:11)
+  [48/113] Processing interaction 108...
+  Parsed 9580 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 108.json
+    Contacts: 58 (VH:45, H:8, M:4, L:1)
+  [49/113] Processing interaction 109...
+  Parsed 5834 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 109.json
+    Contacts: 47 (VH:15, H:22, M:8, L:2)
+  [50/113] Processing interaction 110...
+  Parsed 7397 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 110.json
+    Contacts: 51 (VH:2, H:15, M:7, L:27)
+
+  [51/113] Processing interaction 111...
+  Parsed 6819 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 111.json
+    Contacts: 252 (VH:140, H:70, M:32, L:10)
+  [52/113] Processing interaction 112...
+  Parsed 5183 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 112.json
+    Contacts: 38 (VH:1, H:16, M:16, L:5)
+  [53/113] Processing interaction 113...
+  Parsed 7662 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 113.json
+    Contacts: 43 (VH:2, H:22, M:14, L:5)
+  [54/113] Processing interaction 114...
+  Parsed 4974 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 114.json
+    Contacts: 33 (VH:6, H:11, M:5, L:11)
+  [55/113] Processing interaction 115...
+  Parsed 5180 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 115.json
+    Contacts: 55 (VH:1, H:16, M:17, L:21)
+  [56/113] Processing interaction 116...
+  Parsed 6872 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 116.json
+    Contacts: 45 (VH:2, H:27, M:15, L:1)
+  [57/113] Processing interaction 117...
+  Parsed 7672 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 117.json
+    Contacts: 21 (VH:7, H:12, M:2, L:0)
+  [58/113] Processing interaction 118...
+  Parsed 5926 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 118.json
+    Contacts: 26 (VH:1, H:14, M:5, L:6)
+  [59/113] Processing interaction 119...
+  Parsed 9767 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 119.json
+    Contacts: 26 (VH:3, H:16, M:6, L:1)
+  [60/113] Processing interaction 120...
+  Parsed 6392 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 120.json
+    Contacts: 46 (VH:4, H:34, M:8, L:0)
+
+  [61/113] Processing interaction 121...
+  Parsed 4856 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 121.json
+    Contacts: 36 (VH:8, H:15, M:8, L:5)
+  [62/113] Processing interaction 122...
+  Parsed 8498 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 122.json
+    Contacts: 15 (VH:0, H:7, M:6, L:2)
+  [63/113] Processing interaction 123...
+  Parsed 5120 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 123.json
+    Contacts: 33 (VH:0, H:6, M:20, L:7)
+  [64/113] Processing interaction 124...
+  Parsed 6865 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 124.json
+    Contacts: 20 (VH:0, H:2, M:12, L:6)
+  [65/113] Processing interaction 245...
+  Parsed 19360 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 245.json
+    Contacts: 155 (VH:30, H:94, M:17, L:14)
+  [66/113] Processing interaction 246...
+  Parsed 11038 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 246.json
+    Contacts: 199 (VH:87, H:41, M:48, L:23)
+  [67/113] Processing interaction 247...
+  Parsed 13715 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 247.json
+    Contacts: 114 (VH:0, H:51, M:39, L:24)
+  [68/113] Processing interaction 248...
+  Parsed 18352 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 248.json
+    Contacts: 55 (VH:0, H:19, M:33, L:3)
+  [69/113] Processing interaction 249...
+  Parsed 15431 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 249.json
+    Contacts: 47 (VH:0, H:16, M:21, L:10)
+  [70/113] Processing interaction 250...
+  Parsed 19422 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 250.json
+    Contacts: 71 (VH:0, H:18, M:30, L:23)
+
+  [71/113] Processing interaction 251...
+  Parsed 16953 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 251.json
+    Contacts: 36 (VH:0, H:14, M:19, L:3)
+  [72/113] Processing interaction 252...
+  Parsed 11543 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 252.json
+    Contacts: 39 (VH:0, H:2, M:32, L:5)
+  [73/113] Processing interaction 253...
+  Parsed 16632 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 253.json
+    Contacts: 46 (VH:0, H:19, M:20, L:7)
+  [74/113] Processing interaction 377...
+  Parsed 5061 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 377.json
+    Contacts: 133 (VH:81, H:15, M:20, L:17)
+  [75/113] Processing interaction 378...
+  Parsed 11306 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 378.json
+    Contacts: 128 (VH:41, H:60, M:12, L:15)
+  [76/113] Processing interaction 379...
+  Parsed 9943 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 379.json
+    Contacts: 68 (VH:0, H:23, M:15, L:30)
+  [77/113] Processing interaction 380...
+  Parsed 5131 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 380.json
+    Contacts: 86 (VH:0, H:48, M:26, L:12)
+  [78/113] Processing interaction 381...
+  Parsed 8042 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 381.json
+    Contacts: 46 (VH:0, H:23, M:14, L:9)
+  [79/113] Processing interaction 382...
+  Parsed 7068 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 382.json
+    Contacts: 47 (VH:0, H:2, M:34, L:11)
+  [80/113] Processing interaction 383...
+  Parsed 8434 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 383.json
+    Contacts: 76 (VH:0, H:5, M:56, L:15)
+
+  [81/113] Processing interaction 384...
+  Parsed 8333 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 384.json
+    Contacts: 108 (VH:0, H:2, M:24, L:82)
+  [82/113] Processing interaction 385...
+  Parsed 8905 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 385.json
+    Contacts: 84 (VH:0, H:38, M:25, L:21)
+  [83/113] Processing interaction 386...
+  Parsed 6439 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 386.json
+    Contacts: 98 (VH:0, H:0, M:79, L:19)
+  [84/113] Processing interaction 410...
+  Parsed 6057 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 410.json
+    Contacts: 35 (VH:27, H:6, M:2, L:0)
+  [85/113] Processing interaction 411...
+  Parsed 2709 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 411.json
+    Contacts: 72 (VH:21, H:20, M:20, L:11)
+  [86/113] Processing interaction 412...
+  Parsed 2430 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 412.json
+    Contacts: 59 (VH:19, H:28, M:7, L:5)
+  [87/113] Processing interaction 413...
+  Parsed 5044 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 413.json
+    Contacts: 50 (VH:0, H:39, M:4, L:7)
+  [88/113] Processing interaction 414...
+  Parsed 4026 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 414.json
+    Contacts: 35 (VH:17, H:14, M:1, L:3)
+  [89/113] Processing interaction 415...
+  Parsed 4274 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 415.json
+    Contacts: 77 (VH:33, H:38, M:5, L:1)
+  [90/113] Processing interaction 416...
+  Parsed 4274 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 416.json
+    Contacts: 46 (VH:3, H:19, M:6, L:18)
+
+  [91/113] Processing interaction 417...
+  Parsed 4234 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 417.json
+    Contacts: 70 (VH:1, H:38, M:14, L:17)
+  [92/113] Processing interaction 418...
+  Parsed 4059 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 418.json
+    Contacts: 28 (VH:1, H:20, M:4, L:3)
+  [93/113] Processing interaction 419...
+  Parsed 5000 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 419.json
+    Contacts: 32 (VH:3, H:23, M:6, L:0)
+  [94/113] Processing interaction 420...
+  Parsed 4265 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 420.json
+    Contacts: 71 (VH:1, H:21, M:26, L:23)
+  [95/113] Processing interaction 421...
+  Parsed 6574 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 421.json
+    Contacts: 44 (VH:0, H:28, M:9, L:7)
+  [96/113] Processing interaction 422...
+  Parsed 11125 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 422.json
+    Contacts: 94 (VH:3, H:60, M:28, L:3)
+  [97/113] Processing interaction 423...
+  Parsed 4291 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 423.json
+    Contacts: 29 (VH:1, H:24, M:4, L:0)
+  [98/113] Processing interaction 424...
+  Parsed 3607 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 424.json
+    Contacts: 99 (VH:0, H:25, M:62, L:12)
+  [99/113] Processing interaction 425...
+  Parsed 3764 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 425.json
+    Contacts: 45 (VH:0, H:5, M:30, L:10)
+  [100/113] Processing interaction 426...
+  Parsed 3296 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 426.json
+    Contacts: 51 (VH:14, H:25, M:1, L:11)
+
+  [101/113] Processing interaction 427...
+  Parsed 3000 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 427.json
+    Contacts: 69 (VH:7, H:24, M:9, L:29)
+  [102/113] Processing interaction 428...
+  Parsed 3403 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 428.json
+    Contacts: 57 (VH:0, H:20, M:26, L:11)
+  [103/113] Processing interaction 429...
+  Parsed 4665 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 429.json
+    Contacts: 26 (VH:0, H:10, M:14, L:2)
+  [104/113] Processing interaction 430...
+  Parsed 4894 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 430.json
+    Contacts: 45 (VH:1, H:22, M:9, L:13)
+  [105/113] Processing interaction 431...
+  Parsed 4000 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 431.json
+    Contacts: 77 (VH:0, H:20, M:48, L:9)
+  [106/113] Processing interaction 432...
+  Parsed 5124 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 432.json
+    Contacts: 36 (VH:1, H:28, M:3, L:4)
+  [107/113] Processing interaction 433...
+  Parsed 2658 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 433.json
+    Contacts: 53 (VH:0, H:3, M:30, L:20)
+  [108/113] Processing interaction 434...
+  Parsed 6057 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 434.json
+    Contacts: 63 (VH:0, H:11, M:34, L:18)
+  [109/113] Processing interaction 435...
+  Parsed 5336 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 435.json
+    Contacts: 37 (VH:0, H:0, M:8, L:29)
+  [110/113] Processing interaction 436...
+  Parsed 2808 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 436.json
+    Contacts: 40 (VH:0, H:24, M:12, L:4)
+
+  [111/113] Processing interaction 437...
+  Parsed 4862 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 437.json
+    Contacts: 251 (VH:159, H:77, M:11, L:4)
+  [112/113] Processing interaction 438...
+  Parsed 3446 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 438.json
+    Contacts: 80 (VH:66, H:6, M:4, L:4)
+  [113/113] Processing interaction 439...
+  Parsed 5804 atoms from CIF file
+  Extracted sequences for chains: ['A', 'B']
+    ✓ Saved to 439.json
+    Contacts: 153 (VH:62, H:13, M:31, L:47)
+
+================================================================================
+BATCH PROCESSING COMPLETE
+================================================================================
+Total interactions: 113
+Processed: 113
+Successful: 113 (100.0%)
+Failed: 0 (0.0%)
+
+Output files saved to: public/contacts_data

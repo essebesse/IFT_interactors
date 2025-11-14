@@ -1,0 +1,31 @@
+Lacey et al., 2024 - IFT Cross-Links from Chlamydomonas
+Mapping to Human Orthologs
+
+8 Unique IFT Interaction Pairs:
+
+1. A0A2K3CP46 (Uncharacterized) <--> A5Z0S9 (Cr-IFT80)
+   Human orthologs: ? <--> IFT80 (Q9P2H3)
+
+2. A0A2K3CQB1 (Uncharacterized) <--> A0A2K3DCC1 (Cr-IFT57)
+   Human orthologs: ? <--> IFT57 (Q9NWB7)
+
+3. A0A2K3CQG9 (Cr-IFT81) <--> A0A2K3E6H6 (Uncharacterized)
+   Human orthologs: IFT81 (Q8WYA0) <--> ?
+
+4. A0A2K3CXC4 (Uncharacterized) <--> H9CTG6 (Cr-IFT122)
+   Human orthologs: ? <--> IFT122 (Q9HBG6)
+
+5. A0A2K3DN83 (Uncharacterized) <--> A8JCJ2 (Cr-IFT88)
+   Human orthologs: ? <--> IFT88 (Q13099)
+
+6. A0A2K3DSI4 (Cr-IFT46) <--> A0A2K3E6H6 (Uncharacterized)
+   Human orthologs: IFT46 (Q9NQC8) <--> ?
+
+7. A0A2K3E6H6 (Uncharacterized) <--> A0A2K3E7V0 (Cr-IFT27)
+   Human orthologs: ? <--> IFT27 (Q9BW83)
+
+8. A8JFR3 (Cr-IFT121/WDR35) <--> H9CTG6 (Cr-IFT122)
+   Human orthologs: IFT121/WDR35 (Q9P2L0) <--> IFT122 (Q9HBG6)
+   *** VALIDATED: Present in our database (ipSAE=0.65, Medium confidence) ***
+
+Many cross-links involve "Uncharacterized protein" partners which cannot be mapped without further BLAST analysis.

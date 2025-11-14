@@ -1,0 +1,44 @@
+================================================================================
+CIF PATH COLLECTION SCRIPT
+================================================================================
+
+Base directory: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD
+
+📊 Querying database...
+✓ Found 548 interactions in database
+
+🔍 Searching for CIF files...
+
+  Processed 150/548 - Found: 86, Missing: 64
+  Processed 200/548 - Found: 136, Missing: 64
+  Processed 300/548 - Found: 227, Missing: 73
+  Processed 350/548 - Found: 277, Missing: 73
+
+✅ Processing complete!
+  Total interactions: 548
+  Found CIF files: 329 (60.0%)
+  Missing CIF files: 219 (40.0%)
+
+✅ Saved mapping to: /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper/cif_mapping.json
+
+Sample mappings:
+  ID 1:
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_model.cif
+    Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_confidences.json
+
+  ID 2:
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_model.cif
+    Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_confidences.json
+
+  ID 3:
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_model.cif
+    Confidences: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_confidences.json
+
+Sample missing files:
+  ID 45: q7z4l5_and_q9hbg6
+  ID 46: q7z4l5_and_q96ft9
+  ID 47: q7z4l5_and_p26038
+
+================================================================================
+COMPLETE
+================================================================================

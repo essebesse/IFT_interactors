@@ -1,0 +1,3678 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d3" for="edge" attr.name="contacts" attr.type="double"/>
+<key id="d2" for="edge" attr.name="iptm" attr.type="double"/>
+<key id="d1" for="edge" attr.name="confidence" attr.type="string"/>
+<key id="d0" for="edge" attr.name="ipsae" attr.type="double"/>
+<graph edgedefault="directed"><node id="IFT46"/>
+<node id="IFT56"/>
+<node id="BBS8"/>
+<node id="BBIP1"/>
+<node id="BBS7"/>
+<node id="BBS2"/>
+<node id="BBS1"/>
+<node id="BBS4"/>
+<node id="IFT70B"/>
+<node id="IFT88"/>
+<node id="TULP3"/>
+<node id="WDR5"/>
+<node id="IFT25"/>
+<node id="ZC2HC1A"/>
+<node id="ARL6"/>
+<node id="IFT172"/>
+<node id="IFT57"/>
+<node id="IFT80"/>
+<node id="CLUAP1"/>
+<node id="TP73"/>
+<node id="TRAF3IP1"/>
+<node id="CYS1"/>
+<node id="IFT27"/>
+<node id="TUBE1"/>
+<node id="BBS9"/>
+<node id="GNAS"/>
+<node id="IFT122"/>
+<node id="WDR19"/>
+<node id="TIMM50"/>
+<node id="IFT52"/>
+<node id="PPP6C"/>
+<node id="IFT70A"/>
+<node id="GLIS2"/>
+<node id="EIF5"/>
+<node id="CLIC1"/>
+<node id="BBS5"/>
+<node id="MCIDAS"/>
+<node id="WDR35"/>
+<node id="CFAP144"/>
+<node id="GMNC"/>
+<node id="RABL2B"/>
+<node id="POC1A"/>
+<node id="STK11"/>
+<node id="LZTFL1"/>
+<node id="CFAP20"/>
+<node id="IFT20"/>
+<node id="SUFU"/>
+<node id="IFT140"/>
+<node id="DCDC2"/>
+<node id="SRSF7"/>
+<node id="IFT43"/>
+<node id="PDE6D"/>
+<node id="SPATA7"/>
+<node id="NDUFA5"/>
+<node id="SNX10"/>
+<node id="ENTR1"/>
+<node id="IFT22"/>
+<node id="INTS6"/>
+<node id="EFCAB2"/>
+<node id="DTYMK"/>
+<node id="GDI2"/>
+<node id="FAIM"/>
+<node id="SUCLG1"/>
+<node id="CMPK1"/>
+<node id="ACSL3"/>
+<node id="HIBADH"/>
+<node id="RPS9"/>
+<node id="DYNC2LI1"/>
+<node id="LTA4H"/>
+<node id="DNAJC8"/>
+<node id="PDCD10"/>
+<node id="SEMG1"/>
+<node id="TTC21B"/>
+<node id="CYLC2"/>
+<node id="TBC1D7"/>
+<node id="UBA52"/>
+<node id="GALNT11"/>
+<node id="TTC21A"/>
+<node id="SH3GLB1"/>
+<node id="UBXN10"/>
+<node id="MED7"/>
+<node id="TTBK2"/>
+<node id="CFAP36"/>
+<node id="MLF2"/>
+<node id="CLU"/>
+<node id="DBR1"/>
+<node id="CLBA1"/>
+<node id="NPM1"/>
+<node id="MAK"/>
+<node id="NSFL1C"/>
+<node id="RFX7"/>
+<node id="PDIA4"/>
+<node id="CILK1"/>
+<node id="HNRNPM"/>
+<node id="VHL"/>
+<node id="YAP1"/>
+<node id="KCTD10"/>
+<node id="CEP44"/>
+<node id="HAP1"/>
+<node id="CFAP206"/>
+<node id="TOM1"/>
+<node id="PHB2"/>
+<node id="CBY1"/>
+<node id="GSTM1"/>
+<node id="DZIP1"/>
+<node id="GLI1"/>
+<node id="RAB28"/>
+<node id="DRG1"/>
+<node id="EGFR"/>
+<node id="LRRC23"/>
+<node id="GALR2"/>
+<node id="CSNK1D"/>
+<node id="CYRIB"/>
+<node id="AMOTL2"/>
+<node id="ACR"/>
+<node id="P2RY14"/>
+<node id="ELOC"/>
+<node id="ALPK1"/>
+<node id="SPMIP5"/>
+<node id="CDC20B"/>
+<node id="PSMA7"/>
+<node id="MMP21"/>
+<node id="FAAH"/>
+<node id="PRMT1"/>
+<node id="TTC23"/>
+<node id="SPMAP2"/>
+<node id="PNP"/>
+<node id="RP2"/>
+<node id="PDE6G"/>
+<node id="DNAH10"/>
+<node id="GLI2"/>
+<node id="RAB23"/>
+<node id="MYB"/>
+<node id="CELSR3"/>
+<node id="PSMD6"/>
+<node id="CES1"/>
+<node id="IPO5"/>
+<node id="TUBA4A"/>
+<node id="ADGB"/>
+<node id="LRRC59"/>
+<node id="DZANK1"/>
+<node id="AKR1B1"/>
+<node id="NR1H4"/>
+<node id="STYXL1"/>
+<node id="MCHR1"/>
+<node id="RABL2A"/>
+<node id="CDC20"/>
+<node id="ACTA2"/>
+<node id="MPI"/>
+<node id="SEPTIN12"/>
+<node id="KIFAP3"/>
+<node id="AHI1"/>
+<node id="TXNDC15"/>
+<node id="GOT2"/>
+<node id="CATSPERB"/>
+<node id="C7orf57"/>
+<node id="CAPS"/>
+<node id="GPR173"/>
+<node id="PSMC2"/>
+<node id="ACTR2"/>
+<node id="ANXA1"/>
+<node id="GSTM2"/>
+<node id="PSMD3"/>
+<node id="WDR77"/>
+<node id="NUP35"/>
+<node id="UNC119B"/>
+<node id="TUB"/>
+<node id="B9D1"/>
+<node id="CCDC92"/>
+<node id="PPP1CC"/>
+<node id="RACK1"/>
+<node id="FSCB"/>
+<node id="RSPH1"/>
+<node id="AURKA"/>
+<node id="NSUN4"/>
+<node id="AIFM1"/>
+<node id="RFX4"/>
+<node id="CFAP97"/>
+<node id="TF"/>
+<node id="UBXN11"/>
+<node id="MLF1"/>
+<node id="MAPK3"/>
+<node id="CLRN1"/>
+<node id="RAB34"/>
+<node id="DCP2"/>
+<node id="AK1"/>
+<node id="PSMA6"/>
+<node id="COP1"/>
+<node id="MOK"/>
+<node id="SEMG2"/>
+<node id="CTNNB1"/>
+<node id="ARL2"/>
+<node id="RAB11B"/>
+<node id="TFG"/>
+<node id="RPL9"/>
+<node id="E2F4"/>
+<node id="PALB2"/>
+<node id="CDK9"/>
+<node id="SALL1"/>
+<node id="PPIA"/>
+<node id="ACAT1"/>
+<node id="NEK2"/>
+<node id="CETN3"/>
+<node id="NAMPT"/>
+<node id="FNDC8"/>
+<node id="NPEPPS"/>
+<node id="L2HGDH"/>
+<node id="CSNK2A1"/>
+<node id="CEP97"/>
+<node id="U2SURP"/>
+<node id="PGAM5"/>
+<node id="KRT1"/>
+<node id="FOXJ1"/>
+<node id="CDC42"/>
+<node id="COPA"/>
+<node id="NUMB"/>
+<node id="ALDH2"/>
+<node id="CFAP299"/>
+<node id="NOTO"/>
+<node id="GSTM5"/>
+<node id="KRT6B"/>
+<node id="CHCHD6"/>
+<node id="PRPS2"/>
+<node id="ODF1"/>
+<node id="RPL7A"/>
+<node id="RSPH10B"/>
+<node id="CEP78"/>
+<node id="TLK2"/>
+<node id="TMED10"/>
+<node id="FARSB"/>
+<node id="HNF1B"/>
+<node id="P4HB"/>
+<node id="RPL6"/>
+<node id="KISS1R"/>
+<node id="GALR3"/>
+<node id="ANXA3"/>
+<node id="GAS2L1"/>
+<node id="COMT"/>
+<node id="TAGLN2"/>
+<node id="H4C1"/>
+<node id="MSN"/>
+<node id="WDPCP"/>
+<node id="MAPRE3"/>
+<node id="nan"/>
+<node id="SPESP1"/>
+<node id="KCTD17"/>
+<node id="AP2B1"/>
+<node id="NF2"/>
+<node id="PSMA3"/>
+<node id="FSD1"/>
+<node id="ACTL7A"/>
+<node id="LCA5"/>
+<node id="PRKACG"/>
+<node id="CIMIP2A"/>
+<node id="NME7"/>
+<node id="CCP110"/>
+<node id="PRKAR1A"/>
+<node id="PPP1R7"/>
+<node id="DYNC2I1"/>
+<node id="IFT74"/>
+<node id="IFT81"/>
+<node id="MED26"/>
+<node id="PIN1"/>
+<node id="NEK8"/>
+<node id="ANXA7"/>
+<node id="PRICKLE2"/>
+<node id="MAPRE1"/>
+<node id="CAMK4"/>
+<node id="NIT1"/>
+<node id="NFIX"/>
+<node id="SASS6"/>
+<node id="USH1G"/>
+<node id="TMEM231"/>
+<node id="CCNO"/>
+<node id="HGS"/>
+<node id="DNAJB6"/>
+<node id="PLK4"/>
+<node id="TUBGCP6"/>
+<node id="KATNAL1"/>
+<node id="ZIC2"/>
+<node id="SNX9"/>
+<node id="DYDC2"/>
+<node id="ACADM"/>
+<node id="GNB1"/>
+<node id="LCP1"/>
+<node id="PQBP1"/>
+<node id="PTGER4"/>
+<node id="STUB1"/>
+<node id="CALM1"/>
+<node id="PEBP1"/>
+<node id="HYOU1"/>
+<node id="TCHP"/>
+<node id="WDR44"/>
+<node id="CALR"/>
+<node id="EZR"/>
+<node id="HSPA8"/>
+<node id="DRC3"/>
+<node id="MCRS1"/>
+<node id="GPR88"/>
+<node id="C1orf87"/>
+<node id="LIMA1"/>
+<node id="CFAP298"/>
+<node id="DDX42"/>
+<node id="ZPBP"/>
+<node id="CELSR2"/>
+<node id="ANXA11"/>
+<node id="KRT75"/>
+<node id="RNPEP"/>
+<node id="TPPP3"/>
+<node id="PPP1CA"/>
+<node id="GANAB"/>
+<node id="COPS8"/>
+<node id="CCDC78"/>
+<node id="ZBBX"/>
+<node id="CFAP43"/>
+<node id="KRT8"/>
+<node id="RAB7A"/>
+<node id="RFX2"/>
+<node id="EIF5A"/>
+<node id="PCM1"/>
+<node id="PSMA4"/>
+<node id="XPNPEP3"/>
+<node id="HSP90AB1"/>
+<node id="KIF24"/>
+<node id="TCTN2"/>
+<node id="IZUMO4"/>
+<node id="HDAC6"/>
+<node id="NEK1"/>
+<node id="SPAG8"/>
+<node id="SPMIP6"/>
+<node id="PDHX"/>
+<node id="MAPKAP1"/>
+<node id="MYLIP"/>
+<node id="QARS1"/>
+<node id="RAB8A"/>
+<node id="MTREX"/>
+<node id="NUP54"/>
+<node id="UBE4B"/>
+<node id="KRT5"/>
+<node id="SNAP29"/>
+<node id="CSNK2B"/>
+<node id="VPS45"/>
+<node id="AKNA"/>
+<node id="RAB14"/>
+<node id="SSTR3"/>
+<node id="CYLD"/>
+<node id="TULP1"/>
+<node id="BAZ2B"/>
+<node id="CDKL5"/>
+<node id="LRGUK"/>
+<node id="DNAI3"/>
+<node id="DCP1A"/>
+<node id="ARPC2"/>
+<node id="AIPL1"/>
+<node id="PTPN11"/>
+<node id="TTLL1"/>
+<node id="GPR161"/>
+<node id="KRT6A"/>
+<node id="CNGA4"/>
+<node id="CIMIP2C"/>
+<node id="IGF1"/>
+<node id="ACAD10"/>
+<node id="PTEN"/>
+<node id="CCDC181"/>
+<node id="MACF1"/>
+<node id="PRDX3"/>
+<node id="EPB41"/>
+<node id="SENP3"/>
+<node id="EZH2"/>
+<node id="DNAAF2"/>
+<node id="TUBA8"/>
+<node id="INVS"/>
+<node id="UBAP1"/>
+<node id="SPAG17"/>
+<node id="NCL"/>
+<node id="CDK13"/>
+<node id="NUP93"/>
+<node id="HNRNPK"/>
+<node id="HYLS1"/>
+<node id="ARL2BP"/>
+<node id="BAG6"/>
+<node id="TUBB6"/>
+<node id="PPP2R3C"/>
+<node id="AP2A2"/>
+<edge source="IFT46" target="IFT56">
+  <data key="d0">0.8283153</data>
+  <data key="d1">High</data>
+  <data key="d2">0.84</data>
+  <data key="d3">274.0</data>
+</edge>
+<edge source="IFT46" target="GALNT11">
+  <data key="d0">0.5524447</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.63</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT46" target="RSPH1">
+  <data key="d0">0.44596335</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT46" target="AURKA">
+  <data key="d0">0.44517395</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT46" target="CILK1">
+  <data key="d0">0.42853156</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.41</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT46" target="MAK">
+  <data key="d0">0.3729014</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.4</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT46" target="NR1H4">
+  <data key="d0">0.30372584</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT46" target="GLI1">
+  <data key="d0">0.30009475</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT56" target="IFT46">
+  <data key="d0">0.8280138</data>
+  <data key="d1">High</data>
+  <data key="d2">0.84</data>
+  <data key="d3">265.0</data>
+</edge>
+<edge source="IFT56" target="DNAJC8">
+  <data key="d0">0.5647609</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.58</data>
+  <data key="d3">46.0</data>
+</edge>
+<edge source="IFT56" target="UBXN10">
+  <data key="d0">0.5499628</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.64</data>
+  <data key="d3">20.0</data>
+</edge>
+<edge source="IFT56" target="NPM1">
+  <data key="d0">0.5330536</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.58</data>
+  <data key="d3">22.0</data>
+</edge>
+<edge source="IFT56" target="DTYMK">
+  <data key="d0">0.5228147</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.81</data>
+  <data key="d3">14.0</data>
+</edge>
+<edge source="IFT56" target="SPMIP5">
+  <data key="d0">0.5084198</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.62</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT56" target="SPMAP2">
+  <data key="d0">0.49928838</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="IFT56" target="LRRC59">
+  <data key="d0">0.47907314</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="IFT56" target="GOT2">
+  <data key="d0">0.4581572</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="RAB23">
+  <data key="d0">0.42794436</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="PALB2">
+  <data key="d0">0.42624694</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="ACAT1">
+  <data key="d0">0.42565584</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="CETN3">
+  <data key="d0">0.4253413</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="NPEPPS">
+  <data key="d0">0.42464048</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="CDC42">
+  <data key="d0">0.42100388</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="MAPRE3">
+  <data key="d0">0.39358568</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT56" target="MAPRE1">
+  <data key="d0">0.37879494</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="CAMK4">
+  <data key="d0">0.3773666</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="SPESP1">
+  <data key="d0">0.37390724</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="ZIC2">
+  <data key="d0">0.37339675</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="ACADM">
+  <data key="d0">0.3708428</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="CALM1">
+  <data key="d0">0.36731043</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="HYOU1">
+  <data key="d0">0.36453542</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="MED26">
+  <data key="d0">0.3634431</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="DCDC2">
+  <data key="d0">0.35381702</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="RAB7A">
+  <data key="d0">0.3490236</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="MMP21">
+  <data key="d0">0.34819221</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="PCM1">
+  <data key="d0">0.3464959</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="CDC20B">
+  <data key="d0">0.34431177</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="H4C1">
+  <data key="d0">0.33644253</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="HAP1">
+  <data key="d0">0.32713798</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="RAB14">
+  <data key="d0">0.326854</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="ARPC2">
+  <data key="d0">0.32196942</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT56" target="TTBK2">
+  <data key="d0">0.32004777</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="BBIP1">
+  <data key="d0">0.7713359</data>
+  <data key="d1">High</data>
+  <data key="d2">0.64</data>
+  <data key="d3">61.0</data>
+</edge>
+<edge source="BBS8" target="BBS9">
+  <data key="d0">0.6958741</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.65</data>
+  <data key="d3">30.0</data>
+</edge>
+<edge source="BBS8" target="BBS2">
+  <data key="d0">0.49272174</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="H4C1">
+  <data key="d0">0.39438426</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="ANXA7">
+  <data key="d0">0.3809133</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="SPESP1">
+  <data key="d0">0.3778332</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="BBS4">
+  <data key="d0">0.3546283</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="XPNPEP3">
+  <data key="d0">0.34588563</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.64</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="BBS1">
+  <data key="d0">0.33186918</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS8" target="SPMIP6">
+  <data key="d0">0.30321583</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBIP1" target="BBS8">
+  <data key="d0">0.7599822</data>
+  <data key="d1">High</data>
+  <data key="d2">0.62</data>
+  <data key="d3">59.0</data>
+</edge>
+<edge source="BBIP1" target="BBS4">
+  <data key="d0">0.71672386</data>
+  <data key="d1">High</data>
+  <data key="d2">0.62</data>
+  <data key="d3">57.0</data>
+</edge>
+<edge source="BBIP1" target="IFT25">
+  <data key="d0">0.66681945</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.82</data>
+  <data key="d3">39.0</data>
+</edge>
+<edge source="BBIP1" target="ELOC">
+  <data key="d0">0.5112505</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.75</data>
+  <data key="d3">19.0</data>
+</edge>
+<edge source="BBIP1" target="VHL">
+  <data key="d0">0.5003644</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.57</data>
+  <data key="d3">14.0</data>
+</edge>
+<edge source="BBIP1" target="CDC20B">
+  <data key="d0">0.4752677</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBIP1" target="TF">
+  <data key="d0">0.4421313</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="BBIP1" target="FNDC8">
+  <data key="d0">0.42503467</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.36</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="BBIP1" target="PRPS2">
+  <data key="d0">0.40914613</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="BBIP1" target="MMP21">
+  <data key="d0">0.40541458</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="BBIP1" target="STUB1">
+  <data key="d0">0.3675729</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBIP1" target="MPI">
+  <data key="d0">0.35335556</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBIP1" target="ACTL7A">
+  <data key="d0">0.34493053</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBIP1" target="RAB8A">
+  <data key="d0">0.33349493</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="BBS2">
+  <data key="d0">0.7587239</data>
+  <data key="d1">High</data>
+  <data key="d2">0.85</data>
+  <data key="d3">61.0</data>
+</edge>
+<edge source="BBS7" target="WDR19">
+  <data key="d0">0.67528325</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">31.0</data>
+</edge>
+<edge source="BBS7" target="ACSL3">
+  <data key="d0">0.5777957</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="BBS7" target="HAP1">
+  <data key="d0">0.52408963</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="CYS1">
+  <data key="d0">0.50266707</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.65</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="BBS7" target="TOM1">
+  <data key="d0">0.4819559</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="IFT43">
+  <data key="d0">0.46918675</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="BBS7" target="ANXA1">
+  <data key="d0">0.4539932</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="E2F4">
+  <data key="d0">0.42865106</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="KRT1">
+  <data key="d0">0.42191344</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="CLUAP1">
+  <data key="d0">0.42098248</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="KRT6B">
+  <data key="d0">0.41076463</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="SASS6">
+  <data key="d0">0.37631884</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="PLK4">
+  <data key="d0">0.3746741</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="PQBP1">
+  <data key="d0">0.3615034</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="ANXA11">
+  <data key="d0">0.3548333</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="KRT75">
+  <data key="d0">0.35451832</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="PSMA4">
+  <data key="d0">0.345932</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="GMNC">
+  <data key="d0">0.33962852</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="KRT5">
+  <data key="d0">0.32885852</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="MLF2">
+  <data key="d0">0.32101032</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="GPR161">
+  <data key="d0">0.31950507</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="KRT6A">
+  <data key="d0">0.31856185</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="AIFM1">
+  <data key="d0">0.31437027</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS7" target="EPB41">
+  <data key="d0">0.3134763</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.64</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="BBS7">
+  <data key="d0">0.7578511</data>
+  <data key="d1">High</data>
+  <data key="d2">0.85</data>
+  <data key="d3">68.0</data>
+</edge>
+<edge source="BBS2" target="BBS9">
+  <data key="d0">0.5261032</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">38.0</data>
+</edge>
+<edge source="BBS2" target="ALPK1">
+  <data key="d0">0.5104805</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="AKR1B1">
+  <data key="d0">0.47657016</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.76</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="BBS2" target="SEPTIN12">
+  <data key="d0">0.4639453</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="UNC119B">
+  <data key="d0">0.4488457</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="TOM1">
+  <data key="d0">0.33396018</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="BBS8">
+  <data key="d0">0.31757903</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS2" target="EZH2">
+  <data key="d0">0.31250134</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS1" target="BBS4">
+  <data key="d0">0.75296104</data>
+  <data key="d1">High</data>
+  <data key="d2">0.68</data>
+  <data key="d3">51.0</data>
+</edge>
+<edge source="BBS1" target="ARL6">
+  <data key="d0">0.7092236</data>
+  <data key="d1">High</data>
+  <data key="d2">0.81</data>
+  <data key="d3">33.0</data>
+</edge>
+<edge source="BBS1" target="BBS9">
+  <data key="d0">0.6523343</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.52</data>
+  <data key="d3">63.0</data>
+</edge>
+<edge source="BBS1" target="FAIM">
+  <data key="d0">0.5792177</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.7</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="BBS1" target="PDCD10">
+  <data key="d0">0.56247354</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.83</data>
+  <data key="d3">13.0</data>
+</edge>
+<edge source="BBS1" target="ODF1">
+  <data key="d0">0.40591097</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS1" target="CFAP43">
+  <data key="d0">0.35002133</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.43</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS1" target="BBS8">
+  <data key="d0">0.33257517</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS1" target="CLUAP1">
+  <data key="d0">0.3135194</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.25</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS1" target="NCL">
+  <data key="d0">0.30994758</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="BBS1">
+  <data key="d0">0.74835306</data>
+  <data key="d1">High</data>
+  <data key="d2">0.68</data>
+  <data key="d3">61.0</data>
+</edge>
+<edge source="BBS4" target="BBIP1">
+  <data key="d0">0.7131941</data>
+  <data key="d1">High</data>
+  <data key="d2">0.62</data>
+  <data key="d3">77.0</data>
+</edge>
+<edge source="BBS4" target="IPO5">
+  <data key="d0">0.48555642</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="TUBA4A">
+  <data key="d0">0.48245022</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.72</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="C7orf57">
+  <data key="d0">0.45670056</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="MLF1">
+  <data key="d0">0.44172603</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">8.0</data>
+</edge>
+<edge source="BBS4" target="RAB28">
+  <data key="d0">0.43605924</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="RPL7A">
+  <data key="d0">0.40581217</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="GAS2L1">
+  <data key="d0">0.3960135</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="nan">
+  <data key="d0">0.39258134</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="BBS8">
+  <data key="d0">0.37150618</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="DBR1">
+  <data key="d0">0.31837258</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="CIMIP2C">
+  <data key="d0">0.31818807</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS4" target="SPAG17">
+  <data key="d0">0.3107127</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="IFT88">
+  <data key="d0">0.71904945</data>
+  <data key="d1">High</data>
+  <data key="d2">0.63</data>
+  <data key="d3">49.0</data>
+</edge>
+<edge source="IFT70B" target="IFT52">
+  <data key="d0">0.67754316</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.77</data>
+  <data key="d3">197.0</data>
+</edge>
+<edge source="IFT70B" target="UBA52">
+  <data key="d0">0.5533598</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="PDIA4">
+  <data key="d0">0.52800703</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT70B" target="DNAH10">
+  <data key="d0">0.49647292</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="TUB">
+  <data key="d0">0.44865564</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="CEP97">
+  <data key="d0">0.422839</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="TAGLN2">
+  <data key="d0">0.39450788</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="CIMIP2A">
+  <data key="d0">0.38654882</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="DYNC2I1">
+  <data key="d0">0.38348436</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="GALR3">
+  <data key="d0">0.3773611</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="TUBGCP6">
+  <data key="d0">0.37441346</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.64</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="PTGER4">
+  <data key="d0">0.3686576</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="QARS1">
+  <data key="d0">0.33461818</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="SPESP1">
+  <data key="d0">0.3321165</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="CCDC181">
+  <data key="d0">0.31574276</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70B" target="SPMIP6">
+  <data key="d0">0.31317905</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT88" target="IFT70B">
+  <data key="d0">0.70862484</data>
+  <data key="d1">High</data>
+  <data key="d2">0.63</data>
+  <data key="d3">57.0</data>
+</edge>
+<edge source="IFT88" target="IFT70A">
+  <data key="d0">0.66718847</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.59</data>
+  <data key="d3">33.0</data>
+</edge>
+<edge source="IFT88" target="KIFAP3">
+  <data key="d0">0.4632768</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT88" target="NUP35">
+  <data key="d0">0.44999698</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT88" target="CDK9">
+  <data key="d0">0.4260911</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT88" target="IFT52">
+  <data key="d0">0.4194569</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">8.0</data>
+</edge>
+<edge source="IFT88" target="C7orf57">
+  <data key="d0">0.40838784</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">12.0</data>
+</edge>
+<edge source="IFT88" target="COPA">
+  <data key="d0">0.35188633</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.44</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT88" target="BAZ2B">
+  <data key="d0">0.32451236</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT88" target="TTLL1">
+  <data key="d0">0.3200544</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="WDR5">
+  <data key="d0">0.71869755</data>
+  <data key="d1">High</data>
+  <data key="d2">0.81</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="TULP3" target="GNAS">
+  <data key="d0">0.6898698</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.57</data>
+  <data key="d3">36.0</data>
+</edge>
+<edge source="TULP3" target="TIMM50">
+  <data key="d0">0.6834417</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.57</data>
+  <data key="d3">25.0</data>
+</edge>
+<edge source="TULP3" target="GLIS2">
+  <data key="d0">0.6664429</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.56</data>
+  <data key="d3">45.0</data>
+</edge>
+<edge source="TULP3" target="EIF5">
+  <data key="d0">0.6625281</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.58</data>
+  <data key="d3">27.0</data>
+</edge>
+<edge source="TULP3" target="GMNC">
+  <data key="d0">0.64029306</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.54</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="TULP3" target="STK11">
+  <data key="d0">0.63555217</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.63</data>
+  <data key="d3">18.0</data>
+</edge>
+<edge source="TULP3" target="DCDC2">
+  <data key="d0">0.6175081</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.55</data>
+  <data key="d3">38.0</data>
+</edge>
+<edge source="TULP3" target="SPATA7">
+  <data key="d0">0.59497327</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.6</data>
+  <data key="d3">12.0</data>
+</edge>
+<edge source="TULP3" target="EFCAB2">
+  <data key="d0">0.58199704</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.52</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="TULP3" target="RPS9">
+  <data key="d0">0.57019615</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.68</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="TULP3" target="SEMG1">
+  <data key="d0">0.55910605</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="TULP3" target="CFAP36">
+  <data key="d0">0.542769</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.51</data>
+  <data key="d3">8.0</data>
+</edge>
+<edge source="TULP3" target="NSFL1C">
+  <data key="d0">0.5297755</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">20.0</data>
+</edge>
+<edge source="TULP3" target="RFX7">
+  <data key="d0">0.5293746</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.58</data>
+  <data key="d3">32.0</data>
+</edge>
+<edge source="TULP3" target="YAP1">
+  <data key="d0">0.524695</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.52</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="TULP3" target="CEP44">
+  <data key="d0">0.524515</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="TULP3" target="GSTM1">
+  <data key="d0">0.51861125</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.75</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="TULP3" target="DZIP1">
+  <data key="d0">0.51754177</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="DRG1">
+  <data key="d0">0.51681393</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="TULP3" target="EGFR">
+  <data key="d0">0.51652694</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.56</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="TULP3" target="GALR2">
+  <data key="d0">0.5134987</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.54</data>
+  <data key="d3">43.0</data>
+</edge>
+<edge source="TULP3" target="AMOTL2">
+  <data key="d0">0.5120091</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.54</data>
+  <data key="d3">36.0</data>
+</edge>
+<edge source="TULP3" target="PSMA7">
+  <data key="d0">0.5024442</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.75</data>
+  <data key="d3">7.0</data>
+</edge>
+<edge source="TULP3" target="FAAH">
+  <data key="d0">0.50197744</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.7</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="PDE6G">
+  <data key="d0">0.49660647</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">26.0</data>
+</edge>
+<edge source="TULP3" target="IFT122">
+  <data key="d0">0.47822043</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.35</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="STYXL1">
+  <data key="d0">0.47389454</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="TULP3" target="MCHR1">
+  <data key="d0">0.4694991</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">34.0</data>
+</edge>
+<edge source="TULP3" target="UBXN10">
+  <data key="d0">0.46102872</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="CFAP144">
+  <data key="d0">0.45781785</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="GPR173">
+  <data key="d0">0.45597094</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">27.0</data>
+</edge>
+<edge source="TULP3" target="PSMC2">
+  <data key="d0">0.45554736</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="TULP3" target="B9D1">
+  <data key="d0">0.44820905</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="TULP3" target="CDC20B">
+  <data key="d0">0.44661376</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="AIFM1">
+  <data key="d0">0.44381914</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="TULP3" target="TULP3">
+  <data key="d0">0.43296635</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="SEMG2">
+  <data key="d0">0.43140483</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="ARL2">
+  <data key="d0">0.4303149</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="TTBK2">
+  <data key="d0">0.4288785</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="NUMB">
+  <data key="d0">0.41902864</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="TULP3" target="ALDH2">
+  <data key="d0">0.41889378</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="RAB23">
+  <data key="d0">0.4164357</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="TULP3" target="NPM1">
+  <data key="d0">0.41324043</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">18.0</data>
+</edge>
+<edge source="TULP3" target="RPL6">
+  <data key="d0">0.39888602</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="TULP3" target="KISS1R">
+  <data key="d0">0.39807716</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="CFAP20">
+  <data key="d0">0.3907918</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="TULP3" target="NF2">
+  <data key="d0">0.39020503</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="TULP3" target="PSMA3">
+  <data key="d0">0.3890328</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="TULP3" target="LCA5">
+  <data key="d0">0.3875795</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="MED26">
+  <data key="d0">0.38321906</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="PIN1">
+  <data key="d0">0.38178462</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="TULP3" target="TMEM231">
+  <data key="d0">0.37612996</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="KATNAL1">
+  <data key="d0">0.37359232</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.34</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="TULP3" target="GAS2L1">
+  <data key="d0">0.36801034</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.33</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="TULP3" target="WDR44">
+  <data key="d0">0.36428595</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="TPPP3">
+  <data key="d0">0.35405293</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="TP73">
+  <data key="d0">0.34904733</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="LTA4H">
+  <data key="d0">0.3457803</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="SNAP29">
+  <data key="d0">0.32861036</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.44</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="NME7">
+  <data key="d0">0.32791454</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="SSTR3">
+  <data key="d0">0.32628858</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="CCNO">
+  <data key="d0">0.32508162</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="TULP3" target="DCP1A">
+  <data key="d0">0.32284647</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.4</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="TLK2">
+  <data key="d0">0.3219964</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="KRT1">
+  <data key="d0">0.32098642</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="PTPN11">
+  <data key="d0">0.32082668</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="CNGA4">
+  <data key="d0">0.31830907</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="ACAD10">
+  <data key="d0">0.31739715</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="PTEN">
+  <data key="d0">0.3173465</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="KRT5">
+  <data key="d0">0.3117809</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="NUP93">
+  <data key="d0">0.3088648</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TULP3" target="MOK">
+  <data key="d0">0.30516812</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="ZC2HC1A">
+  <data key="d0">0.71297</data>
+  <data key="d1">High</data>
+  <data key="d2">0.88</data>
+  <data key="d3">34.0</data>
+</edge>
+<edge source="IFT25" target="BBIP1">
+  <data key="d0">0.7009643</data>
+  <data key="d1">High</data>
+  <data key="d2">0.83</data>
+  <data key="d3">37.0</data>
+</edge>
+<edge source="IFT25" target="IFT27">
+  <data key="d0">0.67742985</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.85</data>
+  <data key="d3">50.0</data>
+</edge>
+<edge source="IFT25" target="CFAP144">
+  <data key="d0">0.652987</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="IFT25" target="SNX10">
+  <data key="d0">0.587469</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.83</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="IFT25" target="CLBA1">
+  <data key="d0">0.53406805</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.81</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT25" target="CMPK1">
+  <data key="d0">0.52650636</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.75</data>
+  <data key="d3">22.0</data>
+</edge>
+<edge source="IFT25" target="TOM1">
+  <data key="d0">0.5235034</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.84</data>
+  <data key="d3">17.0</data>
+</edge>
+<edge source="IFT25" target="RAB23">
+  <data key="d0">0.49431428</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.76</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="IFT25" target="DZANK1">
+  <data key="d0">0.479029</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.84</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="IFT25" target="NR1H4">
+  <data key="d0">0.47577927</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.83</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT25" target="ACTA2">
+  <data key="d0">0.46542653</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.75</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="FSCB">
+  <data key="d0">0.44604236</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.84</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="GMNC">
+  <data key="d0">0.4440409</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="HAP1">
+  <data key="d0">0.4329207</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.81</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="RAB11B">
+  <data key="d0">0.4302718</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.72</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="NAMPT">
+  <data key="d0">0.42510745</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.76</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="CHCHD6">
+  <data key="d0">0.40989566</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="IFT25" target="CEP78">
+  <data key="d0">0.40551123</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="TLK2">
+  <data key="d0">0.40504247</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.8</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="DNAJB6">
+  <data key="d0">0.37502557</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT25" target="SNX9">
+  <data key="d0">0.37205532</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.77</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="NUP35">
+  <data key="d0">0.36059296</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="DDX42">
+  <data key="d0">0.35773566</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.81</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="LIMA1">
+  <data key="d0">0.3436054</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="HDAC6">
+  <data key="d0">0.34337798</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.8</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="BAG6">
+  <data key="d0">0.30764213</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT25" target="C7orf57">
+  <data key="d0">0.30149347</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="ARL6" target="BBS1">
+  <data key="d0">0.68612725</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.81</data>
+  <data key="d3">32.0</data>
+</edge>
+<edge source="ARL6" target="PDE6D">
+  <data key="d0">0.59723043</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.82</data>
+  <data key="d3">21.0</data>
+</edge>
+<edge source="ARL6" target="NDUFA5">
+  <data key="d0">0.5905581</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.72</data>
+  <data key="d3">13.0</data>
+</edge>
+<edge source="ARL6" target="GDI2">
+  <data key="d0">0.5798622</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.75</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="SUCLG1">
+  <data key="d0">0.5785494</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.78</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="ARL6" target="DYNC2LI1">
+  <data key="d0">0.56956</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">29.0</data>
+</edge>
+<edge source="ARL6" target="LRRC23">
+  <data key="d0">0.5143757</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.68</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="ARL6" target="P2RY14">
+  <data key="d0">0.5112655</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.74</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="WDR5">
+  <data key="d0">0.5104427</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.7</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="TTC23">
+  <data key="d0">0.4997138</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="ARL6" target="RP2">
+  <data key="d0">0.49837703</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.72</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="MYB">
+  <data key="d0">0.49263594</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="AHI1">
+  <data key="d0">0.4600259</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.78</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="TXNDC15">
+  <data key="d0">0.45908275</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="CAPS">
+  <data key="d0">0.45604345</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="NPM1">
+  <data key="d0">0.45347422</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="CLRN1">
+  <data key="d0">0.44016024</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="ARL6" target="AK1">
+  <data key="d0">0.43688434</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="ARL6" target="PSMA6">
+  <data key="d0">0.43348762</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="CSNK2A1">
+  <data key="d0">0.42354447</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="PSMC2">
+  <data key="d0">0.411476</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="NIT1">
+  <data key="d0">0.37682664</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="MCRS1">
+  <data key="d0">0.35996857</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="ARL6" target="EIF5A">
+  <data key="d0">0.34731296</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="VPS45">
+  <data key="d0">0.32798004</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="UBAP1">
+  <data key="d0">0.3111901</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="ARL6" target="ARL2BP">
+  <data key="d0">0.3082537</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT172" target="IFT57">
+  <data key="d0">0.7043668</data>
+  <data key="d1">High</data>
+  <data key="d2">0.45</data>
+  <data key="d3">60.0</data>
+</edge>
+<edge source="IFT172" target="IFT80">
+  <data key="d0">0.60844237</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.77</data>
+  <data key="d3">51.0</data>
+</edge>
+<edge source="IFT172" target="CES1">
+  <data key="d0">0.48699653</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.76</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT172" target="ACSL3">
+  <data key="d0">0.3519555</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT57" target="IFT172">
+  <data key="d0">0.70357007</data>
+  <data key="d1">High</data>
+  <data key="d2">0.45</data>
+  <data key="d3">51.0</data>
+</edge>
+<edge source="IFT57" target="CFAP20">
+  <data key="d0">0.62772363</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.83</data>
+  <data key="d3">26.0</data>
+</edge>
+<edge source="IFT57" target="ACR">
+  <data key="d0">0.46092314</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="IFT57" target="CLUAP1">
+  <data key="d0">0.45351166</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.33</data>
+  <data key="d3">122.0</data>
+</edge>
+<edge source="IFT57" target="NUP54">
+  <data key="d0">0.32935044</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.39</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT57" target="UBE4B">
+  <data key="d0">0.32924402</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.48</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT57" target="IFT140">
+  <data key="d0">0.30780673</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.4</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT57" target="AP2A2">
+  <data key="d0">0.30131394</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.39</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="CLUAP1">
+  <data key="d0">0.7038984</data>
+  <data key="d1">High</data>
+  <data key="d2">0.72</data>
+  <data key="d3">38.0</data>
+</edge>
+<edge source="IFT80" target="TP73">
+  <data key="d0">0.698964</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.74</data>
+  <data key="d3">43.0</data>
+</edge>
+<edge source="IFT80" target="IFT172">
+  <data key="d0">0.6135375</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.77</data>
+  <data key="d3">49.0</data>
+</edge>
+<edge source="IFT80" target="CYLC2">
+  <data key="d0">0.55590785</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.63</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT80" target="GLI1">
+  <data key="d0">0.51737833</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.69</data>
+  <data key="d3">13.0</data>
+</edge>
+<edge source="IFT80" target="ADGB">
+  <data key="d0">0.48010027</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="GNAS">
+  <data key="d0">0.46093374</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="MPI">
+  <data key="d0">0.40363574</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="WDPCP">
+  <data key="d0">0.39365253</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="HNF1B">
+  <data key="d0">0.34597132</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT80" target="INVS">
+  <data key="d0">0.31146342</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="CLUAP1" target="IFT80">
+  <data key="d0">0.7023716</data>
+  <data key="d1">High</data>
+  <data key="d2">0.72</data>
+  <data key="d3">40.0</data>
+</edge>
+<edge source="CLUAP1" target="HIBADH">
+  <data key="d0">0.5735986</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.73</data>
+  <data key="d3">14.0</data>
+</edge>
+<edge source="CLUAP1" target="CDC20B">
+  <data key="d0">0.5067337</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="CLUAP1" target="IFT57">
+  <data key="d0">0.46173054</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.33</data>
+  <data key="d3">134.0</data>
+</edge>
+<edge source="CLUAP1" target="GSTM2">
+  <data key="d0">0.45172855</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.76</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="CLUAP1" target="PSMD3">
+  <data key="d0">0.45141402</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="CLUAP1" target="CFAP20">
+  <data key="d0">0.45032433</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="CLUAP1" target="GSTM5">
+  <data key="d0">0.41093746</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.71</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="CLUAP1" target="IFT52">
+  <data key="d0">0.40562198</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="CLUAP1" target="HNF1B">
+  <data key="d0">0.39970323</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.35</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="CLUAP1" target="ANXA3">
+  <data key="d0">0.39782923</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="CLUAP1" target="KIFAP3">
+  <data key="d0">0.3900076</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="CLUAP1" target="PRKAR1A">
+  <data key="d0">0.38504258</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="CLUAP1" target="PEBP1">
+  <data key="d0">0.36468548</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="CLUAP1" target="RNPEP">
+  <data key="d0">0.35447645</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.64</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="CLUAP1" target="CSNK2B">
+  <data key="d0">0.32233924</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="CLUAP1" target="TUBB6">
+  <data key="d0">0.30711362</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TRAF3IP1" target="CYS1">
+  <data key="d0">0.6988243</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.27</data>
+  <data key="d3">22.0</data>
+</edge>
+<edge source="TRAF3IP1" target="CLIC1">
+  <data key="d0">0.66031516</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.87</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="TRAF3IP1" target="CDC20">
+  <data key="d0">0.46731916</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="TRAF3IP1" target="IFT20">
+  <data key="d0">0.38520175</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">89.0</data>
+</edge>
+<edge source="TRAF3IP1" target="BBS9">
+  <data key="d0">0.36278206</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TRAF3IP1" target="MOK">
+  <data key="d0">0.35604703</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TRAF3IP1" target="AIPL1">
+  <data key="d0">0.32133543</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT27" target="TUBE1">
+  <data key="d0">0.6967669</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.8</data>
+  <data key="d3">45.0</data>
+</edge>
+<edge source="IFT27" target="PPP6C">
+  <data key="d0">0.6698515</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.78</data>
+  <data key="d3">24.0</data>
+</edge>
+<edge source="IFT27" target="IFT25">
+  <data key="d0">0.654327</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.84</data>
+  <data key="d3">32.0</data>
+</edge>
+<edge source="IFT27" target="TBC1D7">
+  <data key="d0">0.5539813</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="IFT27" target="SH3GLB1">
+  <data key="d0">0.5508466</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">13.0</data>
+</edge>
+<edge source="IFT27" target="CLU">
+  <data key="d0">0.53662884</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.79</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="IFT27" target="KCTD10">
+  <data key="d0">0.5245273</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.74</data>
+  <data key="d3">30.0</data>
+</edge>
+<edge source="IFT27" target="DRG1">
+  <data key="d0">0.41278097</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.73</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT27" target="USH1G">
+  <data key="d0">0.37624213</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.71</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT27" target="ACR">
+  <data key="d0">0.37239954</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT27" target="CCDC78">
+  <data key="d0">0.35029727</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT27" target="CYLD">
+  <data key="d0">0.3261729</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.75</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS9" target="BBS8">
+  <data key="d0">0.6912346</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.65</data>
+  <data key="d3">31.0</data>
+</edge>
+<edge source="BBS9" target="BBS1">
+  <data key="d0">0.64633</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.52</data>
+  <data key="d3">57.0</data>
+</edge>
+<edge source="BBS9" target="BBS5">
+  <data key="d0">0.6214371</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.72</data>
+  <data key="d3">39.0</data>
+</edge>
+<edge source="BBS9" target="MED7">
+  <data key="d0">0.54697245</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.41</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="BBS9" target="BBS2">
+  <data key="d0">0.5230795</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.53</data>
+  <data key="d3">40.0</data>
+</edge>
+<edge source="BBS9" target="COPA">
+  <data key="d0">0.41989693</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS9" target="RSPH10B">
+  <data key="d0">0.40576124</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS9" target="C1orf87">
+  <data key="d0">0.35897014</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS9" target="SPAG8">
+  <data key="d0">0.33967826</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS9" target="DNAAF2">
+  <data key="d0">0.31236586</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.41</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="WDR19">
+  <data key="d0">0.6876721</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.55</data>
+  <data key="d3">47.0</data>
+</edge>
+<edge source="IFT122" target="WDR35">
+  <data key="d0">0.6582769</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">24.0</data>
+</edge>
+<edge source="IFT122" target="TTC21B">
+  <data key="d0">0.55645055</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.46</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT122" target="TTC21A">
+  <data key="d0">0.5519426</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.46</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT122" target="IFT140">
+  <data key="d0">0.52540433</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.44</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT122" target="RABL2B">
+  <data key="d0">0.47673714</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT122" target="RABL2A">
+  <data key="d0">0.46897858</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT122" target="TULP3">
+  <data key="d0">0.46840107</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.35</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="MPI">
+  <data key="d0">0.46416005</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.75</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="RAB34">
+  <data key="d0">0.43954402</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="TUB">
+  <data key="d0">0.40257215</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.34</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="AP2B1">
+  <data key="d0">0.39083967</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="CCP110">
+  <data key="d0">0.38522705</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.44</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="NEK8">
+  <data key="d0">0.381783</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.43</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="GMNC">
+  <data key="d0">0.34369287</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT122" target="MTREX">
+  <data key="d0">0.3324612</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR19" target="IFT122">
+  <data key="d0">0.6836468</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.55</data>
+  <data key="d3">30.0</data>
+</edge>
+<edge source="WDR19" target="BBS7">
+  <data key="d0">0.67365915</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.78</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="WDR19" target="IFT140">
+  <data key="d0">0.61810565</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.54</data>
+  <data key="d3">68.0</data>
+</edge>
+<edge source="WDR19" target="DRC3">
+  <data key="d0">0.36027864</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT52" target="IFT70B">
+  <data key="d0">0.67843467</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.77</data>
+  <data key="d3">153.0</data>
+</edge>
+<edge source="IFT52" target="IFT70A">
+  <data key="d0">0.66343486</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.76</data>
+  <data key="d3">112.0</data>
+</edge>
+<edge source="IFT52" target="IFT88">
+  <data key="d0">0.424556</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT52" target="CLUAP1">
+  <data key="d0">0.4096136</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT52" target="FARSB">
+  <data key="d0">0.40129772</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.43</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="IFT52" target="RACK1">
+  <data key="d0">0.38714585</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT52" target="LCP1">
+  <data key="d0">0.37030676</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT52" target="MAPKAP1">
+  <data key="d0">0.3372546</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT52" target="EGFR">
+  <data key="d0">0.3076044</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT70A" target="IFT88">
+  <data key="d0">0.6646243</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.59</data>
+  <data key="d3">35.0</data>
+</edge>
+<edge source="IFT70A" target="IFT52">
+  <data key="d0">0.6641053</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.76</data>
+  <data key="d3">182.0</data>
+</edge>
+<edge source="IFT70A" target="UBA52">
+  <data key="d0">0.5499107</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="PPP1CC">
+  <data key="d0">0.4473519</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="TFG">
+  <data key="d0">0.43008703</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="GALR3">
+  <data key="d0">0.39795324</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="SPESP1">
+  <data key="d0">0.3924649</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="CFAP36">
+  <data key="d0">0.3890867</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="DNAH10">
+  <data key="d0">0.3734562</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="PPP1CA">
+  <data key="d0">0.3540277</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="SPMIP6">
+  <data key="d0">0.33925477</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="C7orf57">
+  <data key="d0">0.32356545</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT70A" target="UBXN10">
+  <data key="d0">0.30098024</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="MCIDAS">
+  <data key="d0">0.66007113</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.68</data>
+  <data key="d3">58.0</data>
+</edge>
+<edge source="BBS5" target="GNAS">
+  <data key="d0">0.6363958</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.66</data>
+  <data key="d3">16.0</data>
+</edge>
+<edge source="BBS5" target="SRSF7">
+  <data key="d0">0.61226493</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.64</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="BBS5" target="BBS9">
+  <data key="d0">0.59391326</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.72</data>
+  <data key="d3">33.0</data>
+</edge>
+<edge source="BBS5" target="ENTR1">
+  <data key="d0">0.5870666</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.66</data>
+  <data key="d3">50.0</data>
+</edge>
+<edge source="BBS5" target="CMPK1">
+  <data key="d0">0.5784052</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.76</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="BBS5" target="SEMG1">
+  <data key="d0">0.55625033</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.65</data>
+  <data key="d3">23.0</data>
+</edge>
+<edge source="BBS5" target="TTBK2">
+  <data key="d0">0.54332566</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="BBS5" target="MLF2">
+  <data key="d0">0.5403463</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.62</data>
+  <data key="d3">15.0</data>
+</edge>
+<edge source="BBS5" target="MAK">
+  <data key="d0">0.5322961</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.66</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="BBS5" target="CILK1">
+  <data key="d0">0.526945</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.66</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="BBS5" target="HNRNPM">
+  <data key="d0">0.52688205</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="BBS5" target="RAB28">
+  <data key="d0">0.51721895</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.63</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="BBS5" target="GLI2">
+  <data key="d0">0.4957416</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="BBS5" target="TP73">
+  <data key="d0">0.47896805</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="BBS5" target="CCDC92">
+  <data key="d0">0.4474602</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="BBS5" target="UBXN11">
+  <data key="d0">0.4417846</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="NEK2">
+  <data key="d0">0.42534652</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="L2HGDH">
+  <data key="d0">0.42421007</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="FOXJ1">
+  <data key="d0">0.42182377</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="BBS5" target="COMT">
+  <data key="d0">0.39564496</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="TXNDC15">
+  <data key="d0">0.39513463</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="KCTD17">
+  <data key="d0">0.39116016</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="RFX7">
+  <data key="d0">0.38056606</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="DNAJC8">
+  <data key="d0">0.37083596</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="GNB1">
+  <data key="d0">0.3706965</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="PQBP1">
+  <data key="d0">0.37012985</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="LIMA1">
+  <data key="d0">0.358746</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="RFX2">
+  <data key="d0">0.34788528</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="PDHX">
+  <data key="d0">0.3377193</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="MYLIP">
+  <data key="d0">0.3366241</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="AKNA">
+  <data key="d0">0.32705563</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.64</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="ZIC2">
+  <data key="d0">0.32630768</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="LRGUK">
+  <data key="d0">0.3235105</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.39</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="NEK1">
+  <data key="d0">0.32309538</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.6</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="IGF1">
+  <data key="d0">0.31806207</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="PRDX3">
+  <data key="d0">0.31355488</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="SENP3">
+  <data key="d0">0.3126707</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="HNRNPK">
+  <data key="d0">0.30864927</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="HYLS1">
+  <data key="d0">0.3085819</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="BBS5" target="DBR1">
+  <data key="d0">0.3002203</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="IFT122">
+  <data key="d0">0.6455526</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">21.0</data>
+</edge>
+<edge source="WDR35" target="IFT43">
+  <data key="d0">0.5954744</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.41</data>
+  <data key="d3">79.0</data>
+</edge>
+<edge source="WDR35" target="DBR1">
+  <data key="d0">0.5346844</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="CATSPERB">
+  <data key="d0">0.45742375</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="HGS">
+  <data key="d0">0.3756727</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="NEK1">
+  <data key="d0">0.3308377</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="CDKL5">
+  <data key="d0">0.32434896</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="UBXN10">
+  <data key="d0">0.32040766</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.44</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="WDR35" target="DDX42">
+  <data key="d0">0.31823477</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="POC1A">
+  <data key="d0">0.6362975</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="RABL2B" target="IFT122">
+  <data key="d0">0.53002244</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">10.0</data>
+</edge>
+<edge source="RABL2B" target="CYS1">
+  <data key="d0">0.52547</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.66</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="RABL2B" target="PNP">
+  <data key="d0">0.4986905</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.72</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="PSMD6">
+  <data key="d0">0.49054864</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="RABL2B" target="CFAP97">
+  <data key="d0">0.4423532</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="RABL2B" target="DCP2">
+  <data key="d0">0.4392566</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="NUP35">
+  <data key="d0">0.4296482</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="PGAM5">
+  <data key="d0">0.42198226</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="NOTO">
+  <data key="d0">0.41458648</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="ACTL7A">
+  <data key="d0">0.38809472</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="FAIM">
+  <data key="d0">0.38406596</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="PALB2">
+  <data key="d0">0.36626667</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="TCHP">
+  <data key="d0">0.3644546</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="COPS8">
+  <data key="d0">0.35109696</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="KIF24">
+  <data key="d0">0.34527364</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="NEK1">
+  <data key="d0">0.34155902</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="CSNK2B">
+  <data key="d0">0.32806343</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="RABL2B" target="IFT56">
+  <data key="d0">0.31883588</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.47</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="LZTFL1" target="LZTFL1">
+  <data key="d0">0.6290676</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.43</data>
+  <data key="d3">160.0</data>
+</edge>
+<edge source="LZTFL1" target="CBY1">
+  <data key="d0">0.5200317</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.49</data>
+  <data key="d3">64.0</data>
+</edge>
+<edge source="LZTFL1" target="ENTR1">
+  <data key="d0">0.35342428</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.32</data>
+  <data key="d3">59.0</data>
+</edge>
+<edge source="IFT20" target="SUFU">
+  <data key="d0">0.6213019</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.52</data>
+  <data key="d3">18.0</data>
+</edge>
+<edge source="IFT20" target="PRMT1">
+  <data key="d0">0.5008938</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT20" target="TRAF3IP1">
+  <data key="d0">0.4524699</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">102.0</data>
+</edge>
+<edge source="IFT20" target="U2SURP">
+  <data key="d0">0.42216143</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="IFT20" target="CFAP299">
+  <data key="d0">0.4164617</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT20" target="FSD1">
+  <data key="d0">0.3887338</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT20" target="DYDC2">
+  <data key="d0">0.37193808</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.44</data>
+  <data key="d3">40.0</data>
+</edge>
+<edge source="IFT20" target="GPR88">
+  <data key="d0">0.35963228</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT20" target="ALPK1">
+  <data key="d0">0.35697094</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.49</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT20" target="ZBBX">
+  <data key="d0">0.35024807</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">35.0</data>
+</edge>
+<edge source="IFT20" target="KRT8">
+  <data key="d0">0.34957036</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">42.0</data>
+</edge>
+<edge source="IFT20" target="AKNA">
+  <data key="d0">0.3149338</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">43.0</data>
+</edge>
+<edge source="IFT20" target="CYLC2">
+  <data key="d0">0.30681902</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.54</data>
+  <data key="d3">21.0</data>
+</edge>
+<edge source="IFT140" target="WDR19">
+  <data key="d0">0.6170063</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.54</data>
+  <data key="d3">68.0</data>
+</edge>
+<edge source="IFT140" target="IFT122">
+  <data key="d0">0.5381653</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.44</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="IFT140" target="NSFL1C">
+  <data key="d0">0.3374557</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.36</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT140" target="MACF1">
+  <data key="d0">0.31421897</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.34</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT43" target="WDR35">
+  <data key="d0">0.5973592</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.42</data>
+  <data key="d3">69.0</data>
+</edge>
+<edge source="IFT43" target="LTA4H">
+  <data key="d0">0.56758153</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.71</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT43" target="WDR5">
+  <data key="d0">0.5420294</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.68</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT43" target="VHL">
+  <data key="d0">0.526164</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.61</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="IFT43" target="CFAP206">
+  <data key="d0">0.523655</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.58</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="IFT43" target="CSNK1D">
+  <data key="d0">0.5125944</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.57</data>
+  <data key="d3">13.0</data>
+</edge>
+<edge source="IFT43" target="CYRIB">
+  <data key="d0">0.51255965</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.67</data>
+  <data key="d3">7.0</data>
+</edge>
+<edge source="IFT43" target="ACR">
+  <data key="d0">0.51141804</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.55</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT43" target="MMP21">
+  <data key="d0">0.50229347</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.59</data>
+  <data key="d3">7.0</data>
+</edge>
+<edge source="IFT43" target="TTC21A">
+  <data key="d0">0.46250227</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.38</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT43" target="ACTR2">
+  <data key="d0">0.45503387</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT43" target="TTC21B">
+  <data key="d0">0.45264912</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.4</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT43" target="WDR77">
+  <data key="d0">0.45104665</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">7.0</data>
+</edge>
+<edge source="IFT43" target="RACK1">
+  <data key="d0">0.44604453</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.65</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT43" target="NSUN4">
+  <data key="d0">0.44453582</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT43" target="MAPK3">
+  <data key="d0">0.44102395</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="CDC20">
+  <data key="d0">0.43529466</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.5</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="BBS7">
+  <data key="d0">0.43480676</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT43" target="COP1">
+  <data key="d0">0.43273684</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="MOK">
+  <data key="d0">0.43265173</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="CTNNB1">
+  <data key="d0">0.4311003</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.51</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="P4HB">
+  <data key="d0">0.39961943</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.58</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="PRKACG">
+  <data key="d0">0.38673952</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.62</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="NME7">
+  <data key="d0">0.38619342</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT43" target="FSD1">
+  <data key="d0">0.3799893</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.46</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT43" target="CCNO">
+  <data key="d0">0.3756923</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.55</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="CFAP298">
+  <data key="d0">0.35816658</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.53</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT43" target="ZPBP">
+  <data key="d0">0.35551754</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT43" target="GANAB">
+  <data key="d0">0.35201633</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.61</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="HSP90AB1">
+  <data key="d0">0.34551102</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.4</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="PPIA">
+  <data key="d0">0.33336976</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.69</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="DNAJC8">
+  <data key="d0">0.3278349</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="DNAI3">
+  <data key="d0">0.32311347</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.42</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="TUBA8">
+  <data key="d0">0.31180626</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.59</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT43" target="PPP2R3C">
+  <data key="d0">0.30460078</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT43" target="TUB">
+  <data key="d0">0.30260053</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.39</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="INTS6">
+  <data key="d0">0.58277494</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.77</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="IFT22" target="DTYMK">
+  <data key="d0">0.57994014</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.76</data>
+  <data key="d3">21.0</data>
+</edge>
+<edge source="IFT22" target="PHB2">
+  <data key="d0">0.5231901</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.74</data>
+  <data key="d3">21.0</data>
+</edge>
+<edge source="IFT22" target="CELSR3">
+  <data key="d0">0.49117956</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.89</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="IFT22" target="WDR77">
+  <data key="d0">0.44720742</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="IFT22" target="RFX4">
+  <data key="d0">0.44263896</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.79</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="RPL9">
+  <data key="d0">0.42946887</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="SALL1">
+  <data key="d0">0.42600307</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.82</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="PPIA">
+  <data key="d0">0.4257262</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.72</data>
+  <data key="d3">1.0</data>
+</edge>
+<edge source="IFT22" target="TMED10">
+  <data key="d0">0.40286458</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">9.0</data>
+</edge>
+<edge source="IFT22" target="PPP1R7">
+  <data key="d0">0.3846583</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.66</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="PRICKLE2">
+  <data key="d0">0.37907928</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.77</data>
+  <data key="d3">11.0</data>
+</edge>
+<edge source="IFT22" target="NFIX">
+  <data key="d0">0.37656727</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.74</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="CELSR2">
+  <data key="d0">0.3551167</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.84</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="IZUMO4">
+  <data key="d0">0.3441477</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.67</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="CEP44">
+  <data key="d0">0.34261602</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="RFX7">
+  <data key="d0">0.31391227</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.78</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="CDK13">
+  <data key="d0">0.3092671</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.77</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT22" target="MED26">
+  <data key="d0">0.30474123</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.7</data>
+  <data key="d3">6.0</data>
+</edge>
+<edge source="TTC21B" target="IFT122">
+  <data key="d0">0.5571812</data>
+  <data key="d1">Medium</data>
+  <data key="d2">0.47</data>
+  <data key="d3">2.0</data>
+</edge>
+<edge source="TTC21B" target="IFT43">
+  <data key="d0">0.4627686</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.39</data>
+  <data key="d3">5.0</data>
+</edge>
+<edge source="TTC21B" target="MSN">
+  <data key="d0">0.39376527</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.56</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TTC21B" target="EZR">
+  <data key="d0">0.36315212</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TTC21B" target="HSPA8">
+  <data key="d0">0.36142102</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.63</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="TTC21B" target="TULP1">
+  <data key="d0">0.32547483</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.37</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT74" target="IFT81">
+  <data key="d0">0.38329783</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.32</data>
+  <data key="d3">168.0</data>
+</edge>
+<edge source="IFT74" target="CALR">
+  <data key="d0">0.36336923</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.57</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT74" target="TCTN2">
+  <data key="d0">0.3444206</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.45</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT74" target="P4HB">
+  <data key="d0">0.3254855</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.52</data>
+  <data key="d3">nan</data>
+</edge>
+<edge source="IFT74" target="IFT22">
+  <data key="d0">0.30857623</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.68</data>
+  <data key="d3">4.0</data>
+</edge>
+<edge source="IFT81" target="IFT74">
+  <data key="d0">0.38291755</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.33</data>
+  <data key="d3">134.0</data>
+</edge>
+<edge source="IFT81" target="IFT22">
+  <data key="d0">0.37549278</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.75</data>
+  <data key="d3">3.0</data>
+</edge>
+<edge source="IFT81" target="NUMB">
+  <data key="d0">0.34774804</data>
+  <data key="d1">Low</data>
+  <data key="d2">0.35</data>
+  <data key="d3">nan</data>
+</edge>
+</graph></graphml>

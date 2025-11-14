@@ -1,0 +1,211 @@
+================================================================================
+UPLOAD MISSING CIF FILES
+================================================================================
+
+✓ Found 500 CIF files already in Blob storage
+
+Found 47 missing CIF files to upload
+
+Breakdown by bait:
+  RABL2B: 19 files
+  BBIP1: 14 files
+  BBS9: 10 files
+  IFT172: 4 files
+
+[1/47] ID 952: IFT172 + IFT57
+  File: q9ug01_and_q9nwb7.cif
+  ✓ Uploaded (1.41 MB)
+
+[2/47] ID 953: IFT172 + IFT80
+  File: q9ug01_and_q9p2h3.cif
+  ✓ Uploaded (1.63 MB)
+
+[3/47] ID 954: IFT172 + CES1
+  File: q9ug01_and_p23141.cif
+  ✓ Uploaded (1.48 MB)
+
+[4/47] ID 955: IFT172 + ACSL3
+  File: q9ug01_and_o95573.cif
+  ✓ Uploaded (1.60 MB)
+
+[5/47] ID 956: RABL2B + POC1A
+  File: q9unt1_and_q8nbt0.cif
+  ✓ Uploaded (0.41 MB)
+
+[6/47] ID 957: RABL2B + IFT122
+  File: q9unt1_and_q9hbg6.cif
+  ✓ Uploaded (1.00 MB)
+
+[7/47] ID 958: RABL2B + CYS1
+  File: q9unt1_and_q717r9.cif
+  ✓ Uploaded (0.25 MB)
+
+[8/47] ID 959: RABL2B + PNP
+  File: q9unt1_and_p00491.cif
+  ✓ Uploaded (0.34 MB)
+
+[9/47] ID 960: RABL2B + PSMD6
+  File: q9unt1_and_q15008.cif
+  ✓ Uploaded (0.41 MB)
+
+[10/47] ID 961: RABL2B + CFAP97
+  File: q9unt1_and_q9p2b7.cif
+  ✓ Uploaded (0.50 MB)
+
+[11/47] ID 962: RABL2B + DCP2
+  File: q9unt1_and_q8iu60.cif
+  ✓ Uploaded (0.43 MB)
+
+[12/47] ID 963: RABL2B + NUP35
+  File: q9unt1_and_q8nfh5.cif
+  ✓ Uploaded (0.35 MB)
+
+[13/47] ID 964: RABL2B + PGAM5
+  File: q9unt1_and_q96hs1.cif
+  ✓ Uploaded (0.34 MB)
+
+[14/47] ID 965: RABL2B + NOTO
+  File: q9unt1_and_a8mtq0.cif
+  ✓ Uploaded (0.31 MB)
+
+[15/47] ID 966: RABL2B + ACTL7A
+  File: q9unt1_and_q9y615.cif
+  ✓ Uploaded (0.43 MB)
+
+[16/47] ID 967: RABL2B + FAIM
+  File: q9unt1_and_q9nvq4.cif
+  ✓ Uploaded (0.27 MB)
+
+[17/47] ID 968: RABL2B + PALB2
+  File: q9unt1_and_q86yc2.cif
+  ✓ Uploaded (0.94 MB)
+
+[18/47] ID 969: RABL2B + TCHP
+  File: q9unt1_and_q9bt92.cif
+  ✓ Uploaded (0.50 MB)
+
+[19/47] ID 970: RABL2B + COPS8
+  File: q9unt1_and_q99627.cif
+  ✓ Uploaded (0.29 MB)
+
+[20/47] ID 971: RABL2B + KIF24
+  File: q9unt1_and_q5t7b8.cif
+  ✓ Uploaded (1.06 MB)
+
+[21/47] ID 972: RABL2B + NEK1
+  File: q9unt1_and_q96py6.cif
+  ✓ Uploaded (1.00 MB)
+
+[22/47] ID 973: RABL2B + CSNK2B
+  File: q9unt1_and_p67870.cif
+  ✓ Uploaded (0.30 MB)
+
+[23/47] ID 974: RABL2B + IFT56
+  File: q9unt1_and_a0avf1.cif
+  ✓ Uploaded (0.52 MB)
+
+[24/47] ID 985: BBS9 + TTC8
+  File: q3syg4_and_q8tam2.cif
+  ✓ Uploaded (0.93 MB)
+
+[25/47] ID 986: BBS9 + BBS1
+  File: q3syg4_and_q8nfj9.cif
+  ✓ Uploaded (0.95 MB)
+
+[26/47] ID 987: BBS9 + BBS5
+  File: q3syg4_and_q8n3i7.cif
+  ✓ Uploaded (0.79 MB)
+
+[27/47] ID 988: BBS9 + MED7
+  File: q3syg4_and_o43513.cif
+  ✓ Uploaded (0.72 MB)
+
+[28/47] ID 989: BBS9 + BBS2
+  File: q3syg4_and_q9bxc9.cif
+  ✓ Uploaded (1.03 MB)
+
+[29/47] ID 990: BBS9 + COPA
+  File: q3syg4_and_p53621.cif
+  ✓ Uploaded (1.41 MB)
+
+[30/47] ID 991: BBS9 + RSPH10B
+  File: q3syg4_and_p0c881.cif
+  ✓ Uploaded (1.15 MB)
+
+[31/47] ID 992: BBS9 + C1orf87
+  File: q3syg4_and_q8n0u7.cif
+  ✓ Uploaded (0.93 MB)
+
+[32/47] ID 993: BBS9 + SPAG8
+  File: q3syg4_and_q99932.cif
+  ✓ Uploaded (0.88 MB)
+
+[33/47] ID 994: BBS9 + DNAAF2
+  File: q3syg4_and_q9nvr5.cif
+  ✓ Uploaded (1.10 MB)
+
+[34/47] ID 995: BBIP1 + TTC8
+  File: a8mtz0_and_q8tam2.cif
+  ✓ Uploaded (0.41 MB)
+
+[35/47] ID 996: BBIP1 + BBS4
+  File: a8mtz0_and_q96rk4.cif
+  ✓ Uploaded (0.40 MB)
+
+[36/47] ID 997: BBIP1 + IFT25
+  File: a8mtz0_and_q9y547.cif
+  ✓ Uploaded (0.16 MB)
+
+[37/47] ID 998: BBIP1 + ELOC
+  File: a8mtz0_and_q15369.cif
+  ✓ Uploaded (0.14 MB)
+
+[38/47] ID 999: BBIP1 + VHL
+  File: a8mtz0_and_p40337.cif
+  ✓ Uploaded (0.20 MB)
+
+[39/47] ID 1000: BBIP1 + CDC20B
+  File: a8mtz0_and_q86y33.cif
+  ✓ Uploaded (0.39 MB)
+
+[40/47] ID 1001: BBIP1 + TF
+  File: a8mtz0_and_p02787.cif
+  ✓ Uploaded (0.50 MB)
+
+[41/47] ID 1002: BBIP1 + FNDC8
+  File: a8mtz0_and_q8tc99.cif
+  ✓ Uploaded (0.27 MB)
+
+[42/47] ID 1003: BBIP1 + PRPS2
+  File: a8mtz0_and_p11908.cif
+  ✓ Uploaded (0.26 MB)
+
+[43/47] ID 1004: BBIP1 + MMP21
+  File: a8mtz0_and_q8n119.cif
+  ✓ Uploaded (0.44 MB)
+
+[44/47] ID 1005: BBIP1 + STUB1
+  File: a8mtz0_and_q9une7.cif
+  ✓ Uploaded (0.26 MB)
+
+[45/47] ID 1006: BBIP1 + MPI
+  File: a8mtz0_and_p34949.cif
+  ✓ Uploaded (0.33 MB)
+
+[46/47] ID 1007: BBIP1 + ACTL7A
+  File: a8mtz0_and_q9y615.cif
+  ✓ Uploaded (0.34 MB)
+
+[47/47] ID 1008: BBIP1 + RAB8A
+  File: a8mtz0_and_p61006.cif
+  ✓ Uploaded (0.20 MB)
+
+================================================================================
+UPLOAD SUMMARY
+================================================================================
+Total files: 47
+Uploaded: 47
+Failed: 0
+Size: 29.93 MB
+
+✅ Upload complete!

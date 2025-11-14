@@ -1,0 +1,48 @@
+================================================================================
+GENERATE CURATED CIF FILE MANIFEST
+================================================================================
+
+📊 Querying database for interactions...
+✓ Found 548 interactions with source paths
+
+📂 Processing source paths...
+
+  [50/548] Processed: 49 found, 0 not found, 0 errors
+  [100/548] Processed: 99 found, 0 not found, 0 errors
+  [150/548] Processed: 149 found, 0 not found, 0 errors
+  [200/548] Processed: 199 found, 0 not found, 0 errors
+  [250/548] Processed: 249 found, 0 not found, 0 errors
+  [300/548] Processed: 299 found, 0 not found, 0 errors
+  [350/548] Processed: 349 found, 0 not found, 0 errors
+  [400/548] Processed: 399 found, 0 not found, 0 errors
+  [450/548] Processed: 449 found, 0 not found, 0 errors
+  [500/548] Processed: 499 found, 0 not found, 0 errors
+
+================================================================================
+SUMMARY
+================================================================================
+Total interactions: 548
+Found: 548 (100.0%)
+Not found: 0 (0.0%)
+Errors: 0 (0.0%)
+
+✅ Manifest saved to: /emcc/au14762/elo_lab/SCRIPTS/Global_Analysis/IFT_Interactors_paper/cif_manifest.json
+
+📋 Review this file and verify the paths are correct!
+
+Sample found entries:
+  ID 1: IFT56 + IFT46
+    Directory: a0avf1_and_q9nqc8
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_model.cif
+
+  ID 2: IFT56 + DNAJC8
+    Directory: a0avf1_and_o75937
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_model.cif
+
+  ID 3: IFT56 + UBXN10
+    Directory: a0avf1_and_q96lj8
+    CIF: /emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_model.cif
+
+================================================================================
+✅ COMPLETE - Review cif_manifest.json before proceeding
+================================================================================

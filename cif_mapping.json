@@ -1,0 +1,3515 @@
+{
+  "generated_at": "2025-11-11T07:32:12.724Z",
+  "total_interactions": 548,
+  "found_count": 329,
+  "missing_count": 219,
+  "mappings": {
+    "1": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9nqc8/a0avf1_and_q9nqc8_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9nqc8"
+    },
+    "2": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o75937/a0avf1_and_o75937_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_o75937"
+    },
+    "3": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96lj8/a0avf1_and_q96lj8_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q96lj8"
+    },
+    "4": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p06748/a0avf1_and_p06748_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p06748/a0avf1_and_p06748_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p06748"
+    },
+    "5": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p23919/a0avf1_and_p23919_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p23919/a0avf1_and_p23919_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p23919"
+    },
+    "6": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8ww14/a0avf1_and_q8ww14_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8ww14/a0avf1_and_q8ww14_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q8ww14"
+    },
+    "7": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9p2t0/a0avf1_and_q9p2t0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9p2t0/a0avf1_and_q9p2t0_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9p2t0"
+    },
+    "8": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96ag4/a0avf1_and_q96ag4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q96ag4/a0avf1_and_q96ag4_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q96ag4"
+    },
+    "9": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p00505/a0avf1_and_p00505_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p00505/a0avf1_and_p00505_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p00505"
+    },
+    "10": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9ulc3/a0avf1_and_q9ulc3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9ulc3/a0avf1_and_q9ulc3_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9ulc3"
+    },
+    "11": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86yc2/a0avf1_and_q86yc2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86yc2/a0avf1_and_q86yc2_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q86yc2"
+    },
+    "12": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p24752/a0avf1_and_p24752_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p24752/a0avf1_and_p24752_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p24752"
+    },
+    "13": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15182/a0avf1_and_o15182_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15182/a0avf1_and_o15182_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_o15182"
+    },
+    "14": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p55786/a0avf1_and_p55786_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p55786/a0avf1_and_p55786_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p55786"
+    },
+    "15": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p60953/a0avf1_and_p60953_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p60953/a0avf1_and_p60953_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p60953"
+    },
+    "16": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9upy8/a0avf1_and_q9upy8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9upy8/a0avf1_and_q9upy8_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9upy8"
+    },
+    "17": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15691/a0avf1_and_q15691_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15691/a0avf1_and_q15691_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q15691"
+    },
+    "18": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q16566/a0avf1_and_q16566_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q16566/a0avf1_and_q16566_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q16566"
+    },
+    "19": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6uw49/a0avf1_and_q6uw49_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6uw49/a0avf1_and_q6uw49_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q6uw49"
+    },
+    "20": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95409/a0avf1_and_o95409_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95409/a0avf1_and_o95409_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_o95409"
+    },
+    "21": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p11310/a0avf1_and_p11310_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p11310/a0avf1_and_p11310_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p11310"
+    },
+    "22": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p0dp23/a0avf1_and_p0dp23_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p0dp23/a0avf1_and_p0dp23_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p0dp23"
+    },
+    "23": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9y4l1/a0avf1_and_q9y4l1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9y4l1/a0avf1_and_q9y4l1_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9y4l1"
+    },
+    "24": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95402/a0avf1_and_o95402_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o95402/a0avf1_and_o95402_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_o95402"
+    },
+    "25": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9uhg0/a0avf1_and_q9uhg0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q9uhg0/a0avf1_and_q9uhg0_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q9uhg0"
+    },
+    "26": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p51149/a0avf1_and_p51149_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p51149/a0avf1_and_p51149_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p51149"
+    },
+    "27": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8n119/a0avf1_and_q8n119_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q8n119/a0avf1_and_q8n119_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q8n119"
+    },
+    "28": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15154/a0avf1_and_q15154_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q15154/a0avf1_and_q15154_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q15154"
+    },
+    "29": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86y33/a0avf1_and_q86y33_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q86y33/a0avf1_and_q86y33_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q86y33"
+    },
+    "30": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p62805/a0avf1_and_p62805_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p62805/a0avf1_and_p62805_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p62805"
+    },
+    "31": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p54257/a0avf1_and_p54257_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p54257/a0avf1_and_p54257_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p54257"
+    },
+    "32": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p61106/a0avf1_and_p61106_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_p61106/a0avf1_and_p61106_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_p61106"
+    },
+    "33": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15144/a0avf1_and_o15144_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_o15144/a0avf1_and_o15144_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_o15144"
+    },
+    "34": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6iq55/a0avf1_and_q6iq55_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/a0avf1_and_q6iq55/a0avf1_and_q6iq55_confidences.json",
+      "bait_directory": "A0AVF1_IFT56",
+      "interaction_directory": "a0avf1_and_q6iq55"
+    },
+    "35": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8n4p2/q13099_and_q8n4p2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8n4p2/q13099_and_q8n4p2_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q8n4p2"
+    },
+    "36": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q86wt1/q13099_and_q86wt1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q86wt1/q13099_and_q86wt1_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q86wt1"
+    },
+    "37": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q92845/q13099_and_q92845_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q92845/q13099_and_q92845_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q92845"
+    },
+    "38": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8nfh5/q13099_and_q8nfh5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8nfh5/q13099_and_q8nfh5_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q8nfh5"
+    },
+    "39": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_p50750/q13099_and_p50750_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_p50750/q13099_and_p50750_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_p50750"
+    },
+    "40": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q9y366/q13099_and_q9y366_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q9y366/q13099_and_q9y366_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q9y366"
+    },
+    "41": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8neg2/q13099_and_q8neg2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q8neg2/q13099_and_q8neg2_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q8neg2"
+    },
+    "42": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_p53621/q13099_and_p53621_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_p53621/q13099_and_p53621_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_p53621"
+    },
+    "43": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q9uif8/q13099_and_q9uif8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_q9uif8/q13099_and_q9uif8_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_q9uif8"
+    },
+    "44": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_o95922/q13099_and_o95922_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q13099_IFT88/AF3/q13099_and_o95922/q13099_and_o95922_confidences.json",
+      "bait_directory": "Q13099_IFT88",
+      "interaction_directory": "q13099_and_o95922"
+    },
+    "45": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_q9hbg6",
+      "error": "CIF file not found"
+    },
+    "46": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_q96ft9",
+      "error": "CIF file not found"
+    },
+    "47": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_p26038",
+      "error": "CIF file not found"
+    },
+    "48": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_p15311",
+      "error": "CIF file not found"
+    },
+    "49": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_p11142",
+      "error": "CIF file not found"
+    },
+    "50": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q7z4l5_and_o00294",
+      "error": "CIF file not found"
+    },
+    "51": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q13099",
+      "error": "CIF file not found"
+    },
+    "52": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q9y366",
+      "error": "CIF file not found"
+    },
+    "53": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_p62987",
+      "error": "CIF file not found"
+    },
+    "54": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_p36873",
+      "error": "CIF file not found"
+    },
+    "55": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q92734",
+      "error": "CIF file not found"
+    },
+    "56": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_o60755",
+      "error": "CIF file not found"
+    },
+    "57": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q6uw49",
+      "error": "CIF file not found"
+    },
+    "58": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q96g28",
+      "error": "CIF file not found"
+    },
+    "59": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q8ivf4",
+      "error": "CIF file not found"
+    },
+    "60": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_p62136",
+      "error": "CIF file not found"
+    },
+    "61": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q8ncr6",
+      "error": "CIF file not found"
+    },
+    "62": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q8neg2",
+      "error": "CIF file not found"
+    },
+    "63": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q86wt1_and_q96lj8",
+      "error": "CIF file not found"
+    },
+    "64": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9umx1/q8iy31_and_q9umx1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9umx1/q8iy31_and_q9umx1_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q9umx1"
+    },
+    "65": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q99873/q8iy31_and_q99873_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q99873/q8iy31_and_q99873_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q99873"
+    },
+    "66": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q8tdr0/q8iy31_and_q8tdr0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q8tdr0/q8iy31_and_q8tdr0_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q8tdr0"
+    },
+    "67": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_o15042/q8iy31_and_o15042_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_o15042/q8iy31_and_o15042_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_o15042"
+    },
+    "68": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q6v702/q8iy31_and_q6v702_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q6v702/q8iy31_and_q6v702_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q6v702"
+    },
+    "69": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9btv5/q8iy31_and_q9btv5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9btv5/q8iy31_and_q9btv5_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q9btv5"
+    },
+    "70": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q96im9/q8iy31_and_q96im9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q96im9/q8iy31_and_q96im9_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q96im9"
+    },
+    "71": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9gzn0/q8iy31_and_q9gzn0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q9gzn0/q8iy31_and_q9gzn0_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q9gzn0"
+    },
+    "72": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q96qp1/q8iy31_and_q96qp1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q96qp1/q8iy31_and_q96qp1_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q96qp1"
+    },
+    "73": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_a8mt70/q8iy31_and_a8mt70_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_a8mt70/q8iy31_and_a8mt70_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_a8mt70"
+    },
+    "74": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_p05787/q8iy31_and_p05787_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_p05787/q8iy31_and_p05787_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_p05787"
+    },
+    "75": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q7z591/q8iy31_and_q7z591_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q7z591/q8iy31_and_q7z591_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q7z591"
+    },
+    "76": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q14093/q8iy31_and_q14093_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IY31_IFT20/AF3/q8iy31_and_q14093/q8iy31_and_q14093_confidences.json",
+      "bait_directory": "Q8IY31_IFT20",
+      "interaction_directory": "q8iy31_and_q14093"
+    },
+    "77": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q13099",
+      "error": "CIF file not found"
+    },
+    "78": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q9y366",
+      "error": "CIF file not found"
+    },
+    "79": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p62987",
+      "error": "CIF file not found"
+    },
+    "80": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p13667",
+      "error": "CIF file not found"
+    },
+    "81": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q8ivf4",
+      "error": "CIF file not found"
+    },
+    "82": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p50607",
+      "error": "CIF file not found"
+    },
+    "83": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q8iw35",
+      "error": "CIF file not found"
+    },
+    "84": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p37802",
+      "error": "CIF file not found"
+    },
+    "85": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q6j272",
+      "error": "CIF file not found"
+    },
+    "86": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q8wvs4",
+      "error": "CIF file not found"
+    },
+    "87": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_o60755",
+      "error": "CIF file not found"
+    },
+    "88": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q96rt7",
+      "error": "CIF file not found"
+    },
+    "89": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p35408",
+      "error": "CIF file not found"
+    },
+    "90": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_p47897",
+      "error": "CIF file not found"
+    },
+    "91": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q6uw49",
+      "error": "CIF file not found"
+    },
+    "92": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q5tid7",
+      "error": "CIF file not found"
+    },
+    "93": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8n4p2_and_q8ncr6",
+      "error": "CIF file not found"
+    },
+    "94": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8nez3_and_q9hbg6",
+      "error": "CIF file not found"
+    },
+    "95": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8nez3_and_q8iwz6",
+      "error": "CIF file not found"
+    },
+    "96": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8nez3_and_q96ry7",
+      "error": "CIF file not found"
+    },
+    "97": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8nez3_and_q9h069",
+      "error": "CIF file not found"
+    },
+    "98": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q717r9",
+      "error": "CIF file not found"
+    },
+    "99": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_o00299",
+      "error": "CIF file not found"
+    },
+    "100": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q12834",
+      "error": "CIF file not found"
+    },
+    "101": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q8iy31",
+      "error": "CIF file not found"
+    },
+    "102": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q3syg4",
+      "error": "CIF file not found"
+    },
+    "103": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q9uq07",
+      "error": "CIF file not found"
+    },
+    "104": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tdr0_and_q9nzn9",
+      "error": "CIF file not found"
+    },
+    "105": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_q96lb3/q8wya0_and_q96lb3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_q96lb3/q8wya0_and_q96lb3_confidences.json",
+      "bait_directory": "Q8WYA0_IFT81",
+      "interaction_directory": "q8wya0_and_q96lb3"
+    },
+    "106": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_q9h7x7/q8wya0_and_q9h7x7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_q9h7x7/q8wya0_and_q9h7x7_confidences.json",
+      "bait_directory": "Q8WYA0_IFT81",
+      "interaction_directory": "q8wya0_and_q9h7x7"
+    },
+    "107": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_p49757/q8wya0_and_p49757_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8WYA0_IFT81/AF3/q8wya0_and_p49757/q8wya0_and_p49757_confidences.json",
+      "bait_directory": "Q8WYA0_IFT81",
+      "interaction_directory": "q8wya0_and_p49757"
+    },
+    "108": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9p2h3",
+      "error": "CIF file not found"
+    },
+    "109": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p31937",
+      "error": "CIF file not found"
+    },
+    "110": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q86y33",
+      "error": "CIF file not found"
+    },
+    "111": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9nwb7",
+      "error": "CIF file not found"
+    },
+    "112": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p28161",
+      "error": "CIF file not found"
+    },
+    "113": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_o43242",
+      "error": "CIF file not found"
+    },
+    "114": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9y6a4",
+      "error": "CIF file not found"
+    },
+    "115": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p46439",
+      "error": "CIF file not found"
+    },
+    "116": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9y366",
+      "error": "CIF file not found"
+    },
+    "117": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p35680",
+      "error": "CIF file not found"
+    },
+    "118": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p12429",
+      "error": "CIF file not found"
+    },
+    "119": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q92845",
+      "error": "CIF file not found"
+    },
+    "120": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p10644",
+      "error": "CIF file not found"
+    },
+    "121": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p30086",
+      "error": "CIF file not found"
+    },
+    "122": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9h4a4",
+      "error": "CIF file not found"
+    },
+    "123": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_p67870",
+      "error": "CIF file not found"
+    },
+    "124": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q96aj1_and_q9buf5",
+      "error": "CIF file not found"
+    },
+    "125": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9p2l0/q96ft9_and_q9p2l0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9p2l0/q96ft9_and_q9p2l0_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9p2l0"
+    },
+    "126": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p09960/q96ft9_and_p09960_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p09960/q96ft9_and_p09960_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p09960"
+    },
+    "127": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p61964/q96ft9_and_p61964_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p61964/q96ft9_and_p61964_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p61964"
+    },
+    "128": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p40337/q96ft9_and_p40337_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p40337/q96ft9_and_p40337_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p40337"
+    },
+    "129": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iyr0/q96ft9_and_q8iyr0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iyr0/q96ft9_and_q8iyr0_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8iyr0"
+    },
+    "130": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p48730/q96ft9_and_p48730_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p48730/q96ft9_and_p48730_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p48730"
+    },
+    "131": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9nuq9/q96ft9_and_q9nuq9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9nuq9/q96ft9_and_q9nuq9_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9nuq9"
+    },
+    "132": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p10323/q96ft9_and_p10323_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p10323/q96ft9_and_p10323_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p10323"
+    },
+    "133": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8n119/q96ft9_and_q8n119_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8n119/q96ft9_and_q8n119_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8n119"
+    },
+    "134": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8ndw8/q96ft9_and_q8ndw8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8ndw8/q96ft9_and_q8ndw8_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8ndw8"
+    },
+    "135": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p61160/q96ft9_and_p61160_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p61160/q96ft9_and_p61160_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p61160"
+    },
+    "136": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q7z4l5/q96ft9_and_q7z4l5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q7z4l5/q96ft9_and_q7z4l5_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q7z4l5"
+    },
+    "137": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9bqa1/q96ft9_and_q9bqa1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9bqa1/q96ft9_and_q9bqa1_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9bqa1"
+    },
+    "138": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p63244/q96ft9_and_p63244_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p63244/q96ft9_and_p63244_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p63244"
+    },
+    "139": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q96cb9/q96ft9_and_q96cb9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q96cb9/q96ft9_and_q96cb9_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q96cb9"
+    },
+    "140": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p27361/q96ft9_and_p27361_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p27361/q96ft9_and_p27361_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p27361"
+    },
+    "141": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q12834/q96ft9_and_q12834_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q12834/q96ft9_and_q12834_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q12834"
+    },
+    "142": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iwz6/q96ft9_and_q8iwz6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iwz6/q96ft9_and_q8iwz6_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8iwz6"
+    },
+    "143": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8nhy2/q96ft9_and_q8nhy2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8nhy2/q96ft9_and_q8nhy2_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8nhy2"
+    },
+    "144": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9uq07/q96ft9_and_q9uq07_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9uq07/q96ft9_and_q9uq07_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9uq07"
+    },
+    "145": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p35222/q96ft9_and_p35222_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p35222/q96ft9_and_p35222_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p35222"
+    },
+    "146": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p07237/q96ft9_and_p07237_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p07237/q96ft9_and_p07237_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p07237"
+    },
+    "147": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p22612/q96ft9_and_p22612_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p22612/q96ft9_and_p22612_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p22612"
+    },
+    "148": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9y5b8/q96ft9_and_q9y5b8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9y5b8/q96ft9_and_q9y5b8_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9y5b8"
+    },
+    "149": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9btv5/q96ft9_and_q9btv5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9btv5/q96ft9_and_q9btv5_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9btv5"
+    },
+    "150": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p22674/q96ft9_and_p22674_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p22674/q96ft9_and_p22674_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p22674"
+    },
+    "151": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p57076/q96ft9_and_p57076_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p57076/q96ft9_and_p57076_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p57076"
+    },
+    "152": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9bs86/q96ft9_and_q9bs86_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9bs86/q96ft9_and_q9bs86_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9bs86"
+    },
+    "153": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q14697/q96ft9_and_q14697_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q14697/q96ft9_and_q14697_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q14697"
+    },
+    "154": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p08238/q96ft9_and_p08238_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p08238/q96ft9_and_p08238_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p08238"
+    },
+    "155": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p62937/q96ft9_and_p62937_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p62937/q96ft9_and_p62937_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p62937"
+    },
+    "156": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_o75937/q96ft9_and_o75937_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_o75937/q96ft9_and_o75937_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_o75937"
+    },
+    "157": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iwg1/q96ft9_and_q8iwg1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q8iwg1/q96ft9_and_q8iwg1_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q8iwg1"
+    },
+    "158": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9ny65/q96ft9_and_q9ny65_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q9ny65/q96ft9_and_q9ny65_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q9ny65"
+    },
+    "159": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q969q6/q96ft9_and_q969q6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_q969q6/q96ft9_and_q969q6_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_q969q6"
+    },
+    "160": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p50607/q96ft9_and_p50607_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96FT9_IFT43/AF3/q96ft9_and_p50607/q96ft9_and_p50607_confidences.json",
+      "bait_directory": "Q96FT9_IFT43",
+      "interaction_directory": "q96ft9_and_p50607"
+    },
+    "161": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q8wya0/q96lb3_and_q8wya0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q8wya0/q96lb3_and_q8wya0_confidences.json",
+      "bait_directory": "Q96LB3_IFT74",
+      "interaction_directory": "q96lb3_and_q8wya0"
+    },
+    "162": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_p27797/q96lb3_and_p27797_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_p27797/q96lb3_and_p27797_confidences.json",
+      "bait_directory": "Q96LB3_IFT74",
+      "interaction_directory": "q96lb3_and_p27797"
+    },
+    "163": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q96gx1/q96lb3_and_q96gx1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q96gx1/q96lb3_and_q96gx1_confidences.json",
+      "bait_directory": "Q96LB3_IFT74",
+      "interaction_directory": "q96lb3_and_q96gx1"
+    },
+    "164": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_p07237/q96lb3_and_p07237_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_p07237/q96lb3_and_p07237_confidences.json",
+      "bait_directory": "Q96LB3_IFT74",
+      "interaction_directory": "q96lb3_and_p07237"
+    },
+    "165": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q9h7x7/q96lb3_and_q9h7x7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96LB3_IFT74/AF3/q96lb3_and_q9h7x7/q96lb3_and_q9h7x7_confidences.json",
+      "bait_directory": "Q96LB3_IFT74",
+      "interaction_directory": "q96lb3_and_q9h7x7"
+    },
+    "166": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q8nez3/q96ry7_and_q8nez3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q8nez3/q96ry7_and_q8nez3_confidences.json",
+      "bait_directory": "Q96RY7_IFT140",
+      "interaction_directory": "q96ry7_and_q8nez3"
+    },
+    "167": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q9hbg6/q96ry7_and_q9hbg6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q9hbg6/q96ry7_and_q9hbg6_confidences.json",
+      "bait_directory": "Q96RY7_IFT140",
+      "interaction_directory": "q96ry7_and_q9hbg6"
+    },
+    "168": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q9unz2/q96ry7_and_q9unz2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_q9unz2/q96ry7_and_q9unz2_confidences.json",
+      "bait_directory": "Q96RY7_IFT140",
+      "interaction_directory": "q96ry7_and_q9unz2"
+    },
+    "169": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_o94854/q96ry7_and_o94854_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RY7_IFT140/AF3/q96ry7_and_o94854/q96ry7_and_o94854_confidences.json",
+      "bait_directory": "Q96RY7_IFT140",
+      "interaction_directory": "q96ry7_and_o94854"
+    },
+    "170": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9ujt0/q9bw83_and_q9ujt0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9ujt0/q9bw83_and_q9ujt0_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9ujt0"
+    },
+    "171": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_o00743/q9bw83_and_o00743_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_o00743/q9bw83_and_o00743_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_o00743"
+    },
+    "172": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y547/q9bw83_and_q9y547_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y547/q9bw83_and_q9y547_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9y547"
+    },
+    "173": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9p0n9/q9bw83_and_q9p0n9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9p0n9/q9bw83_and_q9p0n9_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9p0n9"
+    },
+    "174": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y371/q9bw83_and_q9y371_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y371/q9bw83_and_q9y371_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9y371"
+    },
+    "175": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_p10909/q9bw83_and_p10909_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_p10909/q9bw83_and_p10909_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_p10909"
+    },
+    "176": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9h3f6/q9bw83_and_q9h3f6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9h3f6/q9bw83_and_q9h3f6_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9h3f6"
+    },
+    "177": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y295/q9bw83_and_q9y295_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9y295/q9bw83_and_q9y295_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9y295"
+    },
+    "178": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q495m9/q9bw83_and_q495m9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q495m9/q9bw83_and_q495m9_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q495m9"
+    },
+    "179": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_p10323/q9bw83_and_p10323_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_p10323/q9bw83_and_p10323_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_p10323"
+    },
+    "180": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_a2idd5/q9bw83_and_a2idd5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_a2idd5/q9bw83_and_a2idd5_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_a2idd5"
+    },
+    "181": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9nqc7/q9bw83_and_q9nqc7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BW83_IFT27/AF3/q9bw83_and_q9nqc7/q9bw83_and_q9nqc7_confidences.json",
+      "bait_directory": "Q9BW83_IFT27",
+      "interaction_directory": "q9bw83_and_q9nqc7"
+    },
+    "182": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9ul03/q9h7x7_and_q9ul03_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9ul03/q9h7x7_and_q9ul03_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9ul03"
+    },
+    "183": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p23919/q9h7x7_and_p23919_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p23919/q9h7x7_and_p23919_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_p23919"
+    },
+    "184": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q99623/q9h7x7_and_q99623_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q99623/q9h7x7_and_q99623_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q99623"
+    },
+    "185": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9nyq7/q9h7x7_and_q9nyq7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9nyq7/q9h7x7_and_q9nyq7_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9nyq7"
+    },
+    "186": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9bqa1/q9h7x7_and_q9bqa1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9bqa1/q9h7x7_and_q9bqa1_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9bqa1"
+    },
+    "187": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q33e94/q9h7x7_and_q33e94_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q33e94/q9h7x7_and_q33e94_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q33e94"
+    },
+    "188": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p32969/q9h7x7_and_p32969_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p32969/q9h7x7_and_p32969_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_p32969"
+    },
+    "189": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9nsc2/q9h7x7_and_q9nsc2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9nsc2/q9h7x7_and_q9nsc2_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9nsc2"
+    },
+    "190": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p62937/q9h7x7_and_p62937_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p62937/q9h7x7_and_p62937_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_p62937"
+    },
+    "191": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p49755/q9h7x7_and_p49755_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_p49755/q9h7x7_and_p49755_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_p49755"
+    },
+    "192": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q15435/q9h7x7_and_q15435_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q15435/q9h7x7_and_q15435_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q15435"
+    },
+    "193": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q7z3g6/q9h7x7_and_q7z3g6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q7z3g6/q9h7x7_and_q7z3g6_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q7z3g6"
+    },
+    "194": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q14938/q9h7x7_and_q14938_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q14938/q9h7x7_and_q14938_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q14938"
+    },
+    "195": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9hcu4/q9h7x7_and_q9hcu4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9hcu4/q9h7x7_and_q9hcu4_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9hcu4"
+    },
+    "196": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q1zyl8/q9h7x7_and_q1zyl8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q1zyl8/q9h7x7_and_q1zyl8_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q1zyl8"
+    },
+    "197": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9c0f1/q9h7x7_and_q9c0f1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q9c0f1/q9h7x7_and_q9c0f1_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q9c0f1"
+    },
+    "198": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q2khr2/q9h7x7_and_q2khr2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q2khr2/q9h7x7_and_q2khr2_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q2khr2"
+    },
+    "199": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q14004/q9h7x7_and_q14004_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_q14004/q9h7x7_and_q14004_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_q14004"
+    },
+    "200": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_o95402/q9h7x7_and_o95402_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9H7X7_IFT22/AF3/q9h7x7_and_o95402/q9h7x7_and_o95402_confidences.json",
+      "bait_directory": "Q9H7X7_IFT22",
+      "interaction_directory": "q9h7x7_and_o95402"
+    },
+    "201": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q8nez3/q9hbg6_and_q8nez3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q8nez3/q9hbg6_and_q8nez3_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q8nez3"
+    },
+    "202": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9p2l0/q9hbg6_and_q9p2l0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9p2l0/q9hbg6_and_q9p2l0_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q9p2l0"
+    },
+    "203": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q7z4l5/q9hbg6_and_q7z4l5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q7z4l5/q9hbg6_and_q7z4l5_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q7z4l5"
+    },
+    "204": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q8ndw8/q9hbg6_and_q8ndw8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q8ndw8/q9hbg6_and_q8ndw8_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q8ndw8"
+    },
+    "205": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q96ry7/q9hbg6_and_q96ry7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q96ry7/q9hbg6_and_q96ry7_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q96ry7"
+    },
+    "206": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9unt1/q9hbg6_and_q9unt1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9unt1/q9hbg6_and_q9unt1_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q9unt1"
+    },
+    "207": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9ubk7/q9hbg6_and_q9ubk7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q9ubk7/q9hbg6_and_q9ubk7_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q9ubk7"
+    },
+    "208": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_o75386/q9hbg6_and_o75386_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_o75386/q9hbg6_and_o75386_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_o75386"
+    },
+    "209": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p34949/q9hbg6_and_p34949_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p34949/q9hbg6_and_p34949_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_p34949"
+    },
+    "210": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p0di83/q9hbg6_and_p0di83_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p0di83/q9hbg6_and_p0di83_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_p0di83"
+    },
+    "211": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p50607/q9hbg6_and_p50607_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p50607/q9hbg6_and_p50607_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_p50607"
+    },
+    "212": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p63010/q9hbg6_and_p63010_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p63010/q9hbg6_and_p63010_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_p63010"
+    },
+    "213": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_o43303/q9hbg6_and_o43303_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_o43303/q9hbg6_and_o43303_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_o43303"
+    },
+    "214": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q86sg6/q9hbg6_and_q86sg6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_q86sg6/q9hbg6_and_q86sg6_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_q86sg6"
+    },
+    "215": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_a6ncl1/q9hbg6_and_a6ncl1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_a6ncl1/q9hbg6_and_a6ncl1_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_a6ncl1"
+    },
+    "216": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p42285/q9hbg6_and_p42285_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9HBG6_IFT122/AF3/q9hbg6_and_p42285/q9hbg6_and_p42285_confidences.json",
+      "bait_directory": "Q9HBG6_IFT122",
+      "interaction_directory": "q9hbg6_and_p42285"
+    },
+    "217": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_a0avf1/q9nqc8_and_a0avf1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_a0avf1/q9nqc8_and_a0avf1_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_a0avf1"
+    },
+    "218": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q8ncw6/q9nqc8_and_q8ncw6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q8ncw6/q9nqc8_and_q8ncw6_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_q8ncw6"
+    },
+    "219": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q8wyr4/q9nqc8_and_q8wyr4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q8wyr4/q9nqc8_and_q8wyr4_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_q8wyr4"
+    },
+    "220": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_o14965/q9nqc8_and_o14965_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_o14965/q9nqc8_and_o14965_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_o14965"
+    },
+    "221": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q9upz9/q9nqc8_and_q9upz9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q9upz9/q9nqc8_and_q9upz9_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_q9upz9"
+    },
+    "222": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_p20794/q9nqc8_and_p20794_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_p20794/q9nqc8_and_p20794_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_p20794"
+    },
+    "223": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q96ri1/q9nqc8_and_q96ri1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_q96ri1/q9nqc8_and_q96ri1_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_q96ri1"
+    },
+    "224": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_p08151/q9nqc8_and_p08151_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NQC8_IFT46/AF3/q9nqc8_and_p08151/q9nqc8_and_p08151_confidences.json",
+      "bait_directory": "Q9NQC8_IFT46",
+      "interaction_directory": "q9nqc8_and_p08151"
+    },
+    "225": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q9ug01/q9nwb7_and_q9ug01_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q9ug01/q9nwb7_and_q9ug01_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_q9ug01"
+    },
+    "226": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q9y6a4/q9nwb7_and_q9y6a4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q9y6a4/q9nwb7_and_q9y6a4_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_q9y6a4"
+    },
+    "227": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_p10323/q9nwb7_and_p10323_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_p10323/q9nwb7_and_p10323_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_p10323"
+    },
+    "228": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q96aj1/q9nwb7_and_q96aj1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q96aj1/q9nwb7_and_q96aj1_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_q96aj1"
+    },
+    "229": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q7z3b4/q9nwb7_and_q7z3b4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q7z3b4/q9nwb7_and_q7z3b4_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_q7z3b4"
+    },
+    "230": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_o95155/q9nwb7_and_o95155_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_o95155/q9nwb7_and_o95155_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_o95155"
+    },
+    "231": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q96ry7/q9nwb7_and_q96ry7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_q96ry7/q9nwb7_and_q96ry7_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_q96ry7"
+    },
+    "232": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_o94973/q9nwb7_and_o94973_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9NWB7_IFT57/AF3/q9nwb7_and_o94973/q9nwb7_and_o94973_confidences.json",
+      "bait_directory": "Q9NWB7_IFT57",
+      "interaction_directory": "q9nwb7_and_o94973"
+    },
+    "233": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q96aj1/q9p2h3_and_q96aj1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q96aj1/q9p2h3_and_q96aj1_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_q96aj1"
+    },
+    "234": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o15350/q9p2h3_and_o15350_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o15350/q9p2h3_and_o15350_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_o15350"
+    },
+    "235": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q9ug01/q9p2h3_and_q9ug01_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q9ug01/q9p2h3_and_q9ug01_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_q9ug01"
+    },
+    "236": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q14093/q9p2h3_and_q14093_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q14093/q9p2h3_and_q14093_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_q14093"
+    },
+    "237": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p08151/q9p2h3_and_p08151_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p08151/q9p2h3_and_p08151_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_p08151"
+    },
+    "238": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q8n7x0/q9p2h3_and_q8n7x0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q8n7x0/q9p2h3_and_q8n7x0_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_q8n7x0"
+    },
+    "239": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o95467/q9p2h3_and_o95467_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o95467/q9p2h3_and_o95467_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_o95467"
+    },
+    "240": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p34949/q9p2h3_and_p34949_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p34949/q9p2h3_and_p34949_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_p34949"
+    },
+    "241": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o95876/q9p2h3_and_o95876_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_o95876/q9p2h3_and_o95876_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_o95876"
+    },
+    "242": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p35680/q9p2h3_and_p35680_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_p35680/q9p2h3_and_p35680_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_p35680"
+    },
+    "244": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q9y283/q9p2h3_and_q9y283_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9P2H3_IFT80/AF3/q9p2h3_and_q9y283/q9p2h3_and_q9y283_confidences.json",
+      "bait_directory": "Q9P2H3_IFT80",
+      "interaction_directory": "q9p2h3_and_q9y283"
+    },
+    "245": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q9hbg6",
+      "error": "CIF file not found"
+    },
+    "246": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q96ft9",
+      "error": "CIF file not found"
+    },
+    "247": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q9uk59",
+      "error": "CIF file not found"
+    },
+    "248": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q9h7t0",
+      "error": "CIF file not found"
+    },
+    "249": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_o14964",
+      "error": "CIF file not found"
+    },
+    "250": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q96py6",
+      "error": "CIF file not found"
+    },
+    "251": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_o76039",
+      "error": "CIF file not found"
+    },
+    "252": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q96lj8",
+      "error": "CIF file not found"
+    },
+    "253": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9p2l0_and_q86xp3",
+      "error": "CIF file not found"
+    },
+    "254": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q8n4p2/q9y366_and_q8n4p2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q8n4p2/q9y366_and_q8n4p2_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q8n4p2"
+    },
+    "255": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q86wt1/q9y366_and_q86wt1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q86wt1/q9y366_and_q86wt1_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q86wt1"
+    },
+    "256": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q13099/q9y366_and_q13099_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q13099/q9y366_and_q13099_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q13099"
+    },
+    "257": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q96aj1/q9y366_and_q96aj1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q96aj1/q9y366_and_q96aj1_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q96aj1"
+    },
+    "258": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q9nsd9/q9y366_and_q9nsd9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q9nsd9/q9y366_and_q9nsd9_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q9nsd9"
+    },
+    "259": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p63244/q9y366_and_p63244_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p63244/q9y366_and_p63244_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_p63244"
+    },
+    "260": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p13796/q9y366_and_p13796_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p13796/q9y366_and_p13796_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_p13796"
+    },
+    "261": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q9bpz7/q9y366_and_q9bpz7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_q9bpz7/q9y366_and_q9bpz7_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_q9bpz7"
+    },
+    "262": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p00533/q9y366_and_p00533_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y366_IFT52/AF3/q9y366_and_p00533/q9y366_and_p00533_confidences.json",
+      "bait_directory": "Q9Y366_IFT52",
+      "interaction_directory": "q9y366_and_p00533"
+    },
+    "263": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96gy0/q9y547_and_q96gy0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96gy0/q9y547_and_q96gy0_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q96gy0"
+    },
+    "264": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a8mtz0/q9y547_and_a8mtz0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a8mtz0/q9y547_and_a8mtz0_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_a8mtz0"
+    },
+    "265": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9bw83/q9y547_and_q9bw83_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9bw83/q9y547_and_q9bw83_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9bw83"
+    },
+    "266": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a6nl82/q9y547_and_a6nl82_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a6nl82/q9y547_and_a6nl82_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_a6nl82"
+    },
+    "267": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9y5x0/q9y547_and_q9y5x0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9y5x0/q9y547_and_q9y5x0_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9y5x0"
+    },
+    "268": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96f83/q9y547_and_q96f83_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96f83/q9y547_and_q96f83_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q96f83"
+    },
+    "269": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p30085/q9y547_and_p30085_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p30085/q9y547_and_p30085_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_p30085"
+    },
+    "270": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_o60784/q9y547_and_o60784_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_o60784/q9y547_and_o60784_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_o60784"
+    },
+    "271": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9ulc3/q9y547_and_q9ulc3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9ulc3/q9y547_and_q9ulc3_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9ulc3"
+    },
+    "272": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9nvp4/q9y547_and_q9nvp4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9nvp4/q9y547_and_q9nvp4_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9nvp4"
+    },
+    "273": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96ri1/q9y547_and_q96ri1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q96ri1/q9y547_and_q96ri1_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q96ri1"
+    },
+    "274": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p62736/q9y547_and_p62736_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p62736/q9y547_and_p62736_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_p62736"
+    },
+    "275": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q5h9t9/q9y547_and_q5h9t9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q5h9t9/q9y547_and_q5h9t9_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q5h9t9"
+    },
+    "276": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a6ncl1/q9y547_and_a6ncl1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_a6ncl1/q9y547_and_a6ncl1_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_a6ncl1"
+    },
+    "277": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p54257/q9y547_and_p54257_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p54257/q9y547_and_p54257_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_p54257"
+    },
+    "278": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q15907/q9y547_and_q15907_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q15907/q9y547_and_q15907_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q15907"
+    },
+    "279": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p43490/q9y547_and_p43490_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p43490/q9y547_and_p43490_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_p43490"
+    },
+    "280": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9brq6/q9y547_and_q9brq6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9brq6/q9y547_and_q9brq6_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9brq6"
+    },
+    "281": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q5jtw2/q9y547_and_q5jtw2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q5jtw2/q9y547_and_q5jtw2_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q5jtw2"
+    },
+    "282": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q86ue8/q9y547_and_q86ue8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q86ue8/q9y547_and_q86ue8_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q86ue8"
+    },
+    "283": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_o75190/q9y547_and_o75190_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_o75190/q9y547_and_o75190_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_o75190"
+    },
+    "284": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9y5x1/q9y547_and_q9y5x1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9y5x1/q9y547_and_q9y5x1_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9y5x1"
+    },
+    "285": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q8nfh5/q9y547_and_q8nfh5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q8nfh5/q9y547_and_q8nfh5_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q8nfh5"
+    },
+    "286": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q86xp3/q9y547_and_q86xp3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q86xp3/q9y547_and_q86xp3_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q86xp3"
+    },
+    "287": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9uhb6/q9y547_and_q9uhb6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9uhb6/q9y547_and_q9uhb6_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9uhb6"
+    },
+    "288": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9ubn7/q9y547_and_q9ubn7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q9ubn7/q9y547_and_q9ubn7_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q9ubn7"
+    },
+    "289": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p46379/q9y547_and_p46379_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_p46379/q9y547_and_p46379_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_p46379"
+    },
+    "290": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q8neg2/q9y547_and_q8neg2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9Y547_IFT25/AF3/q9y547_and_q8neg2/q9y547_and_q8neg2_confidences.json",
+      "bait_directory": "Q9Y547_IFT25",
+      "interaction_directory": "q9y547_and_q8neg2"
+    },
+    "296": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q9bxc9/q8iwz6_and_q9bxc9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q9bxc9/q8iwz6_and_q9bxc9_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q9bxc9"
+    },
+    "297": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q8nez3/q8iwz6_and_q8nez3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q8nez3/q8iwz6_and_q8nez3_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q8nez3"
+    },
+    "298": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95573/q8iwz6_and_o95573_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95573/q8iwz6_and_o95573_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o95573"
+    },
+    "299": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p54257/q8iwz6_and_p54257_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p54257/q8iwz6_and_p54257_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p54257"
+    },
+    "300": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q717r9/q8iwz6_and_q717r9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q717r9/q8iwz6_and_q717r9_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q717r9"
+    },
+    "301": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o60784/q8iwz6_and_o60784_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o60784/q8iwz6_and_o60784_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o60784"
+    },
+    "302": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q96ft9/q8iwz6_and_q96ft9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q96ft9/q8iwz6_and_q96ft9_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q96ft9"
+    },
+    "303": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04083/q8iwz6_and_p04083_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04083/q8iwz6_and_p04083_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p04083"
+    },
+    "304": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q16254/q8iwz6_and_q16254_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q16254/q8iwz6_and_q16254_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q16254"
+    },
+    "305": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04264/q8iwz6_and_p04264_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04264/q8iwz6_and_p04264_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p04264"
+    },
+    "306": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q96aj1/q8iwz6_and_q96aj1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q96aj1/q8iwz6_and_q96aj1_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q96aj1"
+    },
+    "307": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04259/q8iwz6_and_p04259_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p04259/q8iwz6_and_p04259_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p04259"
+    },
+    "308": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q6uvj0/q8iwz6_and_q6uvj0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q6uvj0/q8iwz6_and_q6uvj0_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q6uvj0"
+    },
+    "309": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o00444/q8iwz6_and_o00444_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o00444/q8iwz6_and_o00444_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o00444"
+    },
+    "310": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o60828/q8iwz6_and_o60828_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o60828/q8iwz6_and_o60828_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o60828"
+    },
+    "311": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p50995/q8iwz6_and_p50995_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p50995/q8iwz6_and_p50995_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p50995"
+    },
+    "312": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95678/q8iwz6_and_o95678_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95678/q8iwz6_and_o95678_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o95678"
+    },
+    "313": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p25789/q8iwz6_and_p25789_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p25789/q8iwz6_and_p25789_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p25789"
+    },
+    "314": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_a6ncl1/q8iwz6_and_a6ncl1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_a6ncl1/q8iwz6_and_a6ncl1_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_a6ncl1"
+    },
+    "315": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p13647/q8iwz6_and_p13647_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p13647/q8iwz6_and_p13647_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p13647"
+    },
+    "316": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q15773/q8iwz6_and_q15773_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q15773/q8iwz6_and_q15773_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q15773"
+    },
+    "317": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q8n6u8/q8iwz6_and_q8n6u8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_q8n6u8/q8iwz6_and_q8n6u8_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_q8n6u8"
+    },
+    "318": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p02538/q8iwz6_and_p02538_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p02538/q8iwz6_and_p02538_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p02538"
+    },
+    "319": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95831/q8iwz6_and_o95831_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_o95831/q8iwz6_and_o95831_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_o95831"
+    },
+    "320": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p11171/q8iwz6_and_p11171_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8IWZ6_BBS7/AF3/q8iwz6_and_p11171/q8iwz6_and_p11171_confidences.json",
+      "bait_directory": "Q8IWZ6_BBS7",
+      "interaction_directory": "q8iwz6_and_p11171"
+    },
+    "321": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_d6rgh6/q8n3i7_and_d6rgh6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_d6rgh6/q8n3i7_and_d6rgh6_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_d6rgh6"
+    },
+    "322": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o95467/q8n3i7_and_o95467_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o95467/q8n3i7_and_o95467_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o95467"
+    },
+    "323": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q16629/q8n3i7_and_q16629_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q16629/q8n3i7_and_q16629_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q16629"
+    },
+    "324": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q3syg4/q8n3i7_and_q3syg4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q3syg4/q8n3i7_and_q3syg4_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q3syg4"
+    },
+    "325": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96c92/q8n3i7_and_q96c92_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96c92/q8n3i7_and_q96c92_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q96c92"
+    },
+    "326": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p30085/q8n3i7_and_p30085_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p30085/q8n3i7_and_p30085_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p30085"
+    },
+    "327": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p04279/q8n3i7_and_p04279_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p04279/q8n3i7_and_p04279_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p04279"
+    },
+    "328": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q6iq55/q8n3i7_and_q6iq55_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q6iq55/q8n3i7_and_q6iq55_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q6iq55"
+    },
+    "329": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q15773/q8n3i7_and_q15773_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q15773/q8n3i7_and_q15773_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q15773"
+    },
+    "330": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p20794/q8n3i7_and_p20794_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p20794/q8n3i7_and_p20794_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p20794"
+    },
+    "331": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9upz9/q8n3i7_and_q9upz9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9upz9/q8n3i7_and_q9upz9_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q9upz9"
+    },
+    "332": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p52272/q8n3i7_and_p52272_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p52272/q8n3i7_and_p52272_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p52272"
+    },
+    "333": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p51157/q8n3i7_and_p51157_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p51157/q8n3i7_and_p51157_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p51157"
+    },
+    "334": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p10070/q8n3i7_and_p10070_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p10070/q8n3i7_and_p10070_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p10070"
+    },
+    "335": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o15350/q8n3i7_and_o15350_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o15350/q8n3i7_and_o15350_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o15350"
+    },
+    "336": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q53hc0/q8n3i7_and_q53hc0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q53hc0/q8n3i7_and_q53hc0_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q53hc0"
+    },
+    "337": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q5t124/q8n3i7_and_q5t124_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q5t124/q8n3i7_and_q5t124_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q5t124"
+    },
+    "338": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p51955/q8n3i7_and_p51955_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p51955/q8n3i7_and_p51955_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p51955"
+    },
+    "339": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9h9p8/q8n3i7_and_q9h9p8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9h9p8/q8n3i7_and_q9h9p8_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q9h9p8"
+    },
+    "340": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q92949/q8n3i7_and_q92949_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q92949/q8n3i7_and_q92949_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q92949"
+    },
+    "341": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p21964/q8n3i7_and_p21964_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p21964/q8n3i7_and_p21964_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p21964"
+    },
+    "342": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96j42/q8n3i7_and_q96j42_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96j42/q8n3i7_and_q96j42_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q96j42"
+    },
+    "343": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q8n5z5/q8n3i7_and_q8n5z5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q8n5z5/q8n3i7_and_q8n5z5_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q8n5z5"
+    },
+    "344": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q2khr2/q8n3i7_and_q2khr2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q2khr2/q8n3i7_and_q2khr2_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q2khr2"
+    },
+    "345": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o75937/q8n3i7_and_o75937_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o75937/q8n3i7_and_o75937_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o75937"
+    },
+    "346": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p62873/q8n3i7_and_p62873_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p62873/q8n3i7_and_p62873_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p62873"
+    },
+    "347": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o60828/q8n3i7_and_o60828_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o60828/q8n3i7_and_o60828_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o60828"
+    },
+    "348": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9uhb6/q8n3i7_and_q9uhb6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9uhb6/q8n3i7_and_q9uhb6_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q9uhb6"
+    },
+    "349": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p48378/q8n3i7_and_p48378_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p48378/q8n3i7_and_p48378_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p48378"
+    },
+    "350": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o00330/q8n3i7_and_o00330_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o00330/q8n3i7_and_o00330_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o00330"
+    },
+    "351": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q8wy64/q8n3i7_and_q8wy64_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q8wy64/q8n3i7_and_q8wy64_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q8wy64"
+    },
+    "352": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q7z591/q8n3i7_and_q7z591_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q7z591/q8n3i7_and_q7z591_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q7z591"
+    },
+    "353": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o95409/q8n3i7_and_o95409_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_o95409/q8n3i7_and_o95409_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_o95409"
+    },
+    "354": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96m69/q8n3i7_and_q96m69_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96m69/q8n3i7_and_q96m69_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q96m69"
+    },
+    "355": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96py6/q8n3i7_and_q96py6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96py6/q8n3i7_and_q96py6_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q96py6"
+    },
+    "356": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p05019/q8n3i7_and_p05019_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p05019/q8n3i7_and_p05019_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p05019"
+    },
+    "357": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p30048/q8n3i7_and_p30048_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p30048/q8n3i7_and_p30048_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p30048"
+    },
+    "358": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9h4l4/q8n3i7_and_q9h4l4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9h4l4/q8n3i7_and_q9h4l4_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q9h4l4"
+    },
+    "359": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p61978/q8n3i7_and_p61978_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_p61978/q8n3i7_and_p61978_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_p61978"
+    },
+    "360": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96m11/q8n3i7_and_q96m11_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q96m11/q8n3i7_and_q96m11_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q96m11"
+    },
+    "361": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9uk59/q8n3i7_and_q9uk59_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8N3I7_BBS5/AF3/q8n3i7_and_q9uk59/q8n3i7_and_q9uk59_confidences.json",
+      "bait_directory": "Q8N3I7_BBS5",
+      "interaction_directory": "q8n3i7_and_q9uk59"
+    },
+    "362": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q96rk4/q8nfj9_and_q96rk4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q96rk4/q8nfj9_and_q96rk4_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q96rk4"
+    },
+    "363": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9h0f7/q8nfj9_and_q9h0f7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9h0f7/q8nfj9_and_q9h0f7_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q9h0f7"
+    },
+    "364": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q3syg4/q8nfj9_and_q3syg4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q3syg4/q8nfj9_and_q3syg4_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q3syg4"
+    },
+    "365": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9nvq4/q8nfj9_and_q9nvq4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9nvq4/q8nfj9_and_q9nvq4_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q9nvq4"
+    },
+    "366": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9bul8/q8nfj9_and_q9bul8_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q9bul8/q8nfj9_and_q9bul8_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q9bul8"
+    },
+    "367": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q14990/q8nfj9_and_q14990_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q14990/q8nfj9_and_q14990_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q14990"
+    },
+    "368": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q8ndm7/q8nfj9_and_q8ndm7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q8ndm7/q8nfj9_and_q8ndm7_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q8ndm7"
+    },
+    "369": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q8tam2/q8nfj9_and_q8tam2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q8tam2/q8nfj9_and_q8tam2_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q8tam2"
+    },
+    "370": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q96aj1/q8nfj9_and_q96aj1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_q96aj1/q8nfj9_and_q96aj1_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_q96aj1"
+    },
+    "371": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_p19338/q8nfj9_and_p19338_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q8NFJ9_BBS1/AF3/q8nfj9_and_p19338/q8nfj9_and_p19338_confidences.json",
+      "bait_directory": "Q8NFJ9_BBS1",
+      "interaction_directory": "q8nfj9_and_p19338"
+    },
+    "377": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_a8mtz0",
+      "error": "CIF file not found"
+    },
+    "378": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q3syg4",
+      "error": "CIF file not found"
+    },
+    "379": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q9bxc9",
+      "error": "CIF file not found"
+    },
+    "380": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_p62805",
+      "error": "CIF file not found"
+    },
+    "381": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_p20073",
+      "error": "CIF file not found"
+    },
+    "382": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q6uw49",
+      "error": "CIF file not found"
+    },
+    "383": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q96rk4",
+      "error": "CIF file not found"
+    },
+    "384": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q9nqh7",
+      "error": "CIF file not found"
+    },
+    "385": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q8nfj9",
+      "error": "CIF file not found"
+    },
+    "386": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q8tam2_and_q8ncr6",
+      "error": "CIF file not found"
+    },
+    "387": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8nfj9/q96rk4_and_q8nfj9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8nfj9/q96rk4_and_q8nfj9_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q8nfj9"
+    },
+    "388": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_a8mtz0/q96rk4_and_a8mtz0_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_a8mtz0/q96rk4_and_a8mtz0_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_a8mtz0"
+    },
+    "389": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_o00410/q96rk4_and_o00410_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_o00410/q96rk4_and_o00410_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_o00410"
+    },
+    "390": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p68366/q96rk4_and_p68366_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p68366/q96rk4_and_p68366_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_p68366"
+    },
+    "391": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8neg2/q96rk4_and_q8neg2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8neg2/q96rk4_and_q8neg2_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q8neg2"
+    },
+    "392": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p58340/q96rk4_and_p58340_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p58340/q96rk4_and_p58340_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_p58340"
+    },
+    "393": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p51157/q96rk4_and_p51157_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p51157/q96rk4_and_p51157_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_p51157"
+    },
+    "394": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p62424/q96rk4_and_p62424_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_p62424/q96rk4_and_p62424_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_p62424"
+    },
+    "395": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q99501/q96rk4_and_q99501_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q99501/q96rk4_and_q99501_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q99501"
+    },
+    "396": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8bzg1/q96rk4_and_q8bzg1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8bzg1/q96rk4_and_q8bzg1_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q8bzg1"
+    },
+    "397": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8tam2/q96rk4_and_q8tam2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q8tam2/q96rk4_and_q8tam2_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q8tam2"
+    },
+    "398": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q9uk59/q96rk4_and_q9uk59_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q9uk59/q96rk4_and_q9uk59_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q9uk59"
+    },
+    "399": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_a6njv1/q96rk4_and_a6njv1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_a6njv1/q96rk4_and_a6njv1_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_a6njv1"
+    },
+    "400": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q6q759/q96rk4_and_q6q759_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q96RK4_BBS4/AF3/q96rk4_and_q6q759/q96rk4_and_q6q759_confidences.json",
+      "bait_directory": "Q96RK4_BBS4",
+      "interaction_directory": "q96rk4_and_q6q759"
+    },
+    "401": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8iwz6/q9bxc9_and_q8iwz6_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8iwz6/q9bxc9_and_q8iwz6_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q8iwz6"
+    },
+    "402": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q3syg4/q9bxc9_and_q3syg4_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q3syg4/q9bxc9_and_q3syg4_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q3syg4"
+    },
+    "403": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q96qp1/q9bxc9_and_q96qp1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q96qp1/q9bxc9_and_q96qp1_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q96qp1"
+    },
+    "404": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_p15121/q9bxc9_and_p15121_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_p15121/q9bxc9_and_p15121_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_p15121"
+    },
+    "405": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8iym1/q9bxc9_and_q8iym1_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8iym1/q9bxc9_and_q8iym1_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q8iym1"
+    },
+    "406": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_a6nih7/q9bxc9_and_a6nih7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_a6nih7/q9bxc9_and_a6nih7_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_a6nih7"
+    },
+    "407": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_o60784/q9bxc9_and_o60784_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_o60784/q9bxc9_and_o60784_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_o60784"
+    },
+    "408": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8tam2/q9bxc9_and_q8tam2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q8tam2/q9bxc9_and_q8tam2_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q8tam2"
+    },
+    "409": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q15910/q9bxc9_and_q15910_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9BXC9_BBS2/AF3/q9bxc9_and_q15910/q9bxc9_and_q15910_confidences.json",
+      "bait_directory": "Q9BXC9_BBS2",
+      "interaction_directory": "q9bxc9_and_q15910"
+    },
+    "410": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q8nfj9",
+      "error": "CIF file not found"
+    },
+    "411": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_o43924",
+      "error": "CIF file not found"
+    },
+    "412": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q16718",
+      "error": "CIF file not found"
+    },
+    "413": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p50395",
+      "error": "CIF file not found"
+    },
+    "414": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p53597",
+      "error": "CIF file not found"
+    },
+    "415": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q8tcx1",
+      "error": "CIF file not found"
+    },
+    "416": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q53ev4",
+      "error": "CIF file not found"
+    },
+    "417": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q15391",
+      "error": "CIF file not found"
+    },
+    "418": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p61964",
+      "error": "CIF file not found"
+    },
+    "419": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q5w5x9",
+      "error": "CIF file not found"
+    },
+    "420": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_o75695",
+      "error": "CIF file not found"
+    },
+    "421": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p10242",
+      "error": "CIF file not found"
+    },
+    "422": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q8n157",
+      "error": "CIF file not found"
+    },
+    "423": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q96j42",
+      "error": "CIF file not found"
+    },
+    "424": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q13938",
+      "error": "CIF file not found"
+    },
+    "425": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p06748",
+      "error": "CIF file not found"
+    },
+    "426": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p58418",
+      "error": "CIF file not found"
+    },
+    "427": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p00568",
+      "error": "CIF file not found"
+    },
+    "428": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p60900",
+      "error": "CIF file not found"
+    },
+    "429": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p68400",
+      "error": "CIF file not found"
+    },
+    "430": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p35998",
+      "error": "CIF file not found"
+    },
+    "431": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q86x76",
+      "error": "CIF file not found"
+    },
+    "432": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q96ez8",
+      "error": "CIF file not found"
+    },
+    "433": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_p63241",
+      "error": "CIF file not found"
+    },
+    "434": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q9nrw7",
+      "error": "CIF file not found"
+    },
+    "435": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q9nz09",
+      "error": "CIF file not found"
+    },
+    "436": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9h0f7_and_q9y2y0",
+      "error": "CIF file not found"
+    },
+    "437": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9nq48_and_q9nq48",
+      "error": "CIF file not found"
+    },
+    "438": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9nq48_and_q9y3m2",
+      "error": "CIF file not found"
+    },
+    "439": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9nq48_and_q96c92",
+      "error": "CIF file not found"
+    },
+    "879": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p61964",
+      "error": "CIF file not found"
+    },
+    "880": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o95467",
+      "error": "CIF file not found"
+    },
+    "881": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q3zcq8",
+      "error": "CIF file not found"
+    },
+    "882": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9bze0",
+      "error": "CIF file not found"
+    },
+    "883": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p55010",
+      "error": "CIF file not found"
+    },
+    "884": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_a6ncl1",
+      "error": "CIF file not found"
+    },
+    "885": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q15831",
+      "error": "CIF file not found"
+    },
+    "886": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9uhg0",
+      "error": "CIF file not found"
+    },
+    "887": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9p0w8",
+      "error": "CIF file not found"
+    },
+    "888": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q5vuj9",
+      "error": "CIF file not found"
+    },
+    "889": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p46781",
+      "error": "CIF file not found"
+    },
+    "890": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p04279",
+      "error": "CIF file not found"
+    },
+    "891": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q96g28",
+      "error": "CIF file not found"
+    },
+    "892": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9unz2",
+      "error": "CIF file not found"
+    },
+    "893": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q2khr2",
+      "error": "CIF file not found"
+    },
+    "894": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p46937",
+      "error": "CIF file not found"
+    },
+    "895": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9c0f1",
+      "error": "CIF file not found"
+    },
+    "896": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p09488",
+      "error": "CIF file not found"
+    },
+    "897": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q86yf9",
+      "error": "CIF file not found"
+    },
+    "898": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9y295",
+      "error": "CIF file not found"
+    },
+    "899": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p00533",
+      "error": "CIF file not found"
+    },
+    "900": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o43603",
+      "error": "CIF file not found"
+    },
+    "901": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9y2j4",
+      "error": "CIF file not found"
+    },
+    "902": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o14818",
+      "error": "CIF file not found"
+    },
+    "903": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o00519",
+      "error": "CIF file not found"
+    },
+    "904": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p18545",
+      "error": "CIF file not found"
+    },
+    "905": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9hbg6",
+      "error": "CIF file not found"
+    },
+    "906": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9y6j8",
+      "error": "CIF file not found"
+    },
+    "907": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q99705",
+      "error": "CIF file not found"
+    },
+    "908": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q96lj8",
+      "error": "CIF file not found"
+    },
+    "909": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_a6nl82",
+      "error": "CIF file not found"
+    },
+    "910": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9ns66",
+      "error": "CIF file not found"
+    },
+    "911": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p35998",
+      "error": "CIF file not found"
+    },
+    "912": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9upm9",
+      "error": "CIF file not found"
+    },
+    "913": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q86y33",
+      "error": "CIF file not found"
+    },
+    "914": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o95831",
+      "error": "CIF file not found"
+    },
+    "915": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o75386",
+      "error": "CIF file not found"
+    },
+    "916": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q02383",
+      "error": "CIF file not found"
+    },
+    "917": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p36404",
+      "error": "CIF file not found"
+    },
+    "918": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q6iq55",
+      "error": "CIF file not found"
+    },
+    "919": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p49757",
+      "error": "CIF file not found"
+    },
+    "920": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p05091",
+      "error": "CIF file not found"
+    },
+    "921": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9ulc3",
+      "error": "CIF file not found"
+    },
+    "922": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p06748",
+      "error": "CIF file not found"
+    },
+    "923": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q02878",
+      "error": "CIF file not found"
+    },
+    "924": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q969f8",
+      "error": "CIF file not found"
+    },
+    "925": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9y6a4",
+      "error": "CIF file not found"
+    },
+    "926": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p35240",
+      "error": "CIF file not found"
+    },
+    "927": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p25788",
+      "error": "CIF file not found"
+    },
+    "928": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q86vq0",
+      "error": "CIF file not found"
+    },
+    "929": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o95402",
+      "error": "CIF file not found"
+    },
+    "930": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q13526",
+      "error": "CIF file not found"
+    },
+    "931": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9h6l2",
+      "error": "CIF file not found"
+    },
+    "932": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9bw62",
+      "error": "CIF file not found"
+    },
+    "933": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q99501",
+      "error": "CIF file not found"
+    },
+    "934": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q5jsh3",
+      "error": "CIF file not found"
+    },
+    "935": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9bw30",
+      "error": "CIF file not found"
+    },
+    "936": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o15350",
+      "error": "CIF file not found"
+    },
+    "937": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p09960",
+      "error": "CIF file not found"
+    },
+    "938": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_o95721",
+      "error": "CIF file not found"
+    },
+    "939": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9y5b8",
+      "error": "CIF file not found"
+    },
+    "940": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p32745",
+      "error": "CIF file not found"
+    },
+    "941": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p22674",
+      "error": "CIF file not found"
+    },
+    "942": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9npi6",
+      "error": "CIF file not found"
+    },
+    "943": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q86ue8",
+      "error": "CIF file not found"
+    },
+    "944": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p04264",
+      "error": "CIF file not found"
+    },
+    "945": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q06124",
+      "error": "CIF file not found"
+    },
+    "946": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q8iv77",
+      "error": "CIF file not found"
+    },
+    "947": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q6jqn1",
+      "error": "CIF file not found"
+    },
+    "948": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p60484",
+      "error": "CIF file not found"
+    },
+    "949": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_p13647",
+      "error": "CIF file not found"
+    },
+    "950": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q8n1f7",
+      "error": "CIF file not found"
+    },
+    "951": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "o75386_and_q9uq07",
+      "error": "CIF file not found"
+    },
+    "952": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_q9nwb7/q9ug01_and_q9nwb7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_q9nwb7/q9ug01_and_q9nwb7_confidences.json",
+      "bait_directory": "Q9UG01_IFT172",
+      "interaction_directory": "q9ug01_and_q9nwb7"
+    },
+    "953": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_q9p2h3/q9ug01_and_q9p2h3_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_q9p2h3/q9ug01_and_q9p2h3_confidences.json",
+      "bait_directory": "Q9UG01_IFT172",
+      "interaction_directory": "q9ug01_and_q9p2h3"
+    },
+    "954": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_p23141/q9ug01_and_p23141_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_p23141/q9ug01_and_p23141_confidences.json",
+      "bait_directory": "Q9UG01_IFT172",
+      "interaction_directory": "q9ug01_and_p23141"
+    },
+    "955": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_o95573/q9ug01_and_o95573_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q9UG01_IFT172/AF3/q9ug01_and_o95573/q9ug01_and_o95573_confidences.json",
+      "bait_directory": "Q9UG01_IFT172",
+      "interaction_directory": "q9ug01_and_o95573"
+    },
+    "956": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q8nbt0",
+      "error": "CIF file not found"
+    },
+    "957": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q9hbg6",
+      "error": "CIF file not found"
+    },
+    "958": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q717r9",
+      "error": "CIF file not found"
+    },
+    "959": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_p00491",
+      "error": "CIF file not found"
+    },
+    "960": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q15008",
+      "error": "CIF file not found"
+    },
+    "961": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q9p2b7",
+      "error": "CIF file not found"
+    },
+    "962": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q8iu60",
+      "error": "CIF file not found"
+    },
+    "963": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q8nfh5",
+      "error": "CIF file not found"
+    },
+    "964": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q96hs1",
+      "error": "CIF file not found"
+    },
+    "965": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_a8mtq0",
+      "error": "CIF file not found"
+    },
+    "966": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q9y615",
+      "error": "CIF file not found"
+    },
+    "967": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q9nvq4",
+      "error": "CIF file not found"
+    },
+    "968": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q86yc2",
+      "error": "CIF file not found"
+    },
+    "969": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q9bt92",
+      "error": "CIF file not found"
+    },
+    "970": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q99627",
+      "error": "CIF file not found"
+    },
+    "971": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q5t7b8",
+      "error": "CIF file not found"
+    },
+    "972": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_q96py6",
+      "error": "CIF file not found"
+    },
+    "973": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_p67870",
+      "error": "CIF file not found"
+    },
+    "974": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "q9unt1_and_a0avf1",
+      "error": "CIF file not found"
+    },
+    "985": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8tam2/q3syg4_and_q8tam2_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8tam2/q3syg4_and_q8tam2_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q8tam2"
+    },
+    "986": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8nfj9/q3syg4_and_q8nfj9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8nfj9/q3syg4_and_q8nfj9_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q8nfj9"
+    },
+    "987": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8n3i7/q3syg4_and_q8n3i7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8n3i7/q3syg4_and_q8n3i7_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q8n3i7"
+    },
+    "988": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_o43513/q3syg4_and_o43513_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_o43513/q3syg4_and_o43513_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_o43513"
+    },
+    "989": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q9bxc9/q3syg4_and_q9bxc9_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q9bxc9/q3syg4_and_q9bxc9_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q9bxc9"
+    },
+    "990": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_p53621/q3syg4_and_p53621_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_p53621/q3syg4_and_p53621_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_p53621"
+    },
+    "991": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_p0c881/q3syg4_and_p0c881_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_p0c881/q3syg4_and_p0c881_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_p0c881"
+    },
+    "992": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8n0u7/q3syg4_and_q8n0u7_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q8n0u7/q3syg4_and_q8n0u7_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q8n0u7"
+    },
+    "993": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q99932/q3syg4_and_q99932_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q99932/q3syg4_and_q99932_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q99932"
+    },
+    "994": {
+      "cif_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q9nvr5/q3syg4_and_q9nvr5_model.cif",
+      "confidences_path": "/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/Q3SYG4_BBS9/AF3/q3syg4_and_q9nvr5/q3syg4_and_q9nvr5_confidences.json",
+      "bait_directory": "Q3SYG4_BBS9",
+      "interaction_directory": "q3syg4_and_q9nvr5"
+    },
+    "995": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q8tam2",
+      "error": "CIF file not found"
+    },
+    "996": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q96rk4",
+      "error": "CIF file not found"
+    },
+    "997": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q9y547",
+      "error": "CIF file not found"
+    },
+    "998": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q15369",
+      "error": "CIF file not found"
+    },
+    "999": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_p40337",
+      "error": "CIF file not found"
+    },
+    "1000": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q86y33",
+      "error": "CIF file not found"
+    },
+    "1001": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_p02787",
+      "error": "CIF file not found"
+    },
+    "1002": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q8tc99",
+      "error": "CIF file not found"
+    },
+    "1003": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_p11908",
+      "error": "CIF file not found"
+    },
+    "1004": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q8n119",
+      "error": "CIF file not found"
+    },
+    "1005": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q9une7",
+      "error": "CIF file not found"
+    },
+    "1006": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_p34949",
+      "error": "CIF file not found"
+    },
+    "1007": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_q9y615",
+      "error": "CIF file not found"
+    },
+    "1008": {
+      "cif_path": null,
+      "confidences_path": null,
+      "bait_directory": null,
+      "interaction_directory": "a8mtz0_and_p61006",
+      "error": "CIF file not found"
+    }
+  }
+}

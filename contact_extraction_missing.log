@@ -1,0 +1,24 @@
+Warning: matplotlib/seaborn not available. Heatmaps will be skipped.
+================================================================================
+PAE CONTACT EXTRACTION FOR WEB
+================================================================================
+
+Output directory: public/contacts_data
+
+Loaded 233 interaction IDs from /tmp/missing_pae_ids.txt
+
+Processing 113 specific interactions (from 233 requested)
+Skipping problematic interactions: [150]
+
+  [50/113] Skipped (missing files)
+  [100/113] Skipped (missing files)
+
+================================================================================
+BATCH PROCESSING COMPLETE
+================================================================================
+Total interactions: 113
+Processed: 113
+Successful: 0 (0.0%)
+Failed: 113 (100.0%)
+
+Output files saved to: public/contacts_data

@@ -1,0 +1,49 @@
+A comprehensive analysis of the review article "Advances in ciliary proteomics – towards cracking the hidden proteome code of cilia" by Schermer et al. (2025) reveals several key studies that have generated significant interaction datasets on the human cilia proteome. Below is a detailed breakdown of these references, including the location of their datasets and links where available.
+
+### Key Publications with Cilia Interaction Datasets:
+
+#### 1. **"An organelle-specific protein landscape identifies novel diseases and molecular mechanisms" (Boldt et al., *Nat. Commun.*, 2016)**
+This large-scale study utilized SF-TAP-MS (Strep-Flag tandem affinity purification-mass spectrometry) with 217 bait proteins associated with cilia and ciliopathies to create a comprehensive interactome.
+
+*   **Dataset Location:** The primary dataset, including the full interactome and 52 protein complexes, is available in **Supplementary Data 1** of the article. This file contains detailed information on protein-protein interactions. Additional supplementary files provide further analysis and context.
+*   **Link to Paper:** [https://www.nature.com/articles/ncomms11491](https://www.nature.com/articles/ncomms11491)
+
+#### 2. **"Mapping the NPHP-JBTS-MKS protein network reveals ciliopathy disease genes and pathways" (Sang et al., *Cell*, 2011)**
+This study employed the Localization and Affinity Purification (LAP) method to investigate the functional modules of proteins associated with nephronophthisis (NPH), Joubert syndrome (JBTS), and Meckel-Gruber syndrome (MKS). They used nine bait proteins in three different ciliated cell lines.
+
+*   **Dataset Location:** The integrated NPHP-JBTS-MKS protein network and the raw mass spectrometry data are provided in **Table S2** of the supplementary materials. This table lists the identified protein interactions.
+*   **Link to Paper:** [https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X](https://www.cell.com/cell/fulltext/S0092-8674(11)00473-X)
+
+#### 3. **"A dynamic protein interaction landscape of the human centrosome-cilium interface" (Gupta et al., *Cell*, 2015)**
+This research utilized BioID to map the proximity proteomes of 56 proteins located at the centrosome-cilium complex, revealing extensive networks and the central role of centriolar satellites in primary cilia assembly.
+
+*   **Dataset Location:** The complete dataset of proximity interactions is available in **Table S1**. This extensive table details the identified proximal proteins for each of the 56 baits.
+*   **Link to Paper:** [https://www.cell.com/cell/fulltext/S0092-8674(15)01443-4](https://www.cell.com/cell/fulltext/S0092-8674(15)01443-4)
+
+#### 4. **"Proteomics of primary cilia by proximity labeling" (Mick et al., *Dev. Cell*, 2015)**
+This was one of the first studies to apply APEX-based proximity labeling to the proteome of primary cilia in mIMCD3 kidney epithelial cells.
+
+*   **Dataset Location:** The proteomic data, including identified proteins in primary cilia, is detailed in **Table S1**. This table also includes data from a BBS model cell line.
+*   **Link to Paper:** [https://www.cell.com/developmental-cell/fulltext/S1534-5807(15)00612-4](https://www.cell.com/developmental-cell/fulltext/S1534-5807(15)00612-4)
+
+#### 5. **"The ciliary membrane-associated proteome reveals actin-binding proteins as key components of cilia" (Kohli et al., *EMBO Rep.*, 2017)**
+Also using APEX-based proximity labeling in mIMCD3 cells, this study provided another view of the ciliary proteome, highlighting the role of actin regulators.
+
+*   **Dataset Location:** The full proteomic dataset is provided as a downloadable Excel file in the **"Expanded View"** section of the article, specifically in **Dataset EV1**.
+*   **Link to Paper:** [https://www.embopress.org/doi/full/10.15252/embr.201643846](https://www.embopress.org/doi/full/10.15252/embr.201643846)
+
+#### 6. **"Time-resolved proteomics profiling of the ciliary Hedgehog response" (May et al., *J. Cell Biol.*, 2021)**
+This study used APEX2 to investigate dynamic changes in the ciliary proteome during Sonic hedgehog signaling.
+
+*   **Dataset Location:** The complete mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier **PXD020583**. The key findings are also presented in tables within the supplementary materials of the article.
+*   **Link to Data:** [http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD020583](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD020583)
+*   **Link to Paper:** [https://rupress.org/jcb/article/220/5/e202007207/211927/Time-resolved-proteomics-profiling-of-the-ciliary](https://rupress.org/jcb/article/220/5/e202007207/211927/Time-resolved-proteomics-profiling-of-the-ciliary)
+
+#### 7. **"A targeted multi-proteomics approach generates a blueprint of the ciliary ubiquitinome" (Aslanyan et al., *Front. Cell Dev. Biol.*, 2023)**
+This work characterized the ciliary ubiquitinome using a BioID2 ubiquitin-binding domain (UBD) targeted to cilia and also employed ubiquitin affinity proteomics.
+
+*   **Dataset Location:** The mass spectrometry proteomics data are available via the PRIDE repository with the dataset identifier **PXD038379**. Supplementary tables within the article provide processed data and analysis.
+*   **Link to Data:** [http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD038379](http://proteomecentral.proteomexchange.org/cgi/GetDataset?ID=PXD038379)
+*   **Link to Paper:** [https://www.frontiersin.org/articles/10.3389/fcell.2023.1113656/full](https://www.frontiersin.org/articles/10.3389/fcell.2023.1113656/full)
+
+These references represent a significant portion of the literature that has generated large-scale interaction datasets for the human cilia proteome, utilizing a range of advanced proteomic techniques. The provided links will direct you to the publications and, where available, the raw and processed data.

@@ -1,0 +1,4 @@
+confidence,total_predictions,biogrid_validated,validation_rate_pct
+High,20,15,75.0
+Medium,135,34,25.2
+Low,393,27,6.9

@@ -1,0 +1,288 @@
+{
+  "interaction_id": 314,
+  "generated_at": "2025-11-11T10:03:03.532478",
+  "data": {
+    "chains": [
+      "A",
+      "B"
+    ],
+    "chain_lengths": {
+      "A": 715,
+      "B": 334
+    },
+    "contacts": [
+      {
+        "chain1": "A",
+        "resi1": 406,
+        "aa1": "N",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "L",
+        "pae": 6.0,
+        "distance": 3.72,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 408,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 4.5,
+        "distance": 4.13,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 408,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 189,
+        "aa2": "V",
+        "pae": 5.0,
+        "distance": 3.93,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 408,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 192,
+        "aa2": "T",
+        "pae": 5.3,
+        "distance": 3.57,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 408,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "L",
+        "pae": 5.4,
+        "distance": 3.55,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 409,
+        "aa1": "I",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 4.1,
+        "distance": 4.3,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 410,
+        "aa1": "Q",
+        "chain2": "B",
+        "resi2": 186,
+        "aa2": "D",
+        "pae": 6.5,
+        "distance": 3.61,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 410,
+        "aa1": "Q",
+        "chain2": "B",
+        "resi2": 189,
+        "aa2": "V",
+        "pae": 5.3,
+        "distance": 3.86,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 430,
+        "aa1": "S",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 7.0,
+        "distance": 2.86,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 439,
+        "aa1": "N",
+        "chain2": "B",
+        "resi2": 186,
+        "aa2": "D",
+        "pae": 8.0,
+        "distance": 2.47,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 442,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 5.0,
+        "distance": 3.4,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 443,
+        "aa1": "A",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 4.3,
+        "distance": 3.72,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 444,
+        "aa1": "T",
+        "chain2": "B",
+        "resi2": 188,
+        "aa2": "W",
+        "pae": 4.8,
+        "distance": 3.59,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 444,
+        "aa1": "T",
+        "chain2": "B",
+        "resi2": 192,
+        "aa2": "T",
+        "pae": 5.7,
+        "distance": 3.74,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 469,
+        "aa1": "Q",
+        "chain2": "B",
+        "resi2": 183,
+        "aa2": "P",
+        "pae": 11.4,
+        "distance": 3.33,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 471,
+        "aa1": "Y",
+        "chain2": "B",
+        "resi2": 185,
+        "aa2": "V",
+        "pae": 5.4,
+        "distance": 4.19,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 471,
+        "aa1": "Y",
+        "chain2": "B",
+        "resi2": 186,
+        "aa2": "D",
+        "pae": 6.6,
+        "distance": 4.7,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 471,
+        "aa1": "Y",
+        "chain2": "B",
+        "resi2": 189,
+        "aa2": "V",
+        "pae": 4.7,
+        "distance": 3.7,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 471,
+        "aa1": "Y",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "L",
+        "pae": 6.0,
+        "distance": 4.77,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 473,
+        "aa1": "T",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "L",
+        "pae": 6.1,
+        "distance": 3.31,
+        "confidence": "medium",
+        "color": "#ffff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 479,
+        "aa1": "K",
+        "chain2": "B",
+        "resi2": 201,
+        "aa2": "I",
+        "pae": 11.0,
+        "distance": 4.65,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 481,
+        "aa1": "C",
+        "chain2": "B",
+        "resi2": 193,
+        "aa2": "L",
+        "pae": 6.7,
+        "distance": 3.74,
+        "confidence": "medium",
+        "color": "#ffff00"
+      }
+    ],
+    "summary": {
+      "total_contacts": 22,
+      "very_high_count": 0,
+      "high_count": 5,
+      "medium_count": 14,
+      "low_count": 3
+    },
+    "spatial_validation_enabled": true
+  }
+}

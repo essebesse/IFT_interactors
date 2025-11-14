@@ -1,0 +1,216 @@
+{
+  "interaction_id": 289,
+  "generated_at": "2025-11-11T09:53:31.150839",
+  "data": {
+    "chains": [
+      "A",
+      "B"
+    ],
+    "chain_lengths": {
+      "A": 144,
+      "B": 1132
+    },
+    "contacts": [
+      {
+        "chain1": "A",
+        "resi1": 14,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 1009,
+        "aa2": "P",
+        "pae": 4.8,
+        "distance": 4.98,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 16,
+        "aa1": "I",
+        "chain2": "B",
+        "resi2": 1009,
+        "aa2": "P",
+        "pae": 4.4,
+        "distance": 3.77,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 16,
+        "aa1": "I",
+        "chain2": "B",
+        "resi2": 1010,
+        "aa2": "W",
+        "pae": 3.5,
+        "distance": 3.12,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 17,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 1010,
+        "aa2": "W",
+        "pae": 3.0,
+        "distance": 4.41,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 17,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 1013,
+        "aa2": "A",
+        "pae": 3.8,
+        "distance": 4.05,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 17,
+        "aa1": "L",
+        "chain2": "B",
+        "resi2": 1014,
+        "aa2": "V",
+        "pae": 3.8,
+        "distance": 3.77,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 23,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 1034,
+        "aa2": "P",
+        "pae": 9.6,
+        "distance": 3.88,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 23,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 1035,
+        "aa2": "Q",
+        "pae": 9.5,
+        "distance": 4.61,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 24,
+        "aa1": "K",
+        "chain2": "B",
+        "resi2": 1037,
+        "aa2": "P",
+        "pae": 11.4,
+        "distance": 4.6,
+        "confidence": "low",
+        "color": "#ff4500"
+      },
+      {
+        "chain1": "A",
+        "resi1": 50,
+        "aa1": "I",
+        "chain2": "B",
+        "resi2": 1013,
+        "aa2": "A",
+        "pae": 4.0,
+        "distance": 3.78,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 81,
+        "aa1": "E",
+        "chain2": "B",
+        "resi2": 1012,
+        "aa2": "A",
+        "pae": 4.1,
+        "distance": 3.78,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 82,
+        "aa1": "P",
+        "chain2": "B",
+        "resi2": 1009,
+        "aa2": "P",
+        "pae": 4.6,
+        "distance": 3.45,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 82,
+        "aa1": "P",
+        "chain2": "B",
+        "resi2": 1010,
+        "aa2": "W",
+        "pae": 4.0,
+        "distance": 4.76,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 82,
+        "aa1": "P",
+        "chain2": "B",
+        "resi2": 1012,
+        "aa2": "A",
+        "pae": 4.0,
+        "distance": 3.8,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 82,
+        "aa1": "P",
+        "chain2": "B",
+        "resi2": 1013,
+        "aa2": "A",
+        "pae": 4.2,
+        "distance": 3.59,
+        "confidence": "high",
+        "color": "#00ff00"
+      },
+      {
+        "chain1": "A",
+        "resi1": 83,
+        "aa1": "V",
+        "chain2": "B",
+        "resi2": 1012,
+        "aa2": "A",
+        "pae": 4.1,
+        "distance": 3.32,
+        "confidence": "high",
+        "color": "#00ff00"
+      }
+    ],
+    "summary": {
+      "total_contacts": 16,
+      "very_high_count": 0,
+      "high_count": 13,
+      "medium_count": 0,
+      "low_count": 3
+    },
+    "spatial_validation_enabled": true
+  }
+}

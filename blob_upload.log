@@ -1,0 +1,626 @@
+================================================================================
+VERCEL BLOB UPLOAD SCRIPT
+================================================================================
+
+✓ Loaded manifest: 501 interactions
+
+Checking existing blobs in storage...
+Found 0 existing files in Vercel Blob storage
+
+================================================================================
+UPLOADING CIF FILES
+================================================================================
+
+[1/501] Interaction 1: IFT56 ↔ IFT46
+  ✓ Uploaded: structures/1.cif (0.54 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/1.cif
+[2/501] Interaction 2: IFT56 ↔ DNAJC8
+  ✓ Uploaded: structures/2.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/2.cif
+[3/501] Interaction 3: IFT56 ↔ UBXN10
+  ✓ Uploaded: structures/3.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/3.cif
+[4/501] Interaction 4: IFT56 ↔ NPM1
+  ✓ Uploaded: structures/4.cif (0.53 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/4.cif
+[5/501] Interaction 5: IFT56 ↔ DTYMK
+  ✓ Uploaded: structures/5.cif (0.49 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/5.cif
+[6/501] Interaction 6: IFT56 ↔ SPMIP5
+  ✓ Uploaded: structures/6.cif (0.50 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/6.cif
+[7/501] Interaction 7: IFT56 ↔ SPMAP2
+  ✓ Uploaded: structures/7.cif (0.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/7.cif
+[8/501] Interaction 8: IFT56 ↔ LRRC59
+  ✓ Uploaded: structures/8.cif (0.55 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/8.cif
+[9/501] Interaction 9: IFT56 ↔ GOT2
+  ✓ Uploaded: structures/9.cif (0.61 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/9.cif
+[10/501] Interaction 10: IFT56 ↔ RAB23
+  ✓ Uploaded: structures/10.cif (0.50 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/10.cif
+[11/501] Interaction 11: IFT56 ↔ PALB2
+  ✓ Uploaded: structures/11.cif (1.11 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/11.cif
+[12/501] Interaction 12: IFT56 ↔ ACAT1
+  ✓ Uploaded: structures/12.cif (0.60 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/12.cif
+[13/501] Interaction 13: IFT56 ↔ CETN3
+  ✓ Uploaded: structures/13.cif (0.46 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/13.cif
+[14/501] Interaction 14: IFT56 ↔ NPEPPS
+  ✓ Uploaded: structures/14.cif (0.93 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/14.cif
+[15/501] Interaction 15: IFT56 ↔ CDC42
+  ✓ Uploaded: structures/15.cif (0.47 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/15.cif
+[16/501] Interaction 16: IFT56 ↔ MAPRE3
+  ✓ Uploaded: structures/16.cif (0.53 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/16.cif
+[17/501] Interaction 17: IFT56 ↔ MAPRE1
+  ✓ Uploaded: structures/17.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/17.cif
+[18/501] Interaction 18: IFT56 ↔ CAMK4
+  ✓ Uploaded: structures/18.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/18.cif
+[19/501] Interaction 19: IFT56 ↔ SPESP1
+  ✓ Uploaded: structures/19.cif (0.57 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/19.cif
+[20/501] Interaction 20: IFT56 ↔ ZIC2
+  ✓ Uploaded: structures/20.cif (0.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/20.cif
+[21/501] Interaction 21: IFT56 ↔ ACADM
+  ✓ Uploaded: structures/21.cif (0.61 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/21.cif
+[22/501] Interaction 22: IFT56 ↔ CALM1
+  ✓ Uploaded: structures/22.cif (0.45 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/22.cif
+[23/501] Interaction 23: IFT56 ↔ HYOU1
+  ✓ Uploaded: structures/23.cif (0.97 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/23.cif
+[24/501] Interaction 24: IFT56 ↔ MED26
+  ✓ Uploaded: structures/24.cif (0.71 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/24.cif
+[25/501] Interaction 25: IFT56 ↔ DCDC2
+  ✓ Uploaded: structures/25.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/25.cif
+[26/501] Interaction 26: IFT56 ↔ RAB7A
+  ✓ Uploaded: structures/26.cif (0.48 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/26.cif
+[27/501] Interaction 27: IFT56 ↔ MMP21
+  ✓ Uploaded: structures/27.cif (0.71 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/27.cif
+[28/501] Interaction 28: IFT56 ↔ PCM1
+  ✓ Uploaded: structures/28.cif (1.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/28.cif
+[29/501] Interaction 29: IFT56 ↔ CDC20B
+  ✓ Uploaded: structures/29.cif (0.67 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/29.cif
+[30/501] Interaction 30: IFT56 ↔ H4C1
+  ✓ Uploaded: structures/30.cif (0.42 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/30.cif
+[31/501] Interaction 31: IFT56 ↔ HAP1
+  ✓ Uploaded: structures/31.cif (0.77 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/31.cif
+[32/501] Interaction 32: IFT56 ↔ RAB14
+  ✓ Uploaded: structures/32.cif (0.49 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/32.cif
+[33/501] Interaction 33: IFT56 ↔ ARPC2
+  ✓ Uploaded: structures/33.cif (0.54 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/33.cif
+[34/501] Interaction 34: IFT56 ↔ TTBK2
+  ✓ Uploaded: structures/34.cif (1.15 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/34.cif
+[35/501] Interaction 35: IFT88 ↔ IFT70B
+  ✓ Uploaded: structures/35.cif (0.94 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/35.cif
+[36/501] Interaction 36: IFT88 ↔ IFT70A
+  ✓ Uploaded: structures/36.cif (0.94 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/36.cif
+[37/501] Interaction 37: IFT88 ↔ KIFAP3
+  ✓ Uploaded: structures/37.cif (1.02 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/37.cif
+[38/501] Interaction 38: IFT88 ↔ NUP35
+  ✓ Uploaded: structures/38.cif (0.70 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/38.cif
+[39/501] Interaction 39: IFT88 ↔ CDK9
+  ✓ Uploaded: structures/39.cif (0.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/39.cif
+[40/501] Interaction 40: IFT88 ↔ IFT52
+  ✓ Uploaded: structures/40.cif (0.80 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/40.cif
+[41/501] Interaction 41: IFT88 ↔ C7orf57
+  ✓ Uploaded: structures/41.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/41.cif
+[42/501] Interaction 42: IFT88 ↔ COPA
+  ✓ Uploaded: structures/42.cif (1.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/42.cif
+[43/501] Interaction 43: IFT88 ↔ BAZ2B
+  ✓ Uploaded: structures/43.cif (1.90 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/43.cif
+[44/501] Interaction 44: IFT88 ↔ TTLL1
+  ✓ Uploaded: structures/44.cif (0.79 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/44.cif
+[45/501] Interaction 45: TTC21B ↔ IFT122
+  ✓ Uploaded: structures/45.cif (1.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/45.cif
+[46/501] Interaction 46: TTC21B ↔ IFT43
+  ✓ Uploaded: structures/46.cif (0.99 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/46.cif
+[47/501] Interaction 47: TTC21B ↔ MSN
+  ✓ Uploaded: structures/47.cif (1.26 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/47.cif
+[48/501] Interaction 48: TTC21B ↔ EZR
+  ✓ Uploaded: structures/48.cif (1.25 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/48.cif
+[49/501] Interaction 49: TTC21B ↔ HSPA8
+  ✓ Uploaded: structures/49.cif (1.26 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/49.cif
+[50/501] Interaction 50: TTC21B ↔ TULP1
+  ✓ Uploaded: structures/50.cif (1.20 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/50.cif
+[51/501] Interaction 51: IFT70A ↔ IFT88
+  ✓ Uploaded: structures/51.cif (0.94 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/51.cif
+[52/501] Interaction 52: IFT70A ↔ IFT52
+  ✓ Uploaded: structures/52.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/52.cif
+[53/501] Interaction 53: IFT70A ↔ UBA52
+  ✓ Uploaded: structures/53.cif (0.50 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/53.cif
+[54/501] Interaction 54: IFT70A ↔ PPP1CC
+  ✓ Uploaded: structures/54.cif (0.62 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/54.cif
+[55/501] Interaction 55: IFT70A ↔ TFG
+  ✓ Uploaded: structures/55.cif (0.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/55.cif
+[56/501] Interaction 56: IFT70A ↔ GALR3
+  ✓ Uploaded: structures/56.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/56.cif
+[57/501] Interaction 57: IFT70A ↔ SPESP1
+  ✓ Uploaded: structures/57.cif (0.63 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/57.cif
+[58/501] Interaction 58: IFT70A ↔ CFAP36
+  ✓ Uploaded: structures/58.cif (0.63 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/58.cif
+[59/501] Interaction 59: IFT70A ↔ DNAH10
+  ✓ Uploaded: structures/59.cif (3.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/59.cif
+[60/501] Interaction 60: IFT70A ↔ PPP1CA
+  ✓ Uploaded: structures/60.cif (0.62 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/60.cif
+[61/501] Interaction 61: IFT70A ↔ SPMIP6
+  ✓ Uploaded: structures/61.cif (0.58 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/61.cif
+[62/501] Interaction 62: IFT70A ↔ C7orf57
+  ✓ Uploaded: structures/62.cif (0.60 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/62.cif
+[63/501] Interaction 63: IFT70A ↔ UBXN10
+  ✓ Uploaded: structures/63.cif (0.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/63.cif
+[64/501] Interaction 64: IFT20 ↔ SUFU
+  ✓ Uploaded: structures/64.cif (0.38 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/64.cif
+[65/501] Interaction 65: IFT20 ↔ PRMT1
+  ✓ Uploaded: structures/65.cif (0.32 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/65.cif
+[66/501] Interaction 66: IFT20 ↔ TRAF3IP1
+  ✓ Uploaded: structures/66.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/66.cif
+[67/501] Interaction 67: IFT20 ↔ U2SURP
+  ✓ Uploaded: structures/67.cif (0.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/67.cif
+[68/501] Interaction 68: IFT20 ↔ CFAP299
+  ✓ Uploaded: structures/68.cif (0.24 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/68.cif
+[69/501] Interaction 69: IFT20 ↔ FSD1
+  ✓ Uploaded: structures/69.cif (0.40 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/69.cif
+[70/501] Interaction 70: IFT20 ↔ DYDC2
+  ✓ Uploaded: structures/70.cif (0.20 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/70.cif
+[71/501] Interaction 71: IFT20 ↔ GPR88
+  ✓ Uploaded: structures/71.cif (0.31 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/71.cif
+[72/501] Interaction 72: IFT20 ↔ ALPK1
+  ✓ Uploaded: structures/72.cif (0.88 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/72.cif
+[73/501] Interaction 73: IFT20 ↔ ZBBX
+  ✓ Uploaded: structures/73.cif (0.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/73.cif
+[74/501] Interaction 74: IFT20 ↔ KRT8
+  ✓ Uploaded: structures/74.cif (0.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/74.cif
+[75/501] Interaction 75: IFT20 ↔ AKNA
+  ✓ Uploaded: structures/75.cif (0.99 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/75.cif
+[76/501] Interaction 76: IFT20 ↔ CYLC2
+  ✓ Uploaded: structures/76.cif (0.30 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/76.cif
+[77/501] Interaction 77: IFT70B ↔ IFT88
+  ✓ Uploaded: structures/77.cif (0.94 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/77.cif
+[78/501] Interaction 78: IFT70B ↔ IFT52
+  ✓ Uploaded: structures/78.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/78.cif
+[79/501] Interaction 79: IFT70B ↔ UBA52
+  ✓ Uploaded: structures/79.cif (0.50 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/79.cif
+[80/501] Interaction 80: IFT70B ↔ PDIA4
+  ✓ Uploaded: structures/80.cif (0.83 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/80.cif
+[81/501] Interaction 81: IFT70B ↔ DNAH10
+  ✓ Uploaded: structures/81.cif (3.35 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/81.cif
+[82/501] Interaction 82: IFT70B ↔ TUB
+  ✓ Uploaded: structures/82.cif (0.72 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/82.cif
+[83/501] Interaction 83: IFT70B ↔ CEP97
+  ✓ Uploaded: structures/83.cif (0.96 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/83.cif
+[84/501] Interaction 84: IFT70B ↔ TAGLN2
+  ✓ Uploaded: structures/84.cif (0.54 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/84.cif
+[85/501] Interaction 85: IFT70B ↔ CIMIP2A
+  ✓ Uploaded: structures/85.cif (0.62 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/85.cif
+[86/501] Interaction 86: IFT70B ↔ DYNC2I1
+  ✓ Uploaded: structures/86.cif (1.13 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/86.cif
+[87/501] Interaction 87: IFT70B ↔ GALR3
+  ✓ Uploaded: structures/87.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/87.cif
+[88/501] Interaction 88: IFT70B ↔ TUBGCP6
+  ✓ Uploaded: structures/88.cif (1.58 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/88.cif
+[89/501] Interaction 89: IFT70B ↔ PTGER4
+  ✓ Uploaded: structures/89.cif (0.71 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/89.cif
+[90/501] Interaction 90: IFT70B ↔ QARS1
+  ✓ Uploaded: structures/90.cif (0.91 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/90.cif
+[91/501] Interaction 91: IFT70B ↔ SPESP1
+  ✓ Uploaded: structures/91.cif (0.63 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/91.cif
+[92/501] Interaction 92: IFT70B ↔ CCDC181
+  ✓ Uploaded: structures/92.cif (0.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/92.cif
+[93/501] Interaction 93: IFT70B ↔ SPMIP6
+  ✓ Uploaded: structures/93.cif (0.58 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/93.cif
+[94/501] Interaction 94: WDR19 ↔ IFT122
+  ✓ Uploaded: structures/94.cif (1.67 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/94.cif
+[95/501] Interaction 95: WDR19 ↔ BBS7
+  ✓ Uploaded: structures/95.cif (1.32 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/95.cif
+[96/501] Interaction 96: WDR19 ↔ IFT140
+  ✓ Uploaded: structures/96.cif (1.82 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/96.cif
+[97/501] Interaction 97: WDR19 ↔ DRC3
+  ✓ Uploaded: structures/97.cif (1.21 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/97.cif
+[98/501] Interaction 98: TRAF3IP1 ↔ CYS1
+  ✓ Uploaded: structures/98.cif (0.53 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/98.cif
+[99/501] Interaction 99: TRAF3IP1 ↔ CLIC1
+  ✓ Uploaded: structures/99.cif (0.58 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/99.cif
+[100/501] Interaction 100: TRAF3IP1 ↔ CDC20
+  ✓ Uploaded: structures/100.cif (0.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/100.cif
+[101/501] Interaction 101: TRAF3IP1 ↔ IFT20
+  ✓ Uploaded: structures/101.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/101.cif
+[102/501] Interaction 102: TRAF3IP1 ↔ BBS9
+  ✓ Uploaded: structures/102.cif (0.98 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/102.cif
+[103/501] Interaction 103: TRAF3IP1 ↔ MOK
+  ✓ Uploaded: structures/103.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/103.cif
+[104/501] Interaction 104: TRAF3IP1 ↔ AIPL1
+  ✓ Uploaded: structures/104.cif (0.68 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/104.cif
+[105/501] Interaction 105: IFT81 ↔ IFT74
+  ✓ Uploaded: structures/105.cif (0.83 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/105.cif
+[106/501] Interaction 106: IFT81 ↔ IFT22
+  ✓ Uploaded: structures/106.cif (0.55 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/106.cif
+[107/501] Interaction 107: IFT81 ↔ NUMB
+  ✓ Uploaded: structures/107.cif (0.84 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/107.cif
+[108/501] Interaction 108: CLUAP1 ↔ IFT80
+  ✓ Uploaded: structures/108.cif (0.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/108.cif
+[109/501] Interaction 109: CLUAP1 ↔ HIBADH
+  ✓ Uploaded: structures/109.cif (0.46 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/109.cif
+[110/501] Interaction 110: CLUAP1 ↔ CDC20B
+  ✓ Uploaded: structures/110.cif (0.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/110.cif
+[111/501] Interaction 111: CLUAP1 ↔ IFT57
+  ✓ Uploaded: structures/111.cif (0.53 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/111.cif
+[112/501] Interaction 112: CLUAP1 ↔ GSTM2
+  ✓ Uploaded: structures/112.cif (0.41 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/112.cif
+[113/501] Interaction 113: CLUAP1 ↔ PSMD3
+  ✓ Uploaded: structures/113.cif (0.60 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/113.cif
+[114/501] Interaction 114: CLUAP1 ↔ CFAP20
+  ✓ Uploaded: structures/114.cif (0.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/114.cif
+[115/501] Interaction 115: CLUAP1 ↔ GSTM5
+  ✓ Uploaded: structures/115.cif (0.41 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/115.cif
+[116/501] Interaction 116: CLUAP1 ↔ IFT52
+  ✓ Uploaded: structures/116.cif (0.54 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/116.cif
+[117/501] Interaction 117: CLUAP1 ↔ HNF1B
+  ✓ Uploaded: structures/117.cif (0.60 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/117.cif
+[118/501] Interaction 118: CLUAP1 ↔ ANXA3
+  ✓ Uploaded: structures/118.cif (0.47 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/118.cif
+[119/501] Interaction 119: CLUAP1 ↔ KIFAP3
+  ✓ Uploaded: structures/119.cif (0.76 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/119.cif
+[120/501] Interaction 120: CLUAP1 ↔ PRKAR1A
+  ✓ Uploaded: structures/120.cif (0.51 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/120.cif
+[121/501] Interaction 121: CLUAP1 ↔ PEBP1
+  ✓ Uploaded: structures/121.cif (0.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/121.cif
+[122/501] Interaction 122: CLUAP1 ↔ RNPEP
+  ✓ Uploaded: structures/122.cif (0.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/122.cif
+[123/501] Interaction 123: CLUAP1 ↔ CSNK2B
+  ✓ Uploaded: structures/123.cif (0.41 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/123.cif
+[124/501] Interaction 124: CLUAP1 ↔ TUBB6
+  ✓ Uploaded: structures/124.cif (0.54 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/124.cif
+[125/501] Interaction 125: IFT43 ↔ WDR35
+  ✓ Uploaded: structures/125.cif (0.90 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/125.cif
+[126/501] Interaction 126: IFT43 ↔ LTA4H
+  ✓ Uploaded: structures/126.cif (0.51 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/126.cif
+[127/501] Interaction 127: IFT43 ↔ WDR5
+  ✓ Uploaded: structures/127.cif (0.33 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/127.cif
+[128/501] Interaction 128: IFT43 ↔ VHL
+  ✓ Uploaded: structures/128.cif (0.27 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/128.cif
+[129/501] Interaction 129: IFT43 ↔ CFAP206
+  ✓ Uploaded: structures/129.cif (0.52 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/129.cif
+[130/501] Interaction 130: IFT43 ↔ CSNK1D
+  ✓ Uploaded: structures/130.cif (0.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/130.cif
+[131/501] Interaction 131: IFT43 ↔ CYRIB
+  ✓ Uploaded: structures/131.cif (0.33 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/131.cif
+[132/501] Interaction 132: IFT43 ↔ ACR
+  ✓ Uploaded: structures/132.cif (0.39 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/132.cif
+[133/501] Interaction 133: IFT43 ↔ MMP21
+  ✓ Uploaded: structures/133.cif (0.49 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/133.cif
+[134/501] Interaction 134: IFT43 ↔ TTC21A
+  ✓ Uploaded: structures/134.cif (0.99 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/134.cif
+[135/501] Interaction 135: IFT43 ↔ ACTR2
+  ✓ Uploaded: structures/135.cif (0.38 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/135.cif
+[136/501] Interaction 136: IFT43 ↔ TTC21B
+  ✓ Uploaded: structures/136.cif (0.99 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/136.cif
+[137/501] Interaction 137: IFT43 ↔ WDR77
+  ✓ Uploaded: structures/137.cif (0.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/137.cif
+[138/501] Interaction 138: IFT43 ↔ RACK1
+  ✓ Uploaded: structures/138.cif (0.33 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/138.cif
+[139/501] Interaction 139: IFT43 ↔ NSUN4
+  ✓ Uploaded: structures/139.cif (0.37 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/139.cif
+[140/501] Interaction 140: IFT43 ↔ MAPK3
+  ✓ Uploaded: structures/140.cif (0.37 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/140.cif
+[141/501] Interaction 141: IFT43 ↔ CDC20
+  ✓ Uploaded: structures/141.cif (0.43 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/141.cif
+[142/501] Interaction 142: IFT43 ↔ BBS7
+  ✓ Uploaded: structures/142.cif (0.57 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/142.cif
+[143/501] Interaction 143: IFT43 ↔ COP1
+  ✓ Uploaded: structures/143.cif (0.57 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/143.cif
+[144/501] Interaction 144: IFT43 ↔ MOK
+  ✓ Uploaded: structures/144.cif (0.40 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/144.cif
+[145/501] Interaction 145: IFT43 ↔ CTNNB1
+  ✓ Uploaded: structures/145.cif (0.60 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/145.cif
+[146/501] Interaction 146: IFT43 ↔ P4HB
+  ✓ Uploaded: structures/146.cif (0.45 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/146.cif
+[147/501] Interaction 147: IFT43 ↔ PRKACG
+  ✓ Uploaded: structures/147.cif (0.36 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/147.cif
+[148/501] Interaction 148: IFT43 ↔ NME7
+  ✓ Uploaded: structures/148.cif (0.37 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/148.cif
+[149/501] Interaction 149: IFT43 ↔ FSD1
+  ✓ Uploaded: structures/149.cif (0.44 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/149.cif
+[150/501] Interaction 150: IFT43 ↔ CCNO
+  ✓ Uploaded: structures/150.cif (0.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/150.cif
+[151/501] Interaction 151: IFT43 ↔ CFAP298
+  ✓ Uploaded: structures/151.cif (0.32 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/151.cif
+[152/501] Interaction 152: IFT43 ↔ ZPBP
+  ✓ Uploaded: structures/152.cif (0.35 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/152.cif
+[153/501] Interaction 153: IFT43 ↔ GANAB
+  ✓ Uploaded: structures/153.cif (0.72 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/153.cif
+[154/501] Interaction 154: IFT43 ↔ HSP90AB1
+  ✓ Uploaded: structures/154.cif (0.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/154.cif
+[155/501] Interaction 155: IFT43 ↔ PPIA
+  ✓ Uploaded: structures/155.cif (0.23 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/155.cif
+[156/501] Interaction 156: IFT43 ↔ DNAJC8
+  ✓ Uploaded: structures/156.cif (0.30 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/156.cif
+[157/501] Interaction 157: IFT43 ↔ DNAI3
+  ✓ Uploaded: structures/157.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/157.cif
+[158/501] Interaction 158: IFT43 ↔ TUBA8
+  ✓ Uploaded: structures/158.cif (0.41 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/158.cif
+[159/501] Interaction 159: IFT43 ↔ PPP2R3C
+  ✓ Uploaded: structures/159.cif (0.42 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/159.cif
+[160/501] Interaction 160: IFT43 ↔ TUB
+  ✓ Uploaded: structures/160.cif (0.44 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/160.cif
+[161/501] Interaction 161: IFT74 ↔ IFT81
+  ✓ Uploaded: structures/161.cif (0.82 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/161.cif
+[162/501] Interaction 162: IFT74 ↔ CALR
+  ✓ Uploaded: structures/162.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/162.cif
+[163/501] Interaction 163: IFT74 ↔ TCTN2
+  ✓ Uploaded: structures/163.cif (0.82 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/163.cif
+[164/501] Interaction 164: IFT74 ↔ P4HB
+  ✓ Uploaded: structures/164.cif (0.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/164.cif
+[165/501] Interaction 165: IFT74 ↔ IFT22
+  ✓ Uploaded: structures/165.cif (0.50 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/165.cif
+[166/501] Interaction 166: IFT140 ↔ WDR19
+  ✓ Uploaded: structures/166.cif (1.82 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/166.cif
+[167/501] Interaction 167: IFT140 ↔ IFT122
+  ✓ Uploaded: structures/167.cif (1.75 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/167.cif
+[168/501] Interaction 168: IFT140 ↔ NSFL1C
+  ✓ Uploaded: structures/168.cif (1.17 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/168.cif
+[169/501] Interaction 169: IFT140 ↔ MACF1
+  ✓ Uploaded: structures/169.cif (3.18 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/169.cif
+[170/501] Interaction 170: IFT27 ↔ TUBE1
+  ✓ Uploaded: structures/170.cif (0.41 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/170.cif
+[171/501] Interaction 171: IFT27 ↔ PPP6C
+  ✓ Uploaded: structures/171.cif (0.31 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/171.cif
+[172/501] Interaction 172: IFT27 ↔ IFT25
+  ✓ Uploaded: structures/172.cif (0.21 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/172.cif
+[173/501] Interaction 173: IFT27 ↔ TBC1D7
+  ✓ Uploaded: structures/173.cif (0.30 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/173.cif
+[174/501] Interaction 174: IFT27 ↔ SH3GLB1
+  ✓ Uploaded: structures/174.cif (0.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/174.cif
+[175/501] Interaction 175: IFT27 ↔ CLU
+  ✓ Uploaded: structures/175.cif (0.40 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/175.cif
+[176/501] Interaction 176: IFT27 ↔ KCTD10
+  ✓ Uploaded: structures/176.cif (0.31 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/176.cif
+[177/501] Interaction 177: IFT27 ↔ DRG1
+  ✓ Uploaded: structures/177.cif (0.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/177.cif
+[178/501] Interaction 178: IFT27 ↔ USH1G
+  ✓ Uploaded: structures/178.cif (0.40 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/178.cif
+[179/501] Interaction 179: IFT27 ↔ ACR
+  ✓ Uploaded: structures/179.cif (0.37 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/179.cif
+[180/501] Interaction 180: IFT27 ↔ CCDC78
+  ✓ Uploaded: structures/180.cif (0.38 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/180.cif
+[181/501] Interaction 181: IFT27 ↔ CYLD
+  ✓ Uploaded: structures/181.cif (0.70 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/181.cif
+[182/501] Interaction 182: IFT22 ↔ INTS6
+  ✓ Uploaded: structures/182.cif (0.67 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/182.cif
+[183/501] Interaction 183: IFT22 ↔ DTYMK
+  ✓ Uploaded: structures/183.cif (0.25 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/183.cif
+[184/501] Interaction 184: IFT22 ↔ PHB2
+  ✓ Uploaded: structures/184.cif (0.30 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/184.cif
+[185/501] Interaction 185: IFT22 ↔ CELSR3
+  ✓ Uploaded: structures/185.cif (2.16 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/185.cif
+[186/501] Interaction 186: IFT22 ↔ WDR77
+  ✓ Uploaded: structures/186.cif (0.32 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/186.cif
+[187/501] Interaction 187: IFT22 ↔ RFX4
+  ✓ Uploaded: structures/187.cif (0.57 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/187.cif
+[188/501] Interaction 188: IFT22 ↔ RPL9
+  ✓ Uploaded: structures/188.cif (0.24 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/188.cif
+[189/501] Interaction 189: IFT22 ↔ SALL1
+  ✓ Uploaded: structures/189.cif (0.92 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/189.cif
+[190/501] Interaction 190: IFT22 ↔ PPIA
+  ✓ Uploaded: structures/190.cif (0.22 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/190.cif
+[191/501] Interaction 191: IFT22 ↔ TMED10
+  ✓ Uploaded: structures/191.cif (0.26 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/191.cif
+[192/501] Interaction 192: IFT22 ↔ PPP1R7
+  ✓ Uploaded: structures/192.cif (0.34 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/192.cif
+[193/501] Interaction 193: IFT22 ↔ PRICKLE2
+  ✓ Uploaded: structures/193.cif (0.64 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/193.cif
+[194/501] Interaction 194: IFT22 ↔ NFIX
+  ✓ Uploaded: structures/194.cif (0.42 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/194.cif
+[195/501] Interaction 195: IFT22 ↔ CELSR2
+  ✓ Uploaded: structures/195.cif (1.97 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/195.cif
+[196/501] Interaction 196: IFT22 ↔ IZUMO4
+  ✓ Uploaded: structures/196.cif (0.26 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/196.cif
+[197/501] Interaction 197: IFT22 ↔ CEP44
+  ✓ Uploaded: structures/197.cif (0.36 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/197.cif
+[198/501] Interaction 198: IFT22 ↔ RFX7
+  ✓ Uploaded: structures/198.cif (1.04 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/198.cif
+[199/501] Interaction 199: IFT22 ↔ CDK13
+  ✓ Uploaded: structures/199.cif (1.06 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/199.cif
+[200/501] Interaction 200: IFT22 ↔ MED26
+  ✓ Uploaded: structures/200.cif (0.48 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/200.cif
+[201/501] Interaction 201: IFT122 ↔ WDR19
+  ✓ Uploaded: structures/201.cif (1.69 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/201.cif
+[202/501] Interaction 202: IFT122 ↔ WDR35
+  ✓ Uploaded: structures/202.cif (1.59 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/202.cif
+[203/501] Interaction 203: IFT122 ↔ TTC21B
+  ✓ Uploaded: structures/203.cif (1.66 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/203.cif
+[204/501] Interaction 204: IFT122 ↔ TTC21A
+  ✓ Uploaded: structures/204.cif (1.68 MB)
+    URL: https://rechesvudwvwhwta.public.blob.vercel-storage.com/structures/204.cif
+[205/501] Interaction 205: IFT122 ↔ IFT140

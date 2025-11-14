@@ -239,29 +239,49 @@ class WebContactExtractor:
 
         return output_file
 
-    def process_batch(self, mapping_file: str = "cif_mapping.json") -> Dict:
-        """Process all interactions from cif_mapping.json."""
+    def process_batch(self, mapping_file: str = "cif_manifest.json", specific_ids: Optional[List[int]] = None) -> Dict:
+        """Process all interactions from cif_manifest.json."""
         mapping_path = Path(__file__).parent.parent / mapping_file
 
         if not mapping_path.exists():
             print(f"ERROR: Mapping file not found: {mapping_path}")
-            print("Run collect_cif_paths.py first!")
+            print("Run generate_cif_manifest.mjs first!")
             sys.exit(1)
 
         with open(mapping_path, 'r') as f:
             mapping_data = json.load(f)
 
-        mappings = mapping_data.get('mappings', {})
+        # Support both old (mappings) and new (entries) format
+        mappings = mapping_data.get('entries', mapping_data.get('mappings', {}))
+
+        # Filter to specific IDs if provided
+        if specific_ids is not None:
+            specific_ids_str = [str(id) for id in specific_ids]
+            mappings = {k: v for k, v in mappings.items() if k in specific_ids_str}
+            print(f"Processing {len(mappings)} specific interactions (from {len(specific_ids)} requested)")
+        else:
+            print(f"Processing all {len(mappings)} interactions")
+
         total = len(mappings)
         processed = 0
         successful = 0
         failed = 0
 
-        print(f"Processing {total} interactions...")
+        # Skip problematic interactions that cause hangs
+        SKIP_IDS = [150]
+
+        print(f"Skipping problematic interactions: {SKIP_IDS}")
         print()
 
         for interaction_id, file_data in mappings.items():
             processed += 1
+
+            # Skip problematic interactions
+            if int(interaction_id) in SKIP_IDS:
+                failed += 1
+                print(f"  [{processed}/{total}] Skipped interaction {interaction_id} (known to hang)")
+                continue
+
             cif_path = file_data.get('cif_path')
             conf_path = file_data.get('confidences_path')
 
@@ -307,6 +327,8 @@ def main():
 
     parser.add_argument('--batch', action='store_true',
                        help='Process all interactions from cif_mapping.json')
+    parser.add_argument('--ids-file', type=str,
+                       help='File with comma-separated interaction IDs to process (use with --batch)')
     parser.add_argument('--directory', type=str,
                        help='Process single interaction directory')
     parser.add_argument('--cif', type=str,
@@ -332,7 +354,20 @@ def main():
         print(f"Output directory: {extractor.output_dir}")
         print()
 
-        stats = extractor.process_batch()
+        # Load specific IDs if provided
+        specific_ids = None
+        if args.ids_file:
+            try:
+                with open(args.ids_file, 'r') as f:
+                    ids_text = f.read().strip()
+                    specific_ids = [int(id.strip()) for id in ids_text.split(',') if id.strip()]
+                print(f"Loaded {len(specific_ids)} interaction IDs from {args.ids_file}")
+                print()
+            except Exception as e:
+                print(f"ERROR: Could not load IDs from {args.ids_file}: {e}")
+                sys.exit(1)
+
+        stats = extractor.process_batch(specific_ids=specific_ids)
 
         print()
         print("="*80)
