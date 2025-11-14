@@ -1,0 +1,27 @@
+BioGRID Comparison Summary
+======================================================================
+
+BioGRID Version: 5.0.251
+Date: 2025-11-14
+
+Overall Statistics:
+  Total predictions: 548
+  BioGRID validated: 76 (13.9%)
+  Novel predictions: 472 (86.1%)
+
+Validation by Confidence Level:
+  High: 15/20 (75.0%)
+  Medium: 34/135 (25.2%)
+  Low: 27/393 (6.9%)
+
+Top 10 Validated Interactions (by ipSAE):
+  IFT46 - IFT56: ipSAE=0.828, BioGRID detections=2
+  IFT56 - IFT46: ipSAE=0.828, BioGRID detections=2
+  BBS8 - BBS18: ipSAE=0.771, BioGRID detections=1
+  BBS18 - BBS8: ipSAE=0.760, BioGRID detections=1
+  BBS7 - BBS2: ipSAE=0.759, BioGRID detections=4
+  BBS2 - BBS7: ipSAE=0.758, BioGRID detections=4
+  BBS1 - BBS4: ipSAE=0.753, BioGRID detections=3
+  BBS4 - BBS1: ipSAE=0.748, BioGRID detections=3
+  IFT70B - IFT88: ipSAE=0.719, BioGRID detections=3
+  BBS1 - ARL6: ipSAE=0.709, BioGRID detections=1

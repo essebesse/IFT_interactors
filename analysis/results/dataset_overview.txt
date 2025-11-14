@@ -1,6 +1,6 @@
 
 IFT/BBSome Interactome Dataset Overview
-Generated: 2025-11-14T13:32:48.049Z
+Generated: 2025-11-14T15:07:49.342Z
 
 ========================================
 OVERALL STATISTICS
