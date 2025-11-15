@@ -4,16 +4,9 @@
  * Stores results in a JSON file for further analysis
  */
 
-import pg from 'pg';
+import { sql } from '@vercel/postgres';
 import fetch from 'node-fetch';
 import fs from 'fs';
-
-const { Pool } = pg;
-
-// Database connection
-const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL
-});
 
 // Delay function to avoid rate limiting
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -92,12 +85,12 @@ async function main() {
   console.log('Fetching all unique proteins from database...');
 
   // Get all unique proteins (both bait and prey)
-  const result = await pool.query(`
+  const result = await sql`
     SELECT DISTINCT p.uniprot_id, p.gene_name, p.organism
     FROM proteins p
     WHERE p.organism = 'Homo sapiens'
     ORDER BY p.uniprot_id
-  `);
+  `;
 
   const proteins = result.rows;
   console.log(`Found ${proteins.length} unique human proteins`);
@@ -131,8 +124,6 @@ async function main() {
     console.log(`\nFailed to fetch ${errors.length} proteins:`);
     console.log(errors.join(', '));
   }
-
-  await pool.end();
 }
 
 main().catch(console.error);

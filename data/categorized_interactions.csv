@@ -1,0 +1,549 @@
+Bait_Gene,Prey_Gene,Bait_Category,Prey_Category,Interaction_Category,ipSAE,iPTM
+IFT46,IFT56,IFT-B,IFT-B,Validation: Intra-complex,0.8283153,0.84
+IFT56,IFT46,IFT-B,IFT-B,Validation: Intra-complex,0.8280138,0.84
+BBS8,BBS18,BBSome,BBSome,Validation: Intra-complex,0.7713359,0.64
+BBS18,BBS8,BBSome,BBSome,Validation: Intra-complex,0.7599822,0.62
+BBS7,BBS2,BBSome,BBSome,Validation: Intra-complex,0.7587239,0.85
+BBS2,BBS7,BBSome,BBSome,Validation: Intra-complex,0.7578511,0.85
+BBS1,BBS4,BBSome,BBSome,Validation: Intra-complex,0.75296104,0.68
+BBS4,BBS1,BBSome,BBSome,Validation: Intra-complex,0.74835306,0.68
+IFT70B,IFT88,Ciliary structural,IFT-B,Novel cargo: Other,0.71904945,0.63
+TULP3,WDR5,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.71869755,0.81
+BBS18,BBS4,BBSome,BBSome,Validation: Intra-complex,0.71672386,0.62
+BBS4,BBS18,BBSome,BBSome,Validation: Intra-complex,0.7131941,0.62
+IFT25,ZC2HC1A,IFT-B,Other,Novel cargo: Other,0.71297,0.88
+BBS1,ARL6,BBSome,BBSome,Validation: Intra-complex,0.7092236,0.81
+IFT88,IFT70B,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.70862484,0.63
+IFT172,IFT57,Ciliary structural,IFT-B,Novel cargo: Other,0.7043668,0.45
+IFT80,IFT38,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.7038984,0.72
+IFT57,IFT172,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.70357007,0.45
+IFT38,IFT80,Ciliary structural,IFT-B,Novel cargo: Other,0.7023716,0.72
+IFT25,BBS18,IFT-B,BBSome,Mechanistic: IFT-BBSome coupling,0.7009643,0.83
+IFT80,TP73,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.698964,0.74
+IFT54,CYS1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.6988243,0.27
+IFT27,TUBE1,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.6967669,0.8
+BBS8,BBS9,BBSome,BBSome,Validation: Intra-complex,0.6958741,0.65
+BBS9,BBS8,BBSome,BBSome,Validation: Intra-complex,0.6912346,0.65
+TULP3,GNAS,IFT-A,Membrane trafficking,Novel cargo: Membrane trafficking,0.6898698,0.57
+IFT122,IFT144,IFT-A,IFT-A,Validation: Intra-complex,0.6876721,0.55
+ARL6,BBS1,BBSome,BBSome,Validation: Intra-complex,0.68612725,0.81
+IFT144,IFT122,IFT-A,IFT-A,Validation: Intra-complex,0.6836468,0.55
+TULP3,TIMM50,IFT-A,Signaling,Novel cargo: Signaling,0.6834417,0.57
+IFT52,IFT70B,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.67843467,0.77
+IFT70B,IFT52,Ciliary structural,IFT-B,Novel cargo: Other,0.67754316,0.77
+IFT25,IFT27,IFT-B,IFT-B,Validation: Intra-complex,0.67742985,0.85
+BBS7,IFT144,BBSome,IFT-A,Mechanistic: IFT-BBSome coupling,0.67528325,0.79
+IFT144,BBS7,IFT-A,BBSome,Mechanistic: IFT-BBSome coupling,0.67365915,0.78
+IFT27,PPP6C,IFT-B,Signaling,Novel cargo: Signaling,0.6698515,0.78
+IFT88,IFT70A,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.66718847,0.59
+BBS18,IFT25,BBSome,IFT-B,Mechanistic: IFT-BBSome coupling,0.66681945,0.82
+TULP3,GLIS2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.6664429,0.56
+IFT70A,IFT88,Ciliary structural,IFT-B,Novel cargo: Other,0.6646243,0.59
+IFT70A,IFT52,Ciliary structural,IFT-B,Novel cargo: Other,0.6641053,0.76
+IFT52,IFT70A,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.66343486,0.76
+TULP3,EIF5,IFT-A,RNA processing,Novel cargo: RNA processing,0.6625281,0.58
+IFT54,CLIC1,IFT-B,Signaling,Novel cargo: Signaling,0.66031516,0.87
+BBS5,MCIDAS,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.66007113,0.68
+IFT122,IFT121,IFT-A,IFT-A,Validation: Intra-complex,0.6582769,0.71
+IFT27,IFT25,IFT-B,IFT-B,Validation: Intra-complex,0.654327,0.84
+IFT25,CFAP144,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.652987,0.79
+BBS1,BBS9,BBSome,BBSome,Validation: Intra-complex,0.6523343,0.52
+BBS9,BBS1,BBSome,BBSome,Validation: Intra-complex,0.64633,0.52
+IFT121,IFT122,IFT-A,IFT-A,Validation: Intra-complex,0.6455526,0.71
+TULP3,GMNC,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.64029306,0.54
+BBS5,GNAS,BBSome,Membrane trafficking,Novel cargo: Membrane trafficking,0.6363958,0.66
+RABL2B,POC1A,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.6362975,0.67
+TULP3,STK11,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.63555217,0.63
+BBS17,BBS17,BBSome,BBSome,Validation: Intra-complex,0.6290676,0.43
+IFT57,CFAP20,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.62772363,0.83
+BBS9,BBS5,BBSome,BBSome,Validation: Intra-complex,0.6214371,0.72
+IFT20,SUFU,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.6213019,0.52
+IFT144,IFT140,IFT-A,IFT-A,Validation: Intra-complex,0.61810565,0.54
+TULP3,DCDC2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.6175081,0.55
+IFT140,IFT144,IFT-A,IFT-A,Validation: Intra-complex,0.6170063,0.54
+IFT80,IFT172,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.6135375,0.77
+BBS5,SRSF7,BBSome,Signaling,Novel cargo: Signaling,0.61226493,0.64
+IFT172,IFT80,Ciliary structural,IFT-B,Novel cargo: Other,0.60844237,0.77
+IFT43,IFT121,IFT-A,IFT-A,Validation: Intra-complex,0.5973592,0.42
+ARL6,PDE6D,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.59723043,0.82
+IFT121,IFT43,IFT-A,IFT-A,Validation: Intra-complex,0.5954744,0.41
+TULP3,SPATA7,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.59497327,0.6
+BBS5,BBS9,BBSome,BBSome,Validation: Intra-complex,0.59391326,0.72
+ARL6,NDUFA5,BBSome,Metabolism,Novel cargo: Metabolism,0.5905581,0.72
+IFT25,SNX10,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.587469,0.83
+BBS5,ENTR1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5870666,0.66
+IFT22,INTS6,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.58277494,0.77
+TULP3,EFCAB2,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.58199704,0.52
+IFT22,DTYMK,IFT-B,Signaling,Novel cargo: Signaling,0.57994014,0.76
+ARL6,GDI2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5798622,0.75
+BBS1,FAIM,BBSome,Signaling,Novel cargo: Signaling,0.5792177,0.7
+ARL6,SUCLG1,BBSome,Metabolism,Novel cargo: Metabolism,0.5785494,0.78
+BBS5,CMPK1,BBSome,Signaling,Novel cargo: Signaling,0.5784052,0.76
+BBS7,ACSL3,BBSome,Signaling,Novel cargo: Signaling,0.5777957,0.71
+IFT38,HIBADH,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.5735986,0.73
+TULP3,RPS9,IFT-A,RNA processing,Novel cargo: RNA processing,0.57019615,0.68
+ARL6,DYNC2LI1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.56956,0.79
+IFT43,LTA4H,IFT-A,Metabolism,Novel cargo: Metabolism,0.56758153,0.71
+IFT56,DNAJC8,IFT-B,Other,Novel cargo: Other,0.5647609,0.58
+BBS1,PDCD10,BBSome,Signaling,Novel cargo: Signaling,0.56247354,0.83
+TULP3,SEMG1,IFT-A,Other,Novel cargo: Other,0.55910605,0.53
+TTC21B,IFT122,Ciliary structural,IFT-A,Novel cargo: Other,0.5571812,0.47
+IFT122,TTC21B,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.55645055,0.46
+BBS5,SEMG1,BBSome,Other,Novel cargo: Other,0.55625033,0.65
+IFT80,CYLC2,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.55590785,0.63
+IFT27,TBC1D7,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.5539813,0.79
+IFT70B,UBA52,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.5533598,0.69
+IFT46,GALNT11,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.5524447,0.63
+IFT122,TTC21A,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.5519426,0.46
+IFT27,SH3GLB1,IFT-B,Signaling,Novel cargo: Signaling,0.5508466,0.79
+IFT56,UBXN10,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.5499628,0.64
+IFT70A,UBA52,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.5499107,0.69
+BBS9,MED7,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.54697245,0.41
+BBS5,TTBK2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.54332566,0.71
+TULP3,CFAP36,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.542769,0.51
+IFT43,WDR5,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5420294,0.68
+BBS5,MLF2,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5403463,0.62
+IFT140,IFT122,IFT-A,IFT-A,Validation: Intra-complex,0.5381653,0.44
+IFT27,CLU,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.53662884,0.79
+IFT121,DBR1,IFT-A,RNA processing,Novel cargo: RNA processing,0.5346844,0.67
+IFT25,CLBA1,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.53406805,0.81
+IFT56,NPM1,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5330536,0.58
+BBS5,MAK,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5322961,0.66
+RABL2B,IFT122,IFT-B,IFT-A,Validation: IFT-A/B coupling,0.53002244,0.71
+TULP3,NSFL1C,IFT-A,Metabolism,Novel cargo: Metabolism,0.5297755,0.53
+TULP3,RFX7,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5293746,0.58
+IFT70B,PDIA4,Ciliary structural,Signaling,Novel cargo: Signaling,0.52800703,0.67
+BBS5,CILK1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.526945,0.66
+BBS5,HNRNPM,BBSome,Signaling,Novel cargo: Signaling,0.52688205,0.67
+IFT25,CMPK1,IFT-B,Signaling,Novel cargo: Signaling,0.52650636,0.75
+IFT43,VHL,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.526164,0.61
+BBS2,BBS9,BBSome,BBSome,Validation: Intra-complex,0.5261032,0.53
+RABL2B,CYS1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.52547,0.66
+IFT122,IFT140,IFT-A,IFT-A,Validation: Intra-complex,0.52540433,0.44
+TULP3,YAP1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.524695,0.52
+IFT27,KCTD10,IFT-B,Signaling,Novel cargo: Signaling,0.5245273,0.74
+TULP3,CEP44,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.524515,0.53
+BBS7,HAP1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.52408963,0.69
+IFT43,CFAP206,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.523655,0.58
+IFT25,TOM1,IFT-B,Signaling,Novel cargo: Signaling,0.5235034,0.84
+IFT22,PHB2,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5231901,0.74
+BBS9,BBS2,BBSome,BBSome,Validation: Intra-complex,0.5230795,0.53
+IFT56,DTYMK,IFT-B,Signaling,Novel cargo: Signaling,0.5228147,0.81
+BBS17,CBY1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5200317,0.49
+TULP3,GSTM1,IFT-A,Metabolism,Novel cargo: Metabolism,0.51861125,0.75
+TULP3,DZIP1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.51754177,0.55
+IFT80,GLI1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.51737833,0.69
+BBS5,RAB28,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.51721895,0.63
+TULP3,DRG1,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.51681393,0.71
+TULP3,EGFR,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.51652694,0.56
+ARL6,LRRC23,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.5143757,0.68
+TULP3,GALR2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.5134987,0.54
+IFT43,CSNK1D,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.5125944,0.57
+IFT43,CYRIB,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.51255965,0.67
+TULP3,AMOTL2,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5120091,0.54
+IFT43,ACR,IFT-A,Membrane trafficking,Novel cargo: Membrane trafficking,0.51141804,0.55
+ARL6,P2RY14,BBSome,Signaling,Novel cargo: Signaling,0.5112655,0.74
+BBS18,ELOC,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5112505,0.75
+BBS2,ALPK1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5104805,0.67
+ARL6,WDR5,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5104427,0.7
+IFT56,SPMIP5,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.5084198,0.62
+IFT38,CDC20B,Ciliary structural,Other,Novel cargo: Other,0.5067337,0.53
+BBS7,CYS1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.50266707,0.65
+TULP3,PSMA7,IFT-A,Other,Novel cargo: Other,0.5024442,0.75
+IFT43,MMP21,IFT-A,Other,Novel cargo: Other,0.50229347,0.59
+TULP3,FAAH,IFT-A,Metabolism,Novel cargo: Metabolism,0.50197744,0.7
+IFT20,PRMT1,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.5008938,0.62
+BBS18,VHL,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.5003644,0.57
+ARL6,TTC23,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.4997138,0.57
+IFT56,SPMAP2,IFT-B,Other,Novel cargo: Other,0.49928838,0.6
+RABL2B,PNP,IFT-B,Metabolism,Novel cargo: Metabolism,0.4986905,0.72
+ARL6,RP2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.49837703,0.72
+TULP3,PDE6G,IFT-A,Signaling,Novel cargo: Signaling,0.49660647,0.49
+IFT70B,DNAH10,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.49647292,0.69
+BBS5,GLI2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.4957416,0.7
+IFT25,RAB23,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.49431428,0.76
+BBS8,BBS2,BBSome,BBSome,Validation: Intra-complex,0.49272174,0.66
+ARL6,MYB,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.49263594,0.79
+IFT22,CELSR3,IFT-B,Signaling,Novel cargo: Signaling,0.49117956,0.89
+RABL2B,PSMD6,IFT-B,Other,Novel cargo: Other,0.49054864,0.68
+IFT172,CES1,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.48699653,0.76
+BBS4,IPO5,BBSome,Signaling,Novel cargo: Signaling,0.48555642,0.61
+BBS4,TUBA4A,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.48245022,0.72
+BBS7,TOM1,BBSome,Signaling,Novel cargo: Signaling,0.4819559,0.62
+IFT80,ADGB,IFT-B,Other,Novel cargo: Other,0.48010027,0.69
+IFT56,LRRC59,IFT-B,Signaling,Novel cargo: Signaling,0.47907314,0.58
+IFT25,DZANK1,IFT-B,Signaling,Novel cargo: Signaling,0.479029,0.84
+BBS5,TP73,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.47896805,0.63
+TULP3,IFT122,IFT-A,IFT-A,Validation: Intra-complex,0.47822043,0.35
+IFT122,RABL2B,IFT-A,IFT-B,Validation: IFT-A/B coupling,0.47673714,0.7
+BBS2,AKR1B1,BBSome,Metabolism,Novel cargo: Metabolism,0.47657016,0.76
+IFT25,NR1H4,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.47577927,0.83
+BBS18,CDC20B,BBSome,Other,Novel cargo: Other,0.4752677,0.54
+TULP3,STYXL1,IFT-A,Signaling,Novel cargo: Signaling,0.47389454,0.7
+TULP3,MCHR1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.4694991,0.56
+BBS7,IFT43,BBSome,IFT-A,Mechanistic: IFT-BBSome coupling,0.46918675,0.6
+IFT122,RABL2A,IFT-A,IFT-B,Validation: IFT-A/B coupling,0.46897858,0.69
+IFT122,TULP3,IFT-A,IFT-A,Validation: Intra-complex,0.46840107,0.35
+IFT54,CDC20,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.46731916,0.55
+IFT25,ACTA2,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.46542653,0.75
+IFT122,MPI,IFT-A,Other,Novel cargo: Other,0.46416005,0.75
+BBS2,SEPTIN12,BBSome,Signaling,Novel cargo: Signaling,0.4639453,0.58
+IFT88,KIFAP3,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.4632768,0.55
+TTC21B,IFT43,Ciliary structural,IFT-A,Novel cargo: Other,0.4627686,0.39
+IFT43,TTC21A,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.46250227,0.38
+IFT38,IFT57,Ciliary structural,IFT-B,Novel cargo: Other,0.46173054,0.33
+TULP3,UBXN10,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.46102872,0.49
+IFT80,GNAS,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.46093374,0.57
+IFT57,ACR,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.46092314,0.55
+ARL6,AHI1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.4600259,0.78
+ARL6,TXNDC15,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.45908275,0.73
+IFT56,GOT2,IFT-B,Metabolism,Novel cargo: Metabolism,0.4581572,0.57
+TULP3,CFAP144,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.45781785,0.46
+IFT121,CATSPERB,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.45742375,0.67
+BBS4,C7orf57,BBSome,Other,Novel cargo: Other,0.45670056,0.55
+ARL6,CAPS,BBSome,Signaling,Novel cargo: Signaling,0.45604345,0.74
+TULP3,GPR173,IFT-A,Signaling,Novel cargo: Signaling,0.45597094,0.6
+TULP3,PSMC2,IFT-A,Other,Novel cargo: Other,0.45554736,0.49
+IFT43,ACTR2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.45503387,0.63
+BBS7,ANXA1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.4539932,0.6
+IFT57,IFT38,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.45351166,0.33
+ARL6,NPM1,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.45347422,0.73
+IFT43,TTC21B,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.45264912,0.4
+IFT20,IFT54,IFT-B,IFT-B,Validation: Intra-complex,0.4524699,0.63
+IFT38,GSTM2,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.45172855,0.76
+IFT38,PSMD3,Ciliary structural,Other,Novel cargo: Other,0.45141402,0.56
+IFT43,WDR77,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.45104665,0.65
+IFT38,CFAP20,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.45032433,0.74
+IFT88,NUP35,IFT-B,Signaling,Novel cargo: Signaling,0.44999698,0.37
+BBS2,UNC119B,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.4488457,0.59
+IFT70B,TUB,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.44865564,0.63
+TULP3,B9D1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.44820905,0.65
+BBS5,CCDC92,BBSome,Other,Novel cargo: Other,0.4474602,0.58
+IFT70A,PPP1CC,Ciliary structural,Signaling,Novel cargo: Signaling,0.4473519,0.74
+IFT22,WDR77,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.44720742,0.63
+TULP3,CDC20B,IFT-A,Other,Novel cargo: Other,0.44661376,0.51
+IFT43,RACK1,IFT-A,Signaling,Novel cargo: Signaling,0.44604453,0.65
+IFT25,FSCB,IFT-B,Other,Novel cargo: Other,0.44604236,0.84
+IFT46,RSPH1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.44596335,0.52
+IFT46,AURKA,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.44517395,0.54
+IFT43,NSUN4,IFT-A,Metabolism,Novel cargo: Metabolism,0.44453582,0.62
+IFT25,GMNC,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.4440409,0.79
+TULP3,AIFM1,IFT-A,Signaling,Novel cargo: Signaling,0.44381914,0.5
+IFT22,RFX4,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.44263896,0.79
+RABL2B,CFAP97,IFT-B,Other,Novel cargo: Other,0.4423532,0.67
+BBS18,TF,BBSome,Signaling,Novel cargo: Signaling,0.4421313,0.58
+BBS5,UBXN11,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.4417846,0.6
+BBS4,MLF1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.44172603,0.5
+IFT43,MAPK3,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.44102395,0.66
+ARL6,CLRN1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.44016024,0.65
+IFT122,RAB34,IFT-A,Other,Novel cargo: Other,0.43954402,0.42
+RABL2B,DCP2,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.4392566,0.67
+ARL6,AK1,BBSome,Signaling,Novel cargo: Signaling,0.43688434,0.66
+BBS4,RAB28,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.43605924,0.68
+IFT43,CDC20,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.43529466,0.5
+IFT43,BBS7,IFT-A,BBSome,Mechanistic: IFT-BBSome coupling,0.43480676,0.57
+ARL6,PSMA6,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.43348762,0.65
+TULP3,TULP3,IFT-A,IFT-A,Validation: Intra-complex,0.43296635,0.51
+IFT25,HAP1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.4329207,0.81
+IFT43,COP1,IFT-A,Membrane trafficking,Novel cargo: Membrane trafficking,0.43273684,0.46
+IFT43,MOK,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.43265173,0.52
+TULP3,SEMG2,IFT-A,Other,Novel cargo: Other,0.43140483,0.51
+IFT43,CTNNB1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.4311003,0.51
+TULP3,ARL2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.4303149,0.48
+IFT25,RAB11B,IFT-B,Signaling,Novel cargo: Signaling,0.4302718,0.72
+IFT70A,TFG,Ciliary structural,Signaling,Novel cargo: Signaling,0.43008703,0.57
+RABL2B,NUP35,IFT-B,Signaling,Novel cargo: Signaling,0.4296482,0.65
+IFT22,RPL9,IFT-B,RNA processing,Novel cargo: RNA processing,0.42946887,0.67
+TULP3,TTBK2,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.4288785,0.55
+BBS7,E2F4,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.42865106,0.63
+IFT46,CILK1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.42853156,0.41
+IFT56,RAB23,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.42794436,0.53
+IFT56,PALB2,IFT-B,Other,Novel cargo: Other,0.42624694,0.58
+IFT88,CDK9,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.4260911,0.69
+IFT22,SALL1,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.42600307,0.82
+IFT22,PPIA,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.4257262,0.72
+IFT56,ACAT1,IFT-B,Metabolism,Novel cargo: Metabolism,0.42565584,0.51
+BBS5,NEK2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.42534652,0.59
+IFT56,CETN3,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.4253413,0.51
+IFT25,NAMPT,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.42510745,0.76
+BBS18,FNDC8,BBSome,Other,Novel cargo: Other,0.42503467,0.36
+IFT56,NPEPPS,IFT-B,Metabolism,Novel cargo: Metabolism,0.42464048,0.66
+IFT52,IFT88,IFT-B,IFT-B,Validation: Intra-complex,0.424556,0.53
+BBS5,L2HGDH,BBSome,Metabolism,Novel cargo: Metabolism,0.42421007,0.6
+ARL6,CSNK2A1,BBSome,Signaling,Novel cargo: Signaling,0.42354447,0.66
+IFT70B,CEP97,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.422839,0.49
+IFT20,U2SURP,IFT-B,RNA processing,Novel cargo: RNA processing,0.42216143,0.61
+RABL2B,PGAM5,IFT-B,Metabolism,Novel cargo: Metabolism,0.42198226,0.62
+BBS7,KRT1,BBSome,Signaling,Novel cargo: Signaling,0.42191344,0.65
+BBS5,FOXJ1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.42182377,0.58
+IFT56,CDC42,IFT-B,Signaling,Novel cargo: Signaling,0.42100388,0.59
+BBS7,IFT38,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.42098248,0.62
+BBS9,COPA,BBSome,Membrane trafficking,Novel cargo: Membrane trafficking,0.41989693,0.42
+IFT88,IFT52,IFT-B,IFT-B,Validation: Intra-complex,0.4194569,0.53
+TULP3,NUMB,IFT-A,Signaling,Novel cargo: Signaling,0.41902864,0.45
+TULP3,ALDH2,IFT-A,Metabolism,Novel cargo: Metabolism,0.41889378,0.67
+IFT20,CFAP299,IFT-B,Other,Novel cargo: Other,0.4164617,0.53
+TULP3,RAB23,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.4164357,0.61
+RABL2B,NOTO,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.41458648,0.61
+TULP3,NPM1,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.41324043,0.48
+IFT27,DRG1,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.41278097,0.73
+ARL6,PSMC2,BBSome,Other,Novel cargo: Other,0.411476,0.68
+IFT38,GSTM5,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.41093746,0.71
+BBS7,KRT6B,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.41076463,0.63
+IFT25,CHCHD6,IFT-B,Metabolism,Novel cargo: Metabolism,0.40989566,0.73
+IFT52,IFT38,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.4096136,0.49
+BBS18,PRPS2,BBSome,Signaling,Novel cargo: Signaling,0.40914613,0.58
+IFT88,C7orf57,IFT-B,Other,Novel cargo: Other,0.40838784,0.37
+BBS1,ODF1,BBSome,Other,Novel cargo: Other,0.40591097,0.5
+BBS4,RPL7A,BBSome,RNA processing,Novel cargo: RNA processing,0.40581217,0.6
+BBS9,RSPH10B,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.40576124,0.45
+IFT38,IFT52,Ciliary structural,IFT-B,Novel cargo: Other,0.40562198,0.49
+IFT25,CEP78,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.40551123,0.79
+BBS18,MMP21,BBSome,Other,Novel cargo: Other,0.40541458,0.53
+IFT25,TLK2,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.40504247,0.8
+IFT80,MPI,IFT-B,Other,Novel cargo: Other,0.40363574,0.73
+IFT22,TMED10,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.40286458,0.68
+IFT122,TUB,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.40257215,0.34
+IFT52,FARSB,IFT-B,RNA processing,Novel cargo: RNA processing,0.40129772,0.43
+IFT38,HNF1B,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39970323,0.35
+IFT43,P4HB,IFT-A,Signaling,Novel cargo: Signaling,0.39961943,0.58
+TULP3,RPL6,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39888602,0.48
+TULP3,KISS1R,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.39807716,0.5
+IFT70A,GALR3,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.39795324,0.61
+IFT38,ANXA3,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39782923,0.65
+BBS4,GAS2L1,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.3960135,0.55
+BBS5,COMT,BBSome,Metabolism,Novel cargo: Metabolism,0.39564496,0.59
+BBS5,TXNDC15,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.39513463,0.58
+IFT70B,TAGLN2,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.39450788,0.59
+BBS8,H4C1,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39438426,0.48
+TTC21B,MSN,Ciliary structural,Signaling,Novel cargo: Signaling,0.39376527,0.56
+IFT80,WDPCP,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.39365253,0.66
+IFT56,MAPRE3,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39358568,0.58
+BBS4,,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.39258134,0.61
+IFT70A,SPESP1,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.3924649,0.52
+BBS5,KCTD17,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.39116016,0.58
+IFT122,AP2B1,IFT-A,Signaling,Novel cargo: Signaling,0.39083967,0.45
+TULP3,CFAP20,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.3907918,0.74
+TULP3,NF2,IFT-A,Signaling,Novel cargo: Signaling,0.39020503,0.51
+IFT38,KIFAP3,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.3900076,0.49
+IFT70A,CFAP36,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.3890867,0.61
+TULP3,PSMA3,IFT-A,Other,Novel cargo: Other,0.3890328,0.69
+IFT20,FSD1,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.3887338,0.45
+RABL2B,ACTL7A,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.38809472,0.57
+TULP3,LCA5,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.3875795,0.5
+IFT52,RACK1,IFT-B,Signaling,Novel cargo: Signaling,0.38714585,0.69
+IFT43,PRKACG,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.38673952,0.62
+IFT70B,CIMIP2A,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.38654882,0.53
+IFT43,NME7,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.38619342,0.56
+IFT122,CCP110,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.38522705,0.44
+IFT54,IFT20,IFT-B,IFT-B,Validation: Intra-complex,0.38520175,0.61
+IFT38,PRKAR1A,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.38504258,0.55
+IFT22,PPP1R7,IFT-B,Other,Novel cargo: Other,0.3846583,0.66
+RABL2B,FAIM,IFT-B,Signaling,Novel cargo: Signaling,0.38406596,0.59
+IFT70B,DYNC2I1,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.38348436,0.59
+IFT74,IFT81,IFT-B,IFT-B,Validation: Intra-complex,0.38329783,0.32
+TULP3,MED26,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.38321906,0.51
+IFT81,IFT74,IFT-B,IFT-B,Validation: Intra-complex,0.38291755,0.33
+TULP3,PIN1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.38178462,0.74
+IFT122,NEK8,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.381783,0.43
+BBS8,ANXA7,BBSome,Metabolism,Novel cargo: Metabolism,0.3809133,0.53
+BBS5,RFX7,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.38056606,0.67
+IFT43,FSD1,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.3799893,0.46
+IFT22,PRICKLE2,IFT-B,Other,Novel cargo: Other,0.37907928,0.77
+IFT56,MAPRE1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.37879494,0.53
+BBS8,SPESP1,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.3778332,0.48
+IFT56,CAMK4,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3773666,0.56
+IFT70B,GALR3,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.3773611,0.61
+ARL6,NIT1,BBSome,Metabolism,Novel cargo: Metabolism,0.37682664,0.66
+IFT22,NFIX,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.37656727,0.74
+BBS7,SASS6,BBSome,Other,Novel cargo: Other,0.37631884,0.62
+IFT27,USH1G,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.37624213,0.71
+TULP3,TMEM231,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.37612996,0.53
+IFT43,CCNO,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.3756923,0.55
+IFT121,HGS,IFT-A,Signaling,Novel cargo: Signaling,0.3756727,0.53
+IFT81,IFT22,IFT-B,IFT-B,Validation: Intra-complex,0.37549278,0.75
+IFT25,DNAJB6,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.37502557,0.73
+BBS7,PLK4,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3746741,0.58
+IFT70B,TUBGCP6,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.37441346,0.64
+IFT56,SPESP1,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.37390724,0.55
+TULP3,KATNAL1,IFT-A,Metabolism,Novel cargo: Metabolism,0.37359232,0.34
+IFT70A,DNAH10,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.3734562,0.66
+IFT56,ZIC2,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.37339675,0.6
+IFT46,MAK,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3729014,0.4
+IFT27,ACR,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.37239954,0.51
+IFT25,SNX9,IFT-B,Signaling,Novel cargo: Signaling,0.37205532,0.77
+IFT20,DYDC2,IFT-B,Other,Novel cargo: Other,0.37193808,0.44
+BBS4,BBS8,BBSome,BBSome,Validation: Intra-complex,0.37150618,0.55
+IFT56,ACADM,IFT-B,Metabolism,Novel cargo: Metabolism,0.3708428,0.52
+BBS5,DNAJC8,BBSome,Other,Novel cargo: Other,0.37083596,0.54
+BBS5,GNB1,BBSome,Signaling,Novel cargo: Signaling,0.3706965,0.66
+IFT52,LCP1,IFT-B,Signaling,Novel cargo: Signaling,0.37030676,0.54
+BBS5,PQBP1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.37012985,0.54
+IFT70B,PTGER4,Ciliary structural,Signaling,Novel cargo: Signaling,0.3686576,0.6
+TULP3,GAS2L1,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.36801034,0.33
+BBS18,STUB1,BBSome,Signaling,Novel cargo: Signaling,0.3675729,0.46
+IFT56,CALM1,IFT-B,Signaling,Novel cargo: Signaling,0.36731043,0.58
+RABL2B,PALB2,IFT-B,Other,Novel cargo: Other,0.36626667,0.69
+IFT38,PEBP1,Ciliary structural,Signaling,Novel cargo: Signaling,0.36468548,0.68
+IFT56,HYOU1,IFT-B,Metabolism,Novel cargo: Metabolism,0.36453542,0.6
+RABL2B,TCHP,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3644546,0.65
+TULP3,WDR44,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.36428595,0.51
+IFT56,MED26,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3634431,0.57
+IFT74,CALR,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.36336923,0.57
+TTC21B,EZR,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.36315212,0.52
+IFT54,BBS9,IFT-B,BBSome,Mechanistic: IFT-BBSome coupling,0.36278206,0.42
+BBS7,PQBP1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3615034,0.56
+TTC21B,HSPA8,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.36142102,0.63
+IFT25,NUP35,IFT-B,Signaling,Novel cargo: Signaling,0.36059296,0.7
+IFT144,DRC3,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.36027864,0.55
+ARL6,MCRS1,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.35996857,0.69
+IFT20,GPR88,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.35963228,0.49
+BBS9,C1orf87,BBSome,Other,Novel cargo: Other,0.35897014,0.42
+BBS5,LIMA1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.358746,0.61
+IFT43,CFAP298,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.35816658,0.53
+IFT25,DDX42,IFT-B,RNA processing,Novel cargo: RNA processing,0.35773566,0.81
+IFT20,ALPK1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.35697094,0.49
+IFT54,MOK,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.35604703,0.54
+IFT43,ZPBP,IFT-A,Signaling,Novel cargo: Signaling,0.35551754,0.45
+IFT22,CELSR2,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3551167,0.84
+BBS7,ANXA11,BBSome,Metabolism,Novel cargo: Metabolism,0.3548333,0.6
+BBS8,BBS4,BBSome,BBSome,Validation: Intra-complex,0.3546283,0.55
+BBS7,KRT75,BBSome,Other,Novel cargo: Other,0.35451832,0.62
+IFT38,RNPEP,Ciliary structural,Other,Novel cargo: Other,0.35447645,0.64
+TULP3,TPPP3,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.35405293,0.45
+IFT70A,PPP1CA,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3540277,0.67
+IFT56,DCDC2,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.35381702,0.54
+BBS17,ENTR1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.35342428,0.32
+BBS18,MPI,BBSome,Other,Novel cargo: Other,0.35335556,0.63
+IFT43,GANAB,IFT-A,Metabolism,Novel cargo: Metabolism,0.35201633,0.61
+IFT172,ACSL3,Ciliary structural,Signaling,Novel cargo: Signaling,0.3519555,0.67
+IFT88,COPA,IFT-B,Membrane trafficking,Novel cargo: Membrane trafficking,0.35188633,0.44
+RABL2B,COPS8,IFT-B,Signaling,Novel cargo: Signaling,0.35109696,0.59
+IFT27,CCDC78,IFT-B,Other,Novel cargo: Other,0.35029727,0.7
+IFT20,ZBBX,IFT-B,Other,Novel cargo: Other,0.35024807,0.62
+BBS1,CFAP43,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.35002133,0.43
+IFT20,KRT8,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.34957036,0.59
+TULP3,TP73,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.34904733,0.48
+IFT56,RAB7A,IFT-B,Signaling,Novel cargo: Signaling,0.3490236,0.52
+IFT56,MMP21,IFT-B,Other,Novel cargo: Other,0.34819221,0.55
+BBS5,RFX2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.34788528,0.61
+IFT81,NUMB,IFT-B,Signaling,Novel cargo: Signaling,0.34774804,0.35
+ARL6,EIF5A,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.34731296,0.63
+IFT56,PCM1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3464959,0.56
+IFT80,HNF1B,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.34597132,0.63
+BBS7,PSMA4,BBSome,Other,Novel cargo: Other,0.345932,0.54
+BBS8,XPNPEP3,BBSome,Metabolism,Novel cargo: Metabolism,0.34588563,0.64
+TULP3,LTA4H,IFT-A,Metabolism,Novel cargo: Metabolism,0.3457803,0.65
+IFT43,HSP90AB1,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.34551102,0.4
+RABL2B,KIF24,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.34527364,0.69
+BBS18,ACTL7A,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.34493053,0.53
+IFT74,TCTN2,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3444206,0.45
+IFT56,CDC20B,IFT-B,Other,Novel cargo: Other,0.34431177,0.52
+IFT22,IZUMO4,IFT-B,Other,Novel cargo: Other,0.3441477,0.67
+IFT122,GMNC,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.34369287,0.37
+IFT25,LIMA1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3436054,0.79
+IFT25,HDAC6,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.34337798,0.8
+IFT22,CEP44,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.34261602,0.68
+RABL2B,NEK1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.34155902,0.69
+BBS9,SPAG8,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.33967826,0.37
+BBS7,GMNC,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.33962852,0.62
+IFT70A,SPMIP6,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.33925477,0.53
+BBS5,PDHX,BBSome,Metabolism,Novel cargo: Metabolism,0.3377193,0.57
+IFT140,NSFL1C,IFT-A,Metabolism,Novel cargo: Metabolism,0.3374557,0.36
+IFT52,MAPKAP1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3372546,0.49
+BBS5,MYLIP,BBSome,Signaling,Novel cargo: Signaling,0.3366241,0.54
+IFT56,H4C1,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.33644253,0.57
+IFT70B,QARS1,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.33461818,0.52
+BBS2,TOM1,BBSome,Signaling,Novel cargo: Signaling,0.33396018,0.56
+BBS18,RAB8A,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.33349493,0.59
+IFT43,PPIA,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.33336976,0.69
+BBS1,BBS8,BBSome,BBSome,Validation: Intra-complex,0.33257517,0.48
+IFT122,MTREX,IFT-A,RNA processing,Novel cargo: RNA processing,0.3324612,0.58
+IFT70B,SPESP1,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.3321165,0.51
+BBS8,BBS1,BBSome,BBSome,Validation: Intra-complex,0.33186918,0.48
+IFT121,NEK1,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.3308377,0.47
+IFT57,NUP54,IFT-B,Signaling,Novel cargo: Signaling,0.32935044,0.39
+IFT57,UBE4B,IFT-B,Other,Novel cargo: Other,0.32924402,0.48
+BBS7,KRT5,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.32885852,0.61
+TULP3,SNAP29,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32861036,0.44
+RABL2B,CSNK2B,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32806343,0.56
+ARL6,VPS45,BBSome,Membrane trafficking,Novel cargo: Membrane trafficking,0.32798004,0.61
+TULP3,NME7,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32791454,0.54
+IFT43,DNAJC8,IFT-A,Other,Novel cargo: Other,0.3278349,0.52
+IFT56,HAP1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.32713798,0.58
+BBS5,AKNA,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32705563,0.64
+IFT56,RAB14,IFT-B,Signaling,Novel cargo: Signaling,0.326854,0.47
+BBS5,ZIC2,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32630768,0.57
+TULP3,SSTR3,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32628858,0.47
+IFT27,CYLD,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3261729,0.75
+IFT74,P4HB,IFT-B,Signaling,Novel cargo: Signaling,0.3254855,0.52
+TTC21B,TULP1,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.32547483,0.37
+TULP3,CCNO,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32508162,0.52
+IFT88,BAZ2B,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32451236,0.46
+IFT121,CDKL5,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32434896,0.52
+IFT70A,C7orf57,Ciliary structural,Other,Novel cargo: Other,0.32356545,0.51
+BBS5,LRGUK,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3235105,0.39
+IFT43,DNAI3,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32311347,0.42
+BBS5,NEK1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.32309538,0.6
+TULP3,DCP1A,IFT-A,RNA processing,Novel cargo: RNA processing,0.32284647,0.4
+IFT38,CSNK2B,Ciliary structural,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32233924,0.63
+TULP3,TLK2,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3219964,0.48
+IFT56,ARPC2,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.32196942,0.52
+IFT54,AIPL1,IFT-B,Signaling,Novel cargo: Signaling,0.32133543,0.45
+BBS7,MLF2,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.32101032,0.52
+TULP3,KRT1,IFT-A,Signaling,Novel cargo: Signaling,0.32098642,0.47
+TULP3,PTPN11,IFT-A,Signaling,Novel cargo: Signaling,0.32082668,0.56
+IFT121,UBXN10,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.32040766,0.44
+IFT88,TTLL1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3200544,0.63
+IFT56,TTBK2,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.32004777,0.61
+BBS7,GPR161,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.31950507,0.57
+RABL2B,IFT56,IFT-B,IFT-B,Validation: Intra-complex,0.31883588,0.47
+BBS7,KRT6A,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.31856185,0.6
+BBS4,DBR1,BBSome,RNA processing,Novel cargo: RNA processing,0.31837258,0.51
+TULP3,CNGA4,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.31830907,0.48
+IFT121,DDX42,IFT-A,RNA processing,Novel cargo: RNA processing,0.31823477,0.46
+BBS4,CIMIP2C,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.31818807,0.49
+BBS5,IGF1,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.31806207,0.53
+BBS2,BBS8,BBSome,BBSome,Validation: Intra-complex,0.31757903,0.6
+TULP3,ACAD10,IFT-A,Metabolism,Novel cargo: Metabolism,0.31739715,0.47
+TULP3,PTEN,IFT-A,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3173465,0.61
+IFT70B,CCDC181,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.31574276,0.51
+IFT20,AKNA,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3149338,0.7
+BBS7,AIFM1,BBSome,Signaling,Novel cargo: Signaling,0.31437027,0.59
+IFT140,MACF1,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.31421897,0.34
+IFT22,RFX7,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.31391227,0.78
+BBS5,PRDX3,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.31355488,0.52
+BBS1,IFT38,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3135194,0.25
+BBS7,EPB41,BBSome,Cytoskeleton,Novel cargo: Cytoskeleton,0.3134763,0.64
+IFT70B,SPMIP6,Ciliary structural,Metabolism,Novel cargo: Metabolism,0.31317905,0.52
+BBS5,SENP3,BBSome,Other,Novel cargo: Other,0.3126707,0.58
+BBS2,EZH2,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.31250134,0.57
+BBS9,DNAAF2,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.31236586,0.41
+IFT43,TUBA8,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.31180626,0.59
+TULP3,KRT5,IFT-A,Cytoskeleton,Novel cargo: Cytoskeleton,0.3117809,0.51
+IFT80,INVS,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.31146342,0.59
+ARL6,UBAP1,BBSome,Membrane trafficking,Novel cargo: Membrane trafficking,0.3111901,0.68
+BBS4,SPAG17,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3107127,0.52
+BBS1,NCL,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.30994758,0.52
+IFT22,CDK13,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.3092671,0.77
+TULP3,NUP93,IFT-A,Signaling,Novel cargo: Signaling,0.3088648,0.46
+BBS5,HNRNPK,BBSome,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.30864927,0.56
+BBS5,HYLS1,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3085819,0.51
+IFT74,IFT22,IFT-B,IFT-B,Validation: Intra-complex,0.30857623,0.68
+ARL6,ARL2BP,BBSome,Ciliary structural,Novel cargo: Ciliary structural,0.3082537,0.56
+IFT57,IFT140,IFT-B,IFT-A,Validation: IFT-A/B coupling,0.30780673,0.4
+IFT25,BAG6,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.30764213,0.79
+IFT52,EGFR,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.3076044,0.53
+IFT38,TUBB6,Ciliary structural,Cytoskeleton,Novel cargo: Cytoskeleton,0.30711362,0.61
+IFT20,CYLC2,IFT-B,Cytoskeleton,Novel cargo: Cytoskeleton,0.30681902,0.54
+TULP3,MOK,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.30516812,0.52
+IFT22,MED26,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.30474123,0.7
+IFT43,PPP2R3C,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.30460078,0.52
+IFT46,NR1H4,IFT-B,Transcription/Chromatin,Novel cargo: Transcription/Chromatin,0.30372584,0.37
+BBS8,SPMIP6,BBSome,Metabolism,Novel cargo: Metabolism,0.30321583,0.5
+IFT43,TUB,IFT-A,Ciliary structural,Novel cargo: Ciliary structural,0.30260053,0.39
+IFT25,C7orf57,IFT-B,Other,Novel cargo: Other,0.30149347,0.68
+IFT57,AP2A2,IFT-B,Signaling,Novel cargo: Signaling,0.30131394,0.39
+IFT70A,UBXN10,Ciliary structural,Ciliary structural,Novel cargo: Ciliary structural,0.30098024,0.49
+BBS5,DBR1,BBSome,RNA processing,Novel cargo: RNA processing,0.3002203,0.55
+IFT46,GLI1,IFT-B,Ciliary structural,Novel cargo: Ciliary structural,0.30009475,0.42

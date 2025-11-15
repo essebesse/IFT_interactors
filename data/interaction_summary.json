@@ -1,0 +1,29 @@
+{
+  "total_interactions": 548,
+  "interaction_categories": {
+    "Validation: Intra-complex": 51,
+    "Novel cargo: Other": 62,
+    "Novel cargo: Transcription/Chromatin": 69,
+    "Novel cargo: Ciliary structural": 188,
+    "Mechanistic: IFT-BBSome coupling": 7,
+    "Novel cargo: Cytoskeleton": 31,
+    "Novel cargo: Membrane trafficking": 13,
+    "Novel cargo: Signaling": 72,
+    "Novel cargo: RNA processing": 13,
+    "Novel cargo: Metabolism": 38,
+    "Validation: IFT-A/B coupling": 4
+  },
+  "protein_categories": {
+    "IFT-B": 25,
+    "BBSome": 29,
+    "Transcription/Chromatin": 69,
+    "Other": 51,
+    "Ciliary structural": 188,
+    "Cytoskeleton": 31,
+    "Membrane trafficking": 13,
+    "IFT-A": 19,
+    "Signaling": 72,
+    "RNA processing": 13,
+    "Metabolism": 38
+  }
+}

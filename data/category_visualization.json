@@ -1,0 +1,267 @@
+{
+  "total": 548,
+  "categories": [
+    {
+      "name": "Validation (Machinery)",
+      "count": 55,
+      "percentage": 10
+    },
+    {
+      "name": "Mechanistic (IFT-BBSome)",
+      "count": 7,
+      "percentage": 1.3
+    },
+    {
+      "name": "Novel Cargo: Transcription/Chromatin",
+      "count": 69,
+      "percentage": 12.6
+    },
+    {
+      "name": "Novel Cargo: Signaling",
+      "count": 72,
+      "percentage": 13.1
+    },
+    {
+      "name": "Novel Cargo: Metabolism",
+      "count": 38,
+      "percentage": 6.9
+    },
+    {
+      "name": "Novel Cargo: Cytoskeleton",
+      "count": 31,
+      "percentage": 5.7
+    },
+    {
+      "name": "Novel Cargo: Membrane Trafficking",
+      "count": 13,
+      "percentage": 2.4
+    },
+    {
+      "name": "Novel Cargo: Ciliary Structural",
+      "count": 188,
+      "percentage": 34.3
+    },
+    {
+      "name": "Novel Cargo: RNA Processing",
+      "count": 13,
+      "percentage": 2.4
+    },
+    {
+      "name": "Novel Cargo: Other",
+      "count": 62,
+      "percentage": 11.3
+    }
+  ],
+  "high_confidence_novel": [
+    {
+      "bait": "IFT70B",
+      "prey": "IFT88",
+      "category": "IFT-B",
+      "ipsae": 0.71904945,
+      "iptm": 0.63
+    },
+    {
+      "bait": "TULP3",
+      "prey": "WDR5",
+      "category": "Transcription/Chromatin",
+      "ipsae": 0.71869755,
+      "iptm": 0.81
+    },
+    {
+      "bait": "IFT25",
+      "prey": "ZC2HC1A",
+      "category": "Other",
+      "ipsae": 0.71297,
+      "iptm": 0.88
+    },
+    {
+      "bait": "IFT88",
+      "prey": "IFT70B",
+      "category": "Ciliary structural",
+      "ipsae": 0.70862484,
+      "iptm": 0.63
+    },
+    {
+      "bait": "IFT172",
+      "prey": "IFT57",
+      "category": "IFT-B",
+      "ipsae": 0.7043668,
+      "iptm": 0.45
+    },
+    {
+      "bait": "IFT80",
+      "prey": "IFT38",
+      "category": "Ciliary structural",
+      "ipsae": 0.7038984,
+      "iptm": 0.72
+    },
+    {
+      "bait": "IFT57",
+      "prey": "IFT172",
+      "category": "Ciliary structural",
+      "ipsae": 0.70357007,
+      "iptm": 0.45
+    },
+    {
+      "bait": "IFT38",
+      "prey": "IFT80",
+      "category": "IFT-B",
+      "ipsae": 0.7023716,
+      "iptm": 0.72
+    },
+    {
+      "bait": "IFT80",
+      "prey": "TP73",
+      "category": "Ciliary structural",
+      "ipsae": 0.698964,
+      "iptm": 0.74
+    },
+    {
+      "bait": "IFT54",
+      "prey": "CYS1",
+      "category": "Ciliary structural",
+      "ipsae": 0.6988243,
+      "iptm": 0.27
+    },
+    {
+      "bait": "IFT27",
+      "prey": "TUBE1",
+      "category": "Cytoskeleton",
+      "ipsae": 0.6967669,
+      "iptm": 0.8
+    },
+    {
+      "bait": "TULP3",
+      "prey": "GNAS",
+      "category": "Membrane trafficking",
+      "ipsae": 0.6898698,
+      "iptm": 0.57
+    },
+    {
+      "bait": "TULP3",
+      "prey": "TIMM50",
+      "category": "Signaling",
+      "ipsae": 0.6834417,
+      "iptm": 0.57
+    },
+    {
+      "bait": "IFT52",
+      "prey": "IFT70B",
+      "category": "Ciliary structural",
+      "ipsae": 0.67843467,
+      "iptm": 0.77
+    },
+    {
+      "bait": "IFT70B",
+      "prey": "IFT52",
+      "category": "IFT-B",
+      "ipsae": 0.67754316,
+      "iptm": 0.77
+    },
+    {
+      "bait": "IFT27",
+      "prey": "PPP6C",
+      "category": "Signaling",
+      "ipsae": 0.6698515,
+      "iptm": 0.78
+    },
+    {
+      "bait": "IFT88",
+      "prey": "IFT70A",
+      "category": "Ciliary structural",
+      "ipsae": 0.66718847,
+      "iptm": 0.59
+    },
+    {
+      "bait": "TULP3",
+      "prey": "GLIS2",
+      "category": "Ciliary structural",
+      "ipsae": 0.6664429,
+      "iptm": 0.56
+    },
+    {
+      "bait": "IFT70A",
+      "prey": "IFT88",
+      "category": "IFT-B",
+      "ipsae": 0.6646243,
+      "iptm": 0.59
+    },
+    {
+      "bait": "IFT70A",
+      "prey": "IFT52",
+      "category": "IFT-B",
+      "ipsae": 0.6641053,
+      "iptm": 0.76
+    },
+    {
+      "bait": "IFT52",
+      "prey": "IFT70A",
+      "category": "Ciliary structural",
+      "ipsae": 0.66343486,
+      "iptm": 0.76
+    },
+    {
+      "bait": "TULP3",
+      "prey": "EIF5",
+      "category": "RNA processing",
+      "ipsae": 0.6625281,
+      "iptm": 0.58
+    },
+    {
+      "bait": "IFT54",
+      "prey": "CLIC1",
+      "category": "Signaling",
+      "ipsae": 0.66031516,
+      "iptm": 0.87
+    },
+    {
+      "bait": "BBS5",
+      "prey": "MCIDAS",
+      "category": "Ciliary structural",
+      "ipsae": 0.66007113,
+      "iptm": 0.68
+    },
+    {
+      "bait": "IFT25",
+      "prey": "CFAP144",
+      "category": "Ciliary structural",
+      "ipsae": 0.652987,
+      "iptm": 0.79
+    },
+    {
+      "bait": "TULP3",
+      "prey": "GMNC",
+      "category": "Ciliary structural",
+      "ipsae": 0.64029306,
+      "iptm": 0.54
+    },
+    {
+      "bait": "BBS5",
+      "prey": "GNAS",
+      "category": "Membrane trafficking",
+      "ipsae": 0.6363958,
+      "iptm": 0.66
+    },
+    {
+      "bait": "RABL2B",
+      "prey": "POC1A",
+      "category": "Ciliary structural",
+      "ipsae": 0.6362975,
+      "iptm": 0.67
+    },
+    {
+      "bait": "TULP3",
+      "prey": "STK11",
+      "category": "Ciliary structural",
+      "ipsae": 0.63555217,
+      "iptm": 0.63
+    },
+    {
+      "bait": "IFT57",
+      "prey": "CFAP20",
+      "category": "Ciliary structural",
+      "ipsae": 0.62772363,
+      "iptm": 0.83
+    }
+  ]
+}

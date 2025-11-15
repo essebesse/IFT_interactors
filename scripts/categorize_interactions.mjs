@@ -4,14 +4,8 @@
  * Uses GO terms + manual curation for known ciliary proteins
  */
 
-import pg from 'pg';
+import { sql } from '@vercel/postgres';
 import fs from 'fs';
-
-const { Pool } = pg;
-
-const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL
-});
 
 // Known IFT and BBSome proteins (for validation category)
 const KNOWN_CILIARY_PROTEINS = {
@@ -197,7 +191,7 @@ async function main() {
 
   console.log('\nFetching all interactions from database...');
 
-  const result = await pool.query(`
+  const result = await sql`
     SELECT
       i.id,
       i.ipsae,
@@ -214,7 +208,7 @@ async function main() {
       AND prey.organism = 'Homo sapiens'
       AND i.analysis_version = 'v4'
     ORDER BY i.ipsae DESC
-  `);
+  `;
 
   const interactions = result.rows;
   console.log(`Found ${interactions.length} interactions`);
@@ -313,8 +307,6 @@ async function main() {
   console.log('  - data/categorized_interactions.json');
   console.log('  - data/categorized_interactions.csv');
   console.log('  - data/interaction_summary.json');
-
-  await pool.end();
 }
 
 main().catch(console.error);
