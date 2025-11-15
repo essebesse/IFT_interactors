@@ -22,14 +22,14 @@ function main() {
   const majorCategories = {
     'Validation (Machinery)': 0,
     'Mechanistic (IFT-BBSome)': 0,
-    'Novel Cargo: Transcription/Chromatin': 0,
-    'Novel Cargo: Signaling': 0,
-    'Novel Cargo: Metabolism': 0,
-    'Novel Cargo: Cytoskeleton': 0,
-    'Novel Cargo: Membrane Trafficking': 0,
-    'Novel Cargo: Ciliary Structural': 0,
-    'Novel Cargo: RNA Processing': 0,
-    'Novel Cargo: Other': 0
+    'Transcription/Chromatin': 0,
+    'Signaling': 0,
+    'Metabolism': 0,
+    'Cytoskeleton': 0,
+    'Membrane Trafficking': 0,
+    'Ciliary Structural': 0,
+    'RNA Processing': 0,
+    'Other': 0
   };
 
   for (const [category, count] of Object.entries(summary.interaction_categories)) {
@@ -37,22 +37,22 @@ function main() {
       majorCategories['Validation (Machinery)'] += count;
     } else if (category.startsWith('Mechanistic:')) {
       majorCategories['Mechanistic (IFT-BBSome)'] += count;
-    } else if (category === 'Novel cargo: Transcription/Chromatin') {
-      majorCategories['Novel Cargo: Transcription/Chromatin'] += count;
-    } else if (category === 'Novel cargo: Signaling') {
-      majorCategories['Novel Cargo: Signaling'] += count;
-    } else if (category === 'Novel cargo: Metabolism') {
-      majorCategories['Novel Cargo: Metabolism'] += count;
-    } else if (category === 'Novel cargo: Cytoskeleton') {
-      majorCategories['Novel Cargo: Cytoskeleton'] += count;
-    } else if (category === 'Novel cargo: Membrane trafficking') {
-      majorCategories['Novel Cargo: Membrane Trafficking'] += count;
-    } else if (category === 'Novel cargo: Ciliary structural') {
-      majorCategories['Novel Cargo: Ciliary Structural'] += count;
-    } else if (category === 'Novel cargo: RNA processing') {
-      majorCategories['Novel Cargo: RNA Processing'] += count;
-    } else if (category === 'Novel cargo: Other') {
-      majorCategories['Novel Cargo: Other'] += count;
+    } else if (category === 'Transcription/Chromatin') {
+      majorCategories['Transcription/Chromatin'] += count;
+    } else if (category === 'Signaling') {
+      majorCategories['Signaling'] += count;
+    } else if (category === 'Metabolism') {
+      majorCategories['Metabolism'] += count;
+    } else if (category === 'Cytoskeleton') {
+      majorCategories['Cytoskeleton'] += count;
+    } else if (category === 'Membrane trafficking') {
+      majorCategories['Membrane Trafficking'] += count;
+    } else if (category === 'Ciliary structural') {
+      majorCategories['Ciliary Structural'] += count;
+    } else if (category === 'RNA processing') {
+      majorCategories['RNA Processing'] += count;
+    } else if (category === 'Other') {
+      majorCategories['Other'] += count;
     }
   }
 
@@ -79,13 +79,13 @@ function main() {
     markdown += `| ${category} | ${count} | ${percentage}% |\n`;
   }
 
-  // Add high-confidence novel cargo examples
-  markdown += '\n## High-Confidence Novel Cargo Interactions (ipSAE > 0.6)\n\n';
+  // Add high-confidence predicted interactions (excluding validation/mechanistic)
+  markdown += '\n## High-Confidence Predicted Interactions (ipSAE > 0.6)\n\n';
   markdown += '| Bait | Prey | Category | ipSAE | iPTM |\n';
   markdown += '|------|------|----------|------:|-----:|\n';
 
   const highConfNovel = categorized
-    .filter(i => i.ipsae > 0.6 && i.interaction_category.startsWith('Novel cargo'))
+    .filter(i => i.ipsae > 0.6 && !i.interaction_category.startsWith('Validation:') && !i.interaction_category.startsWith('Mechanistic:'))
     .sort((a, b) => b.ipsae - a.ipsae)
     .slice(0, 30); // Top 30
 
@@ -114,7 +114,7 @@ function main() {
       count,
       percentage: parseFloat(((count / total) * 100).toFixed(1))
     })),
-    high_confidence_novel: highConfNovel.map(item => ({
+    high_confidence_interactions: highConfNovel.map(item => ({
       bait: item.bait_gene,
       prey: item.prey_gene,
       category: item.prey_category,

@@ -1,11 +1,11 @@
 Category,Count,Percentage
 "Validation (Machinery)",55,10.0
 "Mechanistic (IFT-BBSome)",7,1.3
-"Novel Cargo: Transcription/Chromatin",69,12.6
-"Novel Cargo: Signaling",72,13.1
-"Novel Cargo: Metabolism",38,6.9
-"Novel Cargo: Cytoskeleton",31,5.7
-"Novel Cargo: Membrane Trafficking",13,2.4
-"Novel Cargo: Ciliary Structural",188,34.3
-"Novel Cargo: RNA Processing",13,2.4
-"Novel Cargo: Other",62,11.3
+"Transcription/Chromatin",69,12.6
+"Signaling",72,13.1
+"Metabolism",38,6.9
+"Cytoskeleton",31,5.7
+"Membrane Trafficking",13,2.4
+"Ciliary Structural",188,34.3
+"RNA Processing",13,2.4
+"Other",62,11.3

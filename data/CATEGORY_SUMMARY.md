@@ -6,32 +6,32 @@
 |----------|------:|-----------:|
 | Validation (Machinery) | 55 | 10.0% |
 | Mechanistic (IFT-BBSome) | 7 | 1.3% |
-| Novel Cargo: Transcription/Chromatin | 69 | 12.6% |
-| Novel Cargo: Signaling | 72 | 13.1% |
-| Novel Cargo: Metabolism | 38 | 6.9% |
-| Novel Cargo: Cytoskeleton | 31 | 5.7% |
-| Novel Cargo: Membrane Trafficking | 13 | 2.4% |
-| Novel Cargo: Ciliary Structural | 188 | 34.3% |
-| Novel Cargo: RNA Processing | 13 | 2.4% |
-| Novel Cargo: Other | 62 | 11.3% |
+| Transcription/Chromatin | 69 | 12.6% |
+| Signaling | 72 | 13.1% |
+| Metabolism | 38 | 6.9% |
+| Cytoskeleton | 31 | 5.7% |
+| Membrane Trafficking | 13 | 2.4% |
+| Ciliary Structural | 188 | 34.3% |
+| RNA Processing | 13 | 2.4% |
+| Other | 62 | 11.3% |
 
 ## Detailed Breakdown
 
 | Detailed Category | Count | Percentage |
 |-------------------|------:|-----------:|
-| Novel cargo: Ciliary structural | 188 | 34.3% |
-| Novel cargo: Signaling | 72 | 13.1% |
-| Novel cargo: Transcription/Chromatin | 69 | 12.6% |
-| Novel cargo: Other | 62 | 11.3% |
+| Ciliary structural | 188 | 34.3% |
+| Signaling | 72 | 13.1% |
+| Transcription/Chromatin | 69 | 12.6% |
+| Other | 62 | 11.3% |
 | Validation: Intra-complex | 51 | 9.3% |
-| Novel cargo: Metabolism | 38 | 6.9% |
-| Novel cargo: Cytoskeleton | 31 | 5.7% |
-| Novel cargo: Membrane trafficking | 13 | 2.4% |
-| Novel cargo: RNA processing | 13 | 2.4% |
+| Metabolism | 38 | 6.9% |
+| Cytoskeleton | 31 | 5.7% |
+| Membrane trafficking | 13 | 2.4% |
+| RNA processing | 13 | 2.4% |
 | Mechanistic: IFT-BBSome coupling | 7 | 1.3% |
 | Validation: IFT-A/B coupling | 4 | 0.7% |
 
-## High-Confidence Novel Cargo Interactions (ipSAE > 0.6)
+## High-Confidence Predicted Interactions (ipSAE > 0.6)
 
 | Bait | Prey | Category | ipSAE | iPTM |
 |------|------|----------|------:|-----:|

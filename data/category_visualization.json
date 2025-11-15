@@ -12,47 +12,47 @@
       "percentage": 1.3
     },
     {
-      "name": "Novel Cargo: Transcription/Chromatin",
+      "name": "Transcription/Chromatin",
       "count": 69,
       "percentage": 12.6
     },
     {
-      "name": "Novel Cargo: Signaling",
+      "name": "Signaling",
       "count": 72,
       "percentage": 13.1
     },
     {
-      "name": "Novel Cargo: Metabolism",
+      "name": "Metabolism",
       "count": 38,
       "percentage": 6.9
     },
     {
-      "name": "Novel Cargo: Cytoskeleton",
+      "name": "Cytoskeleton",
       "count": 31,
       "percentage": 5.7
     },
     {
-      "name": "Novel Cargo: Membrane Trafficking",
+      "name": "Membrane Trafficking",
       "count": 13,
       "percentage": 2.4
     },
     {
-      "name": "Novel Cargo: Ciliary Structural",
+      "name": "Ciliary Structural",
       "count": 188,
       "percentage": 34.3
     },
     {
-      "name": "Novel Cargo: RNA Processing",
+      "name": "RNA Processing",
       "count": 13,
       "percentage": 2.4
     },
     {
-      "name": "Novel Cargo: Other",
+      "name": "Other",
       "count": 62,
       "percentage": 11.3
     }
   ],
-  "high_confidence_novel": [
+  "high_confidence_interactions": [
     {
       "bait": "IFT70B",
       "prey": "IFT88",

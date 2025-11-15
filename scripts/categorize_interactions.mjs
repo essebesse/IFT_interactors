@@ -149,36 +149,36 @@ function categorizeInteraction(baitGene, preyGene, baitCategory, preyCategory) {
     return 'Mechanistic: IFT-BBSome coupling';
   }
 
-  // Novel cargo interactions
+  // Predicted interactions (functional categories)
   if (preyCategory === 'Transcription/Chromatin') {
-    return 'Novel cargo: Transcription/Chromatin';
+    return 'Transcription/Chromatin';
   }
 
   if (preyCategory === 'Signaling') {
-    return 'Novel cargo: Signaling';
+    return 'Signaling';
   }
 
   if (preyCategory === 'Metabolism') {
-    return 'Novel cargo: Metabolism';
+    return 'Metabolism';
   }
 
   if (preyCategory === 'Cytoskeleton') {
-    return 'Novel cargo: Cytoskeleton';
+    return 'Cytoskeleton';
   }
 
   if (preyCategory === 'Membrane trafficking') {
-    return 'Novel cargo: Membrane trafficking';
+    return 'Membrane trafficking';
   }
 
   if (preyCategory === 'Ciliary structural') {
-    return 'Novel cargo: Ciliary structural';
+    return 'Ciliary structural';
   }
 
   if (preyCategory === 'RNA processing') {
-    return 'Novel cargo: RNA processing';
+    return 'RNA processing';
   }
 
-  return 'Novel cargo: Other';
+  return 'Other';
 }
 
 /**
