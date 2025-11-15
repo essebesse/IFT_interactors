@@ -1,0 +1,195 @@
+Bait,Bait_Category,Total_Interactions,Category,Count,Percentage
+TULP3,IFT-A,73,"Transcription/Chromatin",8,11.0
+TULP3,IFT-A,73,"Membrane trafficking",1,1.4
+TULP3,IFT-A,73,"Signaling",10,13.7
+TULP3,IFT-A,73,"Ciliary structural",31,42.5
+TULP3,IFT-A,73,"RNA processing",3,4.1
+TULP3,IFT-A,73,"Cytoskeleton",5,6.8
+TULP3,IFT-A,73,"Other",6,8.2
+TULP3,IFT-A,73,"Metabolism",7,9.6
+TULP3,IFT-A,73,"Validation: Intra-complex",2,2.7
+BBS5,BBSome,41,"Ciliary structural",18,43.9
+BBS5,BBSome,41,"Membrane trafficking",1,2.4
+BBS5,BBSome,41,"Signaling",5,12.2
+BBS5,BBSome,41,"Validation: Intra-complex",1,2.4
+BBS5,BBSome,41,"Other",4,9.8
+BBS5,BBSome,41,"Transcription/Chromatin",7,17.1
+BBS5,BBSome,41,"Cytoskeleton",1,2.4
+BBS5,BBSome,41,"Metabolism",3,7.3
+BBS5,BBSome,41,"RNA processing",1,2.4
+IFT43,IFT-A,36,"Validation: Intra-complex",1,2.8
+IFT43,IFT-A,36,"Metabolism",3,8.3
+IFT43,IFT-A,36,"Transcription/Chromatin",5,13.9
+IFT43,IFT-A,36,"Ciliary structural",17,47.2
+IFT43,IFT-A,36,"Membrane trafficking",2,5.6
+IFT43,IFT-A,36,"Other",2,5.6
+IFT43,IFT-A,36,"Signaling",3,8.3
+IFT43,IFT-A,36,"Mechanistic: IFT-BBSome coupling",1,2.8
+IFT43,IFT-A,36,"Cytoskeleton",2,5.6
+IFT56,IFT-B,34,"Validation: Intra-complex",1,2.9
+IFT56,IFT-B,34,"Other",5,14.7
+IFT56,IFT-B,34,"Ciliary structural",9,26.5
+IFT56,IFT-B,34,"Transcription/Chromatin",6,17.6
+IFT56,IFT-B,34,"Signaling",6,17.6
+IFT56,IFT-B,34,"Metabolism",5,14.7
+IFT56,IFT-B,34,"Cytoskeleton",2,5.9
+IFT25,IFT-B,28,"Other",3,10.7
+IFT25,IFT-B,28,"Mechanistic: IFT-BBSome coupling",1,3.6
+IFT25,IFT-B,28,"Validation: Intra-complex",1,3.6
+IFT25,IFT-B,28,"Ciliary structural",9,32.1
+IFT25,IFT-B,28,"Membrane trafficking",1,3.6
+IFT25,IFT-B,28,"Signaling",6,21.4
+IFT25,IFT-B,28,"Transcription/Chromatin",5,17.9
+IFT25,IFT-B,28,"Metabolism",1,3.6
+IFT25,IFT-B,28,"RNA processing",1,3.6
+ARL6,BBSome,27,"Validation: Intra-complex",1,3.7
+ARL6,BBSome,27,"Ciliary structural",10,37.0
+ARL6,BBSome,27,"Metabolism",3,11.1
+ARL6,BBSome,27,"Cytoskeleton",1,3.7
+ARL6,BBSome,27,"Signaling",4,14.8
+ARL6,BBSome,27,"Transcription/Chromatin",5,18.5
+ARL6,BBSome,27,"Other",1,3.7
+ARL6,BBSome,27,"Membrane trafficking",2,7.4
+BBS7,BBSome,25,"Validation: Intra-complex",1,4.0
+BBS7,BBSome,25,"Mechanistic: IFT-BBSome coupling",2,8.0
+BBS7,BBSome,25,"Signaling",4,16.0
+BBS7,BBSome,25,"Ciliary structural",9,36.0
+BBS7,BBSome,25,"Cytoskeleton",4,16.0
+BBS7,BBSome,25,"Other",3,12.0
+BBS7,BBSome,25,"Metabolism",1,4.0
+BBS7,BBSome,25,"Transcription/Chromatin",1,4.0
+RABL2B,IFT-B,19,"Ciliary structural",7,36.8
+RABL2B,IFT-B,19,"Validation: IFT-A/B coupling",1,5.3
+RABL2B,IFT-B,19,"Metabolism",2,10.5
+RABL2B,IFT-B,19,"Other",3,15.8
+RABL2B,IFT-B,19,"Transcription/Chromatin",2,10.5
+RABL2B,IFT-B,19,"Signaling",3,15.8
+RABL2B,IFT-B,19,"Validation: Intra-complex",1,5.3
+IFT22,IFT-B,19,"Transcription/Chromatin",9,47.4
+IFT22,IFT-B,19,"Signaling",2,10.5
+IFT22,IFT-B,19,"Ciliary structural",3,15.8
+IFT22,IFT-B,19,"RNA processing",1,5.3
+IFT22,IFT-B,19,"Membrane trafficking",1,5.3
+IFT22,IFT-B,19,"Other",3,15.8
+IFT70B,Ciliary structural,17,"Other",2,11.8
+IFT70B,Ciliary structural,17,"Metabolism",2,11.8
+IFT70B,Ciliary structural,17,"Signaling",2,11.8
+IFT70B,Ciliary structural,17,"Ciliary structural",6,35.3
+IFT70B,Ciliary structural,17,"Cytoskeleton",4,23.5
+IFT70B,Ciliary structural,17,"Transcription/Chromatin",1,5.9
+IFT38,Ciliary structural,17,"Other",6,35.3
+IFT38,Ciliary structural,17,"Metabolism",3,17.6
+IFT38,Ciliary structural,17,"Ciliary structural",3,17.6
+IFT38,Ciliary structural,17,"Transcription/Chromatin",3,17.6
+IFT38,Ciliary structural,17,"Signaling",1,5.9
+IFT38,Ciliary structural,17,"Cytoskeleton",1,5.9
+IFT122,IFT-A,16,"Validation: Intra-complex",4,25.0
+IFT122,IFT-A,16,"Ciliary structural",6,37.5
+IFT122,IFT-A,16,"Validation: IFT-A/B coupling",2,12.5
+IFT122,IFT-A,16,"Other",2,12.5
+IFT122,IFT-A,16,"Signaling",1,6.3
+IFT122,IFT-A,16,"RNA processing",1,6.3
+BBS18,BBSome,14,"Validation: Intra-complex",2,14.3
+BBS18,BBSome,14,"Mechanistic: IFT-BBSome coupling",1,7.1
+BBS18,BBSome,14,"Transcription/Chromatin",1,7.1
+BBS18,BBSome,14,"Ciliary structural",3,21.4
+BBS18,BBSome,14,"Other",4,28.6
+BBS18,BBSome,14,"Signaling",3,21.4
+BBS4,BBSome,14,"Validation: Intra-complex",3,21.4
+BBS4,BBSome,14,"Signaling",1,7.1
+BBS4,BBSome,14,"Ciliary structural",4,28.6
+BBS4,BBSome,14,"Other",1,7.1
+BBS4,BBSome,14,"RNA processing",2,14.3
+BBS4,BBSome,14,"Cytoskeleton",2,14.3
+BBS4,BBSome,14,"Transcription/Chromatin",1,7.1
+IFT70A,Ciliary structural,13,"Other",3,23.1
+IFT70A,Ciliary structural,13,"Metabolism",2,15.4
+IFT70A,Ciliary structural,13,"Signaling",2,15.4
+IFT70A,Ciliary structural,13,"Ciliary structural",4,30.8
+IFT70A,Ciliary structural,13,"Cytoskeleton",1,7.7
+IFT70A,Ciliary structural,13,"Transcription/Chromatin",1,7.7
+IFT20,IFT-B,13,"Ciliary structural",3,23.1
+IFT20,IFT-B,13,"Transcription/Chromatin",2,15.4
+IFT20,IFT-B,13,"Validation: Intra-complex",1,7.7
+IFT20,IFT-B,13,"RNA processing",1,7.7
+IFT20,IFT-B,13,"Other",3,23.1
+IFT20,IFT-B,13,"Cytoskeleton",3,23.1
+IFT27,IFT-B,12,"Cytoskeleton",2,16.7
+IFT27,IFT-B,12,"Signaling",3,25.0
+IFT27,IFT-B,12,"Validation: Intra-complex",1,8.3
+IFT27,IFT-B,12,"Ciliary structural",3,25.0
+IFT27,IFT-B,12,"Transcription/Chromatin",1,8.3
+IFT27,IFT-B,12,"Membrane trafficking",1,8.3
+IFT27,IFT-B,12,"Other",1,8.3
+IFT80,IFT-B,11,"Ciliary structural",6,54.5
+IFT80,IFT-B,11,"Cytoskeleton",1,9.1
+IFT80,IFT-B,11,"Other",2,18.2
+IFT80,IFT-B,11,"Membrane trafficking",1,9.1
+IFT80,IFT-B,11,"Transcription/Chromatin",1,9.1
+BBS8,BBSome,10,"Validation: Intra-complex",5,50.0
+BBS8,BBSome,10,"Transcription/Chromatin",1,10.0
+BBS8,BBSome,10,"Metabolism",3,30.0
+BBS8,BBSome,10,"Cytoskeleton",1,10.0
+BBS1,BBSome,10,"Validation: Intra-complex",4,40.0
+BBS1,BBSome,10,"Signaling",2,20.0
+BBS1,BBSome,10,"Other",1,10.0
+BBS1,BBSome,10,"Ciliary structural",2,20.0
+BBS1,BBSome,10,"Transcription/Chromatin",1,10.0
+IFT88,IFT-B,10,"Ciliary structural",4,40.0
+IFT88,IFT-B,10,"Signaling",1,10.0
+IFT88,IFT-B,10,"Transcription/Chromatin",2,20.0
+IFT88,IFT-B,10,"Validation: Intra-complex",1,10.0
+IFT88,IFT-B,10,"Other",1,10.0
+IFT88,IFT-B,10,"Membrane trafficking",1,10.0
+BBS9,BBSome,10,"Validation: Intra-complex",4,40.0
+BBS9,BBSome,10,"Transcription/Chromatin",1,10.0
+BBS9,BBSome,10,"Membrane trafficking",1,10.0
+BBS9,BBSome,10,"Ciliary structural",3,30.0
+BBS9,BBSome,10,"Other",1,10.0
+BBS2,BBSome,9,"Validation: Intra-complex",3,33.3
+BBS2,BBSome,9,"Ciliary structural",2,22.2
+BBS2,BBSome,9,"Metabolism",1,11.1
+BBS2,BBSome,9,"Signaling",2,22.2
+BBS2,BBSome,9,"Transcription/Chromatin",1,11.1
+IFT52,IFT-B,9,"Ciliary structural",5,55.6
+IFT52,IFT-B,9,"Validation: Intra-complex",1,11.1
+IFT52,IFT-B,9,"RNA processing",1,11.1
+IFT52,IFT-B,9,"Signaling",2,22.2
+IFT121,IFT-A,9,"Validation: Intra-complex",2,22.2
+IFT121,IFT-A,9,"RNA processing",2,22.2
+IFT121,IFT-A,9,"Ciliary structural",4,44.4
+IFT121,IFT-A,9,"Signaling",1,11.1
+IFT46,IFT-B,8,"Validation: Intra-complex",1,12.5
+IFT46,IFT-B,8,"Ciliary structural",6,75.0
+IFT46,IFT-B,8,"Transcription/Chromatin",1,12.5
+IFT57,IFT-B,8,"Ciliary structural",3,37.5
+IFT57,IFT-B,8,"Membrane trafficking",1,12.5
+IFT57,IFT-B,8,"Signaling",2,25.0
+IFT57,IFT-B,8,"Other",1,12.5
+IFT57,IFT-B,8,"Validation: IFT-A/B coupling",1,12.5
+IFT54,IFT-B,7,"Ciliary structural",2,28.6
+IFT54,IFT-B,7,"Signaling",2,28.6
+IFT54,IFT-B,7,"Transcription/Chromatin",1,14.3
+IFT54,IFT-B,7,"Validation: Intra-complex",1,14.3
+IFT54,IFT-B,7,"Mechanistic: IFT-BBSome coupling",1,14.3
+TTC21B,Ciliary structural,6,"Other",2,33.3
+TTC21B,Ciliary structural,6,"Signaling",1,16.7
+TTC21B,Ciliary structural,6,"Ciliary structural",2,33.3
+TTC21B,Ciliary structural,6,"Transcription/Chromatin",1,16.7
+IFT74,IFT-B,5,"Validation: Intra-complex",2,40.0
+IFT74,IFT-B,5,"Transcription/Chromatin",1,20.0
+IFT74,IFT-B,5,"Ciliary structural",1,20.0
+IFT74,IFT-B,5,"Signaling",1,20.0
+IFT172,Ciliary structural,4,"Other",2,50.0
+IFT172,Ciliary structural,4,"Metabolism",1,25.0
+IFT172,Ciliary structural,4,"Signaling",1,25.0
+IFT144,IFT-A,4,"Validation: Intra-complex",2,50.0
+IFT144,IFT-A,4,"Mechanistic: IFT-BBSome coupling",1,25.0
+IFT144,IFT-A,4,"Ciliary structural",1,25.0
+IFT140,IFT-A,4,"Validation: Intra-complex",2,50.0
+IFT140,IFT-A,4,"Metabolism",1,25.0
+IFT140,IFT-A,4,"Cytoskeleton",1,25.0
+BBS17,BBSome,3,"Validation: Intra-complex",1,33.3
+BBS17,BBSome,3,"Ciliary structural",2,66.7
+IFT81,IFT-B,3,"Validation: Intra-complex",2,66.7
+IFT81,IFT-B,3,"Signaling",1,33.3

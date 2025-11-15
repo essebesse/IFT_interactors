@@ -1,0 +1,56 @@
+[
+  {
+    "selector": "node",
+    "style": {
+      "label": "data(id)",
+      "text-valign": "center",
+      "text-halign": "center",
+      "font-size": "10px",
+      "width": "30px",
+      "height": "30px"
+    }
+  },
+  {
+    "selector": "node[type = \"bait\"]",
+    "style": {
+      "background-color": "#3498db",
+      "shape": "roundrectangle"
+    }
+  },
+  {
+    "selector": "node[type = \"prey\"]",
+    "style": {
+      "background-color": "#95a5a6",
+      "shape": "ellipse"
+    }
+  },
+  {
+    "selector": "edge",
+    "style": {
+      "width": 2,
+      "line-color": "#bdc3c7",
+      "curve-style": "bezier"
+    }
+  },
+  {
+    "selector": "edge[confidence_level = \"High\"]",
+    "style": {
+      "line-color": "#27ae60",
+      "width": 4
+    }
+  },
+  {
+    "selector": "edge[confidence_level = \"Medium\"]",
+    "style": {
+      "line-color": "#f39c12",
+      "width": 3
+    }
+  },
+  {
+    "selector": "edge[confidence_level = \"Low\"]",
+    "style": {
+      "line-color": "#e74c3c",
+      "width": 2
+    }
+  }
+]

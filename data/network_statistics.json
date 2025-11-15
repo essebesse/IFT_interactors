@@ -1,0 +1,355 @@
+{
+  "statistics": {
+    "total_proteins": 384,
+    "total_interactions": 548,
+    "avg_degree": 2.85,
+    "max_degree": 75,
+    "min_degree": 1
+  },
+  "top_hubs": [
+    {
+      "protein": "TULP3",
+      "total": 75,
+      "as_bait": 73,
+      "as_prey": 2,
+      "unique_partners": 73
+    },
+    {
+      "protein": "BBS5",
+      "total": 42,
+      "as_bait": 41,
+      "as_prey": 1,
+      "unique_partners": 41
+    },
+    {
+      "protein": "IFT43",
+      "total": 39,
+      "as_bait": 36,
+      "as_prey": 3,
+      "unique_partners": 36
+    },
+    {
+      "protein": "IFT56",
+      "total": 36,
+      "as_bait": 34,
+      "as_prey": 2,
+      "unique_partners": 35
+    },
+    {
+      "protein": "IFT25",
+      "total": 30,
+      "as_bait": 28,
+      "as_prey": 2,
+      "unique_partners": 28
+    },
+    {
+      "protein": "BBS7",
+      "total": 28,
+      "as_bait": 25,
+      "as_prey": 3,
+      "unique_partners": 25
+    },
+    {
+      "protein": "ARL6",
+      "total": 28,
+      "as_bait": 27,
+      "as_prey": 1,
+      "unique_partners": 27
+    },
+    {
+      "protein": "IFT38",
+      "total": 22,
+      "as_bait": 17,
+      "as_prey": 5,
+      "unique_partners": 19
+    },
+    {
+      "protein": "IFT122",
+      "total": 22,
+      "as_bait": 16,
+      "as_prey": 6,
+      "unique_partners": 16
+    },
+    {
+      "protein": "IFT22",
+      "total": 21,
+      "as_bait": 19,
+      "as_prey": 2,
+      "unique_partners": 21
+    },
+    {
+      "protein": "RABL2B",
+      "total": 20,
+      "as_bait": 19,
+      "as_prey": 1,
+      "unique_partners": 19
+    },
+    {
+      "protein": "IFT70B",
+      "total": 19,
+      "as_bait": 17,
+      "as_prey": 2,
+      "unique_partners": 17
+    },
+    {
+      "protein": "BBS18",
+      "total": 17,
+      "as_bait": 14,
+      "as_prey": 3,
+      "unique_partners": 14
+    },
+    {
+      "protein": "BBS4",
+      "total": 17,
+      "as_bait": 14,
+      "as_prey": 3,
+      "unique_partners": 14
+    },
+    {
+      "protein": "BBS8",
+      "total": 15,
+      "as_bait": 10,
+      "as_prey": 5,
+      "unique_partners": 10
+    },
+    {
+      "protein": "BBS9",
+      "total": 15,
+      "as_bait": 10,
+      "as_prey": 5,
+      "unique_partners": 11
+    },
+    {
+      "protein": "IFT70A",
+      "total": 15,
+      "as_bait": 13,
+      "as_prey": 2,
+      "unique_partners": 13
+    },
+    {
+      "protein": "BBS1",
+      "total": 14,
+      "as_bait": 10,
+      "as_prey": 4,
+      "unique_partners": 10
+    },
+    {
+      "protein": "IFT20",
+      "total": 14,
+      "as_bait": 13,
+      "as_prey": 1,
+      "unique_partners": 13
+    },
+    {
+      "protein": "IFT88",
+      "total": 13,
+      "as_bait": 10,
+      "as_prey": 3,
+      "unique_partners": 10
+    }
+  ],
+  "top_multi_bait_prey": [
+    {
+      "protein": "GMNC",
+      "interactions": 4,
+      "unique_partners": 4
+    },
+    {
+      "protein": "UBXN10",
+      "interactions": 4,
+      "unique_partners": 4
+    },
+    {
+      "protein": "CDC20B",
+      "interactions": 4,
+      "unique_partners": 4
+    },
+    {
+      "protein": "C7orf57",
+      "interactions": 4,
+      "unique_partners": 4
+    },
+    {
+      "protein": "SPESP1",
+      "interactions": 4,
+      "unique_partners": 4
+    },
+    {
+      "protein": "WDR5",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "TP73",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "CYS1",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "GNAS",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "CFAP20",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "DNAJC8",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "TTBK2",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "DBR1",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "NPM1",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "RFX7",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "HAP1",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "TOM1",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "ACR",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "MMP21",
+      "interactions": 3,
+      "unique_partners": 3
+    },
+    {
+      "protein": "RAB23",
+      "interactions": 3,
+      "unique_partners": 3
+    }
+  ],
+  "degree_distribution": [
+    {
+      "degree": 75,
+      "count": 1
+    },
+    {
+      "degree": 42,
+      "count": 1
+    },
+    {
+      "degree": 39,
+      "count": 1
+    },
+    {
+      "degree": 36,
+      "count": 1
+    },
+    {
+      "degree": 30,
+      "count": 1
+    },
+    {
+      "degree": 28,
+      "count": 2
+    },
+    {
+      "degree": 22,
+      "count": 2
+    },
+    {
+      "degree": 21,
+      "count": 1
+    },
+    {
+      "degree": 20,
+      "count": 1
+    },
+    {
+      "degree": 19,
+      "count": 1
+    },
+    {
+      "degree": 17,
+      "count": 2
+    },
+    {
+      "degree": 15,
+      "count": 3
+    },
+    {
+      "degree": 14,
+      "count": 2
+    },
+    {
+      "degree": 13,
+      "count": 4
+    },
+    {
+      "degree": 12,
+      "count": 1
+    },
+    {
+      "degree": 11,
+      "count": 1
+    },
+    {
+      "degree": 10,
+      "count": 1
+    },
+    {
+      "degree": 9,
+      "count": 1
+    },
+    {
+      "degree": 8,
+      "count": 2
+    },
+    {
+      "degree": 7,
+      "count": 2
+    },
+    {
+      "degree": 6,
+      "count": 2
+    },
+    {
+      "degree": 4,
+      "count": 7
+    },
+    {
+      "degree": 3,
+      "count": 22
+    },
+    {
+      "degree": 2,
+      "count": 55
+    },
+    {
+      "degree": 1,
+      "count": 267
+    }
+  ]
+}

@@ -1,0 +1,649 @@
+{
+  "baits": [
+    {
+      "name": "TULP3",
+      "category": "IFT-A",
+      "total": 73
+    },
+    {
+      "name": "BBS5",
+      "category": "BBSome",
+      "total": 41
+    },
+    {
+      "name": "IFT43",
+      "category": "IFT-A",
+      "total": 36
+    },
+    {
+      "name": "IFT56",
+      "category": "IFT-B",
+      "total": 34
+    },
+    {
+      "name": "IFT25",
+      "category": "IFT-B",
+      "total": 28
+    },
+    {
+      "name": "ARL6",
+      "category": "BBSome",
+      "total": 27
+    },
+    {
+      "name": "BBS7",
+      "category": "BBSome",
+      "total": 25
+    },
+    {
+      "name": "RABL2B",
+      "category": "IFT-B",
+      "total": 19
+    },
+    {
+      "name": "IFT22",
+      "category": "IFT-B",
+      "total": 19
+    },
+    {
+      "name": "IFT70B",
+      "category": "Ciliary structural",
+      "total": 17
+    },
+    {
+      "name": "IFT38",
+      "category": "Ciliary structural",
+      "total": 17
+    },
+    {
+      "name": "IFT122",
+      "category": "IFT-A",
+      "total": 16
+    },
+    {
+      "name": "BBS18",
+      "category": "BBSome",
+      "total": 14
+    },
+    {
+      "name": "BBS4",
+      "category": "BBSome",
+      "total": 14
+    },
+    {
+      "name": "IFT70A",
+      "category": "Ciliary structural",
+      "total": 13
+    },
+    {
+      "name": "IFT20",
+      "category": "IFT-B",
+      "total": 13
+    },
+    {
+      "name": "IFT27",
+      "category": "IFT-B",
+      "total": 12
+    },
+    {
+      "name": "IFT80",
+      "category": "IFT-B",
+      "total": 11
+    },
+    {
+      "name": "BBS8",
+      "category": "BBSome",
+      "total": 10
+    },
+    {
+      "name": "BBS1",
+      "category": "BBSome",
+      "total": 10
+    },
+    {
+      "name": "IFT88",
+      "category": "IFT-B",
+      "total": 10
+    },
+    {
+      "name": "BBS9",
+      "category": "BBSome",
+      "total": 10
+    },
+    {
+      "name": "BBS2",
+      "category": "BBSome",
+      "total": 9
+    },
+    {
+      "name": "IFT52",
+      "category": "IFT-B",
+      "total": 9
+    },
+    {
+      "name": "IFT121",
+      "category": "IFT-A",
+      "total": 9
+    },
+    {
+      "name": "IFT46",
+      "category": "IFT-B",
+      "total": 8
+    },
+    {
+      "name": "IFT57",
+      "category": "IFT-B",
+      "total": 8
+    },
+    {
+      "name": "IFT54",
+      "category": "IFT-B",
+      "total": 7
+    },
+    {
+      "name": "TTC21B",
+      "category": "Ciliary structural",
+      "total": 6
+    },
+    {
+      "name": "IFT74",
+      "category": "IFT-B",
+      "total": 5
+    },
+    {
+      "name": "IFT172",
+      "category": "Ciliary structural",
+      "total": 4
+    },
+    {
+      "name": "IFT144",
+      "category": "IFT-A",
+      "total": 4
+    },
+    {
+      "name": "IFT140",
+      "category": "IFT-A",
+      "total": 4
+    },
+    {
+      "name": "BBS17",
+      "category": "BBSome",
+      "total": 3
+    },
+    {
+      "name": "IFT81",
+      "category": "IFT-B",
+      "total": 3
+    }
+  ],
+  "categories": [
+    "Ciliary structural",
+    "Cytoskeleton",
+    "Mechanistic: IFT-BBSome coupling",
+    "Membrane trafficking",
+    "Metabolism",
+    "Other",
+    "RNA processing",
+    "Signaling",
+    "Transcription/Chromatin",
+    "Validation: IFT-A/B coupling",
+    "Validation: Intra-complex"
+  ],
+  "matrix": [
+    [
+      31,
+      5,
+      0,
+      1,
+      7,
+      6,
+      3,
+      10,
+      8,
+      0,
+      2
+    ],
+    [
+      18,
+      1,
+      0,
+      1,
+      3,
+      4,
+      1,
+      5,
+      7,
+      0,
+      1
+    ],
+    [
+      17,
+      2,
+      1,
+      2,
+      3,
+      2,
+      0,
+      3,
+      5,
+      0,
+      1
+    ],
+    [
+      9,
+      2,
+      0,
+      0,
+      5,
+      5,
+      0,
+      6,
+      6,
+      0,
+      1
+    ],
+    [
+      9,
+      0,
+      1,
+      1,
+      1,
+      3,
+      1,
+      6,
+      5,
+      0,
+      1
+    ],
+    [
+      10,
+      1,
+      0,
+      2,
+      3,
+      1,
+      0,
+      4,
+      5,
+      0,
+      1
+    ],
+    [
+      9,
+      4,
+      2,
+      0,
+      1,
+      3,
+      0,
+      4,
+      1,
+      0,
+      1
+    ],
+    [
+      7,
+      0,
+      0,
+      0,
+      2,
+      3,
+      0,
+      3,
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      0,
+      1,
+      0,
+      3,
+      1,
+      2,
+      9,
+      0,
+      0
+    ],
+    [
+      6,
+      4,
+      0,
+      0,
+      2,
+      2,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      1,
+      0,
+      0,
+      3,
+      6,
+      0,
+      1,
+      3,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      1,
+      0,
+      2,
+      4
+    ],
+    [
+      3,
+      0,
+      1,
+      0,
+      0,
+      4,
+      0,
+      3,
+      1,
+      0,
+      2
+    ],
+    [
+      4,
+      2,
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      1,
+      0,
+      3
+    ],
+    [
+      4,
+      1,
+      0,
+      0,
+      2,
+      3,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      3,
+      0,
+      0,
+      0,
+      3,
+      1,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      3,
+      2,
+      0,
+      1,
+      0,
+      1,
+      0,
+      3,
+      1,
+      0,
+      1
+    ],
+    [
+      6,
+      1,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      1,
+      0,
+      5
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      1,
+      0,
+      4
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      4
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      1,
+      0,
+      3
+    ],
+    [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0,
+      0,
+      1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0,
+      2
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      1,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2
+    ]
+  ]
+}

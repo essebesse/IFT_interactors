@@ -1,0 +1,12 @@
+Category,Total,High,Medium,Low,Avg_ipSAE,Avg_iPTM
+"Validation: Intra-complex",51,11,22,18,0.571,0.598
+"Mechanistic: IFT-BBSome coupling",7,1,3,3,0.569,0.687
+"Membrane trafficking",13,0,4,9,0.455,0.578
+"Other",62,4,11,47,0.452,0.591
+"Validation: IFT-A/B coupling",4,0,1,3,0.446,0.625
+"Ciliary structural",188,3,48,137,0.439,0.582
+"Signaling",72,0,17,55,0.437,0.618
+"Metabolism",38,0,9,29,0.430,0.623
+"RNA processing",13,0,3,10,0.414,0.581
+"Transcription/Chromatin",69,1,12,56,0.402,0.623
+"Cytoskeleton",31,0,5,26,0.390,0.561

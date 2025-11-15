@@ -1,0 +1,237 @@
+{
+  "overall": {
+    "high": 20,
+    "medium": 135,
+    "low": 393
+  },
+  "by_category": {
+    "Validation: Intra-complex": {
+      "total": 51,
+      "high": 11,
+      "medium": 22,
+      "low": 18,
+      "avg_ipsae": 0.571,
+      "avg_iptm": 0.598
+    },
+    "Mechanistic: IFT-BBSome coupling": {
+      "total": 7,
+      "high": 1,
+      "medium": 3,
+      "low": 3,
+      "avg_ipsae": 0.569,
+      "avg_iptm": 0.687
+    },
+    "Membrane trafficking": {
+      "total": 13,
+      "high": 0,
+      "medium": 4,
+      "low": 9,
+      "avg_ipsae": 0.455,
+      "avg_iptm": 0.578
+    },
+    "Other": {
+      "total": 62,
+      "high": 4,
+      "medium": 11,
+      "low": 47,
+      "avg_ipsae": 0.452,
+      "avg_iptm": 0.591
+    },
+    "Validation: IFT-A/B coupling": {
+      "total": 4,
+      "high": 0,
+      "medium": 1,
+      "low": 3,
+      "avg_ipsae": 0.446,
+      "avg_iptm": 0.625
+    },
+    "Ciliary structural": {
+      "total": 188,
+      "high": 3,
+      "medium": 48,
+      "low": 137,
+      "avg_ipsae": 0.439,
+      "avg_iptm": 0.582
+    },
+    "Signaling": {
+      "total": 72,
+      "high": 0,
+      "medium": 17,
+      "low": 55,
+      "avg_ipsae": 0.437,
+      "avg_iptm": 0.618
+    },
+    "Metabolism": {
+      "total": 38,
+      "high": 0,
+      "medium": 9,
+      "low": 29,
+      "avg_ipsae": 0.43,
+      "avg_iptm": 0.623
+    },
+    "RNA processing": {
+      "total": 13,
+      "high": 0,
+      "medium": 3,
+      "low": 10,
+      "avg_ipsae": 0.414,
+      "avg_iptm": 0.581
+    },
+    "Transcription/Chromatin": {
+      "total": 69,
+      "high": 1,
+      "medium": 12,
+      "low": 56,
+      "avg_ipsae": 0.402,
+      "avg_iptm": 0.623
+    },
+    "Cytoskeleton": {
+      "total": 31,
+      "high": 0,
+      "medium": 5,
+      "low": 26,
+      "avg_ipsae": 0.39,
+      "avg_iptm": 0.561
+    }
+  },
+  "ipsae_bins": [
+    {
+      "bin": "0.30-0.35",
+      "count": 125
+    },
+    {
+      "bin": "0.35-0.40",
+      "count": 117
+    },
+    {
+      "bin": "0.40-0.45",
+      "count": 91
+    },
+    {
+      "bin": "0.45-0.50",
+      "count": 60
+    },
+    {
+      "bin": "0.50-0.55",
+      "count": 58
+    },
+    {
+      "bin": "0.55-0.60",
+      "count": 32
+    },
+    {
+      "bin": "0.60-0.65",
+      "count": 16
+    },
+    {
+      "bin": "0.65-0.70",
+      "count": 29
+    },
+    {
+      "bin": "0.70-0.75",
+      "count": 13
+    },
+    {
+      "bin": "0.75-0.80",
+      "count": 5
+    },
+    {
+      "bin": "0.80-0.85",
+      "count": 2
+    },
+    {
+      "bin": "0.85-0.90",
+      "count": 0
+    },
+    {
+      "bin": "0.90-0.95",
+      "count": 0
+    },
+    {
+      "bin": "0.95-1.00",
+      "count": 0
+    }
+  ],
+  "iptm_bins": [
+    {
+      "bin": "0.00-0.05",
+      "count": 0
+    },
+    {
+      "bin": "0.05-0.10",
+      "count": 0
+    },
+    {
+      "bin": "0.10-0.15",
+      "count": 0
+    },
+    {
+      "bin": "0.15-0.20",
+      "count": 0
+    },
+    {
+      "bin": "0.20-0.25",
+      "count": 0
+    },
+    {
+      "bin": "0.25-0.30",
+      "count": 2
+    },
+    {
+      "bin": "0.30-0.35",
+      "count": 9
+    },
+    {
+      "bin": "0.35-0.40",
+      "count": 18
+    },
+    {
+      "bin": "0.40-0.45",
+      "count": 27
+    },
+    {
+      "bin": "0.45-0.50",
+      "count": 50
+    },
+    {
+      "bin": "0.50-0.55",
+      "count": 86
+    },
+    {
+      "bin": "0.55-0.60",
+      "count": 87
+    },
+    {
+      "bin": "0.60-0.65",
+      "count": 75
+    },
+    {
+      "bin": "0.65-0.70",
+      "count": 84
+    },
+    {
+      "bin": "0.70-0.75",
+      "count": 45
+    },
+    {
+      "bin": "0.75-0.80",
+      "count": 37
+    },
+    {
+      "bin": "0.80-0.85",
+      "count": 25
+    },
+    {
+      "bin": "0.85-0.90",
+      "count": 3
+    },
+    {
+      "bin": "0.90-0.95",
+      "count": 0
+    },
+    {
+      "bin": "0.95-1.00",
+      "count": 0
+    }
+  ]
+}

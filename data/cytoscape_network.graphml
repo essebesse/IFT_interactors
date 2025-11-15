@@ -1,0 +1,5220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="uniprot" for="node" attr.name="uniprot_id" attr.type="string"/>
+  <key id="category" for="node" attr.name="category" attr.type="string"/>
+  <key id="type" for="node" attr.name="node_type" attr.type="string"/>
+  <key id="int_cat" for="edge" attr.name="interaction_category" attr.type="string"/>
+  <key id="ipsae" for="edge" attr.name="ipsae" attr.type="double"/>
+  <key id="iptm" for="edge" attr.name="iptm" attr.type="double"/>
+  <key id="conf" for="edge" attr.name="confidence_level" attr.type="string"/>
+  <graph id="IFT_BBSome_Network" edgedefault="undirected">
+    <node id="IFT46">
+      <data key="uniprot">Q9NQC8</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT56">
+      <data key="uniprot">A0AVF1</data>
+      <data key="category">IFT-B</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS8">
+      <data key="uniprot">Q8TAM2</data>
+      <data key="category">BBSome</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="BBS18">
+      <data key="uniprot">A8MTZ0</data>
+      <data key="category">BBSome</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS7">
+      <data key="uniprot">Q8IWZ6</data>
+      <data key="category">BBSome</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="BBS2">
+      <data key="uniprot">Q9BXC9</data>
+      <data key="category">BBSome</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS1">
+      <data key="uniprot">Q8NFJ9</data>
+      <data key="category">BBSome</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="BBS4">
+      <data key="uniprot">Q96RK4</data>
+      <data key="category">BBSome</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT70B">
+      <data key="uniprot">Q8N4P2</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT88">
+      <data key="uniprot">Q13099</data>
+      <data key="category">IFT-B</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TULP3">
+      <data key="uniprot">O75386</data>
+      <data key="category">IFT-A</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="WDR5">
+      <data key="uniprot">P61964</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT25">
+      <data key="uniprot">Q9Y547</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="ZC2HC1A">
+      <data key="uniprot">Q96GY0</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ARL6">
+      <data key="uniprot">Q9H0F7</data>
+      <data key="category">BBSome</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT172">
+      <data key="uniprot">Q9UG01</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT57">
+      <data key="uniprot">Q9NWB7</data>
+      <data key="category">IFT-B</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT80">
+      <data key="uniprot">Q9P2H3</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT38">
+      <data key="uniprot">Q96AJ1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TP73">
+      <data key="uniprot">O15350</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT54">
+      <data key="uniprot">Q8TDR0</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="CYS1">
+      <data key="uniprot">Q717R9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT27">
+      <data key="uniprot">Q9BW83</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="TUBE1">
+      <data key="uniprot">Q9UJT0</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS9">
+      <data key="uniprot">Q3SYG4</data>
+      <data key="category">BBSome</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GNAS">
+      <data key="uniprot">O95467</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT122">
+      <data key="uniprot">Q9HBG6</data>
+      <data key="category">IFT-A</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT144">
+      <data key="uniprot">Q8NEZ3</data>
+      <data key="category">IFT-A</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TIMM50">
+      <data key="uniprot">Q3ZCQ8</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT52">
+      <data key="uniprot">Q9Y366</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="PPP6C">
+      <data key="uniprot">O00743</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT70A">
+      <data key="uniprot">Q86WT1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GLIS2">
+      <data key="uniprot">Q9BZE0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EIF5">
+      <data key="uniprot">P55010</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CLIC1">
+      <data key="uniprot">O00299</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS5">
+      <data key="uniprot">Q8N3I7</data>
+      <data key="category">BBSome</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="MCIDAS">
+      <data key="uniprot">D6RGH6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT121">
+      <data key="uniprot">Q9P2L0</data>
+      <data key="category">IFT-A</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP144">
+      <data key="uniprot">A6NL82</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GMNC">
+      <data key="uniprot">A6NCL1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RABL2B">
+      <data key="uniprot">Q9UNT1</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="POC1A">
+      <data key="uniprot">Q8NBT0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="STK11">
+      <data key="uniprot">Q15831</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BBS17">
+      <data key="uniprot">Q9NQ48</data>
+      <data key="category">BBSome</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="CFAP20">
+      <data key="uniprot">Q9Y6A4</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT20">
+      <data key="uniprot">Q8IY31</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="SUFU">
+      <data key="uniprot">Q9UMX1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT140">
+      <data key="uniprot">Q96RY7</data>
+      <data key="category">IFT-A</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DCDC2">
+      <data key="uniprot">Q9UHG0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SRSF7">
+      <data key="uniprot">Q16629</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT43">
+      <data key="uniprot">Q96FT9</data>
+      <data key="category">IFT-A</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="PDE6D">
+      <data key="uniprot">O43924</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPATA7">
+      <data key="uniprot">Q9P0W8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NDUFA5">
+      <data key="uniprot">Q16718</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SNX10">
+      <data key="uniprot">Q9Y5X0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ENTR1">
+      <data key="uniprot">Q96C92</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT22">
+      <data key="uniprot">Q9H7X7</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="INTS6">
+      <data key="uniprot">Q9UL03</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EFCAB2">
+      <data key="uniprot">Q5VUJ9</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DTYMK">
+      <data key="uniprot">P23919</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GDI2">
+      <data key="uniprot">P50395</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FAIM">
+      <data key="uniprot">Q9NVQ4</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SUCLG1">
+      <data key="uniprot">P53597</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CMPK1">
+      <data key="uniprot">P30085</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACSL3">
+      <data key="uniprot">O95573</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HIBADH">
+      <data key="uniprot">P31937</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RPS9">
+      <data key="uniprot">P46781</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DYNC2LI1">
+      <data key="uniprot">Q8TCX1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LTA4H">
+      <data key="uniprot">P09960</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DNAJC8">
+      <data key="uniprot">O75937</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PDCD10">
+      <data key="uniprot">Q9BUL8</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SEMG1">
+      <data key="uniprot">P04279</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TTC21B">
+      <data key="uniprot">Q7Z4L5</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="CYLC2">
+      <data key="uniprot">Q14093</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TBC1D7">
+      <data key="uniprot">Q9P0N9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UBA52">
+      <data key="uniprot">P62987</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GALNT11">
+      <data key="uniprot">Q8NCW6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TTC21A">
+      <data key="uniprot">Q8NDW8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SH3GLB1">
+      <data key="uniprot">Q9Y371</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UBXN10">
+      <data key="uniprot">Q96LJ8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MED7">
+      <data key="uniprot">O43513</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TTBK2">
+      <data key="uniprot">Q6IQ55</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP36">
+      <data key="uniprot">Q96G28</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MLF2">
+      <data key="uniprot">Q15773</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CLU">
+      <data key="uniprot">P10909</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DBR1">
+      <data key="uniprot">Q9UK59</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CLBA1">
+      <data key="uniprot">Q96F83</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NPM1">
+      <data key="uniprot">P06748</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MAK">
+      <data key="uniprot">P20794</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NSFL1C">
+      <data key="uniprot">Q9UNZ2</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RFX7">
+      <data key="uniprot">Q2KHR2</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PDIA4">
+      <data key="uniprot">P13667</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CILK1">
+      <data key="uniprot">Q9UPZ9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HNRNPM">
+      <data key="uniprot">P52272</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="VHL">
+      <data key="uniprot">P40337</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="YAP1">
+      <data key="uniprot">P46937</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KCTD10">
+      <data key="uniprot">Q9H3F6</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CEP44">
+      <data key="uniprot">Q9C0F1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HAP1">
+      <data key="uniprot">P54257</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP206">
+      <data key="uniprot">Q8IYR0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TOM1">
+      <data key="uniprot">O60784</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PHB2">
+      <data key="uniprot">Q99623</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CBY1">
+      <data key="uniprot">Q9Y3M2</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GSTM1">
+      <data key="uniprot">P09488</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DZIP1">
+      <data key="uniprot">Q86YF9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GLI1">
+      <data key="uniprot">P08151</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB28">
+      <data key="uniprot">P51157</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DRG1">
+      <data key="uniprot">Q9Y295</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EGFR">
+      <data key="uniprot">P00533</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LRRC23">
+      <data key="uniprot">Q53EV4</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GALR2">
+      <data key="uniprot">O43603</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CSNK1D">
+      <data key="uniprot">P48730</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CYRIB">
+      <data key="uniprot">Q9NUQ9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AMOTL2">
+      <data key="uniprot">Q9Y2J4</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACR">
+      <data key="uniprot">P10323</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="P2RY14">
+      <data key="uniprot">Q15391</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ELOC">
+      <data key="uniprot">Q15369</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ALPK1">
+      <data key="uniprot">Q96QP1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPMIP5">
+      <data key="uniprot">Q8WW14</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDC20B">
+      <data key="uniprot">Q86Y33</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMA7">
+      <data key="uniprot">O14818</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MMP21">
+      <data key="uniprot">Q8N119</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FAAH">
+      <data key="uniprot">O00519</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRMT1">
+      <data key="uniprot">Q99873</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TTC23">
+      <data key="uniprot">Q5W5X9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPMAP2">
+      <data key="uniprot">Q9P2T0</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PNP">
+      <data key="uniprot">P00491</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RP2">
+      <data key="uniprot">O75695</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PDE6G">
+      <data key="uniprot">P18545</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DNAH10">
+      <data key="uniprot">Q8IVF4</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GLI2">
+      <data key="uniprot">P10070</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB23">
+      <data key="uniprot">Q9ULC3</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MYB">
+      <data key="uniprot">P10242</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CELSR3">
+      <data key="uniprot">Q9NYQ7</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMD6">
+      <data key="uniprot">Q15008</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CES1">
+      <data key="uniprot">P23141</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IPO5">
+      <data key="uniprot">O00410</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TUBA4A">
+      <data key="uniprot">P68366</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ADGB">
+      <data key="uniprot">Q8N7X0</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LRRC59">
+      <data key="uniprot">Q96AG4</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DZANK1">
+      <data key="uniprot">Q9NVP4</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AKR1B1">
+      <data key="uniprot">P15121</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NR1H4">
+      <data key="uniprot">Q96RI1</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="STYXL1">
+      <data key="uniprot">Q9Y6J8</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MCHR1">
+      <data key="uniprot">Q99705</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RABL2A">
+      <data key="uniprot">Q9UBK7</data>
+      <data key="category">IFT-B</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDC20">
+      <data key="uniprot">Q12834</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACTA2">
+      <data key="uniprot">P62736</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MPI">
+      <data key="uniprot">P34949</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SEPTIN12">
+      <data key="uniprot">Q8IYM1</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KIFAP3">
+      <data key="uniprot">Q92845</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AHI1">
+      <data key="uniprot">Q8N157</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TXNDC15">
+      <data key="uniprot">Q96J42</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GOT2">
+      <data key="uniprot">P00505</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CATSPERB">
+      <data key="uniprot">Q9H7T0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="C7orf57">
+      <data key="uniprot">Q8NEG2</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CAPS">
+      <data key="uniprot">Q13938</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GPR173">
+      <data key="uniprot">Q9NS66</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMC2">
+      <data key="uniprot">P35998</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACTR2">
+      <data key="uniprot">P61160</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ANXA1">
+      <data key="uniprot">P04083</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GSTM2">
+      <data key="uniprot">P28161</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMD3">
+      <data key="uniprot">O43242</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="WDR77">
+      <data key="uniprot">Q9BQA1</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NUP35">
+      <data key="uniprot">Q8NFH5</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UNC119B">
+      <data key="uniprot">A6NIH7</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TUB">
+      <data key="uniprot">P50607</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="B9D1">
+      <data key="uniprot">Q9UPM9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CCDC92">
+      <data key="uniprot">Q53HC0</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PPP1CC">
+      <data key="uniprot">P36873</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RACK1">
+      <data key="uniprot">P63244</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FSCB">
+      <data key="uniprot">Q5H9T9</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RSPH1">
+      <data key="uniprot">Q8WYR4</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AURKA">
+      <data key="uniprot">O14965</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NSUN4">
+      <data key="uniprot">Q96CB9</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AIFM1">
+      <data key="uniprot">O95831</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RFX4">
+      <data key="uniprot">Q33E94</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP97">
+      <data key="uniprot">Q9P2B7</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TF">
+      <data key="uniprot">P02787</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UBXN11">
+      <data key="uniprot">Q5T124</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MLF1">
+      <data key="uniprot">P58340</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MAPK3">
+      <data key="uniprot">P27361</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CLRN1">
+      <data key="uniprot">P58418</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB34">
+      <data key="uniprot">P0DI83</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DCP2">
+      <data key="uniprot">Q8IU60</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AK1">
+      <data key="uniprot">P00568</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMA6">
+      <data key="uniprot">P60900</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="COP1">
+      <data key="uniprot">Q8NHY2</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MOK">
+      <data key="uniprot">Q9UQ07</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SEMG2">
+      <data key="uniprot">Q02383</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CTNNB1">
+      <data key="uniprot">P35222</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ARL2">
+      <data key="uniprot">P36404</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB11B">
+      <data key="uniprot">Q15907</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TFG">
+      <data key="uniprot">Q92734</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RPL9">
+      <data key="uniprot">P32969</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="E2F4">
+      <data key="uniprot">Q16254</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PALB2">
+      <data key="uniprot">Q86YC2</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDK9">
+      <data key="uniprot">P50750</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SALL1">
+      <data key="uniprot">Q9NSC2</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PPIA">
+      <data key="uniprot">P62937</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACAT1">
+      <data key="uniprot">P24752</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NEK2">
+      <data key="uniprot">P51955</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CETN3">
+      <data key="uniprot">O15182</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NAMPT">
+      <data key="uniprot">P43490</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FNDC8">
+      <data key="uniprot">Q8TC99</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NPEPPS">
+      <data key="uniprot">P55786</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="L2HGDH">
+      <data key="uniprot">Q9H9P8</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CSNK2A1">
+      <data key="uniprot">P68400</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CEP97">
+      <data key="uniprot">Q8IW35</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="U2SURP">
+      <data key="uniprot">O15042</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PGAM5">
+      <data key="uniprot">Q96HS1</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT1">
+      <data key="uniprot">P04264</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FOXJ1">
+      <data key="uniprot">Q92949</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDC42">
+      <data key="uniprot">P60953</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="COPA">
+      <data key="uniprot">P53621</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NUMB">
+      <data key="uniprot">P49757</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ALDH2">
+      <data key="uniprot">P05091</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP299">
+      <data key="uniprot">Q6V702</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NOTO">
+      <data key="uniprot">A8MTQ0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GSTM5">
+      <data key="uniprot">P46439</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT6B">
+      <data key="uniprot">P04259</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CHCHD6">
+      <data key="uniprot">Q9BRQ6</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRPS2">
+      <data key="uniprot">P11908</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ODF1">
+      <data key="uniprot">Q14990</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RPL7A">
+      <data key="uniprot">P62424</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RSPH10B">
+      <data key="uniprot">P0C881</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CEP78">
+      <data key="uniprot">Q5JTW2</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TLK2">
+      <data key="uniprot">Q86UE8</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TMED10">
+      <data key="uniprot">P49755</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FARSB">
+      <data key="uniprot">Q9NSD9</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HNF1B">
+      <data key="uniprot">P35680</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="P4HB">
+      <data key="uniprot">P07237</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RPL6">
+      <data key="uniprot">Q02878</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KISS1R">
+      <data key="uniprot">Q969F8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GALR3">
+      <data key="uniprot">O60755</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ANXA3">
+      <data key="uniprot">P12429</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GAS2L1">
+      <data key="uniprot">Q99501</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="COMT">
+      <data key="uniprot">P21964</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TAGLN2">
+      <data key="uniprot">P37802</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="H4C1">
+      <data key="uniprot">P62805</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MSN">
+      <data key="uniprot">P26038</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="WDPCP">
+      <data key="uniprot">O95876</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MAPRE3">
+      <data key="uniprot">Q9UPY8</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="null">
+      <data key="uniprot">Q8BZG1</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPESP1">
+      <data key="uniprot">Q6UW49</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KCTD17">
+      <data key="uniprot">Q8N5Z5</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AP2B1">
+      <data key="uniprot">P63010</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NF2">
+      <data key="uniprot">P35240</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMA3">
+      <data key="uniprot">P25788</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="FSD1">
+      <data key="uniprot">Q9BTV5</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACTL7A">
+      <data key="uniprot">Q9Y615</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LCA5">
+      <data key="uniprot">Q86VQ0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRKACG">
+      <data key="uniprot">P22612</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CIMIP2A">
+      <data key="uniprot">Q6J272</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NME7">
+      <data key="uniprot">Q9Y5B8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CCP110">
+      <data key="uniprot">O43303</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRKAR1A">
+      <data key="uniprot">P10644</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PPP1R7">
+      <data key="uniprot">Q15435</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DYNC2I1">
+      <data key="uniprot">Q8WVS4</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IFT74">
+      <data key="uniprot">Q96LB3</data>
+      <data key="category">IFT-B</data>
+      <data key="type">bait</data>
+    </node>
+    <node id="IFT81">
+      <data key="uniprot">Q8WYA0</data>
+      <data key="category">IFT-B</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MED26">
+      <data key="uniprot">O95402</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PIN1">
+      <data key="uniprot">Q13526</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NEK8">
+      <data key="uniprot">Q86SG6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ANXA7">
+      <data key="uniprot">P20073</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRICKLE2">
+      <data key="uniprot">Q7Z3G6</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MAPRE1">
+      <data key="uniprot">Q15691</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CAMK4">
+      <data key="uniprot">Q16566</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NIT1">
+      <data key="uniprot">Q86X76</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NFIX">
+      <data key="uniprot">Q14938</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SASS6">
+      <data key="uniprot">Q6UVJ0</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="USH1G">
+      <data key="uniprot">Q495M9</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TMEM231">
+      <data key="uniprot">Q9H6L2</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CCNO">
+      <data key="uniprot">P22674</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HGS">
+      <data key="uniprot">O14964</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DNAJB6">
+      <data key="uniprot">O75190</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PLK4">
+      <data key="uniprot">O00444</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TUBGCP6">
+      <data key="uniprot">Q96RT7</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KATNAL1">
+      <data key="uniprot">Q9BW62</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ZIC2">
+      <data key="uniprot">O95409</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SNX9">
+      <data key="uniprot">Q9Y5X1</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DYDC2">
+      <data key="uniprot">Q96IM9</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACADM">
+      <data key="uniprot">P11310</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GNB1">
+      <data key="uniprot">P62873</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LCP1">
+      <data key="uniprot">P13796</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PQBP1">
+      <data key="uniprot">O60828</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PTGER4">
+      <data key="uniprot">P35408</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="STUB1">
+      <data key="uniprot">Q9UNE7</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CALM1">
+      <data key="uniprot">P0DP23</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PEBP1">
+      <data key="uniprot">P30086</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HYOU1">
+      <data key="uniprot">Q9Y4L1</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TCHP">
+      <data key="uniprot">Q9BT92</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="WDR44">
+      <data key="uniprot">Q5JSH3</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CALR">
+      <data key="uniprot">P27797</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EZR">
+      <data key="uniprot">P15311</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HSPA8">
+      <data key="uniprot">P11142</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DRC3">
+      <data key="uniprot">Q9H069</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MCRS1">
+      <data key="uniprot">Q96EZ8</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GPR88">
+      <data key="uniprot">Q9GZN0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="C1orf87">
+      <data key="uniprot">Q8N0U7</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LIMA1">
+      <data key="uniprot">Q9UHB6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP298">
+      <data key="uniprot">P57076</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DDX42">
+      <data key="uniprot">Q86XP3</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ZPBP">
+      <data key="uniprot">Q9BS86</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CELSR2">
+      <data key="uniprot">Q9HCU4</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ANXA11">
+      <data key="uniprot">P50995</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT75">
+      <data key="uniprot">O95678</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RNPEP">
+      <data key="uniprot">Q9H4A4</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TPPP3">
+      <data key="uniprot">Q9BW30</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PPP1CA">
+      <data key="uniprot">P62136</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GANAB">
+      <data key="uniprot">Q14697</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="COPS8">
+      <data key="uniprot">Q99627</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CCDC78">
+      <data key="uniprot">A2IDD5</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ZBBX">
+      <data key="uniprot">A8MT70</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CFAP43">
+      <data key="uniprot">Q8NDM7</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT8">
+      <data key="uniprot">P05787</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB7A">
+      <data key="uniprot">P51149</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RFX2">
+      <data key="uniprot">P48378</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EIF5A">
+      <data key="uniprot">P63241</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PCM1">
+      <data key="uniprot">Q15154</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PSMA4">
+      <data key="uniprot">P25789</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="XPNPEP3">
+      <data key="uniprot">Q9NQH7</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HSP90AB1">
+      <data key="uniprot">P08238</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KIF24">
+      <data key="uniprot">Q5T7B8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TCTN2">
+      <data key="uniprot">Q96GX1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IZUMO4">
+      <data key="uniprot">Q1ZYL8</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HDAC6">
+      <data key="uniprot">Q9UBN7</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NEK1">
+      <data key="uniprot">Q96PY6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPAG8">
+      <data key="uniprot">Q99932</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPMIP6">
+      <data key="uniprot">Q8NCR6</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PDHX">
+      <data key="uniprot">O00330</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MAPKAP1">
+      <data key="uniprot">Q9BPZ7</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MYLIP">
+      <data key="uniprot">Q8WY64</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="QARS1">
+      <data key="uniprot">P47897</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB8A">
+      <data key="uniprot">P61006</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MTREX">
+      <data key="uniprot">P42285</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NUP54">
+      <data key="uniprot">Q7Z3B4</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UBE4B">
+      <data key="uniprot">O95155</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT5">
+      <data key="uniprot">P13647</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SNAP29">
+      <data key="uniprot">O95721</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CSNK2B">
+      <data key="uniprot">P67870</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="VPS45">
+      <data key="uniprot">Q9NRW7</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AKNA">
+      <data key="uniprot">Q7Z591</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="RAB14">
+      <data key="uniprot">P61106</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SSTR3">
+      <data key="uniprot">P32745</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CYLD">
+      <data key="uniprot">Q9NQC7</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TULP1">
+      <data key="uniprot">O00294</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BAZ2B">
+      <data key="uniprot">Q9UIF8</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDKL5">
+      <data key="uniprot">O76039</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="LRGUK">
+      <data key="uniprot">Q96M69</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DNAI3">
+      <data key="uniprot">Q8IWG1</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DCP1A">
+      <data key="uniprot">Q9NPI6</data>
+      <data key="category">RNA processing</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ARPC2">
+      <data key="uniprot">O15144</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AIPL1">
+      <data key="uniprot">Q9NZN9</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PTPN11">
+      <data key="uniprot">Q06124</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TTLL1">
+      <data key="uniprot">O95922</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="GPR161">
+      <data key="uniprot">Q8N6U8</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="KRT6A">
+      <data key="uniprot">P02538</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CNGA4">
+      <data key="uniprot">Q8IV77</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CIMIP2C">
+      <data key="uniprot">A6NJV1</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="IGF1">
+      <data key="uniprot">P05019</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ACAD10">
+      <data key="uniprot">Q6JQN1</data>
+      <data key="category">Metabolism</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PTEN">
+      <data key="uniprot">P60484</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CCDC181">
+      <data key="uniprot">Q5TID7</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="MACF1">
+      <data key="uniprot">O94854</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PRDX3">
+      <data key="uniprot">P30048</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EPB41">
+      <data key="uniprot">P11171</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SENP3">
+      <data key="uniprot">Q9H4L4</data>
+      <data key="category">Other</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="EZH2">
+      <data key="uniprot">Q15910</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="DNAAF2">
+      <data key="uniprot">Q9NVR5</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TUBA8">
+      <data key="uniprot">Q9NY65</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="INVS">
+      <data key="uniprot">Q9Y283</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="UBAP1">
+      <data key="uniprot">Q9NZ09</data>
+      <data key="category">Membrane trafficking</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="SPAG17">
+      <data key="uniprot">Q6Q759</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NCL">
+      <data key="uniprot">P19338</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="CDK13">
+      <data key="uniprot">Q14004</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="NUP93">
+      <data key="uniprot">Q8N1F7</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HNRNPK">
+      <data key="uniprot">P61978</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="HYLS1">
+      <data key="uniprot">Q96M11</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="ARL2BP">
+      <data key="uniprot">Q9Y2Y0</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="BAG6">
+      <data key="uniprot">P46379</data>
+      <data key="category">Transcription/Chromatin</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="TUBB6">
+      <data key="uniprot">Q9BUF5</data>
+      <data key="category">Cytoskeleton</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="PPP2R3C">
+      <data key="uniprot">Q969Q6</data>
+      <data key="category">Ciliary structural</data>
+      <data key="type">prey</data>
+    </node>
+    <node id="AP2A2">
+      <data key="uniprot">O94973</data>
+      <data key="category">Signaling</data>
+      <data key="type">prey</data>
+    </node>
+    <edge id="e0" source="IFT46" target="IFT56">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.8283153</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e1" source="IFT56" target="IFT46">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.8280138</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e2" source="BBS8" target="BBS18">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7713359</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e3" source="BBS18" target="BBS8">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7599822</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e4" source="BBS7" target="BBS2">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7587239</data>
+      <data key="iptm">0.85</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e5" source="BBS2" target="BBS7">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7578511</data>
+      <data key="iptm">0.85</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e6" source="BBS1" target="BBS4">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.75296104</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e7" source="BBS4" target="BBS1">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.74835306</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e8" source="IFT70B" target="IFT88">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.71904945</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e9" source="TULP3" target="WDR5">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.71869755</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e10" source="BBS18" target="BBS4">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.71672386</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e11" source="BBS4" target="BBS18">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7131941</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e12" source="IFT25" target="ZC2HC1A">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.71297</data>
+      <data key="iptm">0.88</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e13" source="BBS1" target="ARL6">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.7092236</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e14" source="IFT88" target="IFT70B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.70862484</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e15" source="IFT172" target="IFT57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.7043668</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e16" source="IFT80" target="IFT38">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.7038984</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e17" source="IFT57" target="IFT172">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.70357007</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e18" source="IFT38" target="IFT80">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.7023716</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e19" source="IFT25" target="BBS18">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.7009643</data>
+      <data key="iptm">0.83</data>
+      <data key="conf">High</data>
+    </edge>
+    <edge id="e20" source="IFT80" target="TP73">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.698964</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e21" source="IFT54" target="CYS1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6988243</data>
+      <data key="iptm">0.27</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e22" source="IFT27" target="TUBE1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.6967669</data>
+      <data key="iptm">0.8</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e23" source="BBS8" target="BBS9">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6958741</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e24" source="BBS9" target="BBS8">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6912346</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e25" source="TULP3" target="GNAS">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.6898698</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e26" source="IFT122" target="IFT144">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6876721</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e27" source="ARL6" target="BBS1">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.68612725</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e28" source="IFT144" target="IFT122">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6836468</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e29" source="TULP3" target="TIMM50">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.6834417</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e30" source="IFT52" target="IFT70B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.67843467</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e31" source="IFT70B" target="IFT52">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.67754316</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e32" source="IFT25" target="IFT27">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.67742985</data>
+      <data key="iptm">0.85</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e33" source="BBS7" target="IFT144">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.67528325</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e34" source="IFT144" target="BBS7">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.67365915</data>
+      <data key="iptm">0.78</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e35" source="IFT27" target="PPP6C">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.6698515</data>
+      <data key="iptm">0.78</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e36" source="IFT88" target="IFT70A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.66718847</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e37" source="BBS18" target="IFT25">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.66681945</data>
+      <data key="iptm">0.82</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e38" source="TULP3" target="GLIS2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6664429</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e39" source="IFT70A" target="IFT88">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.6646243</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e40" source="IFT70A" target="IFT52">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.6641053</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e41" source="IFT52" target="IFT70A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.66343486</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e42" source="TULP3" target="EIF5">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.6625281</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e43" source="IFT54" target="CLIC1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.66031516</data>
+      <data key="iptm">0.87</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e44" source="BBS5" target="MCIDAS">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.66007113</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e45" source="IFT122" target="IFT121">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6582769</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e46" source="IFT27" target="IFT25">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.654327</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e47" source="IFT25" target="CFAP144">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.652987</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e48" source="BBS1" target="BBS9">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6523343</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e49" source="BBS9" target="BBS1">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.64633</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e50" source="IFT121" target="IFT122">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6455526</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e51" source="TULP3" target="GMNC">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.64029306</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e52" source="BBS5" target="GNAS">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.6363958</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e53" source="RABL2B" target="POC1A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6362975</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e54" source="TULP3" target="STK11">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.63555217</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e55" source="BBS17" target="BBS17">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6290676</data>
+      <data key="iptm">0.43</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e56" source="IFT57" target="CFAP20">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.62772363</data>
+      <data key="iptm">0.83</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e57" source="BBS9" target="BBS5">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6214371</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e58" source="IFT20" target="SUFU">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6213019</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e59" source="IFT144" target="IFT140">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.61810565</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e60" source="TULP3" target="DCDC2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6175081</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e61" source="IFT140" target="IFT144">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.6170063</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e62" source="IFT80" target="IFT172">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.6135375</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e63" source="BBS5" target="SRSF7">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.61226493</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e64" source="IFT172" target="IFT80">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.60844237</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e65" source="IFT43" target="IFT121">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.5973592</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e66" source="ARL6" target="PDE6D">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.59723043</data>
+      <data key="iptm">0.82</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e67" source="IFT121" target="IFT43">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.5954744</data>
+      <data key="iptm">0.41</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e68" source="TULP3" target="SPATA7">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.59497327</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e69" source="BBS5" target="BBS9">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.59391326</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e70" source="ARL6" target="NDUFA5">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5905581</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e71" source="IFT25" target="SNX10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.587469</data>
+      <data key="iptm">0.83</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e72" source="BBS5" target="ENTR1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5870666</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e73" source="IFT22" target="INTS6">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.58277494</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e74" source="TULP3" target="EFCAB2">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.58199704</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e75" source="IFT22" target="DTYMK">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.57994014</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e76" source="ARL6" target="GDI2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5798622</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e77" source="BBS1" target="FAIM">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5792177</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e78" source="ARL6" target="SUCLG1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5785494</data>
+      <data key="iptm">0.78</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e79" source="BBS5" target="CMPK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5784052</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e80" source="BBS7" target="ACSL3">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5777957</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e81" source="IFT38" target="HIBADH">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5735986</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e82" source="TULP3" target="RPS9">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.57019615</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e83" source="ARL6" target="DYNC2LI1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.56956</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e84" source="IFT43" target="LTA4H">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.56758153</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e85" source="IFT56" target="DNAJC8">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.5647609</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e86" source="BBS1" target="PDCD10">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.56247354</data>
+      <data key="iptm">0.83</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e87" source="TULP3" target="SEMG1">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.55910605</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e88" source="TTC21B" target="IFT122">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.5571812</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e89" source="IFT122" target="TTC21B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.55645055</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e90" source="BBS5" target="SEMG1">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.55625033</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e91" source="IFT80" target="CYLC2">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.55590785</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e92" source="IFT27" target="TBC1D7">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5539813</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e93" source="IFT70B" target="UBA52">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5533598</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e94" source="IFT46" target="GALNT11">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5524447</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e95" source="IFT122" target="TTC21A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5519426</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e96" source="IFT27" target="SH3GLB1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5508466</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e97" source="IFT56" target="UBXN10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5499628</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e98" source="IFT70A" target="UBA52">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5499107</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e99" source="BBS9" target="MED7">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.54697245</data>
+      <data key="iptm">0.41</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e100" source="BBS5" target="TTBK2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.54332566</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e101" source="TULP3" target="CFAP36">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.542769</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e102" source="IFT43" target="WDR5">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5420294</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e103" source="BBS5" target="MLF2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5403463</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e104" source="IFT140" target="IFT122">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.5381653</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e105" source="IFT27" target="CLU">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.53662884</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e106" source="IFT121" target="DBR1">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.5346844</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e107" source="IFT25" target="CLBA1">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.53406805</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e108" source="IFT56" target="NPM1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5330536</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e109" source="BBS5" target="MAK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5322961</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e110" source="RABL2B" target="IFT122">
+      <data key="int_cat">Validation: IFT-A/B coupling</data>
+      <data key="ipsae">0.53002244</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e111" source="TULP3" target="NSFL1C">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.5297755</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e112" source="TULP3" target="RFX7">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5293746</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e113" source="IFT70B" target="PDIA4">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.52800703</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e114" source="BBS5" target="CILK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.526945</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e115" source="BBS5" target="HNRNPM">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.52688205</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e116" source="IFT25" target="CMPK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.52650636</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e117" source="IFT43" target="VHL">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.526164</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e118" source="BBS2" target="BBS9">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.5261032</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e119" source="RABL2B" target="CYS1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.52547</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e120" source="IFT122" target="IFT140">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.52540433</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e121" source="TULP3" target="YAP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.524695</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e122" source="IFT27" target="KCTD10">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5245273</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e123" source="TULP3" target="CEP44">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.524515</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e124" source="BBS7" target="HAP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.52408963</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e125" source="IFT43" target="CFAP206">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.523655</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e126" source="IFT25" target="TOM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5235034</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e127" source="IFT22" target="PHB2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5231901</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e128" source="BBS9" target="BBS2">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.5230795</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e129" source="IFT56" target="DTYMK">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5228147</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e130" source="BBS17" target="CBY1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5200317</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e131" source="TULP3" target="GSTM1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.51861125</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e132" source="TULP3" target="DZIP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.51754177</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e133" source="IFT80" target="GLI1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.51737833</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e134" source="BBS5" target="RAB28">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.51721895</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e135" source="TULP3" target="DRG1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.51681393</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e136" source="TULP3" target="EGFR">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.51652694</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e137" source="ARL6" target="LRRC23">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.5143757</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e138" source="TULP3" target="GALR2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5134987</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e139" source="IFT43" target="CSNK1D">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5125944</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e140" source="IFT43" target="CYRIB">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.51255965</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e141" source="TULP3" target="AMOTL2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5120091</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e142" source="IFT43" target="ACR">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.51141804</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e143" source="ARL6" target="P2RY14">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.5112655</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e144" source="BBS18" target="ELOC">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5112505</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e145" source="BBS2" target="ALPK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5104805</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e146" source="ARL6" target="WDR5">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5104427</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e147" source="IFT56" target="SPMIP5">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5084198</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e148" source="IFT38" target="CDC20B">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.5067337</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e149" source="BBS7" target="CYS1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.50266707</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e150" source="TULP3" target="PSMA7">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.5024442</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e151" source="IFT43" target="MMP21">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.50229347</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e152" source="TULP3" target="FAAH">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.50197744</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e153" source="IFT20" target="PRMT1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.5008938</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e154" source="BBS18" target="VHL">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.5003644</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Medium</data>
+    </edge>
+    <edge id="e155" source="ARL6" target="TTC23">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4997138</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e156" source="IFT56" target="SPMAP2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.49928838</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e157" source="RABL2B" target="PNP">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.4986905</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e158" source="ARL6" target="RP2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.49837703</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e159" source="TULP3" target="PDE6G">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.49660647</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e160" source="IFT70B" target="DNAH10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.49647292</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e161" source="BBS5" target="GLI2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4957416</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e162" source="IFT25" target="RAB23">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.49431428</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e163" source="BBS8" target="BBS2">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.49272174</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e164" source="ARL6" target="MYB">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.49263594</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e165" source="IFT22" target="CELSR3">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.49117956</data>
+      <data key="iptm">0.89</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e166" source="RABL2B" target="PSMD6">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.49054864</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e167" source="IFT172" target="CES1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.48699653</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e168" source="BBS4" target="IPO5">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.48555642</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e169" source="BBS4" target="TUBA4A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.48245022</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e170" source="BBS7" target="TOM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4819559</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e171" source="IFT80" target="ADGB">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.48010027</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e172" source="IFT56" target="LRRC59">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.47907314</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e173" source="IFT25" target="DZANK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.479029</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e174" source="BBS5" target="TP73">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.47896805</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e175" source="TULP3" target="IFT122">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.47822043</data>
+      <data key="iptm">0.35</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e176" source="IFT122" target="RABL2B">
+      <data key="int_cat">Validation: IFT-A/B coupling</data>
+      <data key="ipsae">0.47673714</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e177" source="BBS2" target="AKR1B1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.47657016</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e178" source="IFT25" target="NR1H4">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.47577927</data>
+      <data key="iptm">0.83</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e179" source="BBS18" target="CDC20B">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.4752677</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e180" source="TULP3" target="STYXL1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.47389454</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e181" source="TULP3" target="MCHR1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4694991</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e182" source="BBS7" target="IFT43">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.46918675</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e183" source="IFT122" target="RABL2A">
+      <data key="int_cat">Validation: IFT-A/B coupling</data>
+      <data key="ipsae">0.46897858</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e184" source="IFT122" target="TULP3">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.46840107</data>
+      <data key="iptm">0.35</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e185" source="IFT54" target="CDC20">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.46731916</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e186" source="IFT25" target="ACTA2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.46542653</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e187" source="IFT122" target="MPI">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.46416005</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e188" source="BBS2" target="SEPTIN12">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4639453</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e189" source="IFT88" target="KIFAP3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4632768</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e190" source="TTC21B" target="IFT43">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.4627686</data>
+      <data key="iptm">0.39</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e191" source="IFT43" target="TTC21A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.46250227</data>
+      <data key="iptm">0.38</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e192" source="IFT38" target="IFT57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.46173054</data>
+      <data key="iptm">0.33</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e193" source="TULP3" target="UBXN10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.46102872</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e194" source="IFT80" target="GNAS">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.46093374</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e195" source="IFT57" target="ACR">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.46092314</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e196" source="ARL6" target="AHI1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4600259</data>
+      <data key="iptm">0.78</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e197" source="ARL6" target="TXNDC15">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45908275</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e198" source="IFT56" target="GOT2">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.4581572</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e199" source="TULP3" target="CFAP144">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45781785</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e200" source="IFT121" target="CATSPERB">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45742375</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e201" source="BBS4" target="C7orf57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.45670056</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e202" source="ARL6" target="CAPS">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.45604345</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e203" source="TULP3" target="GPR173">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.45597094</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e204" source="TULP3" target="PSMC2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.45554736</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e205" source="IFT43" target="ACTR2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45503387</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e206" source="BBS7" target="ANXA1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4539932</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e207" source="IFT57" target="IFT38">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45351166</data>
+      <data key="iptm">0.33</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e208" source="ARL6" target="NPM1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.45347422</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e209" source="IFT43" target="TTC21B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45264912</data>
+      <data key="iptm">0.4</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e210" source="IFT20" target="IFT54">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.4524699</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e211" source="IFT38" target="GSTM2">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.45172855</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e212" source="IFT38" target="PSMD3">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.45141402</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e213" source="IFT43" target="WDR77">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.45104665</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e214" source="IFT38" target="CFAP20">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.45032433</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e215" source="IFT88" target="NUP35">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.44999698</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e216" source="BBS2" target="UNC119B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4488457</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e217" source="IFT70B" target="TUB">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44865564</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e218" source="TULP3" target="B9D1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44820905</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e219" source="BBS5" target="CCDC92">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.4474602</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e220" source="IFT70A" target="PPP1CC">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4473519</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e221" source="IFT22" target="WDR77">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.44720742</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e222" source="TULP3" target="CDC20B">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.44661376</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e223" source="IFT43" target="RACK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.44604453</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e224" source="IFT25" target="FSCB">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.44604236</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e225" source="IFT46" target="RSPH1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44596335</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e226" source="IFT46" target="AURKA">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44517395</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e227" source="IFT43" target="NSUN4">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.44453582</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e228" source="IFT25" target="GMNC">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4440409</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e229" source="TULP3" target="AIFM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.44381914</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e230" source="IFT22" target="RFX4">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44263896</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e231" source="RABL2B" target="CFAP97">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.4423532</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e232" source="BBS18" target="TF">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4421313</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e233" source="BBS5" target="UBXN11">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.4417846</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e234" source="BBS4" target="MLF1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44172603</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e235" source="IFT43" target="MAPK3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44102395</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e236" source="ARL6" target="CLRN1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.44016024</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e237" source="IFT122" target="RAB34">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.43954402</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e238" source="RABL2B" target="DCP2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.4392566</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e239" source="ARL6" target="AK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.43688434</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e240" source="BBS4" target="RAB28">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.43605924</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e241" source="IFT43" target="CDC20">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.43529466</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e242" source="IFT43" target="BBS7">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.43480676</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e243" source="ARL6" target="PSMA6">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.43348762</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e244" source="TULP3" target="TULP3">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.43296635</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e245" source="IFT25" target="HAP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4329207</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e246" source="IFT43" target="COP1">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.43273684</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e247" source="IFT43" target="MOK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.43265173</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e248" source="TULP3" target="SEMG2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.43140483</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e249" source="IFT43" target="CTNNB1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4311003</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e250" source="TULP3" target="ARL2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4303149</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e251" source="IFT25" target="RAB11B">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4302718</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e252" source="IFT70A" target="TFG">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.43008703</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e253" source="RABL2B" target="NUP35">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.4296482</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e254" source="IFT22" target="RPL9">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.42946887</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e255" source="TULP3" target="TTBK2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4288785</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e256" source="BBS7" target="E2F4">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42865106</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e257" source="IFT46" target="CILK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42853156</data>
+      <data key="iptm">0.41</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e258" source="IFT56" target="RAB23">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42794436</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e259" source="IFT56" target="PALB2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.42624694</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e260" source="IFT88" target="CDK9">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.4260911</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e261" source="IFT22" target="SALL1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.42600307</data>
+      <data key="iptm">0.82</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e262" source="IFT22" target="PPIA">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.4257262</data>
+      <data key="iptm">0.72</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e263" source="IFT56" target="ACAT1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.42565584</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e264" source="BBS5" target="NEK2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42534652</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e265" source="IFT56" target="CETN3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4253413</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e266" source="IFT25" target="NAMPT">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.42510745</data>
+      <data key="iptm">0.76</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e267" source="BBS18" target="FNDC8">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.42503467</data>
+      <data key="iptm">0.36</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e268" source="IFT56" target="NPEPPS">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.42464048</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e269" source="IFT52" target="IFT88">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.424556</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e270" source="BBS5" target="L2HGDH">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.42421007</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e271" source="ARL6" target="CSNK2A1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.42354447</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e272" source="IFT70B" target="CEP97">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.422839</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e273" source="IFT20" target="U2SURP">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.42216143</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e274" source="RABL2B" target="PGAM5">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.42198226</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e275" source="BBS7" target="KRT1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.42191344</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e276" source="BBS5" target="FOXJ1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42182377</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e277" source="IFT56" target="CDC42">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.42100388</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e278" source="BBS7" target="IFT38">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.42098248</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e279" source="BBS9" target="COPA">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.41989693</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e280" source="IFT88" target="IFT52">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.4194569</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e281" source="TULP3" target="NUMB">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.41902864</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e282" source="TULP3" target="ALDH2">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.41889378</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e283" source="IFT20" target="CFAP299">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.4164617</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e284" source="TULP3" target="RAB23">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4164357</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e285" source="RABL2B" target="NOTO">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.41458648</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e286" source="TULP3" target="NPM1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.41324043</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e287" source="IFT27" target="DRG1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.41278097</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e288" source="ARL6" target="PSMC2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.411476</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e289" source="IFT38" target="GSTM5">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.41093746</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e290" source="BBS7" target="KRT6B">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.41076463</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e291" source="IFT25" target="CHCHD6">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.40989566</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e292" source="IFT52" target="IFT38">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.4096136</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e293" source="BBS18" target="PRPS2">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.40914613</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e294" source="IFT88" target="C7orf57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.40838784</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e295" source="BBS1" target="ODF1">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.40591097</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e296" source="BBS4" target="RPL7A">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.40581217</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e297" source="BBS9" target="RSPH10B">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.40576124</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e298" source="IFT38" target="IFT52">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.40562198</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e299" source="IFT25" target="CEP78">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.40551123</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e300" source="BBS18" target="MMP21">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.40541458</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e301" source="IFT25" target="TLK2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.40504247</data>
+      <data key="iptm">0.8</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e302" source="IFT80" target="MPI">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.40363574</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e303" source="IFT22" target="TMED10">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.40286458</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e304" source="IFT122" target="TUB">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.40257215</data>
+      <data key="iptm">0.34</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e305" source="IFT52" target="FARSB">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.40129772</data>
+      <data key="iptm">0.43</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e306" source="IFT38" target="HNF1B">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39970323</data>
+      <data key="iptm">0.35</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e307" source="IFT43" target="P4HB">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.39961943</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e308" source="TULP3" target="RPL6">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39888602</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e309" source="TULP3" target="KISS1R">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.39807716</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e310" source="IFT70A" target="GALR3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.39795324</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e311" source="IFT38" target="ANXA3">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39782923</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e312" source="BBS4" target="GAS2L1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3960135</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e313" source="BBS5" target="COMT">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.39564496</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e314" source="BBS5" target="TXNDC15">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.39513463</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e315" source="IFT70B" target="TAGLN2">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.39450788</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e316" source="BBS8" target="H4C1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39438426</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e317" source="TTC21B" target="MSN">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.39376527</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e318" source="IFT80" target="WDPCP">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.39365253</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e319" source="IFT56" target="MAPRE3">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39358568</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e320" source="BBS4" target="null">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.39258134</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e321" source="IFT70A" target="SPESP1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3924649</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e322" source="BBS5" target="KCTD17">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.39116016</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e323" source="IFT122" target="AP2B1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.39083967</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e324" source="TULP3" target="CFAP20">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3907918</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e325" source="TULP3" target="NF2">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.39020503</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e326" source="IFT38" target="KIFAP3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3900076</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e327" source="IFT70A" target="CFAP36">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3890867</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e328" source="TULP3" target="PSMA3">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.3890328</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e329" source="IFT20" target="FSD1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3887338</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e330" source="RABL2B" target="ACTL7A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38809472</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e331" source="TULP3" target="LCA5">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3875795</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e332" source="IFT52" target="RACK1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.38714585</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e333" source="IFT43" target="PRKACG">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38673952</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e334" source="IFT70B" target="CIMIP2A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38654882</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e335" source="IFT43" target="NME7">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38619342</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e336" source="IFT122" target="CCP110">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38522705</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e337" source="IFT54" target="IFT20">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.38520175</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e338" source="IFT38" target="PRKAR1A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38504258</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e339" source="IFT22" target="PPP1R7">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.3846583</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e340" source="RABL2B" target="FAIM">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.38406596</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e341" source="IFT70B" target="DYNC2I1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38348436</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e342" source="IFT74" target="IFT81">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.38329783</data>
+      <data key="iptm">0.32</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e343" source="TULP3" target="MED26">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.38321906</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e344" source="IFT81" target="IFT74">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.38291755</data>
+      <data key="iptm">0.33</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e345" source="TULP3" target="PIN1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.38178462</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e346" source="IFT122" target="NEK8">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.381783</data>
+      <data key="iptm">0.43</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e347" source="BBS8" target="ANXA7">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3809133</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e348" source="BBS5" target="RFX7">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.38056606</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e349" source="IFT43" target="FSD1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3799893</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e350" source="IFT22" target="PRICKLE2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.37907928</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e351" source="IFT56" target="MAPRE1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.37879494</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e352" source="BBS8" target="SPESP1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3778332</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e353" source="IFT56" target="CAMK4">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3773666</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e354" source="IFT70B" target="GALR3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3773611</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e355" source="ARL6" target="NIT1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.37682664</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e356" source="IFT22" target="NFIX">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.37656727</data>
+      <data key="iptm">0.74</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e357" source="BBS7" target="SASS6">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.37631884</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e358" source="IFT27" target="USH1G">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.37624213</data>
+      <data key="iptm">0.71</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e359" source="TULP3" target="TMEM231">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.37612996</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e360" source="IFT43" target="CCNO">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3756923</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e361" source="IFT121" target="HGS">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3756727</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e362" source="IFT81" target="IFT22">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.37549278</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e363" source="IFT25" target="DNAJB6">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.37502557</data>
+      <data key="iptm">0.73</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e364" source="BBS7" target="PLK4">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3746741</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e365" source="IFT70B" target="TUBGCP6">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.37441346</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e366" source="IFT56" target="SPESP1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.37390724</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e367" source="TULP3" target="KATNAL1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.37359232</data>
+      <data key="iptm">0.34</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e368" source="IFT70A" target="DNAH10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3734562</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e369" source="IFT56" target="ZIC2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.37339675</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e370" source="IFT46" target="MAK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3729014</data>
+      <data key="iptm">0.4</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e371" source="IFT27" target="ACR">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.37239954</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e372" source="IFT25" target="SNX9">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.37205532</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e373" source="IFT20" target="DYDC2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.37193808</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e374" source="BBS4" target="BBS8">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.37150618</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e375" source="IFT56" target="ACADM">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3708428</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e376" source="BBS5" target="DNAJC8">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.37083596</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e377" source="BBS5" target="GNB1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3706965</data>
+      <data key="iptm">0.66</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e378" source="IFT52" target="LCP1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.37030676</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e379" source="BBS5" target="PQBP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.37012985</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e380" source="IFT70B" target="PTGER4">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3686576</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e381" source="TULP3" target="GAS2L1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.36801034</data>
+      <data key="iptm">0.33</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e382" source="BBS18" target="STUB1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3675729</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e383" source="IFT56" target="CALM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.36731043</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e384" source="RABL2B" target="PALB2">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.36626667</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e385" source="IFT38" target="PEBP1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.36468548</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e386" source="IFT56" target="HYOU1">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.36453542</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e387" source="RABL2B" target="TCHP">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3644546</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e388" source="TULP3" target="WDR44">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.36428595</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e389" source="IFT56" target="MED26">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3634431</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e390" source="IFT74" target="CALR">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.36336923</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e391" source="TTC21B" target="EZR">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.36315212</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e392" source="IFT54" target="BBS9">
+      <data key="int_cat">Mechanistic: IFT-BBSome coupling</data>
+      <data key="ipsae">0.36278206</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e393" source="BBS7" target="PQBP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3615034</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e394" source="TTC21B" target="HSPA8">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.36142102</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e395" source="IFT25" target="NUP35">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.36059296</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e396" source="IFT144" target="DRC3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.36027864</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e397" source="ARL6" target="MCRS1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.35996857</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e398" source="IFT20" target="GPR88">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35963228</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e399" source="BBS9" target="C1orf87">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35897014</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e400" source="BBS5" target="LIMA1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.358746</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e401" source="IFT43" target="CFAP298">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35816658</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e402" source="IFT25" target="DDX42">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.35773566</data>
+      <data key="iptm">0.81</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e403" source="IFT20" target="ALPK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35697094</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e404" source="IFT54" target="MOK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35604703</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e405" source="IFT43" target="ZPBP">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.35551754</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e406" source="IFT22" target="CELSR2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3551167</data>
+      <data key="iptm">0.84</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e407" source="BBS7" target="ANXA11">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3548333</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e408" source="BBS8" target="BBS4">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.3546283</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e409" source="BBS7" target="KRT75">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35451832</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e410" source="IFT38" target="RNPEP">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35447645</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e411" source="TULP3" target="TPPP3">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.35405293</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e412" source="IFT70A" target="PPP1CA">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3540277</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e413" source="IFT56" target="DCDC2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35381702</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e414" source="BBS17" target="ENTR1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35342428</data>
+      <data key="iptm">0.32</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e415" source="BBS18" target="MPI">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35335556</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e416" source="IFT43" target="GANAB">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.35201633</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e417" source="IFT172" target="ACSL3">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3519555</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e418" source="IFT88" target="COPA">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.35188633</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e419" source="RABL2B" target="COPS8">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.35109696</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e420" source="IFT27" target="CCDC78">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35029727</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e421" source="IFT20" target="ZBBX">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.35024807</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e422" source="BBS1" target="CFAP43">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.35002133</data>
+      <data key="iptm">0.43</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e423" source="IFT20" target="KRT8">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.34957036</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e424" source="TULP3" target="TP73">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34904733</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e425" source="IFT56" target="RAB7A">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3490236</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e426" source="IFT56" target="MMP21">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.34819221</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e427" source="BBS5" target="RFX2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34788528</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e428" source="IFT81" target="NUMB">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.34774804</data>
+      <data key="iptm">0.35</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e429" source="ARL6" target="EIF5A">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.34731296</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e430" source="IFT56" target="PCM1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3464959</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e431" source="IFT80" target="HNF1B">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.34597132</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e432" source="BBS7" target="PSMA4">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.345932</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e433" source="BBS8" target="XPNPEP3">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.34588563</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e434" source="TULP3" target="LTA4H">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3457803</data>
+      <data key="iptm">0.65</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e435" source="IFT43" target="HSP90AB1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.34551102</data>
+      <data key="iptm">0.4</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e436" source="RABL2B" target="KIF24">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34527364</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e437" source="BBS18" target="ACTL7A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34493053</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e438" source="IFT74" target="TCTN2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3444206</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e439" source="IFT56" target="CDC20B">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.34431177</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e440" source="IFT22" target="IZUMO4">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.3441477</data>
+      <data key="iptm">0.67</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e441" source="IFT122" target="GMNC">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34369287</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e442" source="IFT25" target="LIMA1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3436054</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e443" source="IFT25" target="HDAC6">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34337798</data>
+      <data key="iptm">0.8</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e444" source="IFT22" target="CEP44">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34261602</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e445" source="RABL2B" target="NEK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.34155902</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e446" source="BBS9" target="SPAG8">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.33967826</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e447" source="BBS7" target="GMNC">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.33962852</data>
+      <data key="iptm">0.62</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e448" source="IFT70A" target="SPMIP6">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.33925477</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e449" source="BBS5" target="PDHX">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3377193</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e450" source="IFT140" target="NSFL1C">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.3374557</data>
+      <data key="iptm">0.36</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e451" source="IFT52" target="MAPKAP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3372546</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e452" source="BBS5" target="MYLIP">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3366241</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e453" source="IFT56" target="H4C1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.33644253</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e454" source="IFT70B" target="QARS1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.33461818</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e455" source="BBS2" target="TOM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.33396018</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e456" source="BBS18" target="RAB8A">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.33349493</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e457" source="IFT43" target="PPIA">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.33336976</data>
+      <data key="iptm">0.69</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e458" source="BBS1" target="BBS8">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.33257517</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e459" source="IFT122" target="MTREX">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.3324612</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e460" source="IFT70B" target="SPESP1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3321165</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e461" source="BBS8" target="BBS1">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.33186918</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e462" source="IFT121" target="NEK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3308377</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e463" source="IFT57" target="NUP54">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.32935044</data>
+      <data key="iptm">0.39</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e464" source="IFT57" target="UBE4B">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.32924402</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e465" source="BBS7" target="KRT5">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.32885852</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e466" source="TULP3" target="SNAP29">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32861036</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e467" source="RABL2B" target="CSNK2B">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32806343</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e468" source="ARL6" target="VPS45">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.32798004</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e469" source="TULP3" target="NME7">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32791454</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e470" source="IFT43" target="DNAJC8">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.3278349</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e471" source="IFT56" target="HAP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32713798</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e472" source="BBS5" target="AKNA">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32705563</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e473" source="IFT56" target="RAB14">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.326854</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e474" source="BBS5" target="ZIC2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32630768</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e475" source="TULP3" target="SSTR3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32628858</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e476" source="IFT27" target="CYLD">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3261729</data>
+      <data key="iptm">0.75</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e477" source="IFT74" target="P4HB">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3254855</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e478" source="TTC21B" target="TULP1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32547483</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e479" source="TULP3" target="CCNO">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32508162</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e480" source="IFT88" target="BAZ2B">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32451236</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e481" source="IFT121" target="CDKL5">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32434896</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e482" source="IFT70A" target="C7orf57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.32356545</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e483" source="BBS5" target="LRGUK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3235105</data>
+      <data key="iptm">0.39</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e484" source="IFT43" target="DNAI3">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32311347</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e485" source="BBS5" target="NEK1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32309538</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e486" source="TULP3" target="DCP1A">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.32284647</data>
+      <data key="iptm">0.4</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e487" source="IFT38" target="CSNK2B">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32233924</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e488" source="TULP3" target="TLK2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3219964</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e489" source="IFT56" target="ARPC2">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.32196942</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e490" source="IFT54" target="AIPL1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.32133543</data>
+      <data key="iptm">0.45</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e491" source="BBS7" target="MLF2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.32101032</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e492" source="TULP3" target="KRT1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.32098642</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e493" source="TULP3" target="PTPN11">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.32082668</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e494" source="IFT121" target="UBXN10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32040766</data>
+      <data key="iptm">0.44</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e495" source="IFT88" target="TTLL1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3200544</data>
+      <data key="iptm">0.63</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e496" source="IFT56" target="TTBK2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.32004777</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e497" source="BBS7" target="GPR161">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.31950507</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e498" source="RABL2B" target="IFT56">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.31883588</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e499" source="BBS7" target="KRT6A">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.31856185</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e500" source="BBS4" target="DBR1">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.31837258</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e501" source="TULP3" target="CNGA4">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.31830907</data>
+      <data key="iptm">0.48</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e502" source="IFT121" target="DDX42">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.31823477</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e503" source="BBS4" target="CIMIP2C">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.31818807</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e504" source="BBS5" target="IGF1">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.31806207</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e505" source="BBS2" target="BBS8">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.31757903</data>
+      <data key="iptm">0.6</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e506" source="TULP3" target="ACAD10">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.31739715</data>
+      <data key="iptm">0.47</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e507" source="TULP3" target="PTEN">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3173465</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e508" source="IFT70B" target="CCDC181">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.31574276</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e509" source="IFT20" target="AKNA">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3149338</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e510" source="BBS7" target="AIFM1">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.31437027</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e511" source="IFT140" target="MACF1">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.31421897</data>
+      <data key="iptm">0.34</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e512" source="IFT22" target="RFX7">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.31391227</data>
+      <data key="iptm">0.78</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e513" source="BBS5" target="PRDX3">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.31355488</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e514" source="BBS1" target="IFT38">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3135194</data>
+      <data key="iptm">0.25</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e515" source="BBS7" target="EPB41">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3134763</data>
+      <data key="iptm">0.64</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e516" source="IFT70B" target="SPMIP6">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.31317905</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e517" source="BBS5" target="SENP3">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.3126707</data>
+      <data key="iptm">0.58</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e518" source="BBS2" target="EZH2">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.31250134</data>
+      <data key="iptm">0.57</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e519" source="BBS9" target="DNAAF2">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.31236586</data>
+      <data key="iptm">0.41</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e520" source="IFT43" target="TUBA8">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.31180626</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e521" source="TULP3" target="KRT5">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.3117809</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e522" source="IFT80" target="INVS">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.31146342</data>
+      <data key="iptm">0.59</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e523" source="ARL6" target="UBAP1">
+      <data key="int_cat">Membrane trafficking</data>
+      <data key="ipsae">0.3111901</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e524" source="BBS4" target="SPAG17">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3107127</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e525" source="BBS1" target="NCL">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.30994758</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e526" source="IFT22" target="CDK13">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.3092671</data>
+      <data key="iptm">0.77</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e527" source="TULP3" target="NUP93">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.3088648</data>
+      <data key="iptm">0.46</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e528" source="BBS5" target="HNRNPK">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.30864927</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e529" source="BBS5" target="HYLS1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3085819</data>
+      <data key="iptm">0.51</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e530" source="IFT74" target="IFT22">
+      <data key="int_cat">Validation: Intra-complex</data>
+      <data key="ipsae">0.30857623</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e531" source="ARL6" target="ARL2BP">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3082537</data>
+      <data key="iptm">0.56</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e532" source="IFT57" target="IFT140">
+      <data key="int_cat">Validation: IFT-A/B coupling</data>
+      <data key="ipsae">0.30780673</data>
+      <data key="iptm">0.4</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e533" source="IFT25" target="BAG6">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.30764213</data>
+      <data key="iptm">0.79</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e534" source="IFT52" target="EGFR">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.3076044</data>
+      <data key="iptm">0.53</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e535" source="IFT38" target="TUBB6">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.30711362</data>
+      <data key="iptm">0.61</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e536" source="IFT20" target="CYLC2">
+      <data key="int_cat">Cytoskeleton</data>
+      <data key="ipsae">0.30681902</data>
+      <data key="iptm">0.54</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e537" source="TULP3" target="MOK">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.30516812</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e538" source="IFT22" target="MED26">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.30474123</data>
+      <data key="iptm">0.7</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e539" source="IFT43" target="PPP2R3C">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.30460078</data>
+      <data key="iptm">0.52</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e540" source="IFT46" target="NR1H4">
+      <data key="int_cat">Transcription/Chromatin</data>
+      <data key="ipsae">0.30372584</data>
+      <data key="iptm">0.37</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e541" source="BBS8" target="SPMIP6">
+      <data key="int_cat">Metabolism</data>
+      <data key="ipsae">0.30321583</data>
+      <data key="iptm">0.5</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e542" source="IFT43" target="TUB">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.30260053</data>
+      <data key="iptm">0.39</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e543" source="IFT25" target="C7orf57">
+      <data key="int_cat">Other</data>
+      <data key="ipsae">0.30149347</data>
+      <data key="iptm">0.68</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e544" source="IFT57" target="AP2A2">
+      <data key="int_cat">Signaling</data>
+      <data key="ipsae">0.30131394</data>
+      <data key="iptm">0.39</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e545" source="IFT70A" target="UBXN10">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.30098024</data>
+      <data key="iptm">0.49</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e546" source="BBS5" target="DBR1">
+      <data key="int_cat">RNA processing</data>
+      <data key="ipsae">0.3002203</data>
+      <data key="iptm">0.55</data>
+      <data key="conf">Low</data>
+    </edge>
+    <edge id="e547" source="IFT46" target="GLI1">
+      <data key="int_cat">Ciliary structural</data>
+      <data key="ipsae">0.30009475</data>
+      <data key="iptm">0.42</data>
+      <data key="conf">Low</data>
+    </edge>
+  </graph>
+</graphml>

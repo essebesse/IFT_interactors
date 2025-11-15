@@ -1,0 +1,385 @@
+name	uniprot_id	category	node_type
+IFT46	Q9NQC8	IFT-B	bait
+IFT56	A0AVF1	IFT-B	prey
+BBS8	Q8TAM2	BBSome	bait
+BBS18	A8MTZ0	BBSome	prey
+BBS7	Q8IWZ6	BBSome	bait
+BBS2	Q9BXC9	BBSome	prey
+BBS1	Q8NFJ9	BBSome	bait
+BBS4	Q96RK4	BBSome	prey
+IFT70B	Q8N4P2	Ciliary structural	bait
+IFT88	Q13099	IFT-B	prey
+TULP3	O75386	IFT-A	bait
+WDR5	P61964	Transcription/Chromatin	prey
+IFT25	Q9Y547	IFT-B	bait
+ZC2HC1A	Q96GY0	Other	prey
+ARL6	Q9H0F7	BBSome	prey
+IFT172	Q9UG01	Ciliary structural	bait
+IFT57	Q9NWB7	IFT-B	prey
+IFT80	Q9P2H3	IFT-B	bait
+IFT38	Q96AJ1	Ciliary structural	prey
+TP73	O15350	Ciliary structural	prey
+IFT54	Q8TDR0	IFT-B	bait
+CYS1	Q717R9	Ciliary structural	prey
+IFT27	Q9BW83	IFT-B	bait
+TUBE1	Q9UJT0	Cytoskeleton	prey
+BBS9	Q3SYG4	BBSome	prey
+GNAS	O95467	Membrane trafficking	prey
+IFT122	Q9HBG6	IFT-A	bait
+IFT144	Q8NEZ3	IFT-A	prey
+TIMM50	Q3ZCQ8	Signaling	prey
+IFT52	Q9Y366	IFT-B	bait
+PPP6C	O00743	Signaling	prey
+IFT70A	Q86WT1	Ciliary structural	prey
+GLIS2	Q9BZE0	Ciliary structural	prey
+EIF5	P55010	RNA processing	prey
+CLIC1	O00299	Signaling	prey
+BBS5	Q8N3I7	BBSome	bait
+MCIDAS	D6RGH6	Ciliary structural	prey
+IFT121	Q9P2L0	IFT-A	prey
+CFAP144	A6NL82	Ciliary structural	prey
+GMNC	A6NCL1	Ciliary structural	prey
+RABL2B	Q9UNT1	IFT-B	bait
+POC1A	Q8NBT0	Ciliary structural	prey
+STK11	Q15831	Ciliary structural	prey
+BBS17	Q9NQ48	BBSome	bait
+CFAP20	Q9Y6A4	Ciliary structural	prey
+IFT20	Q8IY31	IFT-B	bait
+SUFU	Q9UMX1	Ciliary structural	prey
+IFT140	Q96RY7	IFT-A	prey
+DCDC2	Q9UHG0	Ciliary structural	prey
+SRSF7	Q16629	Signaling	prey
+IFT43	Q96FT9	IFT-A	bait
+PDE6D	O43924	Ciliary structural	prey
+SPATA7	Q9P0W8	Ciliary structural	prey
+NDUFA5	Q16718	Metabolism	prey
+SNX10	Q9Y5X0	Ciliary structural	prey
+ENTR1	Q96C92	Ciliary structural	prey
+IFT22	Q9H7X7	IFT-B	bait
+INTS6	Q9UL03	Transcription/Chromatin	prey
+EFCAB2	Q5VUJ9	Cytoskeleton	prey
+DTYMK	P23919	Signaling	prey
+GDI2	P50395	Ciliary structural	prey
+FAIM	Q9NVQ4	Signaling	prey
+SUCLG1	P53597	Metabolism	prey
+CMPK1	P30085	Signaling	prey
+ACSL3	O95573	Signaling	prey
+HIBADH	P31937	Metabolism	prey
+RPS9	P46781	RNA processing	prey
+DYNC2LI1	Q8TCX1	Ciliary structural	prey
+LTA4H	P09960	Metabolism	prey
+DNAJC8	O75937	Other	prey
+PDCD10	Q9BUL8	Signaling	prey
+SEMG1	P04279	Other	prey
+TTC21B	Q7Z4L5	Ciliary structural	bait
+CYLC2	Q14093	Cytoskeleton	prey
+TBC1D7	Q9P0N9	Ciliary structural	prey
+UBA52	P62987	Metabolism	prey
+GALNT11	Q8NCW6	Ciliary structural	prey
+TTC21A	Q8NDW8	Ciliary structural	prey
+SH3GLB1	Q9Y371	Signaling	prey
+UBXN10	Q96LJ8	Ciliary structural	prey
+MED7	O43513	Transcription/Chromatin	prey
+TTBK2	Q6IQ55	Ciliary structural	prey
+CFAP36	Q96G28	Ciliary structural	prey
+MLF2	Q15773	Transcription/Chromatin	prey
+CLU	P10909	Transcription/Chromatin	prey
+DBR1	Q9UK59	RNA processing	prey
+CLBA1	Q96F83	Membrane trafficking	prey
+NPM1	P06748	Transcription/Chromatin	prey
+MAK	P20794	Ciliary structural	prey
+NSFL1C	Q9UNZ2	Metabolism	prey
+RFX7	Q2KHR2	Transcription/Chromatin	prey
+PDIA4	P13667	Signaling	prey
+CILK1	Q9UPZ9	Ciliary structural	prey
+HNRNPM	P52272	Signaling	prey
+VHL	P40337	Ciliary structural	prey
+YAP1	P46937	Ciliary structural	prey
+KCTD10	Q9H3F6	Signaling	prey
+CEP44	Q9C0F1	Ciliary structural	prey
+HAP1	P54257	Ciliary structural	prey
+CFAP206	Q8IYR0	Ciliary structural	prey
+TOM1	O60784	Signaling	prey
+PHB2	Q99623	Transcription/Chromatin	prey
+CBY1	Q9Y3M2	Ciliary structural	prey
+GSTM1	P09488	Metabolism	prey
+DZIP1	Q86YF9	Ciliary structural	prey
+GLI1	P08151	Ciliary structural	prey
+RAB28	P51157	Ciliary structural	prey
+DRG1	Q9Y295	Cytoskeleton	prey
+EGFR	P00533	Ciliary structural	prey
+LRRC23	Q53EV4	Cytoskeleton	prey
+GALR2	O43603	Ciliary structural	prey
+CSNK1D	P48730	Ciliary structural	prey
+CYRIB	Q9NUQ9	Ciliary structural	prey
+AMOTL2	Q9Y2J4	Transcription/Chromatin	prey
+ACR	P10323	Membrane trafficking	prey
+P2RY14	Q15391	Signaling	prey
+ELOC	Q15369	Transcription/Chromatin	prey
+ALPK1	Q96QP1	Ciliary structural	prey
+SPMIP5	Q8WW14	Ciliary structural	prey
+CDC20B	Q86Y33	Other	prey
+PSMA7	O14818	Other	prey
+MMP21	Q8N119	Other	prey
+FAAH	O00519	Metabolism	prey
+PRMT1	Q99873	Transcription/Chromatin	prey
+TTC23	Q5W5X9	Ciliary structural	prey
+SPMAP2	Q9P2T0	Other	prey
+PNP	P00491	Metabolism	prey
+RP2	O75695	Ciliary structural	prey
+PDE6G	P18545	Signaling	prey
+DNAH10	Q8IVF4	Ciliary structural	prey
+GLI2	P10070	Ciliary structural	prey
+RAB23	Q9ULC3	Ciliary structural	prey
+MYB	P10242	Transcription/Chromatin	prey
+CELSR3	Q9NYQ7	Signaling	prey
+PSMD6	Q15008	Other	prey
+CES1	P23141	Metabolism	prey
+IPO5	O00410	Signaling	prey
+TUBA4A	P68366	Ciliary structural	prey
+ADGB	Q8N7X0	Other	prey
+LRRC59	Q96AG4	Signaling	prey
+DZANK1	Q9NVP4	Signaling	prey
+AKR1B1	P15121	Metabolism	prey
+NR1H4	Q96RI1	Transcription/Chromatin	prey
+STYXL1	Q9Y6J8	Signaling	prey
+MCHR1	Q99705	Ciliary structural	prey
+RABL2A	Q9UBK7	IFT-B	prey
+CDC20	Q12834	Transcription/Chromatin	prey
+ACTA2	P62736	Ciliary structural	prey
+MPI	P34949	Other	prey
+SEPTIN12	Q8IYM1	Signaling	prey
+KIFAP3	Q92845	Ciliary structural	prey
+AHI1	Q8N157	Ciliary structural	prey
+TXNDC15	Q96J42	Ciliary structural	prey
+GOT2	P00505	Metabolism	prey
+CATSPERB	Q9H7T0	Ciliary structural	prey
+C7orf57	Q8NEG2	Other	prey
+CAPS	Q13938	Signaling	prey
+GPR173	Q9NS66	Signaling	prey
+PSMC2	P35998	Other	prey
+ACTR2	P61160	Ciliary structural	prey
+ANXA1	P04083	Ciliary structural	prey
+GSTM2	P28161	Metabolism	prey
+PSMD3	O43242	Other	prey
+WDR77	Q9BQA1	Transcription/Chromatin	prey
+NUP35	Q8NFH5	Signaling	prey
+UNC119B	A6NIH7	Ciliary structural	prey
+TUB	P50607	Ciliary structural	prey
+B9D1	Q9UPM9	Ciliary structural	prey
+CCDC92	Q53HC0	Other	prey
+PPP1CC	P36873	Signaling	prey
+RACK1	P63244	Signaling	prey
+FSCB	Q5H9T9	Other	prey
+RSPH1	Q8WYR4	Ciliary structural	prey
+AURKA	O14965	Ciliary structural	prey
+NSUN4	Q96CB9	Metabolism	prey
+AIFM1	O95831	Signaling	prey
+RFX4	Q33E94	Ciliary structural	prey
+CFAP97	Q9P2B7	Other	prey
+TF	P02787	Signaling	prey
+UBXN11	Q5T124	Cytoskeleton	prey
+MLF1	P58340	Ciliary structural	prey
+MAPK3	P27361	Ciliary structural	prey
+CLRN1	P58418	Ciliary structural	prey
+RAB34	P0DI83	Other	prey
+DCP2	Q8IU60	Transcription/Chromatin	prey
+AK1	P00568	Signaling	prey
+PSMA6	P60900	Ciliary structural	prey
+COP1	Q8NHY2	Membrane trafficking	prey
+MOK	Q9UQ07	Ciliary structural	prey
+SEMG2	Q02383	Other	prey
+CTNNB1	P35222	Ciliary structural	prey
+ARL2	P36404	Ciliary structural	prey
+RAB11B	Q15907	Signaling	prey
+TFG	Q92734	Signaling	prey
+RPL9	P32969	RNA processing	prey
+E2F4	Q16254	Ciliary structural	prey
+PALB2	Q86YC2	Other	prey
+CDK9	P50750	Transcription/Chromatin	prey
+SALL1	Q9NSC2	Transcription/Chromatin	prey
+PPIA	P62937	Transcription/Chromatin	prey
+ACAT1	P24752	Metabolism	prey
+NEK2	P51955	Ciliary structural	prey
+CETN3	O15182	Ciliary structural	prey
+NAMPT	P43490	Transcription/Chromatin	prey
+FNDC8	Q8TC99	Other	prey
+NPEPPS	P55786	Metabolism	prey
+L2HGDH	Q9H9P8	Metabolism	prey
+CSNK2A1	P68400	Signaling	prey
+CEP97	Q8IW35	Ciliary structural	prey
+U2SURP	O15042	RNA processing	prey
+PGAM5	Q96HS1	Metabolism	prey
+KRT1	P04264	Signaling	prey
+FOXJ1	Q92949	Ciliary structural	prey
+CDC42	P60953	Signaling	prey
+COPA	P53621	Membrane trafficking	prey
+NUMB	P49757	Signaling	prey
+ALDH2	P05091	Metabolism	prey
+CFAP299	Q6V702	Other	prey
+NOTO	A8MTQ0	Ciliary structural	prey
+GSTM5	P46439	Metabolism	prey
+KRT6B	P04259	Cytoskeleton	prey
+CHCHD6	Q9BRQ6	Metabolism	prey
+PRPS2	P11908	Signaling	prey
+ODF1	Q14990	Other	prey
+RPL7A	P62424	RNA processing	prey
+RSPH10B	P0C881	Ciliary structural	prey
+CEP78	Q5JTW2	Ciliary structural	prey
+TLK2	Q86UE8	Transcription/Chromatin	prey
+TMED10	P49755	Membrane trafficking	prey
+FARSB	Q9NSD9	RNA processing	prey
+HNF1B	P35680	Transcription/Chromatin	prey
+P4HB	P07237	Signaling	prey
+RPL6	Q02878	Transcription/Chromatin	prey
+KISS1R	Q969F8	Ciliary structural	prey
+GALR3	O60755	Ciliary structural	prey
+ANXA3	P12429	Transcription/Chromatin	prey
+GAS2L1	Q99501	Cytoskeleton	prey
+COMT	P21964	Metabolism	prey
+TAGLN2	P37802	Cytoskeleton	prey
+H4C1	P62805	Transcription/Chromatin	prey
+MSN	P26038	Signaling	prey
+WDPCP	O95876	Ciliary structural	prey
+MAPRE3	Q9UPY8	Transcription/Chromatin	prey
+null	Q8BZG1	Transcription/Chromatin	prey
+SPESP1	Q6UW49	Cytoskeleton	prey
+KCTD17	Q8N5Z5	Ciliary structural	prey
+AP2B1	P63010	Signaling	prey
+NF2	P35240	Signaling	prey
+PSMA3	P25788	Other	prey
+FSD1	Q9BTV5	Cytoskeleton	prey
+ACTL7A	Q9Y615	Ciliary structural	prey
+LCA5	Q86VQ0	Ciliary structural	prey
+PRKACG	P22612	Ciliary structural	prey
+CIMIP2A	Q6J272	Ciliary structural	prey
+NME7	Q9Y5B8	Ciliary structural	prey
+CCP110	O43303	Ciliary structural	prey
+PRKAR1A	P10644	Ciliary structural	prey
+PPP1R7	Q15435	Other	prey
+DYNC2I1	Q8WVS4	Ciliary structural	prey
+IFT74	Q96LB3	IFT-B	bait
+IFT81	Q8WYA0	IFT-B	prey
+MED26	O95402	Transcription/Chromatin	prey
+PIN1	Q13526	Ciliary structural	prey
+NEK8	Q86SG6	Ciliary structural	prey
+ANXA7	P20073	Metabolism	prey
+PRICKLE2	Q7Z3G6	Other	prey
+MAPRE1	Q15691	Ciliary structural	prey
+CAMK4	Q16566	Transcription/Chromatin	prey
+NIT1	Q86X76	Metabolism	prey
+NFIX	Q14938	Transcription/Chromatin	prey
+SASS6	Q6UVJ0	Other	prey
+USH1G	Q495M9	Ciliary structural	prey
+TMEM231	Q9H6L2	Ciliary structural	prey
+CCNO	P22674	Ciliary structural	prey
+HGS	O14964	Signaling	prey
+DNAJB6	O75190	Transcription/Chromatin	prey
+PLK4	O00444	Ciliary structural	prey
+TUBGCP6	Q96RT7	Cytoskeleton	prey
+KATNAL1	Q9BW62	Metabolism	prey
+ZIC2	O95409	Transcription/Chromatin	prey
+SNX9	Q9Y5X1	Signaling	prey
+DYDC2	Q96IM9	Other	prey
+ACADM	P11310	Metabolism	prey
+GNB1	P62873	Signaling	prey
+LCP1	P13796	Signaling	prey
+PQBP1	O60828	Ciliary structural	prey
+PTGER4	P35408	Signaling	prey
+STUB1	Q9UNE7	Signaling	prey
+CALM1	P0DP23	Signaling	prey
+PEBP1	P30086	Signaling	prey
+HYOU1	Q9Y4L1	Metabolism	prey
+TCHP	Q9BT92	Ciliary structural	prey
+WDR44	Q5JSH3	Ciliary structural	prey
+CALR	P27797	Transcription/Chromatin	prey
+EZR	P15311	Ciliary structural	prey
+HSPA8	P11142	Transcription/Chromatin	prey
+DRC3	Q9H069	Ciliary structural	prey
+MCRS1	Q96EZ8	Transcription/Chromatin	prey
+GPR88	Q9GZN0	Ciliary structural	prey
+C1orf87	Q8N0U7	Other	prey
+LIMA1	Q9UHB6	Ciliary structural	prey
+CFAP298	P57076	Ciliary structural	prey
+DDX42	Q86XP3	RNA processing	prey
+ZPBP	Q9BS86	Signaling	prey
+CELSR2	Q9HCU4	Ciliary structural	prey
+ANXA11	P50995	Metabolism	prey
+KRT75	O95678	Other	prey
+RNPEP	Q9H4A4	Other	prey
+TPPP3	Q9BW30	Cytoskeleton	prey
+PPP1CA	P62136	Transcription/Chromatin	prey
+GANAB	Q14697	Metabolism	prey
+COPS8	Q99627	Signaling	prey
+CCDC78	A2IDD5	Other	prey
+ZBBX	A8MT70	Other	prey
+CFAP43	Q8NDM7	Ciliary structural	prey
+KRT8	P05787	Cytoskeleton	prey
+RAB7A	P51149	Signaling	prey
+RFX2	P48378	Ciliary structural	prey
+EIF5A	P63241	Transcription/Chromatin	prey
+PCM1	Q15154	Ciliary structural	prey
+PSMA4	P25789	Other	prey
+XPNPEP3	Q9NQH7	Metabolism	prey
+HSP90AB1	P08238	Transcription/Chromatin	prey
+KIF24	Q5T7B8	Ciliary structural	prey
+TCTN2	Q96GX1	Ciliary structural	prey
+IZUMO4	Q1ZYL8	Other	prey
+HDAC6	Q9UBN7	Ciliary structural	prey
+NEK1	Q96PY6	Ciliary structural	prey
+SPAG8	Q99932	Ciliary structural	prey
+SPMIP6	Q8NCR6	Metabolism	prey
+PDHX	O00330	Metabolism	prey
+MAPKAP1	Q9BPZ7	Ciliary structural	prey
+MYLIP	Q8WY64	Signaling	prey
+QARS1	P47897	Transcription/Chromatin	prey
+RAB8A	P61006	Ciliary structural	prey
+MTREX	P42285	RNA processing	prey
+NUP54	Q7Z3B4	Signaling	prey
+UBE4B	O95155	Other	prey
+KRT5	P13647	Cytoskeleton	prey
+SNAP29	O95721	Ciliary structural	prey
+CSNK2B	P67870	Transcription/Chromatin	prey
+VPS45	Q9NRW7	Membrane trafficking	prey
+AKNA	Q7Z591	Transcription/Chromatin	prey
+RAB14	P61106	Signaling	prey
+SSTR3	P32745	Ciliary structural	prey
+CYLD	Q9NQC7	Ciliary structural	prey
+TULP1	O00294	Ciliary structural	prey
+BAZ2B	Q9UIF8	Transcription/Chromatin	prey
+CDKL5	O76039	Ciliary structural	prey
+LRGUK	Q96M69	Ciliary structural	prey
+DNAI3	Q8IWG1	Ciliary structural	prey
+DCP1A	Q9NPI6	RNA processing	prey
+ARPC2	O15144	Cytoskeleton	prey
+AIPL1	Q9NZN9	Signaling	prey
+PTPN11	Q06124	Signaling	prey
+TTLL1	O95922	Ciliary structural	prey
+GPR161	Q8N6U8	Ciliary structural	prey
+KRT6A	P02538	Cytoskeleton	prey
+CNGA4	Q8IV77	Ciliary structural	prey
+CIMIP2C	A6NJV1	Cytoskeleton	prey
+IGF1	P05019	Transcription/Chromatin	prey
+ACAD10	Q6JQN1	Metabolism	prey
+PTEN	P60484	Transcription/Chromatin	prey
+CCDC181	Q5TID7	Cytoskeleton	prey
+MACF1	O94854	Cytoskeleton	prey
+PRDX3	P30048	Transcription/Chromatin	prey
+EPB41	P11171	Cytoskeleton	prey
+SENP3	Q9H4L4	Other	prey
+EZH2	Q15910	Transcription/Chromatin	prey
+DNAAF2	Q9NVR5	Ciliary structural	prey
+TUBA8	Q9NY65	Cytoskeleton	prey
+INVS	Q9Y283	Ciliary structural	prey
+UBAP1	Q9NZ09	Membrane trafficking	prey
+SPAG17	Q6Q759	Ciliary structural	prey
+NCL	P19338	Transcription/Chromatin	prey
+CDK13	Q14004	Transcription/Chromatin	prey
+NUP93	Q8N1F7	Signaling	prey
+HNRNPK	P61978	Transcription/Chromatin	prey
+HYLS1	Q96M11	Ciliary structural	prey
+ARL2BP	Q9Y2Y0	Ciliary structural	prey
+BAG6	P46379	Transcription/Chromatin	prey
+TUBB6	Q9BUF5	Cytoskeleton	prey
+PPP2R3C	Q969Q6	Ciliary structural	prey
+AP2A2	O94973	Signaling	prey
