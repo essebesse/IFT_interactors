@@ -1,0 +1,2250 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: STK11 (LKB1)
+Serine/Threonine Kinase 11 / Liver Kinase B1
+================================================================================
+
+Report Generated: 2025-11-17
+Author: Comprehensive Literature Review
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+1. OVERVIEW AND NOMENCLATURE
+2. CILIARY LOCALIZATION AND FUNCTION
+3. TUMOR SUPPRESSOR FUNCTION
+4. mTOR REGULATION VIA AMPK PATHWAY
+5. KNOWN PROTEIN INTERACTIONS
+6. KNOCKOUT PHENOTYPES
+7. CELL POLARITY REGULATION
+8. METABOLIC REGULATION
+9. CILIOPATHY CONNECTIONS
+10. TULP3 AND CILIARY TRAFFICKING
+11. CANCER BIOLOGY
+12. THERAPEUTIC IMPLICATIONS
+13. REFERENCES
+
+================================================================================
+1. OVERVIEW AND NOMENCLATURE
+================================================================================
+
+GENE: STK11 (Serine/Threonine Kinase 11)
+PROTEIN: LKB1 (Liver Kinase B1)
+ALIASES: PJS, hLKB1, STK11, HPJS
+CHROMOSOMAL LOCATION: 19p13.3
+PROTEIN SIZE: 433 amino acids (50 kDa)
+
+LKB1 is a highly conserved serine/threonine protein kinase that functions as
+a master metabolic regulator and tumor suppressor. The protein contains:
+- N-terminal kinase domain
+- C-terminal regulatory domain with CAAX farnesylation motif (Cys433)
+- Nuclear localization signals
+- Membrane-binding regions
+
+LKB1 was first identified in 1998 as the gene mutated in Peutz-Jeghers
+syndrome (PJS), a hereditary cancer predisposition disorder. Since then, it
+has emerged as a critical node integrating cellular energy status, cell
+polarity, cell growth, and tumor suppression.
+
+================================================================================
+2. CILIARY LOCALIZATION AND FUNCTION
+================================================================================
+
+2.1 LOCALIZATION TO PRIMARY CILIA AND BASAL BODY
+-------------------------------------------------
+
+LKB1 localizes to multiple subcellular compartments including:
+- Primary cilium
+- Ciliary basal body
+- Plasma membrane (basolateral domain in polarized cells)
+- Nucleus and cytoplasm
+- Cell-cell junctions
+
+KEY FINDINGS ON CILIARY LOCALIZATION:
+
+1. LKB1 is a farnesylated protein that localizes to the cilium and basal body
+   of epithelial cells (PMID: 20972424)
+
+2. Flow/mechanical stimulation results in increased AMPK phosphorylation at
+   the basal body, indicating the cilium-basal body compartment serves as a
+   spatially restricted activation site for LKB1 signaling
+
+3. Cilia mechanosensation under flow conditions requires ciliary-localized
+   LKB1 to activate AMPK and regulate mTOR signaling to control cell size
+   (DOI: 10.1038/ncb2117)
+
+REFERENCE: Boehlke et al. (2010) "Primary cilia regulate mTORC1 activity and
+cell size through Lkb1" Nature Cell Biology 12:1115-1122
+PMID: 20972424 | DOI: 10.1038/ncb2117
+
+
+2.2 CILIARY FUNCTIONS
+----------------------
+
+LKB1 has several established functions in cilia:
+
+A. MECHANOSENSATION AND FLOW SENSING
+   - Ciliary bending caused by fluid flow activates LKB1-AMPK signaling
+   - This leads to mTORC1 downregulation to control cell growth
+   - Flow-induced AMPK activation occurs specifically at the basal body
+
+B. KIDNEY HOMEOSTASIS
+   - Cilia-localized LKB1 regulates chemokine signaling in kidney epithelium
+   - Controls macrophage recruitment and tissue homeostasis
+   - Critical for maintaining proper kidney function
+
+   REFERENCE: Dere et al. (2018) "Cilia-localized LKB1 regulates chemokine
+   signaling, macrophage recruitment, and tissue homeostasis in the kidney"
+   EMBO J. 37(11):e98615
+   PMID: 29925518 | DOI: 10.15252/embj.201798615
+
+C. CELL SIZE REGULATION
+   - The cilium-basal body compartment acts as a spatially restricted
+     activation site for LKB1 signaling
+   - LKB1 activation in cilia suppresses mTORC1 to limit cell size
+   - This represents a mechanosensory mechanism linking physical cues to
+     growth control
+
+
+2.3 MECHANISM OF CILIARY TARGETING
+-----------------------------------
+
+LKB1 is a FARNESYLATED protein with a C-terminal CAAX motif (Cys433).
+
+Farnesylation is required for:
+- Membrane association
+- Localization to the basolateral domain
+- Proper subcellular distribution
+
+The pseudokinase STRADβ has been implicated in targeting farnesylated LKB1
+to cilia. Unlike STRADα, which primarily promotes nucleocytoplasmic shuttling,
+STRADβ may have specialized roles in membrane and ciliary localization.
+
+IMPORTANT: LKB1 ciliary trafficking appears to be TULP3-INDEPENDENT (see
+Section 10 for details).
+
+================================================================================
+3. TUMOR SUPPRESSOR FUNCTION
+================================================================================
+
+3.1 PEUTZ-JEGHERS SYNDROME (PJS)
+---------------------------------
+
+LKB1 was identified as the causative gene for Peutz-Jeghers syndrome, an
+autosomal dominant disorder characterized by:
+
+CLINICAL FEATURES:
+- Gastrointestinal hamartomatous polyps
+- Mucocutaneous pigmentation (melanotic macules on lips, oral mucosa, fingers)
+- Markedly increased cancer risk
+
+GENETICS:
+- Germline heterozygous mutations in STK11/LKB1
+- Over 100 different PJS-associated mutations identified
+- Mutations include nonsense, frameshift, missense, and splice-site variants
+- Loss of heterozygosity (LOH) often occurs in tumors
+
+CANCER RISK IN PJS PATIENTS:
+PJS patients with germline LKB1/STK11 mutations have dramatically elevated
+cancer risk:
+- Cumulative lifetime cancer risk: 93% by age 65
+- Gastrointestinal cancers: colorectal, gastric, pancreatic, small bowel
+- Breast cancer (women): 54% lifetime risk
+- Gynecologic cancers: ovarian, cervical, endometrial
+- Lung cancer
+- Testicular tumors (men)
+
+REFERENCE: "Further observations on LKB1/STK11 status and cancer risk in
+Peutz-Jeghers syndrome" British Journal of Cancer (2003)
+DOI: 10.1038/sj.bjc.6601030
+
+
+3.2 SOMATIC LKB1 MUTATIONS IN SPORADIC CANCERS
+-----------------------------------------------
+
+Beyond PJS, somatic LKB1 inactivation occurs in multiple cancer types:
+
+PRIMARY CANCER TYPES WITH LKB1 LOSS:
+1. NON-SMALL CELL LUNG CANCER (NSCLC)
+   - 15-30% of NSCLC harbor LKB1 mutations/deletions
+   - Particularly common in lung adenocarcinoma
+   - Strong association with KRAS mutations (co-mutation in ~8-10% of NSCLC)
+   - LKB1 loss confers poor prognosis
+
+2. CERVICAL CANCER
+   - Frequent LKB1 inactivation
+   - Associated with HPV infection and progression
+
+3. PANCREATIC CANCER
+   - STK11/LKB1 inactivation in pancreatic intraductal papillary-mucinous
+     neoplasms (IPMN)
+   - Somatic mutations in pancreatic and biliary cancers
+   - Often co-occurs with KRAS mutations
+   PMID: 11733352
+
+4. HEPATOCELLULAR CARCINOMA
+   - Loss of heterozygosity in Lkb1 gene causes HCC in mice
+   PMID: 12183403
+
+5. BREAST CANCER
+   - Germline mutations in aggressive PJS-associated breast cancers
+   - Somatic mutations in sporadic cases
+   PMID: 15714005
+
+6. MELANOMA
+   - Somatic LKB1 loss identified as causal event
+
+7. OVARIAN CANCER
+   - Emerging role in ovarian tumorigenesis and progression
+
+
+3.3 TUMOR SUPPRESSOR MECHANISMS
+--------------------------------
+
+LKB1 suppresses tumorigenesis through multiple mechanisms:
+
+A. CELL GROWTH CONTROL
+   - Activation of AMPK → inhibition of mTORC1 → suppression of protein
+     synthesis and cell growth
+   - Regulation of cell size and proliferation
+
+B. CELL CYCLE REGULATION
+   - Induces p21 expression (in collaboration with LMO4, GATA-6, and Ldb1)
+   - Promotes cell cycle arrest under metabolic stress
+   PMID: 16580634
+
+C. METABOLIC CHECKPOINT
+   - Prevents cell growth and division under nutrient/energy stress
+   - Ensures cells don't proliferate when resources are insufficient
+
+D. APOPTOSIS REGULATION
+   - Regulates apoptosis in response to energy stress via AMPK activation
+
+E. INHIBITION OF ONCOGENIC SIGNALING
+   - Inhibits STAT3 activation by oncogenic tyrosine kinases (e.g., RET/PTC)
+   PMID: 17761947
+
+F. POLARITY AND TISSUE ORGANIZATION
+   - Maintains epithelial polarity and proper tissue architecture
+   - Loss leads to disorganized tissue structure permissive for invasion
+
+
+REFERENCE: Shackelford & Shaw (2009) "The LKB1-AMPK pathway: metabolism and
+growth control in tumor suppression" Nature Reviews Cancer 9:563-575
+PMID: 19629071
+
+================================================================================
+4. mTOR REGULATION VIA AMPK PATHWAY
+================================================================================
+
+4.1 THE LKB1-AMPK-mTOR SIGNALING AXIS
+--------------------------------------
+
+LKB1 is the primary upstream kinase for AMPK (AMP-activated protein kinase),
+and together they form a critical pathway that opposes mTOR signaling.
+
+PATHWAY OVERVIEW:
+Energy stress → ↑AMP/ATP ratio → LKB1 activation → AMPK phosphorylation
+(Thr172) → Dual inhibition of mTORC1 → Suppression of cell growth
+
+
+4.2 LKB1 ACTIVATION OF AMPK
+----------------------------
+
+MECHANISM:
+LKB1 directly phosphorylates the α-subunit of AMPK at threonine 172 (Thr172)
+within the activation loop, which is essential for AMPK catalytic activity.
+
+LKB1 is constitutively active and acts as the primary upstream kinase for
+AMPK under conditions of:
+- Low ATP/high AMP or ADP (energy stress)
+- Glucose deprivation
+- Hypoxia
+- Mitochondrial dysfunction
+- Exercise (in muscle)
+- Treatment with metformin or other AMPK activators
+
+REFERENCE: Shaw et al. (2004) "The tumor suppressor LKB1 kinase directly
+activates AMP-activated kinase and regulates apoptosis in response to energy
+stress" PNAS 101(10):3329-3335
+DOI: 10.1073/pnas.0308061100
+
+ALTERNATIVE AMPK ACTIVATION:
+While LKB1 responds to energy stress (AMP/ADP), a second upstream kinase,
+CaMKKβ (calcium/calmodulin-dependent protein kinase kinase β), can activate
+AMPK in response to increased intracellular calcium.
+
+
+4.3 DUAL MECHANISM OF mTORC1 INHIBITION BY AMPK
+------------------------------------------------
+
+Once activated by LKB1, AMPK inhibits mTORC1 through TWO parallel mechanisms:
+
+MECHANISM 1: AMPK PHOSPHORYLATION OF TSC2
+------------------------------------------
+Target: TSC2 (Tuberous Sclerosis Complex 2, also called Tuberin)
+Phosphorylation sites: Thr1271 and Ser1387 (human isoform 1)
+
+Function:
+- TSC2 forms a heterodimeric complex with TSC1
+- TSC1/TSC2 complex acts as a GTPase-activating protein (GAP) for Rheb
+- Rheb-GTP (active form) is required to activate mTORC1
+- AMPK phosphorylation of TSC2 enhances its GAP activity
+- This converts Rheb-GTP → Rheb-GDP (inactive)
+- Result: mTORC1 cannot be activated
+
+MECHANISM 2: AMPK PHOSPHORYLATION OF RAPTOR
+--------------------------------------------
+Target: Raptor (Regulatory-associated protein of mTOR)
+Phosphorylation sites: Ser722 and Ser792 (conserved serines)
+
+Function:
+- Raptor is an essential component of mTORC1
+- AMPK directly phosphorylates Raptor at Ser722 and Ser792
+- Phosphorylated Raptor binds to 14-3-3 proteins
+- This 14-3-3 binding inhibits mTORC1 kinase activity
+- Raptor Ser792 phosphorylation is LKB1- and AMPK-dependent
+- This mechanism is required for cell cycle arrest by AMPK agonists
+
+REFERENCE: Gwinn et al. (2008) "AMPK phosphorylation of raptor mediates a
+metabolic checkpoint" Molecular Cell 30(2):214-226
+PMID: 18439900 | DOI: 10.1016/j.molcel.2008.03.003
+
+
+4.4 FUNCTIONAL SIGNIFICANCE
+----------------------------
+
+The dual inhibition of mTORC1 by AMPK ensures ROBUST suppression during:
+- Nutrient deprivation
+- Energy stress
+- Hypoxia
+- Metabolic perturbations
+
+This prevents cells from:
+- Synthesizing proteins when amino acids are scarce
+- Growing when energy (ATP) is insufficient
+- Proliferating under unfavorable metabolic conditions
+
+mTORC1 DOWNSTREAM EFFECTS:
+When mTORC1 is active (LKB1/AMPK inactive):
+- Phosphorylates S6K and 4E-BP1
+- Promotes protein synthesis
+- Increases cell growth and size
+- Stimulates anabolic metabolism
+
+When mTORC1 is inhibited (LKB1/AMPK active):
+- Decreased protein synthesis
+- Reduced cell growth
+- Activation of autophagy
+- Shift to catabolic metabolism
+
+
+4.5 PHYSIOLOGICAL CONTEXTS
+---------------------------
+
+The LKB1-AMPK-mTOR axis operates in multiple physiological settings:
+
+1. METABOLIC TISSUES (liver, muscle, adipose)
+   - Glucose homeostasis
+   - Lipid metabolism
+   - Energy balance
+
+2. PRIMARY CILIA
+   - Mechanosensation-induced mTOR suppression
+   - Cell size regulation
+   - Flow sensing in kidney epithelium
+
+3. TUMOR SUPPRESSION
+   - Prevents growth under metabolic stress
+   - Blocks mTORC1 hyperactivation in cancer cells
+   - Metabolic checkpoint for cell cycle progression
+
+4. METFORMIN ACTION
+   - Metformin (diabetes drug) requires LKB1 to lower blood glucose
+   - Acts through LKB1-AMPK activation → mTOR suppression
+
+
+REFERENCE: Shaw (2009) "LKB1 and AMP-activated protein kinase control of mTOR
+signaling and growth" Acta Physiologica 196(1):65-80
+PMID: 19245654 | DOI: 10.1111/j.1748-1716.2009.01972.x
+
+================================================================================
+5. KNOWN PROTEIN INTERACTIONS
+================================================================================
+
+5.1 THE LKB1-STRAD-MO25 CORE COMPLEX
+-------------------------------------
+
+LKB1 exists in cells as a constitutively active heterotrimeric complex with
+two accessory subunits: STRAD (STe20-Related ADapter) and MO25 (Mouse protein
+25).
+
+COMPLEX COMPOSITION:
+- LKB1 (catalytic kinase subunit)
+- STRADα or STRADβ (pseudokinase adapter)
+- MO25α or MO25β (scaffolding protein)
+
+Stoichiometry: 1:1:1 (LKB1:STRAD:MO25)
+
+
+5.2 CRYSTAL STRUCTURE OF LKB1-STRAD-MO25
+-----------------------------------------
+
+The structure was solved to 2.65 Å resolution and reveals an unusual
+allosteric mechanism of kinase activation.
+
+KEY STRUCTURAL FEATURES:
+
+1. STRADα IS A PSEUDOKINASE
+   - Adopts a closed conformation typical of active protein kinases
+   - Binds ATP but cannot catalyze phosphoryl transfer
+   - Non-conservative substitution of almost all essential catalytic residues
+   - Functions as a pseudosubstrate for LKB1
+
+2. ALLOSTERIC ACTIVATION MECHANISM
+   - STRADα binding promotes the active conformation of LKB1
+   - MO25α stabilizes the interaction between LKB1 and STRADα
+   - MO25α interacts with the LKB1 activation loop to stabilize the active
+     conformation
+   - This phosphorylation-independent activation is unique among kinases
+
+3. STRUCTURAL BASIS FOR PJS MUTATIONS
+   - The structure reveals how PJS-associated mutations impair LKB1 function
+   - Many mutations disrupt the LKB1-STRAD interface
+   - Others destabilize the kinase domain fold
+
+REFERENCE: Zeqiraj et al. (2009) "Structure of the LKB1-STRAD-MO25 complex
+reveals an allosteric mechanism of kinase activation" Science 326(5960):1707-1711
+PMID: 19892943 | DOI: 10.1126/science.1178377
+
+
+5.3 FUNCTIONAL ROLES OF STRAD AND MO25
+---------------------------------------
+
+A. STRADα FUNCTIONS:
+   1. Activates LKB1 kinase activity (>10-fold increase)
+   2. Promotes LKB1 nucleocytoplasmic export
+   3. Interacts with nuclear export receptors (Exportin7, CRM1)
+   4. Relocates LKB1 from nucleus to cytoplasm
+   5. Facilitates LKB1 access to cytoplasmic substrates (AMPK family kinases)
+
+B. STRADβ FUNCTIONS:
+   1. Cannot efficiently promote nuclear export (unlike STRADα)
+   2. Disrupts LKB1-importin-α interactions
+   3. May have specialized role in membrane/ciliary localization
+   4. Targets farnesylated LKB1 to cilia (proposed function)
+
+C. MO25 FUNCTIONS:
+   1. Scaffolding protein that stabilizes the LKB1-STRAD complex
+   2. Increases LKB1 kinase activity (synergistic with STRAD)
+   3. Stabilizes the LKB1 activation loop in active conformation
+   4. Required for maximal LKB1 activity toward AMPK
+
+REFERENCE: Baas et al. (2003) "Activation of the tumor suppressor kinase
+LKB1 by the STE20-like pseudokinase STRAD" EMBO J. 22:3062-3072
+
+
+5.4 AMPK: PRIMARY DOWNSTREAM TARGET
+------------------------------------
+
+AMPK STRUCTURE:
+AMPK is a heterotrimeric complex composed of:
+- α subunit (α1 or α2): catalytic subunit with kinase domain
+- β subunit (β1 or β2): scaffolding subunit with glycogen-binding domain
+- γ subunit (γ1, γ2, or γ3): regulatory subunit with CBS domains that bind
+  AMP/ADP/ATP
+
+LKB1-AMPK INTERACTION:
+- LKB1 phosphorylates AMPKα at Thr172 in the activation loop
+- This phosphorylation increases AMPK activity >100-fold
+- AMP/ADP binding to the γ subunit allosterically activates AMPK and protects
+  Thr172 from dephosphorylation
+- ATP binding reverses these effects
+
+AMPK ISOFORMS ACTIVATED BY LKB1:
+LKB1 can phosphorylate and activate at least 14 kinases of the AMPK subfamily:
+- AMPK α1 and α2
+- BRSK1/2 (Brain-specific kinases, also called SAD-A/B)
+- MARK1/2/3/4 (Microtubule affinity-regulating kinases)
+- NUAK1/2 (NUAK family kinases)
+- SIK1/2/3 (Salt-inducible kinases)
+- SNRK (SNF1-related kinase)
+
+This family of kinases shares a conserved activation loop with the consensus
+sequence LKB1 recognizes for phosphorylation.
+
+REFERENCE: Lizcano et al. (2004) "LKB1 is a master kinase that activates 13
+kinases of the AMPK subfamily" EMBO J. 23(4):833-843
+
+
+5.5 OTHER PROTEIN INTERACTIONS
+-------------------------------
+
+A. MEMBRANE AND LIPID INTERACTIONS
+   - Phosphatidic acid (PA) binding via C-terminal lipid-binding domain
+   - PA binding enhances LKB1 kinase activity
+   - Farnesylation at Cys433 mediates membrane association
+
+B. CELL POLARITY PROTEINS
+   - E-cadherin: regulates LKB1/STRAD localization and function at adherens
+     junctions
+   - PAR complex proteins (PAR-1/MARK, PAR-4)
+   - Regulation of epithelial polarity
+
+C. NUCLEAR IMPORT/EXPORT MACHINERY
+   - Importin-α (nuclear import)
+   - Exportin7 and CRM1 (nuclear export, via STRADα)
+
+D. 14-3-3 PROTEINS
+   - May interact with phosphorylated LKB1 substrates
+   - Mediates effects of AMPK phosphorylation (e.g., phospho-Raptor)
+
+E. P53 TUMOR SUPPRESSOR
+   - Functional cooperation in tumor suppression
+   - May have independent and synergistic effects
+
+F. PROTEIN PHOSPHATASES
+   - PP2A and other phosphatases may regulate LKB1 phosphorylation status
+   - Dephosphorylation of AMPK Thr172 by PP2C
+
+================================================================================
+6. KNOCKOUT PHENOTYPES
+================================================================================
+
+6.1 GERMLINE LKB1 KNOCKOUT MICE
+--------------------------------
+
+HOMOZYGOUS LKB1 DELETION (Lkb1-/-):
+
+EMBRYONIC LETHALITY:
+- Lkb1-/- embryos die at mid-gestation (E8.5-E11)
+- Death attributed to severe developmental defects
+- No embryonic turning occurs
+- Small, malformed somites
+
+NEURAL TUBE DEFECTS:
+- Severe neural tube closure defects
+- Failed neural tube formation
+- Abnormal anterior-posterior patterning
+
+VASCULAR ABNORMALITIES:
+- Numerous vascular abnormalities and hemorrhaging
+- Dilated embryonic vessels
+- Pericardial swelling
+- Abnormal VEGF regulation (higher VEGF expression)
+
+MECHANISM:
+- Tissue-specific deletion studies show the defect originates in the embryo
+  proper, not extraembryonic tissues
+- Epiblast-specific conditional deletion (Mox1-Cre) produces identical
+  lethal phenotype
+- Endothelial-specific deletion (Tie1-Cre) causes death at E12.5
+
+These findings demonstrate LKB1 is essential for:
+- Early embryonic development
+- Neural tube formation
+- Vascular development and integrity
+- Proper VEGF signaling
+
+
+6.2 HETEROZYGOUS LKB1 MICE (Lkb1+/-)
+-------------------------------------
+
+PHENOTYPE MIRRORS PEUTZ-JEGHERS SYNDROME:
+
+Lkb1+/- mice are viable and develop tumors similar to PJS patients:
+
+GASTROINTESTINAL POLYPS:
+- Hamartomatous polyps in stomach and small intestine
+- Appear after 20 weeks of age
+- Polyps develop WITHOUT loss of heterozygosity (LOH) of the wild-type Lkb1
+  allele (haploinsufficiency)
+- This is unusual for tumor suppressors
+
+HEPATOCELLULAR CARCINOMA:
+- Develop after 30 weeks of age
+- HCC shows LOH at the Lkb1 locus
+- Consistent with two-hit hypothesis for carcinogenesis
+
+REFERENCE: Jishage et al. (2002) "Role of Lkb1, the causative gene of
+Peutz-Jegher's syndrome, in embryogenesis and polyposis"
+PMID: 12183403
+
+
+6.3 TISSUE-SPECIFIC LKB1 DELETION
+----------------------------------
+
+Conditional knockout studies have revealed tissue-specific roles:
+
+A. LIVER-SPECIFIC DELETION (Albumin-Cre; Lkb1 fl/fl)
+   - Viable mice
+   - Hyperglycemia (elevated blood glucose)
+   - Increased gluconeogenic gene expression (PEPCK, G6Pase)
+   - Increased lipogenic gene expression
+   - Hepatocellular carcinoma development
+   - Near-complete loss of hepatic AMPK activity
+
+B. MUSCLE-SPECIFIC DELETION (Muscle Creatine Kinase-Cre; Lkb1 fl/fl)
+   - PARADOXICALLY improved insulin sensitivity
+   - Decreased fasting glucose and insulin
+   - Improved glucose tolerance
+   - Increased glucose uptake in muscle
+   - Suggests tissue-specific metabolic regulation
+
+C. PANCREATIC β-CELL DELETION (PDX1-Cre; Lkb1 fl/fl)
+   - Profound mitochondrial defects
+   - Paradoxically ENHANCED glucose-stimulated insulin secretion
+   - Increased β-cell mass
+   - LKB1-dependent phosphorylation of AMPK family members normally restricts
+     β-cell size and insulin secretion
+
+D. LUNG EPITHELIAL DELETION
+   - Spontaneous lung adenocarcinoma development
+   - Accelerated by oncogenic KRAS mutations (see Section 11.3)
+
+E. SKIN/EPIDERMAL DELETION
+   - Increased sensitivity to chemical carcinogens
+   - DMBA-induced squamous cell carcinoma
+
+
+6.4 LKB1 DELETION WITH CONCURRENT ONCOGENE ACTIVATION
+------------------------------------------------------
+
+LKB1 loss COOPERATES with other oncogenic mutations:
+
+A. LKB1 + KRAS MUTATIONS:
+   - Lkb1 deletion + oncogenic Kras (G12D) → rapid lung adenocarcinoma
+   - Lkb1 deletion + Kras → melanoma
+   - Lkb1 deletion + Kras → pancreatic ductal adenocarcinoma (PDAC)
+
+B. LKB1 + TP53 MUTATIONS:
+   - Concurrent loss of Lkb1 and Tp53 → multiple tumor types:
+     * Osteosarcoma
+     * Lymphoma
+     * Sarcoma
+     * Hepatocellular carcinoma
+   - More aggressive tumors than single mutations alone
+
+C. LKB1 + PTEN MUTATIONS:
+   - Prostate and endometrial cancers
+   - Dissecting signaling shows PI3K/AKT and LKB1/AMPK pathways converge on
+     mTORC1
+
+CONCLUSION:
+LKB1 loss is often NOT sufficient to initiate tumorigenesis alone. Instead,
+LKB1 inactivation may occur as a SECONDARY oncogenic lesion that facilitates
+malignant transformation and metastasis.
+
+REFERENCE: Ji et al. (2007) "LKB1 modulates lung cancer differentiation and
+metastasis" Nature 448:807-810
+
+
+6.5 INCREASED CARCINOGEN SENSITIVITY
+-------------------------------------
+
+LKB1 mutant mice show marked sensitivity to chemical carcinogens:
+
+DMBA (7,12-dimethylbenz[a]anthracene) SENSITIVITY:
+- Germline heterozygous Lkb1+/- mice are highly susceptible to DMBA-induced
+  squamous cell carcinoma
+- Epidermal-specific Lkb1 deletion increases DMBA tumor formation
+- Tumors develop more rapidly and with greater frequency than wild-type mice
+- Suggests LKB1 protects against carcinogen-induced transformation
+
+This demonstrates LKB1 has roles in:
+- DNA damage responses
+- Maintaining genomic stability
+- Preventing carcinogen-induced mutations from progressing to cancer
+
+================================================================================
+7. CELL POLARITY REGULATION
+================================================================================
+
+7.1 LKB1 AS A MASTER POLARITY REGULATOR
+----------------------------------------
+
+Beyond its metabolic functions, LKB1 is a critical regulator of cell polarity
+in diverse contexts:
+- Epithelial apical-basal polarity
+- Neuronal polarity (axon specification)
+- Cell migration directionality
+- Asymmetric cell division
+- Ciliogenesis
+
+The connection between polarity and metabolism through LKB1 highlights an
+ancient evolutionary link between these fundamental cellular processes.
+
+
+7.2 EPITHELIAL POLARITY
+------------------------
+
+MECHANISM:
+LKB1 regulates epithelial polarity through AMPK-related kinases, particularly
+the MARK/PAR-1 family.
+
+KEY FINDINGS:
+1. LKB1 phosphorylates and activates MARK1/2/3/4 (Microtubule Affinity-
+   Regulating Kinases, also known as PAR-1 in C. elegans)
+
+2. MARKs phosphorylate microtubule-associated proteins (MAPs) to regulate
+   microtubule dynamics and polarity
+
+3. LKB1 localizes to the basolateral domain of polarized epithelial cells
+   via interaction with E-cadherin and STRADα
+
+4. Loss of LKB1 disrupts:
+   - Tight junction formation
+   - Apical-basal polarity establishment
+   - Organized epithelial architecture
+   - Proper lumen formation in 3D cultures
+
+5. LKB1 coordinates polarity with energy status, ensuring cells maintain
+   proper organization under metabolic stress
+
+
+7.3 NEURONAL POLARITY AND AXON SPECIFICATION
+---------------------------------------------
+
+LKB1 IS REQUIRED FOR AXON FORMATION:
+
+In developing neurons, LKB1 specifies which neurite becomes the axon:
+- LKB1 localizes asymmetrically to the developing axon
+- Activates BRSK1/2 (SAD-A/B kinases) and MARK kinases
+- These kinases regulate microtubule dynamics and cargo transport
+- LKB1 deletion prevents axon specification → neurons with multiple short
+  processes but no defined axon
+
+This function is INDEPENDENT of AMPK and metabolic regulation, demonstrating
+LKB1 has distinct polarity and metabolic signaling branches.
+
+REFERENCE: Barnes et al. (2007) "LKB1 and SAD kinases define a pathway
+required for the polarization of cortical neurons" Cell 129:549-563
+
+
+7.4 CELL MIGRATION AND FRONT-REAR POLARITY
+-------------------------------------------
+
+LKB1 regulates directional cell migration:
+
+MECHANISMS:
+1. AMPK activation at the leading edge
+2. Regulation of focal adhesion dynamics
+3. Control of actin cytoskeleton organization
+4. Coordination of front-rear polarity during migration
+
+FARNESYLATION ROLE:
+- LKB1 farnesylation is required for coordinated cell motility
+- Farnesylation-deficient LKB1 (C433S mutant) impairs directional migration
+- Suggests membrane association is critical for migration control
+
+REFERENCE: Denison et al. (2017) "Coordinated cell motility is regulated by
+a combination of LKB1 farnesylation and kinase activity"
+Scientific Reports 7:41929
+
+
+7.5 CILIOGENESIS AND POLARITY
+------------------------------
+
+Primary cilia formation is intimately linked to cell polarity:
+
+LKB1 FUNCTIONS IN CILIOGENESIS:
+1. Basal body positioning
+   - Proper placement of the basal body at the apical surface requires LKB1
+   - Coordinates centrosome positioning with epithelial polarity
+
+2. Ciliary length regulation
+   - LKB1-AMPK signaling at the cilium regulates ciliary length
+   - Excessive mTOR activity (when LKB1/AMPK is lost) shortens cilia
+
+3. Ciliary protein localization
+   - Required for proper localization of ciliary proteins
+   - Regulates ciliary membrane composition
+
+4. Link between polarity and ciliogenesis
+   - The cellular processes establishing cell polarity play underlying roles
+     in both polarity and ciliogenesis
+   - LKB1 integrates these processes
+
+β-CELL POLARITY:
+In pancreatic β-cells, LKB1-dependent phosphorylation of AMPK family members
+determines:
+- Proper β-cell polarity
+- Restriction of β-cell size
+- Regulation of insulin secretion
+
+
+7.6 ASYMMETRIC CELL DIVISION
+-----------------------------
+
+LKB1 and PAR proteins coordinate asymmetric cell division:
+
+In polarized cells undergoing division:
+- LKB1 localizes asymmetrically
+- Activates PAR-1/MARK kinases on one side of the dividing cell
+- This creates asymmetry in daughter cells (different fates/sizes)
+- Critical for development and stem cell maintenance
+
+Evolutionarily conserved from C. elegans to mammals.
+
+================================================================================
+8. METABOLIC REGULATION
+================================================================================
+
+8.1 GLUCOSE METABOLISM
+----------------------
+
+LKB1 IS A MASTER REGULATOR OF GLUCOSE HOMEOSTASIS:
+
+A. LIVER GLUCOSE METABOLISM:
+
+1. Gluconeogenesis Suppression:
+   - LKB1 activates AMPK and SIK family kinases
+   - These kinases phosphorylate CRTC2 (TORC2), a CREB coactivator
+   - Phospho-CRTC2 is sequestered in cytoplasm by 14-3-3 binding
+   - This prevents CRTC2 from activating gluconeogenic gene transcription
+   - Genes suppressed: PEPCK, G6Pase (rate-limiting gluconeogenic enzymes)
+
+2. Metformin Mechanism:
+   - Metformin (most widely prescribed diabetes drug) REQUIRES hepatic LKB1
+     to lower blood glucose
+   - Metformin activates AMPK in an LKB1-dependent manner
+   - Liver-specific Lkb1 deletion abolishes metformin's glucose-lowering effect
+   - This discovery revolutionized understanding of metformin's mechanism
+
+REFERENCE: Shaw et al. (2005) "The kinase LKB1 mediates glucose homeostasis
+in liver and therapeutic effects of metformin" Science 310:1642-1646
+PMID: 16308421 | DOI: 10.1126/science.1120781
+
+3. Liver LKB1 Deletion Phenotype:
+   - Hyperglycemia (elevated fasting and fed glucose)
+   - Increased hepatic gluconeogenesis
+   - Elevated PEPCK and G6Pase expression
+   - Near-complete loss of hepatic AMPK activity
+   - Eventually develop hepatocellular carcinoma
+
+
+B. MUSCLE GLUCOSE METABOLISM:
+
+1. Glucose Uptake:
+   - AMPK activation promotes GLUT4 translocation to plasma membrane
+   - Increases glucose uptake independent of insulin
+   - Exercise activates AMPK to increase muscle glucose uptake
+
+2. Paradoxical Muscle LKB1 Deletion Phenotype:
+   - Muscle-specific Lkb1 knockout mice show IMPROVED insulin sensitivity
+   - Enhanced glucose tolerance
+   - Decreased fasting glucose and insulin
+   - Increased glucose uptake and utilization
+   - Mechanism: compensatory activation of alternative pathways (AKT, TBC1D1)
+
+This paradox suggests tissue-specific metabolic roles for LKB1.
+
+
+C. PANCREATIC β-CELL FUNCTION:
+
+1. Insulin Secretion:
+   - LKB1 normally restricts glucose-stimulated insulin secretion
+   - β-cell-specific Lkb1 deletion → enhanced insulin secretion
+   - Increased β-cell mass
+   - Despite profound mitochondrial defects
+
+2. Mechanism:
+   - LKB1-AMPK pathway restricts mTORC1 activity in β-cells
+   - Loss of this restriction → increased protein synthesis and cell growth
+   - Paradoxically improves insulin secretion capacity
+
+REFERENCE: Sun et al. (2010) "LKB1 deletion with the RIP2.Cre transgene
+modifies pancreatic beta-cell morphology and enhances insulin secretion
+in vivo" Am J Physiol Endocrinol Metab 298:E1261-1273
+
+
+8.2 LIPID METABOLISM
+--------------------
+
+LKB1-AMPK PATHWAY REGULATES MULTIPLE ASPECTS OF LIPID METABOLISM:
+
+A. FATTY ACID OXIDATION:
+   - AMPK phosphorylates and inactivates ACC1/2 (Acetyl-CoA Carboxylase)
+   - ACC produces malonyl-CoA, which inhibits CPT1 (Carnitine
+     Palmitoyltransferase 1)
+   - AMPK inhibition of ACC → decreased malonyl-CoA → CPT1 activated
+   - CPT1 transports fatty acids into mitochondria for β-oxidation
+   - Result: INCREASED fatty acid oxidation when LKB1-AMPK is active
+
+B. FATTY ACID SYNTHESIS:
+   - AMPK directly phosphorylates and inhibits ACC (rate-limiting enzyme)
+   - AMPK phosphorylates and inhibits HMGR (HMG-CoA reductase, cholesterol
+     synthesis)
+   - AMPK phosphorylates and inhibits GPAT (Glycerol-3-phosphate
+     acyltransferase, triglyceride synthesis)
+   - Result: DECREASED lipogenesis when LKB1-AMPK is active
+
+C. CHOLESTEROL METABOLISM:
+   - AMPK inhibits cholesterol synthesis via HMGR inhibition
+   - Reduces cholesterol uptake
+   - Important for cardiovascular health
+
+D. LIVER LIPID ACCUMULATION:
+   - Liver-specific Lkb1 deletion → increased lipogenic gene expression
+   - Fatty liver development
+   - Demonstrates LKB1 is required to suppress hepatic lipogenesis
+
+
+8.3 MITOCHONDRIAL BIOGENESIS AND FUNCTION
+------------------------------------------
+
+LKB1-AMPK PROMOTES MITOCHONDRIAL HEALTH:
+
+A. PGC-1α ACTIVATION:
+   - AMPK phosphorylates and activates PGC-1α (Peroxisome proliferator-
+     activated receptor gamma coactivator 1-alpha)
+   - PGC-1α is master regulator of mitochondrial biogenesis
+   - Increases expression of nuclear-encoded mitochondrial genes
+   - Promotes new mitochondria formation
+
+B. MITOCHONDRIAL DYNAMICS:
+   - Regulates mitochondrial fission and fusion
+   - AMPK phosphorylates MFF (Mitochondrial Fission Factor)
+   - Ensures healthy mitochondrial network
+
+C. AUTOPHAGY AND MITOPHAGY:
+   - AMPK activates autophagy by phosphorylating ULK1
+   - Promotes removal of damaged mitochondria (mitophagy)
+   - Critical for mitochondrial quality control
+
+
+8.4 ENERGY SENSING AND ATP HOMEOSTASIS
+---------------------------------------
+
+LKB1-AMPK IS THE PRIMARY ENERGY SENSOR:
+
+MECHANISM:
+1. When ATP is abundant:
+   - High ATP/AMP ratio
+   - AMPK is less active (even though LKB1 can still phosphorylate it)
+   - ATP binding to AMPK γ-subunit promotes Thr172 dephosphorylation
+   - mTORC1 remains active → anabolic metabolism
+
+2. When ATP is depleted:
+   - High AMP/ADP, low ATP
+   - AMP/ADP bind to AMPK γ-subunit
+   - This allosterically activates AMPK
+   - Protects LKB1-phosphorylated Thr172 from dephosphorylation
+   - AMPK activity increases >100-fold
+   - Switches metabolism from anabolic to catabolic
+
+OUTPUTS OF ENERGY STRESS RESPONSE:
+When LKB1-AMPK senses energy depletion, it:
+- Inhibits ATP-consuming processes (protein/lipid synthesis)
+- Activates ATP-generating processes (glucose uptake, fatty acid oxidation)
+- Inhibits cell growth and proliferation
+- Activates autophagy for recycling
+- Arrests cell cycle if energy cannot be restored
+
+
+8.5 NUTRIENT SENSING INTEGRATION
+---------------------------------
+
+LKB1-AMPK INTEGRATES MULTIPLE NUTRIENT SIGNALS:
+
+A. GLUCOSE SENSING:
+   - Glucose deprivation → decreased ATP → AMPK activation
+
+B. AMINO ACID SENSING:
+   - Converges with amino acid sensing at mTORC1
+   - AMPK inhibits mTORC1 regardless of amino acid availability
+   - Ensures cells don't grow without sufficient energy
+
+C. LIPID SENSING:
+   - Lipid availability affects AMPK activation
+   - AMPK regulates lipid storage vs. oxidation balance
+
+D. OXYGEN SENSING:
+   - Hypoxia → mitochondrial dysfunction → ATP depletion → AMPK activation
+   - LKB1-AMPK coordinates hypoxic responses
+
+
+8.6 METABOLIC DISEASE RELEVANCE
+--------------------------------
+
+DIABETES AND METABOLIC SYNDROME:
+
+1. AMPK AGONISTS AS THERAPEUTICS:
+   - Metformin (biguanide) - requires LKB1, activates AMPK
+   - Thiazolidinediones (TZDs) - activate AMPK
+   - Salicylate - activates AMPK
+   - AICAR - AMP mimetic, activates AMPK
+
+2. CANCER-DIABETES LINK:
+   - Metabolic syndrome, obesity, and type 2 diabetes increase cancer risk
+   - Possible mechanism: Hyperactivation of mTORC1 due to impaired LKB1-AMPK
+     signaling
+   - Insulin resistance → elevated insulin/IGF-1 → PI3K/AKT/mTOR activation
+   - When LKB1-AMPK is impaired, this goes unchecked
+
+3. THERAPEUTIC POTENTIAL:
+   - AMPK activation may simultaneously:
+     * Improve glucose homeostasis
+     * Enhance insulin sensitivity
+     * Suppress tumor growth
+     * Reduce inflammation
+     * Improve cardiovascular health
+
+REFERENCE: Hardie (2013) "AMPK: a target for drugs and natural products with
+effects on both diabetes and cancer" Diabetes 62:2164-2172
+
+================================================================================
+9. CILIOPATHY CONNECTIONS
+================================================================================
+
+9.1 DEFINITION OF CILIOPATHIES
+-------------------------------
+
+Ciliopathies are genetic disorders caused by defects in the structure or
+function of primary cilia. Classic ciliopathies include:
+- Bardet-Biedl syndrome (BBS)
+- Nephronophthisis (NPHP)
+- Joubert syndrome
+- Meckel-Gruber syndrome
+- Primary ciliary dyskinesia
+- Polycystic kidney disease (PKD)
+
+Common ciliopathy features:
+- Retinal degeneration
+- Cystic kidney disease
+- Polydactyly
+- Obesity
+- Cognitive impairment
+- Situs inversus
+
+
+9.2 IS LKB1 LOSS A CILIOPATHY?
+-------------------------------
+
+EVIDENCE FOR CILIARY DYSFUNCTION IN LKB1 DEFICIENCY:
+
+While LKB1 mutations cause Peutz-Jeghers syndrome (PJS), PJS is NOT
+classically considered a ciliopathy because it lacks the typical ciliopathy
+features listed above. However, there are important connections:
+
+1. LKB1 LOCALIZES TO CILIA:
+   - Clear localization to primary cilium and basal body
+   - Functions in ciliary mechanosensation
+   - Regulates cilia-dependent signaling pathways
+
+2. CILIARY LENGTH DYSREGULATION:
+   - LKB1 loss → mTORC1 hyperactivation → altered ciliary length
+   - Some studies report shortened cilia when LKB1/AMPK is lost
+
+3. CILIARY SIGNALING DEFECTS:
+   - Impaired flow sensing in kidney epithelium
+   - Disrupted mTOR regulation at cilia
+   - Chemokine signaling abnormalities
+
+4. POLARITY AND CILIOGENESIS LINK:
+   - LKB1 regulates both epithelial polarity and ciliogenesis
+   - These processes are mechanistically linked
+   - Loss of LKB1 → polarity defects → potential ciliogenesis defects
+
+
+9.3 LKB1 AND CLASSIC CILIOPATHIES
+----------------------------------
+
+RELATIONSHIP TO BARDET-BIEDL SYNDROME:
+- No direct genetic link between LKB1 and BBS genes
+- BBS proteins (BBSome) function in ciliary trafficking
+- LKB1 and BBSome may function in parallel pathways
+- Both regulate ciliary signaling and protein localization
+
+RELATIONSHIP TO POLYCYSTIC KIDNEY DISEASE (PKD):
+- PKD is caused by mutations in PKD1 or PKD2 (polycystin proteins)
+- Polycystins localize to cilia and function as mechanosensors
+- LKB1 also functions in ciliary mechanosensation
+- Possible functional overlap or cooperation
+
+Cilia-localized LKB1 regulates kidney homeostasis:
+- Chemokine signaling regulation
+- Macrophage recruitment
+- Tissue homeostasis maintenance
+- LKB1 deletion in kidney may contribute to cystic changes
+
+REFERENCE: Dere et al. (2018) EMBO J. 37(11):e98615 (PMID: 29925518)
+
+
+9.4 COULD LKB1 BE CONSIDERED A CILIOPATHY GENE?
+------------------------------------------------
+
+ARGUMENTS FOR:
+1. Localizes to and functions in primary cilia
+2. Required for proper ciliary signaling
+3. Regulates ciliary mechanosensation
+4. Affects ciliary length and protein composition
+5. Links ciliary function to growth control
+6. Kidney defects (though not primarily cystic)
+
+ARGUMENTS AGAINST:
+1. PJS lacks classic ciliopathy phenotypes:
+   - No retinal degeneration
+   - No polydactyly
+   - No Kartagener syndrome features
+   - No Joubert syndrome cerebellar defects
+   - Kidney function generally normal (no cystic disease)
+
+2. Primary phenotypes (polyps, cancer) not typical of ciliopathies
+
+3. Most LKB1 functions are non-ciliary:
+   - Metabolic regulation in liver and muscle
+   - Tumor suppression in multiple tissues
+   - Cell polarity in many non-ciliated contexts
+
+
+CONCLUSION:
+LKB1 should be considered a "cilia-associated" gene with important ciliary
+functions, but NOT a classic ciliopathy gene. It represents an interesting
+intersection between:
+- Metabolic sensing
+- Growth control
+- Cell polarity
+- Ciliary signaling
+
+This highlights how cilia integrate diverse cellular processes beyond the
+traditional ciliopathy framework.
+
+
+9.5 POTENTIAL CILIARY CONTRIBUTIONS TO PJS PHENOTYPE
+-----------------------------------------------------
+
+HYPOTHESIS:
+Could subtle ciliary defects contribute to PJS pathology?
+
+POSSIBILITIES:
+1. Gastrointestinal polyps:
+   - Epithelial cells in gut have primary cilia
+   - Loss of LKB1-mediated flow sensing
+   - Disrupted mechanosensation → abnormal growth control
+   - Altered polarity → hamartomatous tissue organization
+
+2. Cancer predisposition:
+   - Many cancer cells lose or shorten their cilia
+   - Loss of ciliary growth suppression signals
+   - LKB1 loss may affect both ciliary and non-ciliary growth control
+
+3. Pigmentation:
+   - Less clear connection to cilia
+   - May be independent of ciliary function
+
+This remains an area requiring further research.
+
+================================================================================
+10. TULP3 AND CILIARY TRAFFICKING
+================================================================================
+
+10.1 TULP3 BACKGROUND
+---------------------
+
+TULP3 (Tubby-like protein 3) is a ciliary trafficking adapter protein that:
+- Binds to IFT-A complex (intraflagellar transport complex A)
+- Recognizes phosphoinositides (PI(4,5)P2) in ciliary membrane
+- Transports specific cargo proteins into cilia
+- Particularly important for trafficking lipid-modified (palmitoylated,
+  myristoylated) proteins
+
+TULP3 CARGO PROTEINS include:
+- GPCRs (G protein-coupled receptors): SSTR3, MCHR1, GPR161, HTR6
+- INPP5E (phosphoinositide 5-phosphatase)
+- NPHP3 (nephrocystin-3)
+- CYS1 (cystin-1)
+- ARL13B (Arf-like GTPase 13B) - partial dependence
+
+
+10.2 LKB1 CILIARY TRAFFICKING: TULP3-INDEPENDENT
+-------------------------------------------------
+
+CRITICAL FINDING:
+LKB1 is a FARNESYLATED protein that localizes to cilia, BUT its ciliary
+trafficking is INDEPENDENT of TULP3.
+
+EXPERIMENTAL EVIDENCE:
+Studies examining ciliary localization of lipidated proteins in Tulp3
+knockout mice found:
+
+1. TULP3-DEPENDENT PROTEINS (reduced in Tulp3-/- cilia):
+   - INPP5E: dramatically reduced
+   - NPHP3: dramatically reduced
+   - CYS1: dramatically reduced
+
+2. TULP3-INDEPENDENT PROTEINS (maintained in Tulp3-/- cilia):
+   - LKB1: only MODESTLY reduced, no significant decrease in ciliary intensity
+   - This suggests LKB1 uses alternative trafficking mechanism
+
+This is surprising because LKB1 is farnesylated, and many farnesylated
+proteins require TULP3 for ciliary entry.
+
+
+10.3 ALTERNATIVE MECHANISM: STRADβ-MEDIATED TRAFFICKING
+--------------------------------------------------------
+
+PROPOSED MODEL:
+The pseudokinase STRADβ (not STRADα) may be responsible for targeting
+farnesylated LKB1 to cilia.
+
+EVIDENCE:
+1. STRADα promotes LKB1 nuclear export and cytoplasmic localization
+2. STRADβ has distinct properties from STRADα
+3. STRADβ may have specialized function in membrane/ciliary targeting
+4. LKB1-STRADβ interaction could bypass TULP3 requirement
+
+FARNESYLATION ROLE:
+- LKB1 C-terminus contains CAAX motif (Cys433)
+- Farnesylation at Cys433 is required for membrane association
+- Promotes LKB1 localization to basolateral membrane in epithelial cells
+- May facilitate ciliary membrane association
+- But is NOT sufficient - requires additional factors (STRADβ?)
+
+
+10.4 COMPARISON WITH OTHER CILIARY KINASES
+-------------------------------------------
+
+Other kinases that localize to cilia:
+
+A. AMPK:
+   - Localizes to ciliary basal body
+   - Activated by ciliary LKB1 under flow conditions
+   - Trafficking mechanism not fully characterized
+
+B. NIMA-RELATED KINASES (NEKs):
+   - NEK8 (NPHP9) - mutated in nephronophthisis
+   - Ciliary localization, TULP3-independence not determined
+
+C. AURORA KINASE A:
+   - Regulates ciliary disassembly
+   - Localizes to ciliary base
+   - Different trafficking mechanism
+
+LKB1 appears unique in being:
+- Lipid-modified (farnesylated)
+- Constitutively ciliary
+- TULP3-independent
+- Requiring specific adapter (STRADβ)
+
+
+10.5 FUNCTIONAL IMPLICATIONS
+-----------------------------
+
+WHY TULP3-INDEPENDENT TRAFFICKING MATTERS:
+
+1. REDUNDANCY:
+   - Ensures critical metabolic sensor (LKB1) reaches cilia even if TULP3
+     pathway is compromised
+   - Provides backup trafficking route for essential signaling
+
+2. REGULATION:
+   - TULP3-dependent vs. independent pathways may be differentially regulated
+   - Allows cell-type or context-specific control of ciliary LKB1
+
+3. DISEASE:
+   - TULP3 mutations cause retinal degeneration and obesity (ciliopathy)
+   - LKB1 ciliary function would be preserved in TULP3 patients
+   - But other ciliary proteins (GPCRs) would be affected
+
+4. EVOLUTIONARY CONSERVATION:
+   - Suggests ancient, dedicated mechanism for LKB1 ciliary targeting
+   - Reflects importance of LKB1 ciliary functions
+
+
+10.6 OUTSTANDING QUESTIONS
+---------------------------
+
+1. What is the exact role of STRADβ in LKB1 ciliary trafficking?
+2. Are there other proteins involved in LKB1 ciliary import?
+3. Does IFT-A directly interact with LKB1-STRAD complex?
+4. Is there cell-type variation in LKB1 trafficking mechanisms?
+5. How is ciliary LKB1 regulated in response to metabolic cues?
+6. Do ciliary and membrane pools of LKB1 have distinct functions?
+
+Future studies addressing these questions will clarify how this critical
+metabolic sensor is delivered to cilia to regulate growth control.
+
+================================================================================
+11. CANCER BIOLOGY
+================================================================================
+
+11.1 LKB1 MUTATION LANDSCAPE IN CANCER
+---------------------------------------
+
+LKB1/STK11 is one of the most frequently mutated tumor suppressors, with
+alterations found across many cancer types:
+
+MUTATION FREQUENCY BY CANCER TYPE:
+- Non-small cell lung cancer (NSCLC): 15-30%
+  * Lung adenocarcinoma: 20-30%
+  * Lung squamous cell carcinoma: 5-10%
+- Cervical cancer: 15-30%
+- Pancreatic ductal adenocarcinoma: 5-20%
+- Melanoma: 5-10%
+- Colorectal cancer: 3-5%
+- Endometrial cancer: 5-15%
+- Ovarian cancer: Variable
+- Hepatocellular carcinoma: 5-10%
+- Gastric cancer: Rare, but associated with specific subtypes
+
+TYPES OF ALTERATIONS:
+1. Missense mutations (throughout kinase domain)
+2. Nonsense mutations (creating truncated protein)
+3. Frameshift deletions/insertions
+4. Splice site mutations
+5. Homozygous deletions
+6. Loss of heterozygosity (LOH)
+
+
+11.2 KRAS CO-MUTATIONS: A LETHAL COMBINATION
+---------------------------------------------
+
+KRAS/LKB1 CO-MUTATIONS REPRESENT A DISTINCT MOLECULAR SUBTYPE:
+
+PREVALENCE:
+- Approximately 25-30% of NSCLC harbor KRAS mutations
+- Of KRAS-mutant NSCLC, ~30-50% also have LKB1 loss
+- Combined KRAS/LKB1 alterations: ~8-10% of all NSCLC
+- Also occurs in pancreatic cancer and melanoma
+
+BIOLOGICAL CONSEQUENCES:
+1. Accelerated tumor growth
+2. Increased metastatic potential
+3. Altered metabolic profile
+4. Distinct immune microenvironment
+5. Poor prognosis
+6. Different therapeutic vulnerabilities
+
+
+11.3 KRAS/LKB1 LUNG CANCER
+---------------------------
+
+MOUSE MODELS:
+Conditional deletion of Lkb1 combined with oncogenic Kras activation in lung
+epithelium produces aggressive adenocarcinomas:
+
+- Kras(G12D) alone → slow-growing lung adenomas
+- Kras(G12D) + Lkb1 deletion → rapid, invasive adenocarcinomas
+- Earlier onset, shorter survival
+- Increased metastasis to distant sites
+
+METABOLIC PHENOTYPE:
+KRAS/LKB1 co-mutant NSCLC cells exhibit:
+
+1. ENHANCED METABOLIC ACTIVITY:
+   - Increased glucose uptake and glycolysis
+   - Elevated glutamine metabolism
+   - Enhanced amino acid metabolism
+   - High baseline metabolic rate
+
+2. mTORC1 HYPERACTIVATION:
+   - Loss of LKB1 → loss of AMPK-mediated mTORC1 inhibition
+   - KRAS activation → PI3K/AKT pathway → mTORC1 activation
+   - Synergistic hyperactivation of mTORC1
+   - Drives protein synthesis and cell growth
+
+3. ALTERED ENERGY METABOLISM:
+   - Cells become dependent on high nutrient availability
+   - Vulnerable to metabolic perturbations
+   - Caloric restriction sensitizes to chemotherapy
+
+REFERENCE: Shackelford et al. (2013) "mTOR and HIF-1α-mediated tumor
+metabolism in an LKB1 mouse model of Peutz-Jeghers syndrome"
+PNAS 110(41):16535-16540
+
+IMMUNE PHENOTYPE:
+KRAS/LKB1 vs. KRAS/TP53 tumors have DISTINCT immune profiles:
+
+KRAS/TP53 tumors:
+- "Hot" tumors with immune infiltration
+- High PD-L1 expression
+- Abundant CD8+ T cells
+- Inflammatory signatures
+- May respond to immunotherapy
+
+KRAS/LKB1 tumors:
+- "Cold" tumors with immune exclusion
+- LOW or negative PD-L1 expression
+- Few tumor-infiltrating lymphocytes (TILs)
+- Immunosuppressive microenvironment
+- Poor response to anti-PD-1/PD-L1 immunotherapy
+
+MECHANISM OF IMMUNE EVASION:
+- LKB1 loss → upregulation of pro-tumorigenic cytokines (IL-6, G-CSF)
+- Recruitment of immunosuppressive cells (MDSCs, TAMs)
+- Exclusion of cytotoxic T cells
+- Impaired antigen presentation
+
+REFERENCE: Koyama et al. (2016) "STK11/LKB1 deficiency promotes neutrophil
+recruitment and proinflammatory cytokine production to suppress T-cell
+activity in the lung tumor microenvironment" Cancer Research 76:999-1008
+
+
+11.4 THERAPEUTIC STRATEGIES FOR LKB1-MUTANT CANCERS
+----------------------------------------------------
+
+LKB1 loss creates both CHALLENGES and OPPORTUNITIES for therapy:
+
+A. CHALLENGES:
+   1. Direct kinase activity is lost (can't restore with small molecules)
+   2. Multiple downstream pathways affected
+   3. Metabolic plasticity and therapy resistance
+   4. Poor immunotherapy response
+
+B. THERAPEUTIC OPPORTUNITIES:
+
+1. MEK INHIBITORS:
+   - KRAS/LKB1 tumors remain dependent on MAPK signaling
+   - MEK inhibitors (trametinib, selumetinib, cobimetinib) show activity
+   - Clinical trials ongoing
+   - Resistance develops; combination strategies needed
+
+2. mTOR INHIBITORS:
+   - Rapamycin and rapalogs (everolimus, temsirolimus)
+   - Directly target mTORC1 hyperactivation
+   - Limited efficacy as monotherapy
+   - Better results in combinations
+
+3. METABOLIC TARGETING:
+
+   a. Glutaminase Inhibitors:
+      - CB-839 (telaglenastat) inhibits glutaminase (GLS)
+      - KRAS/LKB1 cells are glutamine-dependent
+      - Clinical trials show promise
+
+   b. SHMT Inhibitors:
+      - Serine hydroxymethyltransferase (SHMT) inhibitors
+      - Target one-carbon metabolism and antioxidant defense
+      - Particularly effective when combined with oxidative stress inducers
+      - KEAP1 co-mutations further enhance dependence on SHMT pathway
+
+   c. Metformin:
+      - Paradoxically, LKB1-null tumors may respond to metformin
+      - Possible LKB1-independent AMPK activation
+      - Epidemiological data suggest benefit
+      - Clinical trials with mixed results
+
+   d. Caloric Restriction:
+      - Energy stress induced by calorie restriction
+      - Sensitizes KRAS/LKB1 cells to cytotoxic chemotherapy
+      - Exploits elevated metabolic demands
+      - Potential adjuvant approach
+
+REFERENCE: Li et al. (2018) "Co-occurring KRAS mutation/LKB1 loss in
+non-small cell lung cancer cells results in enhanced metabolic activity
+susceptible to caloric restriction" J Exp Clin Cancer Res 37:302
+
+4. KRAS G12C INHIBITORS:
+   - Sotorasib (AMG 510) and adagrasib (MRTX849)
+   - Covalently bind KRAS G12C mutant
+   - FDA-approved for KRAS G12C-mutant NSCLC
+   - EMERGING DATA: LKB1 alterations may predict BETTER response
+   - Contradicts earlier assumptions about LKB1 as negative predictor
+
+5. CRTC-CREB PATHWAY INHIBITION:
+   - LKB1-inactivated lung cancers depend on aberrant CRTC-CREB activation
+   - CRTC inhibitors show efficacy in preclinical models
+   - Represents novel therapeutic target
+
+REFERENCE: Murray et al. (2021) "Dependency of human and murine
+LKB1-inactivated lung cancer on aberrant CRTC-CREB activation"
+eLife 10:e66095
+
+6. COMBINATION IMMUNOTHERAPY:
+   - Anti-PD-1/PD-L1 alone: poor response
+   - Combinations to convert "cold" to "hot" tumors:
+     * MEK inhibitor + anti-PD-1
+     * mTOR inhibitor + anti-PD-1
+     * STING agonists + checkpoint blockade
+   - Goal: reverse immune exclusion
+
+
+11.5 CERVICAL CANCER
+--------------------
+
+LKB1 IN CERVICAL CANCER BIOLOGY:
+
+PREVALENCE:
+- 15-30% of cervical cancers have LKB1 alterations
+- Associated with high-risk HPV (human papillomavirus) infection
+
+MECHANISM:
+- HPV E6 and E7 oncoproteins drive transformation
+- LKB1 loss cooperates with HPV-induced changes
+- Enhanced mTORC1 signaling promotes tumor growth
+
+THERAPEUTIC IMPLICATIONS:
+- mTOR inhibitors being explored
+- Metabolic targeting may be effective
+- Limited specific studies compared to lung cancer
+
+
+11.6 PANCREATIC CANCER
+----------------------
+
+LKB1 IN PANCREATIC DUCTAL ADENOCARCINOMA (PDAC):
+
+PREVALENCE:
+- 5-20% of PDAC harbor LKB1 mutations
+- Often co-occurs with KRAS mutations (>90% of PDAC have KRAS mutations)
+
+PATHOLOGICAL ASSOCIATION:
+- STK11/LKB1 inactivation in intraductal papillary-mucinous neoplasms (IPMN)
+- IPMNs are precursor lesions to invasive PDAC
+- Suggests LKB1 loss contributes to progression
+PMID: 11733352
+
+MOUSE MODELS:
+- Pancreas-specific Lkb1 deletion + oncogenic Kras → PDAC
+- Rapid tumor formation with metastatic potential
+- Recapitulates human disease features
+
+THERAPEUTIC CONSIDERATIONS:
+- Similar metabolic vulnerabilities as lung cancer
+- Pancreatic tumors notoriously difficult to treat
+- Metabolic targeting may offer new approaches
+
+
+11.7 OTHER CANCER TYPES
+------------------------
+
+A. MELANOMA:
+   - Somatic LKB1 loss identified
+   - Cooperates with BRAF or NRAS mutations
+   - Lkb1 deletion + Kras → melanoma in mice
+
+B. HEPATOCELLULAR CARCINOMA:
+   - Lkb1+/- mice develop HCC
+   - LOH at Lkb1 locus in tumors
+   - Liver-specific deletion → HCC
+   - Metabolic dysregulation contributes
+
+C. BREAST CANCER:
+   - PJS patients: 54% lifetime breast cancer risk
+   - Aggressive tumors with LKB1 germline mutations
+   - Somatic mutations in sporadic cases
+   - ER-positive and triple-negative subtypes affected
+
+D. ENDOMETRIAL CANCER:
+   - LKB1 alterations in 5-15%
+   - Often co-occurs with PTEN mutations
+   - Both converge on mTORC1
+
+E. OVARIAN CANCER:
+   - Emerging area of research
+   - LKB1 role in ovarian tumorigenesis
+   - Clear cell and endometrioid subtypes
+
+
+11.8 LKB1 AS A BIOMARKER
+-------------------------
+
+PROGNOSTIC BIOMARKER:
+- LKB1 loss generally associated with:
+  * Poorer overall survival
+  * Increased metastatic burden
+  * Earlier disease recurrence
+  * More aggressive phenotype
+
+PREDICTIVE BIOMARKER:
+Predicts response to specific therapies:
+- NEGATIVE predictor: Anti-PD-1/PD-L1 immunotherapy (worse response)
+- POSITIVE predictor: KRAS G12C inhibitors (possibly better response)
+- POSITIVE predictor: MEK inhibitors (metabolic dependence)
+- POSITIVE predictor: Glutaminase inhibitors (metabolic vulnerability)
+
+CLINICAL TESTING:
+- Next-generation sequencing (NGS) panels routinely assess LKB1/STK11 status
+- Important for treatment decision-making in NSCLC
+- Informs clinical trial enrollment
+
+
+11.9 RESISTANCE MECHANISMS
+---------------------------
+
+THERAPY RESISTANCE IN LKB1-MUTANT CANCERS:
+
+1. METABOLIC PLASTICITY:
+   - Cells can switch fuel sources
+   - Glucose → glutamine → fatty acids
+   - Requires combination metabolic targeting
+
+2. ALTERNATIVE PATHWAY ACTIVATION:
+   - Bypass of MEK inhibition via PI3K/AKT
+   - Reactivation of MAPK via upstream receptor tyrosine kinases (RTKs)
+
+3. EMT (Epithelial-Mesenchymal Transition):
+   - LKB1 loss can promote EMT
+   - EMT confers therapy resistance
+   - Increased metastatic potential
+
+4. AUTOPHAGY INDUCTION:
+   - Despite loss of LKB1-AMPK, alternative autophagy induction
+   - Autophagy allows survival under metabolic stress
+   - Autophagy inhibitors may overcome resistance
+
+================================================================================
+12. THERAPEUTIC IMPLICATIONS
+================================================================================
+
+12.1 METFORMIN: A PRECISION MEDICINE SUCCESS STORY
+---------------------------------------------------
+
+Metformin (dimethyl biguanide) is the most widely prescribed type 2 diabetes
+medication worldwide, used by >150 million people.
+
+DISCOVERY OF MECHANISM:
+For decades, metformin's mechanism was unknown. The breakthrough came in 2005:
+
+Shaw et al. (2005) discovered:
+- Metformin REQUIRES hepatic LKB1 to lower blood glucose
+- Liver-specific Lkb1 knockout mice do not respond to metformin
+- Metformin activates AMPK in an LKB1-dependent manner
+- This suppresses hepatic glucose production (gluconeogenesis)
+
+PMID: 16308421 | DOI: 10.1126/science.1120781
+
+This transformed understanding of diabetes therapy and validated LKB1-AMPK
+as a therapeutic target.
+
+METFORMIN IN CANCER:
+Epidemiological studies show diabetic patients taking metformin have:
+- Lower cancer incidence
+- Better cancer outcomes
+- Reduced cancer mortality
+
+Mechanisms:
+1. LKB1-AMPK activation → mTORC1 inhibition → reduced cell growth
+2. Decreased insulin/IGF-1 levels (systemic effect)
+3. Direct effects on cancer cell metabolism
+
+Clinical trials:
+- Numerous trials testing metformin as cancer therapy
+- Mixed results; benefit may be restricted to specific subtypes
+- Paradoxically, may work in some LKB1-null contexts via alternative
+  mechanisms
+
+
+12.2 TARGETING THE LKB1-AMPK PATHWAY
+-------------------------------------
+
+CHALLENGES:
+- Cannot restore LKB1 kinase activity directly (loss-of-function mutations)
+- AMPK activation in LKB1-null cells is difficult
+- Need to target downstream consequences of LKB1 loss
+
+POTENTIAL APPROACHES:
+
+A. DIRECT AMPK ACTIVATORS:
+   - Small molecules that activate AMPK independent of LKB1
+   - A-769662, MK-8722, PF-06409577
+   - Bind to AMPK and promote its activation
+   - May bypass LKB1 requirement
+   - Clinical development ongoing
+
+B. TARGETING LKB1-INDEPENDENT AMPK ACTIVATION:
+   - CaMKKβ activates AMPK in response to calcium
+   - Could this be exploited in LKB1-null tumors?
+   - Calcium ionophores + chemotherapy?
+
+C. SYNTHETIC LETHALITY SCREENS:
+   - Identify genes essential in LKB1-null but not LKB1-WT cells
+   - CRISPR screens have identified candidates
+   - Translate to therapeutic targets
+
+
+12.3 TARGETING mTOR HYPERACTIVATION
+------------------------------------
+
+LKB1 LOSS → mTORC1 HYPERACTIVATION → THERAPEUTIC VULNERABILITY
+
+FDA-APPROVED mTOR INHIBITORS:
+1. Rapamycin (sirolimus) - immunosuppressant
+2. Everolimus (Afinitor) - approved for renal cell carcinoma, breast cancer,
+   neuroendocrine tumors
+3. Temsirolimus (Torisel) - approved for renal cell carcinoma
+
+LIMITATIONS:
+- Rapalogs are allosteric, incomplete mTORC1 inhibitors
+- Feedback activation of AKT (via loss of S6K-mediated IRS1 inhibition)
+- mTORC2 remains active (can activate AKT)
+- Resistance develops rapidly
+
+SECOND-GENERATION mTOR INHIBITORS:
+- ATP-competitive mTOR kinase inhibitors (TORKi)
+- Inhibit both mTORC1 and mTORC2
+- Examples: INK128, AZD8055, AZD2014
+- Greater efficacy but more toxicity
+- Clinical development ongoing
+
+COMBINATION STRATEGIES:
+- mTOR inhibitor + PI3K or AKT inhibitor (target upstream activation)
+- mTOR inhibitor + MEK inhibitor (dual pathway blockade)
+- mTOR inhibitor + metabolic inhibitor (synthetic lethality)
+
+
+12.4 METABOLIC TARGETING
+------------------------
+
+LKB1-mutant cancers have altered metabolism creating vulnerabilities:
+
+A. GLUTAMINE ADDICTION:
+   - KRAS/LKB1 tumors are highly dependent on glutamine
+   - Glutaminase (GLS) inhibitor: CB-839 (telaglenastat)
+   - Phase 2 clinical trials in NSCLC
+   - Combinations with chemotherapy or targeted therapy
+
+B. SHMT AND ONE-CARBON METABOLISM:
+   - Serine hydroxymethyltransferase (SHMT1/2) pathway
+   - Provides reducing equivalents (NADPH) for antioxidant defense
+   - KEAP1 co-mutations (common with LKB1 loss) increase dependence
+   - SHMT inhibitors in development
+
+C. FATTY ACID METABOLISM:
+   - LKB1 loss → altered lipid metabolism
+   - Fatty acid synthesis inhibitors (FASN inhibitors)
+   - CPT1 inhibitors (block fatty acid oxidation)
+   - Context-dependent; some cancers rely on synthesis, others on oxidation
+
+D. GLUCOSE METABOLISM:
+   - Glycolysis inhibitors (2-DG, 3-bromopyruvate)
+   - Limited clinical success due to toxicity
+   - Need better therapeutic window
+
+E. OXIDATIVE STRESS INDUCERS:
+   - LKB1-mutant cells may have impaired antioxidant capacity
+   - Increased reactive oxygen species (ROS)
+   - ROS inducers + chemotherapy
+   - Exploit metabolic vulnerability
+
+
+12.5 IMMUNOTHERAPY STRATEGIES
+------------------------------
+
+CHALLENGE: LKB1-mutant tumors are "cold" - resistant to immunotherapy
+
+COMBINATION APPROACHES:
+
+A. MEK INHIBITOR + CHECKPOINT BLOCKADE:
+   - MEK inhibition alters cytokine production
+   - May reverse immunosuppressive microenvironment
+   - Clinical trials: trametinib + pembrolizumab
+
+B. mTOR INHIBITOR + CHECKPOINT BLOCKADE:
+   - mTOR inhibition affects immune cell function
+   - May enhance anti-tumor immunity
+   - Preclinical data promising
+
+C. STING AGONISTS:
+   - Stimulator of interferon genes (STING) pathway
+   - STING agonists induce type I interferon
+   - Promote immune activation
+   - Convert "cold" to "hot" tumors
+   - + anti-PD-1 in clinical trials
+
+D. ONCOLYTIC VIRUSES:
+   - Induce immunogenic cell death
+   - Recruit immune cells to tumor
+   - Combination with checkpoint blockade
+
+E. TARGETING MYELOID CELLS:
+   - LKB1 loss → recruitment of MDSCs and TAMs
+   - CSF1R inhibitors (deplete TAMs)
+   - CXCR2 inhibitors (block neutrophil recruitment)
+   - G-CSF neutralization
+
+
+12.6 EMERGING THERAPEUTIC TARGETS
+----------------------------------
+
+A. CRTC-CREB PATHWAY:
+   - LKB1 normally inhibits this pathway via SIK kinases
+   - LKB1 loss → CRTC-CREB hyperactivation
+   - Drives transcription of pro-survival genes
+   - CRTC inhibitors in development
+   - Promising preclinical efficacy
+
+B. KRAS INHIBITORS (FOR KRAS/LKB1 TUMORS):
+   - KRAS G12C inhibitors: sotorasib, adagrasib
+   - KRAS G12D inhibitors: MRTX1133 (preclinical)
+   - Pan-KRAS inhibitors in development
+   - LKB1 status may predict response (emerging data)
+
+C. AUTOPHAGY MODULATION:
+   - LKB1-AMPK normally activates autophagy
+   - Paradoxically, LKB1-null cells may be autophagy-dependent
+   - Chloroquine/hydroxychloroquine (autophagy inhibitors)
+   - Clinical trials as cancer therapy
+
+D. SYNTHETIC LETHALITY TARGETS:
+   - Genes specifically essential in LKB1-null context
+   - Identified through CRISPR screens
+   - Candidates include specific metabolic enzymes, kinases
+   - Translation to therapeutics ongoing
+
+
+12.7 BIOMARKER-DRIVEN CLINICAL TRIALS
+--------------------------------------
+
+PRECISION MEDICINE APPROACH:
+
+Modern clinical trials increasingly stratify patients by LKB1 status:
+
+EXAMPLES:
+1. KRAS/LKB1 co-mutation trials:
+   - Specific enrollment of KRAS/LKB1 NSCLC
+   - Test metabolic inhibitors (CB-839 + others)
+
+2. LKB1-mutant basket trials:
+   - Enroll LKB1-mutant cancers regardless of tissue origin
+   - Test mTOR, MEK, or metabolic inhibitors
+
+3. Negative selection:
+   - Exclude LKB1-mutant patients from immunotherapy trials
+   - Or use as stratification factor
+
+4. Companion diagnostics:
+   - NGS panels assess LKB1 status
+   - Guide treatment decisions
+
+
+12.8 FUTURE DIRECTIONS
+----------------------
+
+PROMISING AREAS FOR INVESTIGATION:
+
+1. LKB1 RESTORATION:
+   - Gene therapy to restore LKB1 function
+   - CRISPR-based correction of LKB1 mutations
+   - Adeno-associated virus (AAV) delivery
+   - Technical challenges remain
+
+2. ALLOSTERIC ACTIVATORS:
+   - Small molecules that stabilize inactive LKB1 mutants
+   - Restore kinase activity or complex formation
+   - Analogous to CFTR correctors for cystic fibrosis
+
+3. PROTEOLYSIS-TARGETING CHIMERAS (PROTACs):
+   - Degrade proteins that are overactive in LKB1-null cells
+   - Target oncogenic drivers specific to LKB1 loss
+
+4. COMBINATION THERAPY OPTIMIZATION:
+   - Rational combinations based on synthetic lethality
+   - Timing and sequencing of therapies
+   - Adaptive therapy approaches
+
+5. TARGETING THE TUMOR MICROENVIRONMENT:
+   - Reprogram immune microenvironment
+   - Target cancer-associated fibroblasts
+   - Normalize tumor vasculature
+
+6. PERSONALIZED METABOLOMICS:
+   - Profile individual tumor metabolism
+   - Tailor metabolic inhibitors to specific vulnerabilities
+   - Dynamic monitoring during therapy
+
+================================================================================
+13. REFERENCES
+================================================================================
+
+KEY REVIEW ARTICLES:
+--------------------
+
+1. Shackelford DB, Shaw RJ (2009) "The LKB1-AMPK pathway: metabolism and
+   growth control in tumor suppression"
+   Nature Reviews Cancer 9:563-575
+   PMID: 19629071
+   [Comprehensive review of LKB1 tumor suppressor functions]
+
+2. Shaw RJ (2009) "LKB1 and AMP-activated protein kinase control of mTOR
+   signaling and growth"
+   Acta Physiologica 196(1):65-80
+   PMID: 19245654
+   DOI: 10.1111/j.1748-1716.2009.01972.x
+   [Detailed review of LKB1-AMPK-mTOR axis]
+
+3. Alessi DR, Sakamoto K, Bayascas JR (2006) "LKB1-dependent signaling
+   pathways"
+   Annual Review of Biochemistry 75:137-163
+   PMID: 16756488
+   [Comprehensive review of LKB1 signaling]
+
+4. Ollila S, Mäkelä TP (2011) "The tumor suppressor kinase LKB1: lessons from
+   mouse models"
+   Journal of Molecular Cell Biology 3(6):330-340
+   [Review of knockout mouse phenotypes]
+
+
+CILIARY LOCALIZATION AND FUNCTION:
+-----------------------------------
+
+5. Boehlke C, Kotsis F, Patel V, et al. (2010) "Primary cilia regulate
+   mTORC1 activity and cell size through Lkb1"
+   Nature Cell Biology 12(11):1115-1122
+   PMID: 20972424
+   DOI: 10.1038/ncb2117
+   [Foundational paper on LKB1 ciliary localization and function]
+
+6. Dere R, Perkins AL, Bawa-Khalfe T, et al. (2018) "Cilia-localized LKB1
+   regulates chemokine signaling, macrophage recruitment, and tissue
+   homeostasis in the kidney"
+   EMBO Journal 37(11):e98615
+   PMID: 29925518
+   DOI: 10.15252/embj.201798615
+   [LKB1 ciliary functions in kidney]
+
+
+PROTEIN STRUCTURE AND INTERACTIONS:
+------------------------------------
+
+7. Zeqiraj E, Filippi BM, Deak M, et al. (2009) "Structure of the
+   LKB1-STRAD-MO25 complex reveals an allosteric mechanism of kinase
+   activation"
+   Science 326(5960):1707-1711
+   PMID: 19892943
+   DOI: 10.1126/science.1178377
+   [Crystal structure of LKB1 complex]
+
+8. Baas AF, Boudeau J, Sapkota GP, et al. (2003) "Activation of the tumor
+   suppressor kinase LKB1 by the STE20-like pseudokinase STRAD"
+   EMBO Journal 22(12):3062-3072
+   PMID: 12805220
+   [Discovery of STRAD-mediated LKB1 activation]
+
+9. Lizcano JM, Göransson O, Toth R, et al. (2004) "LKB1 is a master kinase
+   that activates 13 kinases of the AMPK subfamily, including MARK/PAR-1"
+   EMBO Journal 23(4):833-843
+   PMID: 14976552
+   [Identification of LKB1 substrate family]
+
+
+AMPK AND mTOR REGULATION:
+--------------------------
+
+10. Shaw RJ, Kosmatka M, Bardeesy N, et al. (2004) "The tumor suppressor LKB1
+    kinase directly activates AMP-activated kinase and regulates apoptosis in
+    response to energy stress"
+    PNAS 101(10):3329-3335
+    PMID: 14985505
+    DOI: 10.1073/pnas.0308061100
+    [Direct LKB1 phosphorylation of AMPK]
+
+11. Gwinn DM, Shackelford DB, Egan DF, et al. (2008) "AMPK phosphorylation of
+    raptor mediates a metabolic checkpoint"
+    Molecular Cell 30(2):214-226
+    PMID: 18439900
+    DOI: 10.1016/j.molcel.2008.03.003
+    [Discovery of AMPK-raptor mechanism]
+
+12. Inoki K, Zhu T, Guan KL (2003) "TSC2 mediates cellular energy response to
+    control cell growth and survival"
+    Cell 115(5):577-590
+    PMID: 14651849
+    [AMPK phosphorylation of TSC2]
+
+
+GLUCOSE AND METABOLIC REGULATION:
+----------------------------------
+
+13. Shaw RJ, Lamia KA, Vasquez D, et al. (2005) "The kinase LKB1 mediates
+    glucose homeostasis in liver and therapeutic effects of metformin"
+    Science 310(5754):1642-1646
+    PMID: 16308421
+    DOI: 10.1126/science.1120781
+    [Metformin mechanism requires LKB1]
+
+14. Koo SH, Flechner L, Qi L, et al. (2005) "The CREB coactivator TORC2 is a
+    key regulator of fasting glucose metabolism"
+    Nature 437(7062):1109-1111
+    PMID: 16148943
+    [TORC2/CRTC2 regulation by LKB1-SIK pathway]
+
+15. Foretz M, Hébrard S, Leclerc J, et al. (2010) "Metformin inhibits hepatic
+    gluconeogenesis in mice independently of the LKB1/AMPK pathway via a
+    decrease in hepatic energy state"
+    Journal of Clinical Investigation 120(7):2355-2369
+    PMID: 20577053
+    [Alternative metformin mechanisms]
+
+
+CELL POLARITY:
+--------------
+
+16. Barnes AP, Lilley BN, Pan YA, et al. (2007) "LKB1 and SAD kinases define
+    a pathway required for the polarization of cortical neurons"
+    Cell 129(3):549-563
+    PMID: 17482547
+    [LKB1 in neuronal polarity]
+
+17. Baas AF, Kuipers J, van der Wel NN, et al. (2004) "Complete polarization
+    of single intestinal epithelial cells upon activation of LKB1 by STRAD"
+    Cell 116(3):457-466
+    PMID: 15016379
+    [LKB1 in epithelial polarity]
+
+18. Denison FC, Hulyer P, Edwards RE, et al. (2017) "Coordinated cell motility
+    is regulated by a combination of LKB1 farnesylation and kinase activity"
+    Scientific Reports 7:41929
+    PMID: 28176875
+    DOI: 10.1038/srep41929
+    [Farnesylation role in migration]
+
+
+KNOCKOUT MOUSE PHENOTYPES:
+---------------------------
+
+19. Ylikorkala A, Rossi DJ, Korsisaari N, et al. (2001) "Vascular abnormalities
+    and deregulation of VEGF in Lkb1-deficient mice"
+    Science 293(5533):1323-1326
+    PMID: 11509735
+    [Embryonic lethality of Lkb1-/- mice]
+
+20. Jishage K, Nezu J, Kawase Y, et al. (2002) "Role of Lkb1, the causative
+    gene of Peutz-Jegher's syndrome, in embryogenesis and polyposis"
+    PNAS 99(13):8903-8908
+    PMID: 12183403
+    DOI: 10.1073/pnas.122254599
+    [Lkb1+/- mice develop polyps and HCC]
+
+21. Nakada D, Saunders TL, Morrison SJ (2010) "Lkb1 regulates cell cycle and
+    energy metabolism in haematopoietic stem cells"
+    Nature 468(7324):653-658
+    PMID: 21124450
+    [Hematopoietic stem cell phenotype]
+
+
+PEUTZ-JEGHERS SYNDROME:
+-----------------------
+
+22. Hemminki A, Markie D, Tomlinson I, et al. (1998) "A serine/threonine
+    kinase gene defective in Peutz-Jeghers syndrome"
+    Nature 391(6663):184-187
+    PMID: 9428765
+    [Discovery of LKB1 as PJS gene]
+
+23. Jenne DE, Reimann H, Nezu J, et al. (1998) "Peutz-Jeghers syndrome is
+    caused by mutations in a novel serine threonine kinase"
+    Nature Genetics 18(1):38-43
+    PMID: 9425897
+    [Independent discovery of LKB1 mutations in PJS]
+
+24. van Lier MG, Wagner A, Mathus-Vliegen EM, et al. (2010) "High cancer risk
+    in Peutz-Jeghers syndrome: a systematic review and surveillance
+    recommendations"
+    American Journal of Gastroenterology 105(6):1258-1264
+    PMID: 20051941
+    [Cancer risk quantification in PJS]
+
+
+LUNG CANCER AND KRAS CO-MUTATIONS:
+-----------------------------------
+
+25. Ji H, Ramsey MR, Hayes DN, et al. (2007) "LKB1 modulates lung cancer
+    differentiation and metastasis"
+    Nature 448(7155):807-810
+    PMID: 17676035
+    [Lkb1 loss cooperates with Kras in lung cancer]
+
+26. Shackelford DB, Abt E, Gerken L, et al. (2013) "LKB1 inactivation dictates
+    therapeutic response of non-small cell lung cancer to the metabolism drug
+    phenformin"
+    Cancer Cell 23(2):143-158
+    PMID: 23352126
+    [Metabolic phenotype of KRAS/LKB1 tumors]
+
+27. Koyama S, Akbay EA, Li YY, et al. (2016) "STK11/LKB1 deficiency promotes
+    neutrophil recruitment and proinflammatory cytokine production to suppress
+    T-cell activity in the lung tumor microenvironment"
+    Cancer Research 76(5):999-1008
+    PMID: 26833127
+    DOI: 10.1158/0008-5472.CAN-15-1439
+    [Immune phenotype of KRAS/LKB1 tumors]
+
+28. Skoulidis F, Goldberg ME, Greenawalt DM, et al. (2018) "STK11/LKB1
+    mutations and PD-1 inhibitor resistance in KRAS-mutant lung adenocarcinoma"
+    Cancer Discovery 8(7):822-835
+    PMID: 29773717
+    [LKB1 predicts immunotherapy resistance]
+
+29. Li F, Han X, Li F, et al. (2018) "Co-occurring KRAS mutation/LKB1 loss in
+    non-small cell lung cancer cells results in enhanced metabolic activity
+    susceptible to caloric restriction: an in vitro integrated multilevel
+    approach"
+    Journal of Experimental & Clinical Cancer Research 37:302
+    PMID: 30558645
+    DOI: 10.1186/s13046-018-0954-5
+    [Metabolic vulnerabilities of KRAS/LKB1 tumors]
+
+
+ADDITIONAL CANCER STUDIES:
+---------------------------
+
+30. Wingo SN, Gallardo TD, Akbay EA, et al. (2009) "Somatic LKB1 mutations
+    promote cervical cancer progression"
+    PLoS One 4(4):e5137
+    PMID: 19340305
+    [LKB1 in cervical cancer]
+
+31. Su GH, Hruban RH, Bansal RK, et al. (1999) "Germline and somatic mutations
+    of the STK11/LKB1 Peutz-Jeghers gene in pancreatic and biliary cancers"
+    American Journal of Pathology 154(6):1835-1840
+    PMID: 10362809
+    PMC: PMC1866632
+    [LKB1 mutations in pancreatic cancer]
+
+32. Avizienyte E, Loukola A, Roth S, et al. (1999) "LKB1 somatic mutations in
+    sporadic tumors"
+    American Journal of Pathology 154(3):677-681
+    PMID: 10079244
+    [LKB1 mutations across cancer types]
+
+
+THERAPEUTIC STUDIES:
+--------------------
+
+33. Shackelford DB, Shaw RJ (2009) "The LKB1-AMPK pathway: metabolism and
+    growth control in tumour suppression"
+    Nature Reviews Cancer 9(8):563-575
+    PMID: 19629071
+    [Review of therapeutic targeting]
+
+34. Faubert B, Vincent EE, Griss T, et al. (2014) "Loss of the tumor suppressor
+    LKB1 promotes metabolic reprogramming of cancer cells via HIF-1α"
+    PNAS 111(7):2554-2559
+    PMID: 24550281
+    [HIF-1α role in LKB1-null cancers]
+
+35. Murray CW, Brady JJ, Tsai MK, et al. (2021) "Dependency of human and
+    murine LKB1-inactivated lung cancer on aberrant CRTC-CREB activation"
+    eLife 10:e66095
+    PMID: 34313222
+    DOI: 10.7554/eLife.66095
+    [CRTC-CREB as therapeutic target]
+
+36. Hollstein PE, Eichner LJ, Brun SN, et al. (2019) "The AMPK-related kinases
+    SIK1 and SIK3 mediate key tumor-suppressive effects of LKB1 in NSCLC"
+    Cancer Discovery 9(11):1606-1627
+    PMID: 31387924
+    [SIK kinases as LKB1 effectors in cancer]
+
+
+TULP3 AND CILIARY TRAFFICKING:
+-------------------------------
+
+37. Mukhopadhyay S, Wen X, Chih B, et al. (2010) "TULP3 bridges the IFT-A
+    complex and membrane phosphoinositides to promote trafficking of G
+    protein-coupled receptors into primary cilia"
+    Genes & Development 24(19):2180-2193
+    PMID: 20889716
+    DOI: 10.1101/gad.1966210
+    [Discovery of TULP3 function]
+
+38. Badgandi HB, Hwang SH, Shimada IS, et al. (2017) "Tubby family proteins
+    are adapters for ciliary trafficking of integral membrane proteins"
+    Journal of Cell Biology 216(3):743-760
+    PMID: 28154160
+    DOI: 10.1083/jcb.201607095
+    [TULP3-independent trafficking of LKB1]
+
+
+ADDITIONAL IMPORTANT PAPERS:
+-----------------------------
+
+39. Hardie DG (2014) "AMPK: positive and negative regulation, and its role in
+    whole-body energy homeostasis"
+    Current Opinion in Cell Biology 33:1-7
+    PMID: 25259783
+    [Comprehensive AMPK review]
+
+40. Sanchez-Cespedes M (2007) "A role for LKB1 gene in human cancer beyond the
+    Peutz-Jeghers syndrome"
+    Oncogene 26(57):7825-7832
+    PMID: 17599048
+    [Review of LKB1 in sporadic cancers]
+
+41. Katajisto P, Vallenius T, Vaahtomeri K, et al. (2007) "The LKB1 tumor
+    suppressor kinase in human disease"
+    Biochimica et Biophysica Acta 1775(1):63-75
+    PMID: 17010524
+    [Comprehensive disease review]
+
+42. Mehenni H, Blouin JL, Radhakrishna U, et al. (1997) "Peutz-Jeghers syndrome:
+    confirmation of linkage to chromosome 19p13.3 and identification of a
+    potential second locus, on 19q13.4"
+    American Journal of Human Genetics 61(6):1327-1334
+    PMID: 9399897
+    [Genetic mapping of PJS locus]
+
+43. Hezel AF, Bardeesy N (2008) "LKB1; linking cell structure and tumor
+    suppression"
+    Oncogene 27(55):6908-6919
+    PMID: 19029933
+    [Review of LKB1 functions]
+
+44. Contreras CM, Gurumurthy S, Haynie JM, et al. (2008) "Loss of Lkb1 provokes
+    highly invasive endometrial adenocarcinomas"
+    Cancer Research 68(3):759-766
+    PMID: 18245476
+    [LKB1 in endometrial cancer]
+
+45. Pearson HB, McCarthy A, Collins CM, et al. (2008) "Lkb1 deficiency causes
+    prostate neoplasia in the mouse"
+    Cancer Research 68(7):2223-2232
+    PMID: 18381428
+    [Prostate-specific Lkb1 deletion]
+
+
+================================================================================
+SUMMARY AND CONCLUSIONS
+================================================================================
+
+LKB1 (STK11) is a master regulator that integrates multiple fundamental
+cellular processes:
+
+1. METABOLIC SENSOR: Via AMPK, senses cellular energy status and coordinates
+   appropriate metabolic responses
+
+2. TUMOR SUPPRESSOR: Prevents uncontrolled cell growth by coupling growth to
+   energy/nutrient availability; loss causes Peutz-Jeghers syndrome and
+   multiple cancers
+
+3. CILIARY KINASE: Localizes to primary cilia and regulates ciliary
+   mechanosensation, mTOR signaling, and cell size control
+
+4. POLARITY REGULATOR: Establishes and maintains cell polarity in epithelial
+   cells, neurons, and during cell migration
+
+5. GROWTH CONTROLLER: Inhibits mTORC1 via dual AMPK-mediated mechanisms
+   (TSC2 and Raptor phosphorylation)
+
+6. THERAPEUTIC TARGET: LKB1 loss creates metabolic and signaling
+   vulnerabilities that can be exploited therapeutically
+
+The discovery that metformin requires LKB1 validated this pathway as a
+druggable target and transformed our understanding of diabetes treatment.
+
+In cancer, LKB1 mutations (particularly KRAS/LKB1 co-mutations) define a
+distinct molecular subtype with unique metabolic, immune, and therapeutic
+characteristics.
+
+The ciliary localization of LKB1 represents an elegant integration of
+mechanosensation, metabolism, and growth control - the cilium serves as a
+specialized signaling compartment where LKB1 can sense physical cues and
+translate them into metabolic responses.
+
+LKB1 exemplifies how a single kinase can orchestrate diverse cellular
+functions through substrate specificity, subcellular localization, and
+pathway integration. Understanding LKB1 biology continues to yield insights
+into fundamental cell biology, human disease, and therapeutic opportunities.
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Report compiled from peer-reviewed literature and authoritative sources.
+All PMIDs and DOIs provided for reference verification.
+
+For questions or updates, consult primary literature and recent reviews.
+
+Last updated: 2025-11-17

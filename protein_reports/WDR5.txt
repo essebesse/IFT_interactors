@@ -1,0 +1,928 @@
+================================================================================
+WDR5 (WD REPEAT DOMAIN 5) - COMPREHENSIVE SCIENTIFIC REPORT
+================================================================================
+Generated: 2025-11-17
+UniProt ID: P61964 (Human WDR5)
+Gene: WDR5 (WD repeat domain 5)
+Aliases: BIG3, SWD3
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+WDR5 is a highly conserved WD40 repeat protein that functions as a critical
+scaffolding component of histone methyltransferase complexes, particularly the
+MLL/SET1 family complexes responsible for histone H3 lysine 4 (H3K4)
+trimethylation. As a core epigenetic regulator, WDR5 plays essential roles in
+embryonic development, stem cell maintenance, and gene expression control.
+Dysregulation of WDR5 contributes to oncogenesis across multiple cancer types,
+making it an emerging therapeutic target. WDR5 interacts with the oncoprotein
+MYC to promote tumor maintenance and is essential for HOX gene regulation
+during development.
+
+KEY FINDINGS:
+- NO ciliary localization or function has been reported for WDR5
+- Essential component of MLL/SET1 H3K4 methyltransferase complexes
+- Direct interaction with MYC oncoproteins essential for tumorigenesis
+- Critical regulator of HOX genes and developmental programs
+- Promising therapeutic target with degrader molecules in preclinical testing
+- Embryonic lethal when deleted in mice; essential for vertebrate development
+
+================================================================================
+1. CILIARY FUNCTION AND TULP3 CONNECTION
+================================================================================
+
+STATUS: NO EVIDENCE FOR CILIARY ROLE
+
+After comprehensive literature searches, there is NO evidence that WDR5 has
+any ciliary function, localization to cilia, or connection to intraflagellar
+transport (IFT) proteins or TULP3.
+
+WDR5 is strictly a nuclear protein involved in chromatin modification and
+transcriptional regulation. While TULP3 bridges the IFT-A complex and membrane
+phosphoinositides to promote trafficking of G protein-coupled receptors into
+primary cilia, WDR5 operates in a completely different cellular compartment
+and biological pathway.
+
+The appearance of WDR5 in IFT/BBSome interactor datasets likely represents:
+1. A false positive prediction from AlphaFold3 structural modeling
+2. A nonspecific interaction not validated experimentally
+3. Technical artifact from computational prediction methods
+
+RECOMMENDATION: WDR5-IFT/TULP3 interactions should be considered LOW PRIORITY
+for experimental validation unless additional orthogonal evidence emerges.
+
+REFERENCES:
+- TULP3 and IFT-A: PMID: 20889716 (Mukhopadhyay et al., Genes Dev 2010)
+  DOI: 10.1101/gad.1966210
+- IFT-A complex structures: Nature Cell Research 2023
+  DOI: 10.1038/s41422-023-00778-3
+
+================================================================================
+2. STRUCTURAL BIOLOGY: WD40 REPEAT ARCHITECTURE
+================================================================================
+
+PROTEIN STRUCTURE
+
+WDR5 is a member of the WD40-repeat protein family, characterized by a
+seven-bladed β-propeller fold. Each blade consists of a four-stranded
+antiparallel β-sheet forming the canonical WD40 motif. This creates a
+symmetrical, circular structure with cavities on opposing faces that serve
+as protein-protein interaction platforms.
+
+CRITICAL BINDING SITES
+
+WDR5 contains two major functional interfaces:
+
+1. WBM SITE (WDR5-Binding Motif):
+   - Located on one face of the β-propeller
+   - Binds RBBP5 in the MLL complex
+   - Binds MYC proteins via MYC Box IIIb motif (EEIDVV sequence)
+   - Target for MYC-interaction inhibitors
+
+2. WIN SITE (WDR5-Interaction motif):
+   - Located on the opposite face of the β-propeller
+   - Recognizes arginine-containing WIN motifs (consensus: ARA)
+   - Binds MLL1 histone methyltransferase
+   - Binds histone H3 tail (specifically H3K4)
+   - Target for WIN-site inhibitors
+
+STRUCTURAL INSIGHTS FROM CRYSTAL STRUCTURES
+
+Multiple high-resolution crystal structures have been solved:
+- WDR5 alone: PDB 3UR4, 3SMR
+- WDR5-MLL complexes
+- WDR5-inhibitor complexes
+- WDR5-degrader-VHL ternary complex: PDB 7JTP (MS67 PROTAC)
+
+The β-propeller architecture provides a stable scaffold for simultaneous
+binding of multiple protein partners, enabling WDR5 to function as a central
+hub in multiprotein chromatin-modifying complexes.
+
+REFERENCES:
+- WD40 domain proteins: PMID: 28959952 (Schapira et al., Nat Rev Drug Discov 2017)
+  DOI: 10.1038/nrd.2017.179
+- WDR5 structure and function: PMID: 27193483 (Guarnaccia & Tansey, PMC 2018)
+  DOI: 10.2217/epi-2016-0042
+- Crystal structures: RCSB Protein Data Bank entries 3UR4, 3SMR, 7JTP
+
+================================================================================
+3. CHROMATIN REGULATION: HISTONE H3K4 METHYLATION
+================================================================================
+
+CORE FUNCTION IN MLL/SET1 COMPLEXES
+
+WDR5 is an essential, non-catalytic component of the MLL/SET (MLL1-4, SETD1A,
+SETD1B) family of histone methyltransferase complexes. These complexes
+catalyze di- and tri-methylation of histone H3 at lysine 4 (H3K4me2/me3),
+a chromatin mark associated with active transcription.
+
+MECHANISM OF H3K4 METHYLATION
+
+The minimal MLL core complex contains:
+- MLL (or SET1): Catalytic SET domain methyltransferase
+- WDR5: Scaffolding and histone H3 recognition
+- RBBP5: Binds WDR5, enhances activity
+- ASH2L: Binds RBBP5, promotes trimethylation
+- DPY30: Enhances complex activity
+
+WDR5'S SPECIFIC ROLES:
+1. Recognizes dimethylated H3K4 substrates via WIN site
+2. Recruits and positions the MLL catalytic domain
+3. Stabilizes the complex through RBBP5 interaction via WBM site
+4. Enhances processivity of H3K4 trimethylation
+
+CHROMATIN BINDING MECHANISM
+
+WDR5 utilizes a two-step chromatin recruitment mechanism:
+1. WIN-site dependent tethering to chromatin-resident proteins containing
+   arginine-rich WIN motifs
+2. Subsequent recruitment of MLL complex components and transcription factors
+   (including MYC) through the WBM site
+
+This dual-interface mechanism enables WDR5 to serve as both a chromatin
+reader (recognizing H3K4me2) and a scaffold for complex assembly.
+
+GLOBAL IMPACT ON CHROMATIN
+
+- WDR5 knockdown results in global reduction of H3K4me3 levels
+- Affects thousands of gene promoters genome-wide
+- Essential for maintaining active chromatin states
+- Required for transcriptional memory and epigenetic inheritance
+
+REFERENCES:
+- WDR5 essential for H3K4 methylation: PMID: 15960975 (Wysocka et al., Cell 2005)
+  DOI: 10.1016/j.cell.2005.03.036
+- WDR5-MLL interaction mechanism: PMID: 18984161 (Patel et al., JBC 2008)
+  DOI: 10.1074/jbc.M806936200
+- H3K4 methylation and vertebrate development: Cell 2005
+  DOI: 10.1016/j.cell.2005.03.036
+- WDR5 as H3 lysine 4 presenter: PMID: 30375494 (Frontiers Oncol 2018)
+  DOI: 10.3389/fonc.2018.00502
+
+================================================================================
+4. PROTEIN-PROTEIN INTERACTIONS AND MOLECULAR COMPLEXES
+================================================================================
+
+MLL/SET1 COMPLEX COMPONENTS
+
+Direct WDR5 Interactors in MLL Complexes:
+- MLL1, MLL2, MLL3, MLL4 (KMT2A-D)
+- SETD1A, SETD1B
+- RBBP5 (via WBM site)
+- ASH2L (indirect, via RBBP5)
+- DPY30
+
+MYC FAMILY PROTEINS
+
+WDR5 directly interacts with MYC family oncoproteins:
+- c-MYC: Via MYC Box IIIb (amino acids 310-324, EEIDVV motif)
+- N-MYC: Conserved Box IIIb interaction
+- L-MYC: Conserved interaction
+
+MECHANISM:
+MYC proteins bind the WBM site of WDR5 through the conserved EEIDVV sequence
+in Box IIIb. This interaction is essential for MYC recruitment to chromatin
+and target gene activation.
+
+FUNCTIONAL SIGNIFICANCE:
+- Structure-guided MYC mutations disrupting WDR5 interaction attenuate MYC
+  binding at ~80% of chromosomal locations
+- Blocks induced pluripotent stem cell (iPSC) formation
+- Disables MYC-driven tumorigenesis
+
+HISTONE H3 RECOGNITION
+
+WDR5 binds the histone H3 N-terminal tail:
+- Recognizes H3K4me2 via WIN site
+- Also recognizes H3R2 (arginine 2)
+- Binding enhanced by H3K4 dimethylation
+- Creates a positive feedback loop for H3K4me3 spreading
+
+NOVEL HISTONE MODIFICATIONS
+
+Recent discovery: WDR5 recognizes histone H3Q5 serotonylation (H3Q5ser), a
+non-canonical modification linking neurotransmitter signaling to chromatin
+regulation.
+
+REFERENCES:
+- WDR5-MLL interaction: PMID: 18984161 (Patel et al., JBC 2008)
+  DOI: 10.1074/jbc.M806936200
+- MYC-WDR5 essential interaction: PMID: 25818646 (Thomas et al., Mol Cell 2015)
+  DOI: 10.1016/j.molcel.2015.02.012
+- MYC-WDR5 tumor maintenance: PMID: 31754012 (Biankin et al., PNAS 2019)
+  DOI: 10.1073/pnas.1910391116
+- H3Q5 serotonylation recognition: Science Advances 2021
+  DOI: 10.1126/sciadv.abf4291
+- RBBP5 characterization: PMID: 20864525 (Avdic et al., JBC 2010)
+  DOI: 10.1074/jbc.M110.128132
+
+================================================================================
+5. TRANSCRIPTIONAL ACTIVATION: HOX GENES AND DEVELOPMENTAL PROGRAMS
+================================================================================
+
+HOX GENE REGULATION
+
+WDR5 was originally identified as a core component of MLL complexes that
+regulate HOX gene expression during development. HOX genes are master
+regulators of body axis patterning and segment identity.
+
+WDR5'S ROLE IN HOX REGULATION:
+
+1. DIRECT MECHANISM:
+   - MLL complexes containing WDR5 bind HOX gene promoters
+   - Catalyze H3K4me3 at HOX loci
+   - Maintain active chromatin state for HOX expression
+
+2. GENE-SPECIFIC EFFECTS:
+   - WDR5 knockdown causes 5-fold downregulation of HOXC8 mRNA
+   - Minor but reproducible downregulation of HOXA9 mRNA
+   - Affects spatial and temporal HOX expression patterns
+
+3. LONG NON-CODING RNA INTERACTIONS:
+   - HOTTIP lncRNA directly binds WDR5
+   - Recruits WDR5-MLL complex to HOXA locus
+   - Drives H3K4me3 spreading across HOXA gene cluster
+
+DEVELOPMENTAL GENE PROGRAMS
+
+Beyond HOX genes, WDR5 regulates numerous developmental pathways:
+
+EMBRYONIC STEM CELLS:
+- Essential for ES cell self-renewal
+- Required for maintenance of pluripotency
+- Regulates core transcriptional network (Oct4, Sox2, Nanog)
+
+NEURONAL DEVELOPMENT:
+- Controls neuronal differentiation programs
+- Regulates neurodevelopmental gene expression
+- Human WDR5 variants cause neurodevelopmental disorders
+
+HEMATOPOIESIS:
+- Essential for fetal erythropoiesis
+- Required for hematopoietic stem cell function
+- Loss causes severe hematopoietic defects
+
+SPATIAL HOX EXPRESSION IN DEVELOPMENT
+
+Critical finding from Xenopus studies:
+- WDR5-depleted tadpoles show developmental defects
+- Abnormal spatial HOX gene expression patterns
+- Demonstrates WDR5 is essential for proper HOX regulation in vivo
+
+REFERENCES:
+- WDR5 and HOX genes: PMID: 15960975 (Wysocka et al., Cell 2005)
+  DOI: 10.1016/j.cell.2005.03.036
+- HOTTIP-WDR5 interaction: Wang et al., Genetics 2011
+- WDR5 in ES cells: PMID: 21460836 (Ang et al., Cell 2011)
+  DOI: 10.1016/j.cell.2011.03.020
+- Vertebrate development: Cell 2005, DOI: 10.1016/j.cell.2005.03.036
+
+================================================================================
+6. CANCER BIOLOGY: ONCOGENIC FUNCTIONS AND MECHANISMS
+================================================================================
+
+WDR5 AS AN ONCOGENIC PROTEIN
+
+WDR5 has emerged as a critical oncogenic cofactor across multiple cancer
+types. Its role extends beyond passive chromatin scaffolding to active
+promotion of oncogenic transcription programs.
+
+ACUTE LEUKEMIAS
+
+MLL-Rearranged Acute Myeloid Leukemia (MLL-r AML):
+- Wild-type MLL-WDR5 complex cooperates with MLL fusion oncoproteins
+- Essential for maintaining oncogenic gene expression programs
+- WDR5 depletion suppresses MLL-r AML growth
+- MLL fusion proteins retain ability to recruit WDR5
+
+T-Cell Acute Lymphoblastic Leukemia (T-ALL):
+- WDR5 drives oncogenic transcription programs
+- WDR5/ATAD2 signaling axis promotes T-ALL progression
+- Targeting CK2/IKAROS axis downregulates WDR5
+- Synergistic anti-leukemic effects in patient-derived xenografts (2025)
+
+SOLID TUMORS
+
+Neuroblastoma:
+- WDR5 facilitates N-MYC recruitment to chromatin
+- Essential for N-MYC-driven neuroblastoma growth
+- N-MYC binds conserved WDR5 gene targets
+- High WDR5 expression correlates with poor prognosis
+
+Pancreatic Ductal Adenocarcinoma (PDAC):
+- WDR5-MYC axis critically involved in tumorigenesis
+- Required for PDAC cell proliferation and survival
+- Target for therapeutic intervention
+
+Bladder Cancer:
+- WDR5 overexpression promotes proliferation
+- Mediates H3K4 trimethylation at oncogenic loci
+- Enhances chemoresistance to cisplatin
+- WDR5 knockdown suppresses tumor growth
+
+Other Solid Tumors with WDR5 Involvement:
+- Burkitt's lymphoma (MYC-driven)
+- Prostate cancer
+- Ovarian cancer
+- Breast cancer
+
+ONCOGENIC MECHANISMS
+
+1. MYC RECRUITMENT TO CHROMATIN:
+   - WDR5 tethered to chromatin via WIN site
+   - Recruits MYC via WBM site interaction
+   - MYC Box IIIb (EEIDVV) binds WDR5
+   - Enables MYC to activate tumor-critical target genes
+   - Disrupting this interaction blocks tumorigenesis
+
+2. CHROMATIN CONTEXT DEPENDENCY:
+   - WDR5 localizes MYC to specific chromatin regions
+   - H3K4me3 marks guide WDR5-MYC complex
+   - Creates permissive chromatin environment
+   - Amplifies MYC transcriptional output
+
+3. SELF-RENEWAL AND STEMNESS:
+   - Maintains cancer stem cell populations
+   - Regulates pluripotency factors
+   - Promotes dedifferentiation
+   - Enhances chemoresistance
+
+BIOMARKER POTENTIAL
+
+High WDR5 expression correlates with:
+- Poor prognosis in multiple cancers
+- Increased tumor aggressiveness
+- Chemotherapy resistance
+- Shortened patient survival
+
+REFERENCES:
+- WDR5 in cancer overview: PMID: 30375494 (Guarnaccia & Tansey, Front Oncol 2018)
+  DOI: 10.3389/fonc.2018.00502
+- MLL-r AML: PMID: 34586829 (Jiang et al., Sci Transl Med 2021)
+  DOI: 10.1126/scitranslmed.abj1578
+- T-ALL targeting (2025): Blood 2025, DOI: 10.1182/blood.2024024613
+- N-MYC recruitment: PMID: 36918795 (Oncogenesis 2023)
+  DOI: 10.1038/s41389-023-00477-z
+- MYC-WDR5 tumorigenesis: PMID: 25818646 (Thomas et al., Mol Cell 2015)
+  DOI: 10.1016/j.molcel.2015.02.012
+- Bladder cancer: PMID: 25164765 (Sci Rep 2014)
+  DOI: 10.1038/srep08293
+- Pancreatic cancer: Multiple studies, PNAS 2019
+
+================================================================================
+7. GENETIC PHENOTYPES AND DEVELOPMENTAL DEFECTS
+================================================================================
+
+MOUSE KNOCKOUT MODELS
+
+EMBRYONIC LETHALITY:
+- Hematopoietic-specific Wdr5 knockout (Vav-iCre) causes embryonic lethality
+- Death associated with severe erythropoiesis defects
+- Complete impairment of hematopoietic stem/progenitor cell function
+
+HEMATOPOIETIC DEFECTS:
+- Wdr5 deficiency essential for fetal erythropoiesis
+- Altered immunophenotype of HSPCs
+- Decreased c-Kit expression on stem cells
+- Complete loss of HSPC function
+
+DEVELOPMENTAL PREDICTIONS:
+- Complete Wdr5 removal predicted to be embryonic lethal
+- Bypasses self-renewal maintenance in ES cells
+- Loss of H3K4me3 incompatible with development
+- Essential for vertebrate development
+
+XENOPUS STUDIES
+
+WDR5-depleted Xenopus laevis tadpoles exhibit:
+- Multiple developmental defects
+- Abnormal body axis formation
+- Disrupted spatial HOX gene expression
+- Impaired organogenesis
+
+PORCINE EMBRYO STUDIES
+
+WDR5 knockdown in preimplantation embryos causes:
+- Reduced blastocyst formation rate
+- Decreased total cell number per blastocyst
+- Disturbed pluripotency gene expression
+- DNA damage and repair defects
+- Epigenetic dysregulation (H3K4me3 loss)
+
+C. ELEGANS MODEL
+
+wdr-5.1(ok1417) mutants show:
+- 12% embryonic lethality at 20°C
+- 2.5% sterility at 20°C
+- Temperature-sensitive phenotypes (worse at 25°C)
+- 36% embryonic lethality at 25°C
+- 29% sterility at 25°C
+
+HUMAN GENETIC DISEASE
+
+NEURODEVELOPMENTAL SYNDROME:
+
+In 2022, rare de novo germline missense variants in WDR5 were identified in
+11 individuals with overlapping clinical features:
+
+Clinical Phenotypes:
+- Speech and language delays
+- Intellectual disability
+- Epilepsy/seizures
+- Autism spectrum disorder
+- Developmental delay
+- Variable facial dysmorphisms
+
+Molecular Mechanism:
+- Heterozygous missense variants (not null mutations)
+- Clustered in crucial chromatin modifier domains
+- Likely dominant-negative or gain-of-function effects
+- Defines a new neurodevelopmental disorder
+
+STEM CELL PHENOTYPES
+
+EMBRYONIC STEM CELLS:
+- WDR5 mediates self-renewal
+- Required for ES cell reprogramming
+- Part of core transcriptional network with Oct4, Sox2, Nanog
+- Knockdown impairs pluripotency maintenance
+
+INDUCED PLURIPOTENT STEM CELLS:
+- WDR5-MYC interaction essential for iPSC formation
+- Disrupting WDR5-MYC blocks reprogramming
+- Required for somatic cell dedifferentiation
+
+REFERENCES:
+- Hematopoietic lethality: PMID: 36935610 (Exp Hematol Oncol 2023)
+  DOI: 10.1186/s40164-023-00385-3
+- Porcine embryos: PMID: 28379447 (Biol Reprod 2017)
+  DOI: 10.1093/biolreprod/iox023
+- C. elegans: PMID: 24733917 (PLOS Genet 2014)
+  DOI: 10.1371/journal.pgen.1004278
+- Human neurodevelopmental disorder: Am J Hum Genet 2022
+  DOI: 10.1016/j.ajhg.2022.07.001
+- ES cell self-renewal: PMID: 21460836 (Ang et al., Cell 2011)
+  DOI: 10.1016/j.cell.2011.03.020
+- Xenopus development: Cell 2005
+
+================================================================================
+8. THERAPEUTIC TARGETING: INHIBITORS AND DEGRADERS
+================================================================================
+
+RATIONALE FOR TARGETING WDR5
+
+WDR5 represents an attractive therapeutic target for multiple reasons:
+1. Essential for MYC-driven cancers (MYC largely "undruggable")
+2. Required for MLL-rearranged leukemias
+3. Scaffolding protein with defined binding pockets
+4. Pharmacologically tractable WIN and WBM sites
+5. Genetic validation: WDR5 loss suppresses tumor growth
+
+CHALLENGES:
+- WDR5 is essential in normal cells (developmental roles)
+- Therapeutic window may be narrow
+- Need cancer-selective degradation or inhibition
+
+WDR5 SMALL MOLECULE INHIBITORS
+
+WIN SITE INHIBITORS (disrupt MLL and histone H3 binding):
+
+1. OICR-9429 (early prototype):
+   - Binds WIN site with nanomolar affinity
+   - Disrupts WDR5-MLL1 interaction
+   - Mechanism: occupies arginine-binding pocket
+
+   Preclinical Activity:
+   - Bladder cancer: Suppresses tumor growth, enhances cisplatin sensitivity
+   - Ovarian cancer: Enhances genotoxic drug sensitivity
+   - AML: Ineffective in PDX models (disappointing results)
+   - Neuroblastoma: Modest antiproliferative effects
+
+   Status: PRECLINICAL ONLY - not in clinical trials
+   Limitation: Only modest antitumor effects in vivo
+
+2. MM-589 (second-generation WIN inhibitor):
+   - Improved potency over OICR-9429
+   - Better target engagement in cells
+   - Still modest antiproliferative activity
+
+   Status: PRECLINICAL research tool
+
+3. C16 (highly potent WIN inhibitor):
+   - Strong antiproliferative activity in MV4:11 AML cells
+   - Used to study WIN-site biology
+   - Displaces WDR5 from chromatin
+   - Also displaces MYC from chromatin (key finding)
+
+   Status: Chemical probe for research
+
+4. C6 (related to C16):
+   - Similar WIN-site inhibition mechanism
+   - Displaces both WDR5 and MYC from chromatin
+   - Demonstrates proof-of-concept for WIN targeting
+
+WBM SITE INHIBITORS (disrupt MYC-WDR5 interaction):
+
+1. MM-401 (cyclic peptidomimetic):
+   - Mimics MYC Box IIIb sequence
+   - Disrupts WDR5-MYC interaction
+   - Proof-of-concept for WBM targeting
+
+   Status: PRECLINICAL research tool
+   Limitation: Peptide-based, poor drug-like properties
+
+2. WDR5-MYC Inhibitors (Structure-based, AI-discovered, 2025):
+   - Novel small molecules from generative AI platforms
+   - Target WDR5-MYC protein-protein interaction
+   - Rationale: Address MYC-driven cancers
+   - Potential for lymphoma, leukemia, solid tumors
+
+   Status: EARLY PRECLINICAL (recently disclosed)
+   Promise: AI-driven discovery may yield better drug candidates
+
+PRECLINICAL EFFICACY AND SAFETY
+
+Recent Structure-Based WDR5 Inhibitors (PNAS 2023):
+- Demonstrated robust efficacy in preclinical animal models
+- Showed acceptable safety profiles in vivo
+- Represents advancement over earlier tool compounds
+- Not yet named or in clinical development
+
+CURRENT LIMITATION:
+None of the small molecule inhibitors have advanced to clinical trials.
+Reasons include:
+- Modest efficacy in vivo
+- Concerns about on-target toxicity (WDR5 essential for normal development)
+- Need for better therapeutic window
+- Competition from degrader approaches (see below)
+
+WDR5 DEGRADERS (PROTAC STRATEGY)
+
+PROTAC (Proteolysis Targeting Chimera) Approach:
+Strategy: Bifunctional molecules that recruit E3 ubiquitin ligases to WDR5,
+leading to its degradation rather than inhibition.
+
+MS67 - BREAKTHROUGH WDR5 DEGRADER:
+
+Design and Mechanism:
+- Structure-based design using WDR5-VHL crystal structures
+- Binds WDR5 with high affinity (Kd = 63 nM)
+- Recruits VHL E3 ubiquitin ligase (Kd = 140 nM)
+- Forms highly cooperative ternary complex
+- Induces WDR5 degradation via ubiquitin-proteasome system
+
+Biochemical Properties:
+- Potent WDR5 degradation: DC50 in low nanomolar range
+- High Dmax (>90% degradation achieved)
+- Selective for WDR5 in global proteomics
+- Time, proteasome, VHL, and WDR5 dependent
+- Works in multiple cancer cell lines
+
+Molecular Effects:
+- Suppresses transcription of WDR5-regulated genes
+- Decreases chromatin-bound MLL complex components
+- Reduces chromatin-bound c-MYC
+- More effective than WIN/WBM inhibitors
+
+Cancer Efficacy:
+- Inhibits proliferation of MLL-r AML cells in vitro
+- Suppresses PDAC (pancreatic cancer) cell growth
+- Effective in patient-derived AML cells
+- Robust activity in PDX mouse models of MLL-r AML
+- Well tolerated in vivo (no severe toxicity observed)
+
+Structural Biology:
+- Crystal structure solved: PDB 7JTP
+- Shows WDR5-MS67-VHL ternary complex
+- Reveals molecular basis for cooperativity
+- Guides further optimization
+
+Publication:
+- PMID: 34586829
+- Science Translational Medicine, September 2021
+- Jiang et al.
+
+Significance:
+MS67 represents a major advance over small molecule inhibitors. By degrading
+WDR5 rather than just blocking binding sites, MS67 achieves:
+- More complete loss of WDR5 function
+- Superior efficacy in preclinical models
+- Validation of degrader approach for WDR5
+
+Status: PRECLINICAL
+- Not yet in clinical trials
+- Strong candidate for clinical development
+- Demonstrates proof-of-concept for WDR5 degradation
+- May have therapeutic window in MLL-r AML and other cancers
+
+CLINICAL DEVELOPMENT STATUS (as of 2025)
+
+NO WDR5-TARGETED DRUGS ARE CURRENTLY IN CLINICAL TRIALS
+
+The field remains in preclinical development stage:
+- Multiple academic groups developing inhibitors and degraders
+- Pharmaceutical companies exploring WDR5 as target
+- MS67 degrader has strongest preclinical data
+- Structure-based inhibitors showing improved properties
+- AI-driven drug discovery efforts underway (2025)
+
+Barriers to Clinical Translation:
+1. Concerns about on-target toxicity (WDR5 essential for development)
+2. Need to establish therapeutic window in humans
+3. Patient selection strategies (which cancers most vulnerable?)
+4. Competition from other epigenetic targets
+5. Biomarker development for patient stratification
+
+Most Promising Path Forward:
+WDR5 degraders (like MS67) appear more promising than inhibitors due to:
+- Superior efficacy in preclinical models
+- More complete target inactivation
+- Potential for better therapeutic window
+- Success of other PROTAC molecules in clinic
+
+ALTERNATIVE THERAPEUTIC STRATEGIES
+
+Combination Approaches:
+- WDR5 inhibition + chemotherapy (cisplatin, etc.)
+- WDR5 targeting + targeted therapies
+- Synergy with other epigenetic modulators
+
+Biomarker-Guided Treatment:
+- Select patients with high WDR5 expression
+- MLL-rearranged AML patients (genetically defined)
+- MYC-driven cancers (molecular subtype)
+
+REFERENCES:
+- MS67 degrader: PMID: 34586829 (Jiang et al., Sci Transl Med 2021)
+  DOI: 10.1126/scitranslmed.abj1578
+- MS67 crystal structure: PDB 7JTP
+- OICR-9429 in bladder cancer: PMID: 34154613 (J Exp Clin Cancer Res 2021)
+  DOI: 10.1186/s13046-021-01989-5
+- Structure-based inhibitors: PMID: 36706451 (PNAS 2023)
+  DOI: 10.1073/pnas.2211297120
+- WDR5-MYC inhibitors discovery: PMID: 32324990 (ACS Chem Biol 2020)
+  DOI: 10.1021/acschembio.9b01095
+- AI-discovered inhibitors: Insilico Medicine press release, 2025
+- WDR5 drug discovery review: PMID: 31360909 (Genes 2019)
+  DOI: 10.3390/genes10070543
+- WD40 proteins as drug targets: PMID: 28959952 (Nat Rev Drug Discov 2017)
+  DOI: 10.1038/nrd.2017.179
+
+================================================================================
+9. ADDITIONAL MOLECULAR MECHANISMS
+================================================================================
+
+PROTEIN SYNTHESIS REGULATION
+
+Recent discovery (2020): WDR5 is a conserved regulator of protein synthesis
+gene expression, extending its functions beyond histone methylation to
+include ribosome biogenesis and translation control.
+
+HUNTINGTON'S DISEASE
+
+WDR5 shows epigenetic and transcriptional modulation in Huntington's disease
+human iPSC models, suggesting roles in neurodegenerative disease beyond
+cancer and development.
+
+NON-CANONICAL MODIFICATIONS
+
+WDR5 recognizes histone H3Q5 serotonylation, linking serotonin signaling to
+chromatin regulation and gene expression, representing a novel regulatory
+axis.
+
+P53 INTEGRATION
+
+WDR5 integrates temporal p53 inputs during neuroectoderm and mesoderm
+differentiation of mouse ES cells, connecting tumor suppressor pathways to
+chromatin regulation.
+
+PTEN INTERACTION
+
+Recent 2024 discovery: The NTE domain of PTENα/β promotes cancer progression
+by interacting with WDR5 via its SSSRRSS motif, revealing new oncogenic
+mechanisms.
+
+REFERENCES:
+- Protein synthesis: PMID: 31965166 (Nucleic Acids Res 2020)
+  DOI: 10.1093/nar/gkz1225
+- H3Q5 serotonylation: Science Advances 2021
+  DOI: 10.1126/sciadv.abf4291
+- Huntington's disease: PMID: 27838278 (Neurochem Int 2016)
+- p53 integration: PMID: 32042918 (Cell Rep 2020)
+- PTEN interaction: PMID: 38697997 (Cell Death Dis 2024)
+  DOI: 10.1038/s41419-024-06714-6
+
+================================================================================
+10. SUMMARY AND THERAPEUTIC IMPLICATIONS
+================================================================================
+
+WDR5 IN CANCER: A MULTI-FACETED ONCOGENIC COFACTOR
+
+WDR5 has emerged as a critical node in cancer biology, particularly in
+MYC-driven and MLL-rearranged malignancies. Its dual role as both a chromatin
+scaffolding protein and a direct MYC cofactor makes it an attractive
+therapeutic target.
+
+KEY THERAPEUTIC INSIGHTS:
+
+1. GENETIC VALIDATION:
+   - WDR5 loss suppresses tumor growth in multiple models
+   - Essential for MLL-r AML and MYC-driven cancers
+   - Not simply a passenger in oncogenic complexes
+
+2. DRUGGABILITY:
+   - Two targetable surfaces: WIN and WBM sites
+   - Crystal structures guide rational drug design
+   - Degrader approach (MS67) shows superiority over inhibitors
+
+3. THERAPEUTIC WINDOW:
+   - Challenge: WDR5 essential for normal development
+   - Opportunity: Cancer cells may be more dependent
+   - Strategy: PROTACs may achieve selectivity
+
+4. BIOMARKER POTENTIAL:
+   - High WDR5 expression = poor prognosis
+   - MLL-rearrangements define sensitive population
+   - MYC amplification predicts dependency
+
+5. COMBINATION STRATEGIES:
+   - Synergy with chemotherapy
+   - Enhance genotoxic drug sensitivity
+   - Overcome chemoresistance
+
+UNRESOLVED QUESTIONS:
+
+1. Can WDR5 targeting achieve therapeutic window in humans?
+2. Which cancer types are most vulnerable?
+3. Will degraders be safer than inhibitors?
+4. Can normal tissue toxicity be managed?
+5. What biomarkers predict response?
+
+CILIARY BIOLOGY CONNECTION: NEGATIVE
+
+Importantly, despite appearing in IFT/BBSome interactor predictions, WDR5
+has NO established role in ciliary biology, function, or localization. The
+predicted interactions with TULP3 or IFT proteins likely represent:
+- Computational false positives from AlphaFold3
+- Artifacts from structural prediction algorithms
+- Spurious low-confidence predictions
+
+WDR5 remains firmly established as a nuclear chromatin protein with no known
+cytoplasmic or ciliary functions.
+
+RECOMMENDATION: Prioritize experimental validation of other IFT/BBSome
+interactors with established ciliary or trafficking roles. WDR5-IFT
+interactions are LOW PRIORITY unless additional orthogonal evidence emerges.
+
+================================================================================
+11. COMPREHENSIVE REFERENCE LIST
+================================================================================
+
+STRUCTURE AND BIOCHEMISTRY:
+- Wysocka J, et al. (2005) WDR5 associates with histone H3 methylated at K4
+  and is essential for H3 K4 methylation and vertebrate development.
+  Cell 121(6):859-872. PMID: 15960975. DOI: 10.1016/j.cell.2005.03.036
+
+- Patel A, et al. (2008) WDR5 interacts with mixed lineage leukemia (MLL)
+  protein via the histone H3-binding pocket.
+  J Biol Chem 283(47):32158-32166. PMID: 18984161. DOI: 10.1074/jbc.M806936200
+
+- Avdic V, et al. (2010) Characterization of a novel WDR5-binding site that
+  recruits RbBP5 through a conserved motif to enhance methylation of histone
+  H3 lysine 4 by mixed lineage leukemia protein-1.
+  J Biol Chem 286(38):32967-32976. PMID: 20864525. DOI: 10.1074/jbc.M110.128132
+
+- Schapira M, et al. (2017) WD40 repeat domain proteins: a novel target class?
+  Nat Rev Drug Discov 16(11):773-786. PMID: 28959952. DOI: 10.1038/nrd.2017.179
+
+MYC INTERACTION:
+- Thomas LR, et al. (2015) Interaction with WDR5 promotes target gene
+  recognition and tumorigenesis by MYC.
+  Mol Cell 58(3):440-452. PMID: 25818646. DOI: 10.1016/j.molcel.2015.02.012
+
+- Biankin AV, et al. (2019) Interaction of the oncoprotein transcription
+  factor MYC with its chromatin cofactor WDR5 is essential for tumor maintenance.
+  PNAS 116(50):25260-25268. PMID: 31754012. DOI: 10.1073/pnas.1910391116
+
+CANCER BIOLOGY:
+- Guarnaccia AD, Tansey WP (2018) The histone H3 lysine 4 presenter WDR5 as
+  an oncogenic protein and novel epigenetic target in cancer.
+  Front Oncol 8:502. PMID: 30375494. DOI: 10.3389/fonc.2018.00502
+
+- Jiang H, et al. (2021) A selective WDR5 degrader inhibits acute myeloid
+  leukemia in patient-derived mouse models.
+  Sci Transl Med 13(611):eabj1578. PMID: 34586829.
+  DOI: 10.1126/scitranslmed.abj1578
+
+- Sun W, et al. (2014) Upregulated WDR5 promotes proliferation, self-renewal
+  and chemoresistance in bladder cancer via mediating H3K4 trimethylation.
+  Sci Rep 4:8293. PMID: 25164765. DOI: 10.1038/srep08293
+
+- Targeting WDR5/ATAD2 signaling by the CK2/IKAROS axis demonstrates
+  therapeutic efficacy in T-ALL. Blood 145(13):1407-1422 (2025).
+  DOI: 10.1182/blood.2024024613
+
+- N-MYC recruitment in neuroblastoma (2023) Oncogenesis 12:17.
+  PMID: 36918795. DOI: 10.1038/s41389-023-00477-z
+
+DEVELOPMENT AND PHENOTYPES:
+- Ang YS, et al. (2011) Wdr5 mediates self-renewal and reprogramming via the
+  embryonic stem cell core transcriptional network.
+  Cell 145(2):183-197. PMID: 21460836. DOI: 10.1016/j.cell.2011.03.020
+
+- Zhu L, et al. (2023) Wdr5 is essential for fetal erythropoiesis and
+  hematopoiesis. Exp Hematol Oncol 12:38.
+  PMID: 36935610. DOI: 10.1186/s40164-023-00385-3
+
+- Wei L, et al. (2017) WDR5 in porcine preimplantation embryos: expression,
+  regulation of epigenetic modifications and requirement for early development.
+  Biol Reprod 96(4):758-770. PMID: 28379447. DOI: 10.1093/biolreprod/iox023
+
+- WDR5 variants and neurodevelopmental disorder (2022)
+  Am J Hum Genet. DOI: 10.1016/j.ajhg.2022.07.001
+
+DRUG DISCOVERY:
+- Chen X, et al. (2023) Structure-based discovery of potent WD repeat domain 5
+  inhibitors that demonstrate efficacy and safety in preclinical animal models.
+  PNAS 120(10):e2211297120. PMID: 36706451. DOI: 10.1073/pnas.2211297120
+
+- Cao F, et al. (2014) Targeting MLL1 H3K4 methyltransferase activity in
+  mixed-lineage leukemia. Mol Cell 53(2):247-261.
+  PMID: 24389101. DOI: 10.1016/j.molcel.2013.12.001
+
+- Grebien F, et al. (2015) Pharmacological targeting of the Wdr5-MLL
+  interaction in C/EBPα N-terminal leukemia.
+  Nat Chem Biol 11(8):571-578. PMID: 26167873. DOI: 10.1038/nchembio.1859
+
+- Alicea-Velázquez NL, et al. (2016) Targeted disruption of the interaction
+  between WD-40 repeat protein 5 (WDR5) and mixed lineage leukemia (MLL)/SET1
+  family proteins specifically inhibits MLL1 and SETd1A methyltransferase
+  complexes. J Biol Chem 291(43):22357-22372. PMID: 27645523
+
+- Aho ER, et al. (2020) Discovery of WD repeat-containing protein 5 (WDR5)-MYC
+  inhibitors using fragment-based methods and structure-based design.
+  ACS Chem Biol 15(8):2354-2361. PMID: 32324990.
+  DOI: 10.1021/acschembio.9b01095
+
+- OICR-9429 in bladder cancer (2021) J Exp Clin Cancer Res 40:194.
+  PMID: 34154613. DOI: 10.1186/s13046-021-01989-5
+
+OTHER MECHANISMS:
+- Li Y, et al. (2020) WDR5 is a conserved regulator of protein synthesis gene
+  expression. Nucleic Acids Res 48(6):2924-2938.
+  PMID: 31965166. DOI: 10.1093/nar/gkz1225
+
+- Structural insights into the recognition of histone H3Q5 serotonylation by
+  WDR5. Science Advances 7(23):eabf4291 (2021).
+  DOI: 10.1126/sciadv.abf4291
+
+- Cheng Y, et al. (2020) p53 integrates temporal WDR5 inputs during
+  neuroectoderm and mesoderm differentiation of mouse embryonic stem cells.
+  Cell Rep 30(2):465-480. PMID: 32042918
+
+- Meng Q, et al. (2024) The NTE domain of PTENα/β promotes cancer progression
+  by interacting with WDR5 via its SSSRRSS motif.
+  Cell Death Dis 15(4):279. PMID: 38697997. DOI: 10.1038/s41419-024-06714-6
+
+CILIARY BIOLOGY (NO WDR5 CONNECTION):
+- Mukhopadhyay S, et al. (2010) TULP3 bridges the IFT-A complex and membrane
+  phosphoinositides to promote trafficking of G protein-coupled receptors into
+  primary cilia. Genes Dev 24(19):2180-2193.
+  PMID: 20889716. DOI: 10.1101/gad.1966210
+
+- Human IFT-A complex structures (2023) Cell Res.
+  DOI: 10.1038/s41422-023-00778-3
+
+CRYSTAL STRUCTURES:
+- PDB 3UR4: Crystal structure of human WD repeat domain 5 with compound
+- PDB 3SMR: Crystal structure of human WD repeat domain 5 with compound
+- PDB 7JTP: Crystal structure of PROTAC MS67 in complex with WDR5 and
+  pVHL:ElonginC:ElonginB
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+WDR5 is a multifunctional WD40-repeat protein that serves as a critical
+scaffolding component of chromatin-modifying complexes. Its essential roles
+in histone H3K4 methylation, MYC-mediated transcription, HOX gene regulation,
+and embryonic development make it a key player in both normal biology and
+disease.
+
+In cancer, WDR5 has emerged as a promising therapeutic target, particularly
+in MYC-driven malignancies and MLL-rearranged leukemias. While small molecule
+inhibitors have shown modest activity, WDR5 degraders like MS67 represent a
+significant advance with robust preclinical efficacy.
+
+Importantly, WDR5 has NO established connection to ciliary biology, IFT
+proteins, or TULP3, despite appearing in computational interaction predictions.
+This likely represents a false positive from structural modeling approaches.
+
+The field awaits clinical translation of WDR5-targeted therapeutics, with
+degrader molecules appearing most promising for achieving therapeutic benefit
+in cancer patients.
+
+================================================================================
+END OF REPORT
+================================================================================
