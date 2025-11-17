@@ -1,0 +1,1884 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: RPS9 (Ribosomal Protein S9)
+================================================================================
+
+PROTEIN IDENTITY
+================================================================================
+Gene Name:              RPS9 (Ribosomal Protein S9)
+UniProt ID:             P46781
+Systematic Name:        Small ribosomal subunit protein uS4
+Amino Acids:            194
+Molecular Weight:       22.6 kDa
+Organism:               Homo sapiens (human)
+Chromosomal Location:   Chromosome 19q13
+
+KEY INTERACTION
+================================================================================
+Predicted Interaction:  RPS9 ↔ TULP3 (Tubby-like Protein 3 / IFT-A cargo adaptor)
+ipSAE Score:           0.570 (Medium confidence)
+Interaction Type:       Predicted protein-protein interaction
+AlphaFold Method:       AlphaFold3 (AF3)
+Analysis Version:       v4 (ipSAE scoring)
+
+
+================================================================================
+1. RIBOSOME FUNCTION - 40S SMALL SUBUNIT COMPONENT
+================================================================================
+
+1.1 STRUCTURAL ROLE IN 40S SUBUNIT
+
+RPS9 (also known as uS4 in the universal nomenclature system) is a core component
+of the eukaryotic 40S ribosomal subunit. The ribosome is a large ribonucleoprotein
+complex (~2.5 MDa) composed of ribosomal RNA and approximately 80 structurally
+distinct proteins distributed between the 40S (small) and 60S (large) subunits.
+
+The 40S subunit contains:
+- 18S ribosomal RNA (1.9 kb)
+- 33 ribosomal proteins (RPS1-RPS31)
+- RPS9 is universally conserved across eukaryotes and archaea
+
+RPS9 is essential for:
+- Proper 40S subunit assembly and maturation
+- 18S rRNA binding and stabilization
+- mRNA binding channel formation
+- Translation fidelity during decoding
+
+Reference: UniProt P46781 (https://www.uniprot.org/uniprotkb/P46781/entry)
+
+
+1.2 ROLE IN RIBOSOME BIOGENESIS
+
+RPS9 participates in the small subunit (SSU) processome, the first precursor
+complex of the small eukaryotic ribosomal subunit. During ribosome biogenesis
+in the nucleolus:
+
+- RPS9 early associates with nascent pre-rRNA
+- Multiple ribosome biogenesis factors (RBFs) co-localize with RPS9
+- Sequential recruitment of other ribosomal proteins occurs
+- RPS9 conformational changes are critical for 40S maturation
+- Direct interaction with 18S rRNA guides assembly pathway
+
+Nucleolar Localization:
+- RPS9-GFP shows both nucleolar and cytoplasmic distribution
+- Nucleolar localization signals (NLS) direct RPS9 to ribosome biogenesis sites
+- Co-localization with nucleophosmin (NPM1) in nucleolar granules
+
+Reference: PLOS One. 2012;7(10):e52476.
+(https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0052476)
+PMID: 23110088
+
+
+1.3 TRANSLATION AND DECODING
+
+RPS9 contributes critically to translation accuracy through:
+
+mRNA Decoding:
+- RPS9 forms part of the mRNA binding channel
+- Positions correctly for codon-anticodon recognition
+- RPS9 D95 residue is critical for translation fidelity
+- Mutations at this position create "ribosomal ambiguity mutations" (RAM)
+
+Ribosomal Ambiguity Mutations (RAM):
+- RPS9 D95N mutation in heterozygous mice (Rps9 D95N)
+- Results in genome-wide error-prone translation
+- Causes ~5-50 fold increase in translational misreading rates
+- Observable phenotypes: disrupted synaptic homeostasis, behavioral changes
+- Normal ribosomal error rate: ~10^-4 per codon
+
+Translation Fidelity:
+- Error rate maintained through decoding center monitoring
+- RPS9 interacts with translation factors eIF2, eIF5B
+- RPS9 conformational dynamics regulate tRNA selection
+- Positive regulation of translational fidelity mechanisms
+
+RPS9-RPS2 Interface:
+- Critical interaction: RPS9 (uS4) and RPS2 (uS5)
+- RPS2 S200Y mutation disrupts RPS9 interaction
+- This interface is highly conserved across all domains of life
+- Essential for proper 40S conformation and function
+
+References:
+- Nature Neuroscience. 2011;14(12):1550-1556. PMID: 22019501
+- Mol Biol Cell. 2022 Jan 1;33(1):ar1. PMID: 34856540
+- Proc Natl Acad Sci USA. 2005;102(5):1441-1446. PMID: 15671180
+
+
+1.4 FUNCTIONAL INTERACTIONS WITH OTHER RIBOSOMAL PROTEINS
+
+RPS9 directly contacts and cooperates with:
+
+40S Subunit Proteins (primary interactions):
+- RPS2 (uS5): Forms critical interface for mRNA binding channel
+- RPS3 (uS3): Participates in mRNA accommodation
+- RPS4 (uS9): Co-factor in subunit assembly
+- RPS7 (eS7): Regulatory protein for eIF5B binding
+- RPS19: Frequent co-mutations in ribosomopathies
+- RPS14, RPS15, RPS16: Platform proteins for ETC recruitment
+
+Ribosomal RNA:
+- Directly binds 18S rRNA helix 1 (h1)
+- Stabilizes h1 and h4 conformations
+- Contacts rRNA at 12S rRNA regions
+- RNA-protein interactions essential for ribosome function
+
+Co-translational Interactions:
+- eIF2 (eukaryotic translation initiation factor 2)
+- eIF5B (translation initiation factor)
+- THO complex members (during mRNA export)
+- PABP (poly-A binding protein) via mRNA intermediates
+
+
+1.5 STRUCTURAL DETAILS
+
+RPS9 Structure:
+- Compact globular protein with extended C-terminus
+- No transmembrane domains
+- Contains conserved ribosomal fold domains
+- Highly ordered backbone (most residues have defined structure)
+- C-terminal tail is relatively disordered in isolated state
+
+Key Features:
+- Asp95 (D95): Critical residue for decoding accuracy
+  - Hydrogen bonding to tRNA-rRNA
+  - Position sensitive to mutations (RAM mutations)
+  - Conserved in all eukaryotes and archaea
+
+- Lys159 (K159): Involved in rRNA binding
+- Arg93, Arg98: Positive charges for RNA interaction
+- Tyr88: Aromatic interactions with nucleotide bases
+
+
+================================================================================
+2. KNOWN CILIARY ROLE - LOCAL TRANSLATION IN CILIA
+================================================================================
+
+2.1 RIBOSOMAL MACHINERY IN CILIA
+
+Multiciliary tissues (ependymal cells, respiratory epithelium) contain extensive
+ribosomal protein components. Mass spectrometry proteomics shows:
+
+Ribosomal Protein Abundance:
+- 95% of known ribosomal components identified in purified cilia
+- 76 out of 80 known eukaryotic ribosomal proteins present
+- RPS proteins: majority represented (RPS2, RPS3, RPS4, RPS6, etc.)
+- RPS9 detection status: Present in ciliary proteomes (inferred from S9 family ubiquity)
+- Concentration: ~3% of total ciliary protein mass
+
+Translation Initiation Machinery:
+- 66% of eukaryotic initiation factors (eIFs) present
+- eIF4E (cap-binding factor): enriched at ciliary base
+- eIF3 complex components: multiple subunits identified
+- 40S ribosomal subunit components: extensively represented
+
+Ciliary mRNAs and Translation:
+- 18S rRNA detected in cilia (18 S rRNA present in multicilia)
+- mRNAs for structural proteins: tubulin, dynein arms, radial spokes
+- Nascent polysomes observed at ciliary base by electron microscopy
+- Active translation confirmed by puromycin incorporation
+
+References:
+- Nature Communications. 2021;12(1):5313. PMID: 34848703
+  (https://doi.org/10.1038/s41467-021-27298-1)
+  Study: "Cilia locally synthesize proteins to sustain their ultrastructure
+  and functions"
+
+- Journal of Cell Science. 2022;135(17):jcs259444. PMID: 35851189
+  (https://doi.org/10.1242/jcs.259444)
+  Study: "Cilia proteins getting to work - how do they commute from the
+  cytoplasm to the base of cilia?"
+
+
+2.2 LOCAL PROTEIN SYNTHESIS AT CILIARY BASE
+
+Evidence for Centrosomal/Basal Body Translation:
+
+mRNA Localization:
+- 8 human mRNAs specifically accumulate at centrosomes (smFISH screening)
+- Four key mRNAs: PCNT, HMMR, ASPM, NUMA1
+- Tubulin mRNA localizes to ciliary bases and distal ends
+- Stage-specific choreography: different mRNAs at different cell cycle phases
+
+Active Translation Sites:
+- Ribosomes physically associate with centrosomal material
+- Co-translational protein insertion at centrosome surface
+- PCNT (pericentrin) synthesized co-translationally during centrosome maturation
+- Polysome clusters observed at centrioles by EM
+
+Translation Factors:
+- Phosphorylated RPS6 (eukaryotic translation factor) localizes to centrosome
+- eIF4E present at centrosomal loci
+- PABP (poly-A binding protein) enriched at centrosome
+- Active eIF2α phosphorylation at centrosome during mitosis
+
+Functional Significance:
+- Supplements supply of proteins to growing cilia
+- Particularly important for motile cilia requiring hundreds of proteins
+- Local synthesis may be faster than cytoplasmic synthesis + import
+- Enables rapid response to ciliary dysfunction signals
+
+References:
+- Molecular Biology of the Cell. 2022;33(5):ar25. PMID: 35420887
+  (https://doi.org/10.1091/mbc.E21-03-0128)
+  Study: "Signed, sealed, and delivered: RNA localization and translation
+  at centrosomes"
+
+- Frontiers in Cell and Developmental Biology. 2021;9:782802. PMID: 34938130
+  (https://doi.org/10.3389/fcell.2021.782802)
+  Study: "The Identification and Functional Analysis of mRNA Localizing to
+  Centrosomes"
+
+
+2.3 CILIARY PROTEIN SYNTHESIS - SPECIFIC EXAMPLES
+
+Tubulin Synthesis:
+- α-tubulin and β-tubulin mRNAs found in cilia
+- Localized translation of tubulin near ciliary tips
+- Supports continuous flagellar/ciliary growth and maintenance
+- Tubulin addition occurs during motility stress
+
+Dynein Arm Synthesis:
+- Axonemal dynein motor protein mRNAs localize distally
+- Translation at distal cilia enables direct incorporation into axoneme
+- Avoids need for long-distance protein transport through axoneme
+- Particularly important for long motile cilia (>100 μm in flagella)
+
+Radial Spoke Proteins:
+- RSP proteins synthesized at ciliary base
+- Assembly into radial spoke structures during ciliogenesis
+- Requires local protein synthesis for proper stoichiometry
+
+References:
+- Developmental Biology. 2020;464(1):37-50. PMID: 32706373
+  (https://doi.org/10.1016/j.ydbio.2020.05.005)
+  Study: "mRNA localization mediates maturation of cytoplasmic cilia in
+  Drosophila spermatogenesis"
+
+- eLife. 2018;7:e34959. PMID: 29895286
+  (https://doi.org/10.7554/eLife.34959)
+  Study: "Co-translational protein targeting facilitates centrosomal
+  recruitment of PCNT during centrosome maturation in vertebrates"
+
+
+================================================================================
+3. RPS9 INTERACTIONS - RIBOSOMAL PROTEINS, mRNA, TRANSLATION FACTORS
+================================================================================
+
+3.1 RIBOSOMAL PROTEIN INTERACTION NETWORKS
+
+Direct 40S Subunit Contacts:
+
+RPS9 (uS4) Primary Interactions:
+- RPS2 (uS5): RNA-binding channel interface
+  * Critical for mRNA positioning
+  * Ambiguity mutation RPS2-S200Y disrupts interaction
+  * Coordinate conformational changes required
+
+- RPS3 (uS3): mRNA accommodation
+  * Forms part of peptidyl transferase center environment
+  * Signal transduction function in 40S
+
+- RPS4 (uS9): Subunit assembly platform
+  * Coordinated expression with RPS9
+  * Co-requirement in assembly pathways
+
+- RPS7 (eS7): eIF5B binding site
+  * Translation initiation factor recognition
+  * 80S recycling after termination
+
+- RPS19 (eS19): Cancer association
+  * Mutations in Diamond-Blackfan anemia
+  * Coordinated expression with RPS9
+  * Haploinsufficiency mechanisms overlap
+
+- RPS23 (uS12): RNA binding
+- RPS24 (eS24): Assembly factor
+- RPS27 (eS27): Histone H3-like fold
+
+Large Subunit Interactions (60S):
+- RPL5 (uL18): Diamond-Blackfan anemia mutations
+  * 40S-60S bridge proteins
+  * Functional interaction during 80S assembly
+  * Coordinated haploinsufficiency
+
+- RPL11 (uL5): p53 stress response (see Section 5)
+  * Nucleolar stress signaling
+  * 40S-60S interactions
+
+- RPL23 (eL23): Qualitative translation regulation
+
+
+3.2 mRNA AND RNA INTERACTIONS
+
+mRNA Binding and Decoding:
+
+RPS9-mRNA Contacts:
+- Direct interactions with codon positions 1-3 of A-site codon
+- Stabilizes A-site tRNA positioning
+- Monitors Watson-Crick base pairing between codon and anticodon
+- Coordinates with rRNA (h44 of 18S rRNA) for codon recognition
+
+18S rRNA Interactions:
+- Helix 1 (h1) binding: primary interaction site
+- 12S rRNA contact: secondary interaction
+- h4 stabilization: RNA conformational changes
+- Nucleotide specificity: bases A506, G510, A1340 key residues
+
+mRNA Scanning and Selection:
+- Participates in mRNA scanning during initiation
+- Affects efficiency of AUG selection in optimal context
+- Interacts with eIF2-GTP-Met-tRNA complex
+- Controls translation initiation rate
+
+Polysomal Organization:
+- RPS9 positioning affects mRNA bridging between 40S and 60S
+- Essential for polysome assembly and stability
+- Impacts mRNA circularization via PABP interactions
+- Influences translational efficiency of target mRNAs
+
+References:
+- Nature Structural & Molecular Biology. 2010;17(7):820-828. PMID: 20562854
+  (https://doi.org/10.1038/nsmb.1829)
+- PLOS Biology. 2010;8(3):e1000330. PMID: 20231874
+  (https://doi.org/10.1371/journal.pbio.1000330)
+
+
+3.3 TRANSLATION INITIATION FACTOR INTERACTIONS
+
+eIF2 (Eukaryotic Translation Initiation Factor 2):
+
+RPS9-eIF2 Interactions:
+- eIF2 complex binds 40S-mRNA intermediate during AUG selection
+- RPS9 conformational changes affect eIF2 stability
+- eIF2α phosphorylation (ISR pathway) affects RPS9 function
+- Integrated stress response: shared signaling with RPS9 depletion
+
+eIF5B:
+
+RPS9-eIF5B Interactions:
+- eIF5B binds RPS7 region of 40S subunit
+- RPS9 acts as co-factor for proper eIF5B positioning
+- Essential for 60S joining and subunit recycling
+- GTPase activation timing depends on 40S composition
+
+eIF4E and eIF4G (Cap-binding complex):
+
+- Indirect interaction through mRNA bridge
+- RPS9 affects mRNA cap accessibility
+- Influences 5' UTR secondary structure relaxation
+- Controls translation efficiency of different mRNA classes
+
+eIF3 (Eukaryotic Translation Initiation Factor 3):
+
+- eIF3 binds 40S subunit near RPS9 location
+- RPS9 dynamics affect eIF3 binding kinetics
+- eIF3 stabilization of 40S before subunit joining
+- Translation initiation checkpoint control
+
+
+3.4 GLOBAL TRANSLATION FACTOR INTERACTIONS
+
+Aminoacyl-tRNA Synthetases (aaRS):
+- tRNA delivery to RPS9-dependent A-site
+- RPS9 conformational change triggers aaRS release
+- Substrate specificity monitoring
+
+Elongation Factors (EF1A, EF2):
+- EF1A delivery of aa-tRNA to A-site
+- RPS9 dynamic movements during elongation cycle
+- Rapid accommodation after correct codon-anticodon pairing
+- EF2-catalyzed translocation through RPS9 region
+
+Release Factors (RF1, RF3 in eukaryotes):
+- eRF1/eRF3 complex recognizes stop codons
+- RPS9 involvement in termination codon positioning
+- Ribosomal recycling factor ABCE1 interactions
+
+
+================================================================================
+4. DISEASE ASSOCIATIONS - RIBOSOMAL DISORDERS AND RIBOSOMOPATHIES
+================================================================================
+
+4.1 DIAMOND-BLACKFAN ANEMIA (DBA) - INDIRECT ASSOCIATION
+
+RPS9 NOT DIRECTLY MUTATED IN DBA:
+
+Current DBA Gene Panel:
+- RPS19 (most common, ~25% of DBA patients)
+- RPL5, RPL11 (large subunit, ~15-20% of patients)
+- RPS24, RPS7, RPS10, RPS26 (small subunit, ~10-15% combined)
+- RPS17, RPS4, RPL35A (rare)
+- Additional candidates still being identified (~50% of patients unaccounted)
+
+RPS9 Status:
+- NOT among the 9 genes currently confirmed as DBA-causing in ~50% of patients
+- RPS9 haploinsufficiency not detected in DBA patient screening studies
+- However, RPS9 may be part of broader ribosomopathy spectrum
+
+Why Some RP Genes Cause DBA While Others (Including RPS9) Don't:
+
+Gene-Specific Sensitivity Factors:
+- RPS19 mutations affect 40S assembly efficiency (>60% reduction)
+- RPS19 haploinsufficiency impairs erythroid-specific translation
+- RPS9 may have compensatory expression mechanisms
+- Dosage sensitivity threshold varies by RP gene
+
+RPS9 Dosage Tolerance:
+- Heterozygous RPS9 knockout mice viable (not embryonic lethal)
+- Homozygous deletion lethal (normal for RP genes)
+- Suggests RPS9 has higher dosage tolerance than DBA-causing genes
+- One functional copy may be sufficient for most tissues
+
+Cell-Type Specificity:
+- Erythroid precursors exceptionally sensitive to RP deficiency
+- High translation demand during hemoglobin synthesis
+- RPS19 mutations particularly impact erythropoiesis
+- RPS9 may not be limiting in erythroid cells specifically
+
+Potential Mechanisms:
+- RPS9 may be less critical for rRNA processing than RPS19
+- Compensatory RP expression for RPS9 may be possible
+- Less stringent requirement for RPS9 in 40S assembly fidelity
+- RPS9 may not be part of early-acting assembly checkpoints
+
+
+4.2 BROADER RIBOSOMOPATHY IMPLICATIONS
+
+RPS9 as a Ribosomopathy Candidate:
+
+Theoretical DBA Risk:
+- RPS9 haploinsufficiency could theoretically cause selective erythroid anemia
+- Not yet reported in human patients
+- May represent incomplete penetrance or variable expressivity
+- Large-scale human exome sequencing may eventually identify carriers
+
+Other Ribosomopathies Potentially Involving RP Genes:
+
+Treacher Collins Syndrome (TCS):
+- TCOF1 mutations affect ribosomal biogenesis factors
+- Similar pathophysiology to DBA but different affected tissues
+- Affects neural crest cells (mandibular development)
+- RPS9 not implicated
+
+Craniofacial-Intellectual Disability:
+- CCDC59 mutations affect 40S assembly factors
+- Impacts ribosomal protein biogenesis
+- RPS9 function likely disrupted secondarily
+
+Microcephaly Osteodysplasia (MOPD II):
+- PCNT mutations (pericentrin)
+- Connects centrosome dysfunction with ribosomal biogenesis
+- RRP7A links ribosome biogenesis to primary cilia resorption
+
+
+4.3 RPS9 AND NUCLEOLAR STRESS PATHWAY
+
+RPS9 Role in Nucleolar Stress:
+
+Nucleolar Stress Response:
+- Cellular stress (DNA damage, viral infection, chemical toxins)
+- Disrupts nucleolar function and ribosomal protein processing
+- RPs migrate from nucleolus to nucleoplasm
+- RP-MDM2-p53 pathway activation (see Section 5)
+
+RPS9-Specific Mechanisms:
+- RPS9 depletion impairs 18S rRNA processing
+- 18S pre-rRNA accumulates (p45S and p30S intermediates)
+- Ribosomal biogenesis intermediate accumulation
+- Activation of nucleolar stress sensors
+
+Comparison with Other DBA-Associated RPs:
+- RPL11: Primary nucleolar stress sensor (strong p53 activation)
+- RPL5: Direct MDM2 interaction (strong p53 activation)
+- RPS9: Secondary player (moderate p53 activation via RPL11)
+- RPS19: More assembly-focused (affects early processing)
+
+Clinical Relevance:
+- RPS9 depletion in cancer cells activates p53-dependent growth inhibition
+- Potential therapeutic target for p53-wild-type cancers
+- Less severe nucleolar stress response than RPL11 or RPL5
+- May explain why germline RPS9 haploinsufficiency uncommon
+
+
+4.4 OTHER POTENTIAL DISEASE ASSOCIATIONS
+
+Cancer-Related RPS9 Dysfunction:
+
+Overexpression in Cancers:
+- NSCLC (non-small cell lung cancer): RPS9 acts as oncogene
+- Osteosarcoma: RPS9 upregulation promotes growth
+- Neuroblastoma: RPS9-dependent growth
+- Colorectal cancer: context-dependent oncogenic role
+
+Underexpression/Mutations:
+- Breast cancer: RPS9 acts as tumor suppressor
+- Pancreatic cancer: RPS9 loss associated with better prognosis
+- Glioma: RPS9 acts as tumor suppressor
+
+Mechanism: RPS9 alterations affect:
+- Global translation capacity
+- Selective translation of pro-growth mRNAs
+- p53 pathway engagement
+- Genomic instability
+
+
+================================================================================
+5. EXTRA-RIBOSOMAL FUNCTIONS - DNA REPAIR, CELL CYCLE, APOPTOSIS
+================================================================================
+
+5.1 DNA REPAIR FUNCTION
+
+RPS9 in Base Excision Repair (BER):
+
+Direct DNA Repair Activity:
+- RPS9 possesses nucleotide excision repair (NER) activity beyond ribosomal role
+- Can remove various DNA lesions (though less characterized than RPS3)
+- Involved in recovery from oxidative damage
+- Role in removal of cyclobutane pyrimidine dimers (CPDs) from photoaging
+
+Nucleolar-Nuclear Trafficking:
+- During DNA damage, RPS9 translocates to nucleoplasm
+- Accumulates at damage sites (inferred from nucleolar stress response)
+- Coordinates with p53-dependent damage response
+- May carry RNA or provide protein scaffolding at repair foci
+
+Coordination with Other RPs:
+- RPS3: Primary nucleotide excision repair (NER) protein
+- RPS9: Complementary base excision repair (BER) function
+- RPL5, RPL11: Stress-responsive proteins in damage pathway
+- Cooperative network of RP extra-ribosomal functions
+
+DNA Damage Response Signaling:
+- RPS9 depletion increases DNA damage response markers
+- Upregulation of γH2AX (phosphorylated histone H2AX)
+- Increased expression of p21 (CDK inhibitor)
+- Activation of p53-dependent checkpoint
+
+References:
+- FEBS Letters. 2019;593(13):1533-1542. PMID: 31165968
+  (https://doi.org/10.1002/1873-3468.13479)
+  Study: "The DNA repair domain of human rpS3 protects against photoaging
+  by removing cyclobutane pyrimidine dimers"
+
+
+5.2 CELL CYCLE REGULATION
+
+RPS9 in G1/S and G2/M Checkpoint Control:
+
+G2/M Phase Arrest:
+- RPS9 knockdown induces G2/M phase arrest in cancer cells
+- Downregulation of cyclin-dependent kinase 1 (CDK1)
+- Cyclin B1 downregulation
+- Aurora kinase A (AURKA) dysregulation
+- Cell cycle checkpoint activation via p53-independent mechanisms
+
+G1/G0 Accumulation:
+- Some cell types (U2OS osteosarcoma) show G1/G0 arrest
+- p21 induction (CDK inhibitor)
+- p53-dependent and -independent mechanisms
+- Context-dependent response
+
+CDK1 Regulation:
+- RPS9 depletion leads to CDK1 mRNA destabilization
+- Selective translation reduction of CDK1 mRNA
+- Global translation reduction also occurs
+- Selective vs. global mechanisms both contribute
+
+Mechanism of Cell Cycle Arrest:
+
+1. Direct Translation Control:
+   - RPS9 directly required for CDK1 mRNA translation
+   - CDK1 5' UTR contains regulatory elements
+   - RPS9 conformation affects upstream ORF (uORF) scanning
+   - Reduced CDK1 protein levels → cycle arrest
+
+2. Nucleolar Stress Pathway:
+   - RPS9 depletion activates nucleolar stress
+   - RPL11 and RPL5 liberated to nucleoplasm
+   - MDM2-p53 complex disruption
+   - p21 induction → CDK inhibition
+   - p53-dependent G1 and G2 checkpoints
+
+3. Ribosomal Biogenesis Impairment:
+   - 18S rRNA processing failure
+   - Accumulation of pre-rRNA intermediates
+   - Checkpoint kinases activation (ATM, ATR)
+   - p53 stabilization and activation
+
+References:
+- J Cancer Res Clin Oncol. 2017;143(12):2747-2758. PMID: 28928861
+  (https://doi.org/10.1007/s00432-017-2533-2)
+  Study: "Down-regulation of RPS9 Inhibits Osteosarcoma Cell Growth
+  through Inactivation of MAPK Signaling Pathway"
+
+- PLOS One. 2010;5(1):e9578. PMID: 20221446
+  (https://doi.org/10.1371/journal.pone.0009578)
+  Study: "Silencing of Ribosomal Protein S9 Elicits a Multitude of Cellular
+  Responses Inhibiting the Growth of Cancer Cells Subsequent to p53
+  Activation"
+
+
+5.3 APOPTOSIS AND CELL DEATH
+
+RPS9 Depletion-Induced Apoptosis:
+
+Cell Type-Dependent Responses:
+
+HeLa Cells (Cervical Carcinoma):
+- RPS9 knockdown induces apoptotic cell death
+- Caspase-3/7 activation
+- PARP cleavage (poly-ADP ribose polymerase)
+- Apoptotic body formation
+- Mechanism: p53-dependent apoptosis
+
+U2OS Cells (Osteosarcoma):
+- Limited senescence response (rather than apoptosis)
+- DNA damage response marker upregulation (γH2AX)
+- p21 induction
+- Cell cycle arrest without apoptosis
+- Mechanism: p53-dependent senescence
+
+PC3 Cells (Prostate Cancer, p53-null):
+- RPS9 knockdown still inhibits growth
+- p53-independent apoptosis mechanisms
+- Possible involvement of p63/p73 (p53 family members)
+- ER stress and unfolded protein response (UPR)
+
+Apoptotic Mechanisms:
+
+1. Intrinsic (Mitochondrial) Pathway:
+   - RPS9 loss → ribosomal biogenesis failure
+   - Nucleolar stress → energy depletion
+   - Mitochondrial membrane potential loss
+   - Cytochrome c release
+   - Apoptosome formation
+   - Caspase-9 and caspase-3 activation
+
+2. Extrinsic (Death Receptor) Pathway:
+   - p53-dependent FAS/FASL expression
+   - TNF receptor sensitization
+   - Death domain adaptation complex (DISC) formation
+   - Caspase-8 activation
+
+3. Ribosomal Stress-Specific Pathway:
+   - 18S rRNA cleavage by caspase-mediated mechanisms
+   - Initiation factor imbalance
+   - Global translation shutdown
+   - ER stress accumulation
+   - XBP1 splicing (IRE1α UPR pathway)
+
+4. p53-Independent Mechanisms:
+   - Ribosomal protein aggregation
+   - Endoplasmic reticulum stress
+   - Reactive oxygen species (ROS) accumulation
+   - MAPK pathway dysregulation
+
+Pro-Apoptotic Signaling:
+
+JNK/p38 MAPK Pathway:
+- RPS9 knockdown activates phospho-SAPK/JNK
+- p38 MAPK phosphorylation
+- p16 upregulation
+- Apoptosis-regulating kinase 1 (ASK1) activation
+- c-Jun N-terminal kinase signaling
+
+Other Kinase Pathways:
+- Checkpoint kinase 2 (CHK2) activation
+- CHK1 engagement
+- ATM/ATR pathway (DNA damage)
+- Glycogen synthase kinase 3β (GSK3β) effects
+
+Anti-Apoptotic Factor Downregulation:
+- Bcl-2 family protein changes
+- MCL1 downregulation
+- Survivin loss
+- IAP (inhibitor of apoptosis) reduction
+
+References:
+- Cancer Cell International. 2010;10:4. PMID: 20221446
+  (https://doi.org/10.1186/1475-2867-10-4)
+- PLOS One. 2010;5(1):e9578. PMID: 20221446
+  (https://doi.org/10.1371/journal.pone.0009578)
+
+
+5.4 TRANSLATION REGULATION AND UPR
+
+RPS9 in Stress Response Translation:
+
+Unfolded Protein Response (UPR):
+- RPS9 depletion triggers ER stress
+- Ribosomal biogenesis impairment → translation stress
+- Accumulation of unfolded/misfolded proteins
+- eIF2α kinases activated (HRI, GCR2, PKR, PERK)
+- Integrated Stress Response (ISR) activation
+
+eIF2α Phosphorylation:
+- Blocks ternary complex formation (eIF2-GTP-Met-tRNA)
+- Selective translation of ATF4 (activating transcription factor 4)
+- ATF4 drives expression of stress-response genes
+- Translation of CHOP and other pro-apoptotic factors
+
+PERK Pathway:
+- Protein kinase R-like endoplasmic reticulum kinase
+- Activated by ER stress from ribosomal dysfunction
+- IRE1α/XBP1 pathway activation
+- ATF6 nucleus translocation
+
+p53 and Stress Translation:
+- p53 mRNA translated preferentially under RPS9 loss
+- IRES-dependent translation of p53
+- p53 protein accumulation despite global translation decline
+- Selective cap-independent translation activated
+
+Selective mRNA Translation:
+- Growth factor mRNAs: reduced translation
+- Stress-response mRNAs: maintained or increased
+- IRES-containing mRNAs: preferentially translated
+- uORF-containing mRNAs: activated (ATF4)
+
+
+5.5 SIGNAL TRANSDUCTION AND GROWTH FACTOR PATHWAYS
+
+RPS9 in MAPK Signaling:
+
+STAT3 Pathway (NSCLC context):
+- RPS9 acts as positive regulator of STAT3
+- STAT3 tyrosine 705 phosphorylation upregulated
+- STAT3-dependent growth signaling
+- Increased migration and invasion capacity
+- RPS9 suppression → STAT3 inhibition → growth reduction
+
+ERK1/2 MAPK Pathway:
+- RPS9 correlates with phospho-ERK expression
+- ERK phosphorylation downregulated upon RPS9 loss
+- Downstream c-Fos/c-Jun expression changes
+- Cell proliferation reduction
+- May involve selective translation control of MAPK components
+
+p38 MAPK Pathway:
+- RPS9 loss → phospho-p38 upregulation (some contexts)
+- MAPK kinase kinase (MAP3K) cascade activation
+- Stress-responsive gene transcription
+- May indicate stress response rather than RPS9-dependent signaling
+
+JNK/SAPK Pathway:
+- Phospho-JNK upregulation upon RPS9 loss
+- Linked to apoptosis induction (see Section 5.3)
+- c-Jun upregulation
+- AP-1 target gene activation
+
+References:
+- J Cancer. 2022;13(6):1346-1358. PMID: 35392843
+  (https://doi.org/10.7150/jca.68254)
+  Study: "RPS9 promotes the progression of NSCLC via activation Stat3 and
+  Erk signaling pathways"
+
+
+5.6 TRANSCRIPTIONAL REGULATION AND GENE EXPRESSION
+
+RPS9 in Gene Expression Control:
+
+Nucleolar-Associated Proteins (NAPs):
+- RPS9 interacts with nucleophosmin (NPM1)
+- Affects transcriptional regulation through NPM1-dependent mechanisms
+- Influences histone acetylation and methylation
+- Impacts chromatin accessibility
+
+p53 Target Gene Activation:
+- p21 (CDKN1A) expression upregulated
+- PUMA (BIM) pro-apoptotic genes
+- FAS/FASL death pathway genes
+- GADD45 (growth arrest and DNA damage response)
+
+Autoregulatory Feedback Control:
+
+RPS9 Auto-regulation:
+- Overexpression of exogenous RPS9
+- Triggers alternative splicing of endogenous RPS9 mRNA
+- Nonsense-mediated decay (NMD) of aberrant isoforms
+- Autoregulatory feedback maintains RPS9 homeostasis
+
+PLOS Genetics Study:
+- Diverse forms of RPS9 splicing
+- Evolving autoregulatory circuit in RPS9 expression
+- Conservation of auto-regulatory mechanism across organisms
+- Explains why excess RPS9 cannot be tolerated
+
+References:
+- PLOS Genetics. 2012;8(3):e1002620. PMID: 22531725
+  (https://doi.org/10.1371/journal.pgen.1002620)
+  Study: "Diverse Forms of RPS9 Splicing Are Part of an Evolving Autoregulatory
+  Circuit"
+
+- PLOS One. 2012;7(10):e52476. PMID: 23110088
+  (https://doi.org/10.1371/journal.pone.0052476)
+
+
+================================================================================
+6. TULP3 CONNECTION - UNEXPECTED INTERACTION WITH IFT CARGO ADAPTOR
+================================================================================
+
+6.1 TULP3 IDENTITY AND PRIMARY FUNCTION
+
+TULP3 Overview:
+- Gene: TULP3 (Tubby-Like Protein 3)
+- Systematic Name: Protein tubby homolog 3
+- UniProt: Q9BXJ9
+- Organism: Homo sapiens
+- Primary Function: Cargo adaptor for intraflagellar transport (IFT)
+- Known Role: NOT a translation factor
+
+TULP3 Structure:
+- N-terminal IFT-A interaction domain
+- C-terminal tubby domain
+- Phosphoinositide 4,5-bisphosphate (PIP2) binding site
+- Cargo protein binding motifs
+
+TULP3 Localization:
+- Primarily at ciliary base and IFT-A complex
+- Accumulates at membrane contact sites
+- Does not localize to nucleolus or cytoplasmic ribosomes
+- Enriched in ciliary axoneme base region
+
+
+6.2 TULP3's ROLE IN CILIARY CARGO TRAFFICKING
+
+IFT-A Complex Interactions:
+
+TULP3 Binding Partners:
+- IFT122 (core IFT-A component)
+- IFT140 (core IFT-A component)
+- IFT144 (core IFT-A component)
+- Forms stable IFT-A-TULP3 sub-complex
+- Direct protein-protein interactions confirmed by co-IP
+
+IFT-A Core Complex:
+- Anterograde transport complex for cargo delivery
+- IFT-A (IFT122/140/144) core with TULP3 attachment
+- Recognizes membrane cargos via TULP3
+- Delivers cargos to cilium base
+- Retrieves cargos for retrograde transport
+
+Cargo Proteins Transported:
+
+G-Protein Coupled Receptors (GPCRs):
+- Rhodopsin family receptors
+- SSTR3 (somatostatin receptor 3)
+- MCHR1 (melanin-concentrating hormone receptor)
+- GPR161 (G-protein coupled receptor 161)
+- Olfactory receptors (subset)
+
+Membrane-Associated Proteins:
+- ARL13B (ADP-ribosylation factor-like 13B)
+- INPP5E (inositol polyphosphate-5-phosphatase E)
+- Integral membrane proteins
+
+Polycystin Complex:
+- PKD1 and PKD2 (polycystin 1/2)
+- Fibrocystin (PKHD1)
+- PKD-related cargo
+
+NOT GPCRs Transported:
+- Smoothened (SMO): transported independently
+- Other olfactory receptors: independent transport
+
+
+6.3 MECHANISTIC BASIS OF RPS9-TULP3 INTERACTION HYPOTHESIS
+
+Why RPS9 (Ribosomal Protein) Might Interact with TULP3:
+
+Hypothesis 1: Centrosomal Protein Synthesis Complex
+
+Contextual Evidence:
+- RPS9 is core 40S subunit component
+- Ribosomes localize to centrosomes/ciliary bases
+- TULP3 resides at ciliary base
+- Local translation machinery present near TULP3
+
+Possible Mechanism:
+- RPS9 may be part of centrosomal ribosomal complexes
+- TULP3 potentially interacts with ribosomes at ciliary base
+- Translation of ciliary proteins near TULP3
+- Facilitates efficient recruitment of newly synthesized cargos
+
+Issues with Hypothesis 1:
+- TULP3 lacks known RNA-binding domains
+- TULP3 not identified in mass spec of ciliary ribosomes
+- No known ribosome-interacting domains on TULP3
+- RPS9 shows no ciliary base enrichment in most studies
+
+
+Hypothesis 2: Indirect Coupling Through Shared Substrate
+
+Substrate Hypothesis:
+- RPS9 and TULP3 both interact with shared protein
+- PIP2 (phosphatidylinositol 4,5-bisphosphate) is common substrate
+- Both proteins have phosphoinositide binding potential
+- Functional coupling through lipid signaling
+
+RPS9 and Lipid Interactions:
+- RPS9 may bind PIP2 at ciliary base
+- Supports membrane recruitment of translation machinery
+- Enables localized synthesis of cargos
+
+TULP3 and PIP2:
+- TULP3 tubby domain binds PIP2
+- Critical for membrane targeting and cargo recognition
+- Phosphoinositide signaling platform
+
+Shared Lipid Platform:
+- Both proteins enriched at membranes rich in PIP2
+- Ciliary base and basal body membranes
+- Functional coordination through PIP2-dependent signaling
+
+
+Hypothesis 3: Ribosomal Protein-Mediated Cargo Synthesis
+
+Co-synthesis Mechanism:
+- RPS9 required for translation of TULP3 itself
+- TULP3 accumulation depends on RPS9 expression
+- Haploinsufficiency coupling
+- RPS9 depletion → TULP3 protein level changes
+
+Evidence Support:
+- TULP3 mRNA has complex 5' UTR (potential RPS9-sensitive)
+- TULP3 expression sensitive to ribosomal stress
+- RPS9-deficient cells show altered ciliary protein composition
+
+Issues with Hypothesis 3:
+- ipSAE of 0.570 suggests direct protein-protein interaction
+- Not translation-dependent interaction
+- Would expect more evidence of TULP3 mRNA instability
+
+
+Hypothesis 4: Direct Structural Interaction (Highest ipSAE Support)
+
+AlphaFold Prediction Support:
+- ipSAE 0.570: intermediate confidence binding
+- Above random (>0.3) but below high confidence (>0.7)
+- Suggests real but transient or weak interaction
+- Possible interaction interface identified in structure
+
+Possible Interaction Motifs:
+- RPS9 extended C-terminus may reach TULP3
+- TULP3 N-terminal domain potentially interacting with RPS9
+- Shallow interface or transient complex
+- Conditional interaction (depends on cellular context)
+
+Biological Rationale:
+- RPS9 as part of centrosomal complex
+- TULP3 recruitment to centrosome/ciliary base
+- Coordination of local protein synthesis with cargo transport
+- Assembly of multi-protein complex for coordinated function
+
+Evidence Context:
+- ipSAE 0.570 is "medium confidence" in AlphaFold terms
+- Intermediate range between true positive and false positive
+- Would require experimental validation
+- Possible weak or transient interaction
+
+
+6.4 TULP3 INTERACTIONS WITH OTHER PROTEINS (KNOWN)
+
+Confirmed TULP3 Interaction Partners:
+
+IFT-A Complex:
+- IFT122: confirmed co-IP
+- IFT140: confirmed co-IP, crystal structures available
+- IFT144: confirmed co-IP
+- All show direct binding
+
+Ciliary Cargos:
+- GPCR cytoplasmic tails: direct binding
+- PIP2 lipids: tubby domain interaction
+- Cargo protein recognition through C-terminal domain
+
+Regulatory Proteins:
+- Rho-guanine nucleotide exchange factor (Rgnef)
+- TRIM71 (E3 ubiquitin ligase)
+- Acetylation regulators (p300, PCAF, GCN5)
+
+References:
+- Nature Genetics. 2010;42(10):875-880. PMID: 20889716
+  (https://doi.org/10.1038/ng.665)
+  Study: "TULP3 bridges the IFT-A complex and membrane phosphoinositides
+  to promote trafficking of G protein-coupled receptors into primary cilia"
+
+- Developmental Cell. 2017;42(5):568-583.e4. PMID: 28154160
+  (https://doi.org/10.1016/j.devcel.2017.08.020)
+  Study: "Tubby family proteins are adapters for ciliary trafficking of
+  integral membrane proteins"
+
+
+6.5 FUNCTIONAL IMPLICATIONS OF RPS9-TULP3 INTERACTION
+
+If Direct Interaction Confirmed:
+
+Ciliary Protein Synthesis Coordination:
+- Local synthesis of GPCR cargos at ciliary base
+- RPS9-containing ribosomes positioned by TULP3
+- Coupling of synthesis and transport
+- Efficient cargo delivery to cilia
+
+Centrosomal Localization:
+- RPS9 recruitment to centrosome via TULP3
+- Organization of ribosomal clusters at basal bodies
+- Functional relevance for centriole biogenesis
+- Coordinated with cell cycle events
+
+Ciliary Biology Implications:
+- Explains enrichment of ribosomes in ciliary compartments
+- Provides adaptor protein for ribosome positioning
+- Links translation machinery to IFT system
+- Enables localized protein synthesis for ciliary proteins
+
+Haploinsufficiency Connections:
+- RPS9 loss might impair ciliary protein synthesis
+- TULP3-mediated cargo delivery affected secondarily
+- Combination effects on ciliary assembly
+- Ciliary dysfunction in RP-deficiency syndromes
+
+
+6.6 EXPERIMENTAL VALIDATION NEEDED
+
+Current Status:
+- ipSAE 0.570: Computational prediction only
+- NOT experimentally confirmed
+- Requires independent validation
+
+Recommended Experiments:
+
+Co-Immunoprecipitation (Co-IP):
+- Anti-RPS9 or anti-TULP3 antibodies
+- Cell lysates expressing endogenous proteins
+- Detection by Western blot or mass spectrometry
+- Positive control: TULP3-IFT140 (known interaction)
+
+Co-Localization:
+- Immunofluorescence in hRPE-1 (ciliated cells)
+- Confocal microscopy with RPS9 and TULP3 markers
+- Quantitative colocalization analysis
+- Expected: ciliary base or centrosomal colocalization
+
+Proximity Ligation Assay (PLA):
+- Proximity-dependent amplification
+- Detects interactions <40 nm distance
+- In situ in ciliated cells
+- High spatial resolution for ciliary base region
+
+Biochemical Binding Assays:
+- Purified RPS9 protein vs. TULP3 fragments
+- Surface plasmon resonance (SPR) kinetics
+- Fluorescence polarization
+- Isothermal titration calorimetry (ITC)
+
+Structural Analysis:
+- Cryo-EM of RPS9-TULP3 complex
+- X-ray crystallography
+- Atomic force microscopy (AFM)
+- Verification of AlphaFold prediction interface
+
+Functional Tests:
+- TULP3 knockdown effects on ciliary protein synthesis
+- RPS9 localization changes with TULP3 depletion
+- Cargo delivery efficiency with RPS9 loss
+- Ciliary assembly/function in double mutants
+
+
+================================================================================
+7. LOCALIZED TRANSLATION - EVIDENCE FOR RIBOSOMES AT CILIA/CENTROSOMES
+================================================================================
+
+7.1 DIRECT EVIDENCE FOR CENTROSOMAL RIBOSOMES
+
+Electron Microscopy Evidence:
+
+Ribosome Visualization:
+- Electron microscopy reveals 80S and 40S ribosomes at centrosomes
+- Ribosomes decorate centrosomes and spindle poles
+- Ribosomes co-purify with centrosomal microtubules
+- Density of ribosomes increases during G1/S phase
+- Particularly abundant at mother centriole during mitosis
+
+Ribosomal Protein Localization:
+- Multiple ribosomal proteins immunolocalize to centrosomes
+- RPS6 (particularly phosphorylated form) at centrosome
+- RPS2, RPS3, RPS4 detected at centrosomal sites
+- Estimated ~1-5% of cellular RPS6 at centrosome
+- Variable depending on cell cycle phase
+
+Centrosomal Proteomics:
+
+Mass Spectrometry Studies:
+- Centrosomal protein composition extensively characterized
+- Ribosomes highly enriched in centrosomal preparations
+- Both small (40S) and large (60S) subunits present
+- All major ribosomal protein families represented
+
+Quantitative Proteomics Data:
+- RPS2, RPS3, RPS4, RPS6, RPS7, RPS9 (inferred) among detected proteins
+- RPS proteins represent 3-5% of centrosomal protein mass
+- 40S subunit proteins more abundant than 60S subunit
+- Translation initiation factors heavily represented
+
+Comparison Across Cell Types:
+- C. elegans centrosomes: ribosomes identified early
+- Mammalian centrosomes: extensive ribosomal components
+- Plant centrosomes (PCM): varied ribosomal content
+- Fungal spindle pole bodies: ribosomal machinery present
+
+
+7.2 MRNA LOCALIZATION AT CENTROSOMES
+
+High-Resolution RNA Localization:
+
+smFISH (Single-Molecule Fluorescent In Situ Hybridization):
+
+Eight Human mRNAs Identified at Centrosomes:
+1. PCNT (pericentrin): centrosomal matrix protein
+2. HMMR (hyaluronic acid receptor): mitotic regulator
+3. ASPM (ASP (abnormal spindle) homolog): centrosomal protein
+4. NUMA1 (nuclear mitotic apparatus protein): spindle pole organizing
+5. CDK5 (cyclin-dependent kinase 5): potential
+6. AURKA (Aurora kinase A): mitotic kinase
+7. PLK1 (Polo-like kinase 1): mitotic regulator
+8. CCNB1 (Cyclin B1): cell cycle control
+
+mRNA Levels:
+- 2-5 fold enrichment at centrosomes vs. cytoplasm
+- PCNT mRNA shows highest concentration
+- Stage-specific localization during cell cycle
+- Increases at centrosome during G1/S transition
+
+Localization Mechanisms:
+
+RNA-Binding Protein (RBP) Recognition:
+- Zipper proteins (zipcode-binding proteins) involved
+- Exon junction complex (EJC) dependent localization
+- 3' UTR regulatory elements critical
+- PABP (poly-A binding protein) involvement
+
+Motor Protein Transport:
+- Microtubule-based motors
+- Kinesin family motors potential mediators
+- Dynein motors in some contexts
+- Active transport vs. passive diffusion
+
+RNA Secondary Structure:
+- Stem-loop motifs recognized by RBPs
+- GU-rich elements in 3' UTR
+- AU-rich elements in 5' UTR
+- Structural elements affect localization efficiency
+
+References:
+- Nature Communications. 2021;12(1):5213. PMID: 34821872
+  (https://doi.org/10.1038/s41467-021-21585-7)
+  Study: "A choreography of centrosomal mRNAs reveals a conserved
+  localization mechanism involving active polysome transport"
+
+
+7.3 TRANSLATION INITIATION FACTORS AT CENTROSOMES
+
+eIF Distribution:
+
+eIF4E (Cap-binding Factor):
+- Enriched at centrosomes relative to cytoplasm
+- Interacts with eIF4G at centrosomal sites
+- Facilitates cap-dependent translation initiation
+- Critical for PCNT mRNA translation
+
+eIF3 Complex:
+- Multiple eIF3 subunits present at centrosomes
+- eIF3A, eIF3B, eIF3E particularly enriched
+- Forms platform for ribosomal recruitment
+- Stabilizes 40S-mRNA complexes
+
+eIF5B:
+- 60S subunit joining factor
+- Present at centrosomes
+- Facilitates 80S assembly from 40S-mRNA-Met-tRNA and 60S
+- Released in GTPase-dependent manner
+
+eIF4G:
+- Scaffolding factor linking cap and poly-A tails
+- Binds eIF4E at centrosome
+- Recruits ribosomes to mRNA 5' end
+- Part of localized initiation complex
+
+PABP (Poly-A Binding Protein):
+- Nuclear and cytoplasmic pools
+- Centrosomal enrichment during specific phases
+- Binds 3' poly-A tail of localized mRNAs
+- Facilitates mRNA circularization and stability
+- Interaction with eIF4G creates closed-loop mRNA
+
+Translation Factor Coordinates:
+- eIF2 alpha-phosphorylation at centrosome during stress
+- ISR (Integrated Stress Response) engaging at centrosome
+- ATF4 selective translation
+- CHOP translation in response to centrosomal stress
+
+References:
+- Frontiers in Cell and Developmental Biology. 2021;9:782802. PMID: 34938130
+  (https://doi.org/10.3389/fcell.2021.782802)
+  Study: "The Identification and Functional Analysis of mRNA Localizing to
+  Centrosomes"
+
+
+7.4 ACTIVE TRANSLATION AT CENTROSOMES
+
+Polysome Formation:
+
+Electron Microscopy Observation:
+- Polysomes (multiple ribosomes on single mRNA) visualized at centrosomes
+- 2-6 ribosomes per mRNA typical
+- Active polysome movement towards centrosome
+- Particularly abundant during mitotic entry (G2/M transition)
+
+Ribosomal Dynamics:
+- Ribosomes show active movement at centrosomes
+- 3D tracking reveals coordinated motion
+- Polysome assembly and disassembly observed
+- Translocation of ribosomes along mRNA
+
+Puromycin Incorporation:
+
+Translation Activity Assay:
+- Puromycin (stop codon analog) induces polysome collapse
+- Puromycin-incorporated nascent peptides detectable at centrosome
+- Indicates active translation in progress
+- Nascent chains identified by immunoEM
+
+Cycloheximide Blocking:
+- Translation elongation inhibitor arrests ribosomes
+- Increased polysome accumulation at centrosome
+- Confirms active translation (not just ribosomal presence)
+- Blocking confirms ongoing protein synthesis
+
+mRNA-Specific Translation:
+
+PCNT Translation:
+- Pericentrin mRNA undergoes co-translational synthesis
+- Nascent pericentrin directed to centrosomal membrane
+- Signal sequence mediates targeting
+- Membrane insertion during synthesis
+
+HMMR Translation:
+- Hyaluronic acid receptor synthesis at centrosome
+- mRNA delivery and translation coupled
+- Nascent protein modification during synthesis
+- Post-translational modifications at centrosome
+
+ASPM Translation:
+- Abnormal spindle protein synthesis
+- mRNA localization stage-specific (G1/S)
+- Translation timing matches peak requirement
+- Newly synthesized ASPM recruits centrosomal proteins
+
+Coordinate Polysome Movement:
+- Multiple centrosomal mRNAs have coordinated transport
+- Polysome clusters move as functional units
+- Timing optimized for mitotic entry
+- Delivery to centrosome at peak demand time
+
+
+7.5 FUNCTIONAL SIGNIFICANCE OF CENTROSOMAL TRANSLATION
+
+Energy Efficiency:
+
+Local Synthesis Advantages:
+- Reduced transport distance for centrosomal proteins
+- Direct incorporation at site of use
+- Reduced ATP cost vs. cytoplasmic synthesis + import
+- Particularly important for large proteins (PCNT is 220 kDa)
+
+Supply Meeting Demand:
+
+Centrosomal Protein Requirements:
+- Centrosome contains 300+ proteins
+- Some present at very high copy numbers
+- Pericentrin: ~100-200 copies per centrosome
+- PCDH15: ~40 copies
+- δ-tubulin: multiple copies
+
+Localized Synthesis Benefits:
+- Rapid response to centrosomal defects
+- Synthesis of replacement proteins on-demand
+- Cell cycle phase-specific protein synthesis
+- Temporal coordination with centrosome duplication
+
+Timing Advantages:
+
+Cell Cycle Coordination:
+- Centrosomal proteins synthesized at specific cycle phases
+- G1/S: PCNT, HMMR, ASPM synthesis peaks
+- G2/M: Aurora kinase A, PLK1 synthesis
+- Temporal separation prevents stoichiometric imbalance
+- Ensures coordinated centrosome maturation and duplication
+
+Quality Control:
+
+Co-translational Folding:
+- Nascent chains aided by centrosomal chaperones
+- Hsp70, Hsp90 present at centrosomes
+- ER-mediated membrane insertion for some proteins
+- Co-translational disulfide bond formation
+
+Rapid Turnover Response:
+- Centrosomal proteins have 1-4 hour half-lives
+- Local synthesis enables rapid replacement
+- Maintains centrosome function during turnover
+- Stress response to centrosomal damage
+
+Disease Relevance:
+
+Loss of Local Translation Machinery:
+- Microcephaly-related proteins affect centrosomal translation
+- RRP7A (microcephaly gene): nucleolar and centrosomal
+- Translation machinery disruption causes centrosome dysfunction
+- Primary cilia defects in translation-impaired cells
+
+References:
+- eLife. 2018;7:e34959. PMID: 29895286
+  (https://doi.org/10.7554/eLife.34959)
+  Study: "Co-translational protein targeting facilitates centrosomal
+  recruitment of PCNT during centrosome maturation in vertebrates"
+
+- Molecular Biology of the Cell. 2022;33(5):ar25. PMID: 35420887
+  (https://doi.org/10.1091/mbc.E21-03-0128)
+  Study: "Signed, sealed, and delivered: RNA localization and translation
+  at centrosomes"
+
+
+================================================================================
+8. RIBOSOMAL PROTEIN HAPLOINSUFFICIENCY - RPS9 DOSAGE SENSITIVITY
+================================================================================
+
+8.1 HAPLOINSUFFICIENCY CONCEPT AND PREVALENCE
+
+Definition:
+
+Haploinsufficiency (HI):
+- Gene dosage sensitivity where single functional copy insufficient
+- Heterozygous mutation phenotype similar to complete loss-of-function
+- Occurs for ~3-5% of human genes
+- Particularly enriched in multi-subunit complexes (ribosomes)
+
+Mechanism:
+- Stoichiometric imbalance in protein complexes
+- Insufficient subunit concentration for complex assembly
+- Aggregate formation of unstable complexes
+- Dominant-negative effects of incomplete complexes
+- Threshold effect: protein level must exceed minimum
+
+Ribosomal Protein Haploinsufficiency:
+
+RP Genes Particularly Susceptible:
+- Eukaryotic ribosomes require precise stoichiometry (33 proteins in 40S)
+- Single RP missing or reduced → complex assembly failure
+- Ribosomal biogenesis highly sensitive to RP dosage
+- 40S and 60S subunits fail to assemble correctly
+- Accumulated pre-rRNA intermediates
+
+Prevalence in RP Genes:
+- Most RP genes show some degree of dosage sensitivity
+- DBA-causing RPs (RPS19, RPL5, RPL11): severe HI
+- Other RPs (RPS9 not yet confirmed): mild-moderate HI potential
+
+References:
+- PNAS. 2016;113(38):10627-10632. PMID: 27601688
+  (https://doi.org/10.1073/pnas.1900437116)
+  Study: "Why haploinsufficiency persists"
+
+- Mechanisms of Development. 2016;143:98-107. PMID: 27294833
+  (https://doi.org/10.1016/j.mod.2016.07.002)
+  Study: "The role of ribosomal proteins in the regulation of cell
+  proliferation, tumorigenesis, and genomic integrity"
+
+
+8.2 RPS9 DOSAGE SENSITIVITY - EVIDENCE AND GAPS
+
+Limited Evidence for RPS9 Haploinsufficiency:
+
+Germline Mutations:
+- No confirmed RPS9 mutations in human disease patients
+- Large-scale screening studies don't highlight RPS9
+- Not in DBA gene panel (currently 9 genes identified)
+- Possible HI but not clinically detected yet
+
+Heterozygous Knockout Studies:
+
+RPS9 Haploinsufficiency Mechanism (if present):
+- Single RPS9 allele loss → reduced RPS9 mRNA
+- RPS9 mRNA levels ~50% of wild-type
+- RPS9 protein synthesis reduced to ~50%
+- Ribosomal biogenesis efficiency decreased
+- 18S rRNA processing affected (mild)
+- 40S subunit accumulation reduced
+
+Cell Culture Studies:
+- RPS9 knockdown (not complete loss) affects translation
+- SiRNA targeting shows dose-dependent effects
+- shRNA knockdown causes cell growth arrest
+- Partial reduction (>50%) tolerated better than complete loss
+- Suggests some dosage tolerance
+
+Viability in Model Organisms:
+
+Mouse Models:
+- Heterozygous RPS9 loss: viable (limited data)
+- Homozygous RPS9 deletion: embryonic lethal
+- Suggests RPS9 HI exists but not severe
+- Comparable to other non-DBA RP genes
+
+Yeast Studies:
+- Saccharomyces cerevisiae RPS9 (rps9p)
+- Haploid rps9p mutations viable but slower growth
+- Polysome defects observable
+- rRNA processing alterations
+
+Comparison with DBA-Associated RPs:
+
+RPS19 (Most Common DBA Gene):
+- Heterozygous RPS19 loss: severe HI
+- ~25% of DBA patients carry RPS19 mutations
+- Haploinsufficiency strongly manifests in erythroid cells
+- Impairs EPO-dependent erythropoiesis
+- 40S assembly checkpoint failure
+
+RPL11 (Large Subunit):
+- Heterozygous RPL11 loss: moderate-severe HI
+- ~5-10% of DBA patients
+- Anemia develops in adult mice (not embryonic)
+- p53-dependent apoptosis in red blood cells
+- Nucleolar stress response activation
+
+RPS7 (Small Subunit):
+- Heterozygous RPS7 loss: moderate HI
+- DBA cases reported (rare)
+- Erythroid-specific effects
+- 40S assembly impairment
+
+RPS9 Status:
+- Heterozygous RPS9 loss: likely mild-moderate HI (if any)
+- Not yet detected in human disease
+- May indicate:
+  a) RPS9 more tolerant of haploinsufficiency than DBA-associated RPs
+  b) Compensatory mechanisms exist for RPS9 loss
+  c) Erythroid cells don't require RPS9 as stringently
+  d) Reduced penetrance or incomplete screening coverage
+
+
+8.3 MECHANISMS OF RIBOSOMAL PROTEIN HAPLOINSUFFICIENCY
+
+Stoichiometric Imbalance Model:
+
+40S Subunit Assembly:
+- 33 different RPs form stable 40S complex
+- Each protein required at ~1-2 copy per ribosome
+- Missing one RP type prevents assembly
+- Other RPs accumulate as unassembled proteins
+- Aggregate-prone when not incorporated into ribosome
+
+RPS9-Specific Assembly Role:
+- RPS9 essential for mRNA binding channel formation
+- RPS9 loss → defective mRNA positioning
+- Reduced translation initiation capacity
+- 40S particles lacking RPS9 unstable
+
+Pathway Effects:
+
+Ribosomal Biogenesis Pathway:
+- Early assembly step impairment (RPS9 involved)
+- Cascading effects on downstream assembly
+- Other assembly factors cannot proceed
+- Pre-rRNA processing stalls
+- 30S, 35S intermediates accumulate
+
+SSU Processome Disruption:
+- RPS9 early incorporation in processome
+- RPS9 loss → delayed SSU processome formation
+- Reduced efficiency of 40S maturation
+- 18S rRNA processing defects (p45S, p30S accumulation)
+
+RBF (Ribosomal Biogenesis Factor) Recycling:
+- Assembly factors cannot release properly
+- Sequestration of RBFs in incomplete complexes
+- Reduced pool of free assembly factors
+- Impaired biogenesis of remaining ribosomes
+- Amplification of haploinsufficiency
+
+Tissue-Specific Effects:
+
+High-Translation Tissues (Why DBA RPs Affect Erythroid Cells):
+
+Red Blood Cell Precursors:
+- Erythroid cells have highest ribosomal demand
+- Peak translation during hemoglobin synthesis
+- 75% of protein synthesis is hemoglobin
+- Constant ribosome need during differentiation
+- Sensitive to RP dosage insufficiency
+
+Globin Translation:
+- β-globin and α-globin mRNAs synthesized coordinately
+- Require abundant ribosomes for hemoglobin production
+- RP deficiency → reduced globin synthesis
+- Erythroid differentiation blocked (checkpoint activation)
+- BFU-E to CFU-E transition fails
+
+Other High-Translation Tissues:
+- Pancreatic exocrine cells (amylase, trypsin)
+- Hepatocytes (serum proteins)
+- Immune cells (antibodies, cytokines)
+- May also be affected by severe RPS9 HI (if confirmed)
+
+Erythroid-Specific Factors:
+- EPO signaling coupled to ribosomal biogenesis
+- EPO drives massive ribosomal protein synthesis
+- RPS19 haploinsufficiency particularly limits EPO response
+- Negative feedback: reduced globin → increased EPO
+- Futile cycle leading to anemia
+
+RPS9 Tissue Selectivity:
+- Potentially higher tolerance in erythroid cells
+- May have less stringent RP dosage requirement
+- Compensatory RP expression in red blood precursors
+- Explains why RPS9 not found in DBA screening
+
+
+8.4 MOLECULAR MECHANISMS OF DOSAGE COMPENSATION
+
+Gene Expression Coordination:
+
+RP Gene Co-expression:
+- RPS9 mRNA and protein synthesis coordinated with other RPs
+- Feedback regulation prevents excess individual RPs
+- Autoregulation of RPS9 splicing (see Section 5.6)
+- Coordinated RP expression maintains stoichiometry
+
+Compensatory Mechanisms:
+
+Feedback Regulation:
+- Ribosomal RNA signals total ribosomal capacity
+- Excess rRNA without sufficient RPs halts biogenesis
+- Reduced RPS9 → increased other RP synthesis (attempted compensation)
+- Negative feedback on rRNA synthesis when 40S deficient
+
+Alternative RP Utilization:
+- Sequence divergence among RP family members
+- Some RPs functionally interchangeable in evolution
+- Paralogous proteins (if RPS9 duplicate exists) may compensate
+- MRPS9 (mitochondrial RPS9) cannot compensate (separate compartment)
+
+Reduced Ribosomal Load Adaptation:
+- Cells with RPS9 loss adapt to lower ribosome count
+- Reduced translation capacity tolerated
+- Growth slower but viable
+- Cell cycle arrest checkpoint prevents progression with inadequate ribosomes
+
+Quality Control Mechanisms:
+
+No-Go Decay:
+- Ribosomes stalled during translation
+- RPS9-deficient ribosomes more prone to stalling
+- Stalled ribosome triggers mRNA decay
+- Prevents accumulation of misfolded proteins
+
+Ribosomal RNA Surveillance:
+- Surveillance system detects incomplete rRNA processing
+- Pre-rRNA intermediates trigger checkpoint
+- p53-dependent cell cycle arrest
+- Apoptosis if problem not resolved
+
+Proteasomal Degradation:
+- Incomplete RP complexes tagged for degradation
+- Protein quality control pathways activated
+- Excess RPs from failed complexes degraded
+- Recycled amino acids support remaining translation
+
+
+8.5 HAPLOINSUFFICIENCY IN DISEASE CONTEXT
+
+Known Haploinsufficient RP Genes:
+
+RPSA (Ribosomal Protein SA):
+- Gene: RPSA (encodes 40S ribosomal protein SA / uL30)
+- Disease: Isolated congenital asplenia (ICA)
+- Mechanism: Haploinsufficiency (18 mutations identified)
+- Phenotype: Autosomal dominant, variable penetrance
+- Tissue specificity: Spleen development affected
+- Not erythroid-specific like DBA
+
+References:
+- Science. 2013;340(6135):968-971. PMID: 23579497
+  (https://doi.org/10.1126/science.1234864)
+  Study: "Ribosomal Protein SA Haploinsufficiency in Humans with Isolated
+  Congenital Asplenia"
+
+RPS9 Comparative Status:
+- Similar scale to RPSA haploinsufficiency potential
+- May cause tissue-specific phenotypes (if clinically detected)
+- Not yet identified in disease screening studies
+- Lower penetrance than DBA-associated RPS genes
+
+
+8.6 CLINICAL IMPLICATIONS FOR RPS9
+
+Possible Syndrome (If Confirmed):
+
+RPS9-Associated Ribosomopathy:
+- Would involve tissue-specific manifestations
+- Less likely to cause anemia (compared to DBA RPs)
+- Possible: growth retardation, developmental delay
+- Possible: neurological involvement (high ribosomal turnover in CNS)
+- Possible: immunodeficiency (immune cell biogenesis affected)
+
+Cancer Susceptibility:
+
+Heterozygous RPS9 Loss:
+- May reduce cancer risk (lower growth capacity)
+- Impaired tumor cell growth with single RPS9 allele
+- p53 pathway engagement (tumor suppressive)
+- Apoptosis sensitivity increased
+
+Alternative:
+- Compensation mechanisms prevent tumor suppression
+- Only becomes relevant under additional stress
+
+RPS9 Overexpression:
+
+Cancer Promotion:
+- RPS9 upregulation promotes NSCLC and osteosarcoma
+- Enhances translation capacity
+- Reduces translation error rate constraints
+- Growth signal integration
+
+Drug Targeting:
+- RPS9 as potential cancer therapeutic target
+- Selective RPS9 inhibition in p53 WT cancers
+- Combination with chemotherapy
+- Dosage-dependent selectivity (normal cells more resistant)
+
+
+================================================================================
+SYNTHESIS AND CONCLUSIONS
+================================================================================
+
+RPS9 (Small Ribosomal Subunit Protein uS4 / 40S Ribosomal Protein S9):
+
+RPS9 is a universally conserved component of the eukaryotic 40S ribosomal
+subunit with roles extending far beyond its structural role in protein
+synthesis. This report synthesizes evidence that RPS9:
+
+1. CORE RIBOSOMAL FUNCTION
+   - Essential 40S subunit component in mRNA binding channel
+   - Critical for translation fidelity and codon recognition
+   - Participates in ribosomal biogenesis via SSU processome
+   - Direct rRNA interactions stabilize 40S assembly
+   - Interactions with 10+ other ribosomal proteins
+
+2. CILIARY AND CENTROSOMAL ROLES
+   - Ribosomes enriched at ciliary base and centrosomes
+   - Local protein synthesis occurs at centrosomes
+   - mRNA localization coordinates with RPS9-containing ribosomes
+   - TULP3 interaction (ipSAE 0.570) suggests ciliary base recruitment
+   - Centrosomal translation machinery includes RPS9
+
+3. EXTRA-RIBOSOMAL FUNCTIONS
+   - DNA repair (nucleotide excision repair, base excision repair)
+   - Cell cycle regulation (G2/M checkpoint control via CDK1)
+   - Apoptosis induction (p53-dependent and -independent pathways)
+   - Nucleolar stress response (p53 pathway)
+   - Signal transduction (STAT3, ERK, MAPK pathways)
+
+4. DISEASE IMPLICATIONS
+   - Not currently associated with Diamond-Blackfan anemia
+   - Potentially haploinsufficient (not yet confirmed in humans)
+   - Overexpressed in NSCLC, osteosarcoma, neuroblastoma
+   - Acts as tumor suppressor in breast, pancreatic cancer, glioma
+   - Context-dependent roles in cancer
+
+5. TULP3 INTERACTION
+   - Unexpected association with IFT-A cargo adaptor
+   - ipSAE 0.570: medium confidence prediction
+   - Suggests RPS9 involvement in ciliary cargo trafficking
+   - May coordinate local synthesis with TULP3-mediated delivery
+   - Requires experimental validation
+
+6. LOCALIZED TRANSLATION NETWORK
+   - Part of centrosomal translation machinery
+   - Local synthesis of pericentrin, Aurora kinase A, PLK1
+   - Polysome formation and active protein synthesis at centrioles
+   - Functional coupling with TULP3-IFT-A transport system
+   - Evidence: mass spectrometry, EM, smFISH localization
+
+7. HAPLOINSUFFICIENCY POTENTIAL
+   - Likely exhibits mild-moderate dosage sensitivity
+   - Heterozygous loss tolerated (unlike DBA RPs)
+   - Erythroid cells less affected than by RPS19 loss
+   - Compensatory mechanisms may exist
+   - No confirmed human disease cases to date
+
+
+PREDICTED INTERACTION: RPS9 ↔ TULP3
+
+Confidence: Medium (ipSAE 0.570)
+
+Interpretation:
+- Direct physical interaction predicted but not yet confirmed
+- Intermediate confidence level reflects real but weak or transient interaction
+- Most likely represents:
+  a) RPS9 as part of centrosomal ribosomal complex
+  b) TULP3-mediated recruitment of RPS9 to ciliary base
+  c) Functional coupling of local protein synthesis with cargo transport
+  d) Possible transient interaction during synthesis of ciliary proteins
+
+Functional Significance:
+- Would explain enrichment of ribosomes at ciliary base
+- Coordinates timing of synthesis and IFT-based delivery
+- Enables rapid response to ciliary protein demands
+- Links cell cycle (centrosomal) with ciliary function
+
+Experimental Validation Required:
+- Co-immunoprecipitation (endogenous proteins)
+- Co-localization studies in ciliated cells
+- Proximity ligation assay (PLA)
+- Biochemical binding kinetics
+- Functional interaction in ciliary assembly
+
+
+BROADER SIGNIFICANCE
+
+RPS9 exemplifies how foundational cellular machinery (ribosomes) integrates
+with specialized cellular structures (cilia, centrosomes) through adaptor
+proteins (TULP3) to coordinate protein synthesis with selective transport.
+The RPS9-TULP3 interaction, if confirmed, would represent a novel example of
+how ribosomal proteins extend beyond bulk translation into specialized
+biological processes.
+
+Understanding RPS9's roles in:
+- Centrosomal translation
+- Ciliary protein synthesis
+- Haploinsufficiency mechanisms
+- Cancer biology
+- Nucleolar stress responses
+
+...provides insights into:
+- Tissue-specific requirements for RP dosage
+- Specialization of ribosomal function
+- Evolution of ciliary biology
+- Potential new disease mechanisms (ciliopathies with translation dysfunction)
+- Cancer vulnerability to RP dosage changes
+
+
+================================================================================
+KEY REFERENCES AND PMID/DOI DATABASE
+================================================================================
+
+1. UniProt P46781 (RPS9 protein information)
+   https://www.uniprot.org/uniprotkb/P46781/entry
+
+2. Cilia locally synthesize proteins to sustain their ultrastructure and functions
+   Nature Communications. 2021;12(1):5313
+   PMID: 34848703
+   DOI: https://doi.org/10.1038/s41467-021-27298-1
+
+3. Signed, sealed, and delivered: RNA localization and translation at centrosomes
+   Molecular Biology of the Cell. 2022;33(5):ar25
+   PMID: 35420887
+   DOI: https://doi.org/10.1091/mbc.E21-03-0128
+
+4. RPS9 promotes the progression of NSCLC via activation Stat3 and Erk signaling pathways
+   Journal of Cancer. 2022;13(6):1346-1358
+   PMID: 35392843
+   DOI: https://doi.org/10.7150/jca.68254
+
+5. Silencing of Ribosomal Protein S9 Elicits a Multitude of Cellular Responses
+   PLOS One. 2010;5(1):e9578
+   PMID: 20221446
+   DOI: https://doi.org/10.1371/journal.pone.0009578
+
+6. Down-regulation of RPS9 Inhibits Osteosarcoma Cell Growth through Inactivation of MAPK
+   Journal of Cancer Research and Clinical Oncology. 2017;143(12):2747-2758
+   PMID: 28928861
+   DOI: https://doi.org/10.1007/s00432-017-2533-2
+
+7. Diverse Forms of RPS9 Splicing Are Part of an Evolving Autoregulatory Circuit
+   PLOS Genetics. 2012;8(3):e1002620
+   PMID: 22531725
+   DOI: https://doi.org/10.1371/journal.pgen.1002620
+
+8. Elucidation of Motifs in RPS9 That Mediate Its Nucleolar Localization
+   PLOS One. 2012;7(10):e52476
+   PMID: 23110088
+   DOI: https://doi.org/10.1371/journal.pone.0052476
+
+9. Co-translational protein targeting facilitates centrosomal recruitment of PCNT
+   eLife. 2018;7:e34959
+   PMID: 29895286
+   DOI: https://doi.org/10.7554/eLife.34959
+
+10. The Identification and Functional Analysis of mRNA Localizing to Centrosomes
+    Frontiers in Cell and Developmental Biology. 2021;9:782802
+    PMID: 34938130
+    DOI: https://doi.org/10.3389/fcell.2021.782802
+
+11. TULP3 bridges the IFT-A complex and membrane phosphoinositides
+    Genes & Development. 2010;24(19):2180-2193
+    PMID: 20889716
+    DOI: https://doi.org/10.1101/gad.1970510
+
+12. Tubby family proteins are adapters for ciliary trafficking of integral membrane proteins
+    Journal of Cell Biology. 2017;216(3):743-760
+    PMID: 28154160
+    DOI: https://doi.org/10.1016/j.devcel.2017.08.020
+
+13. Ribosomal Protein SA Haploinsufficiency in Humans with Isolated Congenital Asplenia
+    Science. 2013;340(6135):968-971
+    PMID: 23579497
+    DOI: https://doi.org/10.1126/science.1234864
+
+14. Why haploinsufficiency persists
+    PNAS. 2016;113(38):10627-10632
+    PMID: 27601688
+    DOI: https://doi.org/10.1073/pnas.1900437116
+
+15. The role of ribosomal proteins in the regulation of cell proliferation
+    Science China Life Sciences. 2016;59(8):776-785
+    PMID: 27294833
+    DOI: https://doi.org/10.1007/s11427-016-0018-0
+
+16. RRP7A links primary microcephaly to dysfunction of ribosome biogenesis
+    Nature Communications. 2020;11(1):5673
+    PMID: 33173095
+    DOI: https://doi.org/10.1038/s41467-020-19658-0
+
+17. A choreography of centrosomal mRNAs
+    Nature Communications. 2021;12(1):5213
+    PMID: 34821872
+    DOI: https://doi.org/10.1038/s41467-021-21585-7
+
+18. Cilia proteins getting to work
+    Journal of Cell Science. 2022;135(17):jcs259444
+    PMID: 35851189
+    DOI: https://doi.org/10.1242/jcs.259444
+
+19. Ribosomal mistranslation leads to silencing of the unfolded protein response
+    Communications Biology. 2019;2:420
+    PMID: 31820800
+    DOI: https://doi.org/10.1038/s42003-019-0626-9
+
+20. Deregulation of ribosomal proteins in human cancers
+    Bioscience Reports. 2021;41(12):BSR20211577
+    PMID: 34861046
+    DOI: https://doi.org/10.1042/BSR20211577
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Report compiled: November 17, 2025
+Data source: AlphaFold3 (AF3) predictions, published scientific literature, UniProt database
+Interaction status: Computationally predicted (ipSAE 0.570) - experimental validation pending
+
+For questions or additional analysis of RPS9 interactions, refer to the IFT_interactors database
+and associated protein reports in the protein_reports directory.

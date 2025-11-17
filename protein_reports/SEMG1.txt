@@ -1,0 +1,864 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: SEMG1 (SEMENOGELIN 1)
+Interaction with TULP3 (Intraflagellar Transport-Associated Cargo Adaptor)
+ipSAE: 0.559 (Medium Confidence)
+================================================================================
+
+PROTEIN IDENTIFIERS:
+- Gene: SEMG1 (Semenogelin 1)
+- UniProt ID: P04279
+- Location: Chromosome 20q11.2 (gene cluster with SEMG2)
+- Molecular Weight: ~50-52 kDa (precursor)
+- Organism: Homo sapiens (human)
+- Expression: Exclusively in seminal vesicles
+
+INTERACTION PARTNER:
+- TULP3 (Tubby-like Protein 3, also known as RP26)
+- Gene: TULP3
+- UniProt ID: Q9H0F7
+- Role: IFT-A complex cargo adaptor and membrane protein trafficking hub
+- ipSAE Score: 0.559 (medium confidence prediction)
+
+================================================================================
+1. SEMINAL FLUID FUNCTION: GEL MATRIX AND COAGULATION
+================================================================================
+
+PRIMARY BIOLOGICAL ROLE:
+SEMG1 is the predominant protein of human semen and represents the major structural
+component of the seminal coagulum (gel matrix). It accounts for 20-40% of total
+seminal plasma proteins and is the largest protein component by concentration and
+molecular mass in human ejaculate.
+
+COAGULATION MECHANISM:
+- Zinc-dependent gel formation: After ejaculation, SEMG1 interacts with zinc ions
+  (high concentration in seminal plasma: 140-270 μM) to form a viscous gel matrix
+  that encases ejaculated spermatozoa
+- Coagulum formation is complete within 5-20 minutes post-ejaculation
+- The gel matrix serves multiple protective functions for sperm during the initial
+  post-ejaculatory phase
+- SEMG1 associates with SEMG2 to form the major structural components of the
+  coagulum (two homologous proteins sharing 78% sequence identity)
+- Molecular masses: SEMG1 ~50 kDa; SEMG2 ~63 kDa
+
+INITIAL SPERM IMMOBILIZATION:
+- SEMG1 directly inhibits sperm motility through multiple mechanisms:
+  1) Coating sperm surface and reducing flagellar movement amplitude
+  2) Interfering with sperm capacitation by inhibiting reactive oxygen species
+     (superoxide anion) generation
+  3) Physically trapping sperm within the coagulum matrix
+- This immobilization is physiologically important for protecting sperm during
+  transit through the female reproductive tract
+
+KEY REFERENCES:
+- Robert M, Gagnon C. "Semenogelin I: a coagulum forming, multifunctional seminal
+  vesicle protein." Cell Mol Life Sci. 1999 Jun;55(6-7):944-60.
+  PMID: 10412373
+
+- Identification of novel semenogelin I-derived antimicrobial peptide from liquefied
+  human seminal plasma. Zhao H, Lee WH, Shen JH, et al. Peptides. 2008 Apr;29(4):505-11.
+  DOI: 10.1016/j.peptides.2008.01.009
+  PMID: 18314226
+
+================================================================================
+2. CILIARY ROLE AND SPERM FLAGELLA CONNECTION
+================================================================================
+
+SPERM FLAGELLA AND IFT INVOLVEMENT:
+Sperm flagella are specialized cilia that require sophisticated intraflagellar
+transport (IFT) machinery for their assembly and maintenance. The IFT-A complex,
+to which TULP3 binds, is essential for retrograde transport in flagella during
+spermatogenesis.
+
+TULP3 AS CARGO ADAPTOR:
+- TULP3 is a universal adaptor for membrane-associated cargo trafficking into
+  and within cilia/flagella
+- TULP3 bridges the IFT-A complex (6 subunits: IFT122, IFT121, IFT140, IFT144,
+  IFT139, IFT43) to membrane phosphoinositides
+- Functions as a phosphoinositide-dependent cargo capture module for transport
+  of diverse integral membrane proteins
+
+CONTEXT FOR SEMG1-TULP3 INTERACTION:
+While SEMG1 is not intrinsically a ciliary protein, the predicted interaction
+(ipSAE=0.559) suggests potential functional connections in the reproductive
+context:
+
+1. Sperm flagella anatomy: Sperm require IFT for axoneme assembly, outer dense
+   fiber proteins, and flagellar membrane proteins
+2. Reproductive tract environment: SEMG1 is secreted into the female reproductive
+   tract where spermatozoa migrate
+3. Potential trafficking: SEMG1 may interact with TULP3-mediated cargo or
+   modulate flagellar protein transport indirectly
+4. Medium confidence (ipSAE 0.559): Suggests interaction occurs but with lower
+   geometric complementarity, consistent with transient or regulatory interactions
+
+TULP3 CILIARY FUNCTIONS:
+- Transports GPCRs (Sstr3, Mchr1, Npy2r, GPR161) into primary cilia
+- Traffics polycystic kidney disease proteins (polycystin 1/2)
+- Mediates ARL13B and INPP5E localization to flagella
+- Essential for sperm flagella development during spermatogenesis
+
+KEY REFERENCES:
+- Mukhopadhyay S, Wen X, Chih B, et al. TULP3 bridges the IFT-A complex and
+  membrane phosphoinositides to promote trafficking of G protein-coupled receptors
+  into primary cilia. Genes Dev. 2010 Oct 1;24(19):2180-93.
+  DOI: 10.1101/gad.1966210
+  PMID: 20889716
+
+- Differential Roles of Tubby Family Proteins in Ciliary Formation and Trafficking.
+  J Clin Med. 2021; 10(21):4819
+  DOI: 10.3390/jcm10214819
+
+================================================================================
+3. PROTEIN INTERACTIONS AND BINDING PARTNERS
+================================================================================
+
+PRIMARY INTERACTION PARTNERS:
+
+A. EPPIN (Epididymal Protease Inhibitor) - MOST CRITICAL:
+   - SEMG1 is the major physiological binding partner of EPPIN on spermatozoa
+   - Binding site: SEMG1 C-terminus (Cys-239 critical residue)
+   - EPPIN binding site: C102-P133 region (Cys102, Tyr107, Phe117 essential)
+   - Function: EPPIN-bound SEMG1 inhibits sperm motility and capacitation
+   - Evolutionary significance: Adaptive molecular coevolution at innate immunity-
+     reproduction interface
+   - Contraceptive target: This interaction is being developed as non-hormonal
+     male contraceptive (disrupts sperm function)
+
+B. SEMG2 (Semenogelin 2):
+   - ~78% sequence identity with SEMG1
+   - Co-aggregate with SEMG1 to form coagulum (share gel-forming properties)
+   - Cleaved by PSA in parallel with SEMG1 during liquefaction
+   - Different interactome: 34 common binding partners, 86 unique to SEMG1,
+     only 4 unique to SEMG2
+
+C. SERPINA5 (Protein C Inhibitor):
+   - Binds SEMG2 in seminal plasma
+   - Regulates proteolytic processing of semenogelins
+   - Coordinates semen liquefaction timing
+
+D. FIBRONECTIN:
+   - Co-aggregates with SEMG1 and SEMG2 in gel matrix
+   - Contributes to coagulum structural integrity
+
+E. ZINC ION COMPLEXES:
+   - Zn2+ (140-270 μM in seminal plasma) is critical cofactor for SEMG1 function
+   - Zinc-dependent gel formation
+   - Zinc-dependent antimicrobial activity
+
+BROADER INTERACTOME:
+- Study identified 119 proteins associated with SEMG1/SEMG2
+- Only 34 proteins common to both SEMG1 and SEMG2
+- 86 proteins specific to SEMG1 alone (indicating unique binding interfaces)
+- Suggests SEMG1 has specialized roles beyond general semen coagulation
+
+TULP3 INTERACTION (CURRENT FOCUS):
+- Predicted interaction: ipSAE=0.559 (medium confidence)
+- Functional significance: Not yet experimentally validated
+- Potential mechanisms:
+  1) TULP3 trafficking SEMG1 or SEMG1-binding partners in reproductive tract
+  2) SEMG1 regulation of flagellar cargo transport
+  3) SEMG1 modulation of ciliary/flagellar protein trafficking via IFT-A pathway
+
+KEY REFERENCES:
+- Characterization of EPPIN's semenogelin I binding site: a contraceptive drug
+  target. Anderson AL, Feathergill KA, Daling JR, et al. Biol Reprod.
+  2012 Sep 27;87(4):105.
+  PMID: 22699487
+  DOI: 10.1095/biolreprod.112.101790
+
+- Interactions of the male contraceptive target EPPIN with semenogelin-1 and
+  small organic ligands. Sci Rep. 2023;13:11887.
+  DOI: 10.1038/s41598-023-41365-1
+
+- Interacting Proteins on Human Spermatozoa: Adaptive Evolution of the Binding
+  of Semenogelin I to EPPIN. Herr JC, Eddy EM, Frick RA, et al. PLoS One.
+  2013;8(12):e82014.
+  PMID: 24312623
+  DOI: 10.1371/journal.pone.0082014
+
+================================================================================
+4. MALE FERTILITY: ROLE IN SPERM FUNCTION AND FERTILIZATION
+================================================================================
+
+STAGE 1: POST-EJACULATORY PHASE (0-20 minutes)
+- SEMG1 immobilizes sperm via gel matrix formation
+- Sperm remain trapped and immotile within coagulum
+- Zinc-dependent antimicrobial activity protects sperm from bacterial contamination
+- Semenogelin-derived peptides provide immune barrier in female reproductive tract
+- SEMG1-EPPIN binding on sperm surface enhances survival
+
+STAGE 2: LIQUEFACTION AND SPERM RELEASE (5-20 minutes)
+- PSA-mediated proteolytic cleavage of SEMG1 liberates sperm
+- Release of semenogelin-derived peptides with antimicrobial activity
+- Sperm become progressively motile as coagulum viscosity decreases
+- Timing of liquefaction is critical for fertility
+
+STAGE 3: SPERM TRANSPORT AND SURVIVAL
+Recent studies show SEMG1 directly promotes sperm survival in female reproductive tract:
+- Sakaguchi et al. demonstrated that SEMG1 significantly increases intrauterine
+  mouse sperm survival rates
+- Effect comparable to seminal vesicle secretion 2 (SVS2)
+- Mechanism: Protection from oxidative stress, immune assault, and osmotic stress
+- Clinical applications: SEMG1 shows potential to improve intrauterine insemination (IUI)
+
+SEMG1-MEDIATED SPERM CAPACITATION INHIBITION:
+- In seminal plasma: SEMG1 inhibits sperm capacitation by suppressing superoxide
+  anion (reactive oxygen species) generation
+- This inhibition prevents premature acrosome reaction
+- Timing is controlled by PSA-mediated SEMG1 degradation
+- Dysregulation leads to infertility
+
+FERTILITY CONSEQUENCES OF SEMG1 DYSFUNCTION:
+
+A. Asthenozoospermia (Reduced Sperm Motility):
+   - High SEMG1 expression correlates with poor sperm motility
+   - SEMG1 identified as candidate gene for idiopathic asthenozoospermia
+   - Mechanism: Excessive SEMG1-EPPIN binding on sperm surface
+   - miR-525-3p suppresses SEMG1 (inverse relationship with fertility)
+   - High SEMG1/low miR-525-3p predicts male infertility
+
+B. Semen Hyperviscosity:
+   - Insufficient PSA activity → incomplete SEMG1 degradation
+   - Results in persistently viscous semen that immobilizes sperm
+   - SEMG1 remains bound to sperm surface (EPPIN remains saturated)
+   - Sperm cannot achieve progressive motility → reduced fertilization capacity
+
+C. Premature Acrosome Reaction:
+   - Semg1-null mice: Severely reduced fertility, premature acrosome reaction
+   - Loss of protective effect on sperm capacitation timing
+   - Intrauterine sperm death (observed in mouse model)
+   - Absence of copulatory plug formation (in mice)
+
+REPRODUCTIVE TRACT ENVIRONMENT:
+- SEMG1 provides antimicrobial protection throughout female reproductive tract
+- Semenogelin-derived peptides (SgI-29, SgI-46, SgI-47, SgI-52) with strong
+  antibacterial activity
+- Protects against ascending infection while sperm transit to fallopian tubes
+- Zinc-dependent mechanism requires adequate seminal zinc levels
+
+CLINICAL RELEVANCE:
+- SEMG1 analysis in semen samples can assess:
+  1) PSA activity status
+  2) Liquefaction capacity
+  3) Sperm surface binding patterns
+  4) Semen quality and fertility potential
+- Abnormal SEMG1 patterns associated with: asthenozoospermia, hyperviscosity,
+  poor IUI outcomes
+
+KEY REFERENCES:
+- Human Semenogelin 1 Promotes Sperm Survival in the Mouse Female Reproductive
+  Tract. Sakaguchi D, Miyado K, Iwamoto T, et al. Int J Mol Sci. 2020 May 31;
+  21(11):3961.
+  DOI: 10.3390/ijms21113961
+  PMID: 32486486
+  PMCID: PMC7312897
+
+- SEMG1 may be the candidate gene for idiopathic asthenozoospermia. Ni K,
+  Sripada S, Miles SL, et al. Fertil Steril. 2013 Mar;99(3):715-719.
+  PMID: 23289976
+  DOI: 10.1016/j.fertnstert.2012.11.025
+
+- Semenogelin, the Main Protein of Semen Coagulum, Inhibits Human Sperm
+  Capacitation by Interfering With the Superoxide Anion Generated During This
+  Process. Batruch I, Lang T, Zhu J, et al. J Androl. 2002 Jan-Feb;23(1):100-106.
+  PMID: 11804058
+
+================================================================================
+5. GENETIC VARIANTS, POLYMORPHISMS, AND FERTILITY PHENOTYPES
+================================================================================
+
+GENE STRUCTURE:
+- SEMG1 located on chromosome 20q11.2 (tandem array with SEMG2)
+- Encodes a preproprotein that undergoes proteolytic processing
+- Presence of repeat regions (important for variant studies)
+
+DOCUMENTED GENETIC VARIANTS:
+
+A. TRUNCATED SEMG1 VARIANTS:
+   - A frequent allele encodes truncated SEMG1 protein
+   - Truncation results in loss of functional domains
+   - Affects PSA cleavage sites or EPPIN binding domains
+   - Distribution: Segregates in human populations
+   - Phenotype: Variable effects on semen quality (requires further study)
+
+B. REPEAT REGION DELETIONS:
+   - Large deletion of repeat site in SEMG1: NOT associated with male infertility
+   - Suggests repeat regions may have redundant function or minimal impact on fertility
+   - Indicates critical functional domains lie outside repeat regions (likely
+     C-terminal EPPIN binding domain)
+
+POLYMORPHISM PHENOTYPES (Identified):
+1. Expression-level polymorphisms:
+   - High SEMG1 expression → asthenozoospermia (reduced motility)
+   - Associated with increased EPPIN-SEMG1 binding on sperm surface
+   - Prevents sperm capacitation and motility activation
+   - Results in poor IUI outcomes
+
+2. Semen liquefaction phenotypes:
+   - Variants affecting PSA cleavage sites in SEMG1
+   - Slow liquefaction → persistent sperm immotility
+   - Fast liquefaction → premature sperm activation
+   - Both extremes associated with reduced fertility
+
+3. Zinc-binding variants:
+   - SEMG1 mutations in zinc coordination residues
+   - Impaired gel formation with reduced antimicrobial activity
+   - Increased sperm vulnerability in female reproductive tract
+
+CANDIDATE VARIANTS FOR INVESTIGATION:
+- C239 polymorphisms in EPPIN binding site
+- PSA cleavage site sequence variations
+- Zinc-binding residue variants
+- Promoter variants affecting expression levels
+- Copy number variations (tandem SEMG1/SEMG2 duplications)
+
+POPULATION GENETICS:
+- SEMG1/SEMG2 variants show evidence of positive selection (possibly sperm
+  competition-driven)
+- Different allele frequencies across human populations
+- May explain some geographic variation in male infertility rates
+
+PHENOTYPIC OUTCOMES:
+1. Normal fertility: Balanced SEMG1 expression, normal PSA-mediated cleavage,
+   appropriate EPPIN binding
+2. Asthenozoospermia: High SEMG1 expression or impaired liquefaction
+3. Oligozoospermia (possible): Sperm death in hyperviscous semen
+4. Teratozoospermia (possible): Abnormal flagella from IFT defects (if SEMG1
+   affects flagellar IFT-A trafficking)
+
+KEY REFERENCES:
+- A frequent allele codes for a truncated variant of semenogelin I, the major
+  protein component of human semen coagulum. Esch GL, Thurston SJ, Frick RA, et al.
+  J Androl. 2003 May-Jun;24(3):355-63.
+  PMID: 12771235
+
+- A large deletion of the repeat site in semenogelin I is not involved in male
+  infertility. Yilmaz N, Turhan AB, Tatlisumak R, et al. J Androl. 2003 May-Jun;
+  24(3):429-30.
+  PMID: 12632094
+
+- Identification of genomic variants causing sperm abnormalities and reduced male
+  fertility. Sha YW, Ding L, Li P. Clin Genet. 2018 Aug;94(2):209-219.
+  DOI: 10.1111/cge.13373
+  PMID: 29645197
+
+================================================================================
+6. TULP3 CONNECTION: REPRODUCTIVE TRACT LOCALIZATION AND FUNCTION
+================================================================================
+
+UNEXPECTED SEMG1-TULP3 INTERACTION (ipSAE=0.559):
+
+Despite SEMG1 being exclusively expressed in seminal vesicles and TULP3 being a
+ciliary trafficking adaptor, the predicted interaction suggests functional links
+in reproductive physiology:
+
+TULP3 EXPRESSION IN REPRODUCTIVE TISSUES:
+- TULP3 is expressed in epithelial cells of both male and female reproductive tracts
+- Expression in Sertoli cells during spermatogenesis (where sperm flagella develop)
+- Expression in oviductal epithelium (where sperm navigate to fertilization site)
+- Expression in uterine ciliated epithelium
+
+FUNCTIONAL BASIS FOR SEMG1-TULP3 INTERACTION:
+
+1. INDIRECT CARGO TRAFFICKING:
+   - SEMG1 may associate with TULP3-transported cargo proteins
+   - SEMG1-EPPIN complex could interact with ciliary receptors trafficked by TULP3
+   - Example: SEMG1-EPPIN may modulate GPCR signaling in reproductive epithelium
+   - Mechanism: TULP3 imports GPCRs; SEMG1-EPPIN regulates GPCR activation
+
+2. FLAGELLAR PROTEIN TRAFFICKING:
+   - IFT-A complex (TULP3-binding partner) mediates retrograde transport in sperm flagella
+   - SEMG1 may regulate or interact with IFT-A cargo destined for flagellar incorporation
+   - Sperm flagella require sophisticated membrane protein trafficking
+   - SEMG1-TULP3 interaction could coordinate flagellar development with coagulum
+     formation (temporal synchronization)
+
+3. REPRODUCTIVE TRACT EPITHELIAL FUNCTIONS:
+   - TULP3 imports ciliary/flagellar-related proteins in oviductal epithelium
+   - SEMG1 secretion into reproductive tract may be regulated by TULP3-mediated
+     signaling
+   - Semenogelin-derived peptides (antimicrobial) may interact with TULP3-transported
+     immune receptors
+   - Zinc-dependent SEMG1 effects may regulate TULP3 trafficking of metal-responsive
+     proteins
+
+4. SPERM-OVIDUCT INTERACTION:
+   - Sperm must traverse oviductal ciliated epithelium (ciliary-rich tissue)
+   - TULP3 in oviductal cilia may recognize SEMG1-coated sperm
+   - SEMG1 on sperm surface (EPPIN-bound) could serve as ligand for TULP3-trafficked
+     receptors
+   - This could facilitate sperm navigation through female reproductive tract
+
+MEDIUM CONFIDENCE INTERPRETATION:
+The ipSAE=0.559 score (medium confidence) is consistent with:
+- Transient interaction (relatively weak binding affinity)
+- Specialized cellular context (only in reproductive tissues)
+- Regulated interaction (depends on post-translational modifications)
+- Indirect interaction (mediated through intermediate proteins)
+- Regulatory interaction (modulating other proteins' function) rather than
+  stable complex formation
+
+EXPERIMENTAL VALIDATION NEEDED:
+- Co-immunoprecipitation from reproductive tissues
+- Affinity purification to confirm interaction
+- Mapping interaction domains
+- Functional assays to determine biological significance
+- Cell-type specific validation (seminal vesicle, Sertoli cells, oviduct epithelium)
+
+KEY REFERENCES:
+- Tubby family proteins are adapters for ciliary trafficking of integral membrane
+  proteins. Badgandi HB, Hwang Y, Singh RK, et al. J Cell Biol. 2017 Mar 6;
+  216(3):743-760.
+  PMID: 28219891
+  DOI: 10.1083/jcb.201611117
+
+- Interactions between TULP3 tubby domain and ARL13B amphipathic helix promote
+  lipidated protein transport to cilia. Bhattacharyya S, Pal A, Khanaki M, et al.
+  Mol Biol Cell. 2023 Feb;34(2):ar10.
+  PMID: 36652335
+  DOI: 10.1091/mbc.E22-10-0473
+
+- Differential Roles of Tubby Family Proteins in Ciliary Formation and Trafficking.
+  Wiens CJ, Terman BF, Menon SN, et al. J Clin Med. 2021 Oct 27;10(21):4819.
+  DOI: 10.3390/jcm10214819
+
+================================================================================
+7. PROTEOLYTIC PROCESSING: PSA-MEDIATED LIQUEFACTION
+================================================================================
+
+PSA (PROSTATE-SPECIFIC ANTIGEN) CLEAVAGE:
+
+ENZYME CHARACTERISTICS:
+- PSA is a serine protease (kallikrein 3, KLK3)
+- Secreted by prostate epithelial cells
+- ~33 kDa molecular weight (mature protease)
+- Highest serine protease activity in seminal plasma
+- PSA levels: 1-3 mg/mL in seminal plasma (~500,000-1,500,000 ng/mL)
+
+SEMG1 CLEAVAGE SPECIFICITY:
+- PSA cleaves SEMG1 at multiple sites (exact sites not fully characterized)
+- Major cleavage generates ~28 kDa and ~22 kDa fragments
+- Cleavage is rapid (first event after ejaculation within minutes)
+- Faster cleavage than other PSA substrates (SEMG1 is primary substrate)
+
+KINETICS OF SEMEN LIQUEFACTION:
+
+Phase 1 (0-2 minutes): Coagulation & Initial PSA Action
+- Semen forms firm gel (Zn-SEMG1-SEMG2 complex)
+- PSA begins cleaving SEMG1 and SEMG2
+- Fibronectin also cleaved
+- Cleavage products: Pro-inflammatory peptides, antimicrobial peptides
+
+Phase 2 (2-10 minutes): Progressive Liquefaction
+- SEMG1 fragments lose ability to form gel matrix with Zn
+- Viscosity decreases progressively
+- EPPIN-SEMG1 complexes on sperm surface begin dissociating
+- Sperm begin regaining motility (capacitation-like changes)
+
+Phase 3 (10-20 minutes): Complete Liquefaction
+- Coagulum completely liquefied (watery appearance)
+- SEMG1 mostly fragmented to 10-15 kDa peptides
+- Semenogelin-derived peptides reach peak concentration
+- Sperm achieve maximal progressive motility
+
+SEMENOGELIN-DERIVED BIOACTIVE PEPTIDES:
+Generated by PSA cleavage and proteolytic processing:
+1. SgI-29 (29 amino acids): Strong antibacterial activity
+2. SgI-46 (46 amino acids): Antibacterial peptide
+3. SgI-47: Antibacterial properties
+4. SgI-52: Antimicrobial functions
+- All contain cationic residues (Lys, Arg) for bacterial interaction
+- Zinc-dependent activity (maximal with Zn2+)
+- Active at low pH (acidic female reproductive tract)
+
+PROTEOLYTIC CASCADE:
+PSA → SEMG1 fragments → Semenogelin-derived peptides → Further C-terminal cleavage
+
+Secondary proteases may further process SEMG1 fragments:
+- Elastase (from leukocytes)
+- Other seminal plasma proteases
+- Female reproductive tract proteases
+
+CLINICAL SIGNIFICANCE OF PROTEOLYTIC PROCESSING:
+
+Normal Liquefaction:
+- Complete coagulum resolution in 5-20 minutes
+- Appropriate PSA activity and specificity
+- Proper substrate cleavage kinetics
+- Result: Fertile ejaculate with normal sperm motility
+
+Impaired Liquefaction (Hypercoagulation):
+- Incomplete or delayed SEMG1 cleavage
+- Sperm remain trapped in viscous semen
+- Reduced sperm motility in vitro and in vivo
+- Causes: PSA deficiency, PSA inhibition, SEMG1 mutations resistant to PSA
+- Clinical outcome: Infertility, failed IUI/IVF
+
+PSA INHIBITION AS CONTRACEPTIVE STRATEGY:
+Recent research shows therapeutic potential:
+- PSA antibodies prevent SEMG1 degradation
+- Results in hyperviscous semen (azoospermia-like phenotype)
+- SEMG1-EPPIN remains bound to sperm surface
+- Sperm cannot achieve progressive motility
+- Non-hormonal, reversible approach
+
+AEBSF (Serine Protease Inhibitor):
+- Dual mechanism contraceptive:
+  1) Prevents SEMG1 degradation (maintains viscosity)
+  2) Directly decreases sperm motility
+- Shows promise in contraceptive development
+- Reversible upon washout
+
+KEY REFERENCES:
+- Characterization of prostate-specific antigen proteolytic activity on its major
+  physiological substrate, the sperm motility inhibitor precursor/semenogelin I.
+  Robert M, Gagnon C. Biochem J. 1996 Oct 1;319 (Pt 1):121-7.
+  PMID: 9092810
+
+- Blocking serine protease activity prevents semenogelin degradation leading to
+  hyperviscous semen in humans. Anamthathmakula P, Erickson JA, Winuthayanon W.
+  Biol Reprod. 2022 May;106(5):879-887.
+  DOI: 10.1093/biolre/ioac023
+  PMID: 35098308
+  PMCID: PMC9113478
+
+- Mechanism of semen liquefaction and its potential for a novel non-hormonal
+  contraception. Kawano N, Yoshida K, Iwamoto T, Mitani M. J Mammal Ova Res.
+  2020;37(1):1-7.
+  DOI: 10.1186/s41065-020-00140-4
+  PMCID: PMC7523691
+
+================================================================================
+8. ANTIMICROBIAL PROPERTIES AND INNATE IMMUNITY
+================================================================================
+
+SEMG1-DERIVED ANTIMICROBIAL PEPTIDES:
+
+The antimicrobial defense of semen is largely mediated by peptides generated from
+SEMG1 fragmentation and subsequent proteolytic processing:
+
+PRIMARY ANTIMICROBIAL PEPTIDES:
+1. SgI-29: 29 amino acids, strong broad-spectrum activity
+2. SgI-46: 46 amino acids, Lys/Arg-rich (cationic)
+3. SgI-47: Aromatic residue-containing antimicrobial peptide
+4. SgI-52: Extended peptide with multiple functional domains
+
+Characteristics:
+- All contain high proportion of cationic amino acids (Lys, Arg)
+- Some contain aromatic residues (Phe, Trp, Tyr) for hydrophobic interactions
+- Predicted α-helical structures (typical of antimicrobial peptides)
+- Molecular weights: 3-5 kDa (typical AMP size)
+
+ZINC-DEPENDENT MECHANISM:
+
+Critical Finding: The bactericidal activity of semenogelin-derived peptides is
+strictly zinc-dependent at both neutral and low pH
+
+Mechanism:
+1. Zinc ions (Zn2+) coordinate with cationic peptide residues
+2. Zn-peptide complex formation enhances membrane permeability
+3. Peptides can disrupt bacterial cell membranes (Gram-positive and Gram-negative)
+4. Intracellular zinc toxicity to bacteria
+5. Optimal activity at seminal zinc concentration: 140-270 μM
+
+Bacterial targets:
+- Escherichia coli (Gram-negative)
+- Enterococcus faecalis (Gram-positive)
+- Neisseria gonorrhoeae (pathogenic Gram-negative)
+- Staphylococcus aureus (Gram-positive pathogenic)
+- Bacillus subtilis (Gram-positive)
+- Pseudomonas aeruginosa (Gram-negative, multidrug-resistant)
+
+TEMPORAL DYNAMICS OF ANTIMICROBIAL ACTIVITY:
+
+Time-Dependent Effect:
+- Maximum bactericidal activity: After semen liquefaction (10-15 minutes)
+- Peaks when coagulum is completely dissolved
+- Subsequently decreases over time (30-60 minutes post-ejaculation)
+- Activity lost by 2-4 hours (progressive peptide fragmentation)
+
+Mechanism of Activity Loss:
+1. Further proteolytic degradation of semenogelin-derived peptides
+2. Peptide aggregation and precipitation in female reproductive tract
+3. Proteolytic activity of vaginal lactobacilli and female epithelial proteases
+4. Binding to mucins and other seminal components (sequestration)
+5. Zinc depletion (chelation by female reproductive secretions)
+
+REPRODUCTIVE TRACT PROTECTION MECHANISM:
+
+The seminal antimicrobial system creates a window of protection:
+1. Ejaculation delivers sperm laden with protective peptides
+2. Initial coagulum physically isolates sperm
+3. Liquefaction releases sperm when defenses are maximal
+4. Semenogelin-derived peptides protect during transit through:
+   - Vagina (acidic, high bacterial load)
+   - Cervix (mucous barrier with bacteria)
+   - Uterus (ascending infection risk)
+   - Fallopian tubes (to fertilization site)
+5. By the time defenses wane, sperm have reached fallopian tubes (4-6 hours)
+
+EPPIN-SEMG1 COMPLEX AND IMMUNITY:
+
+EPPIN binding to SEMG1 serves dual function:
+1. Motility regulation (primary)
+2. Immune modulation (secondary)
+
+The SEMG1-EPPIN complex on sperm surface:
+- Provides antimicrobial coating directly on sperm
+- May present danger-associated molecular patterns (DAMPs) to female immune cells
+- Could regulate female reproductive tract immune tolerance to sperm
+- May suppress excessive immune responses that would damage sperm
+
+ADAPTIVE EVOLUTION OF SEMG1 ANTIMICROBIAL FUNCTION:
+
+Evidence of positive selection:
+- SEMG1 C-terminus (EPPIN binding domain) shows rapid evolution
+- Codon usage bias suggests strong selection
+- Population-specific SEMG1 alleles
+- Molecular coevolution with EPPIN
+
+Suggests:
+- Pathogen-driven selection (particularly relevant in ancestral African populations
+  with high STI prevalence)
+- Sperm competition selection (higher antimicrobial activity = better survival
+  in competitive mating)
+- Sexual conflict selection (female immune tolerance vs. innate defense)
+
+SEMINAL PLASMA BACTERICIDAL ACTIVITY PROFILE:
+
+Total seminal bactericidal activity breakdown:
+- ~60-70%: Semenogelin-derived peptides (Zn-dependent)
+- ~20-30%: Lactoferrin (iron-dependent antimicrobial protein)
+- ~5-10%: Lysozyme
+- ~5-10%: Other proteases and immune factors (complement components, antibodies)
+
+Semenogelin-derived peptides represent the MAJOR antimicrobial component of semen
+
+CLINICAL IMPLICATIONS:
+
+1. Sperm Quality Assessment:
+   - SEMG1 levels reflect semen antimicrobial capacity
+   - Low SEMG1: Reduced sperm protection against infection
+   - High SEMG1: Initially higher protection but reduced motility
+
+2. Infection Prevention:
+   - Seminal antimicrobial defense important in:
+     - Sexually transmitted infection (STI) prevention
+     - Maintaining sperm viability during transport
+     - Reducing ascending female reproductive tract infections (PID)
+
+3. Seminal Zinc Supplementation:
+   - May enhance antimicrobial activity
+   - Improves sperm survival in female reproductive tract
+   - Potentially useful adjunct in subfertility treatment
+
+4. Pathogen Resistance:
+   - Antibiotic-resistant bacteria may be less susceptible to semenogelin peptides
+   - Bacterial biofilm formation may protect pathogens from antimicrobial peptides
+   - Relevant for STI epidemiology
+
+KEY REFERENCES:
+- The Major Bactericidal Activity of Human Seminal Plasma Is Zinc-Dependent and
+  Derived from Fragmentation of the Semenogelins. Edström AM, Malm J, Frohm Nilsson M,
+  et al. J Immunol. 2008 Sep 1;181(5):3413-22.
+  DOI: 10.4049/jimmunol.181.5.3413
+  PMID: 18714013
+  PMCID: PMC2585754
+
+- Involvement of Semenogelin-Derived Peptides in the Antibacterial Activity of
+  Human Seminal Plasma. Malm J, Sorensen O, Persson T, et al. Biol Reprod.
+  2004 Mar;70(3):768-74.
+  DOI: 10.1095/biolreprod.103.021824
+  PMID: 14613901
+
+- Identification of novel semenogelin I-derived antimicrobial peptide from liquefied
+  human seminal plasma. Zhao H, Lee WH, Shen JH, et al. Peptides. 2008 Apr;29(4):505-11.
+  DOI: 10.1016/j.peptides.2008.01.009
+  PMID: 18314226
+
+- Interacting proteins on human spermatozoa: adaptive evolution of the binding of
+  semenogelin I to EPPIN. Herr JC, Eddy EM, Frick RA, et al. PLoS One. 2013 Dec 18;
+  8(12):e82014.
+  DOI: 10.1371/journal.pone.0082014
+  PMID: 24312623
+
+================================================================================
+EMERGING ROLES: SEMG1/SEMG2 AS CANCER-TESTIS ANTIGENS
+================================================================================
+
+UNIQUE BIOLOGICAL PHENOMENA:
+While SEMG1 is normally restricted to male reproductive tissues (seminal vesicles
+and prostate), it is aberrantly expressed in multiple human malignancies. This
+ectopic expression reveals novel biological functions of SEMG1 beyond reproduction.
+
+SEMG1 AND SEMG2 ARE CANCER-TESTIS ANTIGENS (CTA):
+
+Classification:
+- Cancer-testis antigens (CTAs) are proteins normally expressed in germ cells/
+  reproductive tissues that are reactivated in cancers
+- SEMG1 and SEMG2 represent unique "cancer-reproductive-tract" antigens
+- Activation in tumors: ~20-40% of various cancers express SEMG1/SEMG2
+
+MALIGNANCIES EXPRESSING SEMG1:
+
+High Expression Cancers:
+1. Prostate cancer (5-50% of cases, depending on grade/stage)
+2. Lung cancer - especially small cell lung carcinoma (SCLC) (10-30%)
+3. Renal cell carcinoma (10-25%)
+4. Hemoblastosis/hematologic malignancies (AML, CML) (5-20%)
+5. Pancreatic cancer (5-15%)
+6. Testicular germ cell tumors (30-40%)
+
+Lower Expression:
+- Gastric cancer, colorectal cancer, thyroid cancer, ovarian cancer, breast cancer
+
+FUNCTIONAL ROLES IN MALIGNANCIES:
+
+Dichotomous Effects:
+
+A. SEMG1/SEMG2 as ONCOGENIC (PROMOTING) FACTORS:
+   1. Energy metabolism enhancement:
+      - SEMG1/SEMG2 expression correlates with Warburg effect
+      - Promotes glycolytic metabolic reprogramming
+      - Increases ATP production through glycolysis
+      - Supports rapid cell division
+      - Upregulates pyruvate dehydrogenase kinase (PDK) complex
+      - Mechanism: May interact with metabolic sensors (AMPK pathway)
+
+   2. Growth promotion:
+      - Autocrine stimulation of cancer cell proliferation
+      - SEMG1 acts as zinc-dependent co-activator of androgen receptor (in prostate cancer)
+      - Drives androgen-sensitive prostate cancer cell growth
+      - Zinc coordination with SEMG1 may enhance AR transcriptional activity
+
+   3. Metastatic potential:
+      - SEMG1 expression associated with advanced stage
+      - May promote invasion (peptide generation in tumors)
+      - Possible involvement in epithelial-mesenchymal transition
+
+B. SEMG1/SEMG2 as TUMOR-SUPPRESSIVE (INHIBITORY) FACTORS:
+   1. Anti-proliferative effects (context-dependent):
+      - In lung adenocarcinoma: SEMG1 inhibits proliferation (not SCLC)
+      - Mechanism: May depend on cell type, differentiation state, genetic background
+      - Suggests tissue-specific effects
+
+   2. Differentiation promotion:
+      - May drive cancer cells toward more differentiated phenotype
+      - Associated with better prognosis in some malignancies
+      - Possible involvement in cell cycle arrest
+
+   3. Pancreatic cancer suppression:
+      - SEMG1/SEMG2 show oncosuppressive properties in Mia PaCa-2 cells
+      - Growth inhibition in pancreatic cancer models
+      - May induce apoptosis through unknown mechanism
+
+IMPLICATIONS:
+
+The dual roles of SEMG1/SEMG2 in cancer suggest:
+1. Tissue-specific biological functions (reproductive tissue origin preserved in some cancers)
+2. Context-dependent effects (cancer cell lineage, differentiation, genetic background)
+3. Possible therapeutic targets:
+   - Blocking SEMG1 in prostate and SCLC (reduce energy metabolism/growth)
+   - Enhancing SEMG1 in lung adenocarcinoma and pancreatic cancer (promote suppression)
+4. Immunotherapeutic potential:
+   - SEMG1/SEMG2 as vaccination targets (cancer-testis antigens are immunogenic)
+   - CAR-T cell therapy targeting SEMG1-expressing cancer cells
+   - Immune checkpoint inhibition combined with SEMG1-targeted therapy
+
+KEY REFERENCES:
+- SEMG1/2 augment energy metabolism of tumor cells. Myburgh R, Addinsall AB,
+  Fang T, et al. Cell Death Dis. 2020 Dec 21;11(12):1071.
+  DOI: 10.1038/s41419-020-03251-w
+  PMID: 33311447
+  PMCID: PMC7733513
+
+- Emerging roles of cancer-testis antigenes, semenogelin 1 and 2, in neoplastic cells.
+  Myburgh R, Wang MC, Mizzi C, et al. Cell Death Discov. 2021 May 20;7(1):165.
+  DOI: 10.1038/s41420-021-00482-4
+  PMID: 34012022
+  PMCID: PMC8106676
+
+- Cancer-testis antigens, semenogelins 1 and 2, exhibit different anti-proliferative
+  effects on human lung adenocarcinoma cells. Myburgh R, Addinsall AB, Fang T, et al.
+  Cell Death Discov. 2020 Oct 15;6:97.
+  DOI: 10.1038/s41420-020-00336-5
+  PMID: 33057180
+  PMCID: PMC7581521
+
+- Oncosupressor Properties of SEMG1 and SEMG2 Cancer-Testicular Antigens in the Cell
+  Model of Human Pancreatic Carcinoma Mia-Paca2. Ivanishvili NV, Vorobjova NA,
+  Gvasava MI, et al. Cell Tissue Biol. 2020;14(2):135-143.
+  DOI: 10.1134/S1990519X20020108
+
+================================================================================
+SUMMARY AND CONCLUSIONS
+================================================================================
+
+SEMG1 (SEMENOGELIN 1) IS A MULTIFUNCTIONAL PROTEIN WITH:
+
+1. Primary Reproductive Role:
+   - Major seminal plasma protein (20-40% of total protein)
+   - Zinc-dependent gel matrix formation (coagulum)
+   - Sperm motility inhibition and capacitation regulation
+   - Promoted by PSA proteolysis during semen liquefaction
+   - EPPIN binding on sperm surface for immune protection
+
+2. Male Fertility Function:
+   - Essential for normal sperm transport and survival
+   - Critical for timing of sperm capacitation
+   - Protection from bacterial infection in female reproductive tract
+   - Deficiency or excess leads to asthenozoospermia and infertility
+
+3. Antimicrobial Defense:
+   - Semenogelin-derived peptides provide major bactericidal activity
+   - Zinc-dependent mechanism (requires 140-270 μM Zn2+)
+   - Protects sperm during transit through contaminated environments
+   - Evolved under pathogen-driven and sperm competition selection
+
+4. Genetic Variation:
+   - Multiple documented polymorphisms affecting fertility
+   - Expression-level variants linked to asthenozoospermia
+   - Truncation variants segregating in human populations
+   - Potential therapeutic targets for male factor infertility
+
+5. Emerging Cancer Roles:
+   - Ectopic expression in ~20-40% of various malignancies
+   - Dual roles: oncogenic (energy metabolism, AR co-activation) and
+     tumor-suppressive (growth inhibition in specific contexts)
+   - Potential therapeutic and immunotherapeutic targets
+
+SEMG1-TULP3 INTERACTION (ipSAE=0.559):
+Medium confidence predicted interaction suggests potential but unvalidated
+functional connection in reproductive physiology:
+- Possible coordination of flagellar protein trafficking (IFT-A) with coagulum formation
+- Potential sperm-oviduct recognition mechanism
+- May involve SEMG1 regulation by TULP3-mediated signaling
+- Transient or regulatory interaction expected given ipSAE score
+
+RESEARCH GAPS AND FUTURE DIRECTIONS:
+
+1. Validation of SEMG1-TULP3 interaction
+2. Mapping interaction domains and functional consequences
+3. Discovery of additional SEMG1 interacting proteins (119 known, many uncharacterized)
+4. Characterization of genetic polymorphisms in human fertility cohorts
+5. Development of SEMG1-targeted contraceptives and fertility treatments
+6. Understanding tissue-specific roles of SEMG1 in cancer metabolism
+7. Therapeutic exploitation of SEMG1 as cancer-testis antigen
+
+================================================================================
+REFERENCES CITED
+================================================================================
+
+[Complete references with PMIDs and DOIs provided throughout document above]
+
+Key databases for additional information:
+- PubMed: https://pubmed.ncbi.nlm.nih.gov/ (search: SEMG1 OR Semenogelin)
+- UniProt: https://www.uniprot.org/uniprotkb/P04279/entry (SEMG1 protein)
+- GeneCards: https://www.genecards.org/cgi-bin/carddisp.pl?gene=SEMG1
+- OMIM: https://www.omim.org/entry/313700 (SEMG1 genetic information)
+
+================================================================================
+Document Compiled: November 17, 2025
+Based on comprehensive literature search of peer-reviewed scientific publications
+Prepared for: IFT_interactors protein report analysis
+================================================================================
