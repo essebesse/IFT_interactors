@@ -1,0 +1,1248 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: SUFU (Suppressor of Fused)
+================================================================================
+
+Interaction Context: ipSAE=0.621 with IFT20 (IFT-B complex)
+Report Generated: 2025-11-17
+
+================================================================================
+1. PROTEIN OVERVIEW
+================================================================================
+
+Gene Name: SUFU (Suppressor of Fused homolog)
+UniProt ID: Q9UMX1
+Gene ID: 51684
+OMIM: 607035
+Chromosomal Location: 10q24.32
+Protein Length: 484 amino acids (human)
+Molecular Weight: ~54 kDa
+
+SUFU is an essential intracellular negative regulator of mammalian Hedgehog
+(Hh) signaling that acts by binding and modulating the activity of GLI
+transcription factors. While dispensable in Drosophila, SUFU is absolutely
+required for mouse embryonic development, highlighting its critical importance
+in vertebrate development.
+
+================================================================================
+2. KNOWN CILIARY ROLE
+================================================================================
+
+2.1 PRIMARY CILIUM LOCALIZATION
+--------------------------------
+SUFU localizes to the primary cilium, particularly enriched at the distal
+ciliary tip in a characteristic "comet tail" pattern. Ciliary localization
+of SUFU is:
+
+- Rapid: Strong ciliary accumulation occurs within 30 minutes of Shh stimulation
+- GLI-dependent: SUFU ciliary localization depends on ciliary-localized GLI proteins
+- PKA-regulated: PKA activation inhibits SUFU ciliary localization
+- Dynamic: SUFU translocates to cilia in coordination with GLI2 and GLI3
+
+References:
+- PMID: 20956384 - Tukachinsky et al. (2010) J Cell Biol 191(2):415-428
+  "A mechanism for vertebrate Hedgehog signaling: recruitment to cilia and
+   dissociation of SuFu-Gli protein complexes"
+
+- PMID: 21209912 - Barakat et al. (2011) PLoS One 6(1):e15900
+  "Coordinated translocation of mammalian Gli proteins and suppressor of
+   fused to the primary cilium"
+
+2.2 CILIARY TIP COMPARTMENT FUNCTION
+------------------------------------
+At the ciliary tip, SUFU participates in a KIF7-defined compartment where:
+
+1. SUFU-GLI complexes accumulate at the distal tip
+2. Active SMO promotes dissociation of SUFU from GLI
+3. Monomeric SUFU and GLI exit the cilium separately
+4. Free GLI translocates to the nucleus for transcriptional activation
+
+The ciliary tip represents the critical site where Hedgehog signal transduction
+is converted from membrane-proximal events to transcriptional responses.
+
+Reference:
+- PMID: 20956384 - Tukachinsky et al. (2010) J Cell Biol 191(2):415-428
+
+2.3 CILIA-INDEPENDENT FUNCTIONS
+-------------------------------
+Importantly, SUFU can also inhibit Hedgehog signaling in the ABSENCE of cilia:
+
+- SUFU interacts with GLI proteins and inhibits GLI activator activity even in
+  cells lacking cilia
+- This cilia-independent regulation is evolutionarily conserved
+- Represents a dual mechanism of Hedgehog pathway control
+
+References:
+- PMID: 19371734 - Jia et al. (2009) Dev Cell 16(5):764-774
+  "Suppressor of Fused inhibits mammalian Hedgehog signaling in the absence
+   of cilia"
+
+- Merchant et al. (2009) Genes Dev 23(16):1910-1928
+  "Cilium-independent regulation of Gli protein function by Sufu in Hedgehog
+   signaling is evolutionarily conserved"
+
+================================================================================
+3. HEDGEHOG PATHWAY: MOLECULAR MECHANISM
+================================================================================
+
+3.1 NEGATIVE REGULATOR OF HEDGEHOG SIGNALING
+--------------------------------------------
+SUFU functions as a tumor suppressor and essential negative regulator through
+multiple mechanisms:
+
+A. CYTOPLASMIC SEQUESTRATION
+   - SUFU binds GLI proteins in the cytoplasm
+   - Blocks nuclear import of GLI proteins
+   - Prevents GLI from accessing target gene promoters
+
+   Reference:
+   - PMID: 10559945 - Kogerman et al. (1999) Nat Cell Biol 1(5):312-319
+     "Mammalian suppressor-of-fused modulates nuclear-cytoplasmic shuttling
+      of Gli-1"
+
+B. TRANSCRIPTIONAL REPRESSION
+   - Even in the nucleus, SUFU can repress GLI-mediated transcription
+   - Recruits corepressor complexes (SAP18-mSin3, p66β-NuRD)
+   - Directly inhibits GLI DNA binding activity
+
+   References:
+   - PMID: 14611647 - Paces-Fessy et al. (2004) Biochem J 378(Pt 2):353-362
+     "The negative regulator of Gli, Suppressor of fused (Sufu), interacts
+      with SAP18, Galectin3 and other nuclear proteins"
+
+   - PMID: 25403183 - Chen et al. (2014) Genes Dev 28(22):2547-2563
+     "Regulation of Sufu activity by p66β and Mycbp provides new insight into
+      vertebrate Hedgehog signaling"
+
+C. PROMOTION OF GLI PROCESSING
+   - SUFU recruits GSK3β to GLI3
+   - Facilitates GLI3 phosphorylation by PKA, CK1, and GSK3β
+   - Promotes proteolytic processing of GLI3 into the repressor form (GLI3R)
+
+   Reference:
+   - PMID: 19622347 - Wang et al. (2010) Genes Dev 24(19):2180-2191
+     "Sufu recruits GSK3beta for efficient processing of Gli3"
+
+3.2 PATHWAY ACTIVATION: RELIEF OF SUFU INHIBITION
+-------------------------------------------------
+Hedgehog ligand binding triggers a cascade:
+
+1. Hedgehog → Patched (PTCH1) → Smoothened (SMO) activation
+2. SMO accumulates in primary cilium
+3. SUFU-GLI complexes recruited to ciliary tip
+4. Active SMO causes SUFU-GLI dissociation
+5. Free GLI exits cilium and enters nucleus
+6. Transcriptional activation of Hh target genes
+
+Reference:
+- PMID: 27849569 - Humke et al. (2010) Mol Cell Biol 36(1):174-194
+  "Suppressor of Fused Chaperones Gli Proteins To Generate Transcriptional
+   Responses to Sonic Hedgehog Signaling"
+
+================================================================================
+4. KNOWN PROTEIN-PROTEIN INTERACTIONS
+================================================================================
+
+4.1 GLI TRANSCRIPTION FACTORS (Primary Substrates)
+--------------------------------------------------
+SUFU binds all three GLI proteins with high affinity:
+
+A. GLI1 (Activator only)
+   - Binds via SYGHL motif (conserved in all GLI proteins)
+   - SUFU sequesters GLI1 in cytoplasm
+   - Prevents nuclear accumulation and transcriptional activity
+
+   UniProt: P08151
+
+B. GLI2 (Activator and weak repressor)
+   - Ciliary localization of GLI2 required for activation
+   - SUFU binding inhibits nuclear translocation
+   - SUFU regulates balance of GLI2-A vs GLI2-R
+
+   UniProt: P10070
+
+C. GLI3 (Strong repressor and weak activator)
+   - SUFU promotes GLI3 processing to repressor form (GLI3R)
+   - Binding via both N-terminal (SIN) and C-terminal (SIC) sites
+   - GLI3R is primary mediator of Hh pathway repression
+
+   UniProt: P10071
+
+References:
+- PMID: 12426310 - Pearse et al. (2002) J Biol Chem 278(7):5116-5122
+  "Characterization of the physical interaction of Gli proteins with SUFU
+   proteins"
+
+- PMID: 25965346 - Zhang et al. (2015) Proc Natl Acad Sci USA 112(20):6383-6388
+  "Multisite interaction with Sufu regulates Ci/Gli activity through distinct
+   mechanisms in Hh signal transduction"
+
+4.2 KINASES AND PHOSPHORYLATION REGULATORS
+------------------------------------------
+A. PROTEIN KINASE A (PKA)
+   - Directly phosphorylates SUFU at Ser-346
+   - Stabilizes SUFU protein
+   - Inhibits ciliary localization of SUFU and GLI
+
+B. GLYCOGEN SYNTHASE KINASE 3β (GSK3β)
+   - Phosphorylates SUFU at Ser-342 (primed by PKA phosphorylation at Ser-346)
+   - Dual PKA/GSK3β phosphorylation stabilizes SUFU
+   - SUFU recruits GSK3β to GLI3 for processing
+
+   Reference:
+   - PMID: 21317289 - Chen et al. (2011) J Biol Chem 286(16):13502-13511
+     "Dual Phosphorylation of suppressor of fused (Sufu) by PKA and GSK3beta
+      regulates its stability and localization in the primary cilium"
+
+C. CASEIN KINASE 1 (CK1)
+   - Does NOT directly phosphorylate SUFU
+   - Phosphorylates GLI proteins as part of processing pathway
+
+D. PROTEIN PHOSPHATASE 4 (PP4)
+   - Dephosphorylates SUFU
+   - Promotes Hedgehog signaling by destabilizing SUFU
+
+   Reference:
+   - Zhang et al. (2020) Cell Death Dis 11(8):651
+     "Protein phosphatase 4 promotes Hedgehog signaling through
+      dephosphorylation of Suppressor of fused"
+     DOI: 10.1038/s41419-020-02843-w
+
+4.3 NUCLEAR PROTEIN PARTNERS
+----------------------------
+A. SAP18 (Sin3-associated polypeptide 18)
+   - Component of NuRD corepressor complex
+   - SUFU recruits SAP18-mSin3 to repress GLI-mediated transcription
+   - Provides chromatin-level repression
+
+   UniProt: O00422
+
+B. p66β (CHD4/Mi-2β)
+   - Member of NuRD repressor complex
+   - SUFU recruits p66β to block Gli-mediated gene expression
+   - Negative regulator of Hh signaling
+
+C. MYCBP (Myc-binding protein)
+   - Forms complex with GLI and SUFU in unstimulated state
+   - Dissociates upon Hh activation
+   - Positive regulator of GLI activity after SUFU dissociation
+
+   UniProt: Q99417
+
+D. Other Nuclear Proteins
+   - pCIP (p300/CBP-cointegrator protein)
+   - PIAS1 (protein inhibitor of activated STAT)
+   - Galectin-3 (β-galactoside-binding lectin)
+   - hnRNPA1 (heterogeneous nuclear ribonucleoprotein A1)
+
+References:
+- PMID: 14611647 - Paces-Fessy et al. (2004) Biochem J 378(Pt 2):353-362
+- PMID: 25403183 - Chen et al. (2014) Genes Dev 28(22):2547-2563
+
+4.4 CILIARY AND CYTOSKELETAL PROTEINS
+-------------------------------------
+A. KIF7 (Kinesin Family Member 7)
+   - Ciliary kinesin localizing to ciliary tip
+   - Forms complex with SUFU and GLI at ciliary tip compartment
+   - Coordinates GLI processing and activation
+
+   UniProt: Q2M1P5
+
+B. Implications for IFT proteins
+   - SUFU localizes to cilia via GLI-dependent mechanism
+   - May require IFT machinery for ciliary entry/exit
+   - Potential cargo for IFT-mediated trafficking
+
+4.5 E3 UBIQUITIN LIGASES (Indirect)
+-----------------------------------
+While SUFU itself is not a direct substrate, it regulates GLI ubiquitination:
+
+- β-TrCP: Ubiquitinates phosphorylated GLI proteins
+- ITCH: Alternative E3 ligase for GLI1 degradation
+- SPOP: Targets other Hedgehog pathway components
+
+SUFU protects GLI from proteasomal degradation when bound, but facilitates
+GLI3 processing to repressor form.
+
+Reference:
+- PMID: 16705181 - Pan et al. (2006) Mol Cell Biol 26(12):4327-4338
+  "Multisite protein kinase A and glycogen synthase kinase 3beta
+   phosphorylation leads to Gli3 ubiquitination by SCFbetaTrCP"
+
+================================================================================
+5. CILIARY LOCALIZATION AND DYNAMICS
+================================================================================
+
+5.1 LOCALIZATION PATTERN
+------------------------
+- Primary cilium: Enriched at distal tip ("comet tail" pattern)
+- Differential from SMO: SUFU at tip vs SMO along ciliary shaft
+- Co-localizes with: GLI2, GLI3, KIF7
+- Basal body: Minimal accumulation
+
+5.2 TRAFFICKING DYNAMICS
+------------------------
+Timeline of SUFU ciliary accumulation:
+- 0 min (no Shh): Low/absent from cilia
+- 30 min (+Shh): Strong ciliary localization begins
+- Sustained: Maintained during active signaling
+- Post-activation: SUFU exits cilium after GLI dissociation
+
+Regulation:
+- GLI-dependent: Requires GLI proteins for ciliary entry
+- SMO-dependent: Active SMO maintains SUFU at cilia
+- PKA-inhibited: PKA activation blocks ciliary localization
+
+5.3 CONFORMATIONAL CHANGES
+--------------------------
+SUFU alternates between "open" and "closed" conformations:
+
+- CLOSED: Stabilized by GLI binding, inhibits signaling
+- OPEN: Promoted by GLI dissociation and Hh stimulation
+- Transition: Involves 58° rotation of C-terminal domain via flexible linker
+
+Reference:
+- PMID: 24311597 - Cherry et al. (2013) Acta Crystallogr D Biol Crystallogr
+  69(Pt 12):2563-2579
+  "Structural basis of SUFU-GLI interaction in human Hedgehog signalling
+   regulation"
+
+================================================================================
+6. STRUCTURAL BIOLOGY
+================================================================================
+
+6.1 PROTEIN ARCHITECTURE
+------------------------
+SUFU is a two-domain protein:
+
+A. N-TERMINAL DOMAIN (NTD)
+   - Contains GLI-binding surface
+   - Shows acidic surface patch (Glu106, Asp111, Glu152, Asp159, Glu181,
+     Glu221, Asp262)
+   - Critical for cytoplasmic retention of GLI
+   - SIN (SUFU-interacting site N-terminal) binding region
+
+B. C-TERMINAL DOMAIN (CTD)
+   - Second GLI-binding interface
+   - SIC (SUFU-interacting site C-terminal) binding region
+   - Regulatory subdomain
+
+C. FLEXIBLE LINKER
+   - Connects NTD and CTD
+   - Allows conformational changes upon GLI binding
+   - Enables "open" to "closed" transitions
+
+D. INTRINSICALLY DISORDERED LOOP
+   - Crucial for pathway activation
+   - May interact with other regulatory proteins
+
+6.2 CRYSTAL STRUCTURES (PDB Entries)
+------------------------------------
+Multiple high-resolution structures available:
+
+1. PDB: 4BL8
+   - Crystal structure of full-length human SUFU
+   - Resolution: 2.40 Å
+   - "Open" conformation
+
+2. PDB: 4BL9 and 4BLA
+   - Crystal structures of full-length human SUFU mutant lacking regulatory
+     subdomain
+   - Two crystal forms
+   - Resolution: ~2.5 Å
+
+3. PDB: 4BLB
+   - Crystal structure of human SUFU-GLI1p complex
+   - Resolution: 2.80 Å
+   - Shows GLI1 peptide (SYGHL motif) binding
+   - "Closed" conformation
+
+4. PDB: 4BLD
+   - Crystal structure of human SUFU-GLI3p complex
+   - Resolution: 2.85 Å
+   - Shows GLI3 peptide binding
+   - "Closed" conformation
+
+Key Structural Features:
+- GLI peptide lies between β-sheets of SUFU NTD and CTD
+- Peptide is "clamped" between the two domains
+- 58° rotation of CTD upon GLI binding (open → closed)
+- SYGHL motif is highly conserved across GLI1/2/3
+- Gly122 and His123 in GLI are crucial for SUFU binding
+
+References:
+- PMID: 24311597 - Cherry et al. (2013) Acta Crystallogr D Biol Crystallogr
+  69(Pt 12):2563-2579
+  DOI: 10.1107/S0907444913028473
+
+- PMID: 24268346 - Merchant et al. (2013) Nat Commun 4:2608
+  "Structural insight into the mutual recognition and regulation between
+   Suppressor of Fused and Gli/Ci"
+  DOI: 10.1038/ncomms3608
+
+6.3 BINDING MOTIFS
+------------------
+GLI proteins contain conserved SUFU-binding elements:
+
+A. SYGHL MOTIF (N-terminal site, SIN)
+   - Sequence: Ser-Tyr-Gly-His-Leu
+   - Conserved in GLI1, GLI2, GLI3
+   - Primary SUFU recognition sequence
+   - Gly and His are critical for binding affinity
+
+B. C-TERMINAL SITE (SIC)
+   - Second binding interface
+   - Contributes to optimal inhibition
+   - May have distinct functional role from SIN
+
+Both SIN and SIC are required for maximal SUFU-mediated repression, but
+regulate GLI through distinct mechanisms:
+- SIN: Primarily mediates cytoplasmic retention
+- SIC: Contributes to nuclear inhibition
+
+Reference:
+- PMID: 25965346 - Zhang et al. (2015) Proc Natl Acad Sci USA 112(20):6383-6388
+
+6.4 POST-TRANSLATIONAL MODIFICATIONS
+------------------------------------
+Key phosphorylation sites:
+
+- Ser-342: GSK3β phosphorylation site
+- Ser-346: PKA phosphorylation site
+- Dual phosphorylation: Stabilizes SUFU protein
+
+Sequential phosphorylation:
+1. PKA phosphorylates Ser-346 first
+2. This primes GSK3β phosphorylation at Ser-342
+3. Dual modification protects SUFU from degradation
+
+Reference:
+- PMID: 21317289 - Chen et al. (2011) J Biol Chem 286(16):13502-13511
+
+================================================================================
+7. DISEASE ASSOCIATIONS
+================================================================================
+
+7.1 GORLIN SYNDROME (NBCCS - Nevoid Basal Cell Carcinoma Syndrome)
+------------------------------------------------------------------
+SUFU mutations account for ~5% of Gorlin syndrome cases (majority are PTCH1):
+
+Clinical Features (SUFU-specific):
+- Multiple basal cell carcinomas (BCCs)
+- Infundibulocystic BCCs (more common in SUFU vs PTCH1 mutations)
+- Trichoepitheliomas
+- Childhood medulloblastoma (MUCH higher risk than PTCH1)
+- Developmental abnormalities
+- Skeletal anomalies
+
+OMIM: #109400 (NBCCS1), #617013 (NBCCS2, SUFU-related)
+
+References:
+- PMID: 25403219 - Smith et al. (2014) J Clin Oncol 32(36):4155-4161
+  "Germline mutations in SUFU cause Gorlin syndrome-associated childhood
+   medulloblastoma and redefine the risk associated with PTCH1 mutations"
+  DOI: 10.1200/JCO.2014.58.2569
+
+- PMID: 36825822 - Yasar et al. (2023) J Am Acad Dermatol 88(4):938-940
+  "SUFU-associated Gorlin syndrome: Expanding the spectrum between classic
+   nevoid basal cell carcinoma syndrome and multiple hereditary
+   infundibulocystic basal cell carcinoma"
+
+7.2 MEDULLOBLASTOMA
+-------------------
+SUFU mutations strongly predispose to childhood brain tumors:
+
+Key Findings:
+- Risk in SUFU mutation carriers: Up to 20× higher than PTCH1 carriers
+- Risk in PTCH1 mutation carriers: <2%
+- Age at diagnosis: Median 17 months (very early childhood)
+- Histological subtypes:
+  * Desmoplastic/nodular (most common)
+  * Medulloblastoma with extensive nodularity (MBEN)
+  * Classic medulloblastoma
+
+Molecular Mechanism:
+- Loss of SUFU removes negative regulation of Hedgehog pathway
+- Constitutive GLI activation drives proliferation
+- Tumor cells show activated Hh target genes (GLI1, PTCH1, MYCN)
+
+Clinical Implications:
+- MRI surveillance recommended for SUFU mutation carriers in early childhood
+- NOT recommended for PTCH1 carriers (much lower risk)
+
+References:
+- PMID: 25403219 - Smith et al. (2014) J Clin Oncol 32(36):4155-4161
+
+- PMID: 21358634 - Brugieres et al. (2010) J Clin Oncol 28(36):5317-5323
+  "High Frequency of Germline SUFU Mutations in Children With
+   Desmoplastic/Nodular Medulloblastoma Younger Than 3 Years of Age"
+  DOI: 10.1200/JCO.2011.38.7258
+
+7.3 BASAL CELL CARCINOMA (BCC)
+------------------------------
+SUFU mutations predispose to multiple BCCs:
+
+Specific Features:
+- Infundibulocystic subtype more common in SUFU vs PTCH1
+- Multiple hereditary infundibulocystic BCC (MHIBCC) phenotype
+- Adult onset (middle age) in some families
+- May occur without other Gorlin syndrome features
+
+Molecular Basis:
+- Loss of SUFU in skin cells
+- Aberrant Hh pathway activation
+- Uncontrolled proliferation of basal cells
+
+Reference:
+- PMID: 29356994 - Yasar et al. (2018) Acta Derm Venereol 98(3):347-353
+  "Mutations in SUFU and PTCH1 genes may cause different cutaneous cancer
+   predisposition syndromes: similar, but not the same"
+
+7.4 JOUBERT SYNDROME (JBTS32)
+-----------------------------
+Hypomorphic recessive SUFU mutations cause Joubert syndrome with skeletal
+features:
+
+Clinical Presentation:
+- Congenital ataxia
+- Cerebellar vermis hypoplasia
+- Elongated superior cerebellar peduncles ("molar tooth sign" on MRI)
+- Cranio-facial dysmorphisms:
+  * Hypertelorism
+  * Depressed nasal bridge
+  * Frontal bossing
+- Postaxial polydactyly
+- Polymicrogyria (in some patients)
+
+Genetic Basis:
+- Homozygous missense mutations (e.g., I406T, H176R)
+- Hypomorphic (partial loss of function), NOT null mutations
+- Identified in consanguineous families
+
+Molecular Mechanism:
+- Reduced SUFU protein stability
+- Decreased GLI3 binding affinity
+- Impaired GLI3 processing to repressor form (GLI3R)
+- Deregulated SHH pathway activity
+- Altered expression of SHH target genes
+
+This represents a ciliopathy phenotype caused by aberrant Hedgehog signaling.
+
+OMIM: #617757 (JBTS32)
+
+Reference:
+- PMID: 28965847 - De Mori et al. (2017) Am J Hum Genet 101(4):552-563
+  "Hypomorphic Recessive Variants in SUFU Impair the Sonic Hedgehog Pathway
+   and Cause Joubert Syndrome with Cranio-facial and Skeletal Defects"
+  DOI: 10.1016/j.ajhg.2017.08.017
+
+7.5 CONGENITAL OCULAR MOTOR APRAXIA (COMA)
+------------------------------------------
+Heterozygous truncating SUFU variants cause isolated COMA:
+
+Clinical Features:
+- Congenital onset
+- Inability to initiate voluntary horizontal saccades
+- Compensatory head thrusts
+- No other systemic features
+
+Genetic Basis:
+- Heterozygous truncating (loss-of-function) variants
+- Both familial and de novo mutations
+- 15 individuals identified across multiple families
+
+This represents a neurodevelopmental phenotype distinct from cancer
+predisposition.
+
+Reference:
+- PMID: 33188325 - Hüning et al. (2021) Genet Med 23(2):341-348
+  "Heterozygous truncating variants in SUFU cause congenital ocular motor
+   apraxia"
+  DOI: 10.1038/s41436-020-00979-w
+
+7.6 OTHER MALIGNANCIES
+----------------------
+SUFU mutations may contribute to:
+- Familial meningioma
+- Colorectal tumors (via SuFu negating protein 1 - SuNP1)
+- Other Hedgehog-driven cancers
+
+7.7 GENOTYPE-PHENOTYPE CORRELATIONS
+-----------------------------------
+Mutation Type vs Phenotype:
+
+1. HETEROZYGOUS LOSS-OF-FUNCTION (Truncating)
+   - Gorlin syndrome
+   - Medulloblastoma predisposition
+   - Basal cell carcinomas
+   - Congenital ocular motor apraxia
+
+2. HOMOZYGOUS HYPOMORPHIC (Partial loss-of-function)
+   - Joubert syndrome with skeletal features
+   - Developmental abnormalities
+   - Ciliopathy phenotype
+
+3. COMPLETE LOSS (Homozygous null)
+   - Embryonic lethal in mice (E9.5)
+   - Not compatible with human life
+
+Phenotypic Variability:
+Even within families carrying identical SUFU mutations, clinical presentation
+can range from:
+- MHIBCC phenotype (skin tumors only)
+- Full Gorlin syndrome
+- Life-threatening medulloblastoma
+
+This suggests modifier genes and environmental factors influence penetrance.
+
+Reference:
+- PMID: 39276021 - Dal et al. (2024) J Cutan Pathol 51(11):886-898
+  "Clinicopathological and molecular spectrum of patients with germline SUFU
+   mutations: A case series"
+
+================================================================================
+8. PHENOTYPES: MOUSE MODELS
+================================================================================
+
+8.1 COMPLETE KNOCKOUT (Sufu-/-)
+-------------------------------
+Embryonic Lethality:
+- Timing: E9.0-10.5 (mid-gestation)
+- 100% penetrant
+
+Developmental Defects:
+
+A. NEURAL TUBE
+   - Open neural tube (exencephaly)
+   - Abnormal neural tube patterning
+   - Brain hemorrhage (diencephalon)
+
+B. CARDIAC
+   - L-looped (leftward) hearts in 4/13 embryos
+   - Indeterminate cardiac looping in some
+   - Abnormal heart development
+
+C. GROWTH AND MORPHOLOGY
+   - Growth retardation
+   - Failure to undergo embryonic turning
+   - Abnormal somites
+
+D. MOLECULAR CHANGES
+   - Constitutive activation of Hedgehog pathway
+   - Elevated GLI target gene expression
+   - Loss of GLI3 repressor (GLI3R) formation
+
+References:
+- PMID: 16155214 - Svärd et al. (2006) Development 133(24):4407-4418
+  "Cardiac and CNS defects in a mouse with targeted disruption of suppressor
+   of fused"
+
+8.2 HYPOMORPHIC MODELS
+----------------------
+To overcome early lethality, hypomorphic models were developed:
+
+Phenotypes (viable to E18.5):
+- Polydactyly (extra digits)
+- Exencephaly (open neural tube)
+- Omphalocele (abdominal wall defect)
+- Skeletal abnormalities
+- Viable to late gestation but neonatal lethal
+
+These models allow study of SUFU function later in development.
+
+Reference:
+- PMID: 28688895 - Liu et al. (2017) Dev Biol 428(1):80-92
+  "Differential requirement of SUFU in tissue development discovered in a
+   hypomorphic mouse model"
+  DOI: 10.1016/j.ydbio.2017.05.003
+
+8.3 CONDITIONAL KNOCKOUTS
+-------------------------
+Tissue-specific deletion reveals:
+
+- CNS-specific: Required for brain patterning, prevents medulloblastoma
+- Skin-specific: Prevents basal cell carcinoma
+- Limb-specific: Required for digit number control
+
+8.4 HETEROZYGOUS MODELS (Sufu+/-)
+---------------------------------
+- Viable and fertile
+- Develop tumors with age (incomplete penetrance)
+- Medulloblastoma in some animals
+- Loss of wild-type allele in tumors (loss of heterozygosity)
+- Models human Gorlin syndrome
+
+8.5 MOUSE VS HUMAN PHENOTYPES
+-----------------------------
+Key Differences:
+- Mouse Sufu-/- is embryonic lethal; human homozygous null likely similar
+- Human heterozygous mutations: cancer predisposition, viable
+- Human hypomorphic recessive: Joubert syndrome, viable
+- Mouse models critical for understanding developmental roles
+
+Reference:
+- MGI:1345643 - Mouse Genome Informatics SUFU gene detail
+
+================================================================================
+9. IFT20 CONNECTION AND CILIARY TRAFFICKING
+================================================================================
+
+9.1 CONTEXT OF PREDICTED INTERACTION
+------------------------------------
+Interaction Parameters:
+- ipSAE score: 0.621 (medium-high confidence)
+- Bait: IFT20 (IFT-B complex component)
+- Source: AlphaFold3 prediction
+
+This interaction is biologically plausible given:
+1. Both proteins localize to primary cilia
+2. Both are essential for Hedgehog signaling
+3. Both traffic between cytoplasm and cilium
+
+9.2 IFT20: UNIQUE IFT PROTEIN
+-----------------------------
+IFT20 is distinctive among IFT proteins:
+
+- Localization: Golgi complex AND cilia (unique)
+- Function: Trafficking ciliary membrane proteins from Golgi to basal body
+- Complex: IFT-B core (IFT20/52/57/88)
+- Role: Anterograde transport, ciliary assembly
+
+IFT20 defects:
+- Shorter cilia
+- Fewer cilia
+- Blocked trafficking from Golgi to cilia
+- Impaired Hedgehog signaling
+
+Reference:
+- PMID: 29540531 - Keady et al. (2018) Mol Biol Cell 29(10):1148-1162
+  "Intraflagellar transport is deeply integrated in hedgehog signaling"
+  DOI: 10.1091/mbc.E17-10-0600
+
+9.3 POTENTIAL FUNCTIONAL SIGNIFICANCE
+-------------------------------------
+Several models for IFT20-SUFU interaction:
+
+A. SUFU AS IFT CARGO
+   Hypothesis: IFT20 may transport SUFU to cilia
+
+   Evidence supporting:
+   - SUFU rapidly accumulates at ciliary tip upon Shh stimulation
+   - IFT20 traffics membrane and soluble proteins to cilia
+   - SUFU ciliary localization is regulated (not constitutive)
+
+   Mechanism:
+   - IFT20 at Golgi → binds SUFU
+   - IFT20 → basal body → ciliary entry
+   - Anterograde IFT delivers SUFU to ciliary tip
+   - SUFU released at tip for GLI interaction
+
+B. COORDINATED REGULATION OF HEDGEHOG COMPONENTS
+   Hypothesis: IFT20 and SUFU coordinate trafficking of Hh pathway proteins
+
+   Known IFT roles in Hedgehog:
+   - IFT25/27: Remove SMO from cilia
+   - IFT proteins: Required for GLI2/3 processing
+   - IFT-B: Essential for ciliary assembly
+
+   SUFU dependencies:
+   - Requires GLI for ciliary localization
+   - Requires active SMO for ciliary accumulation
+   - May require IFT for ciliary entry/exit
+
+C. REGULATION OF GLI PROCESSING
+   Hypothesis: IFT20 facilitates SUFU-mediated GLI processing
+
+   GLI processing requires:
+   - Ciliary localization
+   - SUFU binding
+   - Kinase recruitment (PKA, CK1, GSK3β)
+   - Proteasome access
+
+   IFT20 could:
+   - Deliver SUFU to ciliary processing sites
+   - Coordinate GLI and SUFU co-trafficking
+   - Remove processed GLI from cilia
+
+D. QUALITY CONTROL
+   Hypothesis: IFT20 removes inactive SUFU from cilia
+
+   After GLI dissociation:
+   - Monomeric SUFU exits cilium
+   - May require retrograde IFT
+   - Recycled for next signaling cycle
+
+9.4 EXPERIMENTAL PREDICTIONS
+----------------------------
+To test IFT20-SUFU interaction:
+
+1. Co-immunoprecipitation
+   - Does endogenous IFT20 pull down SUFU?
+   - Is interaction Hedgehog-dependent?
+   - Which regions mediate binding?
+
+2. Ciliary trafficking
+   - Does IFT20 depletion affect SUFU ciliary localization?
+   - Is SUFU ciliary accumulation IFT-dependent?
+   - Does SUFU co-migrate with IFT trains?
+
+3. Functional assays
+   - Does IFT20 loss affect SUFU-GLI complex formation?
+   - Is GLI processing impaired without IFT20?
+   - Do IFT20 and SUFU genetically interact?
+
+4. Structural validation
+   - Can SUFU-IFT20 complex be reconstituted in vitro?
+   - What is the binding interface?
+   - Is interaction direct or mediated by other IFT-B components?
+
+9.5 BROADER CONTEXT: IFT AND HEDGEHOG SIGNALING
+-----------------------------------------------
+IFT machinery is deeply integrated into Hedgehog signaling:
+
+Components Required:
+- IFT88: Ciliary assembly, essential for all Hh signaling
+- IFT20: Golgi-to-cilium trafficking
+- IFT25/27: SMO removal from cilia
+- IFT-A: Retrograde transport, GLI processing
+- IFT-B: Anterograde transport, ciliary assembly
+
+Loss of IFT typically blocks Hedgehog signaling by:
+1. Preventing ciliary assembly
+2. Blocking SMO ciliary accumulation
+3. Impairing GLI ciliary trafficking
+4. Disrupting GLI processing
+
+SUFU can function without cilia (cytoplasmic regulation), but ciliary SUFU
+is critical for fine-tuning GLI activation at the ciliary tip.
+
+Reference:
+- Eguether & Hahne (2018) Mol Cell Oncol 5(3):e1448244
+  "The role of ciliary trafficking in Hedgehog receptor signaling"
+
+9.6 COMPARISON WITH OTHER IFT-HH INTERACTIONS
+---------------------------------------------
+Known IFT-Hedgehog protein interactions:
+
+1. IFT25-IFT27 → SMO
+   - Direct regulation of SMO ciliary exit
+   - Phosphorylation-dependent
+
+2. IFT-A → GLI processing
+   - IFT122, IFT139, IFT140 mutations
+   - Impaired GLI3 processing
+
+3. IFT88 → General ciliary assembly
+   - Required for all ciliary Hedgehog signaling
+
+IFT20 → SUFU would represent:
+- Novel trafficking pathway for Hh regulator
+- Mechanism for ciliary tip accumulation
+- Integration of IFT-B with negative regulation
+
+================================================================================
+10. THERAPEUTIC TARGETING
+================================================================================
+
+10.1 HEDGEHOG PATHWAY INHIBITORS: CLINICAL LANDSCAPE
+----------------------------------------------------
+The Hedgehog pathway is validated cancer target, but SUFU status affects
+drug response.
+
+10.2 SMO INHIBITORS (First Generation)
+--------------------------------------
+FDA-Approved:
+
+A. VISMODEGIB (Erivedge®)
+   - First FDA-approved Hh inhibitor (2012)
+   - Indication: Locally advanced or metastatic basal cell carcinoma
+   - Mechanism: Binds SMO, prevents ciliary accumulation and activation
+   - Efficacy: ~60% response rate in advanced BCC
+
+   Resistance Mechanisms:
+   - SMO mutations (D473H, others)
+   - SUFU loss (downstream of SMO, bypass inhibition)
+   - GLI amplification
+
+   Reference:
+   - Sekulic et al. (2012) N Engl J Med 366(23):2171-2179
+     PMID: 22670903
+
+B. SONIDEGIB (Odomzo®)
+   - FDA-approved 2015
+   - Indication: Locally advanced BCC
+   - Mechanism: SMO antagonist
+   - Similar resistance profile to vismodegib
+
+   SUFU-mutant tumors:
+   - Primary resistance observed
+   - Pediatric medulloblastoma with SUFU mutations resistant to sonidegib
+   - Drug targets SMO, but SUFU loss bypasses SMO requirement
+
+   Reference:
+   - PMID: 22500124 - LoRusso et al. (2011) Mol Cancer Ther 10(11):2034-2043
+     "Hedgehog pathway as a drug target: Smoothened inhibitors in development"
+
+C. GLASDEGIB (Daurismo®)
+   - FDA-approved 2018
+   - Indication: Acute myeloid leukemia (combination with chemotherapy)
+   - Mechanism: SMO inhibitor
+
+10.3 LIMITATIONS OF SMO INHIBITORS IN SUFU-DEFICIENT TUMORS
+----------------------------------------------------------
+Critical Problem:
+- SUFU acts DOWNSTREAM of SMO
+- SUFU loss → constitutive GLI activation
+- SMO inhibitors ineffective when SUFU is lost
+
+Clinical Evidence:
+- Pediatric medulloblastoma with SUFU mutations: primary resistance to
+  sonidegib
+- SUFU depletion in cell lines: confers sonidegib/vismodegib resistance
+- Gorlin syndrome patients with SUFU mutations: poor response to SMO inhibitors
+
+Reference:
+- PMID: 35163655 - Pietrobono & Stecca (2022) Int J Mol Sci 23(3):1733
+  "Hedgehog Pathway Inhibitors as Targeted Cancer Therapy and Strategies to
+   Overcome Drug Resistance"
+  DOI: 10.3390/ijms23031733
+
+10.4 DOWNSTREAM INHIBITORS: TARGETING GLI
+-----------------------------------------
+For SUFU-deficient tumors, inhibitors downstream of SUFU are required:
+
+A. GANT61 and GANT58
+   - Mechanism: Prevent GLI1 nuclear translocation and DNA binding
+   - Target: GLI proteins directly
+   - Status: Preclinical
+   - Advantage: Bypass SMO and SUFU, target final effector
+
+   Efficacy:
+   - Effective in SMO-inhibitor resistant cells
+   - Active in SUFU-null models
+   - Broad anti-cancer activity in Hh-driven tumors
+
+B. ARSENIC TRIOXIDE (ATO)
+   - FDA-approved for acute promyelocytic leukemia
+   - Mechanism: Prevents GLI2 trafficking in/out of primary cilium
+   - Status: Clinical trials for Hh-driven cancers
+   - Advantage: Already approved drug, repurposing opportunity
+
+   Reference:
+   - Beauchamp et al. (2011) Nature 473(7347):467-471
+     PMID: 21614077
+
+C. HPI-1, HPI-2, HPI-3, HPI-4 (Hedgehog Pathway Inhibitors)
+   - Mechanism: Inhibit GLI-mediated transcription
+   - Target: Various steps in GLI activation
+   - Status: Preclinical development
+
+D. PIRFENIDONE
+   - FDA-approved antifibrotic drug (idiopathic pulmonary fibrosis)
+   - Mechanism: Inhibits GLI2 via SUFU pathway modulation
+   - Status: Drug repurposing candidate
+
+   Advantage:
+   - Known safety profile
+   - Oral bioavailability
+   - May enhance SUFU function in heterozygous carriers
+
+10.5 COMBINATION STRATEGIES
+---------------------------
+To overcome resistance:
+
+A. SMO INHIBITOR + GLI INHIBITOR
+   - Dual blockade of pathway
+   - Prevent emergence of downstream resistance
+
+B. HH INHIBITOR + CHEMOTHERAPY
+   - Glasdegib + low-dose cytarabine (approved for AML)
+   - Synergistic effects
+
+C. HH INHIBITOR + IMMUNOTHERAPY
+   - Hh pathway modulates tumor microenvironment
+   - Combination may enhance immune response
+
+10.6 NOVEL THERAPEUTIC APPROACHES
+---------------------------------
+A. SUFU STABILIZATION
+   - Concept: Prevent SUFU degradation in heterozygous carriers
+   - Enhance remaining SUFU function
+   - May prevent tumor development
+
+B. GLI DEGRADERS (PROTACs)
+   - Proteolysis-targeting chimeras
+   - Induce GLI protein degradation
+   - Bypass need for functional SUFU
+
+C. GENE THERAPY
+   - Restore SUFU expression in deficient tumors
+   - Particularly relevant for germline mutation carriers
+   - Technical challenges remain
+
+10.7 BIOMARKERS FOR PATIENT SELECTION
+-------------------------------------
+Genetic Testing:
+- SUFU mutation status: Predicts SMO inhibitor resistance
+- GLI amplification: Indicates downstream activation
+- SMO mutations: Predicts primary or acquired resistance
+
+Pathway Activity:
+- GLI1 expression: Marker of active signaling
+- PTCH1 expression: Hh target gene, pathway readout
+- Nuclear GLI2/3: Active transcription factors
+
+Clinical Recommendation:
+- Test SUFU status before SMO inhibitor therapy
+- SUFU-mutant patients: Consider GLI inhibitors or clinical trials
+- SUFU wild-type patients: SMO inhibitors appropriate first-line
+
+Reference:
+- PMID: 30649745 - Basset-Seguin et al. (2017) Drug Saf 42(2):263-280
+  "Safety and Tolerability of Sonic Hedgehog Pathway Inhibitors in Cancer"
+
+10.8 CLINICAL TRIALS
+--------------------
+Ongoing/Recent Trials:
+- GLI inhibitors in medulloblastoma (pediatric)
+- Arsenic trioxide in basal cell carcinoma
+- Combination therapies for Hh-driven cancers
+
+ClinicalTrials.gov identifiers available for specific agents.
+
+================================================================================
+11. REGULATION OF SUFU PROTEIN STABILITY
+================================================================================
+
+11.1 PHOSPHORYLATION-DEPENDENT STABILIZATION
+--------------------------------------------
+PKA and GSK3β phosphorylation stabilizes SUFU:
+
+Mechanism:
+1. PKA phosphorylates Ser-346
+2. This primes GSK3β phosphorylation at Ser-342
+3. Dual phosphorylation protects SUFU from degradation
+4. Hedgehog activation reverses phosphorylation
+5. Dephosphorylated SUFU is unstable
+
+Result:
+- In absence of Hh signal: SUFU is stable (phosphorylated)
+- During Hh activation: SUFU is degraded (dephosphorylated)
+
+Reference:
+- PMID: 21317289 - Chen et al. (2011) J Biol Chem 286(16):13502-13511
+
+11.2 PROTEIN PHOSPHATASE 4 (PP4)
+-------------------------------
+PP4 dephosphorylates SUFU:
+
+- Removes phosphate from Ser-342/346
+- Promotes SUFU degradation
+- Enhances Hedgehog signaling
+- Acts as positive regulator of pathway
+
+Reference:
+- Zhang et al. (2020) Cell Death Dis 11(8):651
+  DOI: 10.1038/s41419-020-02843-w
+
+11.3 PROTEASOMAL DEGRADATION
+----------------------------
+SUFU is subject to ubiquitin-proteasome pathway:
+
+- Degraded during active Hedgehog signaling
+- Proteasome inhibition stabilizes SUFU
+- Specific E3 ligase not fully characterized
+
+11.4 GLI BINDING PROTECTS SUFU
+------------------------------
+Paradoxically:
+- GLI binding stabilizes SUFU protein
+- Prevents degradation
+- SUFU-GLI complex more stable than free SUFU
+
+This creates negative feedback: GLI proteins stabilize their own inhibitor.
+
+================================================================================
+12. EVOLUTIONARY CONSERVATION
+================================================================================
+
+12.1 CROSS-SPECIES COMPARISON
+-----------------------------
+SUFU homologs exist across species:
+
+- Drosophila melanogaster: Su(fu)
+- Danio rerio (zebrafish): sufu
+- Mus musculus (mouse): Sufu
+- Homo sapiens (human): SUFU
+
+12.2 FUNCTIONAL CONSERVATION
+----------------------------
+Drosophila vs Mammals:
+
+- Drosophila: Su(fu) is NOT essential for viability
+- Mammals: SUFU is essential (embryonic lethal if null)
+- Both: Negative regulator of Hh signaling
+- Both: Binds Ci/Gli transcription factors
+
+This suggests mammals evolved greater dependence on SUFU for Hedgehog
+regulation.
+
+12.3 STRUCTURAL CONSERVATION
+----------------------------
+- SYGHL binding motif: Highly conserved in Ci/Gli across species
+- Two-domain architecture: Conserved
+- N-terminal and C-terminal Gli-binding sites: Conserved
+
+Reference:
+- PMID: 26271100 - Humke et al. (2015) Dev Biol 406(2):255-269
+  "A Comparison of Ci/Gli Activity as Regulated by Sufu in Drosophila and
+   Mammalian Hedgehog Response"
+
+================================================================================
+13. SUMMARY: BIOLOGICAL SIGNIFICANCE
+================================================================================
+
+13.1 CENTRAL ROLE IN HEDGEHOG SIGNALING
+---------------------------------------
+SUFU is the MASTER NEGATIVE REGULATOR of vertebrate Hedgehog signaling:
+
+1. Cytoplasmic Function:
+   - Sequesters GLI proteins away from nucleus
+   - Prevents transcriptional activation
+   - Promotes GLI3 processing to repressor form
+
+2. Nuclear Function:
+   - Directly represses GLI-mediated transcription
+   - Recruits corepressor complexes
+   - Modulates chromatin state at Hh target genes
+
+3. Ciliary Function:
+   - Localizes to ciliary tip with GLI
+   - Site of signal-dependent SUFU-GLI dissociation
+   - Integrates ciliary architecture with signaling output
+
+13.2 DEVELOPMENTAL IMPORTANCE
+-----------------------------
+SUFU is essential for:
+- Embryonic patterning (neural tube, limbs, heart)
+- CNS development
+- Skeletal development
+- Proper Hedgehog gradient formation
+
+Loss of SUFU → embryonic lethality (complete) or severe developmental
+defects (hypomorphic)
+
+13.3 DISEASE RELEVANCE
+---------------------
+SUFU dysfunction causes:
+- Childhood cancer (medulloblastoma, BCC)
+- Ciliopathies (Joubert syndrome)
+- Neurodevelopmental disorders (COMA)
+- Tumor predisposition syndromes (Gorlin syndrome)
+
+SUFU is bona fide tumor suppressor with haploinsufficiency.
+
+13.4 THERAPEUTIC IMPORTANCE
+---------------------------
+SUFU status determines:
+- Drug response (SMO inhibitors ineffective if SUFU lost)
+- Treatment strategy (need GLI inhibitors for SUFU-deficient tumors)
+- Patient surveillance (MRI screening for SUFU mutation carriers)
+
+13.5 IFT20 INTERACTION: POTENTIAL SIGNIFICANCE
+---------------------------------------------
+Predicted interaction with IFT20 suggests:
+
+1. SUFU may be IFT cargo for ciliary delivery
+2. IFT machinery may regulate SUFU ciliary dynamics
+3. Coordination between ciliary transport and Hh signaling
+4. Quality control of Hh pathway components
+
+If validated, this would reveal:
+- Novel mechanism of SUFU regulation
+- Integration of IFT-B complex with Hh pathway
+- Potential therapeutic target (disrupting IFT20-SUFU)
+
+================================================================================
+14. KEY REFERENCES (Selected)
+================================================================================
+
+STRUCTURE:
+- PMID: 24311597 - Cherry et al. (2013) Acta Crystallogr D
+  PDB: 4BL8, 4BLB, 4BLD
+
+- PMID: 24268346 - Merchant et al. (2013) Nat Commun 4:2608
+  DOI: 10.1038/ncomms3608
+
+MECHANISM:
+- PMID: 20956384 - Tukachinsky et al. (2010) J Cell Biol 191(2):415-428
+  Ciliary mechanism
+
+- PMID: 27849569 - Humke et al. (2016) Mol Cell Biol 36(1):174-194
+  SUFU chaperones GLI
+
+DISEASE:
+- PMID: 25403219 - Smith et al. (2014) J Clin Oncol 32(36):4155-4161
+  DOI: 10.1200/JCO.2014.58.2569
+  Gorlin syndrome and medulloblastoma risk
+
+- PMID: 28965847 - De Mori et al. (2017) Am J Hum Genet 101(4):552-563
+  DOI: 10.1016/j.ajhg.2017.08.017
+  Joubert syndrome
+
+THERAPEUTICS:
+- PMID: 35163655 - Pietrobono & Stecca (2022) Int J Mol Sci 23(3):1733
+  DOI: 10.3390/ijms23031733
+  Comprehensive review of Hh inhibitors
+
+IFT AND HEDGEHOG:
+- PMID: 29540531 - Keady et al. (2018) Mol Biol Cell 29(10):1148-1162
+  DOI: 10.1091/mbc.E17-10-0600
+  IFT integration with Hedgehog signaling
+
+REGULATION:
+- PMID: 21317289 - Chen et al. (2011) J Biol Chem 286(16):13502-13511
+  PKA/GSK3β phosphorylation
+
+- PMID: 25403183 - Chen et al. (2014) Genes Dev 28(22):2547-2563
+  p66β and MYCBP regulation
+
+MOUSE MODELS:
+- PMID: 16155214 - Svärd et al. (2006) Development 133(24):4407-4418
+  Knockout phenotype
+
+- PMID: 28688895 - Liu et al. (2017) Dev Biol 428(1):80-92
+  DOI: 10.1016/j.ydbio.2017.05.003
+  Hypomorphic model
+
+================================================================================
+15. CONCLUSION
+================================================================================
+
+SUFU (Suppressor of Fused) is a master negative regulator of Hedgehog
+signaling with essential roles in development, ciliary biology, and tumor
+suppression. Its interaction with IFT20 (ipSAE=0.621) represents a
+potentially novel mechanism for regulating SUFU ciliary trafficking and
+Hedgehog pathway output.
+
+Key Points:
+1. SUFU binds and inhibits GLI transcription factors at multiple levels
+2. Localizes to ciliary tip where Hh signal transduction occurs
+3. Loss causes embryonic lethality (complete) or severe disease (partial)
+4. Mutations predispose to childhood cancer and ciliopathies
+5. SUFU status determines cancer drug response
+6. IFT20 may facilitate SUFU ciliary delivery and/or recycling
+
+Future Directions:
+- Validate IFT20-SUFU physical interaction
+- Define mechanism of SUFU ciliary trafficking
+- Develop therapeutics for SUFU-deficient cancers
+- Understand genotype-phenotype correlations
+- Exploit SUFU biology for precision medicine
+
+The predicted IFT20-SUFU interaction warrants experimental validation and
+could reveal fundamental insights into the coordination of intraflagellar
+transport with Hedgehog signal transduction.
+
+================================================================================
+END OF REPORT
+================================================================================

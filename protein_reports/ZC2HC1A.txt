@@ -1,0 +1,574 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: ZC2HC1A
+================================================================================
+
+INTERACTION CONTEXT:
+- Predicted interaction with IFT25 (IFT-B1 complex protein)
+- ipSAE Score: 0.713 (High confidence, >0.7)
+- Source: AlphaFold3 structural prediction
+
+================================================================================
+1. PROTEIN IDENTITY AND NOMENCLATURE
+================================================================================
+
+Primary Gene Name: ZC2HC1A
+Alternative Names:
+  - FAM164A (Family with sequence similarity 164, member A)
+  - C8orf70 (Chromosome 8 open reading frame 70)
+  - CGI-62
+
+UniProt Accession: Q9H0A0 (Human)
+                   Q5PPV5 (Mouse ortholog)
+
+Ensembl Gene ID: ENSG00000104427
+MGI ID (Mouse): MGI:1914556
+
+Protein Name: Zinc finger C2HC domain-containing protein 1A
+
+Organism: Homo sapiens (Human)
+
+Genomic Location: Chromosome 8: 78,666,050-78,719,765 (forward strand)
+Gene Length: ~53.7 kilobases
+Transcripts: 6 splice variants
+
+================================================================================
+2. EVOLUTIONARY CONSERVATION AND ORTHOLOGS
+================================================================================
+
+ZC2HC1A is conserved across vertebrates:
+
+Orthologs Identified:
+- Mouse (Mus musculus): Zc2hc1a - MGI:1914556
+- Zebrafish (Danio rerio): zc2hc1a - ZFIN database entry available
+- Total: 197 orthologs across species (Ensembl)
+
+Paralogs (3 identified):
+- ZC2HC1B (primary paralog, most closely related)
+- ZC2HC1C
+- Suggests small gene family with related functions
+
+Conservation Pattern:
+The presence of orthologs in zebrafish, mouse, and human indicates this gene
+emerged early in vertebrate evolution and has been maintained, suggesting
+important (though currently uncharacterized) biological functions.
+
+================================================================================
+3. DOMAIN STRUCTURE AND PROTEIN FEATURES
+================================================================================
+
+Domain Architecture:
+
+C2HC-Type Zinc Finger Domain (Primary functional domain)
+- InterPro: IPR026319 (Zinc finger C2HC domain-containing protein 1A/B-like)
+- InterPro: IPR049899 (Zinc finger, C2HC/C3H-type)
+
+Predicted Molecular Function:
+- Metal ion binding activity (from Alliance of Genome Resources, 2022)
+- Zinc coordination through C2HC motif
+
+C2HC Zinc Finger Characteristics:
+The C2HC zinc finger motif coordinates one zinc ion through:
+- 2 Cysteine residues
+- 1 Histidine residue
+- 1 Cysteine residue
+This differs from the more common C2H2 zinc finger proteins.
+
+Structural Features:
+- Adopts typical ββα fold for zinc finger domains
+- Zinc coordination stabilizes the protein structure
+- C2HC zinc fingers can mediate both protein-DNA and protein-protein
+  interactions
+
+Known Functions of C2HC Zinc Fingers:
+1. Protein-protein interactions (often underestimated role)
+2. RNA binding in some family members
+3. E2 ubiquitin conjugating enzyme binding (in RING-C2HC contexts)
+4. Protein complex stabilization
+
+Reference:
+- "A C2HC zinc finger is essential for the RING-E2 interaction of the
+   ubiquitin ligase RNF125" - Scientific Reports (PMID: 27378258)
+- "The protein-binding potential of C2H2 zinc finger domains"
+   (PMID: 18286240)
+
+================================================================================
+4. KNOWN PROTEIN FUNCTION
+================================================================================
+
+Current Status: LARGELY UNCHARACTERIZED
+
+Official Annotation: "Function unknown" (multiple databases)
+
+Limited Functional Information:
+Despite being conserved across vertebrates, ZC2HC1A has not been extensively
+characterized in the scientific literature. The specific biological role and
+molecular mechanisms remain to be determined.
+
+Predicted Functions (based on domain structure):
+- Metal ion binding (zinc coordination)
+- Potential protein-protein interaction mediator
+- Possible involvement in protein complex assembly/stabilization
+
+Possible Roles Inferred from C2HC Domain:
+Given that C2HC zinc fingers can function in:
+1. Ubiquitination pathways (if contains RING domain context)
+2. RNA metabolism
+3. Signal transduction
+4. Transcriptional regulation
+5. Protein trafficking/localization
+
+Association with Other Proteins:
+- Interacts with APP (Amyloid β (A4) precursor protein) - GeneCards
+- Polymorphisms in IL7 associated with changes in ZC2HC1A transcription levels
+
+Recent Research Mention:
+A 2024 Nature paper "Genetic determinants of micronucleus formation in vivo"
+(Adams et al., Nature 627:130-136, 2024) analyzed 997 mouse mutant lines for
+genes affecting genomic stability. While ZC2HC1A is mentioned in the context
+of this large-scale screen, it was not highlighted as a primary hit, suggesting
+any role in micronucleus formation may be subtle or indirect.
+
+Reference: PMID: 38355793
+
+================================================================================
+5. CELLULAR LOCALIZATION
+================================================================================
+
+Subcellular Localization (Human Protein Atlas):
+
+Primary Locations:
+1. CYTOPLASM - Ubiquitous cytoplasmic expression with granular pattern
+2. ACTIN FILAMENTS - Localizes to actin cytoskeleton
+3. CYTOSOL
+
+Localization Pattern:
+- Granular cytoplasmic distribution suggests possible association with
+  cytoplasmic granules, vesicles, or protein aggregates
+- Actin filament localization suggests potential role in cytoskeleton-
+  associated processes
+
+NOT Reported in:
+- Nucleus (no nuclear localization signals identified)
+- Plasma membrane
+- Specific organelles (ER, Golgi, mitochondria)
+- PRIMARY CILIA (no ciliary localization documented)
+
+Tissue Expression:
+According to Human Protein Atlas, ZC2HC1A shows broad tissue expression,
+though specific expression levels across tissues are available at
+proteinatlas.org/ENSG00000104427-ZC2HC1A/tissue
+
+Reference: Human Protein Atlas v23.0
+
+================================================================================
+6. CILIARY ROLE - CURRENT EVIDENCE
+================================================================================
+
+Known Ciliary Association: NONE DOCUMENTED
+
+Literature Search Results:
+Extensive searches for ZC2HC1A in ciliary proteomics studies, ciliary
+localization databases, and cilia-related publications yielded NO specific
+mentions of this protein in ciliary contexts.
+
+Recent Ciliary Proteomics Studies:
+A comprehensive 2025 spatial proteomics study of primary cilia identified
+715 proteins localized to different ciliary regions (tip, transition zone,
+basal body) across 3 human cell lines. ZC2HC1A was NOT among the identified
+ciliary proteins.
+
+Reference:
+- "Intrinsic heterogeneity of primary cilia revealed through spatial
+   proteomics" - Cell, September 2025
+- "Spatial proteomics of primary cilia" - Nature Genetics, 2025
+
+Ciliary Localization Databases:
+- Cildb (ciliary protein database): No entry for ZC2HC1A
+- Syscilia Gold Standard: No listing
+- Human Protein Atlas: Cytoplasmic, not ciliary
+
+Conclusion:
+ZC2HC1A does NOT appear to be a ciliary protein based on current evidence.
+The predicted interaction with IFT25 is therefore particularly interesting
+as a novel and unexpected finding.
+
+================================================================================
+7. KNOWN PROTEIN INTERACTIONS (EXPERIMENTAL)
+================================================================================
+
+Database Coverage:
+- STRING Database: Entry exists for mouse Zc2hc1a
+- BioGRID: Interaction data available
+- IntAct: Potential entries
+- Human Protein Atlas: Interaction section available
+
+Documented Interactions:
+1. APP (Amyloid β precursor protein) - Source: GeneCards
+   - Context and functional significance unknown
+
+Predicted/Database Interactions:
+The STRING database contains interaction network data for ZC2HC1A, integrating
+evidence from multiple sources including:
+- Co-expression data
+- Text mining
+- Database imports
+- Experimental evidence (where available)
+
+Note on Limited Experimental Data:
+The paucity of well-characterized protein interactions in the literature
+reflects the overall limited research focus on ZC2HC1A. Most interaction
+data comes from high-throughput screens rather than focused biochemical
+studies.
+
+To access detailed interaction networks:
+- STRING: string-db.org (search ZC2HC1A or Q9H0A0)
+- BioGRID: thebiogrid.org
+- IntAct: ebi.ac.uk/intact
+
+================================================================================
+8. DISEASE ASSOCIATIONS AND PHENOTYPES
+================================================================================
+
+Human Disease Associations: NONE DOCUMENTED
+
+GeneCards Disease Annotation: "No disorders were found for ZC2HC1A Gene"
+
+ClinVar Variants: No pathogenic variants reported
+
+OMIM: No disease entries
+
+Genomic Instability Study:
+Mentioned in context of large-scale micronucleus formation screen
+(Adams et al., Nature 2024), but not as a primary driver of genomic
+instability.
+
+Mouse Knockout Phenotypes:
+- Knockout mouse models available: cKO and KO strains exist
+- MGI (Mouse Genome Informatics) entry: MGI:1914556
+- Published phenotype characterization: NOT EXTENSIVELY REPORTED
+
+The availability of knockout mouse models suggests research tools exist,
+but lack of published phenotypes indicates these models have not been
+thoroughly characterized or phenotypes are subtle.
+
+Zebrafish Models:
+ZFIN database lists zc2hc1a ortholog, but no morpholino or CRISPR knockout
+phenotypes are prominently reported in the literature.
+
+Biomarker Studies:
+A 2019 hepatocellular carcinoma study identified a 9-gene prognostic
+signature including ZC2HC1A (along with MARCKSL1, PTGS1, CDKN2B, CLEC10A,
+PRDX3, PRKCH, MPEG1, LMO2) for predicting patient outcomes.
+
+Reference:
+- "Development and validation of a new tumor-based gene signature predicting
+   prognosis of HBV/HCV-included resected hepatocellular carcinoma patients"
+   (PMID: 31215439, 2019)
+
+Note: Inclusion in prognostic signature does not necessarily indicate
+causative role in disease, but suggests expression changes may correlate
+with disease state.
+
+================================================================================
+9. IFT25 CONNECTION - ANALYSIS AND PRECEDENT
+================================================================================
+
+IFT25 Background:
+
+Protein Identity:
+- IFT25: Intraflagellar Transport protein 25
+- Component of IFT Complex B (IFT-B)
+- Essential partner: IFT27 (small Rab-like GTPase)
+
+IFT25 Structure and Function:
+IFT25 forms an obligate heterodimer with IFT27, a Rab-like small GTPase.
+Crystal structure solved at 2.6 Å resolution (Bhogaraju et al., 2011).
+
+Key Functions:
+1. Hedgehog Signaling: IFT25 is NOT required for ciliary assembly but IS
+   required for proper Hedgehog signaling in mammals
+
+2. BBSome Export: IFT25/IFT27 complex is essential for exporting the BBSome
+   from cilia, but not for initial ciliary assembly
+
+3. Cargo Transport: Mediates signal-dependent transport of Hedgehog components
+   including Patched-1, Smoothened, and Gli2
+
+IFT25 Knockout Phenotype:
+- Mice die at birth with multiple phenotypes indicative of Hedgehog signaling
+  dysfunction
+- Cilia still form but have defective cargo transport
+- IFT27 stability depends on IFT25
+
+Critical References:
+- PMID: 22595669 - "IFT25 links the signal-dependent movement of Hedgehog
+  components to intraflagellar transport" (Developmental Cell, 2012)
+- PMID: 19349980 - "IFT25 is a phosphoprotein component of IFT Complex B"
+  (PLoS One, 2009)
+- PMID: 21525241 - "Crystal structure of the intraflagellar transport
+  complex 25/27" (EMBO Journal, 2011)
+
+---
+
+Why Would IFT25 Interact with ZC2HC1A?
+
+HYPOTHESIS 1: Cargo Adapter/Recognition
+IFT25/27 complex is known to interact with BBSome and various cargo proteins.
+ZC2HC1A's C2HC zinc finger could serve as a protein-protein interaction
+module that:
+- Binds to IFT25 as a cargo adapter
+- Facilitates loading/unloading of specific proteins
+- Mediates recognition of post-translational modifications
+
+Precedent: Other zinc finger proteins function as cargo adapters in various
+trafficking pathways
+
+HYPOTHESIS 2: Cytoplasmic Assembly Factor
+IFT25/IFT27 heterodimers exist both in cilia and in the cell body cytoplasm.
+ZC2HC1A could:
+- Regulate IFT25/27 complex assembly in cytoplasm
+- Modulate phosphorylation state of IFT25 (known phosphoprotein)
+- Sequester or release IFT25 from cytoplasmic pools
+
+Evidence: ZC2HC1A localizes to cytoplasm and actin filaments, where IFT
+protein assembly/disassembly occurs
+
+HYPOTHESIS 3: Hedgehog Signaling Modulator
+IFT25 plays essential role in Hedgehog signaling beyond ciliary assembly.
+ZC2HC1A could:
+- Function in cytoplasmic aspects of Hedgehog pathway
+- Regulate IFT25-dependent cargo trafficking
+- Modulate Gli transcription factor transport
+
+Consideration: Many Hedgehog components have both ciliary and non-ciliary
+functions
+
+HYPOTHESIS 4: Ubiquitination Connection
+C2HC zinc fingers can function in RING domain-containing E3 ubiquitin ligases.
+Potential roles:
+- Regulate IFT25 protein stability or activity via ubiquitination
+- Mediate degradation of ciliary proteins during cargo export
+- Control IFT protein turnover in cytoplasm
+
+Precedent: Ubiquitination plays important roles in ciliary protein quality
+control and cargo trafficking
+
+HYPOTHESIS 5: Actin-Cilia Coordination
+ZC2HC1A localizes to actin filaments; growing evidence links actin dynamics
+to ciliary function:
+- Actin polymerization affects ciliogenesis
+- Cytoskeletal remodeling influences ciliary protein trafficking
+- IFT proteins interact with cytoskeletal motors
+
+ZC2HC1A could coordinate actin dynamics with IFT protein availability
+
+---
+
+Zinc Finger Proteins in Ciliary Contexts:
+
+While specific examples of zinc finger proteins directly interacting with
+IFT proteins are limited in current literature, zinc finger proteins DO
+function in ciliary contexts:
+
+Examples:
+- ZNF423: Critical for ciliary protein trafficking and Hedgehog signaling
+- GLI transcription factors: Contain zinc fingers, traffic through cilia
+- BBS proteins: Some contain zinc-binding domains
+
+General Principle:
+Zinc finger domains frequently mediate protein-protein interactions in
+signaling pathways, and given IFT25's role in signal-dependent cargo
+transport, a zinc finger protein interaction is mechanistically plausible.
+
+---
+
+Caveats and Alternative Explanations:
+
+1. False Positive: Despite high ipSAE score (0.713), this could represent
+   a non-physiological interaction. AlphaFold predictions require experimental
+   validation.
+
+2. Transient/Regulatory: Interaction might be transient, occurring only
+   under specific conditions (phosphorylation states, signaling contexts)
+
+3. Indirect Association: ZC2HC1A might bind to IFT25 complex partners rather
+   than IFT25 directly
+
+4. Tissue-Specific: Interaction might occur only in specific cell types
+   (e.g., neurons, testis where IFT25 has specialized roles)
+
+================================================================================
+10. RESEARCH PUBLICATIONS AND CITATIONS
+================================================================================
+
+Major References:
+
+ZC2HC1A-Specific:
+1. Adams DJ, et al. "Genetic determinants of micronucleus formation in vivo"
+   Nature. 2024 Mar;627(8002):130-136.
+   PMID: 38355793
+   DOI: 10.1038/s41586-023-07009-0
+
+2. "Development and validation of a new tumor-based gene signature predicting
+   prognosis of HBV/HCV-included resected hepatocellular carcinoma patients"
+   PubMed, 2019
+   PMID: 31215439
+
+IFT25/IFT27 Structure and Function:
+3. Bhogaraju S, et al. "Crystal structure of the intraflagellar transport
+   complex 25/27"
+   EMBO J. 2011 May 18;30(10):1907-18.
+   PMID: 21525241
+   DOI: 10.1038/emboj.2011.110
+
+4. Keady BT, et al. "IFT25 links the signal-dependent movement of Hedgehog
+   components to intraflagellar transport"
+   Dev Cell. 2012 Jun 12;22(6):1360-72.
+   PMID: 22595669
+   DOI: 10.1016/j.devcel.2012.04.009
+
+5. Wang Q, et al. "Intraflagellar Transport (IFT) Protein IFT25 Is a
+   Phosphoprotein Component of IFT Complex B and Physically Interacts with
+   IFT27 in Chlamydomonas"
+   PLoS One. 2009 Apr 21;4(4):e5384.
+   PMID: 19349980
+   DOI: 10.1371/journal.pone.0005384
+
+6. Eguether T, et al. "The intraflagellar transport protein IFT27 promotes
+   BBSome exit from cilia through the GTPase ARL6/BBS3"
+   Dev Cell. 2014 Dec 8;31(5):588-602.
+   PMID: 25443296
+   DOI: 10.1016/j.devcel.2014.11.007
+
+C2HC Zinc Finger Function:
+7. Diallo M, et al. "A C2HC zinc finger is essential for the RING-E2
+   interaction of the ubiquitin ligase RNF125"
+   Sci Rep. 2016 Jul 4;6:29232.
+   PMID: 27378258
+   DOI: 10.1038/srep29232
+
+8. Brayer KJ, Segal DJ. "Keep your fingers off my DNA: protein-protein
+   interactions mediated by C2H2 zinc finger domains"
+   Cell Biochem Biophys. 2008;50(3):111-31.
+   PMID: 18253864
+   DOI: 10.1007/s12013-008-9008-5
+
+Ciliary Proteomics:
+9. "Intrinsic heterogeneity of primary cilia revealed through spatial
+   proteomics"
+   Cell. 2025 Sep
+   - Identified 715 ciliary proteins; ZC2HC1A NOT among them
+
+10. "Spatial proteomics of primary cilia"
+    Nature Genetics. 2025
+    - Commentary on ciliary proteome mapping
+
+General Zinc Finger Reviews:
+11. Cassandri M, et al. "Zinc-finger proteins in health and disease"
+    Cell Death Discov. 2017 Nov 20;3:17071.
+    PMID: 29152378
+    DOI: 10.1038/cddiscovery.2017.71
+
+12. Jen J, Wang YC. "Zinc finger proteins in cancer progression"
+    J Biomed Sci. 2016 Jul 19;23(1):53.
+    PMID: 27431795
+    DOI: 10.1186/s12929-016-0269-9
+
+================================================================================
+11. DATABASE RESOURCES
+================================================================================
+
+Gene and Protein Databases:
+- GeneCards: www.genecards.org/cgi-bin/carddisp.pl?gene=ZC2HC1A
+- UniProt (Human): www.uniprot.org/uniprotkb/Q9H0A0
+- Ensembl: ENSG00000104427
+- NCBI Gene: Gene ID 51101
+- Human Protein Atlas: www.proteinatlas.org/ENSG00000104427-ZC2HC1A
+
+Interaction Databases:
+- STRING: string-db.org (search ZC2HC1A)
+- BioGRID: thebiogrid.org
+- IntAct: www.ebi.ac.uk/intact
+
+Model Organisms:
+- MGI (Mouse): informatics.jax.org/marker/MGI:1914556
+- ZFIN (Zebrafish): zfin.org (search zc2hc1a)
+
+Domain Databases:
+- InterPro: IPR026319, IPR049899
+- Pfam: Via InterPro
+- SMART: zinc finger domain annotations
+
+================================================================================
+12. SUMMARY AND CONCLUSIONS
+================================================================================
+
+Current Knowledge State:
+ZC2HC1A is a POORLY CHARACTERIZED vertebrate protein containing a C2HC-type
+zinc finger domain. Despite evolutionary conservation, its biological function
+remains largely unknown.
+
+Key Established Facts:
+1. Contains C2HC zinc finger domain (metal ion binding)
+2. Localized to cytoplasm and actin filaments
+3. NO documented ciliary localization
+4. NO established disease associations
+5. Paralog: ZC2HC1B
+6. Conserved in vertebrates (human, mouse, zebrafish)
+7. Interacts with APP (amyloid precursor protein)
+8. NOT a known ciliary protein in proteomics studies
+
+Predicted IFT25 Interaction - Significance:
+The high-confidence AlphaFold3 prediction (ipSAE=0.713) of ZC2HC1A binding
+to IFT25 is NOVEL and UNEXPECTED because:
+
+1. No Prior Literature: No previous reports link ZC2HC1A to ciliary proteins
+   or intraflagellar transport
+
+2. Non-Ciliary Protein: ZC2HC1A is not detected in comprehensive ciliary
+   proteomes, suggesting non-ciliary function
+
+3. Potential Mechanisms:
+   - Cytoplasmic regulation of IFT25/27 complex assembly
+   - Cargo adapter or trafficking regulator
+   - Ubiquitination/degradation pathway component
+   - Actin-cilia coordination factor
+   - Hedgehog signaling modulator
+
+Most Plausible Scenarios:
+Given ZC2HC1A's cytoplasmic localization and IFT25's dual ciliary/cytoplasmic
+distribution, the most likely functional connection would involve:
+
+A) Cytoplasmic regulation of IFT protein availability, assembly, or
+   modification BEFORE entry into cilia
+
+B) Post-ciliary processing or degradation of IFT proteins after cargo
+   delivery
+
+C) Coordinating cytoskeletal (actin) dynamics with IFT protein trafficking
+
+Experimental Validation Needed:
+1. Co-immunoprecipitation to confirm physical interaction
+2. Localization studies: Do they colocalize in cytoplasm?
+3. Functional assays: Does ZC2HC1A affect IFT25 function, stability, or
+   ciliary localization?
+4. Phenotypic analysis: ZC2HC1A knockout effects on cilia, Hedgehog signaling
+5. Biochemical characterization: Does C2HC domain directly bind IFT25?
+6. Post-translational modifications: Does ZC2HC1A affect IFT25 phosphorylation?
+
+Research Priority:
+This prediction represents a potentially important discovery linking a
+poorly characterized zinc finger protein to the well-studied IFT machinery.
+Given IFT25's critical roles in Hedgehog signaling and BBSome export, any
+regulatory protein would be of significant interest.
+
+Confidence Assessment:
+- Structural prediction confidence: HIGH (ipSAE=0.713)
+- Functional relevance confidence: UNCERTAIN (requires experimental validation)
+- Ciliary relevance: UNLIKELY direct ciliary role; more likely cytoplasmic
+  regulation
+
+================================================================================
+REPORT COMPILED: 2025-11-17
+ALPHAFOLD3 PREDICTION SOURCE: IFT Interactors Database (ipSAE=0.713)
+================================================================================

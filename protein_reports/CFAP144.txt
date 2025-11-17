@@ -1,0 +1,1206 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: CFAP144 (CILIA AND FLAGELLA ASSOCIATED PROTEIN 144)
+================================================================================
+
+Report Generated: 2025-11-17
+Interaction Context: ipSAE=0.653 with IFT25 (IFT-B1 complex)
+
+================================================================================
+1. GENE AND PROTEIN IDENTIFICATION
+================================================================================
+
+Official Gene Symbol: CFAP144
+Alternative Names: FAM183A (Family with Sequence Similarity 183 Member A)
+Gene ID: NCBI Gene 440585, Ensembl ENSG00000186973
+UniProt Accession: A6NL82 (reviewed), A8QW39 (unreviewed)
+OMIM Entry: *621114
+
+Protein Characteristics:
+- Length: 134 amino acids
+- Molecular Weight: 15,996 Da (~16 kDa)
+- Protein Family: CFAP144 family
+
+Chromosomal Location: Chromosome 1p36
+
+Additional Aliases: HCG23177, LOC440585
+
+================================================================================
+2. KNOWN CILIARY ROLE AND FUNCTION
+================================================================================
+
+Primary Function:
+CFAP144 is a microtubule inner protein (MIP) that occupies the lumen of ciliary
+outer doublet microtubules. It is a structural component required for motile
+cilia beating and flagellated sperm motility.
+
+Structural Role in Doublet Microtubules:
+- Functions as a connector protein linking filamentous MIPs CFAP45 and CFAP210
+- Specifically localized to protofilaments B07 and B08 of the B tubule
+- Part of the rich meshwork of proteins in the microtubule lumen (previously
+  thought to be hollow)
+- Contributes to structural integrity of dynein-decorated doublet microtubules
+
+SNYG Module:
+CFAP144 contains a SNYG module, an evolutionarily conserved microtubule-binding
+module identified through computational analyses and structure predictions. The
+SNYG module consists of:
+- Two alpha-helices
+- One helix representing a conserved Mn repeat-like motif with highly conserved
+  glycine
+- SNYG motif-associated helix that contacts the microtubule inner tubulin
+  surface
+- This module evolved specifically to bind tubulin heterodimers
+
+The SNYG module structure has been experimentally determined for FAM183A along
+with other MIPs including PIERCE1, PIERCE2, TEX49, C5ORF49 (CFAP90), and
+ATP6V1FNB (SPMIP1).
+
+Molecular Activities:
+- Microtubule binding activity (GO:0008017)
+- Predicted to be involved in flagellated sperm motility (GO:0097722)
+- Predicted to be active in ciliary base (GO:0097546)
+
+Key Reference:
+Andersen JS, et al. (2024) Uncovering structural themes across cilia microtubule
+inner proteins with implications for human cilia function. Nature Communications
+15(1):2687.
+PMID: 38538594
+DOI: 10.1038/s41467-024-46737-3
+
+This landmark 2024 study systematically identified conserved microtubule-binding
+modules (NWE, SNYG, ELLEn, PYG, GFG-repeat) across MIPs and demonstrated that
+FAM183A occupies the lumen of cilia outer doublets in human airway epithelial
+cells.
+
+================================================================================
+3. CILIARY LOCALIZATION
+================================================================================
+
+Subcellular Location:
+- Axonemal microtubule (GO:0097545)
+- Ciliary base (predicted)
+- Lumen of ciliary outer doublet microtubules
+
+Specific Localization Details:
+- Located within the B tubule of outer doublet microtubules
+- Protofilaments B07 and B08
+- Serves as a bridging protein between CFAP45 and CFAP210 in the microtubule
+  lumen
+
+Motile vs Primary Cilia:
+CFAP144 is primarily associated with MOTILE CILIA and FLAGELLA:
+- Respiratory ciliated epithelium (bronchus)
+- Ependymal cells lining brain ventricles
+- Sperm flagella
+- Ciliated cells of fallopian tube
+
+Tissue Expression (Human Protein Atlas):
+- Testis: Seminiferous ducts (cytoplasmic expression)
+- Respiratory system: Ciliated cells of bronchus
+- Reproductive tract: Ciliated cells of fallopian tube
+- Brain: Expressed in hippocampus, caudate nucleus, and medulla oblongata
+
+The expression pattern indicates CFAP144 is predominantly found in tissues with
+motile cilia/flagella rather than primary (non-motile) cilia.
+
+================================================================================
+4. KNOWN PROTEIN INTERACTIONS
+================================================================================
+
+Experimentally Validated Interactions:
+1. CFAP45 - Filamentous microtubule inner protein
+   - FAM183A connects CFAP45 to CFAP210 on protofilaments B07 and B08
+
+2. CFAP210 - Filamentous microtubule inner protein
+   - FAM183A serves as a bridging/connecting protein
+
+Predicted Interaction (This Study):
+3. IFT25 - Intraflagellar transport complex B component
+   - ipSAE score: 0.653 (Medium confidence)
+   - IFT25 is a phosphoprotein component of IFT-B complex
+   - IFT25 binds IFT27 and is involved in cargo transport
+   - No direct experimental validation in literature
+
+Other CFAP Proteins:
+While CFAP144 is part of the broader CFAP protein family involved in ciliary
+structure and function, specific interactions with other CFAPs or axonemal
+components (outer dynein arms, radial spokes, etc.) have not been reported in
+the literature.
+
+Distinction from Axonemal Surface Complexes:
+CFAP144 is a MICROTUBULE INNER PROTEIN (MIP), meaning it is located WITHIN the
+lumen of doublet microtubules. It is NOT a component of:
+- Outer dynein arms (ODA)
+- Inner dynein arms (IDA)
+- Radial spokes (RS)
+- Nexin-dynein regulatory complex (N-DRC)
+- Central pair apparatus
+
+These external structures are attached to the outer surface of doublet
+microtubules, whereas CFAP144 functions internally to provide structural support.
+
+================================================================================
+5. DISEASE ASSOCIATIONS
+================================================================================
+
+5.1 Autosomal Recessive Intellectual Disability (ARID)
+
+Key Publication:
+Harripaul R, et al. (2018) Identification of candidate gene FAM183A and novel
+pathogenic variants in known genes: High genetic heterogeneity for autosomal
+recessive intellectual disability. PLoS One 13(11):e0208324.
+PMID: 30500859
+DOI: 10.1371/journal.pone.0208324
+
+Genetic Finding:
+- Nonsense variant: c.377G>A (p.W126*)
+- Mutation type: Premature stop codon at amino acid position 126 (out of 134)
+- This truncates ~6% of the protein (9 amino acids from C-terminus)
+- Inheritance: Autosomal recessive
+
+Clinical Phenotype (Family MR25):
+Two affected siblings (MR25-II:1 and MR25-II:2) homozygous for the variant:
+- Intellectual disability (ID)
+- Microcephaly
+- Low-set ears
+- Additional correlating phenotypic features
+
+Segregation Analysis:
+- Variant segregated in autosomal recessive fashion within the family
+- Both parents presumed to be heterozygous carriers (unaffected)
+
+Functional Evidence:
+- FAM183A is expressed in human brain regions:
+  * Hippocampus
+  * Caudate nucleus
+  * Medulla oblongata
+- Brain expression supports potential role in neurodevelopment
+- Ependymal cilia (motile cilia in brain ventricles) may be affected
+
+DECIPHER Database Evidence:
+Three out of five FAM183A variants in DECIPHER database are found in patients
+with intellectual disability, developmental delay, or microcephaly, though
+pathogenicity of these variants is not fully established.
+
+Study Conclusion:
+FAM183A is identified as a PROMISING NOVEL CANDIDATE GENE for ARID. Authors
+recommend additional functional studies to further support its role in ID
+pathogenesis.
+
+5.2 Other Disease Associations
+
+Autism Spectrum Disorder (ASD):
+According to GeneCards database, CFAP144 is associated with autism spectrum
+disorder. However, specific genetic evidence was not found in peer-reviewed
+literature during this search.
+
+Renpenning Syndrome 1:
+FAM183A is listed as associated with Renpenning Syndrome 1 (X-linked
+intellectual disability) in GeneCards, though the mechanistic basis is unclear
+given CFAP144's location on chromosome 1.
+
+Estrogen-Receptor Negative Breast Cancer:
+Listed in GeneCards database, but no supporting literature found.
+
+5.3 Primary Ciliary Dyskinesia (PCD)
+
+IMPORTANT: Despite CFAP144's role in motile cilia structure, NO PUBLISHED
+EVIDENCE links CFAP144 mutations to primary ciliary dyskinesia (PCD).
+
+PCD is caused by pathogenic variants in >50 genes affecting ciliary structure,
+function, and biogenesis. Other CFAP family members ARE associated with PCD or
+ciliary dysfunction:
+- CFAP43, CFAP44: Male infertility, flagellar defects
+- CFAP46, CFAP54, CFAP74, CFAP221: PCD with C1d projection defects
+- CFAP53, CFAP61, CFAP52: Male infertility, sperm flagella defects
+
+However, 20-30% of PCD cases lack identifiable genetic causes, suggesting
+undiscovered PCD genes may exist. CFAP144 could potentially be identified as a
+PCD gene in future studies.
+
+================================================================================
+6. PHENOTYPES IN MODEL ORGANISMS
+================================================================================
+
+6.1 Mouse (Mus musculus) Knockout Model
+
+Gene: Cfap144 (MGI:1922679)
+NCBI Gene: 75429
+
+Phenotype: SURPRISINGLY NORMAL
+- Viability: Homozygous knockout mice are VIABLE
+- Fertility: Males and females are FERTILE
+- Ciliary function: NO DEFECTS indicative of motile ciliary dysfunction
+- Respiratory function: Normal (no chronic respiratory infections)
+- Hydrocephalus: Absent (normal ependymal cilia function)
+- Situs inversus: Not reported (normal nodal cilia function)
+
+Interpretation:
+The normal phenotype in Cfap144 knockout mice suggests:
+1. Functional redundancy - Another protein may compensate for CFAP144 loss
+2. Species-specific requirements - CFAP144 may be more critical in humans
+3. Subtle phenotypes - Defects may be present but not detected under standard
+   conditions
+4. Contextual importance - Function may be revealed under specific stress or
+   environmental conditions
+
+This contrasts sharply with other CFAP knockouts:
+- Cfap61-/-: Complete male infertility
+- Cfap53-/-: Complete male infertility
+- Cfap52-/-: Decreased sperm motility, male infertility
+- Cfap43/44-/-: Male infertility, sperm flagella defects (but normal
+  respiratory cilia)
+
+The viable and fertile phenotype of Cfap144-/- mice is UNUSUAL for a structural
+MIP and raises questions about its functional importance versus redundancy.
+
+6.2 Zebrafish (Danio rerio)
+
+Gene: cfap144 (previously fam183a)
+ZFIN ID: ZDB-GENE-111103-1
+
+Predicted localization:
+- Cilium
+- Cytoskeleton
+- Active in ciliary base (predicted)
+
+Orthology: Zebrafish cfap144 is orthologous to human CFAP144
+
+Function: Predicted to be involved in ciliary assembly and motility (based on
+human ortholog function)
+
+Specific knockout phenotype information was not found in the literature search.
+
+6.3 Other Model Organisms
+
+Chlamydomonas reinhardtii (green algae):
+- No specific CFAP144 ortholog identified in search results
+- Related FAM183 family proteins may be present
+- Chlamydomonas is extensively studied for ciliary biology, but CFAP144 has not
+  been characterized in this organism
+
+Tetrahymena thermophila (ciliate):
+- No specific CFAP144 ortholog reported
+- Tetrahymena has extensive ciliary protein characterization, but CFAP144-
+  specific studies not found
+
+Note: The evolutionary conservation data (see Section 9) suggests CFAP144 arose
+in chordates rather than being present in early diverging ciliated eukaryotes.
+
+================================================================================
+7. FLAGELLAR DEFECTS AND SPERM PHENOTYPES
+================================================================================
+
+7.1 Predicted Role in Sperm Flagella
+
+Based on:
+1. Gene Ontology annotation: "flagellated sperm motility" (GO:0097722)
+2. Tissue expression: High expression in testis seminiferous ducts
+3. Structural role: Microtubule inner protein in doublet microtubules
+4. Ciliary/flagellar protein family membership
+
+FAM183A is predicted to be important for sperm flagellum structure and function,
+as flagellar axonemes contain outer doublet microtubules with MIP networks
+identical in architecture to motile cilia.
+
+7.2 Mouse Knockout Phenotype: Normal Fertility
+
+Despite predictions, Cfap144-/- male mice are FERTILE with no reported defects
+in:
+- Sperm motility
+- Sperm morphology
+- Flagellar ultrastructure (by light microscopy criteria)
+- Fertilization ability
+
+This normal phenotype contrasts with other MIP knockouts that cause male
+infertility.
+
+7.3 Comparison with Other CFAP Proteins Affecting Sperm
+
+Multiple Morphological Abnormalities of the Sperm Flagella (MMAF):
+Several CFAP proteins cause MMAF syndrome when mutated:
+- CFAP43, CFAP44: Severe flagellar defects, male infertility
+  (PMID: 29277146, 28552195, 29449551)
+- CFAP61: Complete male infertility (PMID: 34792097)
+- CFAP53: Male infertility, flagellum biogenesis defects
+- CFAP52: Decreased sperm motility, male infertility
+
+CFAP144 has NOT been associated with MMAF or male infertility in humans,
+despite its structural role in flagellar doublet microtubules.
+
+7.4 Human Mutations: No Reported Sperm Phenotype
+
+The reported FAM183A mutation (p.W126*) causing intellectual disability was
+identified in two siblings, but sperm/fertility phenotypes were not described.
+Given that affected individuals had intellectual disability and microcephaly,
+fertility assessment may not have been prioritized or reported.
+
+Hypothesis: CFAP144's role in sperm flagella may be:
+1. Redundant with other MIPs
+2. Not essential for basic motility
+3. Important for optimal but not minimal function
+4. Species-specific (critical in humans but not mice)
+
+7.5 Respiratory Cilia
+
+Tissue expression confirms FAM183A presence in ciliated cells of the respiratory
+epithelium (bronchus). However:
+- No reported respiratory phenotypes in human patients
+- Cfap144-/- mice show no respiratory ciliary dysfunction
+- No association with chronic respiratory infections or mucus clearance defects
+
+This suggests CFAP144's function in respiratory cilia is either:
+- Redundant
+- Fine-tuning rather than essential
+- Important for long-term ciliary maintenance rather than initial function
+
+================================================================================
+8. AXONEME STRUCTURE AND LOCALIZATION
+================================================================================
+
+8.1 Axoneme Architecture Overview
+
+The 9+2 axoneme consists of:
+- 9 outer doublet microtubules (DMTs) arranged in a circle
+- 2 central pair microtubules (not always present)
+- Multiple protein complexes decorating the doublets:
+  * Outer dynein arms (ODA) - motor proteins for ciliary beating
+  * Inner dynein arms (IDA) - motor proteins for waveform regulation
+  * Radial spokes (RS) - signal transduction from central apparatus
+  * Nexin-dynein regulatory complex (N-DRC) - linking adjacent doublets
+  * Microtubule inner proteins (MIPs) - internal structural proteins
+
+8.2 CFAP144 as a Microtubule Inner Protein (MIP)
+
+CFAP144 belongs to the MIP category:
+- Located INSIDE the microtubule lumen (previously thought to be hollow)
+- Distinct from outer surface-attached complexes (dyneins, spokes, nexin)
+- Part of a recently discovered meshwork of internal structural proteins
+
+Discovery Context:
+Until recently, microtubule cores were thought to be hollow. Advanced cryo-EM
+and mass spectrometry revealed that cilia/flagella doublet microtubules contain
+a rich network of MIPs that stabilize the doublet architecture and may regulate
+associated motor proteins.
+
+8.3 Specific Localization in Doublet Microtubules
+
+Doublet Structure:
+Each outer doublet consists of:
+- A-tubule: Complete microtubule (13 protofilaments, A01-A13)
+- B-tubule: Incomplete microtubule (10 protofilaments, B01-B10) fused to
+  A-tubule
+
+CFAP144/FAM183A Localization:
+- B-tubule lumen
+- Protofilaments B07 and B08
+- Connects filamentous MIPs CFAP45 and CFAP210
+
+This specific positioning suggests CFAP144 has a specialized structural role in
+the B-tubule, which is unique to doublet microtubules (not found in cytoplasmic
+microtubules).
+
+8.4 NOT a Component of Canonical Axonemal Complexes
+
+CFAP144 is NOT part of:
+
+Outer Dynein Arms (ODA):
+- Heavy chains (DNAH5, DNAH9, DNAH11)
+- Intermediate chains (DNAI1, DNAI2)
+- Light chains
+- Docking complex (ODA-DC: CCDC114, CCDC151, ARMC4)
+
+Inner Dynein Arms (IDA):
+- I1/f dynein complex
+- Other IDAs (a-g)
+
+Radial Spokes (RS):
+- RS head (RSH)
+- RS stalk
+- RS base
+
+Central Pair Apparatus:
+- C1 microtubule projections
+- C2 microtubule projections
+
+Nexin-Dynein Regulatory Complex (N-DRC):
+- Linker proteins between adjacent doublets
+
+CFAP144's internal location distinguishes it from these external regulatory and
+motor complexes.
+
+8.5 Interaction with Tubulin and Other MIPs
+
+SNYG Module-Tubulin Interaction:
+The SNYG module in CFAP144 directly contacts the inner surface of tubulin
+heterodimers in the microtubule wall. This provides structural stability to the
+doublet microtubule from within.
+
+MIP-MIP Interactions:
+CFAP144 bridges two filamentous MIPs:
+- CFAP45 (Cilia and Flagella Associated Protein 45)
+- CFAP210 (Cilia and Flagella Associated Protein 210)
+
+This suggests CFAP144 functions as a connector/adapter protein within the MIP
+network, linking longitudinally oriented filamentous proteins.
+
+8.6 Evolutionary Context of MIPs
+
+MIPs are evolutionarily conserved features of motile cilia and flagella. The
+SNYG module found in CFAP144 is one of several conserved microtubule-binding
+modules (including NWE, ELLEn, PYG, GFG-repeat) that have been identified
+across diverse ciliated organisms.
+
+These modules evolved specifically to stabilize the unique architecture of
+doublet microtubules, which are distinct from cytoplasmic microtubules in:
+- Structure (incomplete B-tubule)
+- Stability (long-lived, post-translationally modified)
+- Function (support motility machinery)
+
+CFAP144's role as a structural MIP positions it as part of the fundamental
+architectural framework of motile cilia and flagella.
+
+================================================================================
+9. EVOLUTIONARY CONSERVATION
+================================================================================
+
+9.1 Conservation Across Species
+
+Human (Homo sapiens):
+- CFAP144 / FAM183A
+- Chromosome 1p36
+- 134 amino acids
+- UniProt: A6NL82
+
+Mouse (Mus musculus):
+- Cfap144
+- Chromosome 3
+- NCBI Gene: 75429
+- MGI: 1922679
+- High sequence similarity to human ortholog
+
+Rat (Rattus norvegicus):
+- Cfap144
+- RGD: 1561932
+- Orthologous to human CFAP144
+
+Zebrafish (Danio rerio):
+- cfap144 (previously fam183a)
+- ZFIN: ZDB-GENE-111103-1
+- Orthologous to human CFAP144
+- Predicted ciliary localization
+
+Other Vertebrates:
+- Tiger (Panthera tigris): CFAP144 gene identified (NCBI Gene: 102948797)
+- Conservation across vertebrates suggests important chordate-specific function
+
+9.2 Evolutionary Origin
+
+Phylogenetic Distribution:
+Based on search results, CFAP144 appears to have arisen during chordate
+evolution rather than being present in early diverging ciliated eukaryotes.
+
+FAM183 Family:
+The broader FAM183 family (which includes FAM183A/CFAP144 and FAM183B) shows:
+- FAM183B: Conserved from green algae (Chlamydomonas) to humans
+- FAM183A (CFAP144): Present in chordates, unclear if present in protists
+
+Fam183b Study:
+A 2018 Scientific Reports paper examined Fam183b (related gene):
+- Identified as FOXJ1 target gene (motile cilia transcription factor)
+- Conserved sequence from Xenopus to mammals
+- Essential for motile cilia in Xenopus embryos
+- Surprisingly DISPENSABLE for ciliary function in mice (Fam183b-/- mice have
+  normal cilia)
+
+This pattern of evolutionary conservation with variable functional requirement
+across species is similar to what is observed for CFAP144.
+
+9.3 Conservation in Non-Chordate Ciliated Organisms
+
+Chlamydomonas reinhardtii (green algae):
+- Specific CFAP144 ortholog: NOT IDENTIFIED in search results
+- FAM183 family members may be present
+- Chlamydomonas has extensive characterized ciliary proteome, but CFAP144 not
+  reported
+
+Tetrahymena thermophila (ciliate):
+- Specific CFAP144 ortholog: NOT REPORTED
+- Tetrahymena has RIB72A and RIB72B as characterized MIPs
+- Other MIPs characterized, but CFAP144 ortholog not identified
+
+Trypanosoma (protozoan parasite):
+- No CFAP144 ortholog mentioned
+- Other CFAPs (CFAP43, CFAP44) have been studied in Trypanosoma
+
+9.4 Implications of Conservation Pattern
+
+The apparent chordate-specific evolution of CFAP144 suggests:
+
+1. Late evolutionary innovation: CFAP144 may be a more recent addition to the
+   MIP repertoire, specific to vertebrate/chordate lineages
+
+2. Specialized function: May serve functions specific to vertebrate motile cilia
+   (respiratory, ependymal, reproductive) rather than universal ciliary roles
+
+3. Redundancy in vertebrates: Even within chordates, CFAP144 function appears
+   redundant in mice but essential in humans (intellectual disability phenotype)
+
+4. Dispensability in protists: Single-celled ciliated organisms (Chlamydomonas,
+   Tetrahymena, Paramecium) may not require CFAP144, relying on more ancient
+   MIP systems
+
+5. FOXJ1 regulation: If CFAP144 is a FOXJ1 target (like FAM183B), it may be
+   part of a vertebrate-specific transcriptional program for motile
+   ciliogenesis
+
+9.5 Sequence Conservation and Functional Domains
+
+SNYG Module Conservation:
+The SNYG module identified in FAM183A represents an evolutionarily conserved
+microtubule-binding module found across multiple MIPs. While the module itself
+is ancient, FAM183A/CFAP144 appears to be a chordate-specific protein
+containing this module.
+
+Other MIPs with SNYG modules include:
+- TEX49 (SPMIP11)
+- ATP6V1FNB (SPMIP1)
+- C5ORF49 (CFAP90)
+- C20ORF85
+- C2ORF50
+
+Comparative analysis across vertebrates would reveal:
+- Which regions of CFAP144 are most conserved (likely SNYG module)
+- Which regions are variable (likely regulatory regions)
+- Whether pseudogenes exist (CFAP144P1 pseudogene exists on human genome)
+
+9.6 Functional Conservation vs Sequence Conservation
+
+Key Observation:
+Sequence conservation does not always predict functional requirement:
+- Mouse Cfap144 is orthologous to human CFAP144 (sequence conserved)
+- BUT mouse Cfap144-/- mice are viable and fertile (function dispensable)
+- WHILE human FAM183A mutations cause intellectual disability (function
+  essential)
+
+This discordance suggests:
+1. Species-specific genetic compensation mechanisms
+2. Different developmental requirements between rodents and primates
+3. Polygenic buffering in mice vs humans
+4. Environmental/lifestyle differences affecting ciliary requirements
+
+Similar patterns observed in other ciliary genes:
+- Some PCD genes cause severe disease in humans but mild/no phenotype in mice
+- Nodal flow genes show variable penetrance across species
+- Sperm flagellar genes may have different essentiality
+
+9.7 SNYG Module: Ancient Building Block in New Proteins
+
+The SNYG module represents an ancient microtubule-binding domain that has been
+incorporated into multiple different MIPs across evolution. The 2024 Nature
+Communications study identified this as one of several conserved "themes" or
+building blocks used to construct the MIP network.
+
+Evolutionary Model:
+1. Ancient origin: SNYG module evolved early as tubulin-binding domain
+2. Modular usage: Different proteins incorporated SNYG modules via domain
+   shuffling
+3. Species-specific proteins: CFAP144 represents a chordate-specific protein
+   utilizing the ancient SNYG module
+4. Functional diversification: Different SNYG-containing proteins have
+   specialized roles in different doublet positions
+
+This modular evolutionary strategy explains why:
+- The SNYG module itself is conserved across distant species
+- But specific SNYG-containing proteins (like CFAP144) are lineage-specific
+- Functional redundancy exists due to multiple SNYG-containing proteins
+
+================================================================================
+10. IFT25 CONNECTION AND POTENTIAL CARGO RELATIONSHIP
+================================================================================
+
+10.1 This Study's Finding
+
+AlphaFold3 Prediction:
+- CFAP144 ↔ IFT25 interaction predicted
+- ipSAE score: 0.653 (MEDIUM confidence)
+- Confidence classification: ipSAE 0.5-0.7 = Medium confidence
+- Analysis version: v4 (ipSAE scoring)
+
+Interpretation:
+The ipSAE score of 0.653 suggests a potential interaction with moderate
+structural confidence. This places it in the medium confidence range, indicating:
+- Possible functional interaction
+- May be biologically relevant
+- Requires experimental validation
+- Could be context-dependent or transient
+
+10.2 IFT25 Background
+
+IFT25 Identity:
+- Component of Intraflagellar Transport Complex B (IFT-B)
+- Small GTPase-like protein (though lacks GTPase activity)
+- Forms heterodimer with IFT27
+- Involved in cargo transport along cilia
+
+IFT-B Complex:
+IFT-B is responsible for anterograde (base-to-tip) transport in cilia:
+- Core IFT-B: IFT88, IFT81, IFT74, IFT70, IFT56, IFT52, IFT46, IFT27, IFT25
+- IFT-B binds kinesin-2 motors for anterograde movement
+- Carries structural and signaling protein cargoes into cilia
+
+IFT25 Specific Functions:
+- Physically interacts with IFT27 (Rab-like GTPase)
+- IFT25-IFT27 heterodimer mediates BBSome docking to IFT-B complex
+- Required for Hedgehog signaling component transport (SMO, PTCH1)
+- Involved in ciliary membrane protein export
+- Links signal-dependent movement to IFT machinery
+
+Key References:
+- PMID: 19416843 - IFT25 is phosphoprotein component of IFT-B, interacts with
+  IFT27 in Chlamydomonas
+- PMID: 35681626 - Review: Roles of IFT25 in mammalian signaling and
+  flagellogenesis
+
+10.3 Potential CFAP144-IFT25 Interaction Scenarios
+
+Scenario 1: CFAP144 as IFT Cargo
+Hypothesis: IFT25 (via IFT-B complex) transports CFAP144 into cilia for
+assembly into doublet microtubules.
+
+Evidence supporting:
+- CFAP144 is a structural MIP that must be delivered into cilia
+- IFT-B transports axonemal precursor proteins
+- IFT25-IFT27 heterodimer serves as cargo adaptor
+- Many MIPs require IFT for ciliary entry
+
+Evidence against:
+- No literature documenting CFAP144 as IFT cargo
+- Cfap144-/- mice have normal cilia (suggesting assembly doesn't require it)
+- Other MIP cargo relationships not well-characterized
+
+Scenario 2: Transient Assembly Interaction
+Hypothesis: CFAP144 interacts with IFT25 during ciliary assembly or MIP
+integration into doublet microtubules.
+
+Evidence supporting:
+- ipSAE score suggests structural interaction capability
+- Assembly of MIP network may require coordination with IFT machinery
+- Transient interactions would be biologically relevant even if not stable
+
+Evidence against:
+- No experimental evidence for IFT involvement in MIP assembly
+- MIP assembly mechanisms are poorly understood
+- AlphaFold predicts static structures, not assembly intermediates
+
+Scenario 3: Regulatory Interaction
+Hypothesis: CFAP144 may interact with IFT25 to regulate IFT complex function or
+cargo loading.
+
+Evidence supporting:
+- IFT25-IFT27 is a cargo adaptor that must be regulated
+- MIPs could potentially regulate IFT from within the axoneme
+- Structural proteins sometimes have regulatory functions
+
+Evidence against:
+- MIPs are structural, not typically regulatory
+- IFT regulation occurs primarily via kinases/phosphatases
+- No precedent for MIP-IFT regulatory interactions
+
+Scenario 4: False Positive Prediction
+Hypothesis: The predicted interaction is not biologically real.
+
+Evidence supporting:
+- Medium confidence (0.653) allows for false positives
+- No literature support for CFAP144-IFT25 interaction
+- Mouse knockout shows normal cilia (wouldn't expect if essential IFT cargo)
+- AlphaFold can predict structurally compatible but non-occurring interactions
+
+Evidence against:
+- ipSAE 0.653 is above random chance
+- AlphaFold3 has improved specificity for true interactions
+- Absence of literature evidence doesn't mean interaction is false
+
+10.4 IFT-B1 vs IFT-B2 Subcomplexes
+
+IFT-B architecture:
+- IFT-B1: IFT88, IFT70, IFT52, IFT46 (core stability)
+- IFT-B2: IFT81, IFT74, IFT27, IFT25, IFT22, IFT80 (cargo binding)
+
+IFT25 is part of IFT-B2 subcomplex (peripheral), specifically the IFT25-IFT27
+heterodimer that projects from the main IFT-B structure.
+
+This peripheral position makes IFT25-IFT27 an ideal cargo adaptor, as it can:
+- Interact with diverse cargo proteins
+- Be regulated independently of core IFT-B
+- Mediate specific cargo loading (e.g., BBSome, Hedgehog components)
+
+If CFAP144 is an IFT cargo, interaction with IFT25 (peripheral IFT-B2) would be
+mechanistically appropriate.
+
+10.5 Experimental Validation Needed
+
+To validate CFAP144-IFT25 interaction:
+
+Biochemical Approaches:
+1. Co-immunoprecipitation (Co-IP) from ciliated cells
+2. Pull-down assays with recombinant proteins
+3. Size exclusion chromatography to detect complex formation
+4. Surface plasmon resonance (SPR) for binding kinetics
+
+Cell Biology Approaches:
+1. Co-localization in cilia by super-resolution microscopy
+2. FRET or BiFC to detect interaction in living cells
+3. Proximity ligation assay (PLA) in situ
+4. IFT tracking experiments to see if CFAP144 moves with IFT trains
+
+Functional Approaches:
+1. Test if IFT25 knockdown affects CFAP144 ciliary localization
+2. Examine CFAP144 localization in IFT25-/- cells
+3. Test if CFAP144 affects IFT velocity or cargo loading
+4. Examine genetic interactions in model organisms
+
+Structural Approaches:
+1. Cryo-EM of CFAP144-IFT25 complex
+2. X-ray crystallography of interaction domains
+3. Crosslinking mass spectrometry to map interface
+4. Hydrogen-deuterium exchange to identify binding surfaces
+
+10.6 Broader Context: MIPs and IFT
+
+Open Questions in the Field:
+- How are MIPs transported into cilia?
+- Do MIPs use IFT for ciliary entry?
+- Are MIPs assembled in the cytoplasm or within cilia?
+- What regulates MIP incorporation into doublet microtubules?
+
+If CFAP144-IFT25 interaction is real, it could provide insights into MIP
+transport mechanisms more broadly, as CFAP144 might serve as a model MIP cargo.
+
+10.7 Comparison with Known IFT Cargoes
+
+Known IFT-B Cargoes:
+- Outer/inner dynein arm components
+- Radial spoke proteins
+- Central pair proteins
+- Tubulin (for axoneme extension)
+- Signaling proteins (SMO, PTCH1, GPR161)
+- BBSome complex (via IFT25-IFT27)
+
+MIPs as IFT Cargoes:
+- Limited literature on MIP transport
+- Most studies focus on outer axonemal complexes
+- MIP assembly is an emerging area of research
+
+If CFAP144 is confirmed as IFT25 cargo, it would:
+- Expand known cargo repertoire to include MIPs
+- Provide mechanism for MIP ciliary entry
+- Suggest IFT25-IFT27 has broader cargo specificity than currently recognized
+
+10.8 Clinical Relevance of CFAP144-IFT25 Interaction
+
+If Interaction is Real:
+- IFT25 mutations could phenocopy CFAP144 deficiency by preventing cargo
+  delivery
+- CFAP144 mutations might impair IFT function beyond just MIP deficiency
+- Combination of IFT25 and CFAP144 variants could show genetic interaction
+- Therapeutic strategies targeting IFT could affect CFAP144-dependent processes
+
+Current Knowledge:
+- IFT25 mutations have not been reported to cause human disease (surprisingly)
+- CFAP144 mutations cause intellectual disability
+- The connection (if real) could explain neurodevelopmental aspects, as
+  ependymal cilia require both IFT and MIP function
+
+10.9 Summary: IFT25 Connection
+
+Status: PREDICTED BUT UNVALIDATED
+Confidence: Medium (ipSAE = 0.653)
+Most Likely Scenario: CFAP144 as cargo of IFT25-containing IFT-B complex
+Evidence Needed: Biochemical validation, localization studies, functional tests
+
+The predicted CFAP144-IFT25 interaction is plausible given:
+- IFT-B transports structural proteins
+- IFT25-IFT27 serves as cargo adaptor
+- CFAP144 must be delivered into cilia for MIP assembly
+
+However, medium confidence score and lack of literature support require
+experimental validation before drawing strong conclusions.
+
+This prediction could open new research directions into MIP transport mechanisms
+and expand understanding of IFT cargo diversity.
+
+================================================================================
+11. TISSUE EXPRESSION AND CELL TYPE SPECIFICITY
+================================================================================
+
+Human Protein Atlas Data:
+Source: https://www.proteinatlas.org/ENSG00000186973-FAM183A
+
+Specific Tissues with Expression:
+1. Male reproductive system: Seminiferous ducts (testis) - cytoplasmic
+2. Respiratory system: Ciliated cells of bronchus
+3. Female reproductive system: Ciliated cells of fallopian tube
+4. Brain: Hippocampus, caudate nucleus, medulla oblongata
+
+Expression Pattern Summary:
+FAM183A shows restricted expression primarily in:
+- Tissues with motile cilia (respiratory, fallopian tube)
+- Tissues with flagella (sperm in seminiferous ducts)
+- Brain regions (relevant to intellectual disability phenotype)
+
+Cell Type Specificity:
+- Multiciliated cells in airways
+- Ciliated epithelial cells
+- Spermatogenic cells
+- Ependymal cells (inferred from brain expression)
+- Neuronal populations (hippocampus, caudate)
+
+Absent or Low Expression:
+- Most non-ciliated tissues
+- Primary cilia-containing cells (not specifically enriched)
+
+This expression pattern confirms CFAP144/FAM183A as a MOTILE CILIA/FLAGELLA-
+SPECIFIC protein rather than a general ciliary or ubiquitous protein.
+
+================================================================================
+12. OPEN QUESTIONS AND FUTURE RESEARCH DIRECTIONS
+================================================================================
+
+12.1 Mechanistic Questions
+
+1. Why is CFAP144 essential in humans but dispensable in mice?
+   - Genetic redundancy differences?
+   - Species-specific compensation mechanisms?
+   - Different functional requirements?
+
+2. How does CFAP144 mutation cause intellectual disability?
+   - Ependymal cilia dysfunction?
+   - Developmental brain defects?
+   - Neuronal cilia involvement?
+   - Non-ciliary function in brain?
+
+3. What is the molecular function of CFAP144 within doublet microtubules?
+   - Structural stability only?
+   - Regulation of dynein motors?
+   - Tubulin modification regulation?
+   - Mechanical properties of doublets?
+
+4. How is CFAP144 transported into cilia?
+   - IFT-dependent (possibly via IFT25)?
+   - Diffusion-retention mechanism?
+   - Alternative transport pathway?
+
+5. What proteins interact with CFAP144 besides CFAP45 and CFAP210?
+   - Other MIPs?
+   - Tubulin post-translational modification enzymes?
+   - Chaperones?
+
+12.2 Clinical Questions
+
+1. Are there additional human CFAP144 mutations causing disease?
+   - Recessive intellectual disability families?
+   - Autism spectrum disorder cases?
+   - Primary ciliary dyskinesia patients without identified genes?
+
+2. What is the genotype-phenotype correlation?
+   - Do different mutations cause different phenotypes?
+   - Is there phenotypic variability in loss-of-function?
+   - Are there dominant-negative mutations?
+
+3. What is the pathophysiology of CFAP144-related intellectual disability?
+   - Hydrocephalus (ependymal cilia defect)?
+   - Neuronal migration defects?
+   - Synapse formation/plasticity defects?
+   - Developmental timing issues?
+
+4. Could CFAP144 be a modifier gene for other ciliopathies?
+   - Genetic interactions with IFT genes?
+   - Modifier of PCD severity?
+   - Influence on neurodevelopmental ciliopathies?
+
+12.3 Evolutionary Questions
+
+1. Why did CFAP144 evolve in chordates?
+   - New functional requirement in vertebrates?
+   - Specialization of motile cilia function?
+   - Regulatory innovation?
+
+2. What compensates for CFAP144 in protists?
+   - Ancient MIPs with overlapping function?
+   - Different doublet stabilization mechanisms?
+   - Structurally distinct microtubule lumens?
+
+3. Is there positive selection on CFAP144 sequence?
+   - Adaptive evolution in primates?
+   - Functional constraints?
+   - Lineage-specific substitutions?
+
+12.4 Structural Biology Questions
+
+1. What is the high-resolution structure of CFAP144?
+   - Full-length protein structure?
+   - SNYG module in complex with tubulin?
+   - CFAP144-CFAP45-CFAP210 complex?
+
+2. How does CFAP144 integrate into the MIP network?
+   - Assembly pathway?
+   - Order of incorporation?
+   - Requirement for other MIPs?
+
+3. What conformational changes occur during ciliary beating?
+   - Does CFAP144 undergo structural changes?
+   - Mechanosensitive function?
+   - Dynamic interactions?
+
+12.5 Functional Studies Needed
+
+1. Rescue experiments:
+   - Can human CFAP144 rescue mouse Cfap144-/- phenotype (if any)?
+   - Can mouse Cfap144 rescue human CFAP144 mutation phenotypes?
+   - Domain swap experiments to identify critical regions?
+
+2. Ciliary phenotyping:
+   - Detailed ultrastructural analysis of Cfap144-/- cilia
+   - High-speed videomicroscopy of ciliary beating
+   - Cryo-electron tomography of doublet microtubules
+
+3. Functional assays:
+   - Mucociliary clearance
+   - Cerebrospinal fluid flow
+   - Nodal flow (left-right patterning)
+   - Ependymal cilia-dependent functions
+
+4. Biochemical characterization:
+   - Protein-protein interaction mapping
+   - Post-translational modifications
+   - Stability and turnover rates
+   - Subcellular fractionation
+
+12.6 Technology Applications
+
+1. CFAP144 as marker:
+   - Motile cilia-specific marker for imaging
+   - Motile cilia differentiation indicator
+   - Cell type identification in single-cell datasets
+
+2. CFAP144 in disease modeling:
+   - Patient-derived iPSCs → multiciliated cells
+   - CRISPR modeling of mutations
+   - Organoid models (brain ventricles, airways)
+
+3. Therapeutic targets:
+   - Could CFAP144 upregulation compensate for other MIP defects?
+   - Gene therapy for FAM183A-related intellectual disability?
+   - Small molecule stabilizers of doublet microtubules?
+
+12.7 Comparative Studies Needed
+
+1. Across species: Detailed phenotyping of CFAP144 orthologs in:
+   - Zebrafish (developmental phenotypes, ciliary motility)
+   - Xenopus (nodal flow, multiciliated cell function)
+   - C. elegans (if ortholog exists)
+
+2. Across CFAP family: Compare CFAP144 with related proteins:
+   - Other SNYG module-containing proteins
+   - Other MIPs with similar localization
+   - CFAP family members with intellectual disability associations
+
+3. Across tissues: Detailed expression and function in:
+   - Different brain regions
+   - Different ciliated epithelia
+   - Developmental stages
+
+================================================================================
+13. KEY REFERENCES AND RESOURCES
+================================================================================
+
+13.1 Primary Research Articles
+
+CFAP144 Structure and Function:
+1. Andersen JS, et al. (2024) Uncovering structural themes across cilia
+   microtubule inner proteins with implications for human cilia function.
+   Nat Commun 15(1):2687.
+   PMID: 38538594
+   DOI: 10.1038/s41467-024-46737-3
+   [Landmark study identifying SNYG module in FAM183A and other MIPs]
+
+CFAP144 and Intellectual Disability:
+2. Harripaul R, et al. (2018) Identification of candidate gene FAM183A and
+   novel pathogenic variants in known genes: High genetic heterogeneity for
+   autosomal recessive intellectual disability.
+   PLoS One 13(11):e0208324.
+   PMID: 30500859
+   DOI: 10.1371/journal.pone.0208324
+   [First report of FAM183A mutations causing intellectual disability]
+
+IFT25 Background:
+3. Qin H, et al. (2007) Intraflagellar transport (IFT) cargo: IFT transports
+   flagellar precursors to the tip and turnover products to the cell body.
+   J Cell Biol 164(2):255-66.
+   PMID: 17242317
+   [Classic study on IFT cargo transport]
+
+4. Bhogaraju S, et al. (2013) Molecular basis of tubulin transport within the
+   cilium by IFT74 and IFT81.
+   Science 341(6149):1009-12.
+   PMID: 23990561
+   [Structural basis of IFT cargo recognition]
+
+5. Liew GM, et al. (2014) The intraflagellar transport protein IFT27 promotes
+   BBSome exit from cilia through the GTPase ARL6/BBS3.
+   Dev Cell 31(3):265-78.
+   PMID: 25443296
+   [IFT25-IFT27 heterodimer function]
+
+6. Wang Q, et al. (2022) The roles of intraflagellar transport protein 25 in
+   mammalian signaling transduction and flagellogenesis.
+   Front Cell Dev Biol 10:931567.
+   PMID: 35756970
+   DOI: 10.3389/fcell.2022.931567
+   [Comprehensive review of IFT25 functions]
+
+Related FAM183 Proteins:
+7. Walentek P, et al. (2018) The evolutionary conserved FOXJ1 target gene
+   Fam183b is essential for motile cilia in Xenopus but dispensable for
+   ciliary function in mice.
+   Sci Rep 8(1):14678.
+   PMID: 30279431
+   DOI: 10.1038/s41598-018-33045-2
+   [Related FAM183 family member, similar functional dispensability in mice]
+
+Microtubule Inner Proteins General:
+8. Owa M, et al. (2019) Inner lumen proteins stabilize doublet microtubules in
+   cilia and flagella.
+   Nat Commun 10:1143.
+   PMID: 30850601
+   DOI: 10.1038/s41467-019-09051-x
+   [Discovery of MIP network stabilizing doublets]
+
+9. Ma M, et al. (2019) Structure of the decorated ciliary doublet microtubule.
+   Cell 179(4):909-922.e12.
+   PMID: 31593959
+   DOI: 10.1016/j.cell.2019.09.030
+   [Cryo-EM structure revealing MIP architecture]
+
+13.2 Reviews and Databases
+
+Ciliary Proteomics:
+10. Pazour GJ, et al. (2005) Proteomic analysis of a eukaryotic cilium.
+    J Cell Biol 170(1):103-13.
+    PMID: 15998802
+    [Classic ciliary proteome study]
+
+Intraflagellar Transport:
+11. Taschner M, Lorentzen E. (2016) The intraflagellar transport machinery.
+    Cold Spring Harb Perspect Biol 8(10):a028092.
+    PMID: 27352625
+    [Comprehensive IFT review]
+
+Primary Ciliary Dyskinesia:
+12. Reiter JF, Leroux MR. (2017) Genes and molecular pathways underpinning
+    ciliopathies.
+    Nat Rev Mol Cell Biol 18(9):533-547.
+    PMID: 28698599
+    [Review of ciliopathy genes and mechanisms]
+
+13.3 Online Resources
+
+Databases:
+- GeneCards: https://www.genecards.org/cgi-bin/carddisp.pl?gene=CFAP144
+- NCBI Gene: https://www.ncbi.nlm.nih.gov/gene/440585
+- UniProt: https://www.uniprot.org/uniprotkb/A6NL82/entry
+- OMIM: https://omim.org/entry/621114
+- Ensembl: https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000186973
+- Human Protein Atlas: https://www.proteinatlas.org/ENSG00000186973-FAM183A
+
+Model Organism Databases:
+- MGI (Mouse): https://www.informatics.jax.org/marker/MGI:1922679
+- RGD (Rat): https://rgd.mcw.edu/rgdweb/report/gene/main.html?id=1561932
+- ZFIN (Zebrafish): https://zfin.org/ZDB-GENE-111103-1
+
+Ciliary Resources:
+- Cildb: Ciliary proteome database
+- Syscilia Gold Standard: Validated ciliary genes
+
+13.4 Gene Nomenclature
+
+Official Symbol: CFAP144 (HUGO Gene Nomenclature Committee)
+Previous Symbol: FAM183A (now alias)
+Synonyms: HCG23177, LOC440585
+Protein Name: Cilia- and flagella-associated protein 144
+
+Mouse: Cfap144 (capitalize only first letter)
+Rat: Cfap144
+Zebrafish: cfap144 (all lowercase)
+
+================================================================================
+14. SUMMARY AND CONCLUSIONS
+================================================================================
+
+CFAP144 (also known as FAM183A) is a 134-amino acid microtubule inner protein
+(MIP) that localizes to the lumen of ciliary doublet microtubules in motile
+cilia and flagella. It contains an evolutionarily conserved SNYG module that
+binds the inner surface of tubulin heterodimers and serves as a structural
+connector between filamentous MIPs CFAP45 and CFAP210 on protofilaments B07-B08
+of the B-tubule.
+
+CFAP144 exhibits an intriguing pattern of evolutionary conservation and
+functional requirement: while present across vertebrates and predicted to be
+important for sperm flagella and motile cilia function, Cfap144 knockout mice
+are surprisingly viable and fertile with no apparent ciliary defects. This
+contrasts sharply with human genetics, where a nonsense mutation (p.W126*)
+causes autosomal recessive intellectual disability with microcephaly,
+establishing FAM183A as a candidate gene for neurodevelopmental disorders.
+
+The tissue expression pattern—restricted to ciliated epithelia (respiratory,
+fallopian tube), testis, and brain—supports roles in motile cilia function and
+neurodevelopment. The brain expression, particularly in hippocampus and other
+regions, may explain the intellectual disability phenotype, potentially through
+ependymal cilia dysfunction affecting cerebrospinal fluid flow or through
+currently unknown non-ciliary neuronal functions.
+
+The predicted interaction with IFT25 (ipSAE = 0.653, medium confidence)
+suggests CFAP144 may be transported into cilia by the intraflagellar transport
+machinery, specifically via the IFT25-IFT27 cargo adaptor heterodimer within
+IFT complex B. However, this interaction remains experimentally unvalidated and
+requires biochemical confirmation. If verified, it would provide important
+insights into MIP transport mechanisms and expand the known cargo repertoire of
+IFT25.
+
+Despite its structural role in doublet microtubules, CFAP144 is NOT a component
+of outer dynein arms, inner dynein arms, radial spokes, or the nexin-dynein
+regulatory complex. Instead, it occupies a specialized niche within the
+microtubule lumen, representing a more recently appreciated category of ciliary
+structural proteins.
+
+Key unresolved questions include: (1) Why is CFAP144 dispensable in mice but
+essential in humans? (2) What is the molecular mechanism linking CFAP144 loss
+to intellectual disability? (3) Is CFAP144 truly an IFT cargo, and if so, how
+is its delivery regulated? (4) Are there additional disease-causing mutations
+in CFAP144 waiting to be discovered in unsolved intellectual disability or
+ciliopathy cases?
+
+CFAP144 represents an emerging area of ciliary biology where structural
+microtubule inner proteins intersect with neurodevelopmental disease,
+highlighting that even proteins with seemingly redundant functions in model
+organisms can be critical for human brain development. Future structural
+biology, cell biology, and clinical genetics studies will be needed to fully
+elucidate CFAP144's roles in ciliary structure, intraflagellar transport,
+and neurodevelopment.
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Report prepared based on literature search conducted 2025-11-17
+Primary databases searched: PubMed, Nature, UniProt, GeneCards, Human Protein
+Atlas, MGI, NCBI Gene, Ensembl, OMIM
+
+Note: The predicted CFAP144-IFT25 interaction (ipSAE=0.653) from AlphaFold3
+modeling is a computational prediction that requires experimental validation.
+Medium confidence scores (0.5-0.7) indicate plausible but unconfirmed
+interactions that should be treated as hypotheses for further testing.
+
+For questions or updates to this report, additional experimental data or
+recently published studies should be integrated.
