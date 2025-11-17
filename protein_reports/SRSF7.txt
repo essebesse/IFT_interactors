@@ -1,0 +1,1465 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: SRSF7 (Serine/Arginine-Rich Splicing Factor 7)
+================================================================================
+
+INTERACTION CONTEXT:
+- ipSAE = 0.612 with BBS5 (BBSome component)
+- Confidence level: Medium
+- Interaction source: AlphaFold3 prediction from IFT interactors database
+
+PROTEIN IDENTITY:
+- Gene name: SRSF7 (formerly SFRS7, 9G8)
+- UniProt ID: Q16629
+- Aliases: 9G8, ZCCHC20
+- Protein length: 238 amino acids
+- Molecular weight: ~27 kDa (calculated)
+- Organism: Homo sapiens (Human)
+- Chromosomal location: 2p22.1
+
+================================================================================
+1. PROTEIN STRUCTURE AND DOMAINS
+================================================================================
+
+SRSF7 is a member of the serine/arginine (SR)-rich family of pre-mRNA splicing
+factors that constitute part of the spliceosome. The protein has a modular
+domain architecture consisting of:
+
+RNA Recognition Motif (RRM):
+- N-terminal RNA recognition motif for binding RNA sequences
+- Contributes to RNA binding specificity
+- Located at amino acid positions ~1-90
+
+CCHC-Type Zinc Knuckle Domain:
+- UNIQUE FEATURE: SRSF7 is the ONLY SR protein family member to encode a
+  CCHC-type zinc finger/knuckle domain
+- Consensus sequence: C-X[2]-C-X[4]-H-X[4]-C (where X = any amino acid,
+  C = cysteine, H = histidine)
+- Located between RRM and RS domains
+- Provides additional RNA-binding specificity to the RRM domain
+- Also known as ZCCHC20 due to this zinc knuckle motif
+- The zinc knuckle contributes to the specificity of SRSF7's RNA binding,
+  distinguishing it from other SR proteins
+
+RS Domain (Arginine/Serine-Rich Domain):
+- C-terminal domain rich in alternating arginine (R) and serine (S) dipeptides
+- Facilitates protein-protein interactions between different SR splicing factors
+- Critical for spliceosome assembly and protein recruitment
+- Subject to extensive phosphorylation (see Post-Translational Modifications)
+- Required for nuclear speckle localization
+- Contains multiple RS/SR dipeptide repeats
+
+References:
+- GeneCards: SRSF7 Gene
+- NCBI CDD: RRM_SRSF7 conserved domain
+- UniProt Q16629
+
+================================================================================
+2. PRIMARY SPLICING FUNCTION
+================================================================================
+
+CANONICAL SPLICING ROLE:
+
+SRSF7 is a canonical SR protein that plays key roles in constitutive and
+alternative pre-mRNA splicing. SR proteins:
+- Are essential components of the spliceosome
+- Bind to exonic splicing enhancers (ESE) and intronic splicing enhancers (ISE)
+- Recruit U1 snRNP (via U1-70K protein) to 5' splice sites
+- Recruit U2AF to 3' splice sites
+- Facilitate exon definition and splice site recognition
+- In eukaryotes, spliceosome assembly starts with interaction between
+  U1-70K and SR proteins
+
+SPLICEOSOMAL INTERACTIONS:
+
+SRSF7 interacts with multiple spliceosomal components:
+- U2AF65 (U2 auxiliary factor)
+- U1-70K/U170K (U1 snRNP 70K protein)
+- PRPF8 (pre-mRNA processing factor 8)
+
+Domain-specific interactions:
+- The RS domain is particularly important for optimal spliceosome recruitment
+- Spliceosomal factors interact less with SRSF7_RRM-GFP (lacking RS domain)
+  than with full-length SRSF7-GFP
+- Phosphorylated SRSF7 RS domain interacts with U1-70K BAD1 domain
+- SRSF7 RRM interacts with U1-70K RRM
+- The RS/BAD1 interaction plays a dominant role, while RRM interactions
+  enhance complex stability
+
+AUTOREGULATION MECHANISM:
+
+SRSF7 maintains homeostasis through negative feedback:
+- SRSF7 binding to its own pre-mRNA promotes inclusion of a poison cassette exon
+- The poison exon contains premature termination codons
+- This triggers nonsense-mediated decay (NMD) of SRSF7 transcript
+- Prevents overaccumulation of SRSF7 protein
+- Also involves expression of split-ORFs and nuclear body assembly
+
+References:
+- PMID: 32123389 (Nat Struct Mol Biol. 2020) - SRSF7 homeostasis
+- PMID: 39023093 (Protein Sci. 2024) - U1-70K and SRSF1 interaction
+  (phosphorylation modulation)
+- PMID: 21632831 (PNAS 2011) - Interaction between SR protein and U1-70K
+  determines spliceosome assembly
+
+================================================================================
+3. SPECIFIC RNA TARGETS AND SPLICING EVENTS
+================================================================================
+
+FAS/CD95 EXON 6 (APOPTOSIS REGULATION):
+
+Function:
+- FAS exon 6 encodes a transmembrane domain
+- Exon 6 INCLUSION → membrane-bound Fas receptor → promotes apoptosis
+- Exon 6 SKIPPING → soluble Fas isoform → inhibits apoptosis (acts as decoy)
+
+SRSF7's role:
+- SRSF7 promotes FAS exon 6 SKIPPING (anti-apoptotic effect)
+- Upregulation of SRSF7 in BEAS-2B cells → increased exon 6 skipping
+- SRSF7 knockdown in A549 cells → increased exon 6 inclusion → apoptosis
+- This is a key mechanism by which SRSF7 promotes cancer cell survival
+
+References:
+- PMID: 29556298 (Oncol Lett. 2018) - SRSF7 knockdown promotes apoptosis
+  in colon and lung cancer
+- PMC: PMC5844074
+
+MAPT/TAU EXON 10 (TAUOPATHY REGULATION):
+
+Function:
+- Tau exon 10 encodes the fourth microtubule-binding repeat
+- Exon 10 INCLUSION → 4R-tau (4 microtubule-binding repeats)
+- Exon 10 SKIPPING → 3R-tau (3 microtubule-binding repeats)
+- Normal adult human brain: ~equal 3R-tau and 4R-tau levels
+- Imbalanced 3R/4R ratio → various tauopathies (Alzheimer's, PSP, FTDP-17)
+
+SRSF7's role:
+- SRSF7 (9G8) REPRESSES tau exon 10 inclusion → promotes 3R-tau
+- Works together with CLK2, protein phosphatase 1 (PP1), and NIPP1
+- SRSF7 also reduces abundance of circular MAPT RNA
+- Other SR proteins (SRSF1, SRSF2, SRSF6, SRSF9) promote exon 10 inclusion
+- Silent/intronic mutations that disrupt exon 10 splicing alone are sufficient
+  to cause neurodegeneration and dementia (FTDP-17)
+
+Clinical significance:
+- Understanding MAPT splicing regulation is important for Alzheimer's disease (AD),
+  progressive supranuclear palsy (PSP), and frontotemporal dementia
+- Altered 3R-tau/4R-tau ratios accumulate in pathologic inclusions in these diseases
+
+References:
+- PMID: 34874463 (Acta Neuropathol Commun. 2022) - Dysregulated MAPT exon 2
+  and 10 coordination in PSP and AD
+- PMID: 24627328 (Neurosci Bull. 2014) - Regulation of tau exon 10 splicing
+- Molecular Neurodegeneration 2008, 3:8 - Tau exon 10 alternative splicing
+  and tauopathies
+
+PKM (PYRUVATE KINASE M) ALTERNATIVE SPLICING (GLYCOLYSIS REGULATION):
+
+Function:
+- PKM gene contains mutually exclusive exons 9 and 10
+- Exon 9 inclusion → PKM1 isoform (constitutively active)
+- Exon 10 inclusion → PKM2 isoform (regulatable, lower activity)
+- PKM2 is the M2 splice isoform normally embryonically restricted but
+  re-expressed in cancer
+- PKM2 is a key regulator of aerobic glycolysis (Warburg effect) in cancer cells
+- Low PKM2 enzymatic activity confers glycolytic phenotype to cancer cells
+
+SRSF7's role:
+- SRSF7 promotes PKM exon 10 inclusion → favors PKM2 expression
+- SRSF7 promotes exon 2 skipping on PKM pre-mRNA
+- SRSF7 downregulation → upregulates PKM1, inhibits PKM2
+- SRSF7 is involved in reprogramming glucose metabolism through PKM splicing
+
+Functional effects:
+- SRSF7 knockdown in HepG2 (hepatocellular carcinoma) cells:
+  * Inhibited proliferation, clonogenicity, and invasion
+  * Enhanced apoptosis
+  * Decreased glucose uptake and lactate production
+  * Reduced GLUT1 (glucose transporter 1) expression
+  * Reduced LDHA (lactate dehydrogenase A) expression
+
+Clinical relevance:
+- PKM2 is critical glycolytic enzyme in oncogenic mTOR-induced Warburg effect
+- Targeting SRSF7-PKM axis may be therapeutic strategy for cancers
+
+References:
+- PMID: 38706594 (Curr Med Chem. 2024) - SRSF7 knockdown inhibits aerobic
+  glycolysis in HepG2 cells
+- PMC: PMC11119032
+- PMID: 27644562 (Mol Cell Biochem. 2017) - SRSF7 regulates p21-dependent
+  growth arrest in colon cancer
+
+MDM2 ALTERNATIVE SPLICING (P53 REGULATION):
+
+SRSF7 depletion effects:
+- SRSF7 knockdown in human diploid fibroblasts (HDF) → cellular senescence
+- Accompanied by p53 protein stabilization
+- Generates MDM2 alternative splicing variants, particularly MDM2-C
+- MDM2-C identified as key functional variant generated by SRSF7 depletion
+- TP53 mRNA levels remain unchanged, but p53 protein increases (increased
+  protein stability)
+- p21 protein expression also increases
+
+References:
+- PMID: 38188543 (Aging. 2024) - SRSF7 downregulation induces cellular
+  senescence via MDM2 variants
+- PMC: PMC10781460
+
+OSTEOPONTIN (SPP1) SPLICE VARIANTS (RENAL CANCER):
+
+- microRNAs target SRSF7 to modulate osteopontin splice variant expression
+- SRSF7 silencing affects osteopontin splice variants
+- Decreases proliferation rate of renal cancer cells (clear cell RCC)
+- Associated with Lynch syndrome
+
+Reference:
+- ScienceDirect: Gene 2016 - microRNAs target SRSF7 in renal cancer cells
+
+IRF7 GENE (NOT SPLICING - TRANSCRIPTIONAL ACTIVATION):
+
+- See Section 5 on Non-Canonical Functions
+
+CIRCADIAN AND DISEASE-RELEVANT EVENTS:
+
+- SRSF7 regulates inclusion of circadian-related alternative splicing events
+- Involved in disease-relevant splicing decisions beyond those listed above
+
+References:
+- OMIM *600572 - SPLICING FACTOR, SERINE/ARGININE-RICH, 7
+
+================================================================================
+4. NON-CANONICAL FUNCTIONS (BEYOND SPLICING)
+================================================================================
+
+In addition to their critical roles in mRNA splicing, SR proteins including
+SRSF7 have been shown to participate in:
+- mRNA nuclear export
+- mRNA translation
+- Alternative polyadenylation
+- Transcriptional activation (newly discovered for SRSF7)
+
+mRNA NUCLEAR EXPORT:
+
+SRSF7 functions as an export adapter linking RNA processing to nuclear export:
+
+Mechanism:
+- SRSF7 binds directly to NXF1 (nuclear RNA export factor 1) in its
+  HYPOPHOSPHORYLATED state
+- SRSF7 binds mRNA, which is then transferred to the NXF1-NXT1 heterodimer
+- Enhances NXF1-NXT1 RNA-binding activity
+- This coupling occurs after splicing is completed (requires dephosphorylation)
+- Works via the TREX/TAP export pathway
+
+Specific targets:
+- Histone H2A mRNA export: SRSF3 and SRSF7 are required for export of transcripts
+  containing export elements from histone H2A coding region
+- Intronless transcripts: Particularly important for replication-dependent histone
+  mRNAs that lack introns and are not spliced or polyadenylated
+- Histone H2A mRNA contains 22-nucleotide Intronless Transport Element (ITE)
+- SRSF7 (9G8) and SRSF3 (SRp20) recognize ITE motif, bind it, and recruit
+  TAP/NXF1 to promote export
+
+Long non-coding RNAs:
+- SRSF7 and SRSF1 recruited to intronless lncRNA NKILA in sequence-dependent manner
+- Promotes nuclear export via TREX/TAP pathway
+- SRSF7 depletion → blockage of nuclear export in 80% of cells
+
+References:
+- PMID: 26944680 (Genes Dev. 2016) - SR proteins are NXF1 adaptors linking
+  alternative RNA processing to mRNA export
+- PMC: PMC4782049
+- PMID: 34081154 (Nucleic Acids Res. 2021) - SRSF1 and SRSF7 recruitment to
+  lncRNA NKILA
+- Wiley Online Library (FEBS J. 2011) - Shuttling SR proteins: more than
+  splicing factors
+
+ALTERNATIVE POLYADENYLATION:
+
+SRSF7 regulates 3'UTR length through modulation of polyadenylation site usage:
+
+Mechanism:
+- SRSF7 binds UPSTREAM of proximal polyadenylation sites (pPAS)
+- Enhances pPAS usage in concentration-dependent manner
+- This is SPLICING-INDEPENDENT
+- Recruits cleavage factor FIP1 to promote proximal cleavage
+- SRSF7 interacts with FIP1 via its HYPOPHOSPHORYLATED RS domain
+- The interaction is RNA-independent and does not require CFIm or bound RNA
+
+Effect:
+- Generates transcripts with SHORT 3'UTRs
+- Affects cytoplasmic abundance of transcripts with alternative 3' ends
+- Couples alternative polyadenylation to NXF1-mediated mRNA export
+- Binding to CFIm requires RNA-binding domain and RS domain hyperphosphorylation
+
+Contrast with SRSF3:
+- SRSF3 suppresses pPAS usage (opposite effect)
+- SRSF3 and SRSF7 also regulate CFIm (cleavage factor Im) levels
+
+References:
+- PMID: 33597006 (Genome Biol. 2021) - SRSF3 and SRSF7 modulate 3'UTR length
+  through polyadenylation site regulation
+- ResearchGate Figure: SRSF7 interacts RNA-independently with FIP1 via
+  hypophosphorylated RS domain
+
+mRNA TRANSLATION:
+
+Evidence for translational role:
+- In the cytoplasm, SRSF7 associates with ribosomal subunits, monosomes, and
+  (to lesser extent) polysomes
+- Suggests role in mRNA translation regulation
+- Related SR protein SRSF1 has documented translational functions
+- SRSF1's cytoplasmic localization affects translation of ciliary mRNAs
+
+References:
+- PMID: 34338635 (eLife 2021) - Nucleo-cytoplasmic shuttling of SRSF1 required
+  for cilia function (related protein)
+- PMC: PMC8352595
+
+TRANSCRIPTIONAL ACTIVATION (NOVEL DISCOVERY - 2024):
+
+Major recent finding: SRSF7 drives transcription of IRF7 to promote antiviral
+immunity
+
+IRF7 (Interferon Regulatory Factor 7) activation:
+- SRSF7 directly activates transcription (NOT splicing) of Irf7 gene
+- Occurs at the Irf7 promoter
+- SRSF7 maximizes STAT1 (Signal Transducer and Activator of Transcription 1)
+  transcription factor binding
+- SRSF7 recruits STAT1 to the Irf7 promoter
+- Enables pSer2 RNA polymerase II (RNAPII) elongation
+
+Mechanism - cooperation with histone methyltransferase:
+- SRSF7 cooperates with KMT5a (SET8, also called SETD8)
+- KMT5a is an H4K20me1 (histone H4 lysine 20 monomethylation) methyltransferase
+- Together they activate Irf7 transcription
+
+Antiviral immunity:
+- Type I interferon (IFN) response activated by IRF3 and IRF7
+- Responds to: LPS/Salmonella infection, cytosolic dsDNA, cytosolic dsRNA
+- SRSF7 required for optimal expression of cohort of interferon-stimulated genes
+  in macrophages
+- SRSF7 orchestrates macrophage innate immune gene expression
+- Dictates infection outcomes
+
+Significance:
+- This reveals unexpected mechanism by which SR proteins can regulate innate
+  immune responses
+- Goes beyond canonical splicing role
+- Opens new avenue for understanding SR protein multifunctionality
+
+References:
+- PMID: 38393946 (Cell Rep. 2024 Feb) - MAJOR PAPER: Serine/arginine-rich
+  splicing factor 7 promotes type I interferon response by activating Irf7
+  transcription
+- PMC: PMC11056844
+- Cell Reports 2024, S2211-1247(24)00144-X
+- bioRxiv 2023.05.09.540055 (earlier preprint version)
+
+m6A METHYLATION REGULATION (EPITRANSCRIPTOMICS):
+
+SRSF7 facilitates N6-methyladenosine (m6A) RNA modification:
+
+Mechanism in glioblastoma:
+- SRSF7 specifically facilitates m6A methylation NEAR its binding sites
+- Recruits METTL3 (methyltransferase like 3) to RNA
+- SRSF7 interacts with METTL3, METTL14, and WTAP (m6A writer complex components)
+- This interaction is RNA-INDEPENDENT (occurs with RNase treatment)
+- SRSF7 acts as bridge between RNA binding and methyltransferase recruitment
+
+Functional effects:
+- m6A methylation upregulates proliferation and migration of glioma cells
+- SRSF7 gene expression positively correlated with glioblastoma (GBM)
+  cell-specific m6A methylation
+- SRSF7 is novel m6A regulator facilitating methylation on mRNAs involved in
+  cell proliferation and migration
+- SRSF7 promotes GBM cell proliferation/migration largely dependent on m6A
+  methyltransferase presence
+
+References:
+- PMID: 34954129 (Genomics Proteomics Bioinformatics 2023) - Specific regulation
+  of m6A by SRSF7 promotes glioblastoma progression
+- Oxford Academic (GPB 2023) - Same paper
+
+================================================================================
+5. POST-TRANSLATIONAL MODIFICATIONS (PTMs)
+================================================================================
+
+PHOSPHORYLATION (PRIMARY REGULATORY MODIFICATION):
+
+Location and kinases:
+- Occurs predominantly within the C-terminal RS domain
+- Catalyzed by two families of protein kinases:
+  1. SR-specific protein kinases (SRPKs) - SRPK1, SRPK2
+  2. Cdc2-like kinases (CLKs) - CLK1, CLK2, CLK3, CLK4
+- Multiple serine residues in RS dipeptides are phosphorylation targets
+- Creates "RS dipeptide phosphorylation"
+
+Functions of phosphorylation:
+
+1. Subcellular localization:
+   - Hyperphosphorylation required for nuclear speckle localization
+   - Regulates nucleocytoplasmic shuttling
+   - Nuclear import/export balance controlled by phosphorylation state
+
+2. Protein-protein interactions:
+   - Phosphorylation state determines which proteins SRSF7 binds
+   - HYPOPHOSPHORYLATED SRSF7 RS domain:
+     * Binds to NXF1 for mRNA export
+     * Binds to FIP1 for polyadenylation
+   - HYPERPHOSPHORYLATED SRSF7 RS domain:
+     * Binds to CFIm (cleavage factor Im)
+     * Interacts with U1-70K BAD1 domain for spliceosome assembly
+     * Required for spliceosomal component recruitment
+
+3. Intramolecular vs intermolecular interactions:
+   - RS domains can engage in intra- and inter-molecular interactions
+   - Hyperphosphorylation switches intramolecular → intermolecular interactions
+   - Allows ternary complex formation via both RS domains and RRMs
+
+4. Splicing activity regulation:
+   - Phosphorylation state affects splice site selection
+   - Modulates spliceosome assembly during early stages
+   - The U1-70K and SRSF1 interaction modulated by phosphorylation (applies
+     to SR protein family generally)
+
+Temporal regulation:
+- Phosphorylation/dephosphorylation cycles coordinate splicing → export transition
+- Dephosphorylation occurs after splicing completion
+- Allows SR proteins to be recycled for subsequent rounds
+
+Distinct mechanisms:
+- Different SR proteins phosphorylated by distinct mechanisms
+- Provides specificity and differential regulation across SR protein family
+
+References:
+- PMID: 30696774 (J Biol Chem. 2019) - Distinct mechanisms govern phosphorylation
+  of different SR protein splicing factors
+- PMC: PMC6349114
+- PMID: 39023093 (Protein Sci. 2024) - U1-70K and SRSF1 interaction modulated
+  by phosphorylation
+- PMID: 23335681 (Chromosoma 2013) - Regulation of splicing by SR proteins and
+  SR protein-specific kinases
+- PMC: PMC3660409
+
+ARGININE METHYLATION:
+
+General SR protein methylation:
+- At least 5 PTM types known in SR proteins: methylation, acetylation,
+  SUMOylation, ubiquitination, phosphorylation
+- Arginine methylation detected on many RNA-binding proteins including
+  hnRNPs and SR proteins
+- Catalyzed by protein arginine methyltransferases (PRMTs)
+
+Location:
+- Arginine residues in RRM domain can be methylated
+- Three methylated arginine residues identified between two RRMs in SRSF1
+  (suggests conservation in SR family)
+
+Functions:
+- Methylation of arginine residues in RRM may contribute to nuclear export
+  of SR proteins
+- Affects RNA-binding properties
+- May regulate protein-protein interactions
+
+Clinical relevance:
+- PRMTs are promising targets for cancer therapy
+- PRMT inhibitors alter arginine monomethylation and cellular stress response
+- Dysregulated arginine methylation linked to various diseases
+
+References:
+- Biochemical Society Transactions 2023, 51(2):725 - Effectors and effects of
+  arginine methylation
+- PMID: 27184089 (Mol Cell. 2016) - Arginine methylation: coming of age
+- PMID: 33758172 (Nat Commun. 2021) - Profiling PRMT methylome reveals roles
+  of hnRNPA1 arginine methylation
+- PMID: 33927194 (Exp Mol Med. 2021) - Protein arginine methyltransferases
+  as cancer therapy targets
+- PMID: 32439908 (Nat Commun. 2020) - Pharmacological inhibition of PRMT7
+  links arginine monomethylation to stress response
+
+OTHER POTENTIAL MODIFICATIONS:
+
+While not specifically documented for SRSF7, SR proteins as a family can undergo:
+- Acetylation
+- SUMOylation (Small Ubiquitin-like Modifier)
+- Ubiquitination
+
+These modifications may regulate:
+- Protein stability
+- Subcellular localization
+- Activity
+- Interactions with other factors
+
+Reference:
+- PMID: 32678004 (Int J Biol Sci. 2020) - Serine/arginine-rich splicing factors:
+  bridge linking alternative splicing and cancer
+- PMC: PMC7378643
+
+================================================================================
+6. CELLULAR LOCALIZATION AND DYNAMICS
+================================================================================
+
+NUCLEAR LOCALIZATION:
+
+Nuclear speckles (Interchromatin Granule Clusters, IGCs):
+- SRSF7 predominantly nuclear
+- Localizes to nuclear speckles/interchromatin granule clusters
+- Nuclear speckles are subnuclear structures enriched in pre-mRNA splicing factors
+- SRSF7 is one of the "core" nuclear speckle factors
+- Other core factors: SRSF2, SRSF4, SRSF5, SRSF6, PRPF8
+
+Requirements for speckle targeting:
+- Full-length SRSF7 accumulates in nuclear speckles
+- Requires PHOSPHORYLATED RS dipeptides
+- Hyperphosphorylation of RS domain drives speckle localization
+- RS domain phosphorylation critical for this targeting
+
+Function of nuclear speckles:
+- Storage sites for splicing factors
+- Regulatory hubs for splicing factor availability
+- Sites of splicing factor assembly and modification
+- May regulate splicing factor concentration and activity
+
+NUCLEOCYTOPLASMIC SHUTTLING:
+
+Classification:
+- SRSF7 is a SHUTTLING SR protein
+- Shuttling SR proteins: SRSF1, SRSF3, SRSF4, SRSF6, SRSF7, SRSF10
+- Non-shuttling SR proteins: SRSF2, SRSF5, SRSF8, SRSF9, SRSF11, SRSF12
+
+Shuttling characteristics:
+- SRSF7 has RAPID shuttling rate between nucleus and cytoplasm
+- Categorized as "high shuttler" along with SRSF1 and SRSF3
+- Shuttling allows SRSF7 to function in both nuclear and cytoplasmic processes
+
+Regulation of shuttling:
+- Phosphorylation state of RS domain critical for nucleocytoplasmic shuttling
+- Nuclear import favored by certain phosphorylation patterns
+- Nuclear export requires specific dephosphorylation
+- Different cellular differentiation states modulate mRNA export activity
+
+CYTOPLASMIC LOCALIZATION AND FUNCTIONS:
+
+When in cytoplasm:
+- SRSF7 associates with ribosomal subunits
+- Associates with monosomes
+- Associates (to lesser extent) with polysomes
+- Suggests role in mRNA translation
+
+Export-related functions:
+- After splicing completion, SRSF7 is dephosphorylated
+- Hypophosphorylated SRSF7 binds NXF1-NXT1 export machinery
+- Accompanies mRNA through nuclear pore
+- May be released in cytoplasm or shuttled back to nucleus
+
+Differentiation-dependent changes:
+- Cellular differentiation state modulates mRNA export activity of SR proteins
+- SRSF7 export activity may vary across cell types and developmental stages
+
+References:
+- PMID: 28646123 (J Cell Biol. 2017) - SR proteins: to shuttle or not to shuttle
+- PMC: PMC5496630
+- PMID: 28559425 (Mol Cell Biol. 2017) - Cellular differentiation modulates
+  SR protein mRNA export activity
+- PMC: PMC5496613
+- ScienceDirect (Semin Cell Dev Biol. 2020) - SRSF3: newly discovered functions
+- Wiley Online Library (BioEssays 2021) - Noncanonical functions of SR protein
+  family in development and disease
+
+================================================================================
+7. DISEASE ASSOCIATIONS
+================================================================================
+
+CANCER (ONCOGENIC ROLE):
+
+General cancer association:
+- SRSF7 is an essential RNA-binding protein whose misexpression promotes cancer
+- SRSF7 emerged as an ONCOGENE
+- Overexpressed in various cancers
+- Promotes tumor progression through multiple mechanisms
+
+Expression patterns in cancers:
+- HIGH frequency of increased SRSF7 expression:
+  * Colon adenocarcinoma: 21/24 samples (87.5%)
+  * Lung carcinoma: 22/24 samples (91.7%)
+- Human Protein Atlas data shows elevated SRSF7 in multiple cancer types
+
+COLON AND LUNG CANCER:
+
+Mechanism:
+- SRSF7 proteins expressed at high levels
+- Regulates FAS exon 6 splicing → promotes exon 6 skipping
+- Produces soluble Fas isoform → prevents apoptosis
+- Overexpression of SRSF7 → promotes cell proliferation
+- Anti-apoptotic effect allows cancer cell survival
+
+Effects of SRSF7 knockdown:
+- Inhibited proliferation of HCT116 (colon) and A549 (lung) cancer cells
+- Enhanced apoptosis
+- Promoted Fas exon 6 inclusion → membrane-bound Fas → apoptosis induction
+
+Therapeutic potential:
+- SRSF7 may be potential therapeutic target for colon and lung cancer treatment
+- Targeting SRSF7 could restore apoptosis sensitivity
+
+References:
+- PMID: 29556298 (Oncol Lett. 2018) - SRSF7 knockdown promotes apoptosis of
+  colon and lung cancer cells
+- PMC: PMC5844074
+- Spandidos Publications: Oncol Lett 2018 - Same paper
+
+HEPATOCELLULAR CARCINOMA (HCC):
+
+Expression and metabolic effects:
+- SRSF7 upregulated in hepatocellular carcinoma
+- Regulates PKM alternative splicing → favors PKM2 expression
+
+SRSF7 knockdown in HepG2 cells:
+- Inhibited proliferation
+- Decreased clonogenicity
+- Reduced invasion capacity
+- Enhanced apoptosis
+- Metabolic reprogramming:
+  * Decreased glucose uptake
+  * Reduced lactate production
+  * Decreased GLUT1 (glucose transporter 1) expression
+  * Reduced LDHA (lactate dehydrogenase A) expression
+- Upregulated PKM1, downregulated PKM2
+- Inhibited aerobic glycolysis (Warburg effect)
+
+Mechanism:
+- SRSF7 promotes Warburg effect by favoring PKM2 splice isoform
+- PKM2 has lower enzymatic activity, allows metabolic intermediates to be
+  shunted into biosynthetic pathways
+- Critical for cancer cell proliferation
+
+References:
+- PMID: 38706594 (Curr Med Chem. 2024) - SRSF7 knockdown inhibits aerobic
+  glycolysis in HepG2 cells
+- PMC: PMC11119032
+- PMID: 27644562 (Mol Cell Biochem. 2017) - SRSF7 regulates p21-dependent
+  growth arrest in colon cancer
+
+GLIOBLASTOMA (GBM):
+
+Novel m6A-dependent mechanism:
+- SRSF7 gene expression positively correlated with GBM-specific m6A methylation
+- SRSF7 recruits METTL3 methyltransferase complex
+- Facilitates m6A methylation near SRSF7 binding sites
+- m6A-modified mRNAs involved in cell proliferation and migration
+
+Functional effects:
+- Promotes proliferation of glioblastoma cells
+- Enhances migration
+- Effects largely dependent on m6A methyltransferase presence
+- SRSF7-METTL3 axis drives GBM progression
+
+References:
+- PMID: 34954129 (Genomics Proteomics Bioinformatics 2023) - Specific regulation
+  of m6A by SRSF7 promotes glioblastoma progression
+- Oxford Academic GPB 2023 - Same paper
+
+RENAL CELL CARCINOMA (RCC):
+
+Mechanism:
+- microRNAs target SRSF7 to modulate osteopontin (SPP1) splice variant expression
+- SRSF7 affects alternative splicing of osteopontin
+
+Effects of SRSF7 silencing:
+- Alters osteopontin splice variants
+- Decreases proliferation rate of renal cancer cells (clear cell RCC)
+- Associated with Lynch syndrome
+
+Reference:
+- Gene 2016 - microRNAs target SRSF7 splicing factor to modulate osteopontin
+  splice variants in renal cancer cells
+
+CELLULAR SENESCENCE:
+
+Discovery:
+- SRSF7 knockdown in human diploid fibroblasts (HDF) sufficient to induce
+  senescence
+
+Mechanism:
+- SRSF7 depletion → formation of MDM2 alternative splicing variants
+- MDM2-C variant identified as key functional variant
+- p53 protein stabilization (though TP53 mRNA unchanged)
+- Increased p53 and p21 protein expression
+- Triggers senescence phenotype
+
+Implications:
+- SRSF7 maintains proliferative capacity by preventing senescence
+- SRSF7 loss → premature aging phenotype in cells
+- May contribute to tumor suppression in some contexts (senescence =
+  anti-proliferative)
+
+References:
+- PMID: 38188543 (Aging. 2024) - SRSF7 downregulation induces cellular
+  senescence through MDM2 variants
+- PMC: PMC10781460
+- Aging-US.com 2024
+
+IDIOPATHIC PULMONARY FIBROSIS (IPF):
+
+Recent major discovery (2025):
+- SRSF7 upregulated in lung fibroblasts from IPF patients
+- Also elevated in bleomycin (BLM)-induced mouse fibrosis model
+- SRSF7 is most abundantly expressed SR protein in normal lung fibroblasts
+
+Mechanism:
+- SRSF7 modulates PKM alternative splicing in lung fibroblasts
+- Enhances PKM exon 2 skipping
+- Leads to metabolic dysregulation and fibroblast activation
+- Dysregulation of glycolysis in fibroblasts
+
+Evidence from knockout studies:
+- Fibroblast-specific Srsf7 knockout mice:
+  * Conferred resistance to bleomycin-induced pulmonary fibrosis
+  * Protected against collagen accumulation
+- Enhanced Srsf7 expression in mice:
+  * Spontaneously induced alveolar collagen accumulation
+  * Recapitulates fibrotic phenotype
+
+Therapeutic discovery:
+- Drug screening identified lomitapide as novel SRSF7 modulator
+- Lomitapide effectively mitigated experimental pulmonary fibrosis
+- Targeting SRSF7-PKM axis = promising therapeutic strategy for IPF
+
+Clinical significance:
+- First link between SR protein splicing factors and pulmonary fibrosis
+- Opens new avenue for IPF treatment (currently limited options)
+- SRSF7 may be biomarker for fibrosis progression
+
+References:
+- PMID: TBD (Acta Pharm Sin B. 2025 Apr) - SRSF7 promotes pulmonary fibrosis
+  through regulating PKM alternative splicing
+- PMC: PMC12254822
+- ScienceDirect (Acta Pharm Sin B. 2025)
+- Mirage News 2025 - SRSF7 drives lung fibrosis via PKM splicing regulation
+
+NEURODEGENERATIVE DISEASES (TAUOPATHIES):
+
+Role in tau splicing:
+- SRSF7 represses MAPT/tau exon 10 inclusion
+- Promotes 3R-tau formation
+- Imbalanced 3R-tau/4R-tau ratios implicated in:
+  * Alzheimer's disease (AD)
+  * Progressive supranuclear palsy (PSP)
+  * Frontotemporal dementia with parkinsonism-17 (FTDP-17)
+  * Other tauopathies
+
+Potential therapeutic relevance:
+- Modulating SRSF7 activity could rebalance 3R/4R tau ratio
+- May be therapeutic target for tauopathies
+- Understanding SRSF7 regulation of MAPT splicing important for disease etiology
+
+References:
+- PMID: 34874463 (Acta Neuropathol Commun. 2022) - Dysregulated coordination
+  of MAPT exon 2 and 10 in PSP and AD
+- PMID: 24627328 (Neurosci Bull. 2014) - Regulation of tau exon 10 splicing
+- Mol Neurodegener 2008, 3:8 - Tau exon 10 alternative splicing and tauopathies
+
+NO DOCUMENTED DEVELOPMENTAL DISORDERS:
+
+Despite extensive searching, no specific associations found between SRSF7 and:
+- Autism spectrum disorder
+- Neurodevelopmental syndromes
+- Congenital disorders
+- Intellectual disability syndromes
+
+Note: While SR proteins generally are important for development, SRSF7-specific
+developmental phenotypes have not been reported in humans.
+
+================================================================================
+8. PHENOTYPES FROM KNOCKOUT/KNOCKDOWN STUDIES
+================================================================================
+
+HUMAN CELL CULTURE STUDIES:
+
+Cancer cell lines (multiple):
+- Decreased proliferation
+- Enhanced apoptosis
+- Reduced clonogenicity (colony formation)
+- Decreased invasion capacity
+- Altered splice variant profiles
+- Changes in metabolic phenotype (especially glycolysis)
+
+Fibroblasts (HDF - human diploid fibroblasts):
+- Cellular senescence
+- p53/p21 pathway activation
+- Growth arrest
+- Senescence-associated phenotype
+
+Lung fibroblasts:
+- Reduced activation state
+- Decreased glycolytic activity
+- Reduced fibrotic phenotype
+
+Functional consequences across cell types:
+- Altered FAS exon 6 splicing → increased apoptosis
+- Altered PKM splicing → metabolic reprogramming
+- Altered MDM2 splicing → p53 stabilization → senescence
+- mRNA export defects (for certain transcripts)
+- Nuclear speckle disorganization
+
+MOUSE MODELS:
+
+Fibroblast-specific Srsf7 knockout:
+- Resistance to bleomycin-induced pulmonary fibrosis
+- Protection against collagen accumulation in lungs
+- Preserved lung architecture
+- Reduced fibroblast activation
+
+Enhanced Srsf7 expression mice:
+- Spontaneous alveolar collagen accumulation
+- Fibrotic phenotype without injury
+- Demonstrates sufficiency of SRSF7 for fibrosis induction
+
+Note on mouse systemic knockout:
+- No published reports of germline Srsf7 knockout mice
+- Likely embryonic lethal (as with many essential splicing factors)
+- Tissue-specific conditional knockouts are feasible approach
+
+YEAST/ZEBRAFISH/OTHER ORGANISMS:
+
+- No specific SRSF7 ortholog studies reported
+- SR proteins generally essential for viability
+- Related SR protein studies (especially SRSF1) show developmental defects
+
+References:
+- PMID: 29556298 (Oncol Lett. 2018) - Cancer cell knockdown phenotypes
+- PMID: 38188543 (Aging. 2024) - Fibroblast senescence phenotype
+- PMID: 38706594 (Curr Med Chem. 2024) - HepG2 metabolic phenotype
+- PMC: PMC12254822 (Acta Pharm Sin B. 2025) - Mouse fibrosis model
+
+================================================================================
+9. KNOWN PROTEIN INTERACTIONS
+================================================================================
+
+SPLICEOSOMAL COMPONENTS:
+
+U1-70K (SNRNP70):
+- U1 small nuclear ribonucleoprotein 70 kDa protein
+- Direct interaction with SRSF7
+- SRSF7 RS domain (phosphorylated) interacts with U1-70K BAD1 domain
+- SRSF7 RRM interacts with U1-70K RRM
+- RS/BAD1 interaction dominant, RRM interaction enhances stability
+- Critical for early spliceosome assembly (E complex formation)
+- Recruits U1 snRNP to 5' splice sites
+
+U2AF65 (U2AF2):
+- U2 auxiliary factor 65 kDa subunit
+- Interacts with SRSF7
+- Recognizes 3' splice site polypyrimidine tract
+- SRSF7 helps recruit U2AF to 3' splice sites
+- Facilitates exon definition
+
+PRPF8 (PRP8):
+- Pre-mRNA processing factor 8
+- Large spliceosomal protein (220 kDa)
+- Core component of U5 snRNP
+- Interacts with SRSF7
+- Structural and catalytic functions in spliceosome
+- Interestingly, also localizes to ciliary base (related to cilia function)
+
+Interaction dependencies:
+- Spliceosomal factors interact LESS with SRSF7_RRM-GFP than full-length SRSF7-GFP
+- RS domain important for optimal spliceosome recruitment
+- Phosphorylation state affects interaction strength
+
+References:
+- PMID: 39023093 (Protein Sci. 2024) - U1-70K and SRSF1 interaction
+  (phosphorylation modulation)
+- PMID: 21632831 (PNAS 2011) - SR protein and U1-70K interaction determines
+  spliceosome assembly
+- PMID: 32123389 (Nat Struct Mol Biol. 2020) - SRSF7 spliceosomal interactions
+
+mRNA EXPORT MACHINERY:
+
+NXF1 (TAP):
+- Nuclear RNA export factor 1
+- Principal mRNA export receptor
+- SRSF7 binds directly to NXF1 in HYPOPHOSPHORYLATED state
+- SRSF7 acts as export adapter
+- Transfers bound mRNA to NXF1-NXT1 heterodimer
+- Enhances NXF1-NXT1 RNA-binding activity
+
+NXT1 (p15):
+- NTF2-related export protein 1
+- Obligate heterodimer with NXF1
+- Works together with NXF1 for mRNA export
+- SRSF7 interacts with NXF1-NXT1 complex
+
+TREX complex components:
+- SRSF7 functions via TREX/TAP pathway
+- Couples splicing to export
+
+References:
+- PMID: 26944680 (Genes Dev. 2016) - SR proteins are NXF1 adaptors
+- PMC: PMC4782049
+- PMID: 34081154 (Nucleic Acids Res. 2021) - SRSF7 and SRSF1 recruitment
+  to lncRNA promotes export via TREX/TAP
+
+POLYADENYLATION MACHINERY:
+
+FIP1 (FIP1L1):
+- Factor interacting with PAPOLA and CPSF1
+- Component of cleavage and polyadenylation complex
+- SRSF7 interacts with FIP1 via HYPOPHOSPHORYLATED RS domain
+- Interaction is RNA-INDEPENDENT
+- Does not require CFIm or bound RNA
+- SRSF7 recruits FIP1 to enhance proximal polyadenylation site usage
+- Generates transcripts with short 3'UTRs
+
+CFIm (Cleavage Factor Im):
+- Cleavage factor Im complex
+- SRSF7 affects CFIm levels (regulatory relationship)
+- SRSF7 binding to CFIm requires:
+  * RNA-binding domain of SRSF7
+  * RS domain HYPERPHOSPHORYLATION (opposite of FIP1 interaction)
+- SRSF3 and SRSF7 modulate CFIm levels and activity
+
+References:
+- PMID: 33597006 (Genome Biol. 2021) - SRSF3 and SRSF7 modulate 3'UTR length
+  via CFIm
+- ResearchGate Figure - SRSF7 interacts with FIP1 via hypophosphorylated RS domain
+
+m6A METHYLATION MACHINERY:
+
+METTL3:
+- Methyltransferase like 3
+- Catalytic component of m6A writer complex
+- SRSF7 interacts with METTL3 (RNA-INDEPENDENTLY)
+- SRSF7 recruits METTL3 to specific RNA sites
+- Facilitates m6A methylation near SRSF7 binding sites
+
+METTL14:
+- Methyltransferase like 14
+- Structural component of m6A writer complex
+- SRSF7 interacts with METTL14 (RNA-independently)
+- Stabilizes METTL3 and enhances methyltransferase activity
+
+WTAP:
+- WT1 associated protein
+- Regulatory component of m6A writer complex
+- SRSF7 interacts with WTAP (RNA-independently)
+- Required for nuclear localization of writer complex
+
+References:
+- PMID: 34954129 (Genomics Proteomics Bioinformatics 2023) - SRSF7 interacts
+  with m6A writers in GBM
+
+TRANSCRIPTIONAL MACHINERY:
+
+STAT1 (Signal Transducer and Activator of Transcription 1):
+- Transcription factor activated by interferons
+- SRSF7 recruits STAT1 to Irf7 promoter
+- SRSF7 maximizes STAT1 binding
+- Novel non-canonical interaction (SR protein acting as transcriptional coactivator)
+
+KMT5a (SET8, SETD8):
+- Histone methyltransferase
+- Catalyzes H4K20me1 (histone H4 lysine 20 monomethylation)
+- SRSF7 cooperates with KMT5a at Irf7 promoter
+- Together activate Irf7 transcription
+- Enables RNA polymerase II elongation (pSer2 RNAPII)
+
+RNA Polymerase II:
+- SRSF7 enables pSer2 RNAPII elongation at Irf7 gene
+- Promotes productive elongation for interferon response
+
+References:
+- PMID: 38393946 (Cell Rep. 2024 Feb) - SRSF7 activates Irf7 transcription
+  via STAT1 and KMT5a
+- PMC: PMC11056844
+
+OTHER SR PROTEINS (CROSS-REGULATION):
+
+SRSF3 (SRp20):
+- Serine/arginine-rich splicing factor 3
+- SRSF3 binding sites found in SRSF7 mRNA
+- SRSF3 overexpression affects SRSF7 splicing and expression
+- SRSF3 CLIP-tag clusters in NMD-associated exons/introns of SRSF7
+- Cross-regulatory network among SR proteins
+- SRSF3 and SRSF7 have opposite effects on polyadenylation (SRSF3 suppresses
+  pPAS, SRSF7 enhances pPAS)
+
+SRSF1 (ASF/SF2):
+- Prototypical SR protein
+- Similar shuttling and export functions
+- Both SRSF1 and SRSF7 recruited to intronless lncRNA NKILA
+- May have redundant and unique functions
+
+References:
+- PMID: 33597006 (Genome Biol. 2021) - SRSF3 and SRSF7 cross-regulation
+- PMID: 34081154 (Nucleic Acids Res. 2021) - SRSF1 and SRSF7 recruitment
+  to lncRNA
+
+KINASES:
+
+SRPKs (SR-specific protein kinases):
+- SRPK1, SRPK2
+- Phosphorylate RS domain of SRSF7
+- Regulate SRSF7 activity and localization
+
+CLKs (CDC2-like kinases):
+- CLK1, CLK2, CLK3, CLK4
+- Phosphorylate RS domain of SRSF7
+- CLK2 specifically works with SRSF7 to promote tau exon 10 skipping
+
+References:
+- PMID: 23335681 (Chromosoma 2013) - Regulation by SR protein-specific kinases
+- PMC: PMC3660409
+
+PHOSPHATASES:
+
+PP1 (Protein Phosphatase 1):
+- Dephosphorylates SR proteins including SRSF7
+- Works with CLK2 and SRSF7 to regulate tau exon 10 splicing
+- Regulates phosphorylation cycling
+
+NIPP1:
+- Nuclear inhibitor of protein phosphatase 1
+- Regulates PP1 activity
+- Part of regulatory complex affecting tau splicing with SRSF7
+
+References:
+- Tau exon 10 splicing literature (multiple sources)
+
+RIBOSOMAL PROTEINS:
+
+- SRSF7 associates with ribosomal subunits in cytoplasm
+- Associates with monosomes
+- Associates with polysomes (to lesser extent)
+- Specific ribosomal proteins not individually characterized
+- Suggests translational regulatory role
+
+Reference:
+- ScienceDirect topics - SR protein functions
+
+NO DIRECT INTERACTION WITH BBSome PROTEINS REPORTED:
+
+Despite extensive searching:
+- No published literature on SRSF7-BBSome interactions
+- No reports of SRSF7-BBS5 interaction
+- No connection between SR splicing factors and BBSome in current literature
+- Your AlphaFold3 prediction (ipSAE=0.612 with BBS5) may represent
+  NOVEL FINDING if validated
+
+================================================================================
+10. CILIARY CONNECTIONS AND POTENTIAL BBS5 INTERACTION SIGNIFICANCE
+================================================================================
+
+DIRECT CILIARY ROLE OF SRSF7: NOT ESTABLISHED
+
+Current literature status:
+- NO published studies directly linking SRSF7 to cilia or ciliary function
+- NO connection between SRSF7 and BBSome reported
+- NO association with ciliopathies documented
+- NO localization studies showing SRSF7 at ciliary structures
+
+RELATED SR PROTEIN (SRSF1) HAS CILIARY FUNCTIONS:
+
+SRSF1 and cilia:
+- Nucleo-cytoplasmic shuttling of SRSF1 required for cilia function
+- Cytoplasmic SRSF1 affects mRNA translation
+- Contributes to biogenesis and function of motile cilia
+- Mutant animals lacking cytoplasmic SRSF1:
+  * Multiple traits of dysfunctional motile cilia
+  * Defective sperm flagella
+  * Reduced translation of ciliary mRNAs in testes
+  * Decreased abundance of ciliary proteins
+
+Implications for SRSF7:
+- If SRSF1 (related shuttling SR protein) affects ciliary protein translation,
+  SRSF7 might too
+- Both are "high shuttler" SR proteins with cytoplasmic functions
+- SRSF7 also associates with ribosomes and may regulate translation
+
+References:
+- PMID: 34338635 (eLife 2021) - Nucleo-cytoplasmic shuttling of SRSF1 required
+  for cilia function
+- PMC: PMC8352595
+- bioRxiv 2020.09.04.263251
+
+SPLICING FACTORS AT THE CILIARY BASE:
+
+General principle:
+- Several pre-mRNA processing factors (PRPFs) localize to ciliary base
+- PRPF6, PRPF8, PRPF31, SNRNP200
+- Implies potential extranuclear functions
+- PRPF8 (which interacts with SRSF7) regulates ciliogenesis and regeneration
+  from ciliary base
+
+Could SRSF7 also localize to cilia?
+- Not yet tested
+- Worth investigating given PRPF8 interaction
+- May have extranuclear ciliary function
+
+References:
+- PMID: 36165912 (Cell Regen. 2022) - Cilia regeneration requires RNA splicing
+  factor from ciliary base
+- PMC: PMC9525525
+
+ALTERNATIVE SPLICING OF CILIARY GENES:
+
+General importance:
+- Alternative splicing regulates many ciliary genes
+- Altered splicing observed in genes involved in cilia and centrosomes
+- Some anti-proliferative effects mediated by missplicing of ciliary kinases
+
+BBS5 splice variants:
+- BBS5 has documented alternative splice variants
+- Smaller molecular mass form identified
+- Results from cryptic splicing sites in Intron 7
+- Truncated BBS5 with unique 24 amino acid C-terminus
+- Expression restricted to retina (tissue-specific splicing)
+- Could SRSF7 regulate BBS5 splicing? → NOT YET TESTED
+
+References:
+- PMID: 26867008 (PLoS One 2016) - Splice variant of BBS5 selectively
+  expressed in retina
+- PMC: PMC4750968
+
+BBSOME AND CILIARY PROTEIN TRAFFICKING:
+
+BBSome function:
+- Complex of 8 proteins (BBS1, BBS2, BBS4, BBS5, BBS7, BBS8, BBS9, BBS18)
+- Regulates protein composition in cilia
+- Functions as coat complex for ciliary membrane protein trafficking
+- Essential for export of signaling proteins from cilia
+- Moves along ciliary axoneme via IFT trains
+- BBS5 contains two pleckstrin homology (PH) domains and three-helix bundle
+- BBS5 required for cone photoreceptor protein trafficking
+
+Why might SRSF7 interact with BBS5?
+1. Splicing regulation hypothesis:
+   - SRSF7 could regulate alternative splicing of BBS5 mRNA
+   - Could control which BBS5 isoform is expressed
+   - Could affect BBS5 levels through NMD coupling
+
+2. Non-canonical interaction hypothesis:
+   - SRSF7 shuttles to cytoplasm
+   - Could interact with BBSome during ciliary protein cargo selection
+   - Might link mRNA processing to ciliary protein trafficking
+   - Could regulate translation of ciliary mRNAs (similar to SRSF1)
+
+3. Ciliary base localization hypothesis:
+   - Splicing factors (PRPF8) localize to ciliary base
+   - SRSF7 might also localize to ciliary base
+   - Could interact with BBSome during assembly or cargo loading
+
+4. RNA granule hypothesis:
+   - SRSF7 associates with mRNAs
+   - BBSome might transport RNA-protein complexes
+   - Local translation of ciliary proteins near/in cilia
+
+POTENTIAL FUNCTIONAL SIGNIFICANCE OF SRSF7-BBS5 INTERACTION:
+
+If validated, SRSF7-BBS5 interaction could mean:
+
+Ciliary transcript regulation:
+- SRSF7 might regulate splicing of ciliary protein transcripts
+- Could affect 3'UTR length of ciliary mRNAs (via polyadenylation regulation)
+- Shorter 3'UTRs → altered stability, localization, translation
+- Could affect which ciliary proteins are trafficked
+
+Disease relevance:
+- Bardet-Biedl Syndrome (BBS) = ciliopathy
+- Phenotypes: retinal degeneration, obesity, polydactyly, renal defects,
+  intellectual disability
+- BBS5 mutations cause BBS
+- If SRSF7 regulates BBS5 splicing or function:
+  * Could explain some phenotypic variability
+  * Might be modifier of BBS severity
+  * Could be novel therapeutic target
+
+Retinal specific connection:
+- BBS5 splice variants expressed specifically in retina
+- Photoreceptor outer segments are specialized cilia
+- SRSF7 affects retinal-related proteins (osteopontin in renal cancer)
+- Might regulate retinal ciliary protein expression
+
+Metabolic connection:
+- SRSF7 regulates glycolysis via PKM splicing
+- BBS patients have obesity and metabolic syndrome
+- Could SRSF7-BBS5 link metabolism to ciliary signaling?
+- BBSome involved in leptin receptor ciliary trafficking (metabolic signaling)
+
+References:
+- PMC: PMC4750968 - BBS5 splice variants
+- PMC: PMC7441369 - BBS5 required for cone photoreceptor protein trafficking
+- eLife 2019 - Structure and activation of BBSome
+- Wikipedia: BBSome
+
+EXPERIMENTAL VALIDATION NEEDED:
+
+To confirm SRSF7-BBS5 interaction:
+1. Co-immunoprecipitation (Co-IP) from cell lysates
+2. Proximity ligation assay (PLA) in cells
+3. GST pulldown with recombinant proteins
+4. Yeast two-hybrid
+5. Surface plasmon resonance (SPR) for binding kinetics
+
+To determine functional significance:
+1. Does SRSF7 regulate BBS5 splicing? → RT-PCR of BBS5 isoforms ± SRSF7 KD
+2. Does SRSF7 affect BBS5 protein levels? → Western blot ± SRSF7 manipulation
+3. Does SRSF7 localize to cilia/ciliary base? → Immunofluorescence
+4. Does SRSF7 affect ciliary BBSome function? → Ciliary protein trafficking assays
+5. Does SRSF7 affect ciliary signaling? → Hedgehog, Wnt pathway assays
+6. Does SRSF7 KD cause ciliopathy-like phenotypes? → Cilia length, number, structure
+
+ALTERNATIVE EXPLANATION FOR ALPHAFOLD3 PREDICTION:
+
+Medium confidence (ipSAE=0.612):
+- Suggests possible but not certain interaction
+- Could be:
+  * True transient interaction
+  * Indirect interaction via scaffolding protein
+  * Domain similarity leading to prediction
+  * Context-dependent interaction (specific cell type/condition)
+
+RS domain interactions:
+- SRSF7 RS domain interacts with many proteins
+- BBS5 may have RS-like sequences or charged regions
+- Could mediate non-specific electrostatic interaction
+- Would need validation
+
+RNA-mediated interaction:
+- SRSF7 binds RNA
+- BBS5 might associate with specific mRNAs
+- Could be RNA-dependent interaction
+- Test with/without RNase treatment
+
+CONCLUSION ON CILIARY CONNECTION:
+
+Current status:
+- NO direct evidence for SRSF7 ciliary role
+- NO published SRSF7-BBSome connection
+- Related protein SRSF1 IS important for cilia
+- Splicing factors CAN localize to ciliary structures
+
+Your AlphaFold3 prediction:
+- May represent NOVEL finding
+- Medium confidence warrants experimental follow-up
+- Could reveal new link between splicing machinery and ciliary function
+- Potentially significant for understanding:
+  * Ciliopathy mechanisms
+  * RNA regulation in ciliary biology
+  * BBSome assembly/function
+  * BBS phenotypic variability
+
+This would be hypothesis-generating discovery requiring validation.
+
+================================================================================
+11. SUMMARY AND INTEGRATION
+================================================================================
+
+SRSF7 IS A MULTIFUNCTIONAL RNA-BINDING PROTEIN:
+
+Core identity:
+- Member of SR splicing factor family
+- Unique CCHC zinc knuckle domain (only SR protein with this)
+- 238 amino acids, ~27 kDa
+- UniProt Q16629
+- Expressed in all tissues, especially abundant in lung fibroblasts
+
+Canonical functions:
+- Pre-mRNA splicing (constitutive and alternative)
+- Spliceosome assembly via U1-70K and U2AF recruitment
+- Splice site recognition and exon definition
+
+Non-canonical functions:
+- mRNA nuclear export (NXF1 adapter)
+- Alternative polyadenylation (recruits FIP1)
+- m6A RNA methylation (recruits METTL3)
+- Transcriptional activation (IRF7 gene) ← NOVEL
+- Potentially translation regulation
+
+REGULATION:
+- Phosphorylation of RS domain by SRPKs and CLKs
+- Arginine methylation in RRM
+- Autoregulation via poison exon NMD
+- Nucleocytoplasmic shuttling (high shuttler)
+
+KEY SPLICE TARGETS WITH DISEASE RELEVANCE:
+- FAS exon 6: apoptosis → cancer
+- MAPT/tau exon 10: tauopathies → neurodegeneration
+- PKM: glycolysis → cancer and fibrosis
+- MDM2: p53 regulation → senescence
+- BBS5: potentially ciliary function → ciliopathy (?)
+
+DISEASE ASSOCIATIONS:
+- Oncogene: colon, lung, liver, brain cancers
+- Pulmonary fibrosis: IPF progression
+- Potential role in tauopathies
+- Antiviral immunity: interferon response
+
+UNANSWERED QUESTIONS:
+1. Does SRSF7 have ciliary functions like SRSF1?
+2. Does SRSF7 interact with BBSome/BBS5?
+3. Does SRSF7 regulate ciliary protein translation?
+4. Is SRSF7 involved in ciliopathy pathogenesis?
+5. Can SRSF7 localize to ciliary base like PRPF8?
+
+YOUR ALPHAFOLD3 PREDICTION:
+- SRSF7-BBS5 interaction (ipSAE=0.612, medium confidence)
+- If validated, could reveal novel link between:
+  * RNA processing machinery and ciliary protein complexes
+  * Splicing regulation and BBSome function
+  * Potentially new mechanism in Bardet-Biedl Syndrome
+
+RECOMMENDED FOLLOW-UP:
+1. Validate interaction experimentally (Co-IP, PLA)
+2. Test if SRSF7 regulates BBS5 splicing
+3. Examine SRSF7 localization in ciliated cells
+4. Test SRSF7 KD effects on ciliary phenotypes
+5. Screen for SRSF7 variants in BBS patients with modifier phenotypes
+
+================================================================================
+12. COMPREHENSIVE REFERENCE LIST
+================================================================================
+
+STRUCTURE AND DOMAINS:
+- UniProt Q16629 - SRSF7 protein entry
+- GeneCards SRSF7 - Gene summary
+- NCBI CDD: RRM_SRSF7 - Conserved domain database
+- OMIM *600572 - SPLICING FACTOR, SERINE/ARGININE-RICH, 7; SRSF7
+- PMC7096898 / PMID 32123389 (Nat Struct Mol Biol. 2020) - SRSF7 structure
+  and homeostasis
+- Taylor & Francis 2021 - Distinct roles of ZCCHC superfamily proteins
+
+SPLICING FUNCTION:
+- PMID 21632831 (PNAS 2011) - U1-70K and SR protein interaction determines
+  spliceosome assembly
+- PMID 39023093 (Protein Sci. 2024) - U1-70K and SRSF1 interaction modulated
+  by phosphorylation
+- PMID 23335681 (Chromosoma 2013) - Regulation of splicing by SR proteins
+  and kinases
+- PMC3660409 - Same paper
+
+ALTERNATIVE SPLICING TARGETS:
+FAS/CD95:
+- PMID 29556298 (Oncol Lett. 2018) - SRSF7 knockdown promotes apoptosis in
+  colon/lung cancer
+- PMC5844074 - Same paper
+
+MAPT/TAU:
+- PMID 34874463 (Acta Neuropathol Commun. 2022) - Dysregulated MAPT exon 2
+  and 10 in PSP and AD
+- PMID 24627328 (Neurosci Bull. 2014) - Regulation of tau exon 10
+- Molecular Neurodegeneration 2008, 3:8 - Tau exon 10 and tauopathies
+
+PKM:
+- PMID 38706594 (Curr Med Chem. 2024) - SRSF7 knockdown inhibits aerobic
+  glycolysis in HepG2
+- PMC11119032 - Same paper
+- PMID 27644562 (Mol Cell Biochem. 2017) - SRSF7 regulates p21-dependent
+  growth arrest
+
+MDM2:
+- PMID 38188543 (Aging. 2024) - SRSF7 downregulation induces senescence via
+  MDM2 variants
+- PMC10781460 - Same paper
+
+OSTEOPONTIN:
+- Gene 2016 (ScienceDirect) - microRNAs target SRSF7 in renal cancer
+
+mRNA EXPORT:
+- PMID 26944680 (Genes Dev. 2016) - SR proteins are NXF1 adaptors
+- PMC4782049 - Same paper
+- PMID 34081154 (Nucleic Acids Res. 2021) - SRSF1/SRSF7 recruitment to lncRNA
+  promotes export
+
+POLYADENYLATION:
+- PMID 33597006 (Genome Biol. 2021) - SRSF3 and SRSF7 modulate 3'UTR length
+- ResearchGate - SRSF7 interacts with FIP1 figure
+
+TRANSCRIPTIONAL ACTIVATION (MAJOR RECENT DISCOVERY):
+- PMID 38393946 (Cell Rep. 2024 Feb) - SRSF7 promotes type I interferon response
+  by activating Irf7 transcription
+- PMC11056844 - Same paper
+- Cell Reports 2024, S2211-1247(24)00144-X - Same paper
+- bioRxiv 2023.05.09.540055 - Earlier preprint version
+
+m6A METHYLATION:
+- PMID 34954129 (Genomics Proteomics Bioinformatics 2023) - Specific regulation
+  of m6A by SRSF7 promotes glioblastoma
+- Oxford Academic GPB 2023 - Same paper
+
+POST-TRANSLATIONAL MODIFICATIONS:
+Phosphorylation:
+- PMID 30696774 (J Biol Chem. 2019) - Distinct mechanisms govern phosphorylation
+  of SR proteins
+- PMC6349114 - Same paper
+- PMID 24254976 (J Biol Chem. 2014) - Partitioning RS domain phosphorylation
+  via CLK and SRPK
+
+Methylation:
+- PMID 27184089 (Mol Cell. 2016) - Arginine methylation: coming of age
+- PMID 33758172 (Nat Commun. 2021) - Profiling PRMT methylome
+- PMID 33927194 (Exp Mol Med. 2021) - PRMTs as cancer therapy targets
+- PMID 32439908 (Nat Commun. 2020) - Pharmacological PRMT7 inhibition
+
+CELLULAR LOCALIZATION:
+- PMID 28646123 (J Cell Biol. 2017) - SR proteins: to shuttle or not to shuttle
+- PMC5496630 - Same paper
+- PMID 28559425 (Mol Cell Biol. 2017) - Cellular differentiation modulates
+  SR protein export activity
+- PMC5496613 - Same paper
+- Wiley Online Library (BioEssays 2021) - Noncanonical functions of SR proteins
+
+CANCER:
+- Human Protein Atlas - SRSF7 expression in cancer
+- PMID 32678004 (Int J Biol Sci. 2020) - SR proteins bridge alternative splicing
+  and cancer
+- PMC7378643 - Same paper
+
+PULMONARY FIBROSIS (MAJOR RECENT DISCOVERY):
+- PMID TBD (Acta Pharm Sin B. 2025 Apr) - SRSF7 promotes pulmonary fibrosis
+  via PKM splicing
+- PMC12254822 - Same paper
+- ScienceDirect Acta Pharm Sin B 2025 - Same paper
+- Mirage News 2025 - News coverage
+
+CILIA (RELATED PROTEINS):
+SRSF1 and cilia:
+- PMID 34338635 (eLife 2021) - Nucleo-cytoplasmic shuttling of SRSF1 required
+  for cilia function
+- PMC8352595 - Same paper
+- bioRxiv 2020.09.04.263251 - Earlier version
+
+Splicing factors at ciliary base:
+- PMID 36165912 (Cell Regen. 2022) - Cilia regeneration requires RNA splicing
+  factor from ciliary base
+- PMC9525525 - Same paper
+
+BBSOME AND BBS5:
+- PMID 26867008 (PLoS One 2016) - Splice variant of BBS5 selectively expressed
+  in retina
+- PMC4750968 - Same paper
+- PMC7441369 - BBS5 required for cone photoreceptor protein trafficking
+- eLife 2019 (53322) - Structure and activation of BBSome
+- Wikipedia - BBSome overview
+
+BARDET-BIEDL SYNDROME:
+- Multiple reviews on BBS and ciliopathies (no specific SRSF7 connection)
+
+GENERAL SR PROTEIN REVIEWS:
+- Genes Dev. 2011, 24:1073 - Rational nomenclature for SR proteins
+- ScienceDirect Topics - SR protein overviews
+- Wiley Online Library (FEBS J. 2011) - Shuttling SR proteins
+- Biochem Soc Trans 2022 - Exploring multifunctionality of SR proteins
+- PMC9022966 - Same paper
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Report generated: 2025-11-17
+Interaction context: SRSF7-BBS5 (ipSAE=0.612, medium confidence, AlphaFold3)
+Status: NOVEL POTENTIAL INTERACTION - NO PUBLISHED VALIDATION
+Recommendation: Experimental validation warranted
+
+This comprehensive report synthesizes current knowledge on SRSF7 and identifies
+the SRSF7-BBS5 interaction as a potentially novel finding that could link RNA
+splicing machinery to ciliary protein complex function.

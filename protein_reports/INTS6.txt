@@ -1,0 +1,1159 @@
+================================================================================
+INTS6 (INTEGRATOR COMPLEX SUBUNIT 6) - COMPREHENSIVE SCIENTIFIC REPORT
+================================================================================
+
+Interaction Context: ipSAE=0.583 with IFT22 (IFT-B complex)
+Report Generated: 2025-11-17
+
+================================================================================
+1. PROTEIN OVERVIEW
+================================================================================
+
+Gene Name: INTS6 (Integrator Complex Subunit 6)
+Alternative Names:
+  - DICE1 (Deleted in Cancer 1)
+  - DDX26 (DEAD Box Protein 26)
+  - INT6
+
+UniProt ID: Q9UL03
+Chromosomal Location: 13q14.2-q14.3
+OMIM: *604331
+
+Protein Characteristics:
+  - Length: 805 amino acids
+  - DEAD box protein (Asp-Glu-Ala-Asp motif)
+  - Contains von Willebrand factor type A domain
+  - Putative ATP-dependent RNA helicase
+  - Molecular weight: ~90 kDa
+
+Primary Function: Component of the Integrator complex that associates with
+RNA polymerase II C-terminal domain (CTD) to regulate snRNA 3' end processing,
+transcription termination, and gene expression.
+
+
+================================================================================
+2. CILIARY CONNECTIONS
+================================================================================
+
+2.1 Direct Ciliary Link via INTS13
+-----------------------------------
+While INTS6 itself has not been extensively studied in ciliopathy contexts,
+other Integrator complex subunits have strong ciliary connections:
+
+INTS13 Ciliopathy (PMID: 36168916, Nature Communications 2022):
+  - Mutations in INTS13 cause oral-facial-digital syndrome type 2 (autosomal
+    recessive ciliopathy)
+  - Depletion of INTS13 disrupts ciliogenesis in human cultured cells
+  - Causes dysregulation of broad collection of ciliary genes
+  - Multiple Integrator subunits (INTS1, INTS8, INTS13) linked to
+    ciliopathy-related symptoms
+
+Mechanism:
+  - Integrator complex regulates transcription of ciliary genes
+  - Transcriptional regulation is the mechanism linking Integrator function
+    to ciliogenesis
+  - Integrator multiprotein complex associates with RNA Pol II and cleaves
+    nascent RNA to modulate gene expression
+
+2.2 Relevance to IFT22 Interaction
+-----------------------------------
+The predicted interaction between INTS6 and IFT22 (ipSAE=0.583) is intriguing
+because:
+
+1. NUCLEAR-CILIARY AXIS: Growing evidence suggests nuclear transcription
+   factors and RNA processing machinery communicate with ciliary assembly
+   mechanisms
+
+2. IFT22 DUAL LOCALIZATION: While IFT22 is primarily known for intraflagellar
+   transport, some IFT proteins shuttle between cytoplasm and nucleus, though
+   specific nuclear functions of IFT22 remain largely unexplored
+
+3. TRANSCRIPTIONAL REGULATION OF IFT: INTS6/Integrator complex could regulate
+   transcription of IFT or ciliary genes, with IFT22 potentially providing
+   feedback signaling
+
+4. NOVEL PATHWAY: This interaction may represent an undiscovered regulatory
+   axis between nuclear RNA processing and ciliary protein trafficking
+
+
+================================================================================
+3. INTEGRATOR COMPLEX FUNCTION
+================================================================================
+
+3.1 Complex Architecture
+------------------------
+The Integrator complex consists of 14 subunits (INTS1-INTS14) organized into
+functional modules:
+
+MODULES:
+  - Cleavage module: INTS4/9/11 (RNA endonuclease activity)
+  - Shoulder module: INTS5/8
+  - Phosphatase module: INTS6 + PP2A-A + PP2A-C (forms Int-PP2A or INTAC)
+  - Ternary module: INTS10/13/14 (nucleic acid binding)
+
+Reference: PMID: 35303060 (Nature Reviews Mol Cell Biol 2022)
+
+3.2 INTS6-Specific Functions within Integrator
+-----------------------------------------------
+
+INTS6 as Molecular Adapter (PMID: 32763134, Science 2020):
+  - Acts as molecular adapter promoting assembly of PP2A subunits to
+    Integrator core
+  - Bridges PP2A dimer to INTS5-INTS8 shoulder module
+  - Functions analogously to PP2A regulatory B subunit
+  - INTS6 deletion results in loss of PP2A components from Integrator
+  - INTS8 deletion causes loss of both PP2A and INTS6
+
+INTS6 Protein-Protein Interactions:
+  - Direct binding partner of INTS3 (C-terminal regions)
+  - Mediates contacts to INTS2 (scaffolding module)
+  - Bridges to INTS5-INTS8 shoulder module
+  - Weak interaction with shoulder module alone
+
+3.3 snRNA 3' End Processing
+----------------------------
+
+Mechanism (Reactome: R-HSA-6814555):
+  - Integrator complex recognizes RNA Pol II transcribing U-rich snRNAs
+    (U1, U2, U4, U5, U7, U11, U12)
+  - INTS9/INTS11 heterodimeric nuclease cleaves pre-snRNA 5' to the 3' box
+  - Cleavage releases capped snRNA bound to cap binding complex
+  - Coupled with transcription termination
+
+INTS6 Role in snRNA Processing:
+  - As DEAD box helicase, may resolve RNA-DNA hybrids in transcription bubbles
+  - INTS6 binds DNA:RNA hybrids and R-loops with highest affinity
+  - Helps resolve secondary structures during snRNA processing
+  - NELF interaction required for proper U1, U2, U4, U5 processing
+
+Reference: PMID: 24531476 (Nature Communications 2014)
+
+3.4 Enhancer RNA (eRNA) Regulation
+-----------------------------------
+
+Integrator as eRNA Terminator (PMID: 26550823, Nature 2015):
+  - Majority of eRNAs lack poly(A) tail and are cleaved by Integrator
+  - Integrator recruited to enhancers and super-enhancers in
+    stimulus-dependent manner
+  - Global nuclear run-on shows Integrator directs 3' cleavage of eRNA
+    transcripts → transcriptional termination
+  - Functional depletion of Integrator diminishes signal-dependent eRNA
+    induction
+  - Abrogates stimulus-induced enhancer-promoter chromatin looping
+
+eRNA Protection Mechanism:
+  - m6A modification recruits m6A reader proteins (hnRNPG, YTHDC1)
+  - These proteins protect nascent RNAs from Integrator cleavage
+  - Loss of m6A modification → recruitment of INTS11 endonuclease →
+    premature termination
+
+eRNA Functions in Pause Release (PMID: 35508652, Nature Communications 2022):
+  - eRNAs >200 nucleotides with unpaired guanosines bind NELF-A and NELF-E
+  - Decoy NELF away from immediate early genes
+  - Promotes RNA Pol II pause release into productive elongation
+  - eRNAs harness multivalent interactions with NELF to stimulate pause release
+
+Reference: PMID: 36180603 (Nature Reviews Mol Cell Biol 2022)
+
+3.5 Premature Transcription Termination
+----------------------------------------
+
+Promoter-Proximal Pausing (PMID: 37995689, Molecular Cell 2023):
+  - IntS6 and Integrator phosphatase module tune efficiency of premature
+    transcription termination
+  - Over-expressed IntS6 titrates PP2A subunits
+  - Only affects gene loci where phosphatase activity necessary for
+    Integrator function
+  - IntS6 functions analogous to PP2A regulatory B subunit
+
+Dual Regulatory Roles:
+  - Context-dependent functions in both promoting and restricting
+    transcription at different genomic locations
+  - Key modulator of RNA Pol II promoter-proximal pausing
+  - Regulates transcript elongation
+
+
+================================================================================
+4. RNA POL II PHOSPHORYLATION REGULATION
+================================================================================
+
+4.1 The Integrator-PP2A Complex (INTAC)
+----------------------------------------
+
+Discovery (PMID: 32763134, Science 2020):
+  - Integrator associates with PP2A core enzyme (PP2A-AC) to form INTAC
+  - First non-canonical PP2A complex lacking typical PP2A-B regulatory subunit
+  - INTS6 replaces regulatory B subunit function
+
+Dual Enzymatic Activities:
+  - RNA cleavage (via INTS11 endonuclease)
+  - RNA Pol II dephosphorylation (via PP2A phosphatase)
+  - These activities are structurally and functionally integrated
+
+4.2 Mechanism of CTD Dephosphorylation
+---------------------------------------
+
+Substrate Specificity:
+  - INTAC dephosphorylates RNA Pol II CTD at Ser2, Ser5, and Ser7
+  - Also dephosphorylates Spt5 (elongation factor)
+  - Counteracts Cdk7 and P-TEFb kinase activity
+
+Functional Consequences (PMID: 33086037, Molecular Cell 2020):
+  - Integrator binds RNA Pol II CTD
+  - Positions PP2A to counteract Pol II phosphorylation and elongation
+  - PP2A removes stimulatory phosphorylation from CTD and Spt5
+  - Prevents transition to productive elongation
+  - Facilitates transcription termination
+
+Structural Insights (PMID: 38538851, Nature 2024):
+  - Cryo-EM structures reveal how Integrator-bound PP2A contacts RNA Pol II
+  - Structural basis of Integrator-dependent RNA Pol II termination
+
+Key Point: INTS6 DOES NOT HAVE KINASE ACTIVITY
+  - INTS6 regulates phosphatase (dephosphorylation) activity
+  - It does not directly phosphorylate substrates
+  - Instead, recruits PP2A phosphatase to remove phosphate groups
+
+
+================================================================================
+5. KNOWN PROTEIN INTERACTIONS
+================================================================================
+
+5.1 Integrator Complex Subunits
+--------------------------------
+Direct Interactions:
+  - INTS3: Direct binding partner (C-terminal regions, PMID: 34400606)
+  - INTS2: Mediated contacts via scaffolding module
+  - INTS5: Part of shoulder module bridge
+  - INTS8: Critical for INTS6 stability in complex
+
+Module Organization:
+  - INTS6 lost from complex upon INTS8 deletion
+  - INTS8 deletion also causes loss of PP2A components
+  - INTS6 bridges PP2A to INTS5-INTS8 shoulder module
+
+5.2 Protein Phosphatase 2A (PP2A)
+----------------------------------
+  - PP2A-C (catalytic subunit): Direct interaction
+  - PP2A-A (scaffold subunit): Direct interaction
+  - INTS6 promotes assembly of PP2A heterodimer
+  - Forms non-canonical PP2A complex (first described, PMID: 32763134)
+
+5.3 RNA Polymerase II
+---------------------
+  - Integrator complex binds RNA Pol II CTD
+  - INTS6-PP2A module positions phosphatase near CTD
+  - Enables dephosphorylation of Ser2, Ser5, Ser7
+
+5.4 SOSS1 Complex (DNA Damage Response)
+----------------------------------------
+  - INTS3 (SOSS1 subunit)
+  - INIP (INTS3-NABP1 interaction protein)
+  - hSSB1 (human single-strand DNA binding protein 1)
+  - Forms tetrameric INTS6-SOSS1 complex at DNA damage sites
+
+Reference: PMID: 39445827 (Nucleic Acids Research 2024)
+
+5.5 Senataxin (SETX)
+--------------------
+  - INTS6 interacts with and recruits Senataxin to double-strand breaks
+  - Facilitates resolution of DNA:RNA hybrids/R-loops
+  - Critical for DNA damage response
+
+5.6 NELF Complex
+----------------
+  - Negative elongation factor
+  - Interactions required for proper snRNA processing
+  - NELF knockdown causes misprocessing of U1, U2, U4, U5 snRNAs
+
+Reference: PMID: 24531476 (Nature Communications 2014)
+
+5.7 Cap Binding Complex
+-----------------------
+  - Interacts during snRNA 3' end processing
+  - Binds capped snRNA after Integrator cleavage
+
+
+================================================================================
+6. DISEASE ASSOCIATIONS
+================================================================================
+
+6.1 Neurodevelopmental Disorders - Recent Discovery
+----------------------------------------------------
+
+INTS6-Related Neurodevelopmental Disorder (JCI 2025):
+  - 23 families identified with monoallelic likely gene-disruptive or de novo
+    missense variants in INTS6
+  - First comprehensive report linking INTS6 to neurodevelopmental disorders
+
+Clinical Features:
+  - Language delays
+  - Motor delays
+  - Autism spectrum disorder
+  - Intellectual disability
+  - Sleep disturbances
+  - Aggressive behavior
+  - Attention-deficit/hyperactivity disorder (ADHD)
+  - Obsessive behavior
+  - Epilepsy/seizures
+  - Anxiety
+  - Developmental regression
+  - Macrocephaly
+  - Self-injurious behavior
+  - Depression
+
+Reference: Journal of Clinical Investigation, in press (available online)
+URL: https://www.jci.org/articles/view/191729
+
+6.2 Overlap with Other Integrator Complex Disorders
+----------------------------------------------------
+
+INTS1 Syndrome (OMIM: 618571):
+  - Neurodevelopmental disorder with cataracts, poor growth, dysmorphic facies
+  - Biallelic INTS1 mutations (recessive)
+  - Features: Severe developmental delay, skeletal/facial dysmorphia, axial
+    hypotonia, cataracts, intellectual disability, lack of verbal communication
+  - Growth retardation, hypertelorism, mild cataracts, uneven teeth
+  - PMIDs: 30622326, 28542170, 31428919
+
+INTS8 Syndrome:
+  - Biallelic INTS8 mutations (recessive)
+  - Severe neurodevelopmental delay, distinctive appearance
+  - Neuronal migration defects (periventricular nodular heterotopia)
+  - Profound intellectual disability, lack of speech, motor impairment
+  - Seizures, facial and limb dysmorphism
+  - Similar phenotype to INTS1 syndrome
+  - PMID: 28763441
+
+Common Theme:
+  - Phenotype overlap among INTS1, INTS6, and INTS8 suggests shared
+    pathomechanism
+  - Integrator complex integrity critical for brain development
+  - Transcriptome disruption likely underlies neurodevelopmental phenotypes
+  - PMID: 28542170 (PLOS Genetics 2017)
+
+6.3 Cancer - Context-Dependent Roles
+-------------------------------------
+
+Tumor Suppressor Function (Most Tissues):
+  - INTS6 originally identified as DICE1 (Deleted in Cancer 1) in 1999
+  - Located in 13q14.2 critical region of loss of heterozygosity (LOH)
+  - Downregulated in multiple cancers:
+    * Non-small cell lung carcinoma
+    * Prostate cancer (PMID: 25660097)
+    * Nasopharyngeal carcinoma
+    * Breast cancer
+    * Childhood B-precursor acute lymphoblastic leukemia
+    * Hepatocellular carcinoma
+
+Oncogenic Function (Colorectal Cancer):
+  - OPPOSITE role in colorectal cancer (PMID: 34508742, 2021)
+  - INTS6 expression significantly INCREASED in CRC tissues vs normal
+  - Associated with POOR prognosis
+  - Downregulation of INTS6 → G1/S arrest, suppressed CRC growth
+  - Overexpression of INTS6 → promoted CRC growth
+
+Mechanism in CRC:
+  - INTS6 increases phosphorylated AKT (p-AKT) and ERK (p-ERK) levels
+  - Activates PI3K/AKT and MAPK signaling pathways
+  - Affects c-Myc and CDK2 expression → cell cycle alterations
+  - Growth-promoting effect inhibited by AKT and ERK inhibitors
+
+Conclusion:
+  - INTS6 has context-dependent functions in cancer
+  - Tumor suppressor in most cancers
+  - Oncogene in colorectal cancer
+
+
+================================================================================
+7. DNA DAMAGE RESPONSE FUNCTIONS
+================================================================================
+
+7.1 INTS6-SOSS1 Complex at Double-Strand Breaks
+------------------------------------------------
+
+Formation (PMID: 39445827, Nucleic Acids Research 2024):
+  - INTS6 associates with trimeric SOSS1 complex following DNA damage
+  - Forms tetrameric INTS6-SOSS1 complex at DSB sites
+  - Components: INTS3, INIP, hSSB1, INTS6
+
+7.2 DNA:RNA Hybrid and R-loop Binding
+--------------------------------------
+
+Binding Specificity:
+  - INTS6 binds DNA:RNA hybrids with HIGHEST affinity
+  - Also binds R-loops (DNA:RNA hybrid structures)
+  - Binds single-stranded DNA (ssDNA) in length-dependent manner
+  - Tetrameric SOSS1 complex exhibits similar binding pattern with different
+    affinities
+
+7.3 Functions at DSB Sites
+---------------------------
+
+PP2A Recruitment:
+  - INTS6 promotes PP2A recruitment to DSBs
+  - Facilitates dephosphorylation of RNA Pol II at damage sites
+  - Prevents accumulation of damage-associated RNA transcripts (DARTs)
+  - Prevents stabilization of DNA:RNA hybrids at DSB sites
+
+Senataxin Recruitment:
+  - INTS6 interacts with and promotes Senataxin (SETX) recruitment to DSBs
+  - Facilitates resolution of DNA:RNA hybrids/R-loops
+  - Critical for proper DNA damage repair
+
+Autoregulation:
+  - Tetrameric INTS6-SOSS1 complex facilitates DNA:RNA hybrid autoregulation
+    at DSBs
+
+7.4 C. elegans Studies
+----------------------
+
+INTS-6 in DNA Damage Response (PMID: 39575199, 2024):
+  - C. elegans INTS-6 mediates DNA damage response
+  - Integrator complex subunits (INTS-3, INTS-6) involved in DNA damage
+    response across species
+
+7.5 Crystal Structure
+---------------------
+
+INTS3/INTS6 Complex Structure (PMID: 34400606, Cell Discovery 2021):
+  - Crystal structure reveals INTS3 dimerization functional importance
+  - INTS3 dimerization critical for DSB repair
+  - INTS6 C-terminal region mediates INTS3 interaction
+
+
+================================================================================
+8. PHENOTYPES - KNOCKOUT MODELS
+================================================================================
+
+8.1 Mouse Models
+----------------
+
+Complete Knockout (Embryonic Lethal):
+  - Ints6-/- (homozygous null): Embryonic lethal at E7
+  - Indicates INTS6 essential for early embryonic development
+  - Incompatible with embryonic survival past gastrulation
+
+Source: MGI:1202397, OMIM *604331
+
+8.2 Conditional Knockout (cKO) - Nervous System
+------------------------------------------------
+
+Study (JCI 2025):
+  - Nervous system-specific Ints6 cKO mouse model
+  - Created to bypass early embryonic lethality
+
+Neurogenesis Defects:
+  - Disrupts EARLY neurogenesis
+  - Thickened ventricular zone/subventricular zone
+  - Thinning of cortical plate
+  - Reduced neuronal differentiation
+  - Increased apoptosis in cortical layer 6
+  - Disrupted cortical lamination
+
+Synaptic Development:
+  - Impaired synaptic development
+  - Disrupted synaptic gene expression
+
+Molecular Mechanisms:
+  - Altered RNA Pol II dynamics
+  - Disrupted transcriptional regulation
+  - Changes in chromatin accessibility
+
+8.3 Heterozygous (Haploinsufficiency) Phenotypes
+-------------------------------------------------
+
+Behavioral Phenotypes (Mirror Human Patients):
+  - Reduced social novelty preference (autism-like)
+  - Impaired spatial memory and learning
+  - Hyperactivity
+  - Sleep disturbances
+
+Social Deficits:
+  - Substantial social deficits
+  - Reduced preference for social novelty
+  - Models human ASD features
+
+Cognitive Deficits:
+  - Impaired spatial learning (Morris water maze)
+  - Memory deficits
+  - Mirrors intellectual disability in human patients
+
+Conclusion:
+  - Ints6 haploinsufficiency sufficient to cause neurodevelopmental phenotypes
+  - Mouse model recapitulates human INTS6-related disorder features
+
+8.4 Zebrafish Models
+--------------------
+
+Maternal-Effect Mutation (PMID: 24204286, PLOS Genetics 2013):
+  - Recessive dorsalizing maternal-effect mutation in ints6
+  - Novel role in vertebrate embryonic patterning
+
+Embryonic Phenotype:
+  - Widespread de-repression of dorsal organizer genes
+  - Failure to maintain BMP ligand expression
+  - Delayed cell movements during gastrulation
+  - Severe dorsalization
+  - Multiple independent axial domains
+  - Embryonic lethality
+
+Signaling Pathway Disruptions:
+  - BMP signaling: Cannot maintain BMP expression dorsally
+  - Nodal signaling: Over-active, contributes to dorsalization
+  - Wnt signaling: Disrupted spatial restriction of dorsal fates
+  - FGF signaling: Affected dorsal patterning
+
+Rescue Experiments:
+  - Limiting Nodal signaling restores wild-type patterning
+  - Restoring BMP signaling rescues dorsalization phenotype
+
+Mechanistic Insights:
+  - INTS6 confines dorsal organizer to appropriate domain
+  - Integrates multiple signaling pathways (BMP, Nodal, Wnt, FGF)
+  - Essential for proper anterior-posterior axis formation
+  - Required for left-right patterning
+
+Evolutionary Conservation:
+  - Human and zebrafish Ints6 orthologs: 66% identical
+  - V375 residue nearly invariant across divergent species
+  - Demonstrates conservation of essential function
+
+8.5 Drosophila
+--------------
+
+IntS6 Function:
+  - Crucial role of Integrator in U snRNA processing conserved
+  - First shown in Drosophila melanogaster (2011)
+
+Mitotic Function (PMID: 28542265, PLOS Genetics 2017):
+  - Drosophila INT6 ortholog regulates mitotic microtubule growth
+  - Regulates kinetochore structure
+  - Distinct from transcriptional roles
+
+8.6 Yeast (S. pombe)
+--------------------
+
+Ortholog: Yin6 (Yeast INT6)
+
+Sequence Conservation:
+  - 43% identity with human INTS6 over entire protein length
+  - 38% amino acid identity (56% similarity) in other studies
+
+Functional Conservation:
+  - Full-length human INT6 RESCUES yin6Δ mutant phenotypes
+  - Human INT6 binds human Moe1
+  - Demonstrates functional complementation across 1+ billion years evolution
+
+Yin6 Functions (PMIDs: 11121040, 11134033, 12553909):
+  - Cooperates with Ras1 for proper chromosome segregation
+  - Complexes with Moe1
+  - Role in mitotic fidelity via proteasome
+  - Not essential for global translation initiation
+  - Deletion causes hypersensitivity to caffeine
+  - Affects spore formation
+
+
+================================================================================
+9. BIOCHEMICAL PROPERTIES
+================================================================================
+
+9.1 DEAD-Box Helicase Domain
+-----------------------------
+
+Structural Features:
+  - DEAD motif: Asp-Glu-Ala-Asp (conserved)
+  - Two RecA-like domains forming helicase core
+  - Conserved motifs Q, I, II (DEAD), IV for ATP binding/hydrolysis
+  - von Willebrand factor type A domain
+
+Function as Putative Helicase:
+  - ATP-dependent RNA helicase activity (predicted)
+  - May resolve RNA-DNA hybrids in transcription bubbles
+  - Binds DNA:RNA hybrids and R-loops with high affinity
+  - Could unwind RNA secondary structures
+
+DEAD-Box Mechanism (General):
+  - Cooperative binding of ATP and RNA induces closed conformation
+  - Cleft closure between RecA-like domains
+  - ATP hydrolysis required for enzyme recycling, not unwinding per se
+  - ADP-beryllium fluoride allows unwinding without ATP hydrolysis
+  - ATP hydrolysis enables fast enzyme release and multiple turnovers
+
+Note: Specific ATP hydrolysis and unwinding activities of INTS6 not
+extensively characterized, inferred from DEAD-box family properties.
+
+9.2 Nucleic Acid Binding Specificity
+-------------------------------------
+
+Hierarchy of Binding Affinity (PMID: 39445827):
+  1. DNA:RNA hybrids (HIGHEST affinity)
+  2. R-loops (RNA:DNA:DNA structures)
+  3. Single-stranded DNA (length-dependent)
+  4. Likely also binds RNA (DEAD box proteins are RNA helicases)
+
+Functional Implications:
+  - Preferential binding to hybrid structures suggests role in
+    transcription-associated processes
+  - R-loop resolution important for genome stability
+  - ssDNA binding relevant for DNA damage response
+
+
+================================================================================
+10. EVOLUTIONARY CONSERVATION
+================================================================================
+
+10.1 Overview
+-------------
+INTS6 is highly conserved member of RNA processing machinery. The Integrator
+complex is conserved across all metazoans.
+
+10.2 Species-Specific Conservation
+-----------------------------------
+
+Human (Homo sapiens):
+  - Gene: INTS6
+  - UniProt: Q9UL03
+  - Chromosome: 13q14.2-q14.3
+  - 805 amino acids
+
+Zebrafish (Danio rerio):
+  - Gene: ints6
+  - 66% amino acid identity with human
+  - V375 residue nearly invariant
+  - Functional studies: dorsal organizer role (PMID: 24204286)
+
+Mouse (Mus musculus):
+  - Gene: Ints6
+  - MGI: 1202397
+  - Ints6-/- lethal at E7
+  - cKO models show neurodevelopmental defects
+
+Drosophila melanogaster:
+  - Gene: IntS6
+  - FlyBase: FBgn0261383
+  - Evolutionarily conserved
+  - Functions in mitotic microtubule growth and kinetochore structure
+  - U snRNA processing conserved (PMID: 28542265)
+
+Fission Yeast (S. pombe):
+  - Gene: Yin6
+  - 43% identity with human (entire protein)
+  - 38% identity (56% similarity) in some studies
+  - Human INT6 RESCUES yin6Δ mutants (functional complementation!)
+  - Functions: chromosome segregation, Ras1 cooperation, spore formation
+  - PMIDs: 11121040, 11134033
+
+C. elegans:
+  - Gene: ints-6
+  - Functions in DNA damage response (PMID: 39575199)
+  - Disruption causes abnormalities in early development and lethality
+
+10.3 Conservation Summary
+--------------------------
+  - INTS6 conserved from yeast to humans (~1 billion years)
+  - Functional complementation demonstrates deep conservation
+  - Core functions in RNA processing maintained
+  - Additional species-specific functions acquired (e.g., dorsal organizer)
+  - Essential for development across all organisms studied
+
+
+================================================================================
+11. IFT22 CONNECTION - HYPOTHETICAL MECHANISMS
+================================================================================
+
+Predicted Interaction: INTS6 ↔ IFT22, ipSAE = 0.583 (MEDIUM confidence)
+
+11.1 Why is This Interaction Surprising?
+-----------------------------------------
+
+Compartment Mismatch:
+  - INTS6: Primarily nuclear (RNA processing, transcription)
+  - IFT22: Primarily ciliary (intraflagellar transport)
+  - Unexpected spatial overlap
+
+Functional Domain Mismatch:
+  - INTS6: RNA metabolism, gene regulation
+  - IFT22: Ciliary protein trafficking, small GTPase-like function
+
+11.2 Possible Biological Scenarios
+-----------------------------------
+
+HYPOTHESIS 1: Nuclear Role for IFT22
+  - Some IFT proteins may shuttle to nucleus (not yet well-documented for IFT22)
+  - Could participate in transcriptional regulation of ciliary genes
+  - Precedent: Other signaling proteins (e.g., GLI transcription factors)
+    shuttle between cilia and nucleus
+
+HYPOTHESIS 2: Cytoplasmic Role for INTS6
+  - INTS6 may have functions outside nucleus
+  - Integrator subunits could dissociate from complex
+  - Cytoplasmic INTS6 could interact with IFT22 during ciliary protein
+    sorting or trafficking
+
+HYPOTHESIS 3: Transcriptional Feedback
+  - INTS6/Integrator complex regulates transcription of IFT genes
+  - IFT22 or IFT complex components could provide feedback signal to nucleus
+  - Precedent: INTS13 mutations cause ciliopathy, linking Integrator to
+    cilia gene regulation
+
+HYPOTHESIS 4: Co-regulation of Protein Synthesis
+  - Both proteins could interact at sites of localized translation
+  - IFT proteins require precise spatiotemporal expression
+  - INTS6 could regulate processing of mRNAs encoding ciliary proteins
+  - IFT22 could be involved in trafficking those mRNAs or proteins
+
+HYPOTHESIS 5: Shared Protein Interaction Networks
+  - May interact indirectly through shared partners
+  - Could be part of larger regulatory network coordinating gene expression
+    with ciliary assembly
+
+HYPOTHESIS 6: DNA Damage Response Connection
+  - INTS6 functions in DNA damage response (PMID: 39445827)
+  - Cilia disassemble during DNA damage
+  - Could be coordinating DNA repair with cell cycle and ciliation status
+  - IFT22 may signal ciliary status to nuclear DNA repair machinery
+
+11.3 Evidence Supporting Nuclear-Ciliary Axis
+----------------------------------------------
+
+1. INTS13 Ciliopathy (PMID: 36168916):
+   - Proves Integrator complex directly regulates ciliary genes
+   - INTS13 mutations → ciliopathy
+   - Depletion of multiple Integrator subunits disrupts ciliogenesis
+
+2. Transcriptional Regulation of Cilia:
+   - Many ciliary genes require precise transcriptional control
+   - Integrator complex terminates transcription of specific gene sets
+   - Could fine-tune ciliary gene expression
+
+3. Cell Cycle Coordination:
+   - Cilia assemble/disassemble with cell cycle
+   - Integrator regulates cell cycle genes (e.g., c-Myc, CDK2)
+   - Nuclear-ciliary coordination required
+
+11.4 Experimental Predictions
+------------------------------
+
+If this interaction is functionally significant, we would predict:
+
+1. Co-localization studies:
+   - INTS6 and IFT22 should co-localize in some cellular compartment
+   - May require specific conditions (e.g., DNA damage, ciliary assembly)
+
+2. Functional assays:
+   - INTS6 depletion should affect IFT22 expression or localization
+   - IFT22 depletion could affect expression of Integrator-regulated genes
+
+3. RNA-seq analysis:
+   - INTS6 knockdown should alter transcription of ciliary/IFT genes
+   - IFT22 disruption might affect expression of snRNAs or other
+     Integrator targets
+
+4. Biochemical validation:
+   - Co-immunoprecipitation to confirm direct interaction
+   - Determine if interaction is constitutive or stimulus-dependent
+
+11.5 Literature Gaps
+--------------------
+
+Current Knowledge Limitations:
+  - IFT22 nuclear functions: UNEXPLORED
+  - INTS6 cytoplasmic functions: MINIMAL DOCUMENTATION
+  - Integrator complex role in ciliary gene transcription: EMERGING
+  - Nuclear-ciliary signaling pathways: POORLY UNDERSTOOD
+
+This interaction, if validated, could represent a NOVEL regulatory axis
+connecting nuclear RNA processing with ciliary assembly mechanisms.
+
+
+================================================================================
+12. ADDITIONAL FUNCTIONS
+================================================================================
+
+12.1 Dorsal Organizer in Vertebrate Embryogenesis
+--------------------------------------------------
+
+Discovery (PMID: 24204286, PLOS Genetics 2013):
+  - Maternal-effect ints6 mutation in zebrafish
+  - Novel role: confining dorsal organizer to appropriate domain
+
+Mechanism:
+  - INTS6 restricts expression of dorsal organizer genes
+  - Integrates BMP, Nodal, Wnt, and FGF signaling pathways
+  - Maintains spatially restricted BMP signaling
+  - Prevents ectopic dorsal fate specification
+
+Phenotype when disrupted:
+  - Multiple ectopic axial domains (multiple dorsal organizers)
+  - Severe dorsalization
+  - Gastrulation defects
+  - Embryonic lethality
+
+Significance:
+  - Demonstrates Integrator complex role in developmental patterning
+  - Links transcriptional machinery to morphogen signaling
+  - Conserved function in vertebrate axis formation
+
+12.2 Cell Cycle Regulation
+---------------------------
+
+Evidence:
+  - INTS6 affects c-Myc and CDK2 expression (PMID: 34508742)
+  - Downregulation causes G1/S arrest in colorectal cancer cells
+  - Overexpression promotes cell cycle progression
+
+Mechanism:
+  - Integrator complex regulates transcription of cell cycle genes
+  - Premature termination controls expression levels
+  - Affects both transcription initiation and elongation
+
+12.3 Translation Initiation (Non-Integrator Function)
+-----------------------------------------------------
+
+Historical Context:
+  - INTS6 originally discovered as eIF3 subunit in some contexts
+  - Fission yeast INT6 associates with eIF3 core subunits
+  - NOT essential for global translation initiation (yeast studies)
+
+Current Understanding:
+  - Primary function is Integrator complex component (transcription/RNA
+    processing)
+  - Translation roles may be minor or species-specific
+  - Predominant function in mammals: Integrator complex
+
+
+================================================================================
+13. EXPRESSION AND LOCALIZATION
+================================================================================
+
+13.1 Tissue Expression (Human Protein Atlas)
+---------------------------------------------
+
+Ubiquitous Expression:
+  - Widely expressed across all tissues
+  - Highest in brain, testis, bone marrow
+
+Brain:
+  - High expression in cerebral cortex
+  - High in hippocampus
+  - Consistent with neurodevelopmental disorder phenotypes
+
+Cancer Cell Lines:
+  - Variable expression depending on cancer type
+  - Downregulated in many cancers (tumor suppressor role)
+  - Upregulated in colorectal cancer (oncogenic role)
+
+13.2 Subcellular Localization
+------------------------------
+
+Primary: Nuclear
+  - Integrator complex functions in nucleus
+  - Associates with RNA Pol II in nucleoplasm
+  - Concentrates at sites of active transcription
+
+Nucleoli:
+  - May be present in nucleoli (RNA processing)
+
+Chromatin Association:
+  - Binds chromatin at active genes
+  - Enriched at promoter-proximal regions
+  - Also found at enhancers and super-enhancers
+
+DNA Damage Foci:
+  - Recruited to double-strand break sites
+  - Forms INTS6-SOSS1 complex at DSBs
+  - PMID: 39445827
+
+Cell Cycle:
+  - Expression and localization may vary with cell cycle
+  - Functions in chromosome segregation (yeast)
+
+Potential Cytoplasmic Functions:
+  - Largely unexplored in mammals
+  - Could have non-canonical roles outside nucleus
+
+
+================================================================================
+14. THERAPEUTIC IMPLICATIONS
+================================================================================
+
+14.1 Neurodevelopmental Disorders
+----------------------------------
+
+Current Status:
+  - No specific therapies for INTS6-related neurodevelopmental disorder
+  - Management symptomatic: ASD therapies, seizure control, behavioral
+    interventions
+
+Future Directions:
+  - Understanding transcriptional dysregulation could guide therapeutic
+    strategies
+  - RNA Pol II modulators?
+  - Targeting downstream pathways affected by INTS6 deficiency
+
+14.2 Cancer
+-----------
+
+Colorectal Cancer (PMID: 34508742):
+  - INTS6 overexpression promotes CRC growth
+  - Potential therapeutic target
+  - AKT inhibitors + ERK inhibitors suppress INTS6-driven growth
+  - Combination therapy strategy
+
+Other Cancers:
+  - Tumor suppressor restoration strategies
+  - Gene therapy to restore INTS6 expression?
+  - Context matters: need cancer-specific strategies
+
+14.3 DNA Damage Response
+-------------------------
+
+Potential:
+  - INTS6 involved in DSB repair
+  - Could be target for cancer sensitization to DNA damage
+  - Or for protecting normal cells during radiotherapy
+
+14.4 Ciliopathies
+-----------------
+
+Emerging:
+  - If INTS6-IFT22 interaction validated, could be therapeutic target
+  - Modulating Integrator activity might affect ciliogenesis
+  - INTS13 ciliopathy demonstrates Integrator as ciliopathy target
+
+
+================================================================================
+15. SUMMARY AND KEY POINTS
+================================================================================
+
+INTS6 is a multifunctional DEAD-box protein with diverse roles:
+
+PRIMARY FUNCTIONS:
+  1. Core component of Integrator complex
+  2. Molecular adapter recruiting PP2A phosphatase
+  3. Regulates RNA Pol II CTD dephosphorylation
+  4. Processes snRNA 3' ends (U1, U2, U4, U5)
+  5. Regulates enhancer RNA biogenesis
+  6. Controls premature transcription termination
+
+ADDITIONAL FUNCTIONS:
+  7. DNA damage response (DSB repair, R-loop resolution)
+  8. Vertebrate embryonic patterning (dorsal organizer)
+  9. Cell cycle regulation
+  10. Chromosome segregation (conserved from yeast)
+
+DISEASE RELEVANCE:
+  - Neurodevelopmental disorders (haploinsufficiency)
+  - Overlapping phenotypes with INTS1/INTS8 syndromes
+  - Context-dependent cancer roles (tumor suppressor vs oncogene)
+  - Potential ciliopathy connection (via INTS13 and IFT22 interaction)
+
+EVOLUTIONARY CONSERVATION:
+  - Conserved from yeast to humans
+  - Functional complementation across species
+  - Essential for development in all organisms studied
+
+IFT22 INTERACTION:
+  - Medium confidence prediction (ipSAE=0.583)
+  - Potentially represents novel nuclear-ciliary regulatory axis
+  - Mechanism unclear but several plausible hypotheses
+  - Requires experimental validation
+  - Could link Integrator-mediated gene regulation to ciliary assembly
+
+
+================================================================================
+16. KEY REFERENCES (PMIDs AND DOIs)
+================================================================================
+
+MAJOR REVIEWS:
+--------------
+PMID: 36180603 (Nature Rev Mol Cell Biol 2022)
+  - Genomic regulation by multitasking Integrator complex
+  - DOI: 10.1038/s41580-022-00534-2
+
+PMID: 35303060 (Nature Rev Mol Cell Biol 2022)
+  - Emerging insights into Integrator complex function and structure
+  - DOI: 10.1038/s41580-022-00055-w
+
+PMID: 32908290 (Trends in Cell Biology 2020)
+  - Integrator complex in transcription and development
+  - DOI: 10.1016/j.tcb.2020.08.005
+
+INTEGRATOR-PP2A (INTAC):
+------------------------
+PMID: 32763134 (Science 2020)
+  - Identification of Integrator-PP2A complex (INTAC), RNA Pol II phosphatase
+  - DOI: 10.1126/science.abb5872
+
+PMID: 33086037 (Molecular Cell 2020)
+  - Integrator recruits PP2A to prevent pause release, facilitate termination
+  - DOI: 10.1016/j.molcel.2020.09.020
+
+PMID: 37995689 (Molecular Cell 2023)
+  - IntS6 and phosphatase module tune premature termination efficiency
+  - DOI: 10.1016/j.molcel.2023.10.012
+
+PMID: 38538851 (Nature 2024)
+  - Structural basis of Integrator-dependent RNA Pol II termination
+  - DOI: 10.1038/s41586-024-07269-4
+
+snRNA PROCESSING:
+-----------------
+PMID: 24531476 (Nature Communications 2014)
+  - DSIF and NELF interact with Integrator for snRNA gene fate
+  - DOI: 10.1038/ncomms5263
+
+Reactome Pathway: R-HSA-6814555
+  - Integrator complex processes the 3' end of snRNA
+
+ENHANCER RNA REGULATION:
+-------------------------
+PMID: 26550823 (Nature 2015)
+  - Integrator mediates biogenesis of enhancer RNAs
+  - DOI: 10.1038/nature14906
+
+PMID: 35508652 (Nature Communications 2022)
+  - eRNAs stimulate Pol II pause release by harnessing NELF interactions
+  - DOI: 10.1038/s41467-022-29934-w
+
+DNA DAMAGE RESPONSE:
+--------------------
+PMID: 39445827 (Nucleic Acids Research 2024)
+  - Tetrameric INTS6-SOSS1 complex facilitates DNA:RNA hybrid autoregulation
+    at DSBs
+  - DOI: 10.1093/nar/gkae941
+
+PMID: 34400606 (Cell Discovery 2021)
+  - Crystal structure of INTS3/INTS6 complex, INTS3 dimerization in DSB repair
+  - DOI: 10.1038/s41421-021-00283-0
+
+PMID: 39575199 (2024)
+  - Integrator complex subunit 6 (INTS-6) mediates DNA damage response in
+    C. elegans
+
+NEURODEVELOPMENTAL DISORDERS:
+------------------------------
+JCI Article View 191729 (Journal of Clinical Investigation 2025, in press)
+  - Disrupting Integrator complex subunit INTS6 causes neurodevelopmental
+    disorders
+  - URL: https://www.jci.org/articles/view/191729
+
+PMID: 28542170 (PLOS Genetics 2017)
+  - Human mutations in integrator complex subunits link transcriptome
+    integrity to brain development
+  - DOI: 10.1371/journal.pgen.1006809
+
+INTS1 Syndrome:
+PMID: 30622326 (European Journal of Human Genetics 2019)
+  - DOI: 10.1038/s41431-018-0330-z
+
+PMID: 31428919 (Journal of Molecular Neuroscience 2020)
+  - Biallelic INTS1 mutations in Chinese siblings
+  - DOI: 10.1007/s12031-019-01393-x
+
+INTS8 Syndrome:
+PMID: 28763441 (PLOS Genetics 2017)
+  - INTS8 mutations and neurodevelopmental syndrome
+
+CILIOPATHY:
+-----------
+PMID: 36168916 (Nature Communications 2022)
+  - INTS13 variants causing recessive developmental ciliopathy disrupt
+    Integrator assembly
+  - DOI: 10.1038/s41467-022-33547-8
+
+DEVELOPMENTAL BIOLOGY:
+----------------------
+PMID: 24204286 (PLOS Genetics 2013)
+  - Integrator Complex Subunit 6 (Ints6) confines dorsal organizer in
+    vertebrate embryogenesis
+  - DOI: 10.1371/journal.pgen.1003822
+
+CANCER:
+-------
+PMID: 34508742 (Experimental Cell Research 2021)
+  - INTS6 promotes colorectal cancer progression by activating AKT and ERK
+    signaling
+  - DOI: 10.1016/j.yexcr.2021.112803
+
+PMID: 25660097 (Prostate Cancer and Prostatic Diseases 2015)
+  - Genetic variants of DICE1/INTS6 in German prostate cancer families
+  - DOI: 10.1038/pcan.2014.57
+
+EVOLUTIONARY CONSERVATION:
+--------------------------
+Yeast (S. pombe):
+PMID: 11121040 (PNAS 2000)
+  - Yin6, fission yeast Int6 homolog, complexes with Moe1, chromosome
+    segregation
+  - DOI: 10.1073/pnas.97.26.14370
+
+PMID: 11134033 (Journal of Biological Chemistry 2000)
+  - Fission yeast homolog of murine Int-6 associates with eIF3 core subunits
+  - DOI: 10.1074/jbc.M008216200
+
+PMID: 12553909 (Cell 2003)
+  - S. pombe Int6 and Ras regulate cell division via proteasome
+  - DOI: 10.1016/S0092-8674(03)00043-6
+
+Drosophila:
+PMID: 28542265 (PLOS Genetics 2017)
+  - Drosophila orthologue of INT6 regulates mitotic microtubule growth and
+    kinetochore structure
+  - DOI: 10.1371/journal.pgen.1006784
+
+DATABASES:
+----------
+UniProt: Q9UL03 (Human INTS6)
+OMIM: *604331 (INTS6 gene)
+OMIM: 618571 (INTS1 syndrome)
+MGI: 1202397 (Mouse Ints6)
+FlyBase: FBgn0261383 (Drosophila IntS6)
+
+GeneCards: INTS6
+Human Protein Atlas: ENSG00000102786-INTS6
+
+
+================================================================================
+17. CONCLUSION
+================================================================================
+
+INTS6 is an essential, evolutionarily conserved component of the Integrator
+complex with critical roles in RNA processing, transcription regulation, DNA
+damage response, and development. Recent discoveries link INTS6 to
+neurodevelopmental disorders, establishing it as a disease gene of significant
+clinical importance.
+
+The predicted interaction between INTS6 and IFT22 (ipSAE=0.583) is
+intriguing and could represent a novel regulatory connection between nuclear
+RNA processing machinery and ciliary assembly mechanisms. While the functional
+significance remains to be validated, several plausible hypotheses exist:
+
+1. Transcriptional feedback: INTS6 regulates IFT gene expression, IFT22
+   signals back to nucleus
+2. Nuclear role for IFT22: Undiscovered nuclear functions for IFT proteins
+3. Cytoplasmic role for INTS6: Non-canonical functions outside Integrator
+   complex
+4. DNA damage-ciliary coordination: Linking genome integrity with ciliation
+   status
+5. Indirect interaction via shared regulatory networks
+
+The established connection between Integrator complex (INTS13) and ciliopathies
+provides precedent for Integrator-ciliary crosstalk. Further experimental
+validation of the INTS6-IFT22 interaction could reveal fundamental insights
+into nuclear-ciliary communication.
+
+Key unanswered questions:
+  - Does IFT22 have nuclear functions?
+  - Does INTS6 have cytoplasmic/ciliary functions?
+  - How does Integrator complex regulate ciliary gene expression?
+  - What is the pathomechanism of INTS6-related neurodevelopmental disorder?
+  - Why does INTS6 have opposite roles in different cancers?
+
+INTS6 remains an active area of research with implications for development,
+disease, and fundamental cell biology.
+
+================================================================================
+END OF REPORT
+================================================================================

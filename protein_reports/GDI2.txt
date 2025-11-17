@@ -1,0 +1,1248 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: GDI2 (GDP Dissociation Inhibitor 2)
+================================================================================
+
+Gene: GDI2 (ARHGDIB, RABGDIB)
+Alternative Names: Rab GDI beta, RhoGDI2, Ly-GDI
+UniProt ID: P52566
+Chromosome: 10p15.1
+
+INTERACTION CONTEXT:
+- Interaction partner: ARL6/BBS3 (BBSome GTPase)
+- Predicted interaction score: ipSAE = 0.580 (Medium confidence)
+- Biological significance: Potential novel regulatory connection between
+  Rab GDI system and ciliary BBSome trafficking
+
+================================================================================
+1. PROTEIN FUNCTION AND MOLECULAR MECHANISM
+================================================================================
+
+1.1 PRIMARY FUNCTION
+--------------------
+GDI2 (GDP dissociation inhibitor 2, also known as Rab GDI beta) is a key
+regulator of the Rab GTPase family involved in vesicular trafficking between
+cellular organelles. GDI2 is one of only two GDI isoforms in humans (GDI1
+and GDI2), responsible for regulating over 60 different Rab GTPases.
+
+Key molecular functions:
+- Prevents GDP to GTP exchange on Rab proteins, maintaining them in an
+  inactive GDP-bound state
+- Extracts prenylated (geranylgeranylated) Rab proteins from membranes
+- Maintains a cytosolic reservoir of GDP-bound Rab proteins
+- Shuttles Rab proteins between donor and acceptor membranes
+- Slows the rate of GDP dissociation from Rab proteins
+
+1.2 MEMBRANE EXTRACTION MECHANISM
+---------------------------------
+GDI performs active, not passive, membrane extraction:
+
+MECHANISM: GDI significantly accelerates membrane dissociation of Rab GTPases.
+This means GDI not only shifts the equilibrium through thermodynamically
+favorable interactions with prenylated Rab GTPases, but also genuinely
+accelerates dissociation of the GTPase from the membrane.
+
+REFERENCE: Membrane extraction of Rab proteins by GDP dissociation inhibitor
+characterized using attenuated total reflection infrared spectroscopy
+PMID: 23898197
+DOI: 10.1073/pnas.1307655110
+
+1.3 NUCLEOTIDE BINDING SPECIFICITY
+----------------------------------
+GDI shows strong nucleotide-dependent binding:
+
+- GDP-bound Rab: HIGH affinity (three orders of magnitude greater)
+- GTP-bound Rab: LOW affinity (essentially no binding)
+
+This specificity ensures that only inactive (GDP-bound) Rabs are extracted
+from membranes and that active (GTP-bound) Rabs remain membrane-associated
+to perform their functions.
+
+REFERENCE: GDP dissociation inhibitor domain II required for Rab GTPase
+recycling
+PMID: 11116150
+
+================================================================================
+2. KNOWN CILIARY ROLE
+================================================================================
+
+2.1 NEGATIVE REGULATION OF CILIOGENESIS
+---------------------------------------
+GDI2 plays a NEGATIVE regulatory role in ciliary trafficking and ciliogenesis
+through inhibition of RAB8A, a master regulator of ciliary assembly.
+
+KEY FINDING: GDI2 negatively regulates protein transport to the cilium and
+ciliogenesis through the inhibition of RAB8A.
+
+2.2 THE GSK3β-DZIP1-RAB8-GDI2 REGULATORY CASCADE
+-----------------------------------------------
+A well-characterized pathway controls RAB8 activation at the ciliary base:
+
+PATHWAY COMPONENTS:
+1. GSK3β phosphorylates DZIP1 at S520 during G0 phase
+2. Phosphorylated DZIP1 binds GDI2 with increased affinity
+3. DZIP1 promotes release of RAB8-GDP from GDI2 at the pericentriolar region
+4. Free RAB8-GDP can then be activated by GEFs (Rabin8)
+5. Active RAB8-GTP drives ciliary membrane assembly
+
+EXPERIMENTAL EVIDENCE:
+- Sucrose gradient centrifugation of purified basal bodies
+- Immunoprecipitation assays
+- Acceptor-bleaching fluorescence resonance energy transfer (FRET) assays
+
+REFERENCES:
+Title: GSK3β-Dzip1-Rab8 Cascade Regulates Ciliogenesis after Mitosis
+PMID: 25860027
+DOI: 10.1371/journal.pbio.1002129
+Journal: PLOS Biology (2015)
+
+2.3 RAB8A INTERACTIONS WITH GDI2
+--------------------------------
+GDI2 interacts with the GDP-bound inactive form of RAB8A, sequestering it
+in the cytoplasm. DZIP1 competes with this interaction:
+
+- GDI2 + RAB8A-GDP → Stable cytosolic complex (ciliogenesis inhibited)
+- DZIP1 + GDI2 → Disruption of GDI2:RAB8A-GDP complex
+- Free RAB8A-GDP → Activation by Rabin8 → RAB8A-GTP (ciliogenesis promoted)
+
+REFERENCE:
+DZIP1 regulates the dissociation of RAB8-GDP from GDI2, which is needed for
+RAB8 activation. The N-terminus of CEP290 directly recruits DZIP1, which
+then recruits CBY (Chibby) and Rab8 to promote early ciliary membrane
+formation.
+
+2.4 THE RAB11-RABIN8-RAB8 CILIOGENESIS CASCADE
+---------------------------------------------
+RAB8 functions in a well-characterized cascade essential for ciliogenesis:
+
+CASCADE: RAB11 → RABIN8 (GEF) → RAB8 → Ciliary membrane assembly
+
+- RAB11 and TRAPPII complex traffic Rabin8 to the centrosome
+- Rabin8 is a guanine nucleotide exchange factor (GEF) for RAB8
+- RAB11a activates RAB8 through Rabin8
+- RAB8 drives vesicular trafficking to build the ciliary membrane
+
+REFERENCES:
+Primary cilia membrane assembly is initiated by Rab11 and transport protein
+particle II (TRAPPII) complex-dependent trafficking of Rabin8 to the
+centrosome
+PMID: 21209331
+DOI: 10.1073/pnas.1018823108
+
+Coordination of Rab8 and Rab11 in primary ciliogenesis
+PMID: 20479123
+DOI: 10.1073/pnas.1002401107
+
+2.5 RAB8 AND BBSOME COOPERATION
+-------------------------------
+RAB8 may cooperate with the BBSome in organizing ciliary membrane assembly:
+
+FINDING: BBS proteins form the BBSome, which binds Rabin8, the GEF
+activating the Rab8 GTPase required for ciliary assembly. Rab8 and the
+BBSome may cooperate with multiple unknown factors to organize ciliary
+membrane assembly.
+
+This provides a potential mechanistic link between GDI2's regulation of
+RAB8 and its possible connection to ARL6/BBS3 and the BBSome.
+
+REFERENCE:
+Rab GTPases in cilium formation and function
+PMID: 29072526
+Review in Small GTPases (2018)
+
+================================================================================
+3. STRUCTURAL BIOLOGY OF GDI-RAB COMPLEXES
+================================================================================
+
+3.1 CRYSTAL STRUCTURE OF YPT1:GDI COMPLEX
+-----------------------------------------
+The structure of doubly prenylated Ypt1 (yeast Rab) bound to GDI was solved
+at 1.48 Å resolution, revealing the molecular basis of prenyl recognition.
+
+PDB ID: 2BCG
+
+KEY STRUCTURAL FEATURES:
+
+PRENYL BINDING POCKET (Domain II):
+- Deep hydrophobic pocket formed by outward shift of outer helices
+- One geranylgeranyl residue is DEEPLY BURIED in this pocket
+- Second geranylgeranyl residue is MORE EXPOSED to solvent
+- Second lipid is skewed across several atoms of the first moiety
+
+PROTEIN-PROTEIN INTERFACE:
+- Rab Binding Platform (RBP) in GDI domain I interacts with conserved
+  residues in Rab switch regions
+- C-terminus Coordinating Region (CCR) at junction between GDI domains
+  establishes contacts with Rab hypervariable region (HVR)
+
+REFERENCE:
+Structure of doubly prenylated Ypt1:GDI complex and the mechanism of
+GDI-mediated Rab recycling
+PMID: 16395334
+DOI: 10.1038/sj.emboj.7600921
+EMBO Journal (2006)
+
+3.2 GDI WITH GERANYLGERANYL PEPTIDE
+-----------------------------------
+Earlier structure showed GDI (alphaGDI) bound to a geranylgeranyl (GG)
+ligand, revealing the prenyl binding groove.
+
+PDB ID: 1LV0
+
+FINDING: The geranylgeranyl lipid is bound beneath the Rab binding platform
+in a shallow hydrophobic groove. This structure provided the first glimpse
+of how GDI recognizes and sequesters prenylated lipid modifications.
+
+REFERENCE:
+Geranylgeranyl switching regulates GDI-Rab GTPase recycling
+PMID: 12623022
+
+3.3 HUMAN RAB5:GDI MODELING STUDY
+---------------------------------
+Computational modeling of human Rab5 with GDI identified the specific
+structural elements involved in geranylgeranyl binding.
+
+KEY FINDING: The geranylgeranyl (GG) chain-binding pocket encompasses
+helices H1, H2, and H3 in domain II of GDI.
+
+REFERENCE:
+Recognition and stabilization of geranylgeranylated human Rab5 by the GDP
+Dissociation Inhibitor (GDI)
+PMID: 29065764
+DOI: 10.1074/jbc.M117.803411
+
+3.4 STRUCTURAL SUMMARY
+---------------------
+The combined structural studies reveal:
+
+1. GDI has TWO functional domains:
+   - Domain I: Rab protein binding platform (switch regions)
+   - Domain II: Geranylgeranyl lipid binding pocket
+
+2. Dual recognition mechanism:
+   - Protein-protein interaction (nucleotide-dependent)
+   - Lipid-protein interaction (prenyl pocket)
+
+3. Thermodynamic coupling:
+   - High-affinity binding requires both protein and lipid interactions
+   - Burial of hydrophobic geranylgeranyl chains is thermodynamically
+     favorable
+   - This drives membrane extraction
+
+================================================================================
+4. RAB GTPASE SUBSTRATE SPECIFICITY
+================================================================================
+
+4.1 KNOWN RAB PROTEIN INTERACTIONS
+----------------------------------
+GDI2 interacts with the GDP-bound inactive forms of multiple Rab GTPases:
+
+DOCUMENTED INTERACTIONS:
+- RAB3A, RAB3B, RAB3C (synaptic vesicle trafficking)
+- RAB5A, RAB5B, RAB5C (early endosome fusion)
+- RAB8A, RAB8B (ciliary membrane trafficking, secretion)
+- RAB10 (Golgi to plasma membrane trafficking)
+- RAB12 (degradative pathway trafficking)
+- RAB35 (endocytic recycling)
+- RAB43 (Golgi to ER retrograde transport)
+
+4.2 DIFFERENTIAL RAB PREFERENCES: GDI1 vs GDI2
+---------------------------------------------
+While GDI1 and GDI2 can both bind many Rabs, they show some preferences:
+
+FINDING: Different Rab GTPases associate preferentially with α (GDI1) or
+β (GDI2) GDP-dissociation inhibitors.
+
+REFERENCE:
+Different Rab GTPases Associate Preferentially with α or β GDP-Dissociation
+Inhibitors
+DOI: 10.1006/bbrc.2001.4560
+Biochemical and Biophysical Research Communications (2001)
+
+4.3 SELECTIVITY DETERMINANTS
+----------------------------
+The selectivity for different Rabs depends on:
+
+1. Hypervariable region (HVR) sequences at C-terminus
+2. Switch region conformations (nucleotide-dependent)
+3. Geranylgeranyl modification pattern (mono- vs di-geranylgeranylated)
+4. Tissue-specific expression patterns
+
+GDI1 is widely expressed, while GDI2 shows enrichment in hematopoietic
+tissues and brain.
+
+REFERENCE:
+Rab GDP dissociation inhibitor: putting rab GTPases in the right place
+PMID: 7615494
+
+================================================================================
+5. GDI vs ARF GTPASE REGULATION: FUNDAMENTAL DIFFERENCES
+================================================================================
+
+5.1 WHY ARF GTPASES DON'T USE GDI
+---------------------------------
+CRITICAL FINDING: No guanine nucleotide-dissociation inhibitory (GDI) protein
+for ARFs has been identified.
+
+This is because Arf proteins (including Arf-like proteins such as ARL6/BBS3)
+have evolved a fundamentally different mechanism for maintaining cytosolic
+solubility.
+
+5.2 LIPID MODIFICATION DIFFERENCES
+----------------------------------
+
+RAB GTPASES:
+- Modified with TWO geranylgeranyl groups (C20 isoprenoids)
+- Attached to C-terminal cysteine residues (CAAX motif variants)
+- Bulky, highly hydrophobic modifications
+- REQUIRE external chaperone (GDI) for cytosolic solubility
+
+ARF/ARL GTPASES:
+- Modified with myristate (C14 saturated fatty acid)
+- Attached to N-terminal glycine (co-translational)
+- Smaller, less bulky lipid modification
+- INTRINSIC autoinhibitory mechanism (myristoyl switch)
+
+5.3 THE MYRISTOYL SWITCH MECHANISM
+---------------------------------
+Arf proteins possess an intrinsic "GDI domain" that makes external GDI
+proteins unnecessary:
+
+GDP-BOUND STATE (Inactive):
+- N-terminal amphipathic helix forms intramolecular interactions
+- Helix packs against the GTPase core domain
+- Myristate group is BURIED in hydrophobic pocket
+- Membrane-binding residues are SHIELDED
+- Protein is CYTOSOLIC and soluble
+
+GTP-BOUND STATE (Active):
+- Nucleotide exchange induces conformational change
+- N-terminal helix is RELEASED from core
+- Myristate group is EXPOSED
+- Amphipathic helix inserts into membrane
+- Protein is MEMBRANE-ASSOCIATED
+
+REFERENCES:
+Structure and Membrane Interaction of Myristoylated ARF1
+PMID: 19141284
+DOI: 10.1074/jbc.M805594200
+
+Myristoylation-facilitated binding of the G protein ARF1GDP to membrane
+phospholipids is required for its activation by a soluble nucleotide
+exchange factor
+PMID: 8576155
+
+5.4 MECHANISTIC COMPARISON SUMMARY
+---------------------------------
+
+PROPERTY              | RAB GTPASES           | ARF/ARL GTPASES
+---------------------|----------------------|----------------------
+Lipid modification   | Geranylgeranyl (C20) | Myristate (C14)
+Modification site    | C-terminus (Cys)     | N-terminus (Gly)
+Number of lipids     | Usually 2            | 1
+Solubilization       | External GDI protein | Intrinsic myristoyl
+                     |                      | switch
+Membrane extraction  | Active (GDI-mediated)| Passive (GDP binding)
+Membrane insertion   | Passive (GEF sites)  | Active (GTP binding)
+
+CONCLUSION: Convergent evolution has produced two distinct solutions to the
+same problem: maintaining cytosolic pools of lipid-modified GTPases that can
+be recruited to specific membranes upon activation.
+
+5.5 IMPLICATIONS FOR ARL6/BBS3
+-----------------------------
+Given that ARL6/BBS3 is an ARF-like GTPase:
+
+1. ARL6 should NOT be a substrate for GDI2
+2. ARL6 likely uses the myristoyl switch mechanism
+3. The predicted GDI2-ARL6 interaction (ipSAE=0.580) may represent:
+   - A novel regulatory mechanism distinct from classical GDI function
+   - An indirect interaction mediated by other proteins
+   - A transient interaction during specific cellular states
+   - Potentially a false positive requiring experimental validation
+
+However, there may be GDI-LIKE systems for Arf proteins (see Section 6).
+
+================================================================================
+6. GDI-LIKE SYSTEMS FOR PRENYLATED AND MYRISTOYLATED CARGO
+================================================================================
+
+6.1 GDI-LIKE SOLUBILIZING FACTORS (GSFs)
+----------------------------------------
+While Arf GTPases don't use classical GDIs, a functionally analogous system
+exists for their CARGO proteins.
+
+GDI-LIKE PROTEINS FOR CILIARY CARGO:
+- PDE6δ (phosphodiesterase 6 delta) - binds PRENYLATED cargo
+- UNC119A/B - binds MYRISTOYLATED cargo
+
+These proteins are structurally and functionally similar to GDIs and are
+called "GDI-like solubilizing factors" (GSFs).
+
+REFERENCE:
+A GDI/GDF-like system for sorting and shuttling ciliary proteins
+PMID: 27487321
+DOI: 10.1091/mbc.E15-08-0638
+
+6.2 ARL2/ARL3 AS RELEASE FACTORS (GDFs)
+--------------------------------------
+The Arf-like GTPases ARL2 and ARL3 function as release factors for these
+GDI-like proteins, analogous to GEFs for classical GDIs.
+
+MECHANISM:
+1. PDE6δ binds prenylated (farnesylated/geranylgeranylated) cargo
+2. UNC119 binds myristoylated cargo
+3. Cargo-carrier complexes are imported to cilia
+4. At the ciliary base, ARL3-GTP triggers cargo release
+
+ARL3 AS GDF (GDI Displacement Factor):
+- ARL3 binds UNC119 and PDE6δ
+- Allosteric interaction causes conformational change
+- For PDE6δ: Hydrophobic pocket CLOSES, ejecting prenyl group
+- For UNC119: Hydrophobic pocket WIDENS, releasing myristoyl group
+
+SPECIFICITY: Although Arl3 and Arl2 bind UNC119 with similar affinities,
+only Arl3 allosterically displaces cargo by accelerating its release by
+THREE ORDERS OF MAGNITUDE.
+
+High-affinity cargo is exclusively released by the ciliary transport
+regulator Arl3, while low-affinity cargo can be released by Arl3 or its
+non-ciliary homologue Arl2.
+
+REFERENCES:
+Structural basis for Arl3-specific release of myristoylated ciliary cargo
+from UNC119
+PMID: 22960633
+DOI: 10.1038/emboj.2012.257
+
+ARL3 activation requires the co-GEF BART and effector-mediated turnover
+DOI: 10.7554/eLife.64624
+
+6.3 CILIARY TARGETING MECHANISM
+-------------------------------
+For membrane-associated proteins with post-translational lipid modifications:
+
+IMPORT PATHWAY:
+1. Lipid-modified protein synthesized in cytoplasm
+2. Sequestered by GDI-like protein (PDE6δ or UNC119)
+3. Cytosolic cargo-carrier complex traffics to ciliary base
+4. ARL3-GTP at transition zone triggers cargo release
+5. Released protein inserts into ciliary membrane
+
+CARGO EXAMPLES:
+- Prenylated: INPP5E, GRK1, transducin γ-subunit, NPHP3
+- Myristoylated: NPHP3, ciliary kinases
+
+REFERENCES:
+PDE6δ-mediated sorting of INPP5E into the cilium is determined by
+cargo-carrier affinity
+DOI: 10.1038/ncomms11366
+
+The interplay between RPGR, PDEδ and Arl2/3 regulate the ciliary targeting
+of farnesylated cargo
+PMID: 23559067
+
+6.4 POTENTIAL ARL6/BBS3 CONNECTION
+---------------------------------
+Could GDI2 interact with ARL6/BBS3 in a GDI-like manner?
+
+ARGUMENTS AGAINST:
+1. ARL6 has intrinsic myristoyl switch (doesn't need GDI)
+2. No precedent for GDI binding to Arf-like GTPases
+3. Different lipid modification (myristate vs geranylgeranyl)
+
+ARGUMENTS FOR (SPECULATIVE):
+1. ARL6 might have unique regulatory requirements
+2. GDI2 could regulate ARL6 CARGO rather than ARL6 itself
+3. Interaction could be indirect via BBSome components
+4. Novel regulatory pathway not yet characterized
+
+HYPOTHESIS: If the GDI2-ARL6 interaction is real, it might involve:
+- GDI2 regulating prenylated BBSome cargo
+- GDI2 interacting with Rab8 in the context of BBSome trafficking
+- GDI2 as a negative regulator preventing premature ARL6 activation
+- Cross-talk between Rab8 and ARL6 pathways in ciliogenesis
+
+================================================================================
+7. ARL6/BBS3 AND THE BBSOME SYSTEM
+================================================================================
+
+7.1 ARL6/BBS3 STRUCTURE AND FUNCTION
+------------------------------------
+ARL6 (also known as BBS3) is a small GTPase belonging to the Arf-like
+family. Mutations in ARL6 cause Bardet-Biedl Syndrome type 3.
+
+FUNCTION: ARL6 recruits the BBSome to ciliary membranes in a GTP-dependent
+manner, where it functions as a coat complex for ciliary protein sorting.
+
+CRITICAL FINDING: A critical step in BBSome-mediated sorting is recruitment
+of the BBSome to membranes by the GTP-bound Arf-like GTPase ARL6.
+
+REFERENCE:
+Structural basis for membrane targeting of the BBSome by ARL6
+PMID: 25402481
+DOI: 10.1038/nsmb.2920
+Nature Structural & Molecular Biology (2014)
+
+7.2 STRUCTURAL BASIS OF BBSOME RECRUITMENT
+------------------------------------------
+Crystal structures revealed how ARL6-GTP specifically recruits the BBSome:
+
+MECHANISM:
+- ARL6-GTP binds the BBS1 β-propeller at blades 1 and 7
+- N-terminal amphipathic helix of ARL6 is exposed in GTP-bound state
+- This helix inserts into the membrane
+- Simultaneous binding to membrane and BBSome anchors the complex
+
+NUCLEOTIDE SPECIFICITY: Structures explain why GTP- but not GDP-bound ARL6
+can recruit the BBSome to membranes. In the GDP-bound state, the N-terminal
+helix is sequestered and membrane binding is prevented.
+
+REFERENCE:
+Structural Basis for Membrane Targeting of the BBSome by ARL6
+PMID: 25402481
+DOI: 10.1038/nsmb.2920
+
+7.3 ARL6 LIPID MODIFICATION
+---------------------------
+The N-terminal amphipathic helix of ARL6 is subject to myristoylation:
+
+EVIDENCE: Trypanosoma brucei ARL6 is associated with electron-dense vesicles
+throughout the cell body following co-translational modification by
+N-myristoylation.
+
+Human ARL6 likely also undergoes N-myristoylation, though this has not been
+as extensively characterized as for other Arf family members.
+
+REFERENCE:
+A role for the vesicle-associated tubulin binding protein ARL6 (BBS3) in
+flagellum extension in Trypanosoma brucei
+PMID: 22609302
+
+7.4 IFT27 AS GEF FOR ARL6
+-------------------------
+Recent work identified IFT27 (also called RABL4) as a nucleotide exchange
+factor for ARL6:
+
+MECHANISM:
+1. IFT27 disengages from IFT-B complex at ciliary tip
+2. Free IFT27 recognizes nucleotide-empty ARL6
+3. IFT27 promotes GDP to GTP exchange on ARL6
+4. ARL6-GTP recruits BBSome
+5. Cargo-laden BBSome attaches to retrograde IFT train
+
+REFERENCE:
+The Intraflagellar Transport Protein IFT27 promotes BBSome exit from cilia
+through the GTPase ARL6/BBS3
+PMID: 25443296
+DOI: 10.1083/jcb.201408009
+
+7.5 ARL3 AND BBSOME CILIARY EXIT
+--------------------------------
+ARL3, a related Arf-like GTPase, promotes BBSome exit from cilia:
+
+FINDING: ARL3 mediates BBSome ciliary turnover by promoting its outward
+movement across the transition zone.
+
+This suggests a complex regulatory network involving multiple Arf-like
+GTPases (ARL6, ARL3, ARL2) in ciliary protein trafficking.
+
+REFERENCE:
+ARL3 mediates BBSome ciliary turnover by promoting its outward movement
+across the transition zone
+DOI: 10.1083/jcb.202111076
+Journal of Cell Biology (2022)
+
+7.6 POTENTIAL GDI2-ARL6 CONNECTION VIA RAB8
+-------------------------------------------
+The most plausible connection between GDI2 and ARL6/BBS3 is INDIRECT via
+their mutual involvement in ciliary membrane trafficking:
+
+PATHWAY 1 (RAB8-dependent):
+GDI2 inhibits RAB8 → DZIP1 releases RAB8 from GDI2 → RAB8 activation →
+Ciliary membrane assembly
+
+PATHWAY 2 (ARL6-dependent):
+IFT27 activates ARL6 → ARL6-GTP recruits BBSome → Membrane protein sorting
+
+CONVERGENCE POINT: Both pathways are essential for ciliogenesis and may be
+coordinated:
+- RAB8 builds the ciliary membrane
+- ARL6/BBSome sorts proteins to the ciliary membrane
+- Both pathways must be properly balanced
+
+HYPOTHESIS: GDI2 might regulate the balance between these pathways, possibly
+through:
+1. Sequestering RAB8 until appropriate timing
+2. Coordinating with BBSome cycle via protein-protein interactions
+3. Responding to common upstream signals (e.g., GSK3β)
+
+================================================================================
+8. DISEASE ASSOCIATIONS
+================================================================================
+
+8.1 X-LINKED INTELLECTUAL DISABILITY (GDI1, not GDI2)
+----------------------------------------------------
+NOTE: It is primarily GDI1 (not GDI2) that is associated with X-linked
+intellectual disability.
+
+GDI1 ASSOCIATIONS:
+- X-linked non-syndromic intellectual disability
+- Mutations cause cognitive impairment without other major malformations
+
+KEY STUDIES:
+PMID: 12354782 - Deletion of the mental retardation gene Gdi1 impairs
+associative memory and alters social behavior in mice
+
+PMID: 22002931 - Novel GDI1 mutation in a large family with nonsyndromic
+X-linked intellectual disability
+
+PMID: 26971292 - Impaired αGDI Function in the X-Linked Intellectual
+Disability: The Impact on Astroglia Vesicle Dynamics
+
+PMID: 33309713 - Inhibiting glycolysis rescues memory impairment in an
+intellectual disability Gdi1-null mouse
+
+DISTINCTION: GDI1 is located on the X chromosome, while GDI2 is on
+chromosome 10. GDI2 has not been strongly linked to intellectual disability.
+
+8.2 GDI2 AS A METASTASIS SUPPRESSOR
+-----------------------------------
+GDI2 (also known as RhoGDI2 or ARHGDIB) functions as a metastasis suppressor
+gene, particularly in bladder cancer.
+
+DISCOVERY: GDI2 was identified as an invasion and metastasis suppressor in
+human bladder cancer cell lines.
+
+CLINICAL SIGNIFICANCE:
+- Loss or reduction of RhoGDI2 protein expression in bladder tumors is an
+  INDEPENDENT PREDICTOR for:
+  * Development of metastatic disease
+  * Disease-specific death from bladder cancer
+
+- Reduced expression of GDI2 is associated with:
+  * Decreased survival of bladder cancer patients
+  * Higher cancer stage and grade
+  * Clinical metastasis
+
+FUNCTIONAL MECHANISM:
+- Restoration of GDI2 expression suppressed metastasis
+- Primary tumor growth was NOT affected
+- Effect is specific to invasion and metastasis, not proliferation
+
+REFERENCES:
+PMID: 19321744 - RhoGDI2 is an invasion and metastasis suppressor gene in
+human cancer
+
+PMID: 19242414 - Learning therapeutic lessons from metastasis suppressor
+proteins (Nature Reviews Cancer)
+
+PMC2701105 - RhoGDI2 suppresses metastasis via unconventional regulation of
+RhoGTPases
+
+Reduced Expression of Metastasis Suppressor RhoGDI2 Is Associated with
+Decreased Survival for Patients with Bladder Cancer
+DOI: 10.1158/1078-0432.CCR-04-0653
+Clinical Cancer Research (2004)
+
+8.3 GDI2 IN OTHER CANCERS
+-------------------------
+Dysregulation of GDI2 has been reported in multiple cancer types:
+
+CANCERS WITH GDI2 ALTERATIONS:
+- Pancreatic carcinoma
+- Ovarian cancer
+- Gastric cancer
+- Thyroid carcinoma
+- Hematopoiesis and leukemogenesis
+- Esophageal squamous cell carcinoma
+- Hepatocellular carcinoma (HCC)
+
+HEPATOCELLULAR CARCINOMA FINDING: The expression of GDI2 was much higher in
+tumor tissues than in normal tissues of HCC patients, suggesting context-
+dependent roles (suppressor vs. promoter) in different cancer types.
+
+REFERENCE:
+GDI2 is a novel diagnostic and prognostic biomarker in hepatocellular
+carcinoma
+PMC8714169
+
+8.4 GDI2 IN ALZHEIMER'S DISEASE
+------------------------------
+Recent work suggests GDI2 may play a role in neurodegenerative disease:
+
+FINDING: Deficiency of GDI2 significantly ameliorated cognitive impairment
+in the 5xFAD mouse model of Alzheimer's disease.
+
+EFFECTS OF GDI2 DELETION IN 5xFAD MICE:
+- Prevented neuronal loss in subiculum and cortical layer V
+- Reduced senile plaque formation
+- Decreased astrocyte activation
+- Improved cognitive performance
+
+IMPLICATION: GDI2 inhibition might be a therapeutic target for Alzheimer's
+disease, though the mechanism is not yet fully understood.
+
+REFERENCE:
+GDI2 deletion alleviates neurodegeneration and memory loss in the 5xFAD
+mice model of Alzheimer's disease
+DOI: 10.1016/j.bbadis.2024.167052
+Biochimica et Biophysica Acta - Molecular Basis of Disease (2024)
+
+================================================================================
+9. KNOCKOUT PHENOTYPES
+================================================================================
+
+9.1 GDI2 CONSTITUTIVE KNOCKOUT - EMBRYONIC LETHALITY
+----------------------------------------------------
+Complete GDI2 deficiency results in embryonic lethality in mice:
+
+PHENOTYPE:
+- Lethality occurs between E10.5 to E14.5 (mid-gestation)
+- Extensive cell death throughout embryos
+- Massive cell loss in multiple tissues
+- Increased apoptosis in E12.5 livers
+
+INTERPRETATION: GDI2 is ESSENTIAL for embryonic development. The Rab GTPase
+regulatory system cannot be compensated by GDI1 alone during embryogenesis.
+
+REFERENCE:
+Targeted disruption of Gdi2 causes early embryonic lethality
+DOI: 10.1016/j.gendis.2022.05.025
+
+9.2 FUNCTIONAL REDUNDANCY WITH GDI1
+-----------------------------------
+The embryonic lethality suggests that GDI1 and GDI2 have both overlapping
+and distinct functions:
+
+OVERLAPPING FUNCTIONS:
+- Both can bind and regulate many of the same Rab GTPases
+- Both perform membrane extraction and Rab recycling
+
+DISTINCT FUNCTIONS:
+- Tissue-specific expression patterns (GDI2 enriched in hematopoietic cells)
+- Preference for different Rab substrates
+- Potentially non-redundant roles in specific cell types during development
+
+9.3 GDI2 IN ALZHEIMER'S MODEL (5xFAD MICE)
+-----------------------------------------
+In contrast to embryonic lethality, GDI2 deletion in the context of
+Alzheimer's pathology showed BENEFICIAL effects:
+
+PHENOTYPE OF GDI2 KNOCKOUT IN 5xFAD MICE:
+- Improved cognitive function
+- Reduced neurodegeneration
+- Decreased amyloid plaque burden
+- Reduced neuroinflammation
+
+CONTEXT-DEPENDENCY: This suggests that GDI2's role may be:
+- Essential during development (constitutive KO → lethality)
+- Potentially detrimental in neurodegenerative conditions (KO → protection)
+- Dependent on cellular context and disease state
+
+9.4 INTERNATIONAL MOUSE PHENOTYPING CONSORTIUM DATA
+--------------------------------------------------
+Additional phenotyping data for Gdi2 may be available through:
+
+DATABASE: International Mouse Phenotyping Consortium (IMPC)
+GENE ID: MGI:99845
+URL: http://www.mousephenotype.org/data/genes/MGI:99845
+
+This resource may contain additional phenotypic information from systematic
+knockout studies.
+
+================================================================================
+10. VESICULAR TRAFFICKING ROLES
+================================================================================
+
+10.1 RAB GTPASES AS MASTER REGULATORS OF MEMBRANE TRAFFIC
+---------------------------------------------------------
+The Rab GTPase family (>60 members in humans) controls virtually all
+membrane trafficking steps:
+
+CELLULAR PROCESSES REGULATED:
+- ER to Golgi transport (Rab1, Rab2)
+- Intra-Golgi trafficking (Rab6, Rab33)
+- Golgi to plasma membrane (Rab8, Rab10, Rab11)
+- Endocytosis (Rab5, Rab4, Rab11)
+- Endosomal maturation (Rab5 → Rab7 conversion)
+- Lysosomal trafficking (Rab7, Rab9)
+- Autophagy (Rab7, Rab32, Rab38)
+- Synaptic vesicle exocytosis (Rab3, Rab27)
+- Ciliary membrane trafficking (Rab8, Rab11)
+
+GDI2's role is to regulate this system by:
+1. Maintaining cytosolic pools of inactive Rabs
+2. Extracting Rabs from donor membranes after GTP hydrolysis
+3. Delivering Rabs to appropriate acceptor membranes
+4. Preventing non-specific membrane association
+
+10.2 THE RAB GTPASE CYCLE
+-------------------------
+GDI2 participates in the canonical Rab GTPase cycle:
+
+CYCLE STEPS:
+1. EXTRACTION: Active GDI extracts GDP-Rab from donor membrane
+   - Recognizes GDP-bound state
+   - Shields geranylgeranyl groups
+   - Solubilizes Rab in cytoplasm
+
+2. DELIVERY: GDI delivers GDP-Rab to acceptor membrane
+   - Targeted by membrane-specific factors
+   - May involve GDI displacement factors (GDFs)
+
+3. MEMBRANE INSERTION: Rab is released from GDI
+   - Geranylgeranyl groups insert into membrane
+   - Rab remains GDP-bound initially
+
+4. ACTIVATION: GEF (guanine nucleotide exchange factor) activates Rab
+   - GDP → GTP exchange
+   - Conformational change in switch regions
+   - Effector binding capability acquired
+
+5. FUNCTION: Active Rab-GTP recruits effectors
+   - Tethering factors
+   - Motor proteins
+   - Membrane fusion machinery
+
+6. INACTIVATION: GAP (GTPase-activating protein) inactivates Rab
+   - GTP → GDP hydrolysis
+   - Effector release
+   - Ready for GDI extraction (return to step 1)
+
+REFERENCE:
+Rab GDP dissociation inhibitor: putting rab GTPases in the right place
+PMID: 7615494
+
+10.3 ORGANELLE IDENTITY AND RAB CASCADES
+----------------------------------------
+Rabs define organelle identity through "Rab cascades":
+
+CONCEPT: Sequential Rab activation/inactivation defines membrane maturation:
+
+EXAMPLE - Endosomal maturation:
+- Early endosome: Rab5-positive
+- Rab5 recruits Rabex-5 (GEF for Rab5) → positive feedback
+- Rab5 recruits Mon1-Ccz1 (GEF for Rab7)
+- Rab7 activation leads to Rab5 inactivation
+- Late endosome: Rab7-positive
+
+GDI's role in cascades:
+- Removes "old" Rab from maturing organelle
+- Recycles Rab for use on new organelles
+- Sharpens transitions between membrane identities
+
+REFERENCE:
+Rab GTPases and membrane identity: Causal or inconsequential?
+DOI: 10.1083/jcb.201211141
+Journal of Cell Biology (2013)
+
+10.4 CROSS-TALK BETWEEN RAB AND ARF GTPASES
+-------------------------------------------
+Rab and Arf GTPases cooperate to coordinate membrane trafficking:
+
+EXAMPLE - Golgi trafficking:
+- Arf1 recruits coat proteins (COPI, AP-1, GGAs)
+- Arf1 activates lipid-modifying enzymes
+- Rab proteins on the same membrane recruit tethers and motors
+- Coordinated action produces specific trafficking outcomes
+
+FINDING: Arf1 orchestrates Rab GTPase conversion at the trans-Golgi network.
+
+REFERENCE:
+Arf1 orchestrates Rab GTPase conversion at the trans-Golgi network
+DOI: 10.1091/mbc.E20-10-0664
+Molecular Biology of the Cell (2021)
+
+10.5 VESICULAR TRAFFICKING IN CILIOGENESIS
+------------------------------------------
+Ciliogenesis requires massive polarized vesicular transport:
+
+TRAFFICKING PATHWAYS TO CILIA:
+1. Golgi-derived vesicles (Rab8, Rab11, Rab10)
+2. Recycling endosome pathway (Rab11, Rab8)
+3. Post-Golgi carriers
+4. Ciliary vesicle formation at basal body
+
+GDI2's ciliary role via Rab8 regulation:
+- Negative regulator: Sequesters Rab8 in cytoplasm
+- DZIP1 releases Rab8 from GDI2 at appropriate time
+- Spatial control: Ensures Rab8 activation at basal body
+- Temporal control: GSK3β phosphorylation of DZIP1 in G0 phase
+
+COORDINATION: Vesicular trafficking (Rab8) and membrane protein sorting
+(BBSome/ARL6) must be coordinated for proper cilium assembly.
+
+================================================================================
+11. PRENYL BINDING SPECIFICITY
+================================================================================
+
+11.1 GERANYLGERANYLATION OF RAB GTPASES
+---------------------------------------
+Most Rab GTPases are doubly geranylgeranylated at their C-terminus:
+
+MODIFICATION:
+- Two C20 geranylgeranyl isoprenoid groups
+- Attached to cysteine residues in C-terminal CAAX-like motifs
+- Common motifs: CC, CXC, CCX, CCXX, CCXXX
+- Catalyzed by Rab geranylgeranyltransferase (RabGGTase)
+- Requires Rab Escort Protein (REP) as accessory factor
+
+FUNCTION OF PRENYLATION:
+- Membrane anchoring
+- Weak, reversible membrane association
+- Target specificity (different from CAAX farnesylation)
+- Recognition by GDI
+
+REFERENCE:
+Thematic review series: lipid posttranslational modifications.
+Geranylgeranylation of Rab GTPases
+PMID: 16401880
+DOI: 10.1194/jlr.R500011-JLR200
+
+11.2 GDI RECOGNITION OF GERANYLGERANYL GROUPS
+---------------------------------------------
+GDI's prenyl-binding pocket shows specificity for geranylgeranyl over
+farnesyl:
+
+STRUCTURAL FEATURES:
+- Deep hydrophobic pocket in domain II
+- Accommodates C20 geranylgeranyl (4 isoprene units)
+- Formed by helices H1, H2, H3
+- Size and shape complementary to branched isoprenoid
+
+BINDING MODE:
+- First geranylgeranyl: DEEPLY buried in pocket
+- Second geranylgeranyl: Partially exposed to solvent
+- Sequential burial model for membrane extraction
+
+SPECIFICITY: GDI preferentially binds geranylgeranylated over farnesylated
+GTPases (C20 vs C15 isoprenoids).
+
+11.3 COMPARISON: GDI vs PDE6δ PRENYL BINDING
+--------------------------------------------
+GDI (for Rab proteins) and PDE6δ (GDI-like for ciliary cargo) both bind
+prenylated proteins but have different specificities:
+
+GDI (Rab GDI):
+- Prefers GERANYLGERANYL (C20)
+- Binds Rab GTPases specifically
+- Requires recognition of both protein and lipid
+- Requires GDP-bound state for high-affinity binding
+
+PDE6δ (GDI-like):
+- Binds FARNESYL (C15) and GERANYLGERANYL (C20)
+- Broader substrate range (not limited to GTPases)
+- Less stringent protein requirements
+- Nucleotide-independent binding (cargo is not GTPase)
+
+CARGO EXAMPLES FOR PDE6δ:
+- Farnesylated: KRAS, NRAS, HRAS, RHEB, transducin γ
+- Geranylgeranylated: RAP2A, INPP5E, GRK1, PDE6 catalytic subunits
+
+REFERENCE:
+PDE6δ-mediated sorting of INPP5E into the cilium is determined by
+cargo-carrier affinity
+DOI: 10.1038/ncomms11366
+
+11.4 COULD GDI2 BIND ARL6?
+--------------------------
+Based on lipid modification patterns, it is unlikely:
+
+ARL6/BBS3 LIPID MODIFICATION:
+- N-myristoylation (C14 saturated fatty acid)
+- Attached to N-terminal glycine
+- Fundamentally different from C-terminal geranylgeranylation
+
+GDI2 PRENYL POCKET:
+- Designed for C20 branched isoprenoids
+- Wrong size for C14 saturated fatty acid
+- Wrong location (expects C-terminus, not N-terminus)
+
+CONCLUSION: The lipid modification of ARL6 (myristate) is incompatible with
+GDI2's prenyl-binding pocket (designed for geranylgeranyl).
+
+If GDI2-ARL6 interaction exists, it would NOT involve classical prenyl
+binding mechanism.
+
+================================================================================
+12. SYNTHESIS: POTENTIAL GDI2-ARL6/BBS3 CONNECTION
+================================================================================
+
+12.1 DIRECT INTERACTION: UNLIKELY
+---------------------------------
+Based on the comprehensive analysis above, a DIRECT functional interaction
+between GDI2 and ARL6 analogous to GDI2-Rab interactions is biochemically
+implausible:
+
+REASONS:
+1. LIPID INCOMPATIBILITY: ARL6 is myristoylated (N-terminal), while GDI2
+   binds geranylgeranyl groups (C-terminal)
+
+2. AUTOINHIBITORY MECHANISM: ARL6 has intrinsic myristoyl switch; doesn't
+   require external GDI
+
+3. NO PRECEDENT: No Arf-family GTPases use GDI proteins for regulation
+
+4. STRUCTURAL MISMATCH: GDI prenyl pocket is wrong size/shape for myristate
+
+12.2 INDIRECT INTERACTION: PLAUSIBLE MECHANISMS
+----------------------------------------------
+However, several indirect mechanisms could explain the predicted interaction
+(ipSAE = 0.580):
+
+MECHANISM 1 - RAB8-MEDIATED CONNECTION:
+- GDI2 regulates RAB8 (well-established)
+- RAB8 cooperates with BBSome in ciliary membrane assembly
+- BBSome is recruited by ARL6
+- GDI2 and ARL6 might be co-purified in ciliary complexes
+- Interaction is indirect via shared participation in ciliogenesis
+
+MECHANISM 2 - BBSOME COMPLEX BRIDGING:
+- GDI2 might interact with BBSome components
+- ARL6 binds BBSome (BBS1 β-propeller)
+- Both proteins present in same large complex
+- AlphaFold predicts interaction due to proximity
+
+MECHANISM 3 - DZIP1-MEDIATED CROSSTALK:
+- DZIP1 releases RAB8 from GDI2 (established)
+- DZIP1 might also interact with ARL6/BBSome pathway
+- Regulatory hub connecting both pathways
+- GDI2 and ARL6 both regulated by DZIP1
+
+MECHANISM 4 - PRENYLATED CARGO REGULATION:
+- GDI2 might sequester prenylated BBSome cargo
+- ARL6/BBSome traffics same cargo to cilia
+- Competition between cytoplasmic sequestration (GDI2) and ciliary
+  targeting (ARL6)
+
+12.3 FUNCTIONAL SIGNIFICANCE IF INTERACTION EXISTS
+--------------------------------------------------
+A GDI2-ARL6 interaction, even if indirect, could have important functional
+consequences:
+
+REGULATORY FUNCTION:
+- Coordination of ciliary membrane delivery (RAB8) with protein sorting
+  (BBSome/ARL6)
+- Temporal gating: Ensure membrane is ready before cargo sorting begins
+- Spatial organization: Co-localize trafficking machinery at basal body
+
+CHECKPOINT MECHANISM:
+- GDI2 as negative regulator of both pathways
+- Release from GDI2 inhibition as ciliogenesis trigger
+- Prevents premature or ectopic cilium formation
+
+DISEASE RELEVANCE:
+- Dysregulation could impair ciliogenesis
+- Relevant to ciliopathies (BBSome mutations cause Bardet-Biedl Syndrome)
+- May explain some phenotypic variability in BBS
+
+12.4 EXPERIMENTAL VALIDATION NEEDED
+-----------------------------------
+To determine if GDI2-ARL6 interaction is biologically meaningful:
+
+RECOMMENDED EXPERIMENTS:
+1. Co-immunoprecipitation from ciliated cells
+2. Proximity ligation assay (PLA) to detect in situ interaction
+3. Localization studies: Do GDI2 and ARL6 co-localize at basal body?
+4. Functional assays: Does GDI2 depletion affect ARL6-BBSome recruitment?
+5. In vitro binding: Purified GDI2 + ARL6 (GDP vs GTP forms)
+6. Mass spectrometry: ARL6 interactome and GDI2 interactome overlap
+
+PREDICTION: Most likely outcome is INDIRECT interaction via ciliary
+protein complexes or shared regulatory factors (DZIP1, RAB8, BBSome).
+
+================================================================================
+13. CONCLUSION
+================================================================================
+
+13.1 SUMMARY OF GDI2 FUNCTION
+-----------------------------
+GDI2 (Rab GDI beta) is a critical regulator of membrane trafficking with
+multiple important functions:
+
+CORE FUNCTIONS:
+- Maintains cytosolic reservoir of inactive GDP-bound Rab GTPases
+- Actively extracts geranylgeranylated Rabs from membranes
+- Shuttles Rabs between donor and acceptor membranes
+- Regulates vesicular trafficking in multiple cellular pathways
+
+CILIARY FUNCTION:
+- Negatively regulates ciliogenesis by sequestering RAB8-GDP
+- DZIP1-mediated release from GDI2 is essential for cilium formation
+- Part of GSK3β-DZIP1-RAB8-GDI2 regulatory cascade
+- Spatial and temporal control of ciliary membrane assembly
+
+DISEASE RELEVANCE:
+- Metastasis suppressor in bladder cancer and other cancers
+- Potential therapeutic target in Alzheimer's disease
+- Related gene GDI1 causes X-linked intellectual disability
+- Essential for embryonic development (KO is lethal)
+
+13.2 GDI2 AND ARL6/BBS3: LIKELY RELATIONSHIP
+-------------------------------------------
+The predicted GDI2-ARL6 interaction (ipSAE = 0.580, medium confidence) is
+biochemically interesting but mechanistically unclear:
+
+UNLIKELY: Direct GDI-like regulation of ARL6
+- ARL6 uses myristoyl switch, not GDI-dependent regulation
+- Lipid modifications incompatible (myristate vs geranylgeranyl)
+
+POSSIBLE: Indirect interaction via ciliary trafficking pathways
+- Both involved in ciliogenesis (RAB8 pathway and BBSome pathway)
+- Potential co-localization at basal body
+- Shared regulatory factors (DZIP1, IFT proteins)
+
+PLAUSIBLE: Coordinate regulation of ciliary membrane assembly
+- GDI2-RAB8 pathway builds ciliary membrane
+- ARL6-BBSome pathway sorts membrane proteins
+- Integration needed for functional cilium
+
+13.3 FUTURE DIRECTIONS
+---------------------
+To understand GDI2-ARL6 connection:
+
+PRIORITY EXPERIMENTS:
+1. Validate interaction in ciliated cells
+2. Determine if interaction is direct or complex-mediated
+3. Test functional consequences for ciliogenesis
+4. Examine role in BBSome recruitment and ciliary protein sorting
+5. Investigate in disease context (BBS, ciliopathies)
+
+BROADER QUESTIONS:
+- How are Rab8 and BBSome pathways coordinated?
+- What is the role of GDI2 in ciliary transition zone?
+- Do other GDI-regulated Rabs interact with BBSome?
+- Are there tissue-specific differences in these pathways?
+
+13.4 SIGNIFICANCE
+-----------------
+This GDI2-ARL6 interaction, even if indirect, highlights:
+
+1. COMPLEXITY OF CILIARY TRAFFICKING: Multiple parallel pathways must be
+   coordinated (Rab8, IFT, BBSome, ARL6, ARL3, etc.)
+
+2. INTEGRATION OF GTPASE SYSTEMS: Rab and Arf-like GTPases may have more
+   crosstalk than previously appreciated
+
+3. REGULATORY NETWORKS: GDI proteins may have broader roles beyond simple
+   Rab recycling (e.g., checkpoint functions, pathway integration)
+
+4. DISEASE MECHANISMS: Dysregulation of GDI2 or its interactions could
+   contribute to ciliopathies, cancer metastasis, neurodegeneration
+
+5. THERAPEUTIC POTENTIAL: GDI2 represents a druggable node for multiple
+   diseases (cancer, Alzheimer's, potentially ciliopathies)
+
+================================================================================
+14. REFERENCES - COMPREHENSIVE LIST
+================================================================================
+
+STRUCTURAL BIOLOGY:
+-------------------
+PMID: 16395334 - Structure of doubly prenylated Ypt1:GDI complex
+DOI: 10.1038/sj.emboj.7600921
+
+PMID: 12623022 - Geranylgeranyl switching regulates GDI-Rab recycling
+
+PMID: 29065764 - Recognition of geranylgeranylated human Rab5 by GDI
+DOI: 10.1074/jbc.M117.803411
+
+PMID: 23898197 - Membrane extraction of Rab proteins by GDI
+DOI: 10.1073/pnas.1307655110
+
+PDB: 2BCG - Ypt1:GDI complex crystal structure
+PDB: 1LV0 - GDI with geranylgeranyl peptide
+
+CILIARY TRAFFICKING:
+--------------------
+PMID: 25860027 - GSK3β-Dzip1-Rab8 Cascade Regulates Ciliogenesis
+DOI: 10.1371/journal.pbio.1002129
+
+PMID: 21209331 - Primary cilia membrane assembly by Rab11 and TRAPPII
+DOI: 10.1073/pnas.1018823108
+
+PMID: 20479123 - Coordination of Rab8 and Rab11 in ciliogenesis
+DOI: 10.1073/pnas.1002401107
+
+PMID: 29072526 - Rab GTPases in cilium formation and function (Review)
+
+ARL6/BBS3 AND BBSOME:
+---------------------
+PMID: 25402481 - Structural basis for BBSome membrane targeting by ARL6
+DOI: 10.1038/nsmb.2920
+
+PMID: 25443296 - IFT27 promotes BBSome exit via ARL6/BBS3
+DOI: 10.1083/jcb.201408009
+
+PMID: 22609302 - ARL6 (BBS3) in flagellum extension in T. brucei
+
+DOI: 10.1083/jcb.202111076 - ARL3 mediates BBSome ciliary turnover
+
+GDI-LIKE SYSTEMS:
+-----------------
+PMID: 27487321 - A GDI/GDF-like system for ciliary proteins
+DOI: 10.1091/mbc.E15-08-0638
+
+PMID: 22960633 - Arl3-specific release of cargo from UNC119
+DOI: 10.1038/emboj.2012.257
+
+DOI: 10.7554/eLife.64624 - ARL3 activation requires co-GEF BART
+
+DOI: 10.1038/ncomms11366 - PDE6δ-mediated sorting of INPP5E
+
+PMID: 23559067 - RPGR, PDEδ and Arl2/3 regulate ciliary targeting
+
+ARF GTPASE REGULATION:
+----------------------
+PMID: 19141284 - Structure and membrane interaction of myristoylated ARF1
+DOI: 10.1074/jbc.M805594200
+
+PMID: 8576155 - Myristoylation-facilitated binding of ARF1GDP
+
+DISEASE ASSOCIATIONS:
+---------------------
+CANCER:
+PMID: 19321744 - RhoGDI2 as invasion and metastasis suppressor
+PMID: 19242414 - Metastasis suppressor proteins (Nature Reviews Cancer)
+PMC2701105 - RhoGDI2 suppresses metastasis via RhoGTPases
+DOI: 10.1158/1078-0432.CCR-04-0653 - RhoGDI2 in bladder cancer
+PMC8714169 - GDI2 in hepatocellular carcinoma
+
+NEURODEGENERATION:
+DOI: 10.1016/j.bbadis.2024.167052 - GDI2 deletion in Alzheimer's model
+
+INTELLECTUAL DISABILITY (GDI1):
+PMID: 12354782 - Gdi1 deletion impairs memory in mice
+PMID: 22002931 - GDI1 mutation in X-linked ID family
+PMID: 26971292 - Impaired αGDI in X-linked ID
+PMID: 33309713 - Inhibiting glycolysis rescues Gdi1-null memory
+
+KNOCKOUT PHENOTYPES:
+--------------------
+DOI: 10.1016/j.gendis.2022.05.025 - Gdi2 knockout causes embryonic lethality
+
+GENERAL RAB GTPASE BIOLOGY:
+---------------------------
+PMID: 7615494 - Rab GDP dissociation inhibitor: putting rabs in right place
+
+PMID: 11116150 - GDP dissociation inhibitor domain II for Rab recycling
+
+PMID: 16401880 - Geranylgeranylation of Rab GTPases (Review)
+DOI: 10.1194/jlr.R500011-JLR200
+
+DOI: 10.1083/jcb.201211141 - Rab GTPases and membrane identity
+
+DOI: 10.1091/mbc.E20-10-0664 - Arf1 orchestrates Rab conversion at TGN
+
+DATABASE RESOURCES:
+-------------------
+GeneCards: https://www.genecards.org/cgi-bin/carddisp.pl?gene=GDI2
+UniProt: P52566 (GDI2_HUMAN)
+MGI: 99845 (Gdi2 mouse gene)
+IMPC: http://www.mousephenotype.org/data/genes/MGI:99845
+
+================================================================================
+REPORT COMPLETED: 2025
+COMPILED BY: Scientific literature review and synthesis
+INTERACTION ANALYZED: GDI2 ↔ ARL6/BBS3 (ipSAE = 0.580)
+================================================================================

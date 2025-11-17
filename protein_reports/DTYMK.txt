@@ -1,0 +1,860 @@
+================================================================================
+DTYMK (DEOXYTHYMIDYLATE KINASE) - COMPREHENSIVE SCIENTIFIC REPORT
+================================================================================
+
+INTERACTION CONTEXT:
+- ipSAE score: 0.580 (Medium confidence)
+- Interacting partner: IFT22 (IFT-B complex component)
+- Prediction method: AlphaFold3
+
+================================================================================
+1. PROTEIN OVERVIEW AND BASIC FUNCTION
+================================================================================
+
+Gene Name: DTYMK (Deoxythymidylate Kinase)
+Alternative Names: TMPK (Thymidylate Kinase), TYMK, CDC8
+Enzyme Commission: EC 2.7.4.9
+UniProt ID: P23919
+OMIM: *188345
+
+DTYMK encodes deoxythymidylate kinase (also known as thymidylate kinase, TMPK),
+a pyrimidine metabolic rate-limiting enzyme essential for DNA synthesis and
+cellular proliferation.
+
+PRIMARY ENZYME FUNCTION:
+DTYMK catalyzes the ATP-dependent phosphorylation of deoxythymidine monophosphate
+(dTMP) to deoxythymidine diphosphate (dTDP), which represents the penultimate
+step in dTTP biosynthesis:
+
+    dTMP + ATP → dTDP + ADP
+
+The product dTDP is then further phosphorylated by nucleoside diphosphate kinase
+(NDK) to form dTTP, one of the four essential building blocks for DNA synthesis
+and replication.
+
+CRITICAL POSITION IN NUCLEOTIDE METABOLISM:
+DTYMK occupies a strategic position at the junction of both de novo and salvage
+pathways of dTTP synthesis:
+
+- De novo pathway: dUMP → dTMP (by thymidylate synthase) → dTDP (by DTYMK) → dTTP
+- Salvage pathway: Thymidine → dTMP (by thymidine kinase) → dTDP (by DTYMK) → dTTP
+
+This dual role makes DTYMK essential for maintaining proper dTTP pools required
+for DNA replication, repair, and mitochondrial DNA maintenance.
+
+STRUCTURAL FEATURES:
+- dTMP-binding site
+- ATP-binding P-loop motif
+- DRX catalytic motif
+- Lid region for substrate recognition
+- Functions as a dimer (homo- or heterodimer)
+- Magnesium-dependent catalysis
+
+REFERENCES:
+- OMIM Entry *188345: https://omim.org/entry/188345
+- "Structural and functional analysis of human thymidylate kinase isoforms"
+  https://www.tandfonline.com/doi/full/10.1080/15257770.2021.2023748
+
+================================================================================
+2. ROLE IN DNA REPLICATION AND CELL CYCLE
+================================================================================
+
+ESSENTIAL FOR S PHASE PROGRESSION:
+DTYMK activity is critical for DNA synthesis during S phase of the cell cycle.
+The enzyme's mRNA levels and enzymatic activity correlate with cell cycle
+progression and cell growth stages, with peak activity during S phase when
+DNA replication demands are highest.
+
+IMPAIRED DNA REPLICATION IN DTYMK DEFICIENCY:
+Studies of patient fibroblasts with DTYMK mutations demonstrate:
+- Barely detectable DTYMK enzyme activity
+- Impaired biosynthesis of dTTP
+- Severe defects in DNA replication
+- Few cells entering S phase compared to controls
+- Increased ribonucleotide incorporation into genomic DNA
+- Genomic instability and DNA damage
+
+NUCLEOTIDE POOL REGULATION:
+DTYMK depletion causes:
+- Reduced dTDP and dTTP pools
+- Increased dTMP accumulation
+- Nucleotide pool imbalances
+- Impaired cell proliferation, particularly in rapidly dividing cells
+
+CELL CYCLE REGULATION:
+DTYMK participates in multiple cell cycle regulatory pathways:
+- TP53-mediated cell cycle arrest
+- MYC activation signaling
+- DNA damage response pathways
+- Cell senescence mechanisms
+
+REFERENCES:
+- "DTYMK is essential for genome integrity and neuronal survival"
+  Acta Neuropathol. 2022 Feb;143(2):245-262
+  DOI: 10.1007/s00401-021-02394-0
+  PMID: 34918187
+  PMC: PMC8742820
+
+================================================================================
+3. DISEASE ASSOCIATIONS
+================================================================================
+
+3.1 CHILDHOOD-ONSET NEURODEGENERATION WITH PROGRESSIVE MICROCEPHALY (CONPM)
+
+CLINICAL PRESENTATION:
+Biallelic loss-of-function mutations in DTYMK cause a rare, devastating
+neurodegenerative disorder characterized by:
+- Progressive severe microcephaly (most prominent feature)
+- Hypotonia and severely impaired intellectual development
+- Growth retardation with minimal neurodevelopment
+- Epilepsy and status epilepticus
+- Cortical blindness
+- Developmental regression
+- Early lethality
+
+BRAIN PATHOLOGY:
+Neuroimaging and histopathology reveal:
+- Severe global cerebral atrophy
+- Disappearance of basal ganglia
+- Massive neuronal dropout throughout the brain
+- Brain stem relatively spared
+- Empty spaces indicative of widespread neurodegeneration
+- Increased apoptotic cell death in forebrain
+
+MOLECULAR MECHANISM:
+- Impaired dTTP biosynthesis
+- Severe DNA replication defects in brain cells
+- Increased ribonucleotide incorporation causing genomic instability
+- Impaired DNA damage responses
+- Neuronal cell death due to replication stress
+
+DOCUMENTED MUTATIONS:
+- Frameshift: c.287_320del; p.Asp96Valfs*8
+- Missense: c.295G>A; p.Ala99Thr (A99T)
+- Missense: c.242C>T; p.Pro81Leu (P81L)
+- Missense: c.383G>A; p.Asp128Asn (D128N)
+
+All identified mutations substantially reduce DTYMK enzymatic activity and
+affect kinetics, substrate binding, metal ion sensitivity, salt tolerance,
+and protein dimerization.
+
+PREVALENCE:
+Ultra-rare disorder - only 4 cases reported in literature to date.
+
+REFERENCES:
+- "Deoxythymidylate kinase, DTYMK, is a novel gene for mitochondrial DNA
+  depletion syndrome"
+  Clin Chim Acta. 2019 Sep;496:80-86
+  DOI: 10.1016/j.cca.2019.06.028
+  PMID: 31271740
+
+- "Childhood-Onset Neurodegeneration With Progressive Microcephaly (CONPM) due
+  to a DTYMK Homozygous Pathogenic Variant"
+  Am J Med Genet A. 2025
+  DOI: 10.1002/ajmg.a.64187
+
+3.2 MITOCHONDRIAL DNA DEPLETION SYNDROME
+
+DTYMK has been identified as a novel gene causing mitochondrial DNA (mtDNA)
+depletion syndrome. The disorder presents with:
+- Impaired mitochondrial DNA replication
+- mtDNA depletion in affected tissues
+- Encephalomyopathic features
+- Hypotonia and microcephaly
+- Severe intellectual disability
+
+This represents the first family with mitochondrial DNA depletion syndrome
+attributed to DTYMK mutations, establishing DTYMK as one of the genes
+associated with this group of disorders.
+
+3.3 CANCER ASSOCIATIONS
+
+DTYMK expression is significantly altered across multiple cancer types,
+generally showing upregulation in tumors with prognostic implications.
+
+PAN-CANCER EXPRESSION PROFILE:
+DTYMK expression is significantly increased in 19 cancer types including:
+- Bladder urothelial carcinoma (BLCA)
+- Breast invasive carcinoma (BRCA)
+- Cervical squamous cell carcinoma (CESC)
+- Hepatocellular carcinoma (LIHC)
+- Lung adenocarcinoma (LUAD)
+- Colorectal adenocarcinoma (COAD)
+- Pancreatic adenocarcinoma (PAAD)
+- Acute lymphoblastic leukemia (ALL)
+- Malignant rhabdoid tumors of the kidney
+
+GENETIC ALTERATIONS IN CANCER:
+- Gene amplifications
+- Deep deletions (homozygous deletions)
+- Missense mutations
+- Structural variants
+
+PROGNOSTIC SIGNIFICANCE:
+High DTYMK expression correlates with:
+- Poorer overall survival (OS)
+- Reduced progression-free interval (PFI)
+- Worse disease-specific survival (DSS)
+- Advanced tumor stage and grade
+- Larger tumor size
+- Younger age at diagnosis (in some cancers)
+
+REFERENCES:
+- "Deoxythymidylate Kinase as a Promising Marker for Predicting Prognosis and
+  Immune Cell Infiltration of Pan-cancer"
+  Front Mol Biosci. 2022 Jul 12;9:887059
+  PMID: 35903153
+  PMC: PMC9315941
+
+- "Pan-cancer analysis of prognostic and immunological role of DTYMK in human tumors"
+  Front Genet. 2022 Sep 13;13:989460
+  PMID: 36159971
+
+================================================================================
+4. CANCER-SPECIFIC FINDINGS
+================================================================================
+
+4.1 HEPATOCELLULAR CARCINOMA (HCC)
+
+EXPRESSION AND CLINICAL IMPACT:
+- DTYMK significantly elevated in HCC tissues vs. normal liver
+- High expression correlates with poor prognosis
+- Associated with advanced disease stage
+
+THERAPEUTIC IMPLICATIONS:
+DTYMK knockdown in HCC:
+- Significantly inhibits tumor growth
+- Increases sensitivity to oxaliplatin chemotherapy
+- No tumor formation observed in DTYMK knockdown + oxaliplatin treatment
+  (preclinical models)
+
+This establishes DTYMK as both a prognostic biomarker and potential therapeutic
+target in HCC.
+
+REFERENCES:
+- "Inhibition of DTYMK significantly restrains the growth of HCC and increases
+  sensitivity to oxaliplatin"
+  Cell Death Dis. 2021 Nov 18;12(11):1093
+  DOI: 10.1038/s41419-021-04375-3
+  PMID: 34795209
+  PMC: PMC8602592
+
+- "DTYMK Expression Predicts Prognosis and Chemotherapeutic Response and
+  Correlates with Immune Infiltration in Hepatocellular Carcinoma"
+  PMC: PMC8349219
+
+4.2 LUNG CANCER AND LKB1 SYNTHETIC LETHALITY
+
+GROUNDBREAKING DISCOVERY:
+High-throughput RNAi screens in genetically engineered mouse models identified
+DTYMK as synthetically lethal with LKB1 (STK11) deficiency in KRAS-driven
+lung cancer.
+
+CLINICAL CONTEXT:
+- LKB1 is somatically inactivated in 25-30% of non-small cell lung carcinoma (NSCLC)
+- Often occurs concurrently with activating KRAS mutations
+- LKB1-mutant lung cancers are particularly aggressive with poor prognosis
+
+MECHANISM OF SYNTHETIC LETHALITY:
+LKB1-null cells exhibit:
+- Striking decreases in multiple nucleotide metabolites
+- Deficits in nucleotide metabolism pathways
+- Hypersensitivity to DTYMK inhibition
+
+DTYMK depletion in LKB1-null cells causes:
+- Marked reduction in dTDP pools
+- Increased dTMP accumulation
+- Significantly impaired cell growth
+- Reduced tumor growth in vivo
+
+In contrast, LKB1-wild-type cells show only modest effects from DTYMK depletion.
+
+THERAPEUTIC POTENTIAL:
+DTYMK represents a promising therapeutic target for LKB1-deficient lung cancers,
+though a specific DTYMK inhibitor has not yet been developed.
+
+REFERENCES:
+- "Metabolic and Functional Genomic Studies Identify Deoxythymidylate Kinase as
+  a Target in LKB1-Mutant Lung Cancer"
+  Cancer Discov. 2013 Aug;3(8):870-879
+  DOI: 10.1158/2159-8290.CD-13-0015
+  PMID: 23715154
+  PMC: PMC3753578
+
+- "Comprehensive analysis of DTYMK in pan-cancer and verification in lung
+  adenocarcinoma"
+  PMID: 36094557
+
+4.3 COLORECTAL CANCER (CRC)
+
+EXPRESSION PATTERNS:
+- DTYMK significantly upregulated in CRC tumor tissues vs. normal adjacent tissue
+- First comprehensive study of DTYMK in CRC completed
+- Validated across multiple databases (UALCAN, GEPIA, GEO, Oncomine)
+
+IMMUNOHISTOCHEMISTRY FINDINGS:
+Study of 227 CRC cases revealed:
+- 53% of patients (122/227) showed high DTYMK H-score
+- High expression associated with:
+  * Younger age at diagnosis (P = 0.036)
+  * Advanced disease stage (P = 0.038)
+  * Specific anatomical sites (P = 0.032)
+
+SURVIVAL OUTCOMES:
+- High DTYMK expression → worse overall survival
+- Particularly poor progression-free survival in first 500 days
+- Effects diminish after 600 days
+
+BIOMARKER POTENTIAL:
+DTYMK can serve as a prognostic biomarker to differentiate tumor from normal
+tissue in colorectal cancer.
+
+REFERENCES:
+- "The Impact of DTYMK as a Prognostic Marker in Colorectal Cancer"
+  World J Oncol. 2023
+  PMC: PMC9990730
+
+4.4 PANCREATIC ADENOCARCINOMA (PAAD)
+
+REGULATORY NETWORK:
+DTYMK in pancreatic cancer is regulated by a miR-491-5p/TP53 axis:
+- miR-491-5p negatively regulates DTYMK expression
+- DTYMK participates in TP53-mediated cell cycle arrest
+- Pathway involved in pancreatic cancer progression
+
+FUNCTIONAL ROLES:
+DTYMK influences:
+- Cell senescence
+- DNA repair mechanisms
+- Pyrimidine metabolism
+- MYC activation
+- TP53 control of cell cycle arrest
+- Apoptosis regulation
+- MAPK6/MAPK4 pathway signaling
+
+PROGNOSTIC VALUE:
+- Reduced DTYMK expression → improved survival outcomes
+  * Better overall survival (OS)
+  * Longer progression-free interval (PFI)
+  * Improved disease-specific survival (DSS)
+
+IMMUNE CORRELATIONS:
+DTYMK expression inversely correlates with infiltration levels of most immune
+cells in pancreatic adenocarcinoma.
+
+REFERENCES:
+- "Deoxythymidylate kinase (DTYMK) participates in cell cycle arrest to promote
+  pancreatic adenocarcinoma progression regulated by miR-491-5p through TP53 and
+  is associated with tumor immune infiltration"
+  J Gastrointest Oncol. 2023
+  PMC: PMC10331742
+
+================================================================================
+5. TUMOR IMMUNE MICROENVIRONMENT
+================================================================================
+
+IMMUNE CELL INFILTRATION CORRELATIONS:
+Across multiple cancer types, DTYMK expression correlates with infiltration of
+six major immune cell populations:
+- B cells
+- CD4+ T cells
+- CD8+ T cells
+- Neutrophils
+- Macrophages
+- Dendritic cells
+
+CANCER-SPECIFIC PATTERNS:
+The direction and strength of correlations vary by cancer type:
+- Positive correlations: Enhanced immune infiltration with high DTYMK
+- Negative correlations: Reduced immune infiltration with high DTYMK
+- Pattern depends on specific tumor microenvironment
+
+IMMUNOTHERAPY IMPLICATIONS:
+DTYMK may serve as:
+- Biomarker for predicting immune therapy response
+- Potential target for combination immunotherapy approaches
+- Indicator of tumor immune evasion mechanisms
+
+REFERENCES:
+Multiple pan-cancer studies have documented these immune correlations across
+TCGA datasets and validated in independent cohorts.
+
+================================================================================
+6. ANIMAL MODELS AND PHENOTYPES
+================================================================================
+
+6.1 MOUSE MODELS
+
+KNOCKOUT PHENOTYPE:
+- Homozygous Dtymk null mice: embryonic lethal before E12.5
+- DTYMK is essential for embryonic development
+- Heterozygous mice: viable, no neural tube defects observed
+
+CONDITIONAL/TISSUE-SPECIFIC EFFECTS:
+In LKB1-null lung cancer models with Dtymk knockdown:
+- Marked impairment in tumor growth
+- Reduced cell proliferation
+- Modest effects in LKB1-wild-type tumors (control)
+
+6.2 ZEBRAFISH MODELS
+
+KNOCKOUT PHENOTYPE:
+Homozygous dtymk knockout zebrafish exhibit:
+- Small head size (microcephaly)
+- Severely underdeveloped eyes
+- Edema of pericardium, intestine, and brain
+- Twitching movements (possible seizures)
+- Early lethality (>40% dead by 5 days post-fertilization)
+
+NEUROLOGICAL PATHOLOGY:
+- Empty spaces in brain indicative of neurodegeneration
+- Increased apoptotic cells in forebrain
+- Severe DNA replication defects
+- Impaired cell proliferation in neural tissues
+
+MOLECULAR FINDINGS:
+- Barely detectable Dtymk enzyme activity
+- Blocked dTTP biosynthesis
+- Nucleotide pool imbalances
+- Increased ribonucleotide incorporation into genomic DNA
+- Genomic fragility and DNA damage
+
+DEVELOPMENTAL EXPRESSION:
+Studies show differential expression of thymidylate biosynthesis enzymes at
+various developmental stages, with implications for understanding timing and
+tissue-specificity of dtymk mutation effects.
+
+TRANSLATIONAL RELEVANCE:
+Zebrafish model faithfully recapitulates human CONPM phenotypes:
+- Microcephaly
+- Neurodegeneration
+- Eye abnormalities
+- Early lethality
+- DNA replication defects
+
+REFERENCES:
+- "Differential expression of enzymes in thymidylate biosynthesis in zebrafish
+  at different developmental stages: implications for dtymk mutation-caused
+  neurodegenerative disorders"
+  BMC Neurosci. 2022
+  DOI: 10.1186/s12868-022-00704-0
+
+- OMIM *188345 (zebrafish model data)
+
+================================================================================
+7. PROTEIN INTERACTIONS AND BINDING PARTNERS
+================================================================================
+
+7.1 KNOWN ENZYMATIC INTERACTIONS
+
+SUBSTRATE INTERACTIONS:
+- dTMP (deoxythymidine monophosphate) - primary substrate
+- ATP (adenosine triphosphate) - phosphate donor
+- Mg2+ ions - required cofactor for catalysis
+
+PATHWAY INTERACTIONS:
+DTYMK functions within the thymidylate biosynthesis pathway, interacting with:
+
+Upstream enzymes:
+- Thymidylate synthase (TYMS) - produces dTMP in de novo pathway
+- Thymidine kinase 1 (TK1) - produces dTMP in salvage pathway (cytoplasm)
+- Thymidine kinase 2 (TK2) - produces dTMP in salvage pathway (mitochondria)
+
+Downstream enzymes:
+- Nucleoside diphosphate kinase (NDK/NME) - phosphorylates dTDP to dTTP
+- DNA polymerases - utilize dTTP for DNA synthesis
+
+Related metabolic enzymes:
+- Dihydrofolate reductase (DHFR)
+- Serine hydroxymethyltransferase (SHMT)
+
+7.2 STRUCTURAL CONSIDERATIONS
+
+DIMERIZATION:
+DTYMK functions as a dimer, which is important for:
+- Enzymatic activity
+- Stability
+- Substrate binding
+- Regulatory control
+
+Disease mutations (P81L, A99T, D128N) affect dimerization capacity, contributing
+to loss of function.
+
+ISOFORMS:
+Multiple DTYMK isoforms exist:
+- Isoform 1 and 6 may form heterodimers
+- Isoform 6 has intact catalytic centers (dTMP-binding, DRX motif, ATP-binding
+  P-loop, lid region)
+- Heterodimer formation could modulate overall TMPK activity
+
+7.3 REGULATORY INTERACTIONS
+
+CELL CYCLE REGULATORS:
+DTYMK interacts functionally with:
+- TP53 (p53) - cell cycle checkpoint and apoptosis
+- MYC - proliferation and growth signaling
+- Anaphase-promoting complex/cyclosome (APC/C) - dTTP pool regulation
+
+MICRORNA REGULATION:
+- miR-491-5p: Negatively regulates DTYMK (pancreatic cancer)
+- miR-148b-3p: Regulates DTYMK in hepatocellular carcinoma
+
+DNA DAMAGE RESPONSE:
+DTYMK participates in DNA damage sensing and repair pathways through:
+- Nucleotide pool maintenance
+- Genomic stability preservation
+- DNA replication stress response
+
+7.4 MITOCHONDRIAL CONNECTIONS
+
+DTYMK plays a role in mitochondrial DNA (mtDNA) maintenance:
+- Supplies dTTP for mtDNA replication
+- Deficiency causes mtDNA depletion syndrome
+- Links nuclear and mitochondrial nucleotide pools
+
+REFERENCES:
+- "Identification of a de novo thymidylate biosynthesis pathway in mammalian
+  mitochondria"
+  PNAS. 2011 Sep 13;108(37):15163-8
+  PMC: PMC3174652
+
+================================================================================
+8. CILIARY AND CENTROSOMAL CONNECTIONS
+================================================================================
+
+8.1 DIRECT CILIARY EVIDENCE
+
+LITERATURE SEARCH RESULTS:
+No direct evidence currently exists in the literature specifically linking DTYMK
+to ciliary structure, function, or ciliopathies.
+
+Comprehensive searches for "DTYMK cilia," "DTYMK centrosome," and "DTYMK basal
+body" did not yield publications demonstrating DTYMK localization to or direct
+functional roles in these structures.
+
+8.2 POTENTIAL INDIRECT CONNECTIONS
+
+Despite lack of direct evidence, several theoretical connections merit consideration:
+
+MICROCEPHALY OVERLAP:
+Both DTYMK deficiency and ciliopathies cause microcephaly:
+- DTYMK mutations → severe progressive microcephaly
+- Many ciliopathy genes → microcephaly (e.g., CEP152, ASPM, CPAP)
+- Convergent phenotype suggests potential mechanistic overlap
+
+However, the mechanisms appear distinct:
+- DTYMK: DNA replication failure, nucleotide depletion
+- Ciliopathy genes: Mitotic spindle defects, cell division errors
+
+CENTROSOME AND CELL CYCLE:
+The centrosome plays dual roles:
+- Mitotic spindle organization during cell division
+- Basal body formation for ciliogenesis
+
+DTYMK's role in S phase and DNA replication could theoretically affect:
+- Centrosome duplication cycle (occurs in S/G2)
+- Cell cycle progression required for ciliogenesis
+- Nucleotide availability at centrosomal/basal body sites
+
+LOCAL NUCLEOTIDE METABOLISM:
+Recent evidence shows centrosomes/basal bodies have localized:
+- Translation machinery (eIF4E, eIF4A1, 4E-BP1)
+- Local protein synthesis capabilities
+- Specialized metabolic microenvironments
+
+Hypothesis: Nucleotide-metabolizing enzymes like DTYMK could be recruited to
+centrosomal/basal body regions to support:
+- Local DNA synthesis during centrosome duplication
+- Rapid response to ciliary signaling demands
+- Compartmentalized nucleotide pool regulation
+
+However, this remains speculative without experimental evidence.
+
+8.3 IFT22 INTERACTION CONTEXT
+
+The AlphaFold3 prediction of DTYMK-IFT22 interaction (ipSAE = 0.580, medium
+confidence) is unexpected given their apparently unrelated functions:
+
+IFT22 CHARACTERISTICS:
+- Component of IFT-B complex
+- Essential for intraflagellar transport
+- Binds GTP/GDP (unusual mechanism, μM affinity)
+- Sequence similarity to small GTPases (non-conserved G4/G5 motifs)
+- Recruits BBSome to basal body via ARL6/BBS3
+- Required for flagellum/cilium assembly
+
+POTENTIAL INTERACTION MECHANISMS:
+
+Hypothesis 1 - Nucleotide Binding Cross-talk:
+Both proteins bind nucleotides:
+- DTYMK: ATP and dTMP substrates
+- IFT22: GTP/GDP binding
+
+Could they interact through:
+- Nucleotide-dependent conformational states?
+- Shared nucleotide pool sensing?
+- Competition for nucleotide binding?
+
+Hypothesis 2 - Centrosomal/Basal Body Co-localization:
+If DTYMK localizes to centrosome/basal body:
+- Could transiently interact with IFT22 during basal body assembly
+- May regulate nucleotide availability for IFT complex assembly
+- Could influence GTP availability for IFT22 and ARL6/BBS3
+
+Hypothesis 3 - Cell Cycle Coordination:
+IFT proteins have non-ciliary roles in:
+- Centrosome clustering in cancer cells
+- Mitotic processes
+- Cell cycle regulation
+
+DTYMK and IFT22 might interact during:
+- Cell cycle transitions (G1/S, when ciliogenesis is inhibited)
+- Centrosome duplication (requiring both DNA synthesis and IFT proteins)
+- Coordination of proliferation vs. ciliogenesis decisions
+
+Hypothesis 4 - False Positive or Weak Transient Interaction:
+- Medium confidence score (ipSAE = 0.580) suggests uncertainty
+- May represent transient, low-affinity interaction
+- Could be context-dependent (specific cell cycle phase, cell type)
+- Might require additional factors or post-translational modifications
+
+8.4 EXPERIMENTAL VALIDATION NEEDED
+
+To test DTYMK-IFT22 interaction and ciliary relevance:
+
+Recommended experiments:
+1. Co-immunoprecipitation in ciliated cells
+2. Proximity ligation assay (PLA)
+3. Subcellular fractionation - centrosome/basal body purification
+4. Immunofluorescence co-localization in ciliated vs. non-ciliated cells
+5. DTYMK knockdown effects on:
+   - Ciliogenesis
+   - Ciliary length/structure
+   - IFT protein localization
+   - Ciliary signaling pathways
+6. Cell cycle-dependent interaction analysis
+7. GTPase activity assays (effect of DTYMK on IFT22 nucleotide binding)
+
+REFERENCES:
+- "Binding of IFT22 to the intraflagellar transport complex is essential for
+  flagellum assembly"
+  EMBO J. 2019 May 2;38(9):e101251
+  PMID: 30940671
+  PMC: PMC6484408
+
+- "Intraflagellar transport protein RABL5/IFT22 recruits the BBSome to the basal
+  body through the GTPase ARL6/BBS3"
+  PNAS. 2020 Jan 14;117(2):2496-2505
+
+- "IFT proteins interact with HSET to promote supernumerary centrosome clustering
+  in mitosis"
+  PMC: PMC7271317
+
+- "The centrosomal OFD1 protein interacts with the translation machinery and
+  regulates the synthesis of specific targets"
+  Sci Rep. 2017
+  (Evidence for local protein synthesis at centrosomes)
+
+================================================================================
+9. CLINICAL AND RESEARCH IMPLICATIONS
+================================================================================
+
+9.1 DIAGNOSTIC APPLICATIONS
+
+DTYMK as a biomarker:
+- Pan-cancer prognostic marker
+- Differential diagnosis in colorectal, liver, lung, pancreatic cancers
+- Neurodevelopmental disorder genetic testing (whole exome sequencing)
+- Mitochondrial DNA depletion syndrome diagnosis
+
+9.2 THERAPEUTIC POTENTIAL
+
+CANCER THERAPY:
+- DTYMK inhibition in LKB1-mutant lung cancer (synthetic lethality)
+- Combination with oxaliplatin in hepatocellular carcinoma
+- Potential immunotherapy biomarker
+
+CHALLENGES:
+- No specific DTYMK inhibitor currently available
+- Need to avoid toxicity to normal rapidly dividing cells
+- Tumor-specific delivery strategies required
+
+9.3 RARE DISEASE MANAGEMENT
+
+For DTYMK-deficient patients:
+- Currently no effective treatment
+- Supportive care for neurological symptoms
+- Seizure management
+- Genetic counseling for families
+- Prenatal/preimplantation genetic diagnosis possible
+
+9.4 RESEARCH PRIORITIES
+
+Key unanswered questions:
+1. Mechanism of neural-specific vulnerability to DTYMK deficiency
+2. Tissue-specific differences in nucleotide salvage pathway reliance
+3. Potential for gene therapy or enzyme replacement
+4. Small molecule chaperones to stabilize mutant DTYMK
+5. Alternative dTTP synthesis pathway activation
+6. Role in centrosome/basal body biology (if any)
+7. Validation of IFT22 interaction and functional significance
+
+================================================================================
+10. SUMMARY AND CONCLUSIONS
+================================================================================
+
+DTYMK is a critical nucleotide metabolism enzyme essential for:
+- dTTP biosynthesis (both de novo and salvage pathways)
+- DNA replication and genome stability
+- Cell proliferation and S phase progression
+- Neuronal survival and brain development
+- Mitochondrial DNA maintenance
+
+DISEASE RELEVANCE:
+Loss-of-function mutations cause devastating neurodevelopmental disorders with:
+- Severe microcephaly
+- Neurodegeneration
+- Early lethality
+- mtDNA depletion
+
+Overexpression in cancer associates with:
+- Poor prognosis across multiple tumor types
+- Therapeutic vulnerabilities (LKB1-mutant cancers)
+- Immune microenvironment alterations
+
+CILIARY CONNECTION - ASSESSMENT:
+Direct evidence: NONE identified in literature
+Theoretical possibilities: Multiple plausible mechanisms
+Interaction with IFT22: Requires experimental validation
+
+The predicted DTYMK-IFT22 interaction (ipSAE = 0.580) represents an intriguing
+finding that could reveal:
+- Novel non-canonical roles for DTYMK
+- Unexpected metabolic functions of IFT proteins
+- Links between nucleotide metabolism and ciliogenesis
+- Centrosomal nucleotide pool regulation
+
+However, this remains speculative pending experimental confirmation.
+
+RESEARCH RECOMMENDATION:
+Given the medium-confidence prediction and lack of prior evidence linking DTYMK
+to ciliary biology, this interaction should be considered a hypothesis-generating
+finding requiring rigorous validation through biochemical and cell biological
+approaches.
+
+================================================================================
+11. KEY REFERENCES (ORGANIZED BY TOPIC)
+================================================================================
+
+BASIC FUNCTION AND STRUCTURE:
+- OMIM Entry *188345: https://omim.org/entry/188345
+- "Structural and functional analysis of human thymidylate kinase isoforms"
+  https://www.tandfonline.com/doi/full/10.1080/15257770.2021.2023748
+
+NEURODEVELOPMENTAL DISEASE:
+- "DTYMK is essential for genome integrity and neuronal survival"
+  Acta Neuropathol. 2022 Feb;143(2):245-262
+  DOI: 10.1007/s00401-021-02394-0
+  PMID: 34918187, PMC: PMC8742820
+
+- "Deoxythymidylate kinase, DTYMK, is a novel gene for mitochondrial DNA
+  depletion syndrome"
+  Clin Chim Acta. 2019 Sep;496:80-86
+  DOI: 10.1016/j.cca.2019.06.028
+  PMID: 31271740
+
+- "Childhood-Onset Neurodegeneration With Progressive Microcephaly (CONPM) due
+  to a DTYMK Homozygous Pathogenic Variant"
+  Am J Med Genet A. 2025
+  DOI: 10.1002/ajmg.a.64187
+
+CANCER - LUNG (LKB1 SYNTHETIC LETHALITY):
+- "Metabolic and Functional Genomic Studies Identify Deoxythymidylate Kinase as
+  a Target in LKB1-Mutant Lung Cancer"
+  Cancer Discov. 2013 Aug;3(8):870-879
+  DOI: 10.1158/2159-8290.CD-13-0015
+  PMID: 23715154, PMC: PMC3753578
+
+CANCER - HEPATOCELLULAR CARCINOMA:
+- "Inhibition of DTYMK significantly restrains the growth of HCC and increases
+  sensitivity to oxaliplatin"
+  Cell Death Dis. 2021 Nov 18;12(11):1093
+  DOI: 10.1038/s41419-021-04375-3
+  PMID: 34795209, PMC: PMC8602592
+
+- "DTYMK Expression Predicts Prognosis and Chemotherapeutic Response and
+  Correlates with Immune Infiltration in Hepatocellular Carcinoma"
+  PMC: PMC8349219
+
+CANCER - COLORECTAL:
+- "The Impact of DTYMK as a Prognostic Marker in Colorectal Cancer"
+  World J Oncol. 2023
+  PMC: PMC9990730
+
+CANCER - PANCREATIC:
+- "Deoxythymidylate kinase (DTYMK) participates in cell cycle arrest to promote
+  pancreatic adenocarcinoma progression regulated by miR-491-5p through TP53 and
+  is associated with tumor immune infiltration"
+  J Gastrointest Oncol. 2023
+  PMC: PMC10331742
+
+CANCER - PAN-CANCER ANALYSES:
+- "Deoxythymidylate Kinase as a Promising Marker for Predicting Prognosis and
+  Immune Cell Infiltration of Pan-cancer"
+  Front Mol Biosci. 2022 Jul 12;9:887059
+  PMID: 35903153, PMC: PMC9315941
+
+- "Pan-cancer analysis of prognostic and immunological role of DTYMK in human tumors"
+  Front Genet. 2022 Sep 13;13:989460
+  PMID: 36159971
+
+- "Comprehensive analysis of DTYMK in pan-cancer and verification in lung
+  adenocarcinoma"
+  PMID: 36094557
+
+ANIMAL MODELS:
+- "Differential expression of enzymes in thymidylate biosynthesis in zebrafish
+  at different developmental stages: implications for dtymk mutation-caused
+  neurodegenerative disorders"
+  BMC Neurosci. 2022
+  DOI: 10.1186/s12868-022-00704-0
+
+NUCLEOTIDE METABOLISM:
+- "Identification of a de novo thymidylate biosynthesis pathway in mammalian
+  mitochondria"
+  PNAS. 2011 Sep 13;108(37):15163-8
+  PMC: PMC3174652
+
+- "Control of dTTP pool size by anaphase promoting complex/cyclosome is essential
+  for the maintenance of genetic stability"
+  PMC: PMC1186191
+
+IFT22 BIOLOGY:
+- "Binding of IFT22 to the intraflagellar transport complex is essential for
+  flagellum assembly"
+  EMBO J. 2019 May 2;38(9):e101251
+  PMID: 30940671, PMC: PMC6484408
+
+- "Intraflagellar transport protein RABL5/IFT22 recruits the BBSome to the basal
+  body through the GTPase ARL6/BBS3"
+  PNAS. 2020 Jan 14;117(2):2496-2505
+
+- "IFT proteins interact with HSET to promote supernumerary centrosome clustering
+  in mitosis"
+  PMC: PMC7271317
+
+CENTROSOME BIOLOGY:
+- "The centrosomal OFD1 protein interacts with the translation machinery and
+  regulates the synthesis of specific targets"
+  Sci Rep. 2017
+  (Evidence for local protein synthesis at centrosomes)
+
+- "Centrosome biogenesis and function: centrosomics brings new understanding"
+  Nat Rev Mol Cell Biol.
+
+================================================================================
+REPORT COMPILED: 2025-11-17
+INTERACTION CONTEXT: DTYMK-IFT22 (ipSAE = 0.580)
+STATUS: Comprehensive literature review completed
+RECOMMENDATION: Experimental validation of predicted interaction required
+================================================================================

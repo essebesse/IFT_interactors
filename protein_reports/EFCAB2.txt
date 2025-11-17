@@ -1,0 +1,869 @@
+================================================================================
+COMPREHENSIVE SCIENTIFIC REPORT: EFCAB2 (EF-HAND CALCIUM BINDING DOMAIN 2)
+================================================================================
+
+INTERACTION CONTEXT:
+- Interactor: TULP3 (Tubby-like protein 3, IFT-A cargo adaptor)
+- ipSAE Score: 0.582 (Medium confidence)
+- Analysis: AlphaFold3 prediction (v4 ipSAE scoring)
+
+================================================================================
+1. GENE AND PROTEIN INFORMATION
+================================================================================
+
+Gene Name: EFCAB2 (EF-Hand Calcium Binding Domain 2)
+Alternative Names: DRC8, CFAP200, MGC12458
+UniProt ID: Q5VUJ9
+OMIM: *619617
+
+CHROMOSOMAL LOCATION:
+- Chromosome: 1q44
+- Coordinates: Chr 1: 244,969,705-245,127,164 (forward strand)
+- Gene Structure: 7 exons
+- Transcript: Single protein-coding transcript (2,551 bp cDNA)
+
+PROTEIN CHARACTERISTICS:
+- Length: 164-269 amino acids (varies by source/species)
+- Molecular Weight: ~18.9 kDa (mouse)
+- Isoelectric Point: 4.3 (mouse)
+- Structural Features: 7 α-helices, 2 EF-hand motifs
+- Domains: Two EF-hand calcium-binding domains (helix-loop-helix motifs)
+  * EF-hand 1: N-terminal
+  * EF-hand 2: C-terminal
+
+STRUCTURAL DATA:
+- AlphaFold Structure: Available (UniProt Q5VUJ9)
+- PDB Entry: 8j07 (experimental structure, axonemal complex, 100% coverage
+  residues 1-269)
+- 3D Structure: AlphaFold Database predicts 7 α-helices with confidence
+  scores (pLDDT metric)
+
+================================================================================
+2. KNOWN CILIARY ROLE: NEXIN-DYNEIN REGULATORY COMPLEX (N-DRC) SUBUNIT
+================================================================================
+
+PRIMARY FUNCTION:
+EFCAB2 (DRC8) is a subunit of the highly conserved nexin-dynein regulatory
+complex (N-DRC), which is essential for ciliary and flagellar motility.
+
+N-DRC COMPOSITION AND STRUCTURE:
+- The N-DRC contains at least 11 subunits (DRC1-DRC11)
+- Forms cross-bridges between outer doublet microtubules in the axoneme
+- Acts as both a structural linker and regulatory hub
+- Localizes to the proximal lobe of the N-DRC linker domain
+
+DRC8 STRUCTURAL ROLE:
+- DRC8 depends on DRC11 for assembly into the flagellar axoneme
+- DRC8/DRC11 form a stable subcomplex in the proximal lobe
+- This subcomplex is required for stable contacts with the neighboring
+  B-tubule
+- Critical for maintaining alignment and integrity of the distal axoneme
+- Regulates microtubule sliding in motile axonemes
+
+FUNCTIONAL SIGNIFICANCE:
+- The N-DRC prevents excessive microtubule sliding
+- Converts interdoublet sliding into ciliary bending
+- Regulates dynein motor activity
+- Maintains structural integrity during ciliary beat cycles
+- The DRC8/11 subunits contain calcium-binding (EF-hand) and calmodulin-
+  binding motifs, suggesting calcium-dependent regulation
+
+KEY REFERENCES:
+- PMID: 31659045 - Oda et al. (2019) "Scaffold subunits support associated
+  subunit assembly in the Chlamydomonas ciliary nexin-dynein regulatory
+  complex" PNAS 116(46): 23152-23161
+  DOI: 10.1073/pnas.1910960116
+  PMC: PMC6859327
+
+- PMID: 25411337 - Oda et al. (2015) "Detailed structural and biochemical
+  characterization of the nexin-dynein regulatory complex" Mol Biol Cell
+  26(2): 294-304
+  DOI: 10.1091/mbc.E14-09-1367
+  PMC: PMC4294676
+
+- PMID: 20008565 - Heuser et al. (2009) "The dynein regulatory complex is
+  the nexin link and a major regulatory node in cilia and flagella"
+  J Cell Biol 187(6): 921-933
+  DOI: 10.1083/jcb.200908067
+  PMC: PMC2806320
+
+- Nature Communications (2023) "Integrated modeling of the Nexin-dynein
+  regulatory complex reveals its regulatory mechanism"
+  DOI: 10.1038/s41467-023-41480-7
+  PMC: PMC10312493
+
+================================================================================
+3. CALCIUM BINDING PROPERTIES
+================================================================================
+
+EF-HAND STRUCTURE:
+EFCAB2 contains two EF-hand motifs, which are the canonical helix-loop-helix
+calcium-binding domains found in many calcium sensor proteins.
+
+CALCIUM BINDING SITES:
+- First EF-hand: Located in N-terminal region
+- Second EF-hand: Located in C-terminal region
+- Alignment with calmodulin predicts 6 residues involved in Ca2+ binding
+- Both EF-hands possess conserved hydrophobic residues
+
+BIOCHEMICAL CHARACTERIZATION:
+- Demonstrated calcium-binding activity in mouse testis and sperm
+- Physiological function confirmed as Ca2+ binding through multiple
+  biochemical assays
+- Specific Kd values not yet experimentally determined for EFCAB2
+- General EF-hand proteins bind calcium with micromolar affinity (μM range)
+
+FUNCTIONAL IMPLICATIONS:
+- Calcium binding likely induces conformational changes in EFCAB2
+- Ca2+-dependent regulation of N-DRC function and ciliary motility
+- May mediate mechanosensitive responses through calcium signaling
+- DRC8 (EFCAB2) EF-hand domain could bind Ca2+, while DRC11 contains
+  calmodulin-binding motif, suggesting coordinated calcium regulation
+
+REFERENCE:
+- PMID: 30933994 - Li et al. (2019) "EFCAB2 is a novel calcium-binding
+  protein in mouse testis and sperm" PLoS One 14(3): e0214687
+  DOI: 10.1371/journal.pone.0214687
+  PMC: PMC6443151
+
+================================================================================
+4. KNOWN PROTEIN INTERACTIONS
+================================================================================
+
+CONFIRMED INTERACTIONS:
+
+1. DRC11 (Primary Interaction Partner):
+   - Required for DRC8 assembly into axoneme
+   - Forms stable subcomplex in proximal lobe
+   - DRC11 contains calmodulin-binding motif and AAA domain
+   - Together regulate N-DRC stability and B-tubule contacts
+   PMID: 31659045
+
+2. N-DRC Subunits:
+   - Interacts with DRC1, DRC2, DRC4, DRC5, DRC7 within complex
+   - Part of integrated 11-subunit complex
+   - Structural interactions maintain linker domain architecture
+
+3. Outer Doublet Microtubules:
+   - Direct contact with B-tubule of neighboring doublet
+   - Structural cross-bridge formation
+   - Regulates microtubule sliding dynamics
+
+4. TULP3 (This Study):
+   - ipSAE = 0.582 (medium confidence)
+   - AlphaFold3 prediction
+   - Potential role in IFT-A complex cargo trafficking
+   - Novel interaction requiring experimental validation
+
+POTENTIAL FUNCTIONAL PARTNERS:
+
+1. Calmodulin/Calmodulin-like Proteins:
+   - DRC11 partner contains calmodulin-binding domain
+   - Likely mediates calcium-dependent regulation
+   - Could regulate DRC8/11 subcomplex activity
+
+2. Dynein Motors:
+   - N-DRC regulates dynein activity
+   - Indirect regulation through structural contacts
+   - Calcium-dependent modulation of motor function
+
+3. IFT Machinery:
+   - Potential link through TULP3 interaction
+   - May participate in ciliary cargo trafficking
+   - Could regulate IFT dynamics via calcium signaling
+
+================================================================================
+5. DISEASE ASSOCIATIONS
+================================================================================
+
+PRIMARY CILIARY DYSKINESIA (PCD):
+EFCAB2/DRC8 is associated with Primary Ciliary Dyskinesia, a genetic disorder
+affecting motile cilia function.
+
+PCD CHARACTERISTICS:
+- Chronic respiratory infections
+- Laterality defects (situs inversus)
+- Male infertility
+- Chronic sinusitis
+- Bronchiectasis
+
+N-DRC AND PCD:
+- Mutations in multiple N-DRC subunits cause PCD
+- DRC1 mutations identified in PCD patients (PMID: 23354437)
+- GAS8 mutations disrupt N-DRC and cause PCD (PMID: 26387594)
+- >50 genes cause PCD; 20-30% of cases remain genetically unresolved
+- EFCAB2 mutations in PCD patients not extensively documented in current
+  literature
+
+EPILEPSY ASSOCIATION:
+- EFCAB2 linked to epilepsy in genetic databases
+- Mechanism unclear; may relate to neuronal cilia function
+- Requires further investigation
+
+MALE INFERTILITY:
+- EFCAB2 expressed in spermatogenic cells and sperm flagella
+- N-DRC defects cause sperm immotility
+- PCD patients often have impaired sperm motility
+- Component of axonemal structure critical for flagellar beat
+
+POTENTIAL FOR FUTURE DISEASE DISCOVERY:
+Given that:
+- EFCAB2 is part of essential N-DRC complex
+- N-DRC mutations cause severe ciliopathies
+- Many PCD cases remain genetically unsolved
+→ EFCAB2 mutations may be discovered in future PCD cohorts
+
+KEY REFERENCES:
+- PMID: 23354437 - Wirschell et al. (2013) "The nexin-dynein regulatory
+  complex subunit DRC1 is essential for motile cilia function in algae and
+  humans" Nature Genetics 45(3): 262-268
+  DOI: 10.1038/ng.2533
+
+- PMID: 26387594 - Horani et al. (2015) "Loss-of-Function GAS8 Mutations
+  Cause Primary Ciliary Dyskinesia and Disrupt the Nexin-Dynein Regulatory
+  Complex" Am J Hum Genet 97(4): 570-582
+  DOI: 10.1016/j.ajhg.2015.08.012
+  PMC: PMC4596893
+
+- GeneReviews: "Primary Ciliary Dyskinesia"
+  NCBI Bookshelf NBK1122
+  URL: https://www.ncbi.nlm.nih.gov/books/NBK1122/
+
+================================================================================
+6. PHENOTYPES AND KNOCKOUT MODELS
+================================================================================
+
+MOUSE KNOCKOUT DATA:
+International Mouse Phenotyping Consortium (IMPC) has characterized Efcab2
+knockout mice.
+
+CURRENT STATUS:
+- IMPC gene ID: MGI:1915476
+- Phenotyping data available at mousephenotype.org
+- Comprehensive knockout phenotyping screens applied
+- Data freely available for download
+
+DISEASE ASSOCIATIONS (IMPC):
+- Currently 0 direct human disease associations in IMPC database
+- Comparison with OMIM, Orphanet, and DECIPHER ongoing
+- May update as more phenotyping completed
+
+EXPECTED PHENOTYPES (Based on N-DRC Function):
+Given EFCAB2's role in N-DRC, predicted phenotypes include:
+
+1. Ciliary Motility Defects:
+   - Impaired mucociliary clearance
+   - Respiratory dysfunction
+   - Hydrocephalus (ependymal cilia defects)
+
+2. Laterality Defects:
+   - Randomized left-right asymmetry
+   - Heterotaxy
+   - Nodal cilia dysfunction
+
+3. Male Infertility:
+   - Immotile or dysmotile sperm
+   - Flagellar structural defects
+   - Asthenozoospermia
+
+4. Other Potential Phenotypes:
+   - Chronic sinusitis
+   - Otitis media (middle ear cilia)
+   - Retinal degeneration (photoreceptor connecting cilia)
+
+CHLAMYDOMONAS MUTANTS:
+- drc8 mutants in Chlamydomonas show:
+  * Altered flagellar waveform
+  * Disrupted N-DRC linker structure
+  * Loss of DRC8/11 subcomplex
+  * Impaired B-tubule contacts
+  * Reduced swimming velocity
+
+FUTURE RESEARCH NEEDS:
+- Detailed phenotyping of Efcab2-/- mice
+- Ultrastructural analysis of axonemes
+- High-speed video microscopy of ciliary/flagellar beating
+- Assessment of calcium-dependent ciliary regulation
+- Human patient screening for EFCAB2 mutations
+
+REFERENCES:
+- IMPC Database: https://www.mousephenotype.org/data/genes/MGI:1915476
+
+- PMID: 36305825 - de Angelis et al. (2022) "The International Mouse
+  Phenotyping Consortium: comprehensive knockout phenotyping underpinning the
+  study of human disease" Nucleic Acids Res 51(D1): D1038-D1045
+  DOI: 10.1093/nar/gkac1011
+  PMC: PMC9825559
+
+================================================================================
+7. NEURONAL FUNCTION AND BRAIN EXPRESSION
+================================================================================
+
+TISSUE EXPRESSION (Human Protein Atlas):
+- General cytoplasmic expression in most tissues
+- Tissue expression data available at proteinatlas.org (ENSG00000203666-EFCAB2)
+- Brain-specific expression data available
+- RNA-seq and proteomics data accessible
+
+NEURONAL EXPRESSION:
+Limited specific data on EFCAB2 neuronal function. However:
+
+1. Motile Cilia in Brain:
+   - Ependymal cilia line ventricles
+   - Critical for cerebrospinal fluid flow
+   - N-DRC essential for ependymal ciliary beating
+   - Defects can cause hydrocephalus
+
+2. Potential Neuronal Roles:
+   - Primary cilia on neurons serve sensory functions
+   - Some neurons have motile cilia during development
+   - Calcium signaling in neuronal cilia regulates signaling pathways
+   - EFCAB2 epilepsy association suggests neuronal relevance
+
+3. Related Proteins in Neurons:
+   - NECAB2 (EFCBP2) - different protein, confusingly similar name
+   - NECAB2 is abundant in brain, localizes to synapses
+   - NECAB2 binds calcium and regulates neuronal excitability
+   - No direct evidence EFCAB2 functions similarly
+
+BRAIN-SPECIFIC CONSIDERATIONS:
+- Most brain cells lack motile cilia (except ependyma, embryonic development)
+- Primary cilia on neurons lack N-DRC (not motile)
+- EFCAB2's primary role likely in ependymal cells, not neurons
+- Epilepsy association may reflect ependymal dysfunction or developmental
+  defects
+
+TESTIS-SPECIFIC EXPRESSION (Mouse):
+- Efcab2 mRNA detected ONLY in testis among mouse tissues
+- NOT detected in brain, heart, liver, kidney, spleen
+- Localized to spermatogenic cells (primary spermatocytes → elongate
+  spermatids)
+- Specific localization to principal piece of sperm flagellum
+
+EVOLUTIONARY NOTE:
+This testis-specific expression in mouse contrasts with broader expression
+in human tissues, suggesting species-specific expression regulation.
+
+REFERENCES:
+- Human Protein Atlas: https://www.proteinatlas.org/ENSG00000203666-EFCAB2
+- PMID: 30933994 (mouse testis expression)
+
+================================================================================
+8. TULP3 CONNECTION: MECHANISTIC HYPOTHESES
+================================================================================
+
+TULP3 OVERVIEW:
+TULP3 (Tubby-like protein 3) is a critical ciliary cargo adapter that bridges
+the IFT-A complex and membrane-associated ciliary proteins.
+
+TULP3 FUNCTION:
+- Binds IFT-A complex via N-terminal helix
+- Binds membrane cargoes via C-terminal tubby domain
+- Recognizes phosphoinositide PI(4,5)P2
+- Traffics diverse cargoes into primary cilia:
+  * GPCRs (SSTR3, MCHR1, HTR6, GPR161)
+  * Polycystin-1/2 complex (calcium channels!)
+  * ARL13B (palmitoylated GTPase)
+  * Other lipidated and membrane proteins
+
+WHY WOULD TULP3 INTERACT WITH EFCAB2?
+
+HYPOTHESIS 1: Calcium Channel Trafficking Regulation
+- TULP3 traffics polycystin-1/2, which are calcium channels
+- Polycystins mediate mechanosensitive calcium influx in cilia
+- EFCAB2 is a calcium sensor protein
+- Potential feedback: EFCAB2 senses ciliary calcium levels and regulates
+  TULP3-mediated trafficking of more calcium channels
+- Creates calcium-dependent cargo trafficking regulation
+
+HYPOTHESIS 2: IFT-A Complex Connection
+- TULP3 binds IFT-A complex
+- IFT particle movement is regulated by calcium (PMID: 24210618)
+- EFCAB2 calcium sensor could modulate IFT-A/TULP3 interactions
+- Calcium-dependent cargo loading/unloading mechanism
+- Links cellular calcium status to ciliary protein trafficking
+
+HYPOTHESIS 3: Dual Localization
+- EFCAB2 primarily functions in motile cilia (N-DRC)
+- TULP3 primarily functions in primary cilia (IFT-A cargo adapter)
+- Some proteins function in both contexts
+- EFCAB2 may have undiscovered role in primary cilia
+- Could regulate calcium-dependent processes in primary cilia
+
+HYPOTHESIS 4: Sperm Flagella Specialization
+- Both proteins expressed in sperm flagella
+- EFCAB2 localized to principal piece of sperm flagellum
+- Sperm flagella require calcium signaling for:
+  * Hyperactivated motility
+  * Capacitation
+  * Acrosome reaction
+- TULP3 may traffic calcium-related cargoes in sperm
+- EFCAB2 may sense calcium and regulate flagellar beating
+
+HYPOTHESIS 5: False Positive / Indirect Interaction
+- ipSAE = 0.582 (medium confidence, not high)
+- May represent transient or weak interaction
+- Could be indirect (mediated by other proteins)
+- Requires experimental validation (Co-IP, Y2H, proximity labeling)
+
+MECHANISTIC MODEL (Speculative):
+┌─────────────────────────────────────────────────────────────┐
+│ Ciliary Calcium Regulation of Cargo Trafficking             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Extracellular Stimulus → Polycystin Channels → Ca2+ influx│
+│                                    ↓                        │
+│                           EFCAB2 (calcium sensor)           │
+│                                    ↓                        │
+│                    Conformational Change                    │
+│                                    ↓                        │
+│            Modulates TULP3-IFT-A Interaction                │
+│                                    ↓                        │
+│        Regulates Trafficking of More Calcium Channels       │
+│                                    ↓                        │
+│               Feedback Control of Ciliary Calcium           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+EXPERIMENTAL VALIDATION NEEDED:
+1. Co-immunoprecipitation (Co-IP) from ciliated cells
+2. Proximity labeling (BioID, APEX) in cilia
+3. Yeast two-hybrid confirmation
+4. Localization studies: Do they colocalize in cilia?
+5. Functional studies: Does calcium affect interaction?
+6. Does EFCAB2 regulate TULP3 cargo trafficking?
+7. Does EFCAB2 exist in primary cilia or only motile cilia?
+
+KEY REFERENCES:
+- PMID: 20889716 - Mukhopadhyay et al. (2010) "TULP3 bridges the IFT-A
+  complex and membrane phosphoinositides to promote trafficking of G protein-
+  coupled receptors into primary cilia" Genes Dev 24(19): 2180-2193
+  DOI: 10.1101/gad.1966210
+  PMC: PMC2947770
+
+- PMID: 28154160 - Badgandi et al. (2017) "Tubby family proteins are adapters
+  for ciliary trafficking of integral membrane proteins" J Cell Biol 216(3):
+  743-760
+  DOI: 10.1083/jcb.201607095
+  PMC: PMC5350516
+
+- DOI: 10.1091/mbc.E24-09-0426 - (2025) "A defined tubby domain β-barrel
+  surface region of TULP3 mediates ciliary trafficking of diverse cargoes"
+  Mol Biol Cell
+  PMC: PMC11742108
+
+================================================================================
+9. CILIARY CALCIUM SIGNALING AND IFT REGULATION
+================================================================================
+
+CALCIUM AS A CILIARY SECOND MESSENGER:
+Cilia are specialized calcium signaling compartments that respond to
+mechanical and chemical stimuli.
+
+CALCIUM CHANNELS IN CILIA:
+
+1. Polycystin-1/2 Complex:
+   - PC-1: GPCR-like receptor
+   - PC-2 (TRPP2): TRP calcium channel
+   - Form heterodimer in ciliary membrane
+   - Respond to fluid flow (mechanosensation)
+   - Mutations cause polycystic kidney disease
+   - TULP3 traffics polycystins to cilia
+
+2. TRP Channels:
+   - Multiple TRP family members in cilia
+   - TRPV4, TRPC1, TRPP2
+   - Respond to mechanical, thermal, chemical stimuli
+   - Regulate ciliary calcium homeostasis
+
+3. Voltage-Gated Calcium Channels:
+   - Present in some ciliary membranes
+   - Regulate ciliary excitability
+
+CALCIUM REGULATION OF IFT:
+Groundbreaking discovery: Calcium directly regulates IFT particle movement!
+
+KEY FINDINGS (PMID: 24210618):
+- Intraflagellar Ca2+ elevations regulate IFT particle movement
+- Highly compartmentalized calcium signaling within cilia
+- Ca2+ elevations initiate retrograde transport of paused IFT particles
+- Mechanosensitive: Gliding motility induces Ca2+ in trailing flagella
+- Clears accumulated IFT particles from individual flagella
+- Prevents futile tug-of-war between flagella
+
+MECHANISMS:
+1. Calcium affects IFT train pausing and accumulation
+2. Calcium regulates retrograde IFT initiation
+3. Calcium may regulate kinesin-II phosphorylation
+4. Calcium disrupts IFT-membrane interactions
+5. Spatial calcium compartments provide localized IFT control
+
+CILIARY LENGTH REGULATION:
+- IFT balance determines ciliary length
+- Assembly rate vs. disassembly rate
+- Calcium modulates IFT dynamics
+- Could regulate length through IFT particle distribution
+- Kinesin-II depletion at long lengths provides negative feedback
+
+INTEGRATION WITH EFCAB2:
+- EFCAB2 is calcium-binding protein in cilia (N-DRC)
+- Could sense ciliary calcium levels
+- May transduce calcium signals to regulate:
+  * Ciliary beating (via N-DRC regulation)
+  * IFT dynamics (via TULP3 interaction?)
+  * Cargo trafficking (via IFT-A modulation?)
+  * Ciliary length (via assembly/disassembly balance)
+
+CALCIUM-REGULATED CILIARY PROCESSES:
+┌────────────────────────────────────────────────┐
+│ Calcium Elevation in Cilia                    │
+│              ↓         ↓         ↓            │
+│         Motility    IFT      Signaling        │
+│         (N-DRC)   (Trains)   (GPCRs)          │
+│              ↓         ↓         ↓            │
+│    Beat Frequency  Cargo    Gene Expression   │
+│    Beat Pattern   Loading   (Hh, Wnt, etc.)   │
+└────────────────────────────────────────────────┘
+
+KEY REFERENCES:
+- PMID: 24210618 - Collingridge et al. (2013) "Compartmentalized calcium
+  signaling in cilia regulates intraflagellar transport" Curr Biol 23(22):
+  2311-2318
+  DOI: 10.1016/j.cub.2013.09.059
+
+- PMID: 15889307 - Nauli et al. (2006) "Polycystins: polymodal receptor/ion-
+  channel cellular sensors" Pflugers Arch 451(1): 264-276
+  DOI: 10.1007/s00424-005-1431-5
+
+- PMID: 33495279 - Collingridge et al. (2021) "Ca2+ elevations disrupt
+  interactions between intraflagellar transport and the flagella membrane in
+  Chlamydomonas" J Cell Biol 220(3): e202004061
+  DOI: 10.1083/jcb.202004061
+
+- Frontiers Cell Dev Biol (2021) "Intraflagellar Transport Proteins as
+  Regulators of Primary Cilia Length"
+  DOI: 10.3389/fcell.2021.661350
+
+- Cold Spring Harb Perspect Biol (2017) "Intraflagellar Transport and Ciliary
+  Dynamics"
+  DOI: 10.1101/cshperspect.a021998
+
+================================================================================
+10. EVOLUTIONARY CONSERVATION
+================================================================================
+
+DEEP EVOLUTIONARY CONSERVATION:
+EFCAB2 was present in the common ancestor of animals and fungi, indicating
+ancient origin and critical cellular function.
+
+PHYLOGENETIC CONSERVATION:
+Phylogenetic analysis of EFCAB2 across 10 eukaryotic orthologs shows
+extensive conservation from humans to zebrafish.
+
+SEQUENCE IDENTITY (% to Mouse EFCAB2):
+- Human: 85%
+- Chimpanzee: 85%
+- Macaque: 85%
+- Cow: 70-80% (estimated)
+- Zebrafish (Danio rerio): 62%
+
+STRUCTURAL CONSERVATION:
+- EF-hand motifs are conserved across all vertebrate orthologs
+- Both EF-hands contain conserved hydrophobic residues
+- α-helical structure maintained
+- Calcium-binding loop sequences preserved
+
+FUNCTIONAL CONSERVATION:
+Chlamydomonas reinhardtii (Green Alga):
+- drc8 gene encodes homologous protein
+- 166 amino acids with EF-hand domain
+- Component of N-DRC in flagellar axoneme
+- Essential for flagellar motility
+- Demonstrates conservation across >1 billion years of evolution
+
+SPECIES-SPECIFIC VARIATIONS:
+Despite overall conservation, some variations exist:
+
+Mouse vs. Human Differences:
+- Mouse: Testis-specific expression
+- Human: Broader tissue expression (cytoplasmic, multiple tissues)
+- Suggests regulatory evolution of expression patterns
+- Protein function likely conserved despite expression differences
+
+EVOLUTIONARY IMPLICATIONS:
+1. N-DRC is ancient, predating animal-plant divergence
+2. Calcium regulation of ciliary motility is ancestral mechanism
+3. EF-hand domains under strong selective constraint
+4. Critical cellular function maintained across eukaryotes
+5. Ciliary motility mechanisms highly conserved
+
+EFCAB PROTEIN FAMILY EVOLUTION:
+The EFCAB family has expanded in vertebrates:
+- EFCAB1: EF-hand calcium-binding domain 1 (~32 kDa)
+- EFCAB2: DRC8, ciliary/flagellar function
+- EFCAB3: EF-hand calcium-binding domain 3
+- EFCAB9: Sperm CatSper channel regulator, pH/Ca2+ sensor
+  * Essential for sperm motility
+  * Testis-specific expression
+  * Regulates CatSper calcium channel
+  * PMID: 31056283
+
+Family members show tissue-specific expression and specialized functions
+while maintaining calcium-binding capability.
+
+CONSERVATION SUMMARY:
+┌─────────────────────────────────────────────────────────┐
+│ Feature              Conservation Level                 │
+├─────────────────────────────────────────────────────────┤
+│ EF-hand domains      ★★★★★ (Extremely high)            │
+│ N-DRC function       ★★★★★ (Extremely high)            │
+│ Calcium binding      ★★★★★ (Extremely high)            │
+│ Protein sequence     ★★★★☆ (High, 62-85% identity)     │
+│ Tissue expression    ★★★☆☆ (Moderate, species-specific)│
+└─────────────────────────────────────────────────────────┘
+
+KEY REFERENCES:
+- PMID: 30933994 - Phylogenetic analysis of EFCAB2 orthologs
+
+- PMID: 31056283 - Hwang et al. (2019) "Dual Sensing of Physiologic pH and
+  Calcium by EFCAB9 Regulates Sperm Motility" Cell 177(6): 1480-1494
+  DOI: 10.1016/j.cell.2019.03.047
+  PMC: PMC8808721
+
+================================================================================
+11. SUMMARY AND SIGNIFICANCE
+================================================================================
+
+EFCAB2 (DRC8) IN CONTEXT:
+EFCAB2 is a conserved EF-hand calcium-binding protein that functions as a
+critical subunit of the nexin-dynein regulatory complex (N-DRC) in motile
+cilia and flagella.
+
+KEY BIOLOGICAL ROLES:
+1. Structural: Maintains axonemal integrity via N-DRC cross-bridges
+2. Regulatory: Calcium-dependent modulation of ciliary motility
+3. Mechanistic: Links calcium signaling to dynein motor regulation
+4. Clinical: Implicated in primary ciliary dyskinesia and male infertility
+
+SIGNIFICANCE OF TULP3 INTERACTION:
+The predicted EFCAB2-TULP3 interaction (ipSAE = 0.582) is intriguing because:
+
+1. Links Two Ciliary Systems:
+   - EFCAB2: Motile cilia specialist (N-DRC)
+   - TULP3: Primary cilia specialist (IFT-A cargo adapter)
+   - Suggests cross-talk between ciliary subsystems
+
+2. Calcium-Cargo Connection:
+   - TULP3 traffics calcium channels (polycystins)
+   - EFCAB2 senses calcium
+   - Potential feedback regulation of calcium channel delivery
+
+3. IFT Regulation:
+   - Calcium regulates IFT particle movement
+   - EFCAB2 could modulate TULP3-IFT-A interactions
+   - Novel mechanism for calcium control of cargo trafficking
+
+4. Sperm Flagella Relevance:
+   - Both proteins in sperm flagella
+   - Calcium critical for sperm function
+   - May coordinate flagellar assembly and calcium signaling
+
+UNANSWERED QUESTIONS:
+1. Is EFCAB2 present in primary cilia, or only motile cilia?
+2. What is the precise Kd for EFCAB2 calcium binding?
+3. Does calcium binding change EFCAB2 structure or interactions?
+4. Do EFCAB2 and TULP3 colocalize in any cell type?
+5. Is the interaction calcium-dependent?
+6. Are there EFCAB2 mutations in PCD patients?
+7. What is the EFCAB2 knockout phenotype in mice?
+8. Does EFCAB2 regulate cargo trafficking via TULP3?
+
+EXPERIMENTAL PRIORITIES:
+1. Validate EFCAB2-TULP3 interaction (Co-IP, BioID)
+2. Determine calcium-dependence of interaction
+3. Localization studies in ciliated cells
+4. Biochemical characterization (Kd, stoichiometry)
+5. Functional assays (cargo trafficking, IFT dynamics)
+6. Human genetics (PCD patient screening)
+7. Mouse knockout phenotyping
+
+BROADER IMPLICATIONS:
+This interaction hints at a sophisticated calcium-dependent regulatory network
+in cilia that coordinates:
+- Structural integrity (N-DRC)
+- Motor activity (dyneins)
+- Cargo trafficking (IFT-A/TULP3)
+- Signaling (calcium channels, GPCRs)
+- Cellular responses (motility, sensation, signal transduction)
+
+Understanding EFCAB2 function and its interaction with TULP3 may reveal
+fundamental principles of ciliary calcium signaling and its integration with
+protein trafficking systems.
+
+================================================================================
+12. COMPLETE REFERENCE LIST
+================================================================================
+
+PRIMARY RESEARCH ARTICLES:
+
+1. PMID: 30933994 | PMC: PMC6443151
+   Li M, Shen Y, Qi H, et al. (2019)
+   "EFCAB2 is a novel calcium-binding protein in mouse testis and sperm"
+   PLoS One 14(3): e0214687
+   DOI: 10.1371/journal.pone.0214687
+
+2. PMID: 31659045 | PMC: PMC6859327
+   Oda T, Yanagisawa H, Yagi T, Kikkawa M (2019)
+   "Scaffold subunits support associated subunit assembly in the
+   Chlamydomonas ciliary nexin-dynein regulatory complex"
+   PNAS 116(46): 23152-23161
+   DOI: 10.1073/pnas.1910960116
+
+3. PMID: 25411337 | PMC: PMC4294676
+   Oda T, Yanagisawa H, Kikkawa M (2015)
+   "Detailed structural and biochemical characterization of the nexin-dynein
+   regulatory complex"
+   Mol Biol Cell 26(2): 294-304
+   DOI: 10.1091/mbc.E14-09-1367
+
+4. PMID: 24210618
+   Collingridge P, Brownlee C, Wheeler GL (2013)
+   "Compartmentalized calcium signaling in cilia regulates intraflagellar
+   transport"
+   Curr Biol 23(22): 2311-2318
+   DOI: 10.1016/j.cub.2013.09.059
+
+5. PMID: 20889716 | PMC: PMC2947770
+   Mukhopadhyay S, Wen X, Chih B, et al. (2010)
+   "TULP3 bridges the IFT-A complex and membrane phosphoinositides to promote
+   trafficking of G protein-coupled receptors into primary cilia"
+   Genes Dev 24(19): 2180-2193
+   DOI: 10.1101/gad.1966210
+
+6. PMID: 23354437
+   Wirschell M, Hendrickson T, Sale WS (2013)
+   "The nexin-dynein regulatory complex subunit DRC1 is essential for motile
+   cilia function in algae and humans"
+   Nature Genetics 45(3): 262-268
+   DOI: 10.1038/ng.2533
+
+7. PMID: 26387594 | PMC: PMC4596893
+   Horani A, Brody SL, Ferkol TW, et al. (2015)
+   "Loss-of-Function GAS8 Mutations Cause Primary Ciliary Dyskinesia and
+   Disrupt the Nexin-Dynein Regulatory Complex"
+   Am J Hum Genet 97(4): 570-582
+   DOI: 10.1016/j.ajhg.2015.08.012
+
+8. PMID: 28154160 | PMC: PMC5350516
+   Badgandi HB, Hwang SH, Shimada IS, Loriot E, Mukhopadhyay S (2017)
+   "Tubby family proteins are adapters for ciliary trafficking of integral
+   membrane proteins"
+   J Cell Biol 216(3): 743-760
+   DOI: 10.1083/jcb.201607095
+
+9. PMID: 31056283 | PMC: PMC8808721
+   Hwang JY, Mannowetz N, Zhang Y, et al. (2019)
+   "Dual Sensing of Physiologic pH and Calcium by EFCAB9 Regulates Sperm
+   Motility"
+   Cell 177(6): 1480-1494
+   DOI: 10.1016/j.cell.2019.03.047
+
+10. PMID: 20008565 | PMC: PMC2806320
+    Heuser T, Raytchev M, Krell J, Porter ME, Nicastro D (2009)
+    "The dynein regulatory complex is the nexin link and a major regulatory
+    node in cilia and flagella"
+    J Cell Biol 187(6): 921-933
+    DOI: 10.1083/jcb.200908067
+
+11. PMID: 15889307
+    Nauli SM, Zhou J (2006)
+    "Polycystins: polymodal receptor/ion-channel cellular sensors"
+    Pflugers Arch 451(1): 264-276
+    DOI: 10.1007/s00424-005-1431-5
+
+12. PMID: 33495279
+    Collingridge P, Brownlee C, Wheeler GL (2021)
+    "Ca2+ elevations disrupt interactions between intraflagellar transport
+    and the flagella membrane in Chlamydomonas"
+    J Cell Biol 220(3): e202004061
+    DOI: 10.1083/jcb.202004061
+
+13. PMID: 36305825 | PMC: PMC9825559
+    de Angelis MH, Nicholson G, Selloum M, et al. (2022)
+    "The International Mouse Phenotyping Consortium: comprehensive knockout
+    phenotyping underpinning the study of human disease"
+    Nucleic Acids Res 51(D1): D1038-D1045
+    DOI: 10.1093/nar/gkac1011
+
+14. PMC: PMC10312493
+    Ma M, Stoyanova M, Rademacher G, et al. (2023)
+    "Integrated modeling of the Nexin-dynein regulatory complex reveals its
+    regulatory mechanism"
+    Nature Communications 14: 5741
+    DOI: 10.1038/s41467-023-41480-7
+
+15. PMC: PMC11742108
+    (2025) "A defined tubby domain β-barrel surface region of TULP3 mediates
+    ciliary trafficking of diverse cargoes"
+    Mol Biol Cell
+    DOI: 10.1091/mbc.E24-09-0426
+
+REVIEW ARTICLES:
+
+16. DOI: 10.3389/fcell.2021.661350
+    "Intraflagellar Transport Proteins as Regulators of Primary Cilia Length"
+    Front Cell Dev Biol (2021)
+
+17. DOI: 10.1101/cshperspect.a021998
+    "Intraflagellar Transport and Ciliary Dynamics"
+    Cold Spring Harb Perspect Biol 9(3): a021998 (2017)
+
+18. NCBI Bookshelf NBK1122
+    "Primary Ciliary Dyskinesia" - GeneReviews
+    https://www.ncbi.nlm.nih.gov/books/NBK1122/
+
+19. NCBI Bookshelf NBK5258
+    "Activation Mechanisms and Functional Roles of TRPP2 Cation Channels"
+    TRP Ion Channel Function in Sensory Transduction
+
+DATABASES AND RESOURCES:
+
+20. OMIM *619617
+    "EF-HAND CALCIUM-BINDING DOMAIN-CONTAINING PROTEIN 2; EFCAB2"
+    https://omim.org/entry/619617
+
+21. UniProt Q5VUJ9
+    "EF-hand calcium-binding domain-containing protein 2"
+    https://www.uniprot.org/uniprotkb/Q5VUJ9
+
+22. GeneCards EFCAB2
+    https://www.genecards.org/cgi-bin/carddisp.pl?gene=EFCAB2
+
+23. Human Protein Atlas ENSG00000203666-EFCAB2
+    https://www.proteinatlas.org/ENSG00000203666-EFCAB2
+
+24. MGI:1915476 (Mouse)
+    https://www.informatics.jax.org/marker/MGI:1915476
+
+25. IMPC Gene Page
+    https://www.mousephenotype.org/data/genes/MGI:1915476
+
+26. PDB 8j07
+    Axonemal structure with EFCAB2
+    https://www.ebi.ac.uk/pdbe/entry/pdb/8j07
+
+27. AlphaFold Database
+    EFCAB2 structure prediction (Q5VUJ9)
+    https://alphafold.ebi.ac.uk/
+
+================================================================================
+END OF REPORT
+================================================================================
+
+Report Generated: 2025-11-17
+Analysis Type: AlphaFold3 Protein-Protein Interaction Prediction
+Interaction: EFCAB2 ↔ TULP3 (ipSAE = 0.582)
+Database: IFT Interactors Project (Neon PostgreSQL)
+
+For questions or additional analysis, contact the IFT Interactors team.
+================================================================================
