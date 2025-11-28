@@ -16,7 +16,7 @@
 
 ---
 
-## ⚠️ DATA LIMITATION WARNING
+## ** DATA LIMITATION WARNING
 
 **CRITICAL**: This validation document is based on **limited information** from:
 - PubMed abstract
@@ -40,10 +40,10 @@
 ### Central Hypothesis
 The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. GTP-bound RABL2 must be replaced by IFT25-IFT27 at the ciliary base for proper BBSome function.
 
-### Main Discovery (⚠️ CORRECTED BY BOEGHOLM 2023)
+### Main Discovery (** CORRECTED BY BOEGHOLM 2023)
 **Original claim**: IFT25-IFT27 and RABL2 bind to the IFT74-IFT81 dimer in a MUTUALLY EXCLUSIVE manner.
 
-**⚠️ CORRECTION (Boegholm et al., EMBO J 2023, PMID: 37606072)**:
+**** CORRECTION (Boegholm et al., EMBO J 2023, PMID: 37606072)**:
 **RABL2 and IFT25-IFT27 bind to SEPARATE, NON-OVERLAPPING sites on IFT74-IFT81.**
 - RABL2 binds to C-terminal coiled-coil region (IFT81460-533/IFT74460-532)
 - IFT25-IFT27 binds to a different region
@@ -54,7 +54,7 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 
 ## Protein-Protein Interactions Extracted (LIMITED DATA)
 
-### 1. RABL2(GTP) ↔ IFT74-IFT81 Complex (⚠️ CORRECTED)
+### 1. RABL2(GTP) ↔ IFT74-IFT81 Complex (** CORRECTED)
 
 **Method**: Not specified in accessible material (likely co-IP, pulldown, possibly structural)
 
@@ -65,9 +65,9 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 - **IFT74-IFT81 region**: C-terminal coiled-coil domain
 - **Nature**: GTP-dependent; **SEPARATE from IFT25-IFT27 binding site (NOT mutually exclusive)**
 
-**⚠️ Original quote from Zhou 2022** (INCORRECT per Boegholm 2023): "IFT25-IFT27 and the RABL2 GTPase bind the IFT74/BBS22-IFT81 dimer of the IFT-B complex in a mutually exclusive manner."
+**** Original quote from Zhou 2022** (INCORRECT per Boegholm 2023): "IFT25-IFT27 and the RABL2 GTPase bind the IFT74/BBS22-IFT81 dimer of the IFT-B complex in a mutually exclusive manner."
 
-**⚠️ Correction from Boegholm 2023**: RABL2 and IFT25-IFT27 bind to completely separate sites on IFT74-IFT81. They are NOT mutually exclusive.
+**** Correction from Boegholm 2023**: RABL2 and IFT25-IFT27 bind to completely separate sites on IFT74-IFT81. They are NOT mutually exclusive.
 
 **Functional significance**:
 - GTP-bound RABL2 recruits IFT-B complex to ciliary base
@@ -81,7 +81,7 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 
 ---
 
-### 2. IFT25-IFT27 ↔ IFT74-IFT81 Complex (⚠️ CORRECTED - NOT mutually exclusive with RABL2)
+### 2. IFT25-IFT27 ↔ IFT74-IFT81 Complex (** CORRECTED - NOT mutually exclusive with RABL2)
 
 **Method**: Not specified in accessible material
 
@@ -92,9 +92,9 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 - **IFT74-IFT81 region**: Binds to region SEPARATE from RABL2 binding site (Boegholm 2023)
 - **Nature**: **NOT mutually exclusive with RABL2 binding**
 
-**⚠️ Original quote from Zhou 2022** (INCORRECT): "RABL2(Q80L) and IFT25-IFT27 appear to bind to partially overlapping regions of the IFT74-IFT81 dimer."
+**** Original quote from Zhou 2022** (INCORRECT): "RABL2(Q80L) and IFT25-IFT27 appear to bind to partially overlapping regions of the IFT74-IFT81 dimer."
 
-**⚠️ Correction from Boegholm 2023**: These are two completely separate binding sites on IFT74-IFT81. No competition or mutual exclusivity.
+**** Correction from Boegholm 2023**: These are two completely separate binding sites on IFT74-IFT81. No competition or mutual exclusivity.
 
 **Functional significance**:
 - IFT25-IFT27 binding to IFT74-IFT81 couples BBSome to IFT-B
@@ -232,9 +232,9 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 
 1. **Basal Body**: CEP19 recruits RABL2(Q80L)-GTP
 2. **IFT-B Recruitment**: RABL2(Q80L)-GTP binds IFT74-IFT81
-3. **❌ BLOCKED EXCHANGE**: GTP-locked RABL2 cannot be released
-4. **❌ NO BBSome COUPLING**: IFT25-IFT27 cannot bind (mutually exclusive)
-5. **❌ FAILED GPCR EXPORT**: BBSome and GPCRs accumulate in cilia
+3. ****BLOCKED EXCHANGE**: GTP-locked RABL2 cannot be released
+4. ****NO BBSome COUPLING**: IFT25-IFT27 cannot bind (mutually exclusive)
+5. ****FAILED GPCR EXPORT**: BBSome and GPCRs accumulate in cilia
 
 **Quote from search results**: "The binding of RABL2(Q80L) to IFT74-IFT81 decouples IFT25-IFT27 from IFT74-IFT81 and causes BBS-associated ciliary defects, such as abnormal accumulation of the BBSome and GPCRs within cilia."
 
@@ -393,7 +393,7 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 
 **File**: `add_zhou_2022_rabl2_validations.mjs`
 
-**Status**: ❌ NOT CREATED - Insufficient data
+**Status**: **NOT CREATED - Insufficient data
 
 **Reason**: Cannot create validation script without:
 - Experimental methods
@@ -421,7 +421,7 @@ The CEP19-RABL2-IFT-B axis controls BBSome-mediated export of GPCRs from cilia. 
 
 **Created**: 2025-11-08
 **Author**: Claude Code
-**Status**: ⚠️ INCOMPLETE - Full paper access required
+**Status**: ** INCOMPLETE - Full paper access required
 **Confidence**: LOW - Based on abstract and search snippets only
 **Next Action**: Obtain full paper access and update this document
 

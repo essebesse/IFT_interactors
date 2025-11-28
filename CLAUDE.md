@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Data Source**: Original AlphaPulldown v4.json files (direct from AF3 predictions)
 - **Focus**: Human IFT and BBSome proteins (single protein baits only)
 
-## ⚠️ CRITICAL: Git & Deployment Workflow
+## ** CRITICAL: Git & Deployment Workflow
 
 This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
@@ -21,7 +21,7 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 
 ### Database
 - **Neon Database**: `postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb`
-- **Status**: ✅ Populated (877 interactions, 331 proteins from 32 baits)
+- **Status**: **Populated (877 interactions, 331 proteins from 32 baits)
 - **Import Script**: `import_from_v4_originals_FIXED.mjs` (imports from original v4.json files)
 - **Last Database Rebuild**: 2025-11-01 (from original AlphaPulldown v4.json files)
 - **Last Frontend Update**: 2025-11-06 (UI clarity improvements, PAE terminology)
@@ -33,7 +33,7 @@ This is a **STANDALONE PROJECT** with its own GitHub repository and database.
 - **Build Fix**: All API routes marked as `force-dynamic` to prevent build-time DB access
 
 #### Automatic Deployment (PRIMARY METHOD)
-- **Status**: ✅ Working reliably
+- **Status**: **Working reliably
 - **Trigger**: GitHub webhook automatically deploys when you push to `main` branch
 - **Build time**: ~45-60 seconds
 - **No manual action needed** - just push your code!
@@ -53,11 +53,11 @@ curl -X POST 'https://api.vercel.com/v1/integrations/deploy/prj_9aWAK9J4plPAWZpO
 
 Or use Vercel dashboard: Deployments → "..." → "Redeploy"
 
-**⚠️ Note**: Using the deploy hook creates a second build (GitHub webhook + manual trigger). Only use when automatic deployment fails.
+**** Note**: Using the deploy hook creates a second build (GitHub webhook + manual trigger). Only use when automatic deployment fails.
 
 ### Git Operations
 
-✅ **SIMPLIFIED**: This project is now fully independent! Direct pushes work from the IFT subdirectory.
+****SIMPLIFIED**: This project is now fully independent! Direct pushes work from the IFT subdirectory.
 
 **Standard Workflow (RECOMMENDED)**
 ```bash
@@ -76,12 +76,12 @@ git push origin main  # ← Works! GitHub token configured
 - Token works for all your GitHub repositories
 
 **Important Notes:**
-- ✅ This project is in the parent directory's `.gitignore`
-- ✅ Changes here do NOT affect the main Cilia project
-- ✅ Each project deploys independently
-- ✅ No more complex subtree workflows needed!
-- ❌ DO NOT push from parent directory - it will fail
-- ❌ DO NOT use `git subtree` commands - no longer necessary
+- **This project is in the parent directory's `.gitignore`
+- **Changes here do NOT affect the main Cilia project
+- **Each project deploys independently
+- **No more complex subtree workflows needed!
+- **DO NOT push from parent directory - it will fail
+- **DO NOT use `git subtree` commands - no longer necessary
 
 ### Complete Workflow: Edit → Commit → Push → Auto-Deploy
 
@@ -142,7 +142,7 @@ git ls-remote origin main  # Should show your latest commit hash
 
 ### Original AlphaPulldown v4.json Files (33 proteins)
 
-**⚠️ IMPORTANT**: Database is populated DIRECTLY from these original v4.json files, NOT from any extracted/processed files.
+**** IMPORTANT**: Database is populated DIRECTLY from these original v4.json files, NOT from any extracted/processed files.
 
 **IFT Proteins (22 files)**:
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/A0AVF1_IFT56/AF3/AF3_PD_analysis_v4.json`
@@ -184,20 +184,20 @@ git ls-remote origin main  # Should show your latest commit hash
 - `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/O75386_Tulp3/AF3/AF3_PD_analysis_v4.json` (TULP3 / RP26)
 
 **Excluded Files (Protein Complexes - NOT imported)**:
-- ❌ `Q96LB3_Q8WYA0_IFT74_81` - IFT74+IFT81 complex
-- ❌ `IFT52_46` - IFT52+IFT46 complex
-- ❌ `Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
+- **`Q96LB3_Q8WYA0_IFT74_81` - IFT74+IFT81 complex
+- **`IFT52_46` - IFT52+IFT46 complex
+- **`Hs_Cter_IFT52_46` - C-terminal variant of IFT52+IFT46 complex
 
 ### Import Scripts
 
-**⚠️ IMPORTANT: Use incremental script to avoid duplicates!**
+**** IMPORTANT: Use incremental script to avoid duplicates!**
 
-- **import_from_v4_originals_INCREMENTAL.mjs** - ✅ **USE THIS** for adding new proteins (prevents duplicates)
+- **import_from_v4_originals_INCREMENTAL.mjs** - ****USE THIS** for adding new proteins (prevents duplicates)
   - Checks database for existing baits before importing
   - Only imports NEW data, skips baits already in database
   - Safe to run multiple times
 
-- **import_from_v4_originals_FIXED.mjs** - ⚠️ Full import (re-imports ALL 33 files, causes duplicates!)
+- **import_from_v4_originals_FIXED.mjs** - ** Full import (re-imports ALL 33 files, causes duplicates!)
   - Only use for initial database population or after `drop_tables.mjs`
   - Running this on existing database WILL create duplicates
 
@@ -205,7 +205,7 @@ git ls-remote origin main  # Should show your latest commit hash
   - Use if duplicates accidentally created
 
 - **drop_tables.mjs** - Wipes database clean (drops all tables)
-  - ⚠️ DESTRUCTIVE: Only use for complete rebuild
+  - ** DESTRUCTIVE: Only use for complete rebuild
 
 - **find_v4_json.sh** - Finds all IFT/BBS v4.json files in AF3_APD directory
 - **fetch_gene_names.mjs** - Fetches gene names from UniProt API for proteins without gene_name
@@ -285,7 +285,7 @@ const { sql } = require('@vercel/postgres');
 
 ### Re-populate Database (if needed)
 
-**⚠️ IMPORTANT**: Always rebuild from original v4.json files, NOT from any extracted files.
+**** IMPORTANT**: Always rebuild from original v4.json files, NOT from any extracted files.
 
 ```bash
 export POSTGRES_URL="postgresql://neondb_owner:npg_ao9EVm2UnCXw@ep-empty-brook-agstlbfq-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
@@ -354,7 +354,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 - Click nodes to explore secondary interactions
 
 ### 3D Structure Viewer (2025-11-04, Updated 2025-11-05)
-**Status**: ✅ Deployed with Molstar integration
+**Status**: **Deployed with Molstar integration
 
 **Features**:
 - **View 3D structures**: Click "View 3D" button in interaction results table
@@ -399,7 +399,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 
 **Recent Updates (2025-11-06)**:
 
-1. **UI Clarity Improvements** (commit `2468876`) ⭐
+1. **UI Clarity Improvements** (commit `2468876`) **
    - Added colored dots (●) to confidence level checkboxes for visual consistency
      - Green dot for High (ipSAE >0.7)
      - Orange dot for Medium (ipSAE 0.5-0.7)
@@ -408,7 +408,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
    - Removed "Hs" organism label from network visualization (all proteins are human)
    - Result: Cleaner UI with better visual hierarchy
 
-2. **PAE Terminology Update** (commit `cfda6f7`) ⭐
+2. **PAE Terminology Update** (commit `cfda6f7`) **
    - Changed PAE interface labels to avoid confusion with overall confidence levels
    - Old labels: "Very high confidence (PAE <3Å)", "High confidence (PAE 3-6Å)"
    - New labels: "High precision contacts (PAE <3Å)", "Moderate precision contacts (PAE 3-6Å)"
@@ -417,7 +417,7 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 
 **Previous Updates (2025-11-05)**:
 
-1. **Smart Fullscreen Sizing** (commit `257451c`) ⭐
+1. **Smart Fullscreen Sizing** (commit `257451c`) **
    - Replaced hardcoded 1920×1080 limit with dynamic calculation
    - Detects screen size, viewport, and devicePixelRatio
    - Caps at 20M pixels (~1-2 GB RAM) to prevent memory exhaustion
@@ -516,12 +516,12 @@ When published, website will be cited as:
 **Root Cause**: Next.js attempts to pre-render API routes at build time when `POSTGRES_URL` isn't available
 
 **Solutions Applied**:
-1. ✅ Added `export const dynamic = 'force-dynamic';` to all API routes
-2. ✅ Added dynamic exports to `app/layout.tsx` (root level)
-3. ✅ Configured `next.config.js` with `output: 'standalone'`
-4. ✅ Replaced complex API routes with 404 stubs (no database imports)
+1. **Added `export const dynamic = 'force-dynamic';` to all API routes
+2. **Added dynamic exports to `app/layout.tsx` (root level)
+3. **Configured `next.config.js` with `output: 'standalone'`
+4. **Replaced complex API routes with 404 stubs (no database imports)
 
-**Status**: ✅ Fixed (commit 595983d)
+**Status**: **Fixed (commit 595983d)
 
 ### Git Push Doesn't Update GitHub
 **Issue**: Commits made in IFT_Interactors_paper don't appear in GitHub repo
@@ -568,7 +568,7 @@ git branch -D ift-temp-branch
 **Issue**: Vercel build mentions `/api/complexes` even though it should be deleted
 **Root Cause**: Git subtree push issue - old code still in GitHub
 **Solution**: Complex routes replaced with 404 stubs (no DB connection)
-**Status**: ✅ Fixed - routes exist but return 404 without database access
+**Status**: **Fixed - routes exist but return 404 without database access
 
 ### Vercel Builds Old Commit (Webhook Issue)
 **Issue**: After pushing to GitHub, Vercel builds an old commit instead of latest
@@ -600,22 +600,22 @@ git branch -D ift-temp-branch
    # Then verify Vercel dashboard shows same commit hash
    ```
 
-**Status**: ✅ Deploy hook created as backup for automatic deployments
+**Status**: **Deploy hook created as backup for automatic deployments
 
 ### Build Fails: Missing NetworkVisualization Component
 **Issue**: `Cannot find module '../components/NetworkVisualization'`
 **Root Cause**: Component file wasn't pushed to GitHub (nested repo issue)
 **Solution**: Use complete workflow including verification step (see "Complete Workflow" section)
-**Status**: ✅ Fixed - all files now pushed correctly using subtree method
+**Status**: **Fixed - all files now pushed correctly using subtree method
 
 ## Important Notes
 
-- ✅ Database populated from **original AlphaPulldown v4.json files** (NOT extracted files)
-- ✅ All API routes configured for runtime-only execution
-- ✅ Independent from main Cilia project
-- ⚠️ Do not modify the main Cilia database connection string
-- ⚠️ This project uses a separate Neon database instance
-- ⚠️ Only import from original v4.json files in `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
+- **Database populated from **original AlphaPulldown v4.json files** (NOT extracted files)
+- **All API routes configured for runtime-only execution
+- **Independent from main Cilia project
+- ** Do not modify the main Cilia database connection string
+- ** This project uses a separate Neon database instance
+- ** Only import from original v4.json files in `/emcc/au14762/elo_lab/AlphaPulldown/AF3_APD/`
 
 ## Related Documentation
 
@@ -627,24 +627,24 @@ git branch -D ift-temp-branch
 
 ---
 
-**Project Status**: ✅ Deployed and operational
+**Project Status**: **Deployed and operational
 **Last Updated**: 2025-11-06
-**Database Status**: ✅ Populated (877 interactions, 331 proteins, 32 baits)
+**Database Status**: **Populated (877 interactions, 331 proteins, 32 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
 
 **Summary of 2025-11-06 Updates**:
-- ✅ Added colored dots (●) to confidence level checkboxes (green/orange/red)
-- ✅ Removed redundant confidence legend from secondary network panel
-- ✅ Removed "Hs" organism label from network (all proteins are human)
-- ✅ Renamed PAE labels to "Contact Precision" (high/moderate) to avoid confusion with ipSAE confidence
-- ✅ Result: Clearer UI with distinct terminology for global vs local quality metrics
+- **Added colored dots (●) to confidence level checkboxes (green/orange/red)
+- **Removed redundant confidence legend from secondary network panel
+- **Removed "Hs" organism label from network (all proteins are human)
+- **Renamed PAE labels to "Contact Precision" (high/moderate) to avoid confusion with ipSAE confidence
+- **Result: Clearer UI with distinct terminology for global vs local quality metrics
 
 **Summary of 2025-11-05 Updates**:
-- ✅ Smart fullscreen sizing (adapts to screen, prevents memory issues)
-- ✅ Fixed PAE highlighting reset bug
-- ✅ Improved sidebar typography (larger, more readable fonts)
-- ✅ Added false positive disclaimer
-- ✅ Fixed network edge colors to use ipSAE-based confidence
-- ✅ Updated network tooltips (show ipSAE, removed redundant AF3 label)
-- ✅ Text corrections (flexible relative domain orientation)
+- **Smart fullscreen sizing (adapts to screen, prevents memory issues)
+- **Fixed PAE highlighting reset bug
+- **Improved sidebar typography (larger, more readable fonts)
+- **Added false positive disclaimer
+- **Fixed network edge colors to use ipSAE-based confidence
+- **Updated network tooltips (show ipSAE, removed redundant AF3 label)
+- **Text corrections (flexible relative domain orientation)

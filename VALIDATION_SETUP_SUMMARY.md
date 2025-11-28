@@ -18,7 +18,7 @@ I've set up a comprehensive system for adding experimental validation data to yo
    - Complete with PMIDs and DOIs
    - Methods: Y2H, pulldown, reconstitution, crystal structures
 
-### 🔧 Scripts
+### **Scripts
 
 1. **check_validation_status.mjs** - Database inspection tool
    - Check how many interactions are validated
@@ -34,7 +34,7 @@ I've set up a comprehensive system for adding experimental validation data to yo
      - 1 IFT-cargo adapter (IFT144-TULP3)
      - 6 additional IFT-B interactions from your review text
 
-### 📊 Current Database Status
+### Current Database Status
 
 From the JSON extraction files:
 - **Total interactions**: 512 (v4 analysis)
@@ -63,8 +63,8 @@ node check_validation_status.mjs
 ### Expected Results
 
 After running `add_manual_validations.mjs`, you should see:
-- ✅ **~15-20 interactions added** (those that match your AF3 predictions)
-- ⚠️ **~1-5 not found** (interactions not in your AF3 dataset)
+- ****~15-20 interactions added** (those that match your AF3 predictions)
+- **~1-5 not found** (interactions not in your AF3 dataset)
 - 💡 **~1-2 already exists** (the Tina/Carsten validations)
 
 ### What Gets Added
@@ -88,39 +88,39 @@ Each validated interaction will have this data structure:
 ## Interactions Ready to Import
 
 ### IFT-B Core (High Priority - Structural Evidence)
-1. ✅ **IFT81 ↔ IFT74** - Crystal structure (Taschner et al., 2016)
-2. ✅ **IFT52 ↔ IFT46** - Heterotrimer (Taschner et al., 2011)
-3. ✅ **IFT88 ↔ IFT52** - Core complex (Lucker et al., 2005)
-4. ✅ **IFT88 ↔ IFT46** - Trimeric complex
-5. ✅ **IFT27 ↔ IFT25** - Crystal structure (Bhogaraju et al., 2011)
-6. ✅ **IFT70 ↔ IFT52** - Core interaction
-7. ✅ **IFT70 ↔ IFT46** - Core interaction
-8. ✅ **IFT56 ↔ IFT46** - Peripheral
-9. ✅ **IFT22 ↔ IFT81** - Composite interface
-10. ✅ **IFT22 ↔ IFT74** - Composite interface
+1. ****IFT81 ↔ IFT74** - Crystal structure (Taschner et al., 2016)
+2. ****IFT52 ↔ IFT46** - Heterotrimer (Taschner et al., 2011)
+3. ****IFT88 ↔ IFT52** - Core complex (Lucker et al., 2005)
+4. ****IFT88 ↔ IFT46** - Trimeric complex
+5. ****IFT27 ↔ IFT25** - Crystal structure (Bhogaraju et al., 2011)
+6. ****IFT70 ↔ IFT52** - Core interaction
+7. ****IFT70 ↔ IFT46** - Core interaction
+8. ****IFT56 ↔ IFT46** - Peripheral
+9. ****IFT22 ↔ IFT81** - Composite interface
+10. ****IFT22 ↔ IFT74** - Composite interface
 
 ### IFT-A Core (High Priority)
-11. ✅ **IFT144 ↔ IFT140** - Core complex (Beyer et al., 2018)
-12. ✅ **IFT144 ↔ IFT122** - Core complex
-13. ✅ **IFT140 ↔ IFT122** - Core complex
-14. ✅ **IFT122 ↔ IFT121** - Peripheral (Follit et al., 2009)
-15. ✅ **IFT43 ↔ IFT121** - Peripheral (already in DB from Tina/Carsten)
-16. ✅ **IFT43 ↔ IFT122** - Peripheral (already in DB from Tina/Carsten)
+11. ****IFT144 ↔ IFT140** - Core complex (Beyer et al., 2018)
+12. ****IFT144 ↔ IFT122** - Core complex
+13. ****IFT140 ↔ IFT122** - Core complex
+14. ****IFT122 ↔ IFT121** - Peripheral (Follit et al., 2009)
+15. ****IFT43 ↔ IFT121** - Peripheral (already in DB from Tina/Carsten)
+16. ****IFT43 ↔ IFT122** - Peripheral (already in DB from Tina/Carsten)
 
 ### BBSome (High Priority)
-17. ✅ **BBS1 ↔ BBS7** - Core BBSome (Nachury et al., 2007)
-18. ✅ **BBS2 ↔ BBS7** - Direct binding
-19. ✅ **BBS4 ↔ BBS8** - Crystal structure (Jin et al., 2010)
-20. ✅ **BBS5 ↔ BBS8** - Core complex
+17. ****BBS1 ↔ BBS7** - Core BBSome (Nachury et al., 2007)
+18. ****BBS2 ↔ BBS7** - Direct binding
+19. ****BBS4 ↔ BBS8** - Crystal structure (Jin et al., 2010)
+20. ****BBS5 ↔ BBS8** - Core complex
 
 ### Cargo Adapters
-21. ✅ **IFT144 ↔ TULP3** - Ciliary trafficking (Mukhopadhyay et al., 2010)
+21. ****IFT144 ↔ TULP3** - Ciliary trafficking (Mukhopadhyay et al., 2010)
 
 ## Next Steps
 
 ### Immediate (Today)
-1. ✅ **Run the import script** - Add 21 validated interactions
-2. ✅ **Verify in database** - Check that data is correctly added
+1. ****Run the import script** - Add 21 validated interactions
+2. ****Verify in database** - Check that data is correctly added
 3. Update frontend to display validation badges (see below)
 
 ### Short-term (This Week)
@@ -211,11 +211,11 @@ IFT_interactors/
 ## Success Metrics
 
 After completing this setup:
-- ✅ Database has validation data structure
-- ✅ 21 high-confidence interactions ready to import
-- ✅ Scripts created for easy data entry
-- ✅ Documentation complete with references
-- 🔄 Frontend already supports validation display
+- **Database has validation data structure
+- **21 high-confidence interactions ready to import
+- **Scripts created for easy data entry
+- **Documentation complete with references
+- **Frontend already supports validation display
 - ⏳ Need to add validation UI components
 
 ## Resources
@@ -235,5 +235,5 @@ After completing this setup:
 ---
 
 **Created**: 2025-11-08
-**Status**: ✅ Ready to use
+**Status**: **Ready to use
 **Next action**: Run `node add_manual_validations.mjs`

@@ -119,7 +119,7 @@ interface ValidationBadgeProps {
 }
 
 // Visual indicators:
-// ✅ Validated (green) - confirmed by ≥1 experimental method
+// **Validated (green) - confirmed by ≥1 experimental method
 // 🔬 Multiple studies (dark green) - confirmed by ≥2 studies
 // 🔷 Proximity (blue) - BioID/APEX proximity labeling
 // ⚪ Predicted only (gray) - no experimental data yet
@@ -205,10 +205,10 @@ experimental_data/
 ## Implementation Priority
 
 ### Immediate (This Week)
-1. ✅ **Download Boldt et al., 2016 Supplementary Data 1** (highest priority)
-2. ✅ **Create protein ID mapping script** with UniProt API
-3. ✅ **Parse Boldt dataset** → structured JSON
-4. ✅ **Test validation update** on 10 interactions
+1. ****Download Boldt et al., 2016 Supplementary Data 1** (highest priority)
+2. ****Create protein ID mapping script** with UniProt API
+3. ****Parse Boldt dataset** → structured JSON
+4. ****Test validation update** on 10 interactions
 
 ### Short-term (Next 2 Weeks)
 5. Download and parse Gupta et al., 2015 (BioID data)

@@ -183,17 +183,17 @@ These CSV files are publication-ready:
 
 ### Good Publication-Quality Results
 
-✅ **Validation Rate**: 20-40% in BioGRID (typical for AF3)
-✅ **Confidence Correlation**: High > Medium > Low validation rates
-✅ **STRING Coverage**: 30-60%
-✅ **High Confidence**: At least 30% of predictions (ipSAE > 0.7)
-✅ **Novel Predictions**: At least 100-200 not in BioGRID
+****Validation Rate**: 20-40% in BioGRID (typical for AF3)
+****Confidence Correlation**: High > Medium > Low validation rates
+****STRING Coverage**: 30-60%
+****High Confidence**: At least 30% of predictions (ipSAE > 0.7)
+****Novel Predictions**: At least 100-200 not in BioGRID
 
 ### Red Flags
 
-❌ Very low validation (<10%) → May indicate scoring issues
-❌ No confidence correlation → Check ipSAE calculation
-❌ Very few high-confidence predictions → May need different thresholds
+**Very low validation (<10%) → May indicate scoring issues
+**No confidence correlation → Check ipSAE calculation
+**Very few high-confidence predictions → May need different thresholds
 
 ---
 
@@ -308,4 +308,4 @@ Everything is prepared for Claude Code to execute. Just copy the prompt above an
 
 ---
 
-Good luck with your publication! 🚀
+Good luck with your publication! **

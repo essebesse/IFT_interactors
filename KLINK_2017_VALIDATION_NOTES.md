@@ -145,7 +145,7 @@ The paper notes that *Drosophila melanogaster* **lacks BBS2 and BBS7**, and this
 ## Limitations & Caveats
 
 ### Paper Access Issues
-⚠️ **Full text could not be accessed** for this extraction (403 errors on all repository attempts). The information provided is based on:
+**Full text could not be accessed** for this extraction (403 errors on all repository attempts). The information provided is based on:
 - Abstract and summary information
 - General knowledge of the study's findings
 - Citation information from related papers
@@ -222,6 +222,6 @@ If the paper provides evidence:
 
 **Created**: 2025-11-08
 
-**Status**: ⚠️ Preliminary - needs manual verification from full text
+**Status**: ** Preliminary - needs manual verification from full text
 
 **Action Required**: Read full paper and update validations with detailed experimental evidence

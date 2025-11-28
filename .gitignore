@@ -32,3 +32,24 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Data files and external databases
+BIOGRID-*.mitab.txt
+BIOGRID-*.mitab.zip
+*.csv
+*.tsv
+!docs/examples/*.csv
+
+# Analysis reports and outputs
+protein_reports/
+*_analysis.txt
+*_summary.txt
+*_report.txt
+
+# Development scripts
+import_ift121_ptch1.mjs
+test_*.mjs
+analyze_*.mjs
+
+# Build artifacts
+tsconfig.tsbuildinfo

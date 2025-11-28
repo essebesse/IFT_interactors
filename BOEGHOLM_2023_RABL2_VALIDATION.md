@@ -22,7 +22,7 @@
 
 ## Data Access Note
 
-⚠️ **IMPORTANT**: Full text access to the published paper was restricted during extraction. The information below was compiled from:
+**IMPORTANT**: Full text access to the published paper was restricted during extraction. The information below was compiled from:
 - PubMed abstract and metadata
 - Web search results containing paper excerpts
 - bioRxiv preprint abstract and summary
@@ -303,25 +303,25 @@ Unlike canonical Rab GAPs that insert an "arginine finger" into the GTP-binding 
 ## Data Completeness Assessment
 
 ### Information Successfully Extracted
-✅ Paper identification and metadata
-✅ UniProt IDs for key proteins
-✅ Identification of three major protein-protein interactions
-✅ Experimental methods used
-✅ Interacting domain regions (residue numbers)
-✅ GAP activity quantification (20-fold, 7-fold)
-✅ GTP vs GDP state differences
-✅ Evolutionary conservation evidence
-✅ Mechanism description (unconventional GAP)
+**Paper identification and metadata
+**UniProt IDs for key proteins
+**Identification of three major protein-protein interactions
+**Experimental methods used
+**Interacting domain regions (residue numbers)
+**GAP activity quantification (20-fold, 7-fold)
+**GTP vs GDP state differences
+**Evolutionary conservation evidence
+**Mechanism description (unconventional GAP)
 
 ### Information Incomplete or Not Accessible
-❌ Specific Kd values from ITC experiments (requires full paper figures)
-❌ Detailed figure descriptions and data tables
-❌ Complete experimental protocols
-❌ Statistical analyses and replicate numbers
-❌ Supplementary data (likely contains additional Kd values)
-❌ Exact quotes from results/discussion sections (access restricted)
-❌ Cryo-EM structures (if any - only modeling mentioned)
-❌ Additional protein partners (IFT22, IFT25, IFT27 - if mentioned)
+**Specific Kd values from ITC experiments (requires full paper figures)
+**Detailed figure descriptions and data tables
+**Complete experimental protocols
+**Statistical analyses and replicate numbers
+**Supplementary data (likely contains additional Kd values)
+**Exact quotes from results/discussion sections (access restricted)
+**Cryo-EM structures (if any - only modeling mentioned)
+**Additional protein partners (IFT22, IFT25, IFT27 - if mentioned)
 
 ### Recommendations for Complete Data
 To obtain missing quantitative data (especially Kd values):

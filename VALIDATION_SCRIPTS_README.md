@@ -305,12 +305,12 @@ node check_validation_status.mjs
 
 All scripts include:
 
-- ✅ Bidirectional search (bait↔prey and prey↔bait)
-- ✅ Duplicate detection (skip if already validated)
-- ✅ Not found reporting (interaction not in database)
-- ✅ Summary statistics (added/not found/already validated)
-- ✅ JSONB format matching frontend display
-- ✅ UniProt ID mapping for human proteins
+- **Bidirectional search (bait↔prey and prey↔bait)
+- **Duplicate detection (skip if already validated)
+- **Not found reporting (interaction not in database)
+- **Summary statistics (added/not found/already validated)
+- **JSONB format matching frontend display
+- **UniProt ID mapping for human proteins
 
 ---
 
@@ -342,7 +342,7 @@ Validations stored in `interactions.experimental_validation` JSONB field:
 
 1. **Run all scripts** on database with network access
 2. **Verify validations** using `check_validation_status.mjs`
-3. ✅ **ADDED: Singh 2020 BBSome** (12 interactions)
+3. ****ADDED: Singh 2020 BBSome** (12 interactions)
 4. **Consider additional papers**:
    - Lacey et al., Nat Struct Mol Biol 2023 (IFT-A in trains)
    - Ma et al., Nat Commun 2023 (IFT-A conformational states)

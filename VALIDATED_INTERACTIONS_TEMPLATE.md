@@ -215,9 +215,9 @@ const MANUAL_VALIDATIONS = [
 ## Priority Interactions to Add
 
 ### Highest Priority (Structural Evidence Available)
-1. ✅ **IFT81-IFT74** - Crystal structure (PDB: 5H80)
-2. ✅ **IFT52-IFT46** - Strong biochemical evidence
-3. ✅ **BBS4-BBS8** - Crystal structure
+1. ****IFT81-IFT74** - Crystal structure (PDB: 5H80)
+2. ****IFT52-IFT46** - Strong biochemical evidence
+3. ****BBS4-BBS8** - Crystal structure
 
 ### High Priority (Multiple Independent Studies)
 4. **IFT88-IFT52-IFT46** - Core IFT-B trimer

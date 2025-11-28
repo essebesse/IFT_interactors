@@ -2,7 +2,7 @@
 
 **Project**: Computational Prediction of Direct Protein-Protein Interactions in Human Intraflagellar Transport and BBSome Complexes Using AlphaFold3
 
-**Database Status**: ✅ Complete (512 interactions, 371 proteins, 33 baits)
+**Database Status**: **Complete (512 interactions, 371 proteins, 33 baits)
 
 **Target Journal**: Nature Communications, PLOS Computational Biology, or Cell Systems
 
@@ -300,18 +300,18 @@ Week 9-12:  [Manuscript Writing] [Revisions]
 ## Success Metrics
 
 **Minimum Viable Publication**:
-- ✅ 512 high-quality predictions documented
-- ✅ >20% validation rate in BioGRID/STRING
-- ✅ >50 novel high-confidence predictions
-- ✅ Functional enrichment supporting biological roles
-- ✅ Interactive public resource
+- **512 high-quality predictions documented
+- **>20% validation rate in BioGRID/STRING
+- **>50 novel high-confidence predictions
+- **Functional enrichment supporting biological roles
+- **Interactive public resource
 
 **Strong Publication** (target):
-- 🎯 >30% validation rate
-- 🎯 >100 novel predictions for experimental follow-up
-- 🎯 Disease-associated interactions with clinical relevance
-- 🎯 Comparison with published cryo-EM structures (RMSD analysis)
-- 🎯 Experimental validation of 5-10 predictions (collaborations)
+- >30% validation rate
+- >100 novel predictions for experimental follow-up
+- Disease-associated interactions with clinical relevance
+- Comparison with published cryo-EM structures (RMSD analysis)
+- Experimental validation of 5-10 predictions (collaborations)
 
 ---
 

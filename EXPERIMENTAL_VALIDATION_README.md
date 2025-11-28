@@ -6,14 +6,14 @@ This system integrates experimental cilia proteomics data from 7 key publication
 
 ## What's Been Created
 
-✅ **Complete implementation framework**:
+****Complete implementation framework**:
 - Protein ID mapping system with UniProt API integration
 - Dataset import scripts with validation data structure
 - Directory structure and configuration
 - Helper tools for inspecting datasets
 - Comprehensive documentation
 
-✅ **Files created**:
+****Files created**:
 ```
 scripts/
 ├── map_protein_ids.mjs              # UniProt ID mapping with caching
@@ -219,26 +219,26 @@ If it looks good, remove the `.slice(0, 10)` limit and run the full import!
 
 Process datasets in this order (highest confidence methods first):
 
-### Priority 1: Direct Physical Interactions ⭐⭐⭐
+### Priority 1: Direct Physical Interactions ******
 1. **Boldt et al., 2016** (SF-TAP-MS, 217 baits) ← **START HERE**
 2. **Sang et al., 2011** (LAP, 9 baits)
 
-### Priority 2: Proximity Labeling ⭐⭐
+### Priority 2: Proximity Labeling ****
 3. **Gupta et al., 2015** (BioID, 56 baits)
 4. **Mick et al., 2015** (APEX, primary cilia)
 5. **Kohli et al., 2017** (APEX, ciliary membrane)
 6. **May et al., 2021** (APEX2, Hedgehog signaling)
 
-### Priority 3: Specialized ⭐
+### Priority 3: Specialized **
 7. **Aslanyan et al., 2023** (BioID2-UBD, ubiquitinome)
 
 ## Expected Results
 
 After processing Boldt et al., 2016, you should see:
 
-- ✅ **~50-150 validated interactions** (rough estimate, depends on overlap)
-- ✅ **Higher validation rate for High confidence AF3 predictions**
-- ✅ **Some novel AF3 predictions not yet in experimental data**
+- ****~50-150 validated interactions** (rough estimate, depends on overlap)
+- ****Higher validation rate for High confidence AF3 predictions**
+- ****Some novel AF3 predictions not yet in experimental data**
 
 ## Next Steps After Import
 

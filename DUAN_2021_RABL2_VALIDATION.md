@@ -18,7 +18,7 @@
 
 This study demonstrates that small GTPase RABL2 functions as a molecular switch for outward transition zone passage of the BBSome. RABL2-GTP enters cilia by binding to the IFT-B complex. Its GTP hydrolysis enables the outward transition zone passage of the BBSome and its cargos with retrograde IFT machinery, whereas persistent GTP association leads to their shedding from IFT-B during the passing process and consequently ciliary retention.
 
-**⚠️ IMPORTANT CORRECTION (Boegholm et al., EMBO J 2023, PMID: 37606072)**:
+**** IMPORTANT CORRECTION (Boegholm et al., EMBO J 2023, PMID: 37606072)**:
 This paper references the "mutually exclusive" binding model between RABL2 and IFT25-IFT27 on IFT74-IFT81. **This model was later shown to be INCORRECT** by Boegholm 2023. RABL2 and IFT25-IFT27 bind to **SEPARATE, non-overlapping sites** on IFT74-IFT81. They are NOT mutually exclusive. Functional phenotypes observed must result from other mechanisms.
 
 ---
@@ -43,7 +43,7 @@ This paper references the "mutually exclusive" binding model between RABL2 and I
 - Persistent RABL2-GTP binding prevents BBSome passage through TZ
 
 **Key Findings from Paper**:
-- ⚠️ **INCORRECT**: "IFT25–IFT27 and the RABL2 GTPase bind the IFT74/BBS22–IFT81 dimer of the IFT-B complex in a mutually exclusive manner" (cited from related work, Zhou et al., 2022) - **This was later disproven by Boegholm 2023: they bind to SEPARATE sites**
+- **INCORRECT**: "IFT25–IFT27 and the RABL2 GTPase bind the IFT74/BBS22–IFT81 dimer of the IFT-B complex in a mutually exclusive manner" (cited from related work, Zhou et al., 2022) - **This was later disproven by Boegholm 2023: they bind to SEPARATE sites**
 - "RABL2-GTP enters cilia by binding to IFT-B complex"
 - RABL2 interacts with IFT-B via the IFT74-IFT81 heterodimer in its GTP-bound state
 
@@ -104,7 +104,7 @@ This paper references the "mutually exclusive" binding model between RABL2 and I
 **GTP-Dependence**: GTP-dependent (Q80L is GTP-locked mutant)
 
 **Role in Transition Zone Passage**:
-- ⚠️ **INCORRECT MODEL**: IFT25 (together with IFT27) and RABL2 bind IFT74-IFT81 in mutually exclusive manner - **CORRECTED by Boegholm 2023: they bind SEPARATE sites, NOT mutually exclusive**
+- **INCORRECT MODEL**: IFT25 (together with IFT27) and RABL2 bind IFT74-IFT81 in mutually exclusive manner - **CORRECTED by Boegholm 2023: they bind SEPARATE sites, NOT mutually exclusive**
 - IFT25 functional relationship with RABL2 exists, but NOT through competitive binding
 - IFT25 coprecipitation with RABL2(Q80L) was substantially reduced in CEP19-KO cells
 
@@ -276,7 +276,7 @@ This paper references the "mutually exclusive" binding model between RABL2 and I
 1. **RABL2-GTP Ciliary Entry**:
    - RABL2-GTP binds to IFT-B complex (via IFT74-IFT81 C-terminal coiled-coil)
    - Enters cilia with anterograde IFT machinery
-   - ⚠️ **INCORRECT**: "RABL2 and IFT25-IFT27 bind IFT74-IFT81 in mutually exclusive manner" - **CORRECTED by Boegholm 2023: separate binding sites**
+   - **INCORRECT**: "RABL2 and IFT25-IFT27 bind IFT74-IFT81 in mutually exclusive manner" - **CORRECTED by Boegholm 2023: separate binding sites**
 
 2. **GTP Hydrolysis Enables BBSome Export**:
    - RABL2 hydrolyzes GTP (enhanced by IFT81-IFT74 GAP activity - Boegholm 2023)

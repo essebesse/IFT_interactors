@@ -4,11 +4,11 @@
 
 ## Quick Links
 
-- 🌐 **Live Website**: https://ciliaaf3predictions.vercel.app/
-- 📖 **Full Documentation**: [CLAUDE.md](CLAUDE.md)
-- ⭐ **Incremental Import** (RECOMMENDED): [INCREMENTAL_IMPORT_WORKFLOW.md](INCREMENTAL_IMPORT_WORKFLOW.md)
-- 🚀 **Legacy Full Import**: [IMPORT_WORKFLOW.md](IMPORT_WORKFLOW.md)
-- 🔧 **Recent Fixes**: [SESSION_FIXES.md](SESSION_FIXES.md)
+- ****Live Website**: https://ciliaaf3predictions.vercel.app/
+- ****Full Documentation**: [CLAUDE.md](CLAUDE.md)
+- **Incremental Import** (RECOMMENDED): [INCREMENTAL_IMPORT_WORKFLOW.md](INCREMENTAL_IMPORT_WORKFLOW.md)
+- ****Legacy Full Import**: [IMPORT_WORKFLOW.md](IMPORT_WORKFLOW.md)
+- ****Recent Fixes**: [SESSION_FIXES.md](SESSION_FIXES.md)
 
 ## Overview
 
@@ -24,7 +24,7 @@ export POSTGRES_URL="postgresql://neondb_owner:npg_q2HCPRojzJ0i@ep-falling-shado
 
 # Run complete incremental workflow (fast, safe, preserves existing data)
 node db/import_af3_json.mjs /path/to/AF3_PD_analysis_v3.json
-node db/incremental_organism_lookup.mjs  # ⭐ Only processes Unknown proteins
+node db/incremental_organism_lookup.mjs  # ** Only processes Unknown proteins
 node db/fetch_aliases.mjs
 node -e "const { sql } = require('@vercel/postgres'); (async () => { const result = await sql\`UPDATE proteins p SET gene_name = pa.alias_name FROM protein_aliases pa WHERE p.id = pa.protein_id AND pa.alias_type = 'gene_name' AND p.gene_name IS NULL\`; console.log(\`Updated \${result.rowCount} proteins\`); })();"
 node db/check_db.mjs
@@ -50,22 +50,22 @@ npx tsc --noEmit     # Type checking
 
 ## Key Features
 
-- ✅ Search by UniProt ID, gene name, or protein alias
-- ✅ Interactive force-directed network graph
-- ✅ Confidence level filtering (AF3 + AF2 by iPTM)
-- ✅ Structural quality metrics (iPAE, ipLDDT)
-- ✅ Smart result sorting (confidence → iPAE contacts → iPTM)
-- ✅ Organism codes (Hs:, Cr:, Mm:, etc.)
-- ✅ Cross-species protein lookup
-- ✅ ChlamyFP integration with human homolog fallback
-- ✅ Direct links to UniProt and ChlamyFP databases
+- **Search by UniProt ID, gene name, or protein alias
+- **Interactive force-directed network graph
+- **Confidence level filtering (AF3 + AF2 by iPTM)
+- **Structural quality metrics (iPAE, ipLDDT)
+- **Smart result sorting (confidence → iPAE contacts → iPTM)
+- **Organism codes (Hs:, Cr:, Mm:, etc.)
+- **Cross-species protein lookup
+- **ChlamyFP integration with human homolog fallback
+- **Direct links to UniProt and ChlamyFP databases
 
 ## Important Notes
 
-⭐ **Use incremental workflow for new data** - Fast, safe, preserves existing assignments
-⚠️ **All 5 import steps are CRITICAL** - See workflow for details
-✅ **Changes are immediate** - Database updates go live instantly
-🔄 **Hard refresh browser** - Ctrl+Shift+R after database changes
+**Use incremental workflow for new data** - Fast, safe, preserves existing assignments
+**All 5 import steps are CRITICAL** - See workflow for details
+****Changes are immediate** - Database updates go live instantly
+****Hard refresh browser** - Ctrl+Shift+R after database changes
 
 ## Documentation
 

@@ -1,9 +1,9 @@
 # IFT Extractor Setup Guide
 
-## ⚠️ Current Status
+## ** Current Status
 The script is a **template** - it has all IFT proteins listed but needs to be connected to your actual database API.
 
-## 🔧 What Needs to be Modified
+## **What Needs to be Modified
 
 ### 1. Find Your Database API Endpoints
 First, inspect your website to find the actual API endpoints:
@@ -71,7 +71,7 @@ def query_protein(self, uniprot_id: str, protein_info: Dict) -> List[Dict]:
         return []
 ```
 
-## 🔍 How to Find the Right API Structure
+## How to Find the Right API Structure
 
 ### Method 1: Browser Network Inspector
 ```javascript
@@ -130,7 +130,7 @@ for endpoint in endpoints:
         print(f"Failed: {e}")
 ```
 
-## 🚀 Once Connected
+## **Once Connected
 
 After you've found the correct API endpoint and modified the script:
 
@@ -150,7 +150,7 @@ After you've found the correct API endpoint and modified the script:
    - Will save results as JSON and CSV
    - Includes logging for troubleshooting
 
-## ⚠️ Important Notes
+## ** Important Notes
 
 - **Rate Limiting**: The script includes 0.5 second delays between requests
 - **Error Handling**: Failed queries are logged but don't stop the extraction

@@ -351,7 +351,7 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 **Why is BBS5 interacting with MCIDAS?**
 
-**Hypothesis 1: BBSome regulates MCIDAS nucleo-cytoplasmic shuttling** ⭐
+**Hypothesis 1: BBSome regulates MCIDAS nucleo-cytoplasmic shuttling** **
 - MCIDAS shuttles nucleus ↔ cytoplasm (2025 discovery!)
 - BBS5 could regulate this trafficking
 - Mechanism: BBSome at ciliary base controls MCIDAS release to centrioles
@@ -361,7 +361,7 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 - May require specialized trafficking mechanisms
 - BBS5-MCIDAS coordinates massive ciliary assembly
 
-**Hypothesis 3: Explains BBS respiratory phenotypes** ⭐⭐⭐
+**Hypothesis 3: Explains BBS respiratory phenotypes** ******
 - Bardet-Biedl patients have chronic respiratory infections
 - Assumed to be due to obesity → sleep apnea
 - **Alternative:** BBSome mutations → MCIDAS mislocalization → multiciliate defects!
@@ -426,7 +426,7 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 1. Stubbs et al., 2012 - PMID: 22479295 - MCIDAS master regulator of multiciliogenesis
 2. Ma et al., 2014 - PMID: 25048963 - MCIDAS-E2F mechanism
-3. Zayas et al., 2025 - PMID: 40940409 - **MCIDAS nucleo-cytoplasmic shuttling** ⭐
+3. Zayas et al., 2025 - PMID: 40940409 - **MCIDAS nucleo-cytoplasmic shuttling** **
 4. Arbi et al., 2016 - PMID: 27298174 - GEMC1/GMNC upstream of MCIDAS
 5. Forsythe & Beales, 2013 - PMID: 23519208 - BBS clinical review
 
@@ -512,13 +512,13 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 **Why is TULP3 interacting with WDR5?**
 
-**Hypothesis 1: WDR5 has non-canonical ciliary function** ⭐⭐⭐
+**Hypothesis 1: WDR5 has non-canonical ciliary function** ******
 - WDR5 may localize to ciliary base/basal body
 - TULP3 imports WDR5 to cilia
 - Local chromatin regulation near centrioles?
 - Supporting evidence: Centrosomes regulate nuclear organization (PMID: 30205038)
 
-**Hypothesis 2: Cilia-to-nucleus retrograde signaling** ⭐⭐⭐
+**Hypothesis 2: Cilia-to-nucleus retrograde signaling** ******
 - Ciliary signals → Release WDR5 to nucleus
 - WDR5 modifies chromatin → Activate ciliary gene programs
 - Feedback loop: Cilia regulate their own gene expression!
@@ -594,8 +594,8 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 1. Guarnieri et al., 2006 - PMID: 16829531 - WDR5 in MLL complex
 2. Song & Kingston, 2008 - PMID: 18313384 - WDR5 structure
-3. Nigg & Tsai, 2018 - PMID: 30205038 - **Centrosome-chromatin communication** ⭐
-4. Roth et al., 2022 - PMID: 36055200 - **Cilia regulate chromatin remodeling** ⭐⭐⭐
+3. Nigg & Tsai, 2018 - PMID: 30205038 - **Centrosome-chromatin communication** **
+4. Roth et al., 2022 - PMID: 36055200 - **Cilia regulate chromatin remodeling** ******
 5. Thomas et al., 2015 - PMID: 26091041 - WDR5-MYC cancer connection
 6. Menzl et al., 2014 - PMID: 24413393 - Cilia loss in cancer
 
@@ -699,13 +699,13 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 **Why is TULP3 interacting with LKB1?**
 
-**Hypothesis 1: TULP3 imports LKB1 to cilia** ⭐⭐⭐
+**Hypothesis 1: TULP3 imports LKB1 to cilia** ******
 - LKB1 localizes to ciliary base (PMID: 20581084)
 - TULP3 is IFT-A cargo adaptor for ciliary import
 - TULP3 could traffic LKB1 to cilia for metabolic sensing
 - **Prediction:** TULP3 KO → Reduced ciliary LKB1 → mTOR hyperactivation
 
-**Hypothesis 2: Explains TULP3 ciliopathy phenotypes** ⭐⭐
+**Hypothesis 2: Explains TULP3 ciliopathy phenotypes** ****
 - TULP3 mutations cause Joubert syndrome
 - Joubert features:
   - Brain malformations (hypoplasia of cerebellar vermis)
@@ -716,7 +716,7 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
   - Kidney: mTOR → Cyst formation
   - Obesity: mTOR → Altered metabolism
 
-**Hypothesis 3: Cancer predisposition** ⭐⭐⭐
+**Hypothesis 3: Cancer predisposition** ******
 - PJS (LKB1 mutation) → Cancer
 - Could TULP3 mutations increase cancer risk?
 - **Prediction:** TULP3 patient cells have hyperactive mTOR
@@ -791,8 +791,8 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 ### Key References
 
 1. Hemminki et al., 1998 - PMID: 9482506 - STK11 mutations cause Peutz-Jeghers
-2. Shackelford & Shaw, 2009 - PMID: 19584936 - **LKB1-AMPK-mTOR pathway review** ⭐
-3. Boehlke et al., 2010 - PMID: 20581084 - **LKB1 at cilia regulates mTOR** ⭐⭐⭐
+2. Shackelford & Shaw, 2009 - PMID: 19584936 - **LKB1-AMPK-mTOR pathway review** **
+3. Boehlke et al., 2010 - PMID: 20581084 - **LKB1 at cilia regulates mTOR** ******
 4. Shelly & Stein, 2011 - PMID: 20972424 - Cilia dysregulation in cancer
 5. Srivastava et al., 2018 - PMID: 29925518 - LKB1 regulates ciliogenesis
 6. DiBella et al., 2009 - PMID: 19684112 - Ciliary signaling and cancer
@@ -898,24 +898,24 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 
 **Why is IFT54 interacting with cystinosin?**
 
-**Hypothesis 1: IFT54 traffics cystinosin to ciliary base** ⭐⭐
+**Hypothesis 1: IFT54 traffics cystinosin to ciliary base** ****
 - IFT20 traffics membrane proteins from Golgi
 - IFT54 (IFT-B core) could traffic lysosomal proteins
 - Cystinosin localization near ciliary base for local cystine regulation?
 
-**Hypothesis 2: Cilia-lysosome trafficking nexus** ⭐⭐⭐
+**Hypothesis 2: Cilia-lysosome trafficking nexus** ******
 - Primary cilium and lysosomes both accumulate at cell apex
 - Spatial coordination for autophagy/ciliophagy
 - IFT54 may coordinate ciliary-lysosomal protein exchange
 - **Novel concept:** IFT proteins moonlight in lysosomal trafficking!
 
-**Hypothesis 3: mTOR connection** ⭐⭐⭐
+**Hypothesis 3: mTOR connection** ******
 - Cystinosis → mTOR hyperactivation (PMID: 31142807)
 - Cilia regulate mTOR (PMID: 20581084)
 - IFT54 loss affects lysosomal cystine → mTOR dysregulation
 - **Mechanism:** IFT54 → Cystinosin trafficking → Lysosomal amino acid sensing → mTOR
 
-**Hypothesis 4: Ciliophagy** ⭐
+**Hypothesis 4: Ciliophagy** **
 - Cilia undergo autophagic degradation (ciliophagy) during cell cycle
 - IFT proteins recycle during ciliophagy
 - IFT54-cystinosin: Coordinate cilia disassembly with lysosomal degradation?
@@ -1010,12 +1010,12 @@ At least 6 transcription factors/chromatin regulators identified as direct IFT/B
 ### Key References
 
 1. Town et al., 1998 - PMID: 9501229 - CTNS gene discovery
-2. Gahl et al., 2002 - PMID: 12036952 - **NEJM cystinosis review** ⭐
+2. Gahl et al., 2002 - PMID: 12036952 - **NEJM cystinosis review** **
 3. Follit et al., 2008 - PMID: 18287559 - IFT20 Golgi-cilium trafficking
 4. Finetti et al., 2009 - PMID: 19451217 - IFT20 non-ciliary functions
-5. Krock & Perkins, 2021 - PMID: 31142807 - **Cystinosis mTOR/autophagy** ⭐⭐
+5. Krock & Perkins, 2021 - PMID: 31142807 - **Cystinosis mTOR/autophagy** ****
 6. Andrzejewska et al., 2023 - PMID: 37452023 - Cilia glucose homeostasis
-7. Emma et al., 2023 - PMID: 37621073 - **2023 Lancet cystinosis review** ⭐⭐⭐
+7. Emma et al., 2023 - PMID: 37621073 - **2023 Lancet cystinosis review** ******
 8. Noda et al., 2016 - PMID: 27559085 - IFT-B structure
 
 ---
@@ -1174,7 +1174,7 @@ This theme synthesizes the disease connections from Themes 1 and 2, emphasizing 
    - DOI: 10.15252/embj.201695004
    - **Regulation:** Palmitoylation regulates GPCR ciliary entry/exit
 
-### 2025 Finding: Direct G-Protein Trafficking Validated! ⭐⭐⭐
+### 2025 Finding: Direct G-Protein Trafficking Validated! ******
 
 **Harper et al., 2025** (PMID: 40472089) - **Science 2025**
 - *"TULP3-mediated ciliary import of Gαs regulates GPCR signaling"*
@@ -1271,7 +1271,7 @@ Ciliary Base → TULP3-Gαs-GDP → GPCR in cilium
 1. Berbari et al., 2008 - PMID: 18669657 - GPCRs localize to cilia
 2. Ye et al., 2018 - PMID: 29636483 - BBSome exports GPCRs
 3. Nager et al., 2017 - PMID: 28297712 - Acylation regulates GPCR trafficking
-4. **Harper et al., 2025 - PMID: 40472089 - TULP3 imports Gαs (Science 2025)** ⭐⭐⭐
+4. **Harper et al., 2025 - PMID: 40472089 - TULP3 imports Gαs (Science 2025)** ******
 5. Siljee et al., 2018 - PMID: 29540531 - IFT20 transports GPCRs
 
 ---

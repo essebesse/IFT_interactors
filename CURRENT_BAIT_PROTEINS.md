@@ -28,57 +28,57 @@
 ### IFT-B2 Complex (7 proteins + 1 MISSING)
 | UniProt ID | Gene Name | Alternative Names | Status |
 |------------|-----------|-------------------|--------|
-| Q8IY31 | IFT20 | - | ✅ In DB |
-| Q96AJ1 | IFT38 | CLUAP1 | ✅ In DB |
-| Q8TDR0 | IFT54 | TRAF3IP1, MIPT3 | ✅ In DB |
-| Q9NWB7 | IFT57 | ESRRBL1, HIPPI | ✅ In DB |
-| Q86WT1 | IFT70 | TTC30A (isoform A) | ✅ In DB |
-| Q8N4P2 | IFT70 | TTC30B (isoform B) | ✅ In DB |
-| Q9P2H3 | IFT80 | WDR56 | ✅ In DB |
-| ❌ **Q9UG01** | **IFT172** | SLB, KIAA1179 | ❌ **MISSING** |
+| Q8IY31 | IFT20 | - | **In DB |
+| Q96AJ1 | IFT38 | CLUAP1 | **In DB |
+| Q8TDR0 | IFT54 | TRAF3IP1, MIPT3 | **In DB |
+| Q9NWB7 | IFT57 | ESRRBL1, HIPPI | **In DB |
+| Q86WT1 | IFT70 | TTC30A (isoform A) | **In DB |
+| Q8N4P2 | IFT70 | TTC30B (isoform B) | **In DB |
+| Q9P2H3 | IFT80 | WDR56 | **In DB |
+| ****Q9UG01** | **IFT172** | SLB, KIAA1179 | ****MISSING** |
 
 ### BBSome Complex (8 proteins)
 | UniProt ID | Gene Name | Alternative Names | Status |
 |------------|-----------|-------------------|--------|
-| Q8NFJ9 | BBS1 | - | ✅ In DB |
-| Q9BXC9 | BBS2 | - | ✅ In DB |
-| Q9H0F7 | BBS3 | ARL6 | ✅ In DB |
-| Q96RK4 | BBS4 | - | ✅ In DB |
-| Q8N3I7 | BBS5 | - | ✅ In DB |
-| Q8IWZ6 | BBS7 | - | ✅ In DB |
-| Q8TAM2 | BBS8 | TTC8 | ✅ In DB |
-| Q9NQ48 | BBS17 | LZTFL1 | ✅ In DB |
+| Q8NFJ9 | BBS1 | - | **In DB |
+| Q9BXC9 | BBS2 | - | **In DB |
+| Q9H0F7 | BBS3 | ARL6 | **In DB |
+| Q96RK4 | BBS4 | - | **In DB |
+| Q8N3I7 | BBS5 | - | **In DB |
+| Q8IWZ6 | BBS7 | - | **In DB |
+| Q8TAM2 | BBS8 | TTC8 | **In DB |
+| Q9NQ48 | BBS17 | LZTFL1 | **In DB |
 
 ### BBSome-Associated Proteins (2 proteins - IN PROGRESS)
 | UniProt ID | Gene Name | Alternative Names | Status |
 |------------|-----------|-------------------|--------|
-| Q3SYG4 | BBS9 | PTHB1 | 🔄 **GENERATING** |
-| Q5T192 | BBS18 | BBIP1 | 🔄 **GENERATING** |
+| Q3SYG4 | BBS9 | PTHB1 | ****GENERATING** |
+| Q5T192 | BBS18 | BBIP1 | ****GENERATING** |
 
 **Note**: BBS10 and BBS12 are chaperonins (not BBSome structural components) and have been REMOVED.
 
 ### IFT-Associated Proteins (2 proteins)
 | UniProt ID | Gene Name | Alternative Names | Status |
 |------------|-----------|-------------------|--------|
-| O75386 | TULP3 | RP26, Tubby-related protein 3 | ✅ In DB |
-| Q9NX57 | RABL2 | RABL2A | 🔄 **GENERATING** |
+| O75386 | TULP3 | RP26, Tubby-related protein 3 | **In DB |
+| Q9NX57 | RABL2 | RABL2A | ****GENERATING** |
 
 ## Current Status Summary
 
-### ✅ In Database (31 proteins)
+### **In Database (31 proteins)
 - **IFT-A**: 6 proteins
 - **IFT-B1**: 9 proteins
 - **IFT-B2**: 7 proteins (MISSING: IFT172)
 - **BBSome**: 8 proteins
 - **IFT-associated**: 1 protein (TULP3)
 
-### 🔄 In Progress / To Add (4 proteins)
-- **IFT172** (Q9UG01) - IFT-B2 core component - ❌ CRITICAL MISSING
+### **In Progress / To Add (4 proteins)
+- **IFT172** (Q9UG01) - IFT-B2 core component - **CRITICAL MISSING
 - **RABL2** (Q9NX57) - IFT-associated GTPase
 - **BBS9** (Q3SYG4) - BBSome core subunit
 - **BBS18** (Q5T192) - BBSome-interacting protein
 
-### ❌ Removed from Dataset
+### **Removed from Dataset
 - **BBS10** (Q8TAM1) - Chaperonin, not structural BBSome component
 - **BBS12** (Q6ZW61) - Chaperonin, not structural BBSome component
 
@@ -92,7 +92,7 @@
 - **IFT-associated**: 1 protein (TULP3)
 
 ### To Add: 4 proteins
-1. **IFT172** (Q9UG01) - ❌ **CRITICAL** - Core IFT-B2 component
+1. **IFT172** (Q9UG01) - ****CRITICAL** - Core IFT-B2 component
 2. **RABL2** (Q9NX57) - IFT-associated GTPase
 3. **BBS9** (Q3SYG4) - BBSome core subunit
 4. **BBS18** (Q5T192) - BBSome-interacting protein

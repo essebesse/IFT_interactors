@@ -22,7 +22,7 @@ The script requires these 9 proteins to be in your database first:
 | BBS18 | A8MTZ0 | BBS18 / BBIP1 | U-bolt clamp (93 aa) |
 | ARL6 | Q9H0F7 | ARL6 / BBS3 | GTPase recruiter |
 
-⚠️ **Important**: The script will check for missing proteins and exit if any are missing. Add all 9 proteins to your database before running the validation script.
+**Important**: The script will check for missing proteins and exit if any are missing. Add all 9 proteins to your database before running the validation script.
 
 ## How to Use
 
@@ -38,14 +38,14 @@ node add_all_bbsome_validations.mjs
 **Expected output if proteins are missing**:
 
 ```
-🔍 Checking which BBSome proteins exist in database...
+Checking which BBSome proteins exist in database...
 
-✅ Found 3 BBSome proteins:
+**Found 3 BBSome proteins:
    BBS1 (BBS1)
    BBS4 (BBS4)
    BBS8 (TTC8)
 
-⚠️  Missing 6 proteins:
+**  Missing 6 proteins:
    BBS2 (Q9BXC9)
    BBS5 (Q8N3I7)
    BBS7 (Q8IWZ6)
@@ -53,7 +53,7 @@ node add_all_bbsome_validations.mjs
    BBS18 (A8MTZ0)
    ARL6 (Q9H0F7)
 
-⏸️  Add missing proteins before running validations.
+Add missing proteins before running validations.
 
 Exiting. Run this script again after adding missing proteins.
 ```
@@ -78,9 +78,9 @@ node add_all_bbsome_validations.mjs
 **Expected output when successful**:
 
 ```
-🔍 Checking which BBSome proteins exist in database...
+Checking which BBSome proteins exist in database...
 
-✅ Found 9 BBSome proteins:
+**Found 9 BBSome proteins:
    BBS1 (BBS1)
    BBS2 (BBS2)
    BBS4 (BBS4)
@@ -91,24 +91,24 @@ node add_all_bbsome_validations.mjs
    BBS18 (BBIP1)
    ARL6 (ARL6)
 
-✅ All BBSome proteins present!
+**All BBSome proteins present!
 
 ============================================================
 Adding 49 BBSome validations from 6 papers...
 
-✅ BBS2 ↔ BBS7 + Singh et al., 2020
-✅ BBS2 ↔ BBS9 + Singh et al., 2020
-✅ BBS7 ↔ BBS9 + Singh et al., 2020
+**BBS2 ↔ BBS7 + Singh et al., 2020
+**BBS2 ↔ BBS9 + Singh et al., 2020
+**BBS7 ↔ BBS9 + Singh et al., 2020
 ...
 💡 BBS4 ↔ BBS8: Already has Singh et al., 2020
 ...
 
 ============================================================
-📊 SUMMARY
+SUMMARY
 
-✅ Added: 45
+**Added: 45
 💡 Skipped (already present): 4
-⚠️  Not found in database: 0
+**  Not found in database: 0
 
 Total processed: 49
 

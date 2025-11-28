@@ -477,7 +477,7 @@ The direct physical interaction between IFT144 and BBS7 explains this convergenc
 - **Docking:** Fit model into cryo-ET maps of anterograde trains
 - **Analysis:** Check for steric clashes in anterograde vs. retrograde trains
 - **Expected:** High-confidence interface, fits anterograde only
-- **Status:** ✅ COMPLETED by user - high confidence prediction!
+- **Status:** **COMPLETED by user - high confidence prediction!
 
 **6. Cryo-EM of IFT-A-BBSome Complex**
 - **Design:** Reconstitute purified IFT-A and BBSome complexes
@@ -704,7 +704,7 @@ CYTOPLASM:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CILIARY BASE (Transition Zone):
            ↓
-  【ANTEROGRADE IMPORT】 ⭐ NEW DISCOVERY
+  【ANTEROGRADE IMPORT】 ** NEW DISCOVERY
   IFT144 (IFT-A) binds BBS7/BBS1
   BBSome loads onto anterograde train
            ↓

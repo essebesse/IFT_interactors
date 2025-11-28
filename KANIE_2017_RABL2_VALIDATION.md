@@ -192,7 +192,7 @@ This foundational study identified the CEP19-RABL2 GTPase complex as the molecul
 
 ---
 
-### 5. RABL2B-GTP ↔ IFT74/81 Heterodimer - Direct Binding Site ⭐
+### 5. RABL2B-GTP ↔ IFT74/81 Heterodimer - Direct Binding Site **
 
 **Proteins**:
 - RABL2B (Q3YEC7)
@@ -314,15 +314,15 @@ This foundational study identified the CEP19-RABL2 GTPase complex as the molecul
 **Published**: April 20, 2017 (2 months before Kanie et al.)
 
 **Agreement**:
-- ✅ RABL2-CEP19 interaction (both GTP and GDP)
-- ✅ RABL2-IFT74/81 GTP-dependent binding
-- ✅ Chlamydomonas RABL2 knockout = no flagella
+- **RABL2-CEP19 interaction (both GTP and GDP)
+- **RABL2-IFT74/81 GTP-dependent binding
+- **Chlamydomonas RABL2 knockout = no flagella
 
 **Kanie et al. adds**:
-- ✅ Upstream CEP350-FOP pathway
-- ✅ TAP-MS identifying all 17 IFT-B subunits
-- ✅ CRISPR knockouts proving IFT74/81 is sufficient binding site
-- ✅ RABL2 GEF-independent (high intrinsic exchange)
+- **Upstream CEP350-FOP pathway
+- **TAP-MS identifying all 17 IFT-B subunits
+- **CRISPR knockouts proving IFT74/81 is sufficient binding site
+- **RABL2 GEF-independent (high intrinsic exchange)
 
 **Conclusion**: Two independent labs published nearly simultaneously, confirming core findings. Kanie provides more mechanistic depth.
 
@@ -333,10 +333,10 @@ This foundational study identified the CEP19-RABL2 GTPase complex as the molecul
 **Published**: 6 years later (August 2023)
 
 **Built on Kanie 2017**:
-- ✅ Mapped exact binding site: IFT81-IFT74 C-terminal coiled-coil (460-533)
-- ✅ Discovered IFT81-IFT74 acts as 20-fold GAP for RABL2
-- ✅ Reconstituted minimal system in vitro
-- ✅ Structural modeling of RABL2-IFT74/81 interface
+- **Mapped exact binding site: IFT81-IFT74 C-terminal coiled-coil (460-533)
+- **Discovered IFT81-IFT74 acts as 20-fold GAP for RABL2
+- **Reconstituted minimal system in vitro
+- **Structural modeling of RABL2-IFT74/81 interface
 
 **Kanie 2017 predicted this**:
 - Showed IFT74/81 is binding site (genetic proof)
