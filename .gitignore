@@ -62,8 +62,15 @@ EXTRACTION_*.md
 VALIDATED_*.md
 VALIDATION_*.md
 *_VALIDATION_*.md
+*_EXTRACTION_*.md
 EXPERIMENTAL_VALIDATION_*.md
 COMPREHENSIVE_BIOLOGICAL_THEMES.md
 INTERACTION_DATA_CLEAN.md
+THEME_*.md
+BBSOME_*.md
+*_BBSOME_*.md
+IFTA_*.md
+IFTB_*.md
+*_RABL2_*.md
 Supplementary_Data_File_*.json
 Supplementary_Data_File_*.xlsx
