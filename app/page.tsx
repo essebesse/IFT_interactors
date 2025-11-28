@@ -109,6 +109,7 @@ export default function Home() {
     'High': true,
     'Medium': true,
     'Low': true,
+    'Very Low': false,  // Unchecked by default
   });
   const [baitProteins, setBaitProteins] = useState([]);
   const [selectedBait, setSelectedBait] = useState('');
@@ -388,7 +389,7 @@ export default function Home() {
     const ipsae = parseFloat(inter.ipsae);
 
     if (!ipsae || isNaN(ipsae)) {
-      return 'Low';
+      return 'Very Low';
     }
 
     // v4 ipSAE confidence thresholds
@@ -396,8 +397,10 @@ export default function Home() {
       return 'High';
     } else if (ipsae >= 0.5) {
       return 'Medium';
-    } else {
+    } else if (ipsae >= 0.3) {
       return 'Low';
+    } else {
+      return 'Very Low';
     }
   };
 
@@ -405,6 +408,7 @@ export default function Home() {
     'High': '#28a745',                     // Green
     'Medium': '#ffc107',                   // Orange
     'Low': '#dc3545',                      // Red
+    'Very Low': '#6c757d',                 // Gray
   };
 
   return (

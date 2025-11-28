@@ -53,3 +53,17 @@ analyze_*.mjs
 
 # Build artifacts
 tsconfig.tsbuildinfo
+
+# Manuscript files (private until publication)
+METHODS_*.md
+RESULTS_*.md
+PUBLICATION_*.md
+EXTRACTION_*.md
+VALIDATED_*.md
+VALIDATION_*.md
+*_VALIDATION_*.md
+EXPERIMENTAL_VALIDATION_*.md
+COMPREHENSIVE_BIOLOGICAL_THEMES.md
+INTERACTION_DATA_CLEAN.md
+Supplementary_Data_File_*.json
+Supplementary_Data_File_*.xlsx
