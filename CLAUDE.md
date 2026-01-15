@@ -111,10 +111,10 @@ git ls-remote origin main  # Should show your latest commit hash
 
 ## Dataset Overview
 
-### Data Statistics (as of 2025-11-03)
-- **Total Interactions**: 512 (all unique, duplicates removed)
-- **Unique Proteins**: 371 (all human Homo sapiens)
-- **Unique Baits**: 33 (22 IFT + 10 BBSome + 1 IFT-associated: TULP3)
+### Data Statistics (as of 2025-01-15)
+- **Total Interactions**: 550 (all unique, duplicates removed)
+- **Unique Proteins**: 394 (all human Homo sapiens)
+- **Unique Baits**: 35 (23 IFT + 11 BBSome + 1 IFT-associated: TULP3)
 - **Analysis Version**: v4 only (ipSAE scoring)
 - **AlphaFold Version**: AF3 only
 - **Confidence Distribution**: Based on ipSAE scores
@@ -123,14 +123,15 @@ git ls-remote origin main  # Should show your latest commit hash
   - Low (ipSAE <0.5): Red badges
 
 ### Bait Protein Coverage
-- **IFT Proteins (22)**:
+- **IFT Proteins (23)**:
   - IFT20, IFT22, IFT25, IFT27, IFT38, IFT43, IFT46, IFT52, IFT54, IFT56, IFT57
   - IFT70 (TTC30A), IFT70 (TTC30B), IFT74, IFT80, IFT81, IFT88
-  - IFT121, IFT122, IFT139, IFT140, IFT144
-- **BBSome Proteins (10)**:
-  - BBS1, BBS2, BBS3 (ARL6), BBS4, BBS5, BBS7, BBS8, BBS10, BBS12, BBS17 (LZTL1)
+  - IFT121, IFT122, IFT139, IFT140, IFT144, IFT172
+- **BBSome Proteins (11)**:
+  - BBS1, BBS2, BBS3 (ARL6), BBS4, BBS5, BBS7, BBS8, BBS9, BBS10, BBS12, BBS17 (LZTL1), BBS18
 - **IFT-Associated Proteins (1)**:
   - TULP3 (Tubby-related protein 3 / RP26) - 73 interactions
+  - RABL2B - 19 interactions
 
 ### Notable Interactions (Top 5 by ipSAE)
 1. IFT46 ↔ IFT56: ipSAE=0.828 (High)
@@ -372,20 +373,26 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
 
 **Technical Implementation**:
 - **Library**: Molstar (mol-plugin-ui)
-- **Storage**: Vercel Blob (500 CIF files with UniProt-based naming)
-- **PAE Data**: Local `public/contacts_data/` (172 JSON files)
+- **Storage**: Vercel Blob for both CIF and PAE files
+  - CIF files: `structures/{bait}_and_{prey}.cif` (550 files)
+  - PAE data: `pae_contacts/{id}.json` (550 files)
 - **Component**: `components/StructureViewer.tsx`
 - **API Routes**:
   - `/api/structure/[id]` - Serves CIF files from Blob
-  - `/api/structure/[id]/pae` - Serves PAE contact data
+  - `/api/structure/[id]/pae` - Serves PAE contact data from Blob
 - **Manifest**: `cif_manifest.json` maps interaction IDs to filenames
 - **Fullscreen Page**: `app/structure/[id]/page.tsx` - Standalone viewer with canvas size limits
 
 **Blob Storage**:
-- **URL Pattern**: `structures/{bait_uniprot}_and_{prey_uniprot}.cif`
-- **Example**: `structures/a0avf1_and_q9nqc8.cif`
-- **Total Files**: 500 CIF structures (one per interaction)
 - **Base URL**: `https://rechesvudwvwhwta.public.blob.vercel-storage.com`
+- **CIF Files**:
+  - URL Pattern: `structures/{bait_uniprot}_and_{prey_uniprot}.cif`
+  - Example: `structures/a0avf1_and_q9nqc8.cif`
+  - Total: 550 CIF structures
+- **PAE Contact Files**:
+  - URL Pattern: `pae_contacts/{interaction_id}.json`
+  - Example: `pae_contacts/1.json`
+  - Total: 550 PAE contact files
 
 **Performance & Memory Optimization**:
 - Structure loads in 2-3 seconds ✓
@@ -397,7 +404,22 @@ All routes are marked as `force-dynamic` to prevent build-time database access:
   - Considers devicePixelRatio (retina displays)
 - No more 30+ second hangs or system freezes ✓
 
-**Recent Updates (2025-11-06)**:
+**Recent Updates (2025-01-15)**:
+
+1. **PAE Route Fix - Blob Storage** (commit `66c55bd`)
+   - Fixed PAE API route to read from Vercel Blob instead of local filesystem
+   - Previously: Read from `public/contacts_data/` (only 501 files deployed)
+   - Now: Fetches from `pae_contacts/{id}.json` in Blob (all 550 files available)
+   - Result: PAE highlighting now works for ALL interactions including new baits
+
+2. **New Baits Added**:
+   - IFT172 (4 interactions)
+   - RABL2B (19 interactions)
+   - BBS9 (10 interactions)
+   - BBS18 (14 interactions)
+   - Total: 550 interactions (up from 501)
+
+**Previous Updates (2025-11-06)**:
 
 1. **UI Clarity Improvements** (commit `2468876`) **
    - Added colored dots (●) to confidence level checkboxes for visual consistency
@@ -628,10 +650,15 @@ git branch -D ift-temp-branch
 ---
 
 **Project Status**: **Deployed and operational
-**Last Updated**: 2025-11-06
-**Database Status**: **Populated (877 interactions, 331 proteins, 32 baits)
+**Last Updated**: 2025-01-15
+**Database Status**: **Populated (550 interactions, 394 proteins, 35 baits)
 **Data Source**: Original AlphaPulldown v4.json files (v4 ipSAE scoring, AF3 only)
 **Deployment**: Vercel (triggered by git push to main - automatic via GitHub webhook)
+
+**Summary of 2025-01-15 Updates**:
+- Fixed PAE API route to read from Vercel Blob (was reading from local filesystem)
+- Added new baits: IFT172, RABL2B, BBS9, BBS18 (49 new interactions)
+- PAE highlighting now works for ALL 550 interactions
 
 **Summary of 2025-11-06 Updates**:
 - **Added colored dots (●) to confidence level checkboxes (green/orange/red)
