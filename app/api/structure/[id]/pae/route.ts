@@ -6,16 +6,16 @@
  *
  * Usage: GET /api/structure/123/pae
  *
- * Data source: public/contacts_data/{id}.json
+ * Data source: Vercel Blob Storage (pae_contacts/{id}.json)
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { readFile } from 'fs/promises';
-import fs from 'fs';
-import path from 'path';
 
 // Force dynamic rendering
 export const dynamic = 'force-dynamic';
+
+// Vercel Blob base URL (same as CIF route)
+const BLOB_BASE_URL = 'https://rechesvudwvwhwta.public.blob.vercel-storage.com';
 
 export async function GET(
   request: NextRequest,
@@ -25,30 +25,28 @@ export async function GET(
     const resolvedParams = await params;
     const interactionId = resolvedParams.id;
 
-    // Path to contact data file
-    const contactPath = path.join(
-      process.cwd(),
-      'public',
-      'contacts_data',
-      `${interactionId}.json`
-    );
+    // Construct Blob URL for PAE contact data
+    const blobUrl = `${BLOB_BASE_URL}/pae_contacts/${interactionId}.json`;
 
-    if (!fs.existsSync(contactPath)) {
+    // Fetch from Vercel Blob
+    const response = await fetch(blobUrl);
+
+    if (!response.ok) {
       return NextResponse.json(
         {
           error: 'Contact data not found',
           id: interactionId,
-          message: 'PAE contact data has not been generated for this interaction yet.'
+          message: 'PAE contact data has not been generated for this interaction yet.',
+          url: blobUrl
         },
         { status: 404 }
       );
     }
 
-    // Read and return contact data
-    const contactData = await readFile(contactPath, 'utf8');
-    const parsed = JSON.parse(contactData);
+    // Parse and return the JSON data
+    const contactData = await response.json();
 
-    return NextResponse.json(parsed, {
+    return NextResponse.json(contactData, {
       status: 200,
       headers: {
         'Cache-Control': 'public, max-age=31536000, immutable'
