@@ -509,7 +509,7 @@ export default function Home() {
                   label={
                     <span>
                       <span style={{ color: '#dc3545', marginRight: '6px' }}>●</span>
-                      Low (ipSAE &lt;0.5)
+                      Low (ipSAE 0.3-0.5)
                     </span>
                   }
                   checked={confidenceFilters.Low}
