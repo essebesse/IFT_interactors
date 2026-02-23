@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button, Card, Spinner, Table, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { NetworkVisualization } from '../components/NetworkVisualization';
 import dynamic from 'next/dynamic';
+import PairReportModal from '../components/PairReportModal';
 
 // Dynamically import StructureViewer (Mol* requires browser environment)
 const StructureViewer = dynamic(() => import('../components/StructureViewer'), {
@@ -121,6 +122,11 @@ export default function Home() {
     id: number;
     baitGene: string;
     preyGene: string;
+  } | null>(null);
+
+  // Pair report modal state
+  const [reportModal, setReportModal] = useState<{
+    show: boolean; interactionId: number; baitGene: string; preyGene: string;
   } | null>(null);
 
   const fetchBaitProteins = async () => {
@@ -620,7 +626,7 @@ export default function Home() {
                     <th>iPAE &lt;3Å</th>
                     <th>iPAE &lt;6Å</th>
                     <th>ipLDDT</th>
-                    <th>Validated</th>
+                    <th>Evidence</th>
                     <th>3D Structure</th>
                   </tr>
                 </thead>
@@ -680,7 +686,7 @@ export default function Home() {
                       </td>
                       <td>{inter.interface_plddt ? inter.interface_plddt.toFixed(1) : 'N/A'}</td>
                       <td>
-                        {inter.experimental_validation?.validation_summary?.is_validated ? (
+                        {inter.experimental_validation?.validation_summary?.is_validated && (
                           <OverlayTrigger
                             placement="top"
                             overlay={
@@ -702,12 +708,22 @@ export default function Home() {
                             }
                           >
                             <span className="badge bg-success" style={{ cursor: 'pointer' }}>
-                              ✓ Yes ({inter.experimental_validation.validation_summary.validation_count})
+                              ✓ Validated ({inter.experimental_validation.validation_summary.validation_count})
                             </span>
                           </OverlayTrigger>
-                        ) : (
-                          <span className="text-muted">-</span>
                         )}
+                        <span
+                          className={`badge bg-info ${inter.experimental_validation?.validation_summary?.is_validated ? 'ms-1' : ''}`}
+                          style={{ cursor: 'pointer', fontSize: '0.75em' }}
+                          onClick={() => setReportModal({
+                            show: true,
+                            interactionId: inter.id,
+                            baitGene: inter.bait_gene || inter.bait_uniprot,
+                            preyGene: inter.prey_gene || inter.prey_uniprot
+                          })}
+                        >
+                          Report
+                        </span>
                       </td>
                       <td>
                         <div className="d-flex gap-1">
@@ -751,6 +767,15 @@ export default function Home() {
         </Col>
       </Row>
 
+      {reportModal && (
+        <PairReportModal
+          show={reportModal.show}
+          onHide={() => setReportModal(null)}
+          interactionId={reportModal.interactionId}
+          baitGene={reportModal.baitGene}
+          preyGene={reportModal.preyGene}
+        />
+      )}
     </Container>
   );
 }
